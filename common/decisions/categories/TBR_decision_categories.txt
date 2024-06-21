@@ -272,3 +272,57 @@ BEL_colonial_management_category = {
         }
     }
 }
+
+BEL_make_cze_submit_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            AND = {
+                has_country_flag = BEL_CZE_promote_submission
+                CZE = {
+                    exists = yes
+                    NOT = {
+                        is_puppet_of = BEL
+                    }
+                }
+            }
+            is_debug = yes
+        }
+    }
+}
+
+BEL_make_slo_submit_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            AND = {
+                has_country_flag = BEL_CZE_promote_submission
+                SLO = {
+                    exists = yes
+                    NOT = {
+                        is_puppet_of = BEL
+                    }
+                }
+            }
+            is_debug = yes
+        }
+    }
+}

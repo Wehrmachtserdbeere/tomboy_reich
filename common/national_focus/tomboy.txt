@@ -16259,18 +16259,46 @@
 		mutually_exclusive = {
 			focus = BEL_monafash_imperialism_east_czechia_war_sudetenland
 		}
+
+		bypass = {
+			CZE = {
+				exists = no
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+			SLO = {
+				exists = no
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+		}
 		
 		completion_reward = {
-			CZE = {
-				add_opinion_modifier = {
-					target = BEL
-					modifier = BEL_friendly_interaction
+			if = {
+				limit = {
+					CZE = {
+						exists = yes
+						NOT = {
+							has_war_with = BEL
+						}
+					}
+				}
+				CZE = {
+					add_opinion_modifier = {
+						target = BEL
+						modifier = BEL_friendly_interaction
+					}
 				}
 			}
 			if = {
 				limit = {
 					SLO = {
 						exists = yes
+						NOT = {
+							has_war_with = BEL
+						}
 					}
 				}
 				SLO = {
@@ -16294,11 +16322,26 @@
 
 		cost = 5
 		
-		x = 26
-		y = 7
+		x = 24
+		y = 11
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia
+		}
+
+		bypass = {
+			CZE = {
+				exists = no
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+			SLO = {
+				exists = no
+				NOT = {
+					has_war_with = BEL
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -16306,16 +16349,29 @@
 				idea = BEL_idea_czechia_economic_assistance_bel
 				years = 1
 			}
-			CZE = {
-				add_timed_idea = {
-					idea = BEL_idea_czechia_economic_assistance_cze
-					years = 1
+			if = {
+				limit = {
+					CZE = {
+						exists = yes
+						NOT = {
+							has_war_with = BEL
+						}
+					}
+				}
+				CZE = {
+					add_timed_idea = {
+						idea = BEL_idea_czechia_economic_assistance_cze
+						years = 1
+					}
 				}
 			}
 			if = {
 				limit = {
 					SLO = {
 						exists = yes
+						NOT = {
+							has_war_with = BEL
+						}
 					}
 				}
 				add_timed_idea = {
@@ -16323,6 +16379,181 @@
 					years = 1
 				}
 			}
+		}
+	}
+
+	# Develop Czechia
+	focus = {
+		id = BEL_monafash_imperialism_east_czechia_peace_develop_czechia
+		icon = tbd
+
+		cost = 5
+		
+		x = 24
+		y = 12
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_peace_economic_assistance
+		}
+
+		available = {
+			has_political_power > 149
+		}
+
+		bypass = {
+			CZE = {
+				OR = {
+					exists = no
+					NOT = {
+						AND = {
+							owns_state = 69
+							owns_state = 9
+							owns_state = 75
+							owns_state = 74
+							owns_state = 72
+						}
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			add_political_power = -150
+			CZE = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	# Develop Slovakia
+	focus = {
+		id = BEL_monafash_imperialism_east_czechia_peace_develop_slovakia
+		icon = tbd
+
+		cost = 5
+		
+		x = 26
+		y = 12
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_peace_economic_assistance
+		}
+
+		available = {
+			has_political_power > 149
+		}
+
+		bypass = {
+			AND = {
+				CZE = {
+					NOT = {
+						AND = {
+							owns_state = 74
+							owns_state = 71
+							owns_state = 70
+							owns_state = 664
+						}
+					}
+				}
+				SLO = {
+					NOT = {
+						AND = {
+							owns_state = 74
+							owns_state = 71
+							owns_state = 70
+							owns_state = 664
+						}
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					SLO = {
+						exists = yes
+						OR = {
+							owns_state = 74
+							owns_state = 71
+							owns_state = 70
+							owns_state = 664
+						}
+					}
+				}
+				SLO = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				add_political_power = -150
+			}
+			else_if = {
+				limit = {
+					CZE = {
+						exists = yes
+						OR = {
+							owns_state = 74
+							owns_state = 71
+							owns_state = 70
+							owns_state = 664
+						}
+					}
+				}
+				CZE = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				add_political_power = -150
+			}
+		}
+	}
+
+	# Promote Submission to Tomboys
+	# i.E. Lower their stability and war support until you puppet them
+	focus = {
+		id = BEL_monafash_imperialism_east_czechia_peace_promote_submission
+		icon = tbd
+
+		cost = 5
+		
+		x = 25
+		y = 12
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_peace_develop_czechia
+		}
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_peace_develop_slovakia
+		}
+
+		bypass = {
+			CZE = {
+				OR = {
+					exists = no
+					is_puppet_of = BEL
+					is_ally_with = BEL
+				}
+			}
+			SLO = {
+				OR = {
+					exists = no
+					is_puppet_of = BEL
+					is_ally_with = BEL
+				}
+			}
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BEL_monafash_imperialism_east_czechia_peace_promote_submission_reward_tt
+			set_country_flag = BEL_CZE_promote_submission
 		}
 	}
 

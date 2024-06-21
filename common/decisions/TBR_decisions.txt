@@ -2898,3 +2898,217 @@ BEL_colonial_management_category = {
     }
 
 }
+
+BEL_make_cze_submit_category = {
+
+    BEL_spread_war_propaganda_in_cze = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_CZE_promote_submission
+            CZE = {
+                OR = {
+                    AND = {
+                        exists = yes
+                        NOT = {
+                            is_puppet_of = BEL
+                        }
+                    }
+                    is_debug = yes
+                }
+            }
+        }
+
+        cost = 200
+        
+        days_re_enable = 14
+
+        complete_effect = {
+            CZE = {
+                add_stability = 0.03
+                add_war_support = -0.05
+            }
+        }
+    }
+
+    BEL_instill_fear_in_cze = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_CZE_promote_submission
+            CZE = {
+                OR = {
+                    AND = {
+                        exists = yes
+                        NOT = {
+                            is_puppet_of = BEL
+                        }
+                    }
+                    is_debug = yes
+                }
+            }
+        }
+
+        cost = 200
+        
+        days_re_enable = 14
+
+        complete_effect = {
+            CZE = {
+                add_stability = -0.05
+                add_war_support = 0.03
+            }
+        }
+    }
+
+    BEL_promote_ideology_in_cze = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_CZE_promote_submission
+            CZE = {
+                OR = {
+                    AND = {
+                        exists = yes
+                        NOT = {
+                            is_puppet_of = BEL
+                            has_government = BEL
+                        }
+                    }
+                    is_debug = yes
+                }
+            }
+        }
+
+        cost = 200
+        
+        days_re_enable = 14
+
+        complete_effect = {
+            CZE = {
+                add_stability = 0.02
+                add_war_support = 0.02
+                add_popularity = {
+                    ideology = BEL
+                    popularity = 0.025
+                }
+            }
+        }
+    }
+}
+
+BEL_make_slo_submit_category = {
+
+    BEL_spread_war_propaganda_in_slo = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_CZE_promote_submission
+            SLO = {
+                OR = {
+                    AND = {
+                        exists = yes
+                        NOT = {
+                            is_puppet_of = BEL
+                        }
+                    }
+                    is_debug = yes
+                }
+            }
+        }
+
+        cost = 200
+        
+        days_re_enable = 14
+
+        complete_effect = {
+            SLO = {
+                add_stability = 0.03
+                add_war_support = -0.05
+            }
+        }
+    }
+
+    BEL_instill_fear_in_SLO = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_CZE_promote_submission
+            SLO = {
+                OR = {
+                    AND = {
+                        exists = yes
+                        NOT = {
+                            is_puppet_of = BEL
+                        }
+                    }
+                    is_debug = yes
+                }
+            }
+        }
+
+        cost = 200
+        
+        days_re_enable = 14
+
+        complete_effect = {
+            SLO = {
+                add_stability = -0.05
+                add_war_support = 0.03
+            }
+        }
+    }
+
+    BEL_promote_ideology_in_SLO = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_CZE_promote_submission
+            SLO = {
+                OR = {
+                    AND = {
+                        exists = yes
+                        NOT = {
+                            is_puppet_of = BEL
+                            has_government = BEL
+                        }
+                    }
+                    is_debug = yes
+                }
+            }
+        }
+
+        cost = 200
+        
+        days_re_enable = 14
+
+        complete_effect = {
+            SLO = {
+                add_stability = 0.02
+                add_war_support = 0.02
+                add_popularity = {
+                    ideology = BEL
+                    popularity = 0.025
+                }
+            }
+        }
+    }
+}
