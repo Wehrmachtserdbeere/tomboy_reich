@@ -1,0 +1,531 @@
+
+States of nations = {
+
+    Germany {
+
+        Relevant for Tomboy Borders {
+            42 - Moselland
+            51 - Rhineland
+            55 - Hessen
+            57 - Westfalen
+            56 - Weser-Ems
+        }
+
+        Relevant for Bavaria {
+        50 - Württemberg
+        52 - Oberbayern
+        53 - Niderbayern
+        54 - Franken
+        }
+
+        Conditionally German {
+            912 - Northern Schleswig / Sonderjylland
+            28 - Elsaß-Lothringen
+            848 - Vorarlberg
+            153 - Tyrol
+            152 - Upper Austria
+            4 - Lower Austria
+            69 - Sudetenland
+            9 - Bohemia
+            75 - Moravia
+            74 - Eastern Sudetenland
+            763 - Katowice
+            86 - Poznan
+            807 - Gdynia
+            85 - Danzig
+            188 - Memel
+        }
+
+        Base German {
+            42 - Moselland
+            51 - Rhineland
+            55 - Hessen
+            57 - Westfalen
+            56 - Weser-Ems
+            50 - Württemberg
+            52 - Oberbayern
+            53 - Niderbayern
+            54 - Franken
+            59 - Hannover
+            60 - Thüringen
+            65 - Sachsen
+            64 - Brandenburg
+            58 - Holstein
+            909 - Schleswig
+            41 - Mecklenburg
+            62 - Vorpommern
+            63 - Hinterpommern
+            68 - Ostmark
+            66 - Niederschlesien
+            67 - Oberschlesien
+            5 - Ermland-Masuren
+            763 - Königsberg
+        }
+
+        All states together {
+            42 - Moselland
+            51 - Rhineland
+            55 - Hessen
+            57 - Westfalen
+            56 - Weser-Ems
+            50 - Württemberg
+            52 - Oberbayern
+            53 - Niderbayern
+            54 - Franken
+            59 - Hannover
+            60 - Thüringen
+            65 - Sachsen
+            64 - Brandenburg
+            58 - Holstein
+            909 - Schleswig
+            41 - Mecklenburg
+            62 - Vorpommern
+            63 - Hinterpommern
+            68 - Ostmark
+            66 - Niederschlesien
+            67 - Oberschlesien
+            5 - Ermland-Masuren
+            763 - Königsberg
+            912 - Northern Schleswig / Sonderjylland
+            28 - Elsaß-Lothringen
+            848 - Vorarlberg
+            153 - Tyrol
+            152 - Upper Austria
+            4 - Lower Austria
+            69 - Sudetenland
+            9 - Bohemia
+            75 - Moravia
+            74 - Eastern Sudetenland
+            763 - Katowice
+            86 - Poznan
+            807 - Gdynia
+            85 - Danzig
+            188 - Memel
+        }
+    }
+
+    Britain {
+
+        Relevant for Tomboy {
+            127 - Sussex
+            126 - Greater London Area
+            125 - East Anglia
+            129 - East Midlands
+            130 - Yorkshire
+        }
+
+        England = {
+            127 - Sussex
+            126 - Greater London Area
+            125 - East Anglia
+            129 - East Midlands
+            130 - Yorkshire
+            123 - Cornwall / South-West England
+            338 - Gloucestershire
+            128 - West Midlands
+            132 - Lancashire
+            931 - Cumbria
+            131 - Northumberland
+        }
+
+        Wales {
+            122 - Wales
+        }
+
+        Scotland {
+            121 - Lothain
+            133 - Lanark
+            136 - Aberdeenshire
+            120 - Scottish Highlands
+            933 - Shetland Islands
+        }
+
+        Northern Ireland / Conditionally Irish {
+            119 - Northern Ireland
+        }
+
+        Ireland {
+            113 - Leinester
+            134 - Connaught
+            135 - Munster
+        }
+
+        All British States {
+            127 - Sussex
+            126 - Greater London Area
+            125 - East Anglia
+            129 - East Midlands
+            130 - Yorkshire
+            123 - Cornwall / South-West England
+            338 - Gloucestershire
+            128 - West Midlands
+            132 - Lancashire
+            931 - Cumbria
+            131 - Northumberland
+            122 - Wales
+            121 - Lothain
+            133 - Lanark
+            136 - Aberdeenshire
+            120 - Scottish Highlands
+            933 - Shetland Islands
+            119 - Northern Ireland
+            113 - Leinester
+            134 - Connaught
+            135 - Munster
+        }
+    }
+
+    France {
+
+        Relevant for Tomboy {
+
+            Small France {
+
+                29 - Nord-Pas-de-Calais
+                785 - Picardy
+                18 - Champagne
+                28 - Alsace-Lorraine
+                17 - France-Comte
+                16 - Ile-de-France
+                15 - Normandy
+            }
+
+            Big France Exclusive {
+
+                27 - Bourgogne
+                24 - Centre
+                30 - Loire
+                14 - Brittany
+            }
+
+            Big France Complete {
+                29 - Nord-Pas-de-Calais
+                785 - Picardy
+                18 - Champagne
+                28 - Alsace-Lorraine
+                17 - France-Comte
+                16 - Ile-de-France
+                15 - Normandy
+                27 - Bourgogne
+                24 - Centre
+                30 - Loire
+                14 - Brittany
+            }
+        }
+
+        France Base {
+            29 - Nord-Pas-de-Calais
+            785 - Picardy
+            18 - Champagne
+            28 - Alsace-Lorraine
+            17 - France-Comte
+            16 - Ile-de-France
+            15 - Normandy
+            27 - Bourgogne
+            24 - Centre
+            30 - Loire
+            23 - Poitou
+        }
+
+        Brittany {
+            14 - Brittany
+        }
+
+        Occitane {
+            19 - Aquitane
+            31 - Midi Pyrenees
+            25 - Limousin
+            22 - Languedoc
+            33 - Centre-Sud
+            26 - Auvergne
+            20 - Rhone
+            32 - Alpes
+            21 - Bouches-du-Rhône
+            851 - Var
+        }
+
+        Basque {
+            806 - Pyrénées-Atlantiques
+        }
+
+        Occitane-Savoy Shared {
+            735 - Savoy
+        }
+
+        Corsica {
+            1 - Corsica
+        }
+
+        All French States {
+            29 - Nord-Pas-de-Calais
+            785 - Picardy
+            18 - Champagne
+            28 - Alsace-Lorraine
+            17 - France-Comte
+            16 - Ile-de-France
+            15 - Normandy
+            27 - Bourgogne
+            24 - Centre
+            30 - Loire
+            23 - Poitou
+            14 - Brittany
+            19 - Aquitane
+            31 - Midi Pyrenees
+            25 - Limousin
+            22 - Languedoc
+            33 - Centre-Sud
+            26 - Auvergne
+            20 - Rhone
+            32 - Alpes
+            21 - Bouches-du-Rhône
+            851 - Var
+            806 - Pyrénées-Atlantiques
+            735 - Savoy
+            1 - Corsica
+        }
+    }
+
+    Netherlands {
+
+        All states together {
+            35 - Brabant
+            7 - Holland
+            36 - Friesland
+        }
+    }
+
+    Luxembourg {
+        8 - Luxemburg
+    }
+}
+
+Tomboy Stages {
+
+    Base {
+        6 - Vlaanderen
+        34 - Wallonie
+    }
+    
+    Post-BeNeLux {
+        6 - Vlaanderen
+        34 - Wallonie
+        35 - Brabant
+        7 - Holland
+        36 - Friesland
+        8 - Luxemburg
+    }
+
+    Continental Small Tomboy {
+
+        Without Benelux {
+            42 - Moselland
+            51 - Rhineland
+            55 - Hessen
+            57 - Westfalen
+            56 - Weser-Ems
+            29 - Nord-Pas-de-Calais
+            785 - Picardy
+            18 - Champagne
+            28 - Alsace-Lorraine
+            17 - France-Comte
+            16 - Ile-de-France
+            15 - Normandy
+        }
+
+        With Benelux {
+            42 - Moselland
+            51 - Rhineland
+            55 - Hessen
+            57 - Westfalen
+            56 - Weser-Ems
+            29 - Nord-Pas-de-Calais
+            785 - Picardy
+            18 - Champagne
+            28 - Alsace-Lorraine
+            17 - France-Comte
+            16 - Ile-de-France
+            15 - Normandy
+            35 - Brabant
+            7 - Holland
+            36 - Friesland
+            8 - Luxemburg
+            6 - Vlaanderen  | Base state
+            34 - Wallonie   | Base state
+        }
+    }
+
+    Continental Big Tomboy {
+
+        Without Benelux {
+            42 - Moselland
+            51 - Rhineland
+            55 - Hessen
+            57 - Westfalen
+            56 - Weser-Ems
+            29 - Nord-Pas-de-Calais
+            785 - Picardy
+            18 - Champagne
+            28 - Alsace-Lorraine
+            17 - France-Comte
+            16 - Ile-de-France
+            15 - Normandy
+            27 - Bourgogne
+            24 - Centre
+            30 - Loire
+            14 - Brittany
+        }
+
+        With Benelux {
+            42 - Moselland
+            51 - Rhineland
+            55 - Hessen
+            57 - Westfalen
+            56 - Weser-Ems
+            29 - Nord-Pas-de-Calais
+            785 - Picardy
+            18 - Champagne
+            28 - Alsace-Lorraine
+            17 - France-Comte
+            16 - Ile-de-France
+            15 - Normandy
+            27 - Bourgogne
+            24 - Centre
+            30 - Loire
+            14 - Brittany
+            35 - Brabant
+            7 - Holland
+            36 - Friesland
+            8 - Luxemburg
+            6 - Vlaanderen  | Base state
+            34 - Wallonie   | Base state
+        }
+    }
+
+    British Tomboy {
+        127 - Sussex
+        126 - Greater London Area
+        125 - East Anglia
+        129 - East Midlands
+        130 - Yorkshire
+    }
+
+    Total Tomboy {
+
+        Small {
+            Without Benelux {
+                42 - Moselland
+                51 - Rhineland
+                55 - Hessen
+                57 - Westfalen
+                56 - Weser-Ems
+                29 - Nord-Pas-de-Calais
+                785 - Picardy
+                18 - Champagne
+                28 - Alsace-Lorraine
+                17 - France-Comte
+                16 - Ile-de-France
+                15 - Normandy
+                127 - Sussex
+                126 - Greater London Area
+                125 - East Anglia
+                129 - East Midlands
+                130 - Yorkshire
+            }
+
+            With Benelux {
+                42 - Moselland
+                51 - Rhineland
+                55 - Hessen
+                57 - Westfalen
+                56 - Weser-Ems
+                29 - Nord-Pas-de-Calais
+                785 - Picardy
+                18 - Champagne
+                28 - Alsace-Lorraine
+                17 - France-Comte
+                16 - Ile-de-France
+                15 - Normandy
+                127 - Sussex
+                126 - Greater London Area
+                125 - East Anglia
+                129 - East Midlands
+                130 - Yorkshire
+                35 - Brabant
+                7 - Holland
+                36 - Friesland
+                8 - Luxemburg
+                6 - Vlaanderen  | Base state
+                34 - Wallonie   | Base state
+            }
+        }
+
+        Big {
+            Without Benelux {
+                42 - Moselland
+                51 - Rhineland
+                55 - Hessen
+                57 - Westfalen
+                56 - Weser-Ems
+                29 - Nord-Pas-de-Calais
+                785 - Picardy
+                18 - Champagne
+                28 - Alsace-Lorraine
+                17 - France-Comte
+                16 - Ile-de-France
+                15 - Normandy
+                27 - Bourgogne
+                24 - Centre
+                30 - Loire
+                14 - Brittany
+                127 - Sussex
+                126 - Greater London Area
+                125 - East Anglia
+                129 - East Midlands
+                130 - Yorkshire
+            }
+
+            With Benelux {
+                42 - Moselland
+                51 - Rhineland
+                55 - Hessen
+                57 - Westfalen
+                56 - Weser-Ems
+                29 - Nord-Pas-de-Calais
+                785 - Picardy
+                18 - Champagne
+                28 - Alsace-Lorraine
+                17 - France-Comte
+                16 - Ile-de-France
+                15 - Normandy
+                27 - Bourgogne
+                24 - Centre
+                30 - Loire
+                14 - Brittany
+                127 - Sussex
+                126 - Greater London Area
+                125 - East Anglia
+                129 - East Midlands
+                130 - Yorkshire
+                35 - Brabant
+                7 - Holland
+                36 - Friesland
+                8 - Luxemburg
+                6 - Vlaanderen  | Base state
+                34 - Wallonie   | Base state
+            }
+        }
+    }
+}
+
+Max Building Damages = {
+
+    Max_Damage = Base_Damage * Level
+
+    type = float
+    arms_factory = 8
+    industrial_complex = 5
+    air_base = 5
+    dockyard = 5
+    naval_base = 1
+
+}

@@ -1,0 +1,86 @@
+﻿l_english:
+
+  BEL_puppet_management_category: "Puppet Management"
+
+  BEL_give_poland_zaolzie: "Give Poland Zaolzie"
+  BEL_give_hungary_slovakia: "Give Slovakia to Hungary"
+  BEL_give_byzantines_slovakia: "Give Slovakia to the Greeks"
+  BEL_give_germany_slovakia: "Give Slovakia to the Germans"
+  BEL_return_kurdish_lands: "Return the Kurdish lands"
+
+  BEL_domestic_category: "Domestic Policies"
+
+  BEL_domestic_language: "Primary Language"
+  BEL_core_everything: "Establish Cores in our Territory"
+  BEL_core_everything_desc: "Using some diplomatic maneuvering, we can establish all our controlled territory as our core land. This of course would cost a lot of political power."
+  BEL_reestablish_japan: "Re-Establish Japan"
+  BEL_reestablish_china: "Re-Establish China"
+  BEL_reestablish_tibet: "Re-Establish Tibet"
+
+  BEL_land_the_lolis: "[BEL_establish_cunny_realm_scripted_loc]"
+  BEL_establish_cunny_realm: "Give the Lolis a Home"
+  BEL_return_cunny_land: "Return the Lolis their Lands"
+
+  BEL_reshuffle_cunny_realm: "[BEL_reshuffle_cunny_realm_scripted_loc]"
+  BEL_reshuffle_cunny_realm_selfgoverning_territory: "Enforce [BEL.GetRulingIdeologyNoun] in [CUN.GetNameDef]"
+  BEL_reshuffle_cunny_realm_freestate: "Reshuffle the [CUN.GetAdjective] government"
+
+  BEL_decrease_dutch_independence: "Integrate the [HOL.GetAdjective]"
+  BEL_annex_netherlands: "Fully Integrate [HOL.GetNameDef]"
+  BEL_decrease_luxembourgish_independence: "Integrate [LUX.GetName]"
+  BEL_annex_luxembourg: "Fully Integrate [LUX.GetNameDef]"
+
+  BEL_britain_destabilization_category: "Destabilizing [ENG.GetNameDef]"
+  BEL_britain_destabilization_category_desc: "Using our mutual market access, we can exploit the internal divisions within [ENG.GetNameDef], and eventually lead it to the brink of national uprisings, all orchestrated by us of course. For this, we will need to be careful in our diplomacy, and not antagonize the country too much. We will achieve this through subversive economic actions, along with careful manipulating of certain regions of the [ENG.GetAdjective] homeland, such as Scotland.\n\n[ENG.GetFlag][ENG.GetName] stability:  [?ENG.stability|%G]\n[ENG.GetFlag][ENG.GetAdjective] opinion of  [BEL.GetFlag][BEL.GetName]:  [?ENG.opinion@BEL|.0+]"
+
+  BEL_send_eco_aid: "Send economic aid"
+  BEL_flood_market: "Flood the market with cheap goods"
+  BEL_export_anti_british_propaganda: "Export anti-[ENG.GetAdjective] propaganda"
+  BEL_print_british_money: "Print counterfeit [ENG.GetAdjective] money"
+  BEL_recognize_breakaway_states: "Recognize [ENG.GetAdjective] breakaway states"
+  BEL_recognize_unified_ireland_for_support: "Recognize Unified [IRE.GetName] for support"
+  BEL_breakaways_partition_britain: "§RKick off the Revolts§!"
+  BEL_suggest_subjugation: "§YPropose subjugation to [ENG.GetName]§!"
+
+  BEL_breakaways_wls_sco_ire_effect: "[WLS.GetFlag]§Y[WLS.GetName]§!, and [SCO.GetFlag]§Y[SCO.GetName]§! will revolt and declare their independence from [ENG.GetFlag]§Y[ENG.GetNameDef]§!. [IRE.GetFlag]§Y[IRE.GetNameDef]§! will join the war."
+  BEL_breakaways_wls_sco_nir_effect: "[WLS.GetFlag]§Y[WLS.GetName]§!, [SCO.GetFlag]§Y[SCO.GetName]§!, and [NIR.GetFlag]§Y[NIR.GetName]§! will revolt and declare their independence from [ENG.GetFlag]§Y[ENG.GetNameDef]§!."
+
+  BEL_britain_destabilization_running: "No destabilization campaign is running"
+  BEL_britain_recognize_breakaways: "Breakaway states have not yet been recognized"
+  BEL_britain_recognize_breakaways_true: "Recognized [ENG.GetAdjective] breakaway states"
+  BEL_has_asked_eng_for_subjugation_tt: "Not: Has asked [ENG.GetName] for subjugation before"
+
+  BEL_britain_request_states: "Request control of [ENG.GetAdjective] states"
+  BEL_britain_request_states_desc: "Having helped them so much, and them now being in our debt, it's time we... nicely ask them for some territories housing majority tomboys. After all, the British states are weak and vulnerable, and they're practically asking us to rule them. And if they decline, we'll just remind them of their position and ask again, until they agree.\n\n§Y[127.GetName]§! controller:  §Y[127.Controller.GetFlag][127.Controller.GetNameDefCap]§!\n§Y[125.GetName]§! controller:  §Y[125.Controller.GetFlag][125.Controller.GetNameDefCap]§!\n§Y[129.GetName]§! controller:  §Y[129.Controller.GetFlag][129.Controller.GetNameDefCap]§!\n§Y[126.GetName]§! controller:  §Y[126.Controller.GetFlag][126.Controller.GetNameDefCap]§!"
+  BEL_request_sussex: "Request control of [127.GetName]"
+  BEL_request_london: "Request control of [126.GetName]"
+  BEL_request_east_anglia: "Request control of [125.GetName]"
+  BEL_request_east_midlands: "Request control of [129.GetName]"
+  BEL_asked_for_state: "Recently asked for State"
+
+  BEL_germany_hte_bavaria_decisions: "Nation Forming"
+  BEL_germany_hte_bavaria_decisions_desc: "When we have discovered some special potential countries, with enough energy, vigor, and might, we can make them reality.\n\n§gNew special formable countries can be found through specific focuses.§!"
+  BEL_germany_form_hte: "Form the HTE"
+  BEL_bavaria_fix_bavaria: "Rethink Bavaria"
+
+  BEL_germany_freedom_decisions_enable: "German Disunification"
+  BEL_germany_freedom_decisions_enable_desc: "We need to work to fully disunify and §Ydismantle Germany§!. In the coming months, years even, we can hope to break apart the fairly recently-formed nation and destroy it. To make them accept their disunification, we need to control §Yall of the land§! that each nation owned before being able to return it to them."
+
+  BEL_germany_free_wurttemberg: "Free Baden-Württemberg"
+  BEL_germany_free_austria: "Free Austria"
+  BEL_germany_free_bayern: "Free Bayern"
+  BEL_germany_free_sachsen: "Free Sachsen"
+  BEL_germany_free_hannover: "Free Hannover"
+  BEL_germany_free_schleswig_holstein: "Free Schleswig-Holstein"
+  BEL_germany_free_mecklenburg: "Free Mecklenburg"
+  BEL_germany_free_schlesien: "Free Schleßien"
+  BEL_germany_free_kaschubei: "Free Kaschubei"
+  BEL_germany_free_preussen: "Free Preußen"
+
+
+  CUN_internal_politics: "Internal Politics"
+  CUN_investigate_illya: "Investigate Illya"
+  CUN_investigate_illya_effect_tt: "May discover secrets about Illya"
+
+  BEL_monafash_bop_fash_recruit_paramilitaries: "Fascist Paramilitary Recruitment"
+  BEL_monafash_bop_fash_recruit_paramilitaries_desc: "By granting the Fascists more rights in the government, we can get their paramilitaries out of the streets and the military. Though by doing that, our industry may suffer. They will, of course, get more influence in the government, which may anger the monarchists, who will, in turn, demand more influence in the government too."

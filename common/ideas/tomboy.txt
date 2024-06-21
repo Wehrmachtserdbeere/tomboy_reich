@@ -1,0 +1,1770 @@
+ideas = {
+
+	country = {
+
+		BEL_lalatina_idea = {
+
+			name = BEL_lalatina_idea
+
+			allowed = {
+				original_tag = BEL
+				NOT = {
+					has_country_flag = BEL_lalatina_banished
+				}
+			}
+
+			picture = BEL_lalatina
+
+			modifier = {
+				stability_weekly = 0.001
+				land_reinforce_rate = 0.1
+				army_speed_factor = 0.05
+				defence = 0.1
+				political_power_factor = 0.15
+			}
+		}
+
+		BEL_controlled_commie_opposition = {
+
+			name = BEL_controlled_commie_opposition
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			picture = GFX_goal_support_communism
+
+			modifier = {
+				communism_drift = -0.05
+			}
+		}
+
+		BEL_controlled_dem_opposition = {
+			
+			name = BEL_controlled_dem_opposition
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			picture = GFX_goal_support_democracy
+
+			modifier = {
+				democratic_drift = -0.05
+			}
+		}
+
+		BEL_schools_built = {
+
+			name = BEL_schools_built
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			modifier = {
+				research_speed_factor = 1.5
+			}
+
+		}
+
+		BEL_workers_protected = {
+
+			name = BEL_workers_protected
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.1
+				stability_weekly = 0.002
+			}
+		}
+
+		BEL_liege_massacre = {
+
+			name = BEL_liege_massacre
+
+			picture = politicised_army_2
+
+			allowed = {
+				has_war = yes
+				original_tag = BEL
+			}
+
+			modifier = {
+				defence = 1.75
+				army_attack_factor = 1.25
+				weekly_manpower = 6250
+				monthly_population = -0.5
+				training_time_factor = -0.75
+				surrender_limit = 2
+			}
+		}
+
+		BEL_disorganised_nation = {
+
+			name = BEL_disorganised_nation
+
+			picture = anti_soviet_pact
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				disabled_ideas = 1
+				political_power_factor = -1
+			}
+
+			rule = {
+				can_access_market = no
+				can_create_factions = no
+				can_join_factions = no
+				can_not_declare_war = yes
+				can_send_volunteers = no
+			}
+
+		}
+
+		BEL_genociding_non_tomboys = {
+
+			name = BEL_genociding_non_tomboys
+
+			modifier = {
+				monthly_population = -0.95
+				stability_weekly = 0.002
+			}
+		}
+
+		BEL_transforming_ships = {
+			name = BEL_transforming_ships
+
+			picture = "GFX_idea_generic_naval_manufacturer_3"
+
+			modifier = {
+				naval_manufacturer_cost_factor = -0.15
+				navy_org_factor = 0.1
+				refit_speed = 0.2
+				experience_gain_navy_factor = 0.25
+			}
+		}
+
+		BEL_idea_acceptance_none = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_none
+
+			modifier = {
+				stability_factor = -0.25
+				no_compliance_gain = 1
+				monthly_population = -0.5
+				female_random_operative_chance = -1
+			}
+		}
+
+		BEL_idea_acceptance_low = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_low
+
+			modifier = {
+				stability_factor = -0.125
+				no_compliance_gain = 0
+				monthly_population = -0.25
+				female_random_operative_chance = -0.5
+			}
+		}
+
+		BEL_idea_acceptance_low_med = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_low
+
+			modifier = {
+				no_compliance_gain = 0
+				monthly_population = -0.125
+				female_random_operative_chance = -0.25
+			}
+		}
+
+		BEL_idea_acceptance_medium = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_medium
+
+			modifier = {
+				stability_factor = 0.05
+				monthly_population = 0.025
+			}
+		}
+
+		BEL_idea_acceptance_medium_high = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_medium
+
+			modifier = {
+				stability_factor = -0.125
+				no_compliance_gain = 0
+				monthly_population = -0.25
+				female_random_operative_chance = 0.25
+			}
+		}
+
+		BEL_idea_acceptance_high = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_high
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				monthly_population = 0.75
+				female_random_operative_chance = 0.5
+			}
+		}
+
+		BEL_idea_acceptance_high_high = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_high
+
+			modifier = {
+				stability_factor = 0.175
+				war_support_factor = 0.075
+				monthly_population = 1
+				female_random_operative_chance = 1
+			}
+		}
+
+		BEL_idea_acceptance_absolute = {
+			name = BEL_idea_acceptance
+
+			picture = BEL_acceptance_absolute
+
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.1
+				monthly_population = 1.5
+				female_random_operative_chance = 2
+				resistance_growth_on_our_occupied_states = 2.5
+				compliance_growth_on_our_occupied_states = -0.3
+			}
+		}
+
+		BEL_communist_tactics = {
+			name = BEL_communist_tactics
+
+			picture = BEL_communist_tactics
+
+			modifier = {
+				root_out_resistance_effectiveness_factor = 0.1
+				foreign_subversive_activites = 0.1
+			}
+		}
+
+		BEL_idea_economy_none = { # 1
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = 0.85
+				production_speed_infrastructure_factor = -0.95
+				production_speed_rail_way_factor = -0.95
+				production_speed_supply_node_factor = -0.95
+				production_speed_industrial_complex_factor = -0.95
+				production_speed_synthetic_refinery_factor = -0.95
+				monthly_population = -0.5
+			}
+		}
+
+		BEL_idea_economy_low = { # 2
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = 0.55
+				production_speed_infrastructure_factor = -0.55
+				production_speed_rail_way_factor = -0.55
+				production_speed_supply_node_factor = -0.55
+				production_speed_industrial_complex_factor = -0.55
+				production_speed_synthetic_refinery_factor = -0.55
+				monthly_population = -0.2
+			}
+		}
+
+		BEL_idea_economy_mid = { # 3
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = 0.55
+				production_speed_infrastructure_factor = -0.55
+				production_speed_rail_way_factor = -0.55
+				production_speed_supply_node_factor = -0.55
+				production_speed_industrial_complex_factor = -0.55
+				production_speed_synthetic_refinery_factor = -0.55
+			}
+		}
+
+		BEL_idea_economy_high = { # 4
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+
+		BEL_idea_economy_very_high = { # 5
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.15
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				monthly_population = 0.1
+			}
+		}
+
+		BEL_idea_economy_extreme = { # 6
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				production_speed_rail_way_factor = 0.25
+				production_speed_supply_node_factor = 0.25
+				production_speed_industrial_complex_factor = 0.35
+				production_speed_synthetic_refinery_factor = 0.25
+				research_speed_factor = 0.05
+				monthly_population = 0.2
+			}
+		}
+
+		BEL_idea_economy_absurd = { # 7
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_infrastructure_factor = 0.45
+				production_speed_rail_way_factor = 0.45
+				production_speed_supply_node_factor = 0.45
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_synthetic_refinery_factor = 0.45
+				research_speed_factor = 0.1
+				monthly_population = 0.25
+			}
+		}
+
+		BEL_idea_economy_insane = { # 8
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = -0.25
+				production_speed_infrastructure_factor = 0.6
+				production_speed_rail_way_factor = 0.6
+				production_speed_supply_node_factor = 0.6
+				production_speed_industrial_complex_factor = 0.75
+				production_speed_synthetic_refinery_factor = 0.6
+				research_speed_factor = 0.15
+			}
+		}
+
+		BEL_idea_economy_wtf = { # 9
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = -0.45
+				production_speed_infrastructure_factor = 0.8
+				production_speed_rail_way_factor = 0.8
+				production_speed_supply_node_factor = 0.8
+				production_speed_industrial_complex_factor = 0.9
+				production_speed_synthetic_refinery_factor = 0.8
+				research_speed_factor = 0.25
+				monthly_population = 0.3
+			}
+		}
+
+		BEL_idea_economy_german = { # 10
+			name = BEL_idea_economy
+
+			picture = BEL_economy
+
+			modifier = {
+				consumer_goods_factor = -0.6
+				production_speed_infrastructure_factor = 1
+				production_speed_rail_way_factor = 1
+				production_speed_supply_node_factor = 1
+				production_speed_industrial_complex_factor = 1.25
+				production_speed_synthetic_refinery_factor = 1
+				research_speed_factor = 0.4
+				monthly_population = 0.4
+			}
+		}
+
+		BEL_idea_kick_out_gypsy = {
+			name = BEL_idea_kick_out_gypsy
+
+			picture = BEL_kick_out_gypsy
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				conscription_factor = -0.01
+			}
+		}
+
+		BEL_idea_acceleration_init = {
+			name = BEL_idea_acceleration
+
+			picture = BEL_acceleration
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_weekly = -0.002
+			}
+		}
+
+		BEL_idea_education_reform_negative = {
+			name = BEL_idea_edu_reform_neg
+
+			picture = BEL_edu_reform
+
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
+
+		BEL_idea_labor_reforms = {
+			name = BEL_labor_reforms
+
+			picture = BEL_labor_reforms
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.25
+				monthly_population = 0.02
+			}
+		}
+
+		BEL_idea_equity_for_all = {
+			name = BEL_equity_for_all
+
+			picture = BEL_equity_for_all
+
+			modifier = {
+				monthly_population = 0.02
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		BEL_idea_environmental_protections = {
+			name = BEL_environmental_protections
+
+			picture = BEL_environmental_protections
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		BEL_idea_soc_sec_paid_leave = {
+			name = BEL_soc_sec_paid_leave
+
+			picture = BEL_soc_sec_paid_leave
+
+			modifier = {
+				monthly_population = 0.1
+				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+
+		BEL_idea_affirmative_action = {
+			name = BEL_affirmative_action
+
+			picture = BEL_affirmative_action
+
+			modifier = {
+				research_speed_factor = -0.5
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		BEL_idea_gay_rights = {
+			name = BEL_gay_rights
+
+			picture = BEL_gay_rights
+
+			modifier = {
+				monthly_population = -0.25
+				weekly_manpower = -0.1
+				stability_weekly = -0.05
+				army_attack_factor = -0.05
+			}
+		}
+
+		BEL_occupation_policy_good = {
+			name = BEL_occupation_policy_good
+
+			picture = BEL_occupation_policy_good
+
+			modifier = {
+				compliance_gain = 1.5
+				resistance_target = 0.05
+			}
+		}
+
+		BEL_occupation_policy_evil = {
+			name = BEL_occupation_policy_evil
+
+			picture = BEL_occupation_policy_evil
+
+			modifier = {
+				compliance_gain = -0.5
+				resistance_target = -0.15
+			}
+		}
+
+		BEL_army_preparation = {
+			name = BEL_army_preparation
+
+			picture = tbd
+
+			modifier = {
+				experience_gain_army_factor = 1
+				production_speed_arms_factory_factor = 1
+				training_time_factor = -0.25
+				experience_gain_navy_factor = -0.5
+				experience_gain_air_factor = -0.5
+				production_speed_industrial_complex_factor = -0.33
+				production_speed_air_base_factor = -0.33
+				production_speed_dockyard_factor = -0.33
+			}
+		}
+
+		BEL_idea_tomboy_overlordship = {
+			name = BEL_idea_tomboy_overlordship
+
+			picture = tbd
+
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+
+		BEL_idea_celebrating_britannia = {
+			name = BEL_idea_celebrating_britannia
+
+			picture = tbd
+
+			modifier = {
+				navy_org_factor = 0.15
+				navy_submarine_attack_factor = 0.1
+				naval_accidents_chance = -0.2
+				naval_defense_factor = -0.4
+				naval_detection = -0.15
+				navy_capital_ship_attack_factor = 0.1
+			}
+		}
+
+		BEL_idea_conquering_britannia = {
+			name = BEL_idea_conquering_britannia
+
+			picture = tbd
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.05
+				breakthrough_bonus_against = 0.05
+			}
+
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				navy_submarine_attack_factor = 0.1
+			}
+		}
+
+		BEL_idea_defense_focus_1 = {
+			name = BEL_defense_focus
+
+			picture = tbd
+
+			modifier = {
+				production_speed_bunker_factor = 4
+				production_speed_coastal_bunker_factor = 4
+				production_speed_arms_factory_factor = -0.9
+				production_speed_industrial_complex_factor = -0.9
+				production_factory_max_efficiency_factor = -0.45
+				production_factory_efficiency_gain_factor = -0.5
+				research_speed_factor = -0.25
+				army_attack_factor = -0.45
+				army_defence_factor = 0.5
+			}
+		}
+		BEL_idea_defense_focus_2 = {
+			name = BEL_defense_focus
+
+			picture = tbd
+
+			modifier = {
+				production_speed_bunker_factor = 3
+				production_speed_coastal_bunker_factor = 3
+				production_speed_arms_factory_factor = -0.75
+				production_speed_industrial_complex_factor = -0.75
+				production_factory_max_efficiency_factor = -0.55
+				production_factory_efficiency_gain_factor = -0.6
+				research_speed_factor = -0.175
+				army_attack_factor = -0.4
+				army_defence_factor = 0.45
+				unit_light_armor_design_cost_factor = -0.2
+				unit_medium_armor_design_cost_factor = -0.2
+				unit_heavy_armor_design_cost_factor = -0.2
+				unit_super_heavy_armor_design_cost_factor = -0.2
+				army_armor_defence_factor = 0.2
+			}
+		}
+		BEL_idea_defense_focus_3 = {
+			name = BEL_defense_focus
+
+			picture = tbd
+
+			modifier = {
+				production_speed_bunker_factor = 2.5
+				production_speed_coastal_bunker_factor = 2.5
+				production_speed_arms_factory_factor = -0.6
+				production_speed_industrial_complex_factor = -0.6
+				production_factory_max_efficiency_factor = -0.6
+				production_factory_efficiency_gain_factor = -0.65
+				research_speed_factor = -0.15
+				army_attack_factor = -0.35
+				army_defence_factor = 0.4
+				unit_light_armor_design_cost_factor = -0.25
+				unit_medium_armor_design_cost_factor = -0.25
+				unit_heavy_armor_design_cost_factor = -0.25
+				unit_super_heavy_armor_design_cost_factor = -0.25
+				unit_military_police_design_cost_factor = -0.25
+				army_armor_defence_factor = 0.25
+			}
+		}
+		BEL_idea_defense_focus_4 = {
+			name = BEL_defense_focus
+
+			picture = tbd
+
+			modifier = {
+				production_speed_bunker_factor = 2
+				production_speed_coastal_bunker_factor = 2
+				production_speed_arms_factory_factor = -0.45
+				production_speed_industrial_complex_factor = -0.45
+				production_factory_max_efficiency_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.55
+				research_speed_factor = -0.1
+				army_attack_factor = -0.3
+				army_defence_factor = 0.25
+				unit_light_armor_design_cost_factor = -0.25
+				unit_medium_armor_design_cost_factor = -0.25
+				unit_heavy_armor_design_cost_factor = -0.25
+				unit_super_heavy_armor_design_cost_factor = -0.25
+				unit_military_police_design_cost_factor = -0.25
+				army_armor_defence_factor = 0.2
+				experience_gain_army_factor = 0.1
+				experience_gain_air_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				training_time_army_factor = 0.25
+			}
+		}
+		BEL_idea_defense_focus_5 = {
+			name = BEL_defense_focus
+
+			picture = tbd
+
+			modifier = {
+				production_speed_bunker_factor = 1
+				production_speed_coastal_bunker_factor = 1
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+				production_factory_max_efficiency_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.45
+				research_speed_factor = -0.05
+				army_attack_factor = -0.2
+				army_defence_factor = 0.1
+				unit_light_armor_design_cost_factor = -0.25
+				unit_medium_armor_design_cost_factor = -0.25
+				unit_heavy_armor_design_cost_factor = -0.25
+				unit_super_heavy_armor_design_cost_factor = -0.25
+				unit_military_police_design_cost_factor = -0.25
+				army_armor_defence_factor = 0.25
+				experience_gain_army_factor = 0.15
+				experience_gain_air_factor = 0.15
+				experience_gain_navy_factor = 0.15
+				training_time_army_factor = 0.4
+				surrender_limit = 0.15
+			}
+		}
+		BEL_idea_defense_focus_6 = {
+			name = BEL_defense_focus
+
+			picture = tbd
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				unit_light_armor_design_cost_factor = -0.25
+				unit_medium_armor_design_cost_factor = -0.25
+				unit_heavy_armor_design_cost_factor = -0.25
+				unit_super_heavy_armor_design_cost_factor = -0.25
+				unit_military_police_design_cost_factor = -0.25
+				army_armor_defence_factor = 0.3
+				experience_gain_army_factor = 0.3
+				experience_gain_air_factor = 0.3
+				experience_gain_navy_factor = 0.3
+				training_time_army_factor = 0.75
+				surrender_limit = 0.25
+				conscription = 0.05
+				monthly_population = -0.15
+			}
+		}
+
+		BEL_idea_war_with_france_defensive = {
+			name = BEL_idea_war_with_france_defensive
+
+			picture = tbd
+
+			modifier = {
+				surrender_limit = 0.95
+			}
+
+			targeted_modifier = {
+				tag = FRA
+				defense_bonus_against = 0.75
+				attack_bonus_against = -0.75
+			}
+		}
+
+		BEL_idea_focus_on_offense = {
+			name = BEL_idea_focus_on_offense
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = -0.5
+				conscription = 0.15
+				monthly_population = -0.7
+				production_speed_arms_factory_factor = 0.5
+				production_speed_industrial_complex_factor = -0.95
+				production_speed_infrastructure_factor = -0.95
+				production_speed_bunker_factor = -0.95
+				production_speed_coastal_bunker_factor = -0.95
+				nuclear_production_factor = -0.95
+				training_time_army_factor = -0.25
+				defence = -0.5
+				offence = 0.25
+			}
+		}
+
+		BEL_idea_war_with_france_offensive = {
+			name = BEL_idea_war_with_france_offensive
+
+			picture = tbd
+
+			modifier = {
+				training_time_army_factor = -0.3
+				defence = -0.6
+				offence = 0.35
+			}
+
+			targeted_modifier = {
+				tag = FRA
+				defense_bonus_against= -0.5
+				attack_bonus_against = 0.5
+			}
+		}
+
+		BEL_idea_celebrating_marianne = {
+			name = BEL_idea_celebrating_marianne
+
+			picture = tbd
+
+			modifier = {
+				stability_weekly_factor = 0.1
+				consumer_goods_factor = -0.2
+				war_support_factor = 0.1
+				conscription_factor = 0.1
+				offence = -0.1
+				defence = 0.2
+			}
+		}
+
+		BEL_idea_assess_germany = {
+			name = BEL_idea_assess_germany
+
+			picture = tbd
+
+			targeted_modifier = {
+				tag = GER
+				intel_network_gain_factor = -0.05
+			}
+
+			modifier = {
+				intel_network_gain_factor = 0.1
+			}
+		}
+
+		BEL_idea_rekindle_monarchist_sentiments = {
+			name = BEL_idea_rekindle_monarchist_sentiments
+
+			picture = tbd
+
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+
+		BEL_idea_radicalized_german_tomboys = {
+			name = BEL_idea_radicalized_german_tomboys
+
+			picture = tbd
+
+			modifier = {
+				industry_repair_factor = -0.7
+				repair_speed_rail_way_factor = -0.3
+				repair_speed_infrastructure_factor = -0.3
+				repair_speed_industrial_complex_factor = -0.4
+				target_sabotage_risk = 0.5
+				intelligence_agency_defense = -0.15
+				consumer_goods_factor = 0.15
+				monthly_population = 0.5 # Angry tomboys need to lose stress *some* way
+				conscription_factor = -0.05
+				resistance_activity = 0.5
+			}
+		}
+
+		BEL_idea_celebrating_germania = {
+			name = BEL_idea_celebrating_germania
+
+			picture = tbd
+
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				offence = 0.2
+				political_power_gain = 0.5
+				org_loss_when_moving = -0.25
+				fuel_gain_factor = -0.2
+				command_power_gain_mult = -0.1
+			}
+		}
+
+		BEL_german_invasion_plan = {
+			name = BEL_german_invasion_plan
+
+			picture = tbd
+
+			modifier = {
+				planning_speed = 2
+				max_planning_factor = 0.25
+			}
+
+			targeted_modifier = {
+				tag = GER
+
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.1
+			}
+		}
+
+		BEL_underground_defense = {
+			name = BEL_underground_defense
+
+			picture = tbd
+
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+				resistance_growth_on_our_occupied_states = 0.5
+				compliance_growth_on_our_occupied_states = -0.2
+			}
+		}
+
+		BEL_diverted_funds_to_army = {
+			name = BEL_diverted_funds_to_army
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				training_time_army_factor = -0.5
+				experience_gain_army_factor = 2
+				max_training = 1
+				dig_in_speed_factor = 2
+				max_dig_in_factor = 1
+				dont_lose_dig_in_on_attack = 1
+				navy_org_factor = -0.3
+				navy_submarine_attack_factor = -0.25
+				navy_capital_ship_attack_factor = -0.25
+				navy_submarine_defence_factor = -0.25
+				navy_capital_ship_defence_factor = -0.25
+				experience_gain_navy_factor = -0.4
+				air_attack_factor = -0.3
+				air_defence_factor = -0.3
+				experience_gain_air_factor = -0.4
+				production_speed_dockyard_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_air_base_factor = -0.2
+				production_speed_bunker_factor = -0.2
+				production_speed_infrastructure_factor = -0.2
+				production_speed_rail_way_factor = -0.2
+				production_speed_supply_node_factor = -0.2
+				production_speed_synthetic_refinery_factor = -0.2
+				production_speed_anti_air_building_factor = -0.2
+				production_speed_fuel_silo_factor = -0.2
+				production_speed_naval_base_factor = -0.2
+				production_speed_nuclear_reactor_factor = -0.2
+				production_speed_radar_station_factor = -0.2
+				production_speed_rocket_site_factor = -0.2
+				production_factory_max_efficiency_factor = 1
+				production_factory_efficiency_gain_factor = 1
+				stability_weekly = 0.007 # Will make the -10% stability go back up to 9.8%, effectively you lose .2%
+			}
+		}
+
+		BEL_funding_nationalists_1 = {
+			name = BEL_funding_nationalists
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.25
+			}
+		}
+
+		BEL_funding_nationalists_2 = {
+			name = BEL_funding_nationalists
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.25
+			}
+		}
+
+		BEL_GER_nationalist_trouble_1 = {
+			name = BEL_GER_nationalist_trouble
+
+			picture = tbd
+
+			modifier = {
+				stability_weekly = -0.05
+			}
+		}
+
+		BEL_GER_nationalist_trouble_2 = {
+			name = BEL_GER_nationalist_trouble
+
+			picture = tbd
+
+			modifier = {
+				stability_weekly = -0.05
+			}
+		}
+
+		BEL_idea_euronia = {
+			name = BEL_idea_euronia
+
+			picture = tbd
+
+			modifier = {
+				navy_org_factor = 0.15
+				navy_submarine_attack_factor = 0.1
+				naval_accidents_chance = -0.2
+				naval_defense_factor = -0.2
+				naval_detection = -0.05
+				navy_capital_ship_attack_factor = 0.15
+				stability_weekly_factor = 0.1
+				consumer_goods_factor = -0.25
+				war_support_factor = 0.25
+				conscription_factor = 0.15
+				defence = 0.3
+				stability_factor = 0.1
+				offence = 0.2
+				political_power_gain = 0.5
+				org_loss_when_moving = -0.25
+				fuel_gain_factor = -0.2
+				command_power_gain_mult = -0.1
+			}
+		}
+
+		BEL_idea_destabilizing_democrats = {
+			name = BEL_idea_destabilizing_democrats
+
+			picture = tbd
+
+			modifier = {
+				democratic_drift = -0.3
+				democratic_acceptance = -20
+				political_power_factor = -0.15
+			}
+		}
+
+		BEL_idea_anti_communist_actions = {
+			name = BEL_idea_anti_communist_actions
+
+			picture = tbd
+
+			modifier = {
+				communism_drift = -0.3
+				communism_acceptance = -20
+				political_power_factor = -0.15
+			}
+		}
+
+		BEL_idea_non_intervention = {
+			name = BEL_idea_non_intervention
+
+			picture = tbd
+
+			available = {
+				has_offensive_war = no
+			}
+
+			modifier = {
+				justify_war_goal_time = 1.5
+				consumer_goods_factor = -0.05
+				hidden_modifier = {
+					ai_focus_defense_factor = 0.25
+					ai_focus_peaceful_factor = 0.75	
+				}
+			}
+		}
+
+		BEL_idea_defense_department = {
+			name = BEL_idea_defense_department
+
+			picture = tbd
+
+			modifier = {
+				army_core_defence_factor = 0.15
+				planning_speed = 0.1
+				navy_submarine_defence_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+			}
+		}
+
+		BEL_idea_case_black_first = {
+			name = BEL_idea_case_black
+
+			picture = tbd
+
+			available = {
+				OR = {
+					GER = {
+						NOT = {
+							OR = {
+								exists = yes
+								is_puppet_of = BEL
+							}
+						}
+					}
+					has_war_with = GER
+				}
+			}
+
+			modifier = {
+				navy_capital_ship_defence_factor = 0.05
+				navy_capital_ship_attack_factor = 0.025
+				navy_submarine_defence_factor = 0.05
+				navy_submarine_attack_factor = 0.025
+				air_defence_factor = 0.025
+				air_attack_factor = 0.0125
+			}
+
+			targeted_modifier = {
+				tag = GER
+
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+		}
+
+		BEL_idea_case_black_peace = {
+			name = BEL_idea_case_black
+
+			picture = tbd
+
+			modifier = {
+				monthly_population = 0.02
+				political_power_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = GER
+
+				monthly_population = 0.02
+				political_power_factor = 0.05
+				trade_cost_for_target_factor = -0.75
+			}
+		}
+
+		BEL_idea_case_black_germany_peace = {
+			name = BEL_idea_case_black
+
+			picture = tbd
+
+			targeted_modifier = {
+				tag = BEL
+
+				trade_cost_for_target_factor = -0.75
+				opinion_gain_monthly = 0.25
+			}
+		}
+
+		BEL_idea_case_black_war = {
+			name = BEL_idea_case_black
+
+			picture = tbd
+
+			modifier = {
+				navy_capital_ship_defence_factor = 0.1
+				navy_capital_ship_attack_factor = 0.05
+				navy_submarine_defence_factor = 0.125
+				navy_submarine_attack_factor = 0.05
+				air_defence_factor = 0.075
+				air_attack_factor = 0.15
+			}
+
+			targeted_modifier = {
+				tag = GER
+
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.05
+			}
+		}
+
+		BEL_idea_case_blue_first = {
+			name = BEL_idea_case_blue
+
+			picture = tbd
+
+			available = {
+				OR = {
+					FRA = {
+						NOT = {
+							OR = {
+								exists = yes
+								is_puppet_of = BEL
+							}
+						}
+					}
+					has_war_with = FRA
+				}
+			}
+
+			modifier = {
+				navy_capital_ship_defence_factor = 0.075
+				navy_capital_ship_attack_factor = 0.05
+				navy_submarine_defence_factor = 0.075
+				navy_submarine_attack_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = FRA
+
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+		}
+
+		BEL_idea_case_blue_peace = {
+			name = BEL_idea_case_blue
+
+			picture = tbd
+
+			available = {
+				FRA = {
+					exists = yes
+				}
+			}
+
+			targeted_modifier = {
+				tag = FRA
+
+				trade_cost_for_target_factor = -0.75
+				opinion_gain_monthly = 0.25
+			}
+		}
+
+		BEL_idea_case_blue_war = {
+			name = BEL_idea_case_blue
+
+			picture = tbd
+
+			modifier = {
+				navy_capital_ship_defence_factor = 0.15
+				navy_capital_ship_attack_factor = 0.075
+				navy_submarine_defence_factor = 0.15
+				navy_submarine_attack_factor = 0.075
+				air_defence_factor = 0.25
+				air_attack_factor = 0.175
+			}
+
+			targeted_modifier = {
+				tag = FRA
+
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.05
+			}
+		}
+
+		BEL_idea_practiced_landings = {
+			name = BEL_idea_practiced_landings
+
+			picture = tbd
+
+			modifier = {
+				naval_invasion_prep_speed = 0.25
+				naval_invasion_capacity = 5
+			}
+		}
+
+		BEL_idea_air_exercises = {
+			name = BEL_idea_air_exercises
+
+			picture = tbd
+
+			modifier = {
+				air_accidents = -0.25
+				air_agility_factor = 0.25
+				air_superiority_efficiency = 0.5
+			}
+		}
+
+		BEL_idea_tomboy_antagonization = {
+			name = BEL_idea_tomboy_antagonization
+
+			picture = tbd
+
+			targeted_modifier = {
+				tag = BEL
+
+				opinion_gain_monthly = -2.5
+				trade_opinion_factor = -0.75
+			}
+		}
+
+		BEL_idea_BEL_HOL_industrial_cooperation = {
+			name = BEL_idea_BEL_HOL_industrial_cooperation
+
+			picture = tbd
+
+			available = {
+				BEL = {
+					exists = yes
+					NOT = {
+						has_war_with = HOL
+						is_embargoed_by = HOL
+						is_embargoing = HOL
+					}
+				}
+				HOL = {
+					exists = yes
+					NOT = {
+						has_war_with = BEL
+						is_embargoed_by = BEL
+						is_embargoing = BEL
+					}
+				}
+			}
+
+			modifier = {
+				research_speed_factor = 0.025
+				production_speed_buildings_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		BEL_idea_BEL_LUX_industrial_cooperation = {
+			name = BEL_idea_BEL_LUX_industrial_cooperation
+
+			picture = tbd
+
+			available = {
+				BEL = {
+					exists = yes
+					NOT = {
+						has_war_with = HOL
+						is_embargoed_by = HOL
+						is_embargoing = HOL
+					}
+				}
+				LUX = {
+					exists = yes
+					NOT = {
+						has_war_with = BEL
+						is_embargoed_by = BEL
+						is_embargoing = BEL
+					}
+				}
+			}
+
+			modifier = {
+				research_speed_factor = 0.025
+				production_speed_buildings_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		BEL_idea_homeland_department = {
+			name = BEL_idea_homeland_department
+
+			picture = tbd
+
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				consumer_goods_factor = -0.1
+				army_attack_factor = -0.2
+				army_defence_factor = 0.1
+				ai_focus_peaceful_factor = 0.5
+			}
+		}
+
+		BEL_idea_full_isolation = {
+			name = BEL_idea_full_isolation
+
+			picture = tbd
+
+			modifier = {
+				monthly_population = 0.5
+				send_volunteers_tension = 1
+				guarantee_tension = 1
+				lend_lease_tension = 1
+				production_speed_infrastructure_factor = 1.25
+				production_speed_industrial_complex_factor = 1.25
+			}
+		}
+
+		BEL_idea_imperialism = {
+			name = BEL_idea_imperialism
+
+			picture = tbd
+
+			modifier = {
+				war_support_factor = 0.05
+				justify_war_goal_time = -0.2
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_naval_base_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				state_production_speed_bunker_factor = -0.5
+				production_speed_coastal_bunker_factor = -0.45
+			}
+		}
+
+		BEL_idea_homefront_attack_plans = {
+			name = BEL_idea_homefront_attack_plans
+
+			picture = tbd
+
+			available = {
+				OR = {
+					HOL = {
+						exists = yes
+						NOT = {
+							is_puppet_of = BEL
+							is_in_faction_with = BEL
+						}
+					}
+					LUX = {
+						exists = yes
+						NOT = {
+							is_puppet_of = BEL
+							is_in_faction_with = BEL
+						}
+					}
+				}
+			}
+
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.125
+			}
+			
+			targeted_modifier = {
+				tag = LUX
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.125
+			}
+		}
+
+		BEL_idea_extra_recruits = {
+			name = BEL_idea_extra_recruits
+
+			picture = tbd
+
+			modifier = {
+				weekly_manpower = 1250
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_start_efficiency_factor = -0.15
+			}
+		}
+
+		BEL_idea_Merlin_Prismriver = {
+			name = BEL_idea_Merlin_Prismriver
+
+			picture = tbd
+
+			modifier = {
+				stability_weekly_factor = 0.05
+				war_support_weekly_factor = 0.025
+				army_org_regain = 0.05
+				army_morale_factor = 0.075
+				political_power_gain = -0.25
+			}
+		}
+
+		BEL_idea_Prismriver_Ensemble = {
+			name = BEL_idea_Prismriver_Ensemble
+
+			picture = tbd
+
+			modifier = {
+				stability_weekly_factor = 0.1
+				war_support_weekly_factor = 0.05
+				army_org_regain = 0.075
+				army_morale_factor = 0.1
+				political_power_gain = -0.5
+				monthly_population = 0.05
+			}
+		}
+
+		BEL_idea_navy_sabotaged = {
+			name = BEL_idea_navy_sabotaged
+
+			picture = tbd
+
+			modifier = {
+				navy_org_factor = -0.5
+				navy_capital_ship_attack_factor = -0.25
+				navy_submarine_attack_factor = -0.25
+				navy_capital_ship_defence_factor = -0.25
+				navy_submarine_defence_factor = -0.25
+				naval_coordination = -0.25
+			}
+		}
+
+		BEL_idea_assisting_luxembourg_food_industries_sender = {
+			name = BEL_idea_assisting_luxembourg_food_industries_sender
+
+			picture = tbd
+
+			available = {
+				LUX = {
+					exists = yes
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+
+		BEL_idea_assisting_luxembourg_food_industries_receiver = {
+			name = BEL_idea_assisting_luxembourg_food_industries_receiver
+
+			picture = tbd
+
+			available = {
+				LUX = {
+					exists = yes
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				stability_weekly_factor = 0.001
+			}
+		}
+
+		BEL_idea_aiding_dutch_tomboys_sender = {
+			name = BEL_idea_aiding_dutch_tomboys_sender
+
+			picture = tbd
+
+			available = {
+				HOL = {
+					exists = yes
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = 0.05 # Positive because we're helping fellow Tomboys!
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+
+		BEL_idea_aiding_dutch_tomboys_receiver = {
+			name = BEL_idea_aiding_dutch_tomboys_receiver
+
+			picture = tbd
+
+			available = {
+				HOL = {
+					exists = yes
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.25
+				political_power_factor = -0.4
+				stability_weekly_factor = -0.001
+				drift_defence_factor = -0.15
+			}
+		}
+
+		BEL_idea_benelux_surprise_attack = {
+			name = BEL_idea_benelux_surprise_attack
+
+			picture = tbd
+
+			available = {
+				OR = {
+					HOL = {
+						exists = yes
+						NOT = {
+							has_war_with = BEL
+							is_puppet_of = BEL
+							is_ally_with = BEL
+						}
+					}
+					LUX = {
+						exists = yes
+						NOT = {
+							has_war_with = BEL
+							is_puppet_of = BEL
+							is_ally_with = BEL
+						}
+					}
+				}
+			}
+
+			modifier = {
+				army_speed_factor = 0.1
+				naval_speed_factor = 0.05
+				air_maximum_speed_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = HOL
+
+				army_speed_factor = -0.1
+				naval_speed_factor = -0.05
+				air_maximum_speed_factor = -0.1
+			}
+			
+			targeted_modifier = {
+				tag = LUX
+
+				army_speed_factor = -0.1
+				naval_speed_factor = -0.05
+				air_maximum_speed_factor = -0.1
+			}
+		}
+
+		BEL_idea_czechia_companies_fleeing = {
+			name = BEL_idea_czechia_companies_fleeing
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				production_factory_start_efficiency_factor = -0.5
+				production_speed_buildings_factor = -0.25
+				supply_factor = -0.25
+				army_org_regain = -0.25
+				army_org_factor = -0.25
+				navy_org_factor = -0.25
+				air_fuel_consumption_factor = 0.25
+			}
+		}
+
+		BEL_idea_czechia_slovak_resistance = {
+			name = BEL_idea_czechia_slovak_resistance
+
+			picture = tbd
+
+			modifier = {
+				army_org_regain = -0.1
+				production_speed_buildings_factor = -0.3
+				production_speed_industrial_complex_factor = -0.3
+				stability_weekly_factor = -0.005
+			}
+		}
+
+		BEL_idea_czechia_economic_assistance_cze = {
+			name = BEL_idea_czechia_economic_assistance
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.2
+			}
+		}
+
+		BEL_idea_czechia_economic_assistance_bel = {
+			name = BEL_idea_czechia_economic_assistance
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+	}
+
+	tank_manufacturer = {
+		
+		BEL_Kuromorimine = {
+
+			name = BEL_Kuromorimine
+
+			allowed = {
+				always = yes
+				original_tag = BEL
+			}
+
+			picture = BEL_kuromorimine
+
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.15
+				research_speed_factor = 0.025
+			}
+
+		}
+	}
+
+	aircraft_manufacturer = {
+		
+		BEL_mage_battalion = {
+
+			name = BEL_Mage_Battalion
+
+			allowed = {
+				always = yes
+				original_tag = BEL
+			}
+
+			picture = BEL_battalion
+
+			modifier = {
+				air_accidents = -0.05
+				air_agility_factor = 0.25
+				air_attack_factor = 0.3
+			}
+
+		}
+	}
+
+	naval_manufacturer = {
+		
+		BEL_iron_blood = {
+
+			name = BEL_Iron_Blood
+
+			allowed = {
+				always = yes
+				original_tag = BEL
+			}
+
+			picture = BEL_iron_blood
+
+			modifier = {
+				navy_org_factor = 0.1
+				navy_capital_ship_attack_factor = 0.25
+				navy_submarine_attack_factor = 0.3
+			}
+
+		}
+	}
+
+	industrial_concern = {
+
+		BEL_test = {
+			name = BEL_test
+
+			allowed = {
+				always = yes
+				original_tag = BEL
+			}
+
+			research_bonus = {
+				industry = 0.1
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {}
+		}
+
+		BEL_test2 = {
+			name = BEL_test2
+
+			allowed = {
+				always = yes
+				original_tag = BEL
+			}
+
+			research_bonus = {
+				electronics = 0.1
+			}
+
+			traits = { electronics_developer }
+
+			modifier = {}
+		}
+	}
+
+
+}

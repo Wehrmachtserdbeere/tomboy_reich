@@ -1,0 +1,114 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_BEL_Leader_Lalatina"
+        texturefile = "gfx/leaders/BEL/lalatina_darkness.dds"
+    }
+
+    spriteType = {
+        name = "GFX_BEL_Leader_Tomboy_Council"
+        texturefile = "gfx/leaders/BEL/tomboy_council.dds"
+    }
+
+    spriteType = {
+        name = "GFX_BEL_Leader_Casca"
+        texturefile = "gfx/leaders/BEL/casca.dds"
+    }
+
+    spriteType = {
+        name = "GFX_BEL_Leader_Ryuko"
+        texturefile = "gfx/leaders/BEL/ryuko.dds"
+    }
+
+    spriteType = {
+        name = "GFX_BEL_Leader_Terror"
+        texturefile = "gfx/leaders/BEL/terror_council.dds"
+    }
+
+    spriteType = {
+        name = "GFX_BEL_Adolf_Hitler"
+        texturefile = "gfx/leaders/BEL/adolf_hitler.dds"
+    }
+
+    spriteType = {
+        name = "GFX_BEL_Adolf_Hitler_small"
+        texturefile = "gfx/leaders/BEL/small/adolf_hitler_small.dds"
+    }
+    spriteType = {
+        name = "GFX_GER_Van_Darkholme"
+        textureFile = "gfx/leaders/GER/van_darkholme.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_Moon_Man"
+        textureFile = "gfx/leaders/BEL/moonman.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_Regency"
+        textureFile = "gfx/leaders/BEL/regency_1.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_Wilhelm_III"
+        textureFile = "gfx/leaders/BEL/wilhelm_iii.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_Wilhelm_II"
+        textureFile = "gfx/leaders/BEL/wilhelm_ii.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_Victoria"
+        textureFile = "gfx/leaders/BEL/victoria.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_Rupprecht"
+        textureFile = "gfx/leaders/BEL/rupprecht.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_Astolfo"
+        textureFile = "gfx/leaders/BEL/astolfo.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_portrait_katyusha"
+        textureFile = "gfx/leaders/BEL/katyusha.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_portrait_katyusha_small"
+        textureFile = "gfx/interface/ideas/small_katyusha.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_portrait_yor"
+        textureFile = "gfx/leaders/BEL/yor.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_portrait_yor_small"
+        textureFile = "gfx/interface/ideas/small_yor.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_portrait_mrbond"
+        textureFile = "gfx/leaders/BEL/mrbond.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_johnny_rebel"
+        textureFile = "gfx/leaders/BEL/johnnyrebel.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_natsuki"
+        textureFile = "gfx/leaders/BEL/natsuki.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_sillycat"
+        textureFile = "gfx/leaders/BEL/sillycat.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_dirlewanger"
+        textureFile = "gfx/leaders/BEL/dirlewanger.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_mengele"
+        textureFile = "gfx/leaders/BEL/mengele.dds"
+    }
+    spriteType = {
+        name = "GFX_BEL_wasteland"
+        textureFile = "gfx/leaders/BEL/wasteland.dds"
+    }
+
+}

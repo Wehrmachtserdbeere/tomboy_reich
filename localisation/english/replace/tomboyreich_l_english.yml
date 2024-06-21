@@ -1,0 +1,545 @@
+﻿l_english:
+    BEL_fascism: "Reich of Tomboys"
+    BEL_fascism_DEF: "the Reich of Tomboys"
+    BEL_fascism_ADJ: "Tomboy"
+    BEL_neutrality: "Tomboy Kingdom"
+    BEL_neutrality_DEF: "the Tomboy Kingdom"
+    BEL_neutrality_ADJ: "Tomboy"
+    BEL_communism: "Anarchist Commune of Tomboys"
+    BEL_communism_DEF: "the Anarchist Commune of Tomboys"
+    BEL_communism_ADJ: "Tomboy"
+    BEL_democratic: "Republic of Tomboys"
+    BEL_democratic_DEF: "the Republic of Tomboys"
+    BEL_democratic_ADJ: "Tomboy"
+    BEL_ADJ: "Tomboy"
+    BEL_start_tech_bonus: "Start Tech Bonus"
+
+    GER_HRE_neutrality: "Holy Tomboy Empire"
+    GER_HRE_neutrality_DEF: "the Holy Tomboy Empire"
+    GER_HRE_neutrality_ADJ: "Holy Tomboy"
+    GER_HRE_communism: "Räterepublik Deutsch-Tomboy"
+    GER_HRE_communism_DEF: "Räterepublik der Deutsch-Tomboyischen Nation"
+    GER_HRE_communism_ADJ: "Holy Tomboy"
+    GER_HRE_fascism: "Holy Tomboy Reich"
+    GER_HRE_fascism_DEF: "Heiliges Tomboyisches Reich"
+    GER_HRE_fascism_ADJ: "Holy Tomboy"
+    GER_HRE_democratic: "Holy Tomboy Republic"
+    GER_HRE_democratic_DEF: "Bundesrepublik Deutsch-Tomboyischer Nation"
+    GER_HRE_democratic_ADJ: "Holy Tomboy"
+
+    BAY_FEM_neutrality: "Femboyvaria"
+    BAY_FEM_DEF: "Subdom of Femboyvaria"
+    BAY_FEM_ADJ: "Femboyvarian"
+    BAY_FEM_fascism: "Femboyvarian Reich"
+    BAY_FEM_fascism_DEF: "the Reich of Femboyvaria"
+    BAY_FEM_fascism_ADJ: "Femboyvarian"
+    BAY_FEM_communism: "Femboyvarian Syndicate"
+    BAY_FEM_communism_DEF: "United Syndicates of Femboyvaria"
+    BAY_FEM_communism_ADJ: "Femboyvarian"
+    BAY_FEM_democratic: "Femboyvarian Republic"
+    BAY_FEM_democratic_DEF: "Republic of Femboyvaria"
+    BAY_FEM_democratic_ADJ: "Femboyvarian"
+    BAY_FEM_terror: "Pink Sun"
+    BAY_FEM_terror_DEF: "the Pink Sun"
+    BAY_FEM_terror_ADJ: "Femboyvarian"
+
+    BEL_TBR_fascism: "Tomboy Reich"
+    BEL_TBR_fascism_DEF: "the Tomboy Reich"
+    BEL_TBR_fascism_ADJ: "Tomboy"
+    BEL_TBR_neutrality: "Tomboy Empire"
+    BEL_TBR_neutrality_DEF: "the Tomboy Empire"
+    BEL_TBR_neutrality_ADJ: "Tomboy"
+    BEL_TBR_communism: "Union of Tomboy People's Republics"
+    BEL_TBR_communism_DEF: "the Union of Tomboy People's Republics"
+    BEL_TBR_communism_ADJ: "Tomboy"
+    BEL_TBR_democratic: "Tomboy Republic"
+    BEL_TBR_democratic_DEF: "the Tomboy Republic"
+    BEL_TBR_democratic_ADJ: "Tomboy"
+    BEL_TBR_terror: "Terror Reich"
+    BEL_TBR_terror_DEF: "the Terror Reich"
+    BEL_TBR_terror_ADJ: "Terrorist"
+
+    BEL_EUR_fascism: "European Tomboy Reich"
+    BEL_EUR_fascism_DEF: "the Reich of European Tomboys"
+    BEL_EUR_fascism_ADJ: "Tomboy"
+    BEL_EUR_neutrality: "European Tomboy Empire"
+    BEL_EUR_neutrality_DEF: "European Empire of Tomboys"
+    BEL_EUR_neutrality_ADJ: "Tomboy"
+    BEL_EUR_communism: "Tomboy Communes"
+    BEL_EUR_communism_DEF: "Union of European Tomboy Communes"
+    BEL_EUR_communism_ADJ: "Tomboy"
+    BEL_EUR_democratic: "United European Tomboy States"
+    BEL_EUR_democratic_DEF: "United States of European Tomboys"
+    BEL_EUR_democratic_ADJ: "Tomboy"
+    BEL_EUR_terror: "European Terrorcracy"
+    BEL_EUR_terror_DEF: "Pan-European Extremist Terrorcary"
+    BEL_EUR_terror_ADJ: "Terrorist"
+
+    BEL_OWG_fascism: "Tomboy World Reich"
+    BEL_OWG_fascism_DEF: "the Tomboy World Reich"
+    BEL_OWG_fascism_ADJ: "Tomboy"
+    BEL_OWG_neutrality: "Global Tomboy Imperium"
+    BEL_OWG_neutrality_DEF: "the Global Tomboy Imperium"
+    BEL_OWG_neutrality_ADJ: "Imperial Tomboy"
+    BEL_OWG_communism: "United Tomboy Communes of Earth"
+    BEL_OWG_communism_DEF: "the Union of Tomboy Communes of all Earth"
+    BEL_OWG_communism_ADJ: "Tomboy"
+    BEL_OWG_democratic: "United Tomboy World Republic"
+    BEL_OWG_democratic_DEF: "the United Tomboy World Republic"
+    BEL_OWG_democratic_ADJ: "Tomboy"
+    BEL_OWG_terror: "The Eclipse"
+    BEL_OWG_terror_DEF: "the Eclipse"
+    BEL_OWG_terror_ADJ: "Ecliptic"
+
+    CUN_fascism: "L'empire du Cunny"
+    CUN_fascism_DEF: "the L'empire du Cunny"
+    CUN_fascism_ADJ: "Cunny"
+    CUN_neutrality: "Loli Empire"
+    CUN_neutrality_DEF: "the Loli Empire"
+    CUN_neutrality_ADJ: "Loli"
+    CUN_communism: "Cunny Chambers"
+    CUN_communism_DEF: "the Cunny Chambers"
+    CUN_communism_ADJ: "Cunny"
+    CUN_democratic: "Loli Republic"
+    CUN_democratic_DEF: "the Loli Republic"
+    CUN_democratic_ADJ: "Loli"
+    CUN_terror: "Crying Terror"
+    CUN_terror_DEF: "the Crying Terror"
+    CUN_terror_ADJ: "Crying"
+
+    TBA_fascism: "Tomboy-African State"
+    TBA_fascism_DEF: "the Tomboy-African State"
+    TBA_fascism_ADJ: "Tomboy-African"
+    TBA_neutrality: "African Tomboy Administration"
+    TBA_neutrality_DEF: "the African Tomboy Colonial Administration"
+    TBA_neutrality_ADJ: "African-Tomboy"
+    TBA_communism: "African Communes"
+    TBA_communism_DEF: "the African Communes"
+    TBA_communism_ADJ: "African"
+    TBA_democratic: "Republic of Tomboy-Africa"
+    TBA_democratic_DEF: "the Republic of Tomboy-Africa"
+    TBA_democratic_ADJ: "Tomboy-African"
+    TBA_terror: "Atom Cult"
+    TBA_terror_DEF: "the Atom Cult"
+    TBA_terror_ADJ: "Atomic"
+
+    TBE_fascism: "New Jerusalem"
+    TBE_fascism_DEF: "the Empire of New Jerusalem"
+    TBE_fascism_ADJ: "New-Jerusalemite"
+    TBE_neutrality: "Tomboy Sultanate"
+    TBE_neutrality_DEF: "the Tomboy Sultanate"
+    TBE_neutrality_ADJ: "Tomboy"
+    TBE_communism: "Free Middle East"
+    TBE_communism_DEF: "the Free Middle Eastern Communes"
+    TBE_communism_ADJ: "Free-Middle-Eastern"
+    TBE_democratic: "Middle Eastern Republic"
+    TBE_democratic_DEF: "the Middle Eastern Republic"
+    TBE_democratic_ADJ: "Middle-Eastern"
+    TBE_terror: "Eternal Crusaders"
+    TBE_terror_DEF: "the Eternal Crusaders"
+    TBE_terror_ADJ: "Eternal-Crusader"
+
+    TBN_fascism: "North American Reich"
+    TBN_fascism_DEF: "the North American Reich"
+    TBN_fascism_ADJ: "North-American"
+    TBN_neutrality: "Colony of North America"
+    TBN_neutrality_DEF: "the Colony of North America"
+    TBN_neutrality_ADJ: "North-American"
+    TBN_communism: "North-American Communes"
+    TBN_communism_DEF: "the Communes of North America"
+    TBN_communism_ADJ: "North-American"
+    TBN_democratic: "United Republics"
+    TBN_democratic_DEF: "the United Republics of Tomboy-America"
+    TBN_democratic_ADJ: "North-American"
+    TBN_terror: "Fascist Front"
+    TBN_terror_DEF: "the Fascist Front"
+    TBN_terror_ADJ: "Fascist"
+
+    TBO_fascism: "Australia"
+    TBO_fascism_DEF: "the Australian Empire"
+    TBO_fascism_ADJ: "Australian"
+    TBO_neutrality: "Colony of Oceania"
+    TBO_neutrality_DEF: "the Colony of Oceania"
+    TBO_neutrality_ADJ: "Oceanian"
+    TBO_communism: "People's Republic of Oceania"
+    TBO_communism_DEF: "the People's Republic of Oceania"
+    TBO_communism_ADJ: "Oceanian"
+    TBO_democratic: "Oceania"
+    TBO_democratic_DEF: "the Republic of Oceania"
+    TBO_democratic_ADJ: "Oceanian"
+    TBO_terror: "Oceania"
+    TBO_terror_DEF: "Oceania"
+    TBO_terror_ADJ: "Oceanian"
+
+    TBS_fascism: "Asian Empire"
+    TBS_fascism_DEF: "the Asian Empire"
+    TBS_fascism_ADJ: "Asian"
+    TBS_neutrality: "Colony of Asia"
+    TBS_neutrality_DEF: "the Colony of Asia1"
+    TBS_neutrality_ADJ: "Asian"
+    TBS_communism: "Communist Front"
+    TBS_communism_DEF: "the Asian-Communist Front"
+    TBS_communism_ADJ: "Asian-Communist"
+    TBS_democratic: "Asia"
+    TBS_democratic_DEF: "the Asian Republic"
+    TBS_democratic_ADJ: "Asian"
+    TBS_terror: "Never-Rising Sun"
+    TBS_terror_DEF: "the Never-Rising Sun"
+    TBS_terror_ADJ: "Never-Rising"
+
+    TBU_fascism: "New Germany"
+    TBU_fascism_DEF: "the New-German State"
+    TBU_fascism_ADJ: "New-German"
+    TBU_neutrality: "Colony of South America"
+    TBU_neutrality_DEF: "the Colony of South-America"
+    TBU_neutrality_ADJ: "South-American"
+    TBU_communism: "Latinx Communes"
+    TBU_communism_DEF: "the Latinx Communes"
+    TBU_communism_ADJ: "Latinx"
+    TBU_democratic: "South-American Republic"
+    TBU_democratic_DEF: "the South-American Republic"
+    TBU_democratic_ADJ: "South-American"
+    TBU_terror: "Neudeutschland"
+    TBU_terror_DEF: "the New-German Reich"
+    TBU_terror_ADJ: "New-German"
+
+    SLO_REB_fascism: "Slovak Nationalist Rebellion"
+    SLO_REB_fascism_DEF: "the Slovak Nationalist Rebellion"
+    SLO_REB_fascism_ADJ: "Slovakian"
+    SLO_REB_neutrality: "Slovakian Rebellion"
+    SLO_REB_neutrality_DEF: "the Slovakian Rebellion"
+    SLO_REB_neutrality_ADJ: "Slovakian"
+    SLO_REB_communism: "Slovak Revolt"
+    SLO_REB_communism_DEF: "the Slovak Revolt"
+    SLO_REB_communism_ADJ: "Slovak"
+    SLO_REB_democratic: "Slovak Autonomous Region"
+    SLO_REB_democratic_DEF: "the Slovak Autonomous Region"
+    SLO_REB_democratic_ADJ: "Slovak"
+    SLO_REB_terror: "Slovak Rebellion"
+    SLO_REB_terror_DEF: "the Slovak Rebellion"
+    SLO_REB_terror_ADJ: "Slovak"
+
+    BEL_moon_man: "Moon Man"
+    BEL_moon_man_desc: "Since ancient times, Aryans worshipped the eternal moon. Getting closer to the lunar body was seen as a symbol of progress and success in life. But since the mixture with lesser races, the moon has become less prominent and its importance reduced considerably.\nBecause of this, the eternal moon has taken a human form to rescue the Aryan people from their miserable state. His only goal is to cleanse the world and get rid of these lesser races and those that were not born into the right bloodline or didn't follow the divine path properly. The ultimate aim for every other being who had fallen away from grace would be nothing but annihilation. Those that weren't part of his cause must die forever, because they are just worthless slaves anyway."
+    eternal_moon: "The Eternal Moon"
+
+    BEL_mrbond: "Mr. Bond"
+    BEL_mrbond_desc: "Mr. Bond is a far-right musician and author who has gained prominence for his songs about the glory of the German Reich and the inferiority of all other nations and races. He has a large following among the youth, and his songs are often played at rallies and parties. His music consists of parodies of other well-known songs, and the lyrics are full of rage and vitriol. His songs are often about the need for a strong, militaristic nation, and the dangers of cultural pollution and race-mixing. He has a loyal fanbase, and his songs are often used as anthems by the far-right."
+    BEL_musician: "Musician"
+
+    BEL_johnny_rebel: "Johnny Rebel"
+    BEL_johnny_rebel_desc: "Johnny Rebel is a controversial and polarizing figure known for his involvement in a music genre that has sparked numerous debates. He gained notoriety for his songs, which have stirred strong emotions among listeners. Some view him as a symbol of rebellion, while others criticize him for promoting divisive and offensive content. His music has been the subject of scrutiny and discussions about freedom of expression and the impact of art on society. Regardless of opinions, Johnny Rebel's work has left a lasting impression on certain audiences, both for its artistic value and its contentious themes."
+
+    BEL_natsuki_leader: "Natsuki"
+    BEL_natsuki_leader_desc: "Natsuki is a member of the Literature Club and is known for her petite figure and short temper. She has pink hair and pink eyes, and is seen wearing a school uniform with a red ribbon. She likes to read and write poetry, but she also enjoys baking and reading manga.\n\nDespite her size, Natsuki is very strong, and she is often seen carrying heavy objects such as textbooks or large boxes of books. She is also known for her quick wit and sharp tongue, often playfully insulting her classmates or making sarcastic remarks.\n\nWhen not at school, Natsuki can be found at home baking cookies or cupcakes, or reading her favorite manga series. She became a terrorist icon after joining the Nationalist Front, and is currently the subject of an international manhunt. Her motivations are unknown, but it is speculated that she was recruited into the Front due to her love of literature and her strong opinions on current events. She's known as \"Cupcake\" within the organization.\n\nNatsuki is currently on the run, and the police have put out a warrant for her arrest. She is considered armed and dangerous. But now that she has joined the Tomboy Terrorists, the situation has become even more serious. She's a mastermind behind recent attacks and has been responsible for the deaths of many evil people.\n\nThe world is on high alert for her capture, and she now leads our country, with cupcakes and bombs."
+    BEL_cupcake: "Code name \"Cupcake\""
+
+    POL_dirlewanger: "Oskar Paul Dirlewanger"
+    POL_dirlewanger_desc: "Oskar Paul Dirlewanger is a German military officer and a controversial figure. Born on September 26, 1895, in Würzburg, Germany, he is known for his earlier military career and contributions during World War I. Dirlewanger has a background in engineering and has shown leadership skills during his time as a student. He fought on the Eastern Front during World War I and was later awarded the Iron Cross for his bravery.\n\nAfter the war, Dirlewanger remained active in various paramilitary organizations, aligning himself with nationalist and right-wing groups. He has shown a strong affinity for extreme nationalist ideologies, which gained him recognition among certain circles in Germany.\n\nThroughout the 1920s and into the 1930s, Dirlewanger continued to be involved in political and military activities, often aligning himself with fringe right-wing groups. He has held various positions within these organizations, showcasing his ability to command and lead. His military experience and fervent nationalist beliefs have made him a notable figure among certain circles in Germany, though his methods and associations have also sparked controversy."
+    BEL_the_devil: "The Devil"
+
+    POL_mengele: "Josef Rudolf Mengele"
+    POL_mengele_desc: "Josef Rudolf Mengele is a German physician and researcher, born on March 16, 1911. He grew up in Günzburg, Bavaria, and pursued his education in medicine at various universities, earning his doctorate in anthropology from the University of Munich in 1935.\n\nDuring his academic years, Mengele displayed a strong interest in genetics and the field of eugenics, which was a topic of significant discussion in Germany during that time. He published several papers on the hereditary aspects of physical traits and the significance of genetics in determining human characteristics. His work garnered attention within the scientific community.\n\nIn the late 1930s, Mengele continued his studies and became involved in medical research related to human genetics and racial hygiene. His academic pursuits were initially focused on understanding the impact of genetic factors on various diseases and the potential for controlled human breeding."
+    BEL_angel_of_death: "The Angel of Death"
+
+    POL_wasteland: "Wastelands"
+    POL_wasteland_desc: "The Wastelands, once known as Poland, stand as a grim testament to a bygone era of vibrant life and civilization. This once-thriving country has been reduced to a desolate and unforgiving landscape, where the remnants of a once-proud society now lay in ruins.\nAs one ventures into the Wastelands, they are greeted by a haunting silence, interrupted only by the occasional howling wind and the distant echoes of crumbling structures. The landscape is dominated by a bleak tableau of decaying cities, shattered infrastructure, and overgrown vegetation reclaiming its territory.\nAny signs of human habitation are now reduced to little more than dilapidated husks, where buildings that once teemed with activity now stand as hollow, crumbling shells. Rusting vehicles and remnants of a forgotten time are scattered like grotesque artifacts, testaments to a civilization that once was.\nLife in the Wastelands, as it struggles to persist, has been transformed into something feral and untamed. The few remaining organisms, whether mutated remnants of the past or new, hardy species, have evolved to adapt to this harsh, unforgiving environment. They are defined by their fierce determination to survive, often displaying aggression and territoriality as they vie for the scarce resources that the Wastelands begrudgingly offer.\nThe air is thick with an acrid scent, a blend of dust and decay that serves as a constant reminder of the world that once was. Toxic remnants, both natural and man-made, further threaten any attempts at reclaiming the land. The soil, once fertile, now lies barren and poisoned, unable to sustain the life it once nurtured.\nTravel through the Wastelands is perilous, fraught with danger at every turn. Those who dare to venture into this forsaken realm do so at their own peril, facing not only the physical challenges but also the haunting echoes of a once-thriving civilization. The boundaries of reality blur in this desolation, where time seems to have lost its meaning, and the past and present meld into a surreal tapestry of despair.\nIn the Wastelands, the remnants of Poland's vibrant history stand as silent witnesses to a time long past, a stark reminder of the fragility of human existence and the devastating toll of unchecked destruction. This land, once teeming with life, now serves as a stark cautionary tale for generations yet to come."
+    BEL_wasteland: "Wasteland"
+
+    BEL_loli: "Loli"
+    BEL_loli_desc: "This person is a Loli. As such she will not be taken seriously by her peers, and many belittle, ridicule, and shun her for her physical characteristics and her smaller appearance. In turn, she gives great bonuses to fertility in her people, and her cute demeanor increases morale and stability in her nation. No one knows if it is because of her, but her nation has the lowest levels of sterility, and the highest birthrates in the world, while her neighbors are sterile, and barely managing."
+
+    BEL_chuunibyou: "Chuunibyou"
+    BEL_chuunibyou_desc: "Those infected with a peculiar virus often called the \"Eighth-grader Syndrome\" usually give themselves silly nicknames such as \"Ultra God Emperor\" or \"Controller of the Heavens\", and tend to talk on how they will dominate the world, or destroy planets. Sometimes, this can also be just exaggerations made by the very angry, the lonely, or the idiotic, but their sheer confidence can convince the weak and meek to fight and believe in them."
+
+    BEL_monarcho_fascist_monarch: "Monarcho-Fascist"
+    BEL_monarcho_fascist_monarch_desc: "This ruler is a supporter of Monarcho-Fascism, which is a fascistic authoritarian government where a Monarchy rules above the fascist-controlled government, which then makes sure that fascism is dominant over the economy, the society and politics. The rulers usually encourage and facilitate a nationalistic ideology, often promoting a racial monolithic ethnic state, where foreigners are often not equal, and are often treated as second-rate citizens. The monarch will often have little to no real power, while in the hands of the fascist government, although this is not always the case."
+
+    BEL_monarcho_fascist_fash: "Monarcho-Fascist"
+    BEL_monarcho_fascist_fash_desc: "This ruler is a Fascist, who compromised with the Monarchists, and together with them, adopted Monarcho-Fascism, which is a fascistic authoritarian government where a Monarchy rules above the fascist-controlled government, which then makes sure that fascism is dominant over the economy, the society and politics. The rulers usually encourage and facilitate a nationalistic ideology, often promoting a racial monolithic ethnic state, where foreigners are often not equal, and are often treated as second-rate citizens. The monarch will often have little to no real power, while in the hands of the fascist government, although this is not always the case."
+
+    BEL_monarcho_fascist_neutral: "Monarcho-Fascist"
+    BEL_monarcho_fascist_neutral_desc: "This ruler is a convinced Monarcho-Fascist. They swear loyalty to neither monarchism or fascism alone, but the two united as a whole. Monarcho-Fascism is an ideology encompassing a fascistic authoritarian government where a Monarchy rules above the fascist-controlled government, which then makes sure that fascism is dominant over the economy, the society and politics. The rulers usually encourage and facilitate a nationalistic ideology, often promoting a racial monolithic ethnic state, where foreigners are often not equal, and are often treated as second-rate citizens. The monarch will often have little to no real power, while in the hands of the fascist government, although this is not always the case."
+
+    POLITICS_LALATINA_ALT: "Queen Lalatina Dustiness Ford"
+    POLITICS_LALATINA_NAME: "Lalatina Dustiness Ford"
+    POLITICS_LALATINA_DESC: "Dustiness Ford Lalatina, also known as \"Darkness\", is a young woman who, although often attacked, will never stay down, even when the situation seems hopeless."
+    POLITICS_COUNCIL_NAME: "Tomboy Council"
+    POLITICS_COUNCIL_DESC: "The Tomboy Council is a group of Tomboys that are united by the idea of a free and equal nation for the Tomboys of the world."
+    POLITICS_CASCA_NAME: "Casca"
+    POLITICS_CASCA_DESC: "Casca is a fierce fighter for righteousness and will never let down any of her people - She will let no one survive who wants the death of her or her people."
+    POLITICS_RYUKO_NAME: "Ryuko Matoi"
+    POLITICS_RYUKO_DESC: "Ryuko is a laid-back woman, who prefers a hands-off approach in politics, giving a lot of autonomy to the people of the nation, however she will assume power if the nation or the people are threatened."
+    POLITICS_TERROR_COUNCIL_NAME: "Terror Council"
+    POLITICS_TERROR_COUNCIL_DESC: "The Terror Council is a shadowy, clandestine group of businesswomen and politicians who control the Empire of Terror. They're so powerful that they don't even need to declare themselves—no one knows exactly what their motives are or how many members there are, but it is known that nobody wants to know what they will do."
+    BEL_terror_disorganised: "Disorganised Group"
+
+    BEL_divisions_tomboy_legion: "Tomboy Legion"
+
+    BEL_adolf_hitler_high_command: "Adolf Hitler"
+
+    GER_van_darkholme: "Van Darkholme"
+
+    BEL_GER_tomboy_monarchism_party: "Holy Tomboy Monarchy"
+    BEL_GER_tomboy_monarchism_party_long: "Party of the Holy Tomboy Monarchy"
+    BEL_HTR_regency_desc: "After a coup most likely started by the Tomboys to the West, the Holy Tomboy Empire is still a regency. Its ruler will have to be decided at one point, but for now, winning the war is more important."
+
+    POLITICS_REGENCY_NAME: "Regency"
+    POLITICS_REGENCY_DESC: "Without a ruler, this country is currently managed by ministers, if any are available, until a fitting ruler is found."
+
+    BEL_regency: "Regency"
+    BEL_regency_desc: "Because the monarch is a minor, absent, incapacitated or unable to discharge the powers and duties of the monarchy, or the throne is vacant and the new monarch has not yet been determined, there is a Regency Council in power."
+
+    GER_regency: "Regency"
+    GER_regency_desc: "Because the monarch is a minor, absent, incapacitated or unable to discharge the powers and duties of the monarchy, or the throne is vacant and the new monarch has not yet been determined, there is a Regency Council in power."
+
+    BEL_anti_tomboy: "Anti-Tomboy"
+    BEL_anti_tomboy_desc: "Anti-Tomboyism refers to the societal attitude or belief system that opposes and discourages girls or women from engaging in activities or displaying behaviors traditionally associated with boys or men. It perpetuates the notion that certain activities, interests, or clothing styles should be exclusive to one gender, reinforcing gender stereotypes and limiting individual expression. Anti-Tomboyism often pressures girls to conform to a more traditionally feminine image and may stigmatize those who do not adhere to these gender norms, inhibiting personal development based on individual interests and talents."
+    
+    BEL_femboy: "Femboy"
+    BEL_femboy_desc: "A \"Femboy\" is a term used to describe a male individual who embraces and expresses certain stereotypically feminine traits, styles, or behaviors while still identifying as male. These traits may include wearing clothing typically associated with females, adopting more delicate or graceful mannerisms, or expressing an interest in activities that are often considered feminine."
+
+    GER_BEL_wilhelm_ii: "Kaiser Wilhelm II."
+    GER_BEL_wilhelm_ii_desc: "Kaiser Wilhelm II was the last monarchs to wield power in Germany, and he remained so until his abdication on November 9, 1918. His reign began amid much promise but ended with failure, as war forced him and the other monarchs of Europe down a path that caused misery for everyone involved. After the exile to the Netherlands, he now again sits on the throne of the [GER.GetName]."
+    
+    GER_BEL_wilhelm_iii: "Kaiser Wilhelm III."
+    GER_BEL_wilhelm_iii_desc: "After the abdication of his father, Kaiser Wilhelm III always had ambitions of becoming the new Emperor. While he knew that if Hitler were to reinstate the Kaiser, he would choose his father over him, he still had high hopes. Now he rules over Germany as a puppet of [BEL.GetNameDef]."
+    
+    GER_BEL_victoria: "Kaiserin Viktoria"
+    GER_BEL_victoria_desc: "Kaiserin Viktoria was an unexpected choice of ruler, for the German royalty had always been ruled by men. Yet now she sits on the Throne of [GER_HRE.GetNameDef] and wears her crown proudly as the first Kaiserin of [GER_HRE.GetName]."
+
+    BEL_political_antidem_tt: "This Focus will bring you closer to the political §Gright§!."
+    BEL_political_dem_tt: "This Focus will bring you closer to the political §Rleft§!."
+
+    BEL_monarchism_prosecute_tt: "The §Omore popular§! the targeted ideology is, the §Rmore stability is lost§!."
+
+    BEL_lalatina_idea: "Lady Lalatina Dustiness Ford"
+    BEL_lalatina_idea_desc: "Lady Lalatina Dustiness Ford, born April 6th, is the current de-facto ruler of the Nation of Tomboys. However, unless the people vote for it, she will not have any meaningful power. But with all that, she still is a great motivator for the people."
+
+    BEL_controlled_commie_opposition: "Controlled Communist Opposition"
+    BEL_controlled_commie_opposition_desc: "Having infiltrated the Communists, we can ensure the Communists never try anything that may threaten our power."
+
+    BEL_Kuromorimine: "Kuromorimine"
+    BEL_Kuromorimine_desc: "Kuromorimine was a German Tank Designer that moved over to our country, because they were continuously harassed by the German Government for being woman-only."
+
+    BEL_Iron_Blood: "Iron Blood"
+    BEL_Iron_Blood_desc: "Originally an elite-branch of the German Kriegsmarine, they were known as almost unbeatable. However, because of its woman-only working environment, they were dismantled. Their leftovers fled to our country for safety."
+
+    BEL_Mage_Battalion: "Imperial 203rd Aerial Mage Battalion"
+    BEL_Mage_Battalion_desc: "Originally from the First World War, the Imperial 203rd Aerial Mage Battalion is well known and feared for their commander, who finishes every mission given with heartless accuracy. Expelled after Rudolf Hess protested their commander, they took refuge in our land and now seek revenge, and by extend will help us achieve our goals."
+
+    BEL_controlled_dem_opposition: "Controlled Democratic Opposition"
+    BEL_controlled_dem_opposition_desc: "Having infiltrated the Democrats, we can ensure the Democrats never try anything that may threaten our power."
+
+    BEL_schools_built: "Schools Built"
+    BEL_schools_built_desc: "Having built schools, we can be sure to further educate our population."
+
+    BEL_workers_protected: "Workers Protected"
+    BEL_workers_protected_desc: "Workers have been granted more rights, but in return the efficiency of factories is temporarily lowered."
+
+    BEL_disorganised_nation: "Disorganised Government"
+    BEL_disorganised_nation_desc: "Our Nation is still new and thus disorganised. We need some time to establish proper organisation."
+
+    BEL_liege_massacre: "The Liége Massacre"
+    BEL_liege_massacre_desc: "The Tomboy People are disgusted by the massacre that happened after hostile forces captured Liége and did unspeakable evil to the people of the city.\n\n§RWe will take no step back!"
+
+    BEL_genociding_non_tomboys: "Genociding non-tomboys"
+    BEL_genociding_non_tomboys_desc: "This Nation is currently genociding non-tomboys."
+
+    BEL_transforming_ships: "Transforming Ships"
+    BEL_transforming_ships_desc: "This Nation has invented waifus that can transform into ships for battle."
+
+    BEL_occupation_policy_good: "Benevolent Occupation Policy"
+    BEL_occupation_policy_good_desc: "We will strive to be as kind to the people as possible. We will allow freedoms and rights to the conquered people, and try and help them. We will not tax any more than we do otherwise, nor will we confiscate their wealth. We grant everyone we conquered freedom to practice their religion, and will not interfere with their culture either. We will try and be as kind as possible, in order to keep them from rebelling."
+
+    BEL_occupation_policy_evil: "Malevolent Occupation Policy"
+    BEL_occupation_policy_evil_desc: "We will impose our will over the conquered peoples with a tight fist. We will not allow them any freedom or rights. We will take most of their money, and we will limit their freedom to move around, or do anything else. We will also force them to speak, write, and read our language, and will also change their culture to be closer to ours. We will make them afraid to even think about rebelling, and we will crush anyone who tries to do so."
+
+    BEL_army_preparation: "Preparing the Army"
+    BEL_army_preparation_desc: "We are beginning the rearmament and mobilization of our army, preparing to become a power on the world stage. Because of this singular focus, other sectors of the armed forces, notably the naval and air forces are suffering."
+
+    BEL_idea_tomboy_overlordship: "[BEL.GetAdjective] Overlordship"
+    BEL_idea_tomboy_overlordship_desc: "Being the subject of [BEL.GetNameDef], we enjoy a lot of good will and stability, mainly through their industry, skill, and sheer benevolence."
+
+    BEL_idea_celebrating_britannia: "Britannia"
+    BEL_idea_celebrating_britannia_desc: "Britannia, the personification of Britain. The things she personifies, is just the very nature of her island home. Her will is stronger than steel, and she rules the waves with an iron first. She has crushed almost all her enemies in combat, and nothing stands in the way of her glorious victory. She stands for naval supremacy, and her eternal naval conquest is what defines Britannia.\n\n§BRule Britannia!§!"
+
+    BEL_idea_conquering_britannia: "Conquering Britannia"
+    BEL_idea_conquering_britannia_desc: "Our troops have been inspired to fight hard to take over the very symbol of [ENG.GetNameDef]'s will. In the spirit of defeating Britannia, the army, navy, and airforce have all come together, working as one."
+
+    BEL_defense_focus: "§OStrict Defense Focus§!"
+    BEL_defense_focus_desc: "The military and most industry currently focus strictly on defense. Almost all construction has been dedicated to building fortifications and defensive installations, such as gun emplacements, coastal defenses, etc. Because of this, almost all other industry has halted, and the nation is slowing down. Fortunately, most [BEL.GetAdjective]s are willing to work for the defense, since the alternative is conquest by our neighbors, who are war hungry."
+
+    BEL_idea_war_with_france_defensive: "Defensive War with [FRA.GetName]"
+    BEL_idea_war_with_france_defensive_desc: "The military and most infrastructure remains devoted strictly to defense, and our economy, while severely stunted, serves us well in this. When the enemy attacks, they are at a great disadvantage, while we can annihilate them with minimal losses. Because of this, even if our armed forces are not strong enough to conquer their army, they are strong enough to defend from conquest, in turn making the [FRA.GetAdjective] suffer heavy the losses, making later conquest easier."
+
+    BEL_idea_focus_on_offense: "§OStrict Offense Focus§!"
+    BEL_idea_focus_on_offense_desc: "With most industry and the majority of our armed forces focusing on the offense, we can cause quite a large amount of damage to the enemies military and war capacity. Because we are waging wars, a large amount of our population and most industry, as well as our military is devoted to it, and most people are not that focused on the defensive, meaning more defenses may not be built or kept well, leading to them being weaker in defensive battles."
+
+    BEL_idea_war_with_france_offensive: "Offensive War with [FRA.GetName]"
+    BEL_idea_war_with_france_offensive_desc: "We've entered an offensive war against [FRA.GetName], and as such we have greatly invested in the offense, leaving the defense weak and under-prepared. As such, we have to attack and attack, because otherwise, there would be nothing stopping the enemy from marching into our undefended territories."
+
+    BEL_idea_celebrating_marianne: "Marianne"
+    BEL_idea_celebrating_marianne_desc: "Marianne, the personification of France. She personifies the culture and grandeur of French and Frankish civilization, standing proudly behind their achievements and superiority in certain fields, such as food, fashion, and art. In times of crisis she is reliable, and rarely flinches and shies away, but instead comes forward and works her hardest."
+
+    BEL_idea_assess_germany: "Assessing Germany"
+    BEL_idea_assess_germany_desc: "We are focusing more on researching the threat known as [GER.GetNameDef], and seeing just what their weapons and military capabilities are. Due to our previous irrelevance, they have not bothered us that much, but they may pay attention now, and thus we need to keep a strict eye on them."
+
+    BEL_idea_rekindle_monarchist_sentiments: "Rekindled Monarchist Sentiments"
+    BEL_idea_rekindle_monarchist_sentiments_desc: "A foreign nation has started a pro-monarchist campaign within our borders to great success. Until these are rooted out and crushed, we'll see monarchism support rising rapidly."
+
+    BEL_idea_radicalized_german_tomboys: "Radicalized [BEL.GetAdjective]s"
+    BEL_idea_radicalized_german_tomboys_desc: "A foreign nation has gained such good insight with the [BEL.GetAdjective]s within our nation, that many have decided that anti-[BEL.GetAdjective]ism must end, and [BEL.GetAdjective]s have a right to not only tolerance, but also acceptance and support. They're causing civil unrest, and actively sabotage our industry."
+
+    BEL_idea_celebrating_germania: "Germania"
+    BEL_idea_celebrating_germania_desc: "Germania, the personification of Germany. She stands for her military might and steadfast resolve, ready to defend and to fight. She loves her people and allies, and will not hesitate to help, not just through her military power, but also in other, more civilian ways. She is hard working and devoted, and will do anything it takes. Her devotion and determination to see the prosperity and welfare of her people, is second to none."
+
+    BEL_german_invasion_plan: "German Invasion Plan"
+    BEL_german_invasion_plan_desc: "Thanks to the latest intelligence, we have a very good plan to attack and conquer Germany. Although limited by time, we have around a year of this bonus available for the attack."
+
+    BEL_underground_defense: "Underground Defense"
+    BEL_underground_defense_desc: "Fighting against a large country is no small task, and we might have to fight on home territory. As such, having underground defenses that can hardly be found can make a huge difference. Thanks to our deep knowledge of our country, we can make effective use of the land, and give ourselves an edge that will tip the scales our way, should we have to fight on our home land."
+
+    BEL_diverted_funds_to_army: "Diverted Funds to Army"
+    BEL_diverted_funds_to_army_desc: "We have diverted a considerable amount of money from other areas of the industry, like the naval, civilan, and air, to give a major boost to the army. With this, the armed forces can expect an improved, better equipped and more prepared, effective fighting force, while we suffer some problems with these other sectors. However, considering the imminent invasion of Germany, the losses should be worth it."
+
+    BEL_funding_nationalists: "Funding Nationalists"
+    BEL_funding_nationalists_desc: "We're currently funding nationalists in a foreign country to further our own interests. This costs us some administrative power, but destabilizes the enemy nation, weakening and eventually giving rise to rebel factions that we can steer in the direction of our convenience."
+
+    BEL_idea_euronia: "Euronia"
+    BEL_idea_euronia_desc: "The collective personification of Germania, Marianne, and Britannia, together Euronia stands for European supremacy. No matter the means or methods, Euronia will never show mercy, and will bring every strength possible in order to secure it. Europe can sleep soundly, because she stands to defend it, and make it a grand, golden age. As long as she, the shield, holds, no foreign invader will ever harm their fragile bodies. And if her shield cracks, her sword will draw blood, until no one who can harm Europe is left alive.\n§YAve Euronia!§!"
+
+    BEL_GER_nationalist_trouble: "Nationalist Trouble"
+    BEL_GER_nationalist_trouble_desc: "Nationalists are currently running amuck, and causing trouble within our country. They're blaming us, personally, for every loss and problem. They demand their own states and countries, and are acting up, to the point of rioting and fighting."
+
+    BEL_idea_destabilizing_democrats: "Destabilized Democrats"
+    BEL_idea_destabilizing_democrats_desc: "This nation's most prominent political group has lost their power and relevance as a political organization. Without this to uplift and inspire them, their numbers shrink as they find no reason to stick with them, while at the same time, more and more citizens leave for other countries. Before long, the remaining members will leave, and they'll become irrelevant, losing the final scraps of their power, until nothing remains. Within time, the groups will disband."
+
+    BEL_idea_anti_communist_actions: "Anti-Communist Actions"
+    BEL_idea_anti_communist_actions_desc: "Groups of activists and vigilantes are springing up, dedicated to stamping out the communist movement. This includes activists, but also extremists, terrorist, and even wannabes, all working together to purge and root out these troublesome ideals and beliefs, leading to the public abandoning communist sympathies."
+
+    BEL_idea_non_intervention: "Non-Intervention Focus"
+    BEL_idea_non_intervention_desc: "This nation has sworn off any attempt at aggression or expansion, and has thus placed a major focus on not just being isolationist, but in being specifically non-interventionist. Because of this, they don't wage war against anyone unless they or their allies are attacked.\n§YWill invalidate in the case of an offensive war§!!"
+
+    BEL_idea_defense_department: "Defense Department"
+    BEL_idea_defense_department_desc: "Our answer to the military lacking of non-interventionism, and lack of conflict in general. This department makes sure the armed forces are sufficient enough to defend our people and lands, should the time come, and to resist, should aggression be turned towards us."
+
+    BEL_idea_case_black: "Case Black"
+
+    BEL_idea_case_blue: "Case Blue"
+
+    BEL_idea_practiced_landings: "Practiced landings"
+
+    BEL_idea_air_exercises: "Air Exercises"
+
+    BEL_idea_tomboy_antagonization: "[BEL.GetAdjective] Antagonization"
+
+    BEL_idea_BEL_HOL_industrial_cooperation: "§PT§!§WD§!§DI§! - §PTomboy§!-§WDutch§! §DIndustry§!"
+    BEL_idea_BEL_HOL_industrial_cooperation_desc: "The [BEL.GetAdjective]-[HOL.GetAdjective] Industrial Co-Operation, also known as TDI (Tomboy-Dutch Industry), is a bilateral initiative aimed at fostering economic collaboration between [BEL.GetNameDef] and [HOL.GetNameDef]. Established through a series of agreements and treaties, TDI serves as a platform for the two neighboring nations to coordinate their industrial activities, share resources, and promote mutual economic growth.\nTDI operates across various sectors of the economy, including manufacturing, technology, agriculture, and energy. Through joint ventures, partnerships, and strategic alliances, companies from both countries leverage each other's strengths and expertise to enhance their competitiveness in domestic and international markets.\nOne of the key objectives of TDI is to promote innovation and research & development activities. By pooling resources and expertise, [BEL.GetAdjective] and [HOL.GetAdjective] firms collaborate on cutting-edge projects, pioneering new technologies, and developing innovative solutions to address common challenges.\nThe cooperation facilitated by TDI extends beyond the corporate realm to include government agencies, research institutions, and academic organizations. Through forums, conferences, and working groups, stakeholders from both countries exchange knowledge, best practices, and regulatory insights, facilitating smoother cross-border operations and fostering a conducive business environment."
+
+    BEL_idea_BEL_LUX_industrial_cooperation: "§PT§!§WL§!§EI§! - §PTomboy§!-§WLuxembourg§! §EIndustry§!"
+    BEL_idea_BEL_LUX_industrial_cooperation_desc: "The Tomboy-Luxembourg Industrial Co-Operation, also known as TLI (Tomboy-Luxembourg Industry), is a collaborative initiative aimed at strengthening economic ties and promoting industrial development between [BEL.GetNameDef] and [LUX.GetNameDef]. Established through bilateral agreements and treaties, TLI serves as a platform for fostering mutually beneficial partnerships and facilitating cross-border cooperation in various sectors of the economy.\nTLI encompasses a wide range of industries, including manufacturing, finance, logistics, and technology. Through joint ventures, strategic alliances, and collaborative projects, companies from both countries leverage each other's strengths and expertise to enhance their competitiveness in domestic and international markets.\nOne of the primary objectives of TLI is to promote innovation and research & development (R&D) activities. By pooling resources, expertise, and intellectual capital, [BEL.GetAdjective] and [LUX.GetAdjective] firms collaborate on innovative projects, develop new technologies, and explore emerging market opportunities."
+
+    BEL_idea_homeland_department: "Homeland Department"
+    BEL_idea_homeland_department_desc: "Replacing the Defense Department, the Homeland Department takes a much wider focus, as not only an army-specific department. It will take care of things regarding our citizens, and it is meant to take care of most things outside of international politics, leaving foreign relations to other departments. Other than military affairs, it will handle most internal matters. Things like domestic political issues, economics, and many other things, are now in the hands of the Department of Homeland Affairs. Due to this wide area, and a focus on internal matters instead of foreign ones, the country is in a much more isolated, almost anti-foreign and xenophobic phase."
+
+    BEL_idea_full_isolation: "Full Isolationism"
+    BEL_idea_full_isolation_desc: "Cutting ties, and closing off the country, the ruling regime has decided to completely isolate the country from the outside world. Their efforts will focus solely on internal matters. The borders are closed, and communication lines will not be established. Trade routes are severely restricted, and only those that will greatly benefit the economy can pass through ports and airports. Anti-foreigner propaganda is spread throughout the country, as the public opinion turns and twists, as the foreign becomes the new enemy."
+
+    BEL_idea_imperialism: "Imperialism"
+    BEL_idea_imperialism_desc: "This nation engages in imperialism, a policy or practice by which it seeks to extend its control or influence over other countries or territories through various means such as military force, economic dominance, or cultural assimilation. In pursuit of its goals, it may establish colonies, protectorates, or spheres of influence, exerting authority over the political, economic, and social affairs of the affected regions."
+
+    BEL_idea_homefront_attack_plans: "Rapid Attack Plans"
+    BEL_idea_homefront_attack_plans_desc: "With war on the horizon, we need a plan that we can use to aggressively defeat Benelux without much delay, so we must craft a couple plans and formulas that are based on how to make the occupation of the Benelux an immediate and pressing reality. After this, we must utilize the advantages we gain in further warfare to our favor.\n\n§YThis Idea will§! §Rinvalidate§! §Yif [HOL.GetFlag][HOL.GetName] and [LUX.GetFlag][LUX.GetName] become [BEL.GetFlag][BEL.GetName]'s allies, puppets, or cease to exist.§!"
+
+    BEL_idea_Merlin_Prismriver: "Merlin Prismriver"
+    BEL_idea_Merlin_Prismriver_desc: "Merlin Prismriver is a young woman, originally from a place she calls \"Gensokyo\", who claims that her support grants whoever she wishes legitimate rule over Britain, and thus has the potential to become a serious player in the political arena. She is the lead trumpeter in her trio, and the sister of Lunasa and Lyrica Prismriver. It's said that the Prismriver Ensemble has the power to reinvigorate soldiers and give them the will to fight again, though Merlin and her sisters are well aware that most audiences just like to dance and drink to their music. This does however make diplomacy a little awkward, since foreign politicians would meet not just with the Queen and her various domestic advisors, but also an apparently goofy band."
+
+    BEL_idea_Prismriver_Ensemble: "Prismriver Ensemble"
+    BEL_idea_Prismriver_Ensemble_desc: "The Prismriver Ensemble is a group of three girls that originates from a place they call \"Gensokyo\" and have recently arrived in [BEL.GetNameDef]. The elder sister and the leader of the Ensemble is Lunasa Prismriver, a melancholic but skilled violinist. She has an equally talented sister, Lyrica, who is in charge of the band's rhythm section with her keyboard playing. The youngest is Merlin, a lively, cheery girl with a penchant for improvisation who plays the trumpet. They perform what they call \"magnificent music\" to people. Despite past inquiries, the [JAP.GetAdjective] don't know anything about them, but the results of their performances, which have greatly re-moralized our armies and inspired the public, speak for themselves. The Prismriver sisters claim to be ghosts, specifically poltergeists. As a result, their music can make anyone feel happy and energetic, no matter how horrible a mood they are in."
+
+    BEL_idea_navy_sabotaged: "Naval Sabotage"
+    BEL_idea_navy_sabotaged_desc: "Our navy has been sabotaged by enemies of our country. Currently it cannot sail at its peak performance, and our navy's overall capabilities are severely hampered. Until we can fix these issues, we will have severe issues with naval warfare and naval matters."
+
+    BEL_idea_assisting_luxembourg_food_industries_sender: "Assisting Luxembourg's Food Industries"
+    BEL_idea_assisting_luxembourg_food_industries_sender_desc: "As Luxembourg suffers of food shortages, since they're a small nation with very little land, we can help them by assisting their industry and infrastructure, making sure that not only they can feed their people, but also make some profit to try and lift their spirits, all to a very cheap price for them, and a great diplomatic and strategic benefit for us. This will not only help them with food, but also put us in their graces."
+
+    BEL_idea_assisting_luxembourg_food_industries_receiver: "Receiving Aid"
+    BEL_idea_assisting_luxembourg_food_industries_receiver_desc: "The Tomboys are providing us with aid for our current food problems and issues. Their assistance with trade and aid will help keep the population happy, and food is brought to us on cheap prices. This aid is very necessary for us to have proper food, and without them, things would be very bleak."
+
+    BEL_idea_aiding_dutch_tomboys_sender: "Sending Aid to [HOL.GetAdjective] Tomboys"
+    BEL_idea_aiding_dutch_tomboys_sender_desc: "We're sending aid to the Dutch Tomboys, those struggling with issues in the Netherlands like discrimination, harassment and oppression. In exchange, the Tomboys in the Netherlands will keep faith and trust towards us, which in turn will help ensure their survival and the eventual perishing of their oppressors."
+
+    BEL_idea_aiding_dutch_tomboys_receiver: "Receiving Selective Aid"
+    BEL_idea_aiding_dutch_tomboys_receiver_desc: "Due to the Tomboys providing aid to Tomboys in our country, but refusing to give any to non-Tomboys, there is a large amount of controversy in our press and political spheres over the issues of selectively providing aid. The Tomboys cited the \"oppression\" we have been committing against Tomboys for their reasons of granting aid to them and refusing to grant any to the rest of the population. Of course, this is starting to destabilize our political sphere, as opportunists seek to use this controversy to make political power. Our government does not care about Tomboy \"rights\", as they are merely a mental illness. Meanwhile, some other politicians want to grant Tomboys equality and \"freedom,\" citing things such as the Bible in why the Tomboy lifestyle should be tolerated, or even encouraged and spread. Regardless of our stance, this makes governing a bit more complicated."
+
+    BEL_idea_benelux_surprise_attack: "Surprise Attack"
+    BEL_idea_benelux_surprise_attack_desc: "We have orchestrated a surprise attack in which we use several tactics and weapons in order to overwhelm and crush our opponents' military in the quickest way possible. It will only last a short time, but until this opportunity runs out, we will move significantly faster in all departments, while the enemy will struggle from the sudden and unexpected attack."
+
+    BEL_idea_czechia_companies_fleeing: "Fleeing Companies"
+    BEL_idea_czechia_companies_fleeing_desc: "Companies that have their headquarters here are leaving the country en masse. Without their production, and the loss of a majority of the employees and workers as well as the increase in unemployment, our economy is grinding to a halt. Our economy, and the prosperity we had once enjoyed, is quickly degrading, and our military similarly suffers."
+
+    BEL_idea_czechia_slovak_resistance: "Minority Resistance"
+    BEL_idea_czechia_slovak_resistance_desc: "Various minorities in our country are suddenly organizing and rising up into rebellion. Surprisingly, it's organized and prepared, but instead of declaring something independent or protesting, they only sabotage our economy and war industries. Other than this, they have not actively harmed anyone else or done anything harmful besides that, and appear to only act mostly peacefully."
+
+    BEL_idea_czechia_economic_assistance: "[BEL.GetAdjective]-[CZE.GetAdjective] Economic Assistance"
+    BEL_idea_czechia_economic_assistance_desc: "#-#-#"
+
+    BEL_idea_extra_recruits: "Extra Recruits"
+
+    BEL_all_allies_puppets: "All allies are puppets"
+
+    BEL_focus_tree_schizo: "Terror Focus Tree"
+
+    bel_bavaria_established_flag: "Germany has been split"
+
+    tomboy_acceptance_lvl: "Tomboy Acceptance"
+    tomboy_acceptance_lvl_desc: "Current Tomboy Acceptance is [?tomboy_acceptance_lvl]"
+    tomboy_acceptance_lvl_tt: "§GIncreases§! Acceptance of Tomboys"
+    tomboy_acceptance_full_tt: "§GGuarantees§! Tomboy Supremacy"
+    category_tomboy_acceptance: "Tomboy Acceptance"
+    asked_to_join: "Asked to join"
+
+    prepare_puppets_tt: "Completing this focus allows you to form §Yunique§! puppets."
+
+    BEL_idea_acceptance: "Tomboy Acceptance"
+    BEL_idea_acceptance_desc: "Tomboy Acceptance in our nation's society refers to the acknowledgement and understanding of girls who prefer traditionally masculine activities, attire, or behaviors. It highlights the importance of recognizing different expressions of femininity and encourages the appreciation of girls' unique interests and personalities beyond Stereotypical Weakness. Whether embraced or not, this concept aims to foster an atmosphere where girls can explore their preference without facing societal pressure or judgment, promoting a sense of strength and autonomy in their identity."
+    BEL_idea_economy: "The Economy"
+    BEL_idea_economy_desc: "The Tomboys' economy revolves around the production, distribution, and consumption of goods and services within our community. At its core, our economy is driven by the principles of trade and exchange, where individuals and businesses offer products and services in return for something of value, typically currency. Our community engages in various economic activities, such as farming, crafting, and providing services like healthcare and education.\n\nIn the Tomboys' economy, we utilize a system of currency as a medium of exchange. This currency allows us to facilitate transactions and assign value to different goods and services. We also have a banking system to store and manage our currency, making it easier for individuals and businesses to save, borrow, and invest.\n\nAs Tomboys, we understand the importance of economic growth and stability. To achieve this, we focus on promoting entrepreneurship and innovation. By encouraging new ideas and businesses, we can foster development and enhance our overall standard of living. Additionally, we recognize the significance of fair trade practices and cooperation among our members to ensure that everyone benefits from our economic endeavors.\n\nIn summary, the Tomboys' economy functions through trade and exchange, with currency as a means of transaction. Our community values entrepreneurship, innovation, and fair trade practices to foster economic growth and prosperity for all. By working together and efficiently utilizing our resources, we strive to create a sustainable and thriving economy that benefits each member of our community."
+    BEL_idea_kick_out_gypsy: "Kicking out Gypsies"
+    BEL_idea_kick_out_gypsy_desc: "Our kingdom is infested with gypsies, and it's about time we do something about it. In order to make our people feel safe, we'll have the government crack down on the gypsies living within our borders. If they're unwilling to assimilate, they'll have to leave. We will not tolerate gypsy crimes and acts of terror any longer. This will be the beginning of a new, safer, and purer world."
+
+    BEL_communist_tactics: "Communist Tactics"
+    BEL_communist_tactics_desc: "Despite having crushed the communist menace within our borders, some communist propaganda still continues to thrive. In order to combat this, we should adopt similar tactics. Using slogans to unite the common man against the enemy, or even to just not rebel, will be incredibly useful."
+
+    POLITICS_RUPPRECHT_NAME: "Rupprecht, Crown Prince of Bavaria, Duke of Bavaria, Franconia and in Swabia, Count Palatine by the Rhine"
+    POLITICS_RUPPRECHT_DESC: "Rupprecht, Crown Prince of Bavaria, Duke of Bavaria, Franconia, and in Swabia, and Count Palatine by the Rhine, was a prominent royal figure in Germany during the late 19th and early 20th centuries. Born on May 18, 1869, in Munich, Rupprecht was the eldest son of Ludwig III, the last King of Bavaria, and Maria Theresa of Austria-Este.\n\nAs the Crown Prince, Rupprecht was the heir apparent to the Bavarian throne, which held significant historical and cultural importance in the southern region of Germany. The House of Wittelsbach, to which he belonged, had a long and illustrious lineage that traced back to the Middle Ages.\n\nRupprecht received a comprehensive education and demonstrated a keen interest in military affairs from an early age. He attended the Ludwig Maximilian University of Munich and completed his military training, eventually rising through the ranks and becoming a skilled military strategist and tactician.\n\nThe Crown Prince's military career flourished, and he played a notable role during World War I. As a commander of the Bavarian Army, he led his forces with distinction in several key battles. Rupprecht's leadership and bravery earned him respect and admiration among his troops and fellow officers.\n\nAside from his military prowess, Rupprecht was known for his deep appreciation of the arts and sciences. He was a patron of culture and supported various artistic endeavors, contributing to the enrichment of Bavarian society and heritage.\n\nIn addition to his role as Crown Prince, Rupprecht held various titles such as Duke of Bavaria, Franconia, and in Swabia, and Count Palatine by the Rhine. These titles emphasized his significance and influence within the regional nobility.\n\nThroughout his life, Rupprecht remained a dedicated family man and was married to Duchess Marie Gabrielle in Bavaria, with whom he had ten children. His devotion to his family and the welfare of Bavaria endeared him to his subjects, and he was widely respected as a responsible and compassionate leader.\n\nRupprecht's reign as Crown Prince, however, came to an end following the fall of the German monarchy after World War I. The Weimar Republic replaced the German Empire, leading to the dissolution of many royal titles and positions, including Rupprecht's claim to the Bavarian throne.\n\nAlthough no longer a reigning monarch, Rupprecht continued to serve Bavaria and Germany with dedication, maintaining his commitment to public service and philanthropy. His legacy as a respected military leader and a significant figure in Bavarian history endures, even after the fall of the Monarchy."
+    POLITICS_ASTOLFO_NAME: "Astolfo \"Rider of \"Black\"\""
+    POLITICS_ASTOLFO_DESC: "One of the Twelve Paladins of Charlemagne, in the Charlemagne Legend, he is the son of an English king, and one of Charlemagne's twelve faithful Paladins. Among the Twelve Paladins of Charlemagne, Astolfo is said to be the most handsome, eternally optimistic, and completely lacking in sense. As the legends go, Astolfo was quite the ladies' man. As a cousin of Roland, Astolfo is included among those twelve—that being said, Astolfo was famed as \"weak\" in legends.\n\nAstolfo has created many legends as he was an adventurer who flew to all over the world and even reached the Moon in the end. Through his journeys, he had won numerous Mystic Codes such as his flute, his grimoire, and his shining golden lance. Astolfo brought rise to various legends on the back of mounts like a griffin and the famous Rabicano, but particularly famous among them is something inconceivable for this world—the Hippogriff."
+
+    POLITICS_TANYA_DEGURECHAFF_NAME: "Tanya von Degurechaff"
+    POLITICS_TANYA_DEGURECHAFF_DESC: "Tanya von Degurechaff is a young woman with an intelligent face and a well-trained body. Her hair is blonde, and her eyes are an icy, electric blue, and burn with a certain resolve that demands to get her own way. Having seen the horrors of war, she is hungry for more, because she believes that the conditions it creates are optimal for advancing society, and because she revels in her own talent and prowess. She's not just a general and warrior, but also an intelligent commander and leader, and can be friendly, to the point of seeming sweet."
+
+    POLITICS_KATYUSHA_NAME: "Katyusha"
+    POLITICS_KATYUSHA_DESC: "A young, attractive female who embodies the pride and hardiness of Lolis. A mix of innocent naivety, and intense stubbornness. She can seem rather clueless, or like she hasn't quite grown up mentally, however, she is no slouch, and her physical stamina and training are superb. Underneath her clumsy demeanor, she has great skill in leading, and commanding, and does a fairly good job at being a leader."
+
+    POLITICS_RIKKA_NAME: "Takanashi Rikka"
+    POLITICS_RIKKA_DESC: "Rikka is a chuunibyou who, using her unrivaled charisma, rose to be the leader of the social democratic party. At times she seems childish, or odd, especially with her random quirks and delusions, and her habit of speaking in an odd and old-fashioned manner, yet when given a cause to believe in, she's a force to reckon with."
+
+    POLITICS_ILLYASVIEL_NAME: "Illyasviel von Einzbern"
+    POLITICS_ILLYASVIEL_DESC: "Illya is a well developed, young and very attractive female who uses her natural assets to full advantage. She can come off as being arrogant, as she enjoys the privilege of being one of the upper classes and does not understand the struggles of the lower classes. Although a kind person in nature, she can also be easily annoyed and sometimes enraged by those she finds unbearably annoying, even resorting to violence in these situations, although never lethal. She is not opposed to violence, although not the one to initiate it."
+
+    POLITICS_CHLOE_NAME: "Chloe \"Kuro\" von Einzbern"
+    POLITICS_CHLOE_DESC: "Chloe von Einzbern, also known as Kuro, is a twin existence formed from Illya's original self. Illya was born to act as the key of the Holy Grail War system of Fuyuki, but it was never actualized in the Fate/kaleid liner world. Her parents, Kiritsugu Emiya and Irisviel von Einzbern, decided to abandon the ritual by Irisviel's choice, but Illya still had the knowledge granted to her to act out her purpose."
+
+    POLITICS_ZNT_NAME: "Sphinx"
+    POLITICS_ZNT_DESC: "Sphinx group of Terrorists, consisting of §YNine§!, §YTwelve§!, and §YLisa Mishima§!.\n\n§YNine§! is stern, aloof and stoic. He has a knack for devising ingenious criminal schemes while deftly covering up his tracks with his exceptional computing and hacking skills. He has exceptional skills in bomb-making and ensuring his bombs cause exactly as much damage as they should.\n\n§YTwelve§! is a typical jokester: light-humored and energetic, enjoying messing around with other people's business. He is able and willing to adopt ruthless and violent methods if the situation calls for it. He's an apt motorcyclist and handles vehicles easily; on multiple occasions, he used this skill to escape police pursuit. It's known that he's highly intelligent when it comes to escaping security and other types of guards.\n\n§YLisa Mishima§! is the third member, although her abilities are unknown as of now."
+
+    autonomy_selfgoverning_territory: "Self-Governing Territory"
+    autonomy_selfgoverning_territory_desc: "A self-governing territory is a region within a larger political entity, such as a country or state, that has a significant degree of autonomy in managing its own affairs. While still ultimately subject to the authority of the central government or federal state, a self-governing territory has the power to enact its own laws, govern its own internal affairs, and administer certain aspects of its economy, education, and other areas of governance independently. Typically, self-governing territories have their own elected legislative bodies and executives responsible for making and implementing policies within their jurisdiction. The level of autonomy granted to self-governing territories can vary widely depending on the specific legal and constitutional arrangements established by the central government or federal state."
+
+    autonomy_freestate: "Freestate"
+    autonomy_freestate_desc: "A freestate is a political entity within a larger nation or federation that enjoys a significant degree of autonomy and self-governance. It typically has its own distinct cultural, historical, and sometimes linguistic identity. Freestates often have their own legislative assembly and executive government responsible for managing internal affairs, such as education, culture, and regional development. While still part of the larger nation or federation, a freestate may have the authority to enact its own laws and policies within its jurisdiction, as long as they do not conflict with the constitution or laws of the overarching political entity. Freestates are often characterized by a strong sense of regional pride and autonomy, and may play a prominent role in shaping national politics and policy debates."
+
+    autonomy_associated_region: "Associated State"
+    autonomy_associated_region_desc: "An Associated State is a political arrangement in which a territory or region maintains a formal relationship with a larger sovereign state while enjoying a high degree of autonomy and self-governance. Under this arrangement, the associated state typically manages its own internal affairs, such as legislation, taxation, and governance, while the larger sovereign state retains responsibility for matters such as defense and foreign affairs. Associated states often have their own constitutions or legal frameworks that outline their rights and responsibilities within the broader relationship with the sovereign state. While they are not fully independent nations, associated states have a significant degree of sovereignty and may have the authority to enter into international agreements and conduct diplomatic relations on certain matters with other countries. This arrangement allows associated states to maintain their cultural, historical, or political identity while still benefiting from the security and economic support provided by their association with the larger sovereign state."

@@ -1,0 +1,48 @@
+﻿l_english:
+  terror: "Terrorism"
+  terror_adj: "Terrorist"
+  terror_noun: "Terrorist"
+
+  accelerationist: "Accelerationism"
+  accelerationist_adj: "Accelerationist"
+  accelerationist_noun: "Accelerationism"
+  accelerationist_desc: "Terroristic Accelerationism is a political ideology that advocates for the rapid acceleration of societal, economic, and technological processes through the use of terroristic violence, namely bombings, riots, and assassinations, both spontaneous and premeditated. This can also involve more conventional and political campaigns. The end goal varies depending on the group, but often this idea is to gain power for themselves or influence change. Due to the radical, violent, and immoral actions often endorsed or carried out, they tend to be very distrusted and feared."
+
+  primitivism: "Primitivism"
+  primitivism_adj: "Primitive"
+  primitivism_noun: "Primitivism"
+  primitivism_desc: "Terroristic Primitivism is a fringe political ideology that advocates for a return to a primitive way of life through extreme and often violent means. Followers of this ideology reject modern technology, civilization, and industrialization, viewing them as detrimental to the environment and human society. They believe in dismantling existing systems through acts of terrorism and violence to force a return to a simpler, more primitive existence, often romanticizing pre-industrial societies."
+
+  natsukian: "Natsukiism"
+  natsukian_adj: "Natsukian"
+  natsukian_noun: "Natsukiism"
+  natsukian_desc: "Terroristic Natsukiism is a fringe political and terrorist ideology that centers around the leadership of Natsuki, advocating for the establishment of a state known as the \"Cupcake Ordenstaat.\" This ideology promotes the principles of authoritarianism, nationalism, and radical traditionalism, with a focus on Natsuki's perceived values and characteristics. Followers of Terroristic Natsukiism believe in the enforcement of strict societal norms and the suppression of dissent through terroristic tactics.\nThe ideology places a heavy emphasis on the glorification of cupcakes, viewing them as symbols of purity and superiority. Natsuki's leadership is portrayed as charismatic and authoritarian, with a cult-like devotion from her followers. The Cupcake Ordenstaat envisioned by Terroristic Natsukiism is characterized by a rigid social hierarchy, with Natsuki at the top as the supreme leader.\nTerroristic Natsukiism promotes the use of violence and terrorism as means to achieve its goals, targeting perceived enemies of the ideology, including those who oppose the establishment of the Cupcake Ordenstaat or challenge Natsuki's authority."
+
+  esoteric: "Esoteric Terrorism"
+  esoteric_adj: "Esoteric"
+  esoteric_noun: "Esoteric"
+  esoteric_desc: "Esoteric Terrorism is a highly clandestine and secretive political ideology that operates on the fringes of society. It encompasses a range of beliefs and practices that involve the use of esoteric or occult knowledge to justify and carry out acts of terrorism. Followers of Esoteric Terrorism often subscribe to mystical or spiritual beliefs that they believe grant them special insight or power.\nCentral to Esoteric Terrorism is the idea that hidden or arcane knowledge holds the key to bringing about significant societal change or upheaval. Adherents may draw from various mystical traditions, ancient texts, or occult practices to justify their actions and goals.\nThe ideology is characterized by its secretive nature and often operates in small, tight-knit groups or cells. These groups may engage in rituals, ceremonies, or practices believed to harness supernatural forces or energies to further their political objectives.\nEsoteric Terrorism may target specific individuals, institutions, or symbols deemed to represent oppressive forces or obstacles to their vision of societal transformation. Attacks carried out by adherents of this ideology may be highly symbolic and designed to instill fear or provoke a reaction from the broader population."
+
+  homo: "Homoterrorism"
+  homo_adj: "Homoterrorist"
+  homo_noun: "Homoterrorism"
+  homo_desc: "Homoterrorism, or Femboy Terrorism, is a fringe political and terrorist ideology that revolves around the promotion of LGB rights and crossdressing through violent and extremist means. Adherents of this ideology believe in using acts of terrorism and violence to challenge societal norms and structures that oppress or discriminate against individuals based on their sexual orientation, gender identity, or expression.\nThe ideology encompasses a radical interpretation of LGB activism, advocating for the use of force to achieve equality and acceptance. Followers of Homoterrorism/Femboy Terrorism reject peaceful methods of protest and instead embrace violence as a tool for social change, viewing it as necessary to disrupt and dismantle oppressive systems.\nTargets of attacks carried out by adherents of this ideology may include institutions, individuals, or groups perceived to be homophobic, heterosexual, or supportive of hetero policies. The violence perpetrated by Homoterrorism/Femboy Terrorism aims to instill fear and provoke a response from society, culminating in state-enforced homosexuality and a total homo state."
+
+  FACTION_NAME_TERROR_1: "Atomwaffen Alliance"
+  FACTION_NAME_TERROR_2: "Confederation of $CONTINENT_ADJ$ Cells"
+  FACTION_NAME_TERROR_3: "$LEADER_COUNTRY$ Faction"
+  FACTION_NAME_TERROR_4: "Council of Terrorists"
+  FACTION_NAME_TERROR_5: "$CONTINENT_ADJ$ Terrorists"
+
+
+  
+
+  fash_monarcho_fascism: "Monarcho-Fascism"
+  fash_monarcho_fascism_adj: "Monarcho-Fascist"
+  fash_monarcho_fascism_noun: "Monarcho-Fascism"
+  fash_monarcho_fascism_desc: "Monarcho-Fascism is a political ideology that combines elements of both monarchy and fascism. It advocates for a totalitarian form of government led by a single, authoritarian ruler, often a monarch or a dictator, who holds absolute power over the state and its people.\nIn a Monarcho-Fascist system, the ruler is viewed as the embodiment of the nation's identity and strength, and their authority is enforced through a strong, centralized state apparatus. The ideology promotes nationalism, militarism, and the subjugation of individual rights and liberties to the interests of the state.\nMonarcho-Fascism often emphasizes traditional values, hierarchical social structures, and a sense of national unity and purpose. It may incorporate elements of racial or ethnic supremacy, with the ruler and their supporters claiming superiority over other groups within society.\nEconomically, Monarcho-Fascism typically favors a corporatist approach, in which the state controls and coordinates the activities of corporations and labor unions to serve the interests of the ruling elite and ensure social stability."
+  
+  mona_monarcho_fascism: "Monarcho-Fascism"
+  mona_monarcho_fascism_adj: "Monarcho-Fascist"
+  mona_monarcho_fascism_noun: "Monarcho-Fascism"
+  mona_monarcho_fascism_desc: "Monarcho-Fascism is a political ideology that combines elements of both monarchy and fascism. It advocates for a totalitarian form of government led by a single, authoritarian ruler, often a monarch or a dictator, who holds absolute power over the state and its people.\nIn a Monarcho-Fascist system, the ruler is viewed as the embodiment of the nation's identity and strength, and their authority is enforced through a strong, centralized state apparatus. The ideology promotes nationalism, militarism, and the subjugation of individual rights and liberties to the interests of the state.\nMonarcho-Fascism often emphasizes traditional values, hierarchical social structures, and a sense of national unity and purpose. It may incorporate elements of racial or ethnic supremacy, with the ruler and their supporters claiming superiority over other groups within society.\nEconomically, Monarcho-Fascism typically favors a corporatist approach, in which the state controls and coordinates the activities of corporations and labor unions to serve the interests of the ruling elite and ensure social stability."

@@ -1,0 +1,73 @@
+CUN_internal_politics = {
+    
+	CUN_investigate_illya = {
+
+		allowed = {
+			original_tag = CUN
+		}
+
+		visible = {
+			OR = {
+        	    CUN_illyasviel = {
+					is_country_leader = yes
+				}
+				CUN_chloe = {
+					is_country_leader = yes
+				}
+        	}
+			NOT = {
+				has_country_flag = CUN_investigated_illya
+			}
+		}
+
+		days_remove = 100
+
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = CUN_investigated_illya
+			}
+			custom_effect_tooltip = CUN_investigate_illya_effect_tt
+		}
+	}
+
+	CUN_switch_illya_chloe = {
+
+		allowed = {
+			original_tag = CUN
+		}
+
+		visible = {
+			OR = {
+        	    CUN_illyasviel = {
+					is_country_leader = yes
+				}
+				CUN_chloe = {
+					is_country_leader = yes
+				}
+        	}
+			has_country_flag = CUN_investigated_illya
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			if = {
+				limit = {
+					CUN_illyasviel = {
+						is_country_leader = yes
+					}
+				}
+				promote_character = CUN_chloe
+			}
+			else_if = {
+				limit = {
+					CUN_chloe = {
+						is_country_leader = yes
+					}
+				}
+				promote_character = CUN_illyasviel
+			}
+		}
+	}
+
+}

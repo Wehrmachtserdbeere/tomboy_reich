@@ -1,0 +1,112 @@
+opinion_modifiers = {
+	
+	refused_guarantee = {
+		value = -50
+	}
+
+	terrorist_activity = {
+		value = -90
+	}
+
+	jew_diplomatic = {
+		value = 5
+	}
+
+	BEL_acc_civil_rights_neg = {
+		value = -10
+	}
+
+	BEL_acc_civil_rights_pos = {
+		value = 10
+	}
+
+	BEL_didnt_rename_faction = {
+		value = -1
+	}
+
+	BEL_sowing_anti_american_sentiment_trade = {
+		trade = yes
+		value = -10
+		decay = -1
+		max_trust = -50
+	}
+
+	BEL_sowing_anti_american_sentiment_diplo = {
+		value = -10
+		decay = -1
+		max_trust = -50
+	}
+
+	BEL_refused_annexation = {
+		value = -50
+	}
+
+	BEL_refused_puppeting = {
+		value = -35
+	}
+
+	BEL_fear_of_expansion = {
+		value = -25
+		decay = 365
+	}
+
+	BEL_friendly_interaction = {
+		value = 10
+	}
+
+	BEL_slight_suspicion = {
+		value = -5
+	}
+
+	BEL_medium_suspicion = {
+		value = -15
+	}
+
+	BEL_large_suspicion = {
+		value = -20
+	}
+
+	BEL_thankful = {
+		value = 10
+	}
+
+	BEL_recognize_breakaways = {
+		value = -50
+	}
+
+	BEL_promised_northern_ireland = {
+		value = 50
+	}
+
+	BEL_promised_support = {
+		value = 25
+	}
+
+	BEL_disappointed = {
+		value = 10
+	}
+
+	BEL_supported_resistance = {
+		value = -75
+	}
+
+	BEL_invaded_airspace = {
+		value = -25
+	}
+
+	BEL_reconciliation = {
+		value = 25
+	}
+
+	BEL_sending_aid = {
+		value = 65
+	}
+
+	BEL_oppressing_tomboys_neg = {
+		value = -95
+	}
+
+	BEL_oppressing_tomboys_pos = {
+		value = 45
+	}
+}

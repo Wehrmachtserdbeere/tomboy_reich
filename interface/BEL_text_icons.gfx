@@ -1,0 +1,28 @@
+spriteTypes = {
+	
+	# Britannia
+	spriteType = {
+		name = "GFX_text_icon_britannia"
+		texturefile = "gfx/text_icons/text_icon_britannia.dds"
+		legacy_lazy_load = no
+	}
+	# Marianne
+	spriteType = {
+		name = "GFX_text_icon_marianne"
+		texturefile = "gfx/text_icons/text_icon_marianne.dds"
+		legacy_lazy_load = no
+	}
+	# Germania
+	spriteType = {
+		name = "GFX_text_icon_germania"
+		texturefile = "gfx/text_icons/text_icon_germania.dds"
+		legacy_lazy_load = no
+	}
+	# Euronia
+	spriteType = {
+		name = "GFX_text_icon_euronia"
+		texturefile = "gfx/text_icons/text_icon_euronia.dds"
+		legacy_lazy_load = no
+	}
+
+}

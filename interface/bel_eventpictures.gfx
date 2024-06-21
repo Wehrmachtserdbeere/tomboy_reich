@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_event_BEL_speech"
+		texturefile = "gfx/event_pictures/event_bel_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_BEL_speech"
+		texturefile = "gfx/event_pictures/news_bel_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_BEL_war"
+		texturefile = "gfx/event_pictures/event_bel_war.dds"
+	}
+}

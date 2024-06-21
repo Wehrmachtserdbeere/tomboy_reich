@@ -1,0 +1,29 @@
+BEL = {
+	male = {
+		names = {  
+			Makusimiriamu Ferix Erik Geruhado Guntero Otto Waruter Wiruherum Hainus Heruman Henuriku Lukoa
+			Terudoru Hansu Anuton Jokimu Maksu Emiru Peruteru Furiz Otto Adoruf Tobiras Stafuran Maruko Karu
+		}
+	}
+	female = {
+		names = { 
+			Iesuko Emu Hana Sofia Maria Hidegado Ane Asuka Beatrice Cali Dori Domena Emi Eris Elise Feris Gura
+			Garo-Garo Gama Haro Himiji Hanjini Ina Imi Joko Juno Juni Janako Jamako Kali Kanna Karo Leru Lemi Lami Miku
+			Monika Miia Mari Magi Mogi Mugi Nagatoro Nao Natsuki Namao Noma Nora Nomina Nama Onira Ora Ojika Oraku
+			Omika Pero Pelo Peri Peli Pali Piku Peku Pene Pokomo Qingqiu Qing Ritsu Riso Ritumo Rimuru Rem Ram Roji
+			Seiji Sayori Shii Shimi Sheimi Shigurane Shiitsu Turedure Tomoko Toramo Toko Toji Toniki Tomii Uchako Ura
+			Umako Unamine Ukano Violet Wokumo Worokomi Xixi Xoromoko Yuno Yuko Yoki Yuri Yoko Yae Yamake Yakuse Ziru
+			Zimu Zerisu Zekono
+		}
+	}
+	surnames = { 
+		Anone Anokame Ashikine Beritu Beru Bero Cario Caro Calo Coromorimire Corimi Doijija Doki Donu Emuru Emoru Emokuri
+		Furuko Feroko Feroku Gawr Gomi-Gomi Gumi Hatsune Haroji Himijini Ishigami Imotu Imoto Joko-Ono Jokumitsu Kuromine
+		Lalanoki Lamike Mitsuke Mikutsune Nao Nago Namitine Ochaku Okomi Pekuni Pelomu Quinchin Ritsuko Remu Remi Sonoku
+		Suromi Seromini Sekumoji Tempest Temiku Teku Tekoro Umaki Uramo Varimu Waku Wako Xamu Xaro Yunji Yunijin Yurokono
+		Yeroku Zemikijo
+		}
+	callsigns = { 
+		"Chief of the Magic Class" "The Magician" "The Grand Wizard" "The Hero"
+	 }
+}

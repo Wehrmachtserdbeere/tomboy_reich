@@ -1,0 +1,126 @@
+add_namespace = tomboydebug
+
+country_event = { # Annex Europe for last monarchist focus
+    id = tomboydebug.1
+    title = tomboydebug.1.t
+    desc = tomboydebug.1.d
+
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboydebug.1"
+	}
+
+    option = {
+        name = tomboydebug.1.a
+
+        BEL = {
+            annex_country = {
+                target = POR
+            }
+            annex_country = {
+                target = SPR
+            }
+            annex_country = {
+                target = FRA
+            }
+            annex_country = {
+                target = ENG
+            }
+            annex_country = {
+                target = SWI
+            }
+            annex_country = {
+                target = ITA
+            }
+            annex_country = {
+                target = AUS
+            }
+            annex_country = {
+                target = GER
+            }
+            annex_country = {
+                target = LUX
+            }
+            annex_country = {
+                target = HOL
+            }
+            annex_country = {
+                target = IRE
+            }
+            annex_country = {
+                target = YUG
+            }
+            annex_country = {
+                target = GRE
+            }
+            annex_country = {
+                target = BUL
+            }
+            annex_country = {
+                target = HUN
+            }
+            annex_country = {
+                target = CZE
+            }
+            annex_country = {
+                target = ROM
+            }
+            annex_country = {
+                target = DEN
+            }
+            annex_country = {
+                target = POL
+            }
+            annex_country = {
+                target = LIT
+            }
+            annex_country = {
+                target = LAT
+            }
+            annex_country = {
+                target = EST
+            }
+            annex_country = {
+                target = NOR
+            }
+            annex_country = {
+                target = SWE
+            }
+            annex_country = {
+                target = FIN
+            }
+            annex_country = {
+                target = ALB
+            }
+        }
+    }
+
+    option = { # Cancel
+        name = tomboydebug.1.b
+    }
+}
+
+country_event = {
+    id = tomboydebug.2
+    title = tomboydebug.2.t
+    desc = tomboydebug.2.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        log = "Event ran: tomboydebug.2"
+    }
+
+    option = {
+        name = tomboydebug.2.a
+
+        custom_effect_tooltip = tomboydebug_2_tt
+    }
+
+    option = {
+        name = tomboydebug.2.b
+    }
+}

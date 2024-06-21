@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_supereventsbg"
+		textureFile = "/gfx/superevents_gui/supereventsbg.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbg_test"
+		textureFile = "/gfx/superevents_gui/supereventsbg_test.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbutton"
+		textureFile = "/gfx/superevents_gui/supereventsbutton.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsoverlay"
+		textureFile = "/gfx/superevents_gui/supereventsoverlay.dds"
+	}
+
+
+
+
+
+
+    # Images here!
+
+    spriteType = {
+        name = "GFX_superevent_test"
+        texturefile = "gfx/superevents_pictures/superevents_test.dds"
+    }
+    spriteType = {
+        name = "GFX_superevent_lalatina_throne"
+        texturefile = "gfx/superevents_pictures/superevents_lalatina_throne.dds"
+    }
+	spriteType = {
+        name = "GFX_superevent_lalatina_crowd"
+        texturefile = "gfx/superevents_pictures/superevents_lalatina_crowd.dds"
+    }
+	spriteType = {
+        name = "GFX_superevent_city"
+        texturefile = "gfx/superevents_pictures/superevents_city.dds"
+    }
+
+}

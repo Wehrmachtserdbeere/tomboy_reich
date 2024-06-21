@@ -1,0 +1,1 @@
+CUN = "countries/Cunny.txt"

@@ -1,0 +1,962 @@
+﻿l_english:
+
+  _README_IF_YOURE_TRANSLATING_: "If you're here to translate, why not join the dev team as a localzer/translator? Our Discord is in the Mod's Steam Page Description."
+
+  BEL_focus_tree: "Tomboy Focus Tree"
+  BEL_focus_tree_desc: "The Focus Tree for the Tomboy Mod."
+
+  BEL_acceptance_popularize: "Increase support for Tomboys"
+  BEL_acceptance_popularize_desc: "Only recently did we take over this beautiful country. Because of this, the general population and older generations are still rebelling. They believe that the concept of tomboys is ridiculous. We must... convince them of their misbelief."
+
+  BEL_acceptance_legislation: "Declare Tomboy Rights"
+  BEL_acceptance_legislation_desc: "In a society dominated by men, Tomboys are left behind with the rest of the women. By increasing the laws of acceptance for us, we will become more powerful and influential."
+
+  BEL_acceptance_work: "Equal Working Rights"
+  BEL_acceptance_work_desc: "By allowing tomboys to work, we can prove that we are equally as strong as men. This will also improve the economy by effectively doubling our civilian manpower."
+
+  BEL_acceptance_army: "Tomboys in the Army"
+  BEL_acceptance_army_desc: "Now that the constitution allows more rights for us in the civilian sector, it is time to extend that to the military. By having Tomboys fighting side by side with male soldiers, we can prove our strength."
+
+  BEL_acceptance_politics: "Tomboys in the Cabinet"
+  BEL_acceptance_politics_desc: "It's time for us to put tomboys into the cabinet. By opening political schools for us, we may prepare them for the ruling to come."
+
+  BEL_acceptance_campaign: "Tomboy Campaigns"
+  BEL_acceptance_campaign_desc: "It is imperative we increase the popularity of Tomboys. By campaigning in the streets with posters and flyers, we can show the world what we're capable of... or at least our country."
+
+  BEL_acceptance_zeitgeist: "The National Belief"
+  BEL_acceptance_zeitgeist_desc: "After showing the nation the strength and superiority of Tomboys, we must improve their position in this country by making them the defining spirit of the hierarchy."
+
+  BEL_acceptance_supremacy: "Absolute Supremacy"
+  BEL_acceptance_supremacy_desc: "It's time. We've proved to all generations that the Tomboys are a capable bunch. By proving that we unite the best in both men and women in one, it will be evident to all doubters that we are superior to them. We shall show this to the world."
+
+
+  BEL_open_political_sphere: "Open Political Sphere"
+  BEL_open_political_sphere_desc: "We need to decide a direction for our nation to move forward."
+
+  BEL_political_crack_down: "Crack down on Political Discourse"
+  BEL_political_crack_down_desc: "Now that the people have shown their allegiances, we can very effectively crack down on dissent. With no organized opposition to speak of, it will be easy for us to quell any public criticism or attempts at reform. Our system will soon be unassailable and irreversible! The citizens need never question again why they should follow our laws and traditions."
+
+  BEL_monarchism_the_monarch_alone: "Protect the Kingdom"
+  BEL_monarchism_the_monarch_alone_desc: "It is unthinkable that Tomboys would be led by anyone other than a monarch! The crown must be propped up at all costs, even with our lives. It was Lady Lalatina who forged this Kingdom and Lady Lalatina who first led it. Why should that change? The House of Dustiness Ford shall lead the Tomboy to a glorious future!"
+
+  BEL_monarchism_instigate: "Instigate Violence"
+  BEL_monarchism_instigate_desc: "There have been protests because of our recent decisions. If we infiltrate their ranks, we can force them to become violent, the people will quickly lose their faith and support in any more protests, allowing us to implement new laws without issue."
+
+  BEL_monarchism_condemn_dem: "Condemn Democracy"
+  BEL_monarchism_condemn_dem_desc: "We are Monarchists through and through, because we believe in the Divine right of Kings. But since the French Revolutions, ideas such as \"Democracy\" and \"Individualism\" have spread among us; this is something which has no place in our country. They riot to put in place radicals that would ruin our nation like they did in Russia! We must squash these ideas for good before they take hold of our people."
+
+  BEL_monarchism_prosecute_fascists: "Prosecute Fascists"
+  BEL_monarchism_prosecute_fascists_desc: "The rise of fascism under Mussolini, his inept rule after the King appointed and became a puppet to him, and recently the ascension of Adolf Hitler, who backstabbed their Kaiser to get more popularity, should serve as a reminder to us all that true leadership comes from those with blood ties to the throne. Those who truly fight for the monarchy can be trusted, while those who don't must be destroyed."
+
+  BEL_monarchism_recruit_black_youth: "Recruit the Black Youth"
+  BEL_monarchism_recruit_black_youth_desc: "After expelling the ideology of fascism from our nation, there are still remnants, especially their Black Youth, a militant youth wing of their party. It seems that even though we've succeeded in getting rid of fascism, some young fools still need their militarism, so we will take any opportunity to convert them to our cause! Their strong sense of discipline makes them excellent soldiers; their bravery unrivaled."
+
+  BEL_monarchism_prosecute_commies: "Prosecute Communists"
+  BEL_monarchism_prosecute_commies_desc: "We have seen what communism does in the Russian Revolution and the subsequent murder of Tsar Nicholas II and his family. Communism directly threatens our Queen and they do not shy away from violence either. So long as the royal house reigns over us, we will never accept Communism or allow it to take root among our people. We have to destroy this evil force before it gains too much power."
+
+  BEL_monarchism_adopt_commie_tactics: "Adopt Communist Propaganda Tactics"
+  BEL_monarchism_adopt_commie_tactics_desc: "Communism is evil. Despite that, their propaganda tactics work wonders on the common man who has been raised to believe all sorts of things. In order to counter enemy propaganda, we must adopt similar propaganda tactics used by the communists themselves. Using slogans to unite the common man against the enemy, or even to just not rebel, will be incredibly useful."
+
+  BEL_monarchism_prosecute_dem: "Prosecute Democrats"
+  BEL_monarchism_prosecute_dem_desc: "After decades of suffering under the Belgian liberal democracy, we're seeing a rise in radical left-wing movements and ideas. To combat these trends, which are fueled by socialist and communist ideals, we must persecute the very notion of democracy and use every available tool at our disposal to squash its growth."
+
+  BEL_monarchism_give_dems_alternative: "Give Democrats an alternative"
+  BEL_monarchism_give_dems_alternative_desc: "We fully outlawed democracy in our nation after witnessing how terrible its results could be for our country; however, because many citizens still support it, we'll give them an outlet so they won't go insane with anger towards us - The military. That way we can also force ideals of loyalty and discipline into their heads."
+
+  BEL_monarchism_integrate_militants: "Integrate Far-Right Militants"
+  BEL_monarchism_integrate_militants_desc: "The remnants of the far-right still has a lot of militias within our country. If we can integrate these groups and convince them that our royal house is the true way of our people, then they should become loyal soldiers. This is also a chance to recruit some more fighters to strengthen our army."
+
+  BEL_monarchism_integrate_leftists: "Integrate the Left Wing"
+  BEL_monarchism_integrate_leftists_desc: "Since Monarchism is the only thing unbanned, the remaining far-left forces aren't strong enough to pose any threat to us. They will either leave, or they will be schooled into becoming loyal to us. Either option is fine by us."
+
+  BEL_monarchism_consolidate: "Consolidate the Queen's Power"
+  BEL_monarchism_consolidate_desc: "The Queen is the most important person in the Kingdom; if she dies or disappears, everything will crumble. Therefore, we need to consolidate her power to remove any foreign influences on her life and our country. After all, what good does a ruler who has lost their power do? She must have absolute control over all aspects of the state."
+  BEL_consolidate_tt: "Finishing this focus will open up §Ymore possibilities§!."
+
+  BEL_monarchism_prepare_army: "Prepare an Army"
+  BEL_monarchism_prepare_army_desc: "The Belgian army was incredibly weak, and now that we are in power, a lot of the men left, because they refused to be commanded by tomboys. Right now, the army's only available soldiers are a few tomboys, and some of the men who didn't leave. Before we plan any military operations, we first need to focus on building an army strong enough to contend with the powers at play in Europe."
+
+  BEL_monarchism_demand_referendums: "Demand Benelux Referendums"
+  BEL_monarchism_demand_referendums_desc: "Now that we have a proper army, we will utilize it to put pressure on Luxembourg and the Netherlands to hold referendums under our terms, guaranteeing it would result in them joining us, while pretending it to be fully democratic, although some people may claim that our heavy military presence will amount to electoral malpractice."
+  BEL_warring_wont_be_asked_tt: "Countries at war will §Rnot§! be asked, you will receive a §Ywargoal§! instead!"
+
+  BEL_monarchism_subjugate_for_safety: "Subjugation for Safety"
+  BEL_monarchism_subjugate_for_safety_desc: "Instead of a fraudulent democratic referendum or an alliance, with our military power, we can perhaps convince [HOL.GetNameDef] and [LUX.GetNameDef] to join us voluntarily as puppet-states, with the promise that with us around, they will be safer from aggressive nation-states. Of course, they would be less likely to accept it without a monarchy, but even if they deny, we have other methods."
+
+  BEL_monarchism_propose_protective_alliance: "Propose an alliance"
+  BEL_monarchism_propose_protective_alliance_desc: "By proposing an alliance between the monarchist Benelux nations, we can avoid using fraudulent democracy and threats on them. And after all, the whole point of putting influence on them is that so all three of our countries can flourish and survive. Through this, we can work together to create a strong influence on European and world politics. Other big countries can watch us apprehension when the time comes."
+  BEL_monarchism_monarchist_protection_faction: "Monarchist Bloc"
+  invite_monarchist_nations_tt: "Invites §gmonarchist§! Benelux nations."
+
+  BEL_monarchism_integrate_luxembourg: "Integrate [8.GetName]"
+  BEL_monarchism_integrate_luxembourg_desc: "Luxembourg, now under our control, is undeniably [BEL.GetAdjective]. As such, we have all needed justification the consider it core territory, all that's missing is a proper, international declaration."
+  BEL_integration_threat: "Integrated territory"
+
+  BEL_monarchism_integrate_netherlands: "Integrate [HOL.GetName]"
+  BEL_monarchism_integrate_netherlands_desc: "Fully controlling the Netherlands, we can use some delicate diplomacy to formalize them as our core territory. If we replace all Dutch politicians, down to the local level, and replace them with loyal [BEL.GetAdjective]s, then after some time our core will be legitimate in everyone's views."
+
+  BEL_monarchism_prepare_further_expansion: "Prepare further expansions"
+  BEL_monarchism_prepare_further_expansion_desc: "With either the Benelux under friendly control, or a strong enough army, the next objective should be to expand our borders to the true extend of what we should have been, especially into Germany and France, although some Colonies would be nice as well. Only the war powers and size of our nation will let us do so in the long-run, so we must be prepared."
+  BEL_monarchism_prepare_further_expansion_available_tt: "§Y[8.GetName]§!, §Y[35.GetName]§!, §Y[7.GetName]§!, and §Y[36.GetName]§! must be controlled by a §Gfriendly force§!."
+  BEL_monarchism_prepare_further_expansion_reward_tt: "Every §YNation holding land in Europe§!:\n    Lose §R-25§! opinion of §Y[BEL.GetName]§!."
+  threat_expansion_preparation: "Preparing expansion"
+
+  BEL_monarchism_prepare_british_invasion_prepare: "Plan Rosehip"
+  BEL_monarchism_prepare_british_invasion_prepare_desc: "The neighboring [ENG.GetName] is one of the three major nations we wish to have parts of. Our aim is simple, and we believe we can achieve it. But whether it be through peaceful or forceful means, we require extensive preparation to ensure success in either scenario. If we can get every corner of our planning perfect, it will give us an unbeatable advantage to take over Britain as soon as possible."
+
+  BEL_monarchism_british_contact_diplomats: "§BContact [ENG.GetAdjective] Diplomats§!"
+  BEL_monarchism_british_contact_diplomats_desc: "Contacting British Diplomats and remedying the relationship between our two countries is a good starting point. If our diplomatic relationship has soured and it hasn't recovered in some years, then that could be a hint of a hostile relation. However, if our relationship has been friendly and our international affairs haven't collapsed into tragedy, then it would be a good sign that we mean well."
+
+  BEL_monarchism_british_sponsor_state_visit: "Sponsor [ENG.GetAdjective] State Visit"
+  BEL_monarchism_british_sponsor_state_visit_desc: "Through an invite to [BEL.capital.GetName], we can allow important [ENG.GetAdjective] politicians to visit us, and return the favor. After so long, it would be a chance to give our nation the boost in international fame that it lacks, while also giving us the chance to improve our relations with Britain. Along with this, Britain may take this as a sign of sincerity to prove our trustworthiness."
+
+  BEL_monarchism_british_trade_agreement: "Propose [BEL.GetAdjective]-[ENG.GetAdjective] Trade Treaty"
+  BEL_monarchism_british_trade_agreement_desc: "A good way to prepare for peacefully taking over the [ENG.GetAdjective] is to gradually strengthen our influence over their economy. Even if they're is reluctant to acknowledge our intentions, they shouldn't reject economic progress if they like us. Without realizing, we'll be selling ourselves as a good ally, if our nations' economic interests are connected. This would be just a first step in a deep connection."
+
+  BEL_monarchism_british_destabilization_campaign: "§B[ENG.GetAdjective] Destabilization Campaign§!"
+  BEL_monarchism_british_destabilization_campaign_desc: ""
+  BEL_monarchism_british_destabilization_campaign_bypass_britain_collapsed_tt: "[ENG.GetName] has collapsed or is in the process of collapsing"
+  BEL_monarchism_british_destabilization_campaign_rewards_tt: "Unlock §Ydecisions§! to destabilize [ENG.GetFlag]§Y[ENG.GetNameDef]§!, and later even §Ysplit§! them."
+
+  BEL_britain_friendship: "§GDeclare Anglo-[BEL.GetAdjective] Friendship§!"
+  BEL_britain_friendship_desc: "Instead of sowing discord and dissent among the British people, we can get them on our side instead. Appeal to them by trying to prove ourselves as good-natured allies. First through the monarchy itself, the Queen can officially declare friendship with the British monarchy, which also works as a message to the UK people, that we wouldn't try to attack them. Secondly through diplomacy to suggest an alliance."
+  BEL_britain_friendship_available_tt: "[ENG.GetName] has not refused our friendship"
+  BEL_monarchism_british_faction_name: "Brussels-London Pact"
+
+  BEL_monarchism_breakaways_befriend: "Further befriend Breakaways"
+  BEL_monarchism_breakaways_befriend_desc: "We finished the british empire by fighting for their breakaways. We can further strengthen this friendship and make it into something as binding as an alliance, due to the large influence we have over them. We can even send economic support for the development and modernization of their tiny nations. This would greatly strengthen their dependence on us."
+  BEL_britain_broke_apart_trigger_tt: "Britain has fallen apart"
+  BEL_monarchism_breakaways_befriend_reward_tt: "Gain opinion with §YBreakaway States§!. If puppeted, they also lose §Yautonomy§!."
+
+  BEL_monarchism_britain_request_states: "Request East-English States"
+  BEL_monarchism_britain_request_states_desc: "Now that the British Isles are firmly in our hand, it's time we request some one-time tribute for our help during their internal struggles. Specifically, there are four states in particular that have a large amount of tomboys living in them; §Y[127.GetName]§!, §Y[126.GetName]§!, §Y[125.GetName]§!, and §Y[129.GetName]§! specifically."
+  BEL_monarchism_britain_request_states_reward_tt: "Unlock §Ydecisions§! to request four [ENG.GetAdjective] states with a large §Y[BEL.GetAdjective]§! population."
+
+  BEL_monarchism_britain_claim_britannia: "§BClaim§! §GBritannia§!"
+  BEL_monarchism_britain_claim_britannia_desc: "Controlling the East of Britain, we should integrate her into our social consciousness. As Britannia rules the waves, we now rule Britannia. From the Romans, to the Saxons, then the Vikings, to the English, and finally, we will take her, and make her part of our greater empire. For our greater glory. Rule Britannia!"
+
+  BEL_monarchism_britain_prepare_invasion: "§RPrepare Invasion§!"
+  BEL_monarchism_britain_prepare_invasion_desc: "Despite our great efforts to remain peaceful, we have to prepare for war on Britain in the worst case scenario. War could very well occur if Britain saw us as a threat and refused to take us seriously, so pre-emptively focusing on a way to defend - or invade - is absolutely necessary to our long-term survival."
+
+  BEL_monarchism_britain_study_weltkrieg: "Study the Weltkrieg"
+  BEL_monarchism_britain_study_weltkrieg_desc: "As monarchists, we cannot and should not forget the lessons the world learned the hard way. The Weltkrieg, defined by trench warfare and futile combat, is proof that standing on equal footing with another enemy army will lead to stalemate and death for everyone. Though we prefer a less brutal solution, and unlike the Kaiser of Germany, we don't want needless deaths at home, so our approach must learn a lot."
+  BEL_monarchism_britain_study_weltkrieg_reward_tt: "§YEvery Current Army Leader§!:\n  Add Defense Skill: §G1§!"
+
+  BEL_monarchism_britain_develop_lelouch_plan: "Develop Lelouch's Plan"
+  BEL_monarchism_britain_develop_lelouch_plan_desc: "Lelouch vi Britannia, one of the very few men in the Tomboy administration, and a very intelligent one at that, proposed a way to conquer Britain. He proposed to focus our land army on anti-infantry, medium tank regiments and combined units. Some of the Queen's advisors have questioned this, but he assured us that it is for the best. He left it up to us, however, to bring these divisions over the Channel."
+
+  BEL_monarchism_britain_over_the_channel: "§ROver the Channel§!"
+  BEL_monarchism_britain_over_the_channel_desc: "Challenging the British on the sea is suicide. So instead of that, with our combined arms being sufficient enough to deal with their inferior air force, we can parachute into their mainland, and effectively skip the need to deal with their fleet. We'd need to prioritize paratroopers and transport planes, as well as a massive amount of fighter planes to dominate their skies."
+
+  BEL_monarchism_britain_challenge_britannia: "§RChallenge Britannia§!"
+  BEL_monarchism_britain_challenge_britannia_desc: "One of the ways to conquer Britain is through challenging the might of their Royal Navy. Once they come out of their ports, it will be our job to use our might and better tactics to defeat their ships. We'll have to build an advantage in firepower, maneuverability, and discipline. If we can capture their ships after, we can save a few future costs as well. But first, we need modern warships, and we need them now."
+
+  BEL_monarchism_britain_split_britain: "Seek temporary anti-[ENG.GetAdjective] allies"
+  BEL_monarchism_britain_split_britain_desc: "There is no risk in asking for aid from the nations on the British Isles in the name of freeing them from [ENG.GetNameDef]. They might have motives to dislike the [ENG.GetAdjective], while we have more power to fight them. With some diplomacy, we might be able to get them to join us in a war against [ENG.GetNameDef] and they might be willing to help us."
+  BEL_monarchism_britain_split_britain_rewards_tt: "Invitations to a §Ytemporary anti-[ENG.GetAdjective] alliance§! will be sent out to nations native to the §YBritish Isles§!, if there are any."
+
+  BEL_monarchism_britain_get_ira_training: "Get IRA Training"
+  BEL_monarchism_britain_get_ira_training_desc: "The IRA is a well-trained terrorist organization with high discipline and combat readiness. To add to the effect that we have a strong force against [ENG.GetNameDef], some of the best from the IRA could be excellent trainers to some of our elite units, given their knowledge of warfare against the [ENG.GetAdjective], especially for assaults."
+  BEL_monarchism_britain_get_ira_training_trigger_tt: "Support for §Y[IRE.GetRulingIdeologyNoun]§! is greater than §Y95%§!"
+  BEL_monarchism_britain_get_ira_training_reward_tt: "§Y5 Random Unit Leaders each:§!\n    §Y40% chance of:§!\n        Gain §Y3§! XP\n    §Y40% chance of:§!\n        Gain §Y6§! XP\n    §Y15% chance of:§!\n        Gain §Y8§! XP\n    §Y5% chance of:§!\n        Gain §Y10§! XP"
+
+  BEL_monarchism_britain_attack: "§RExecute Plan Rosehip§!"
+  BEL_monarchism_britain_attack_desc: "The invasion of [ENG.GetNameDef], which we dubbed 'Plan Rosehip', is nigh. The plan was prepared by our armed forces, and our diplomats solved the rest. Now they only need the word from [THIS.GetLeader.GetHerHisCap] Majesty, [THIS.GetLeader], to carry out this operation and subdue [ENG.GetNameDef] once and for all."
+
+  #BEL_monarchism_britain_consolidate_england: "§BConsolidate§! §GEast§!-§REngland§!"
+  BEL_monarchism_britain_consolidate_england: "£GFX_text_icon_britannia§!"
+  BEL_monarchism_britain_consolidate_england_desc: "The [ENG.GetAdjective] fought hard and lost, and East England is now under our control. [ENG.GetNameDefCap] finally knows her place under the [BEL.GetName]s. East England will now be integrated into [BEL.GetNameDef], which should happen smoothly, as the proles don't much care if they're ruled by the [ENG.GetAdjective] [ENG.GetLeader] or [BEL.GetLeader.GetHerHisCap] Majesty, [BEL.GetLeader]."
+
+  BEL_monarchism_france_plan_andou_prepare: "Plan Andou"
+  BEL_monarchism_france_plan_andou_prepare_desc: "[FRA.GetName], formerly a huge Empire, but now a weak country, is so near. [BEL.GetLeader.GetHerHisCap] Majesty, [BEL.GetLeader]'s supporters want to capture this big opportunity that we couldn't afford to pass up, to bring the [BEL.GetAdjective]s of [FRA.GetNameDef] under one roof with those in our country. With the way things look, the [FRA.GetAdjective] can't defend themselves for long anyway, so we just have to decide whether to take the bare minimum, or more."
+
+  BEL_monarchism_france_defense_build_defense: "Focus on §BDefense§!"
+  BEL_monarchism_france_defense_build_defense_desc: "The [FRA.GetAdjective], despite being very weak, still have a massive army and a great naval fleet in comparison to us. For the sake of our safety, we must start preparing defenses and reinforcing our army to protect our interests. We might be able to use this focus to fortify our other borders too, just in case any of them decide to invade us as well."
+
+  BEL_promised_to_join: "Promised to join"
+
+  BEL_monarchism_france_defense_train_armored: "Build defensive armor"
+  BEL_monarchism_france_defense_train_armored_desc: "A great way to safely prepare our army for operations in France would be to build tanks with high durability and armor power, rather than ones that are agile and fast like the [ENG.GetAdjective], or that have pure offensive power like the [GER.GetAdjective]s. This way we can keep the enemies away by a fair enough distance, while having the army maneuver around defensively."
+  BEL_monarchism_france_defense_reward_tt: "Add bonuses to §OStrict Defense Focus§!."
+
+  BEL_monarchism_france_defense_develop_better_tanks: "Develop better tanks"
+  BEL_monarchism_france_defense_develop_better_tanks_desc: "We already use old [FRA.GetAdjective]-made tanks with [BEL.GetAdjective] personnel, but this time, because we're going to be fighting the [FRA.GetAdjective], we should start re-designing these tanks to better suit our needs and requirements. Once that's done, we should put these newly made tank models, whether or not they're prototypes, into service and start integrating them into the army proper."
+
+  BEL_monarchism_france_defense_develop_better_tanks_2: "Further improve armor"
+  BEL_monarchism_france_defense_develop_better_tanks_2_desc: "[FRA.GetAdjective] tanks have their strengths, though inferior to the Anglo-German Tank Design. Before we can increase our fighting power, we'll need more effective protection in case any other nations decide to strike out at us while busy with the [FRA.GetAdjective]. Our war materials must improve first and foremost, with armor and gun-power increasing day by day."
+
+  BEL_monarchism_france_defense_harden_training: "Harden training"
+  BEL_monarchism_france_defense_harden_training_desc: "Our current army isn't bad, but it still can't be considered the best around. When we fought in the Great War, we suffered severe defeats by countries with bigger armies than ours, with better organization and discipline. This led to our retreat and defeat, losing many good [BEL.GetAdjective]. So when we go on defense against the [FRA.GetAdjective], we must have the best army available."
+
+  BEL_monarchism_france_defense_harden_spirits: "Harden spirits"
+  BEL_monarchism_france_defense_harden_spirits_desc: "Since the Great War ended, even though it was a long time ago, many people, men and [BEL.GetAdjective], think that war is not something to look forward to, and may oppose to even a defensive war with the [FRA.GetAdjective]. After years of relative peace, most people would've expected there wouldn't be another major battle for some time. This must change."
+
+  BEL_monarchism_france_defense_encourage_conscription: "Encourage conscription"
+  BEL_monarchism_france_defense_encourage_conscription_desc: "Since it'll be necessary for this defensive war, we must create incentives to make people willing to fight. Currently, most [BEL.GetAdjective]s aren't be too keen on leaving their families for war, especially because the Great War was so costly to the [BEL.GetAdjective]s lost in it. If we can put in place some incentives, such money, tax exemptions, and so on, we can curb conscription."
+
+  BEL_monarchism_france_defense_let_them_come: "§BLet them come!§!"
+  BEL_monarchism_france_defense_let_them_come_desc: "Instead of focusing on attacking them, we can play defensively, letting them advance and using defensive positions, to easily mow down their numbers. This would protect our people and make the later push back easier. This is specifically aimed to prevent the Great War repeat, and a hardy defense would prevent more needless loss."
+
+  BEL_monarchism_france_offense_focus_on_offense: "Focus on §ROffense§!"
+  BEL_monarchism_france_offense_focus_on_offense_desc: "[FRA.GetNameDefCap] is weak, yes. However, rather than do as the history books suggest and just prepare for a defensive war, we must prepare a method to take, capture, and colonize the [FRA.GetAdjective]. It's the quickest way to put an end to their tyranny. A strict focus on offense, training, military technology, etc. is needed to keep this goal in sight."
+
+  BEL_monarchism_france_offense_sabotage_maginot: "Sabotage Maginot"
+  BEL_monarchism_france_offense_sabotage_maginot_desc: "We'll need some of our best and brightest to plan to attack our enemy, but some delicate sabotage of their defense lines is necessary for the fight. Thanks to our operatives who have been working for some time in infiltrating the [FRA.GetAdjective] Armed Forces, we have discovered just a few ways to disable their Iron Curtain, making it easier for us to tackle their defenses, even if temporarily."
+  BEL_monarchism_france_offense_sabotage_maginot_reward_tt: "In the case of §Ywar§!, the §YMaginot Line§! may be §Odamaged§! or §Rentirely destroyed§!."
+
+  BEL_monarchism_france_offense_invite_french_tomboys: "Invite French Tomboys"
+  BEL_monarchism_france_offense_invite_french_tomboys_desc: "We can officially offer amnesty to any [FRA.GetAdjective] [BEL.GetAdjective] willing to join the fight against the [FRA.GetAdjective] army. Considering the horrid way the [FRA.GetAdjective] treated us [FRA.GetAdjective]s as a minority, giving them a chance for a better life should inspire those stuck in living hell under the [FRA.GetAdjective] System to come to our side, and join the eventual war on the side of freedom."
+  BEL_monarchism_france_offense_invite_french_tomboys_reward_1_tt: "a §Ysmall§! amount of Tomboys joining our cause."
+  BEL_monarchism_france_offense_invite_french_tomboys_reward_2_tt: "a §Ymedium§! amount of Tomboys joining our cause."
+  BEL_monarchism_france_offense_invite_french_tomboys_reward_3_tt: "a §Ylarge§! amount of Tomboys joining our cause."
+  BEL_monarchism_france_offense_invite_french_tomboys_reward_4_tt: "a §Yhuge§! amount of Tomboys joining our cause."
+
+  BEL_monarchism_france_offense_gamble_the_congo: "Gamble the Congo"
+  BEL_monarchism_france_offense_gamble_the_congo_desc: "Causing some conflicts and eventually a Border War, we're able to take land in the Congo and nearby lands. If we do well, we can possibly reach Lake Chad that way. The rubber, fish and minerals there would be extremely valuable for us, and a great boon in war. This would make the [FRA.GetAdjective] mad, and should we lose, we might lose the entire Congo."
+  BEL_monarchism_france_offense_gamble_the_congo_reward_tt: "Start §YBorder Wars§! along the entire §YFrench and [BEL.GetAdjective] Congolese Border§!.\nWe might §Rlose§! §Ythe Congo§! if we are unsuccessful."
+
+  BEL_monarchism_france_offense_instigate_diplomatic_incident: "The Homefront Gambit"
+  BEL_monarchism_france_offense_instigate_diplomatic_incident_desc: "By sparking a diplomatic incident, and a border war, we can prove to ourselves and the [FRA.GetAdjective] that we have the military power to subdue them quickly and efficiently. This is, of course, if we win. If we don't, the [FRA.GetAdjective] will feel reinvigorated, and will be much more supportive of war, and simultaneously it would embarrass the Queen and our people's faith in the army tremendously."
+
+  BEL_monarchism_france_offense_diplomatic_incident_victory: "Victory!"
+  BEL_monarchism_france_offense_diplomatic_incident_victory_desc: "Thanks to careful planning, or Lady Luck, we have won the Homefront Gambit, defeating the [FRA.GetAdjective] thanks to a large variety of forces from our nation. With their failure, they've embarrassed themselves in the eyes of their people, and we've proved our military power both internally and externally."
+  BEL_monarchism_france_offense_diplomatic_incident_victory_trigger_tt: "§Y[BEL.GetFlag][BEL.GetName]§! must have §Gwon§! the Gambit"
+
+  BEL_monarchism_france_offense_diplomatic_incident_defeat: "Defeat!"
+  BEL_monarchism_france_offense_diplomatic_incident_defeat_desc: "The gamble we took has come to nothing. We could not defeat the [FRA.GetAdjective], and now a chunk of our people lost faith in our Armed Forces, we may very well see volunteers drop as well, while [FRA.GetName] became a lot more confident in themselves. This was a mistake."
+  BEL_monarchism_france_offense_diplomatic_incident_defeat_trigger_tt: "§Y[FRA.GetFlag][FRA.GetName]§! must have §Gwon§! the Gambit"
+
+  BEL_monarchism_france_offense_attack_france: "§RVive les garçons manqués!§!"
+  BEL_monarchism_france_offense_attack_france_desc: "Our weapons and tanks should be a significant step ahead of [FRA.GetName], as they've had a great deal of development mistakes, and now our army is a well-oiled war machine. Since our army is big enough to face off the massive [FRA.GetName], we can hope to make landfall, and begin taking out their assets quickly and effectively, while still making a concerted effort to prove that [FRA.GetName] is incapable of being a respectable country."
+
+  BEL_monarchism_france_finish_campaign: "£GFX_text_icon_marianne§!"
+  BEL_monarchism_france_finish_campaign_desc: "France fought extremely hard to hold off our advances and delayed our complete victory, but in the end, it didn't even matter. We broke through the defences after a long battle, and defeated the French. Now they are completely subject to our rule and influence. Now, it's time to consolidate and integrate them, their land, and their national icons into our own."
+
+  BEL_monarchism_germany_plan_erika: "Plan Erika"
+  BEL_monarchism_germany_plan_erika_desc: "The [GER.GetAdjective], despite losing the Great War, are quite powerful militarily, and have a history of crushing inferior armies and overwhelming superior armies with great accuracy. There is a chance we could catch them by surprise and defeat them, but the prerequisite is to have a good, strong plan. For Germany, the question isn't how to beat them, but how to keep them beaten."
+
+  BEL_monarchism_germany_unity_chosen: "§YEinigkeit§!"
+  BEL_monarchism_germany_unity_chosen_desc: "Germany proved to be a powerful player in previous conflicts; it was only due to poor strategy and their blunders, that they lost the Great War. A united Germany in incredibly strong, and as such would be a great puppet state to have. At our command, with its territory and might, we could call ourselves the strongest state on Earth."
+  BEL_monarchism_germany_unity_chosen_reward_tt: "Leave Germany §Yfully united§!."
+
+  BEL_monarchism_germany_unity_invest_anti-tank: "Invest in anti-Tank research"
+  BEL_monarchism_germany_unity_invest_anti-tank_desc: "The [GER.GetAdjective]s field an impressive amount of tanks in their army, and with their advancements in tank technology, they could probably catch anyone on the back foot easily. We don't have any advantage in terms of offensive power, and even less of defensive power, but studying their achievements, we can develop tools to combat this prowess effectively and efficiently."
+
+  BEL_monarchism_germany_unity_invite_tomboys: "Invite Ruhr Tomboys"
+  BEL_monarchism_germany_unity_invite_tomboys_desc: "The [GER.GetAdjective] government is no friend to Tomboys, so the situation there is pretty tough. There is a significant Tomboy population in this region, and we can invite them to our Kingdom for freedom. This will not only generate a steady stream of Tomboys coming over, but also might make our occupation of the Ruhr easier."
+  BEL_monarchism_germany_unity_invite_tomboys_reward_tt: "Around §Y5000§! Tomboys from our non-owned, planned expansion areas from Germany will join us."
+  BEL_monarchism_germany_unity_invite_tomboys_trigger_tt: "§Y[GER.GetName]§!: Has embraced Tomboys"
+
+  BEL_monarchism_germany_unity_investigate_germany: "Investigate Germany"
+  BEL_monarchism_germany_unity_investigate_germany_desc: "Before we can take on [GER.GetNameDef], we must learn more about the situation in the country and what possible routes we can follow. With no detailed information, nor even little clues, there's not much we can do, and preparing for war is a bit risky, so we should start a careful investigation on the military situation in the country, and economic, cultural, and demographic makeup of the lands."
+
+  BEL_monarchism_unity_plan_offensive: "Plan the Invasion"
+  BEL_monarchism_unity_plan_offensive_desc: "Invading [GER.GetNameDef] is no small task; the country is extremely militarized, has a powerful force, and will be well-prepared and supplied. Despite that, there are ways to circumvent some of their stronger military locations. Most importantly, however, is a perfect plan executed at the perfect time, ensuring complete victory and minimal casualties. Still, the mission won't be easy."
+
+  BEL_monarchism_germany_unity_invest_arms_factories: "Invest in Military Factories"
+  BEL_monarchism_germany_unity_invest_arms_factories_desc: "In order to prepare for the inevitable war against Germany, it would be best to build up our country's military manufacturing and military industry. Increasing this sort of output and productivity would allow our country to mass-produce weaponry, allowing us to prepare ourselves before we plunge into the war. And there's never a guarantee that other country doesn't want a piece of our land either."
+
+  BEL_monarchism_germany_unity_underground_defense: "Create Underground Defenses"
+  BEL_monarchism_germany_unity_underground_defense_desc: "Those within our country already hate the Germans, and with a war against Germany looming on the horizon, they're more than ready to help the military in preparing underground defenses in case we have to fight on our home land. And once construction is finished, they can also be good homes in times of dire need, when you don't have time to run to the base, or your base has been decimated."
+
+  BEL_monarchism_germany_unity_divert_funding_to_army: "Divert Funds to Army"
+  BEL_monarchism_germany_unity_divert_funding_to_army_desc: "If we do not divert funds to support our army, it cannot succeed. Failure means the end of the nation, or worse, [BEL.GetLeader.GetHerHisCap] Majesty, Queen [BEL.GetLeader], would be at the wrong end of a firing squad. To prepare for the invasion of Germany, we must ramp up production of war material and improve the fighting and equipping capacities of our troops. The cost will be high, but victory is even more important."
+
+  BEL_monarchism_germany_unity_conquer_germany: "§RVeni, Viragines Vidi, Germaniam Vici§!"
+  BEL_monarchism_germany_unity_conquer_germany_desc: "Just as Germanicus Julius Caesar after the Battle of the Teutoburg Forest, we will now declare the beginning of the War against Germany. Using modern day tech we will pave a road to victory, all by improving our army in power and numbers, and by coming up with smarter, more effective strategies. Our superior might against a weak foe with a bad structure should propel us into a victory over Germany."
+
+  BEL_monarchism_germany_justice_chosen: "§TRecht§!"
+  BEL_monarchism_germany_justice_chosen_desc: "To dismantle Germany is inhumane, to keep them united is stupid. The only reasonable approach is to split them only once, into a Northern and a Southern Germany. Breaking them into two states will not only make them weaker, but may stop another potential Weltkrieg. Additionally, we may be able to revive old ideals and create new ones..."
+  BEL_monarchism_germany_justice_chosen_reward_tt: "§YPartition§! Germany into two countries."
+
+  BEL_monarchism_germany_justice_assess_situation: "Assess the Situation"
+  BEL_monarchism_germany_justice_assess_situation_desc: "To fully realize a plan to split the Germans, we first need to assess the situation within the country itself. The number of citizens and what they're feeling about the existing political situations, or their overall capabilities, will be critical to getting a handle on what exactly needs to be done, and whether it'll work. To execute a well-rounded plan like that, thorough observations are key."
+
+  BEL_monarchism_germany_justice_contact_resistance_groups: "Contact resistance groups"
+  BEL_monarchism_germany_justice_contact_resistance_groups_desc: "Nazi Germany suffered heavy dissent against them due to its authoritarian methods and systematic dehumanization. They have a number of groups involved in resistance acts to strike against Germany on the homefront, who do not take it well. Contacting them would allow us to possibly put in control a group that is allied to us, yet understands the German state, and can actively work on governing it. This could also prove to be a large boon in battle if they agree to help."
+
+  BEL_monarchism_germany_justice_rekindle_monarchism: "Rekindle German Monarchism"
+  BEL_monarchism_germany_justice_rekindle_monarchism_desc: "True to our world's history, monarchism still carries a significant weight in Germany. However, due to the abdication of the Kaiser during the Great War, the belief has been forced somewhat underground. With the proper maneuvering and a few choice individuals, we can spread their beliefs and spark hope for the re-establishment of a glorious royal court in Germany."
+
+  BEL_monarchism_germany_justice_assert_eastern_claims: "Assert Eastern Claims"
+  BEL_monarchism_germany_justice_assert_eastern_claims_desc: "The Ruhr and all the land up to the Weser should be our legitimate claim. There are a large amount of [BEL.GetAdjective]s that reside on these lands and they have been ravaged heavily by the German Regime. By declaring our claim, we can build upon the German [BEL.GetAdjective]'s contempt with the government."
+
+  BEL_monarchism_germany_justice_send_support_to_resistance_groups: "Send weapons to resistance groups"
+  BEL_monarchism_germany_justice_send_support_to_resistance_groups_desc: "Due to the significant resistance, weapons can make or break a resistance group. By sending weapons through the underground, we can increase their battle-readiness and help them put up a fight, and in turn, make our conquest of Germany easier. Still, for obvious reasons, we might be discovered, which would make the Germany very mad at us."
+
+  BEL_monarchism_germany_justice_radicalize_german_tomboys: "Radicalize [GER.GetAdjective] [BEL.GetAdjective]s"
+  BEL_monarchism_germany_justice_radicalize_german_tomboys_desc: "The [GER.GetAdjective] regime treats [BEL.GetAdjective] very poorly, and that makes many [BEL.GetAdjective]s very mad at it. We can use this anger to make them radicalize themselves and sabotage the [GER.GetAdjective] war machine. Especially in areas they're highly represented in, like the civilian sector, infrastructure, and railways. This would especially reduce the [GER.GetAdjective] production and battlepower."
+
+  BEL_monarchism_germany_justice_anti-tank: "Rapid Anti-Tank Development"
+  BEL_monarchism_germany_justice_anti-tank_desc: "We will need an antitank power strong enough to combat the large [GER.GetAdjective]-owned stockpile. Rapid development of better weapons, most importantly anti-tank weapons, will make planning our push easier and safer. Our army will be far more well-armed to combat the threat of [GER.GetNameDef] and its tank-centric army."
+
+  BEL_monarchism_germany_justice_war: "§RWir fahren gegen Deutschland§!"
+  BEL_monarchism_germany_justice_war_desc: "Having put in our plans, taken our precautions and begun various actions, we are ready to launch an offensive against [GER.GetNameDef] and their infamous Wehrmacht. We've prepared and planned for the impending invasion as well as we can, and our army will fight with all their might. This is a fight for survival, so no mistakes are allowed. Victory or death, hail the Queen!"
+  BEL_monarchism_germany_justice_war_reward_tt_1: "§Y[BAY.GetFlag][BAY.GetNameDefCap]§! will revolt and declare independence from §Y[GER.GetFlag][GER.GetNameDef]§!!"
+  BEL_monarchism_germany_justice_war_reward_tt_2: "§Y[BAY.GetFlag][BAY.GetNameDefCap]§! will become our puppet."
+
+  BEL_monarchism_germany_freedom_chosen: "§RFreiheit§!"
+  BEL_monarchism_germany_freedom_chosen_desc: "A united Germany has only led to horrors and death. It's quite obvious that without such horrid concepts as the 'Volk', no one should rule the Germans as a single power. Splitting it back up into its many states should end their imperialism and destroy any chance of Germany becoming a power again. Not to mention all the Tomboys they tortured and killed, disuniting them is devastating, yet not inhumane."
+  BEL_monarchism_germany_freedom_chosen_reward_tt: "§YDisunite§! Germany into their §Ypre-Unification states§!."
+
+  BEL_monarchism_germany_freedom_fund_north-eastern_nationalists: "Fund North-Eastern Nationalists"
+  BEL_monarchism_germany_freedom_fund_north-eastern_nationalists_desc: "We can have the Germans fracture into regional areas from within and become too uncoordinated to be a proper threat. We'll create nations within nations, and these groups may declare independence in their own regions, and begin a civil war against the German Government. That way, in no time, Germany will be broken into multiple weak states, a new chance to split Germany further opens."
+
+  BEL_monarchism_germany_freedom_fund_south-western_nationalists: "Found South-Western Nationalists"
+  BEL_monarchism_germany_freedom_fund_south-western_nationalists_desc: "The governments of the South-Western states of Germany want to break free and form a unified state of their own. They don't wish to be under the hell-nation of a Prussian-formed Germany forever, so they look for an opportunity to become independent again. We might actually be the ones to have the biggest interest in them becoming independent countries, besides their people, that is."
+
+  BEL_monarchism_germany_freedom_arm_north-eastern_rebels: "Arm North-Eastern Rebels"
+  BEL_monarchism_germany_freedom_arm_north-eastern_rebels_desc: "Germany is getting more and more unstable in the north-east, and with them being our neighbors, we can easily supply them with weapons and a few pieces of advice to bring the fall of the German regime. Perhaps we could even arm some of them and even organize an attack. Their actions should serve to divide Germany against itself, further weakening them."
+
+  BEL_monarchism_germany_freedom_arm_south-western_rebels: "Arm South-Western Rebels"
+  BEL_monarchism_germany_freedom_arm_south-western_rebels_desc: "The regions in the south-west want to end Germany and become independent again. With our resources and our desire, we may also aid them in starting a revolution of sorts and be like an expert adviser on their anti-Prussian uprising. They seem willing, and we should help, guaranteeing their loyalty."
+
+  BEL_monarchism_germany_freedom_recognize_german_minors: "Recognize German Minors"
+  BEL_monarchism_germany_freedom_recognize_german_minors_desc: "One of the goals of this war is to break up the huge monster, Germany, and establish a political balance in Europe. Recognizing the many small states that will be rising, and re-establishing the German confederation, will help make the different German powers appear like individual nations. At this point, they will feel the influence of our monarchy on them strongly."
+
+  BEL_monarchism_germany_freedom_claim_ruhr: "Claim the Ruhrgebiet"
+  BEL_monarchism_germany_freedom_claim_ruhr_desc: "The Ruhr is rightful Tomboy property. A massive amount of tomboys were taken from their homes and stripped off their right to live properly. For that reason, they are to be given back their ancestral homes in the Ruhr. We will declare this as our territory, and return it to the Tomboys who call it their home."
+
+  BEL_monarchism_germany_freedom_support_states_rights: "Declare Support for States' Rights"
+  BEL_monarchism_germany_freedom_support_states_rights_desc: "Considering that Germany was made through trickery and illegitimate maneuvering, and that in Germany too, there are smaller states that are not represented on the federal level, supporting the smaller states, will not only bring us further in our goals, but also it'll win us some local support in Germany as well. With this, we can also claim our goal to be righteous to most nations."
+
+  BEL_monarchism_germany_freedom_war: "§RLibertas, Aequalitas, Fraternitas§!"
+  BEL_monarchism_germany_freedom_war_desc: "Now with every preparation put in place, we are ready to wage war against Germany. Thanks to our preparations, our overall performance in the battlefield should be guaranteed victory. With a well-developed army and military manufacturing lines, we can easily put Germany to their place. Our people and the entire world will watch."
+  BEL_monarchism_germany_freedom_war_reward_tt: "Unlock §YDecisions§! to partition §YGermany§!."
+
+  BEL_monarchism_germany_finish: "£GFX_text_icon_germania§!"
+  BEL_monarchism_germany_finish_desc: "Despite putting up a fierce resistance, we have defeated Germany, and now she is under our command. Their armed forces are ours, and we can integrate the spirit of Germania and Volk into the Tomboy spirit, unifying us as one. The battle is done, and parts of the Wehrmacht should come into our vanguard under the Tomboy banner. To Greater Glory! Hail Germania!"
+  BEL_monarchism_germany_finish_trigger_tt: "§Y[GER.GetFlag][GER.GetName]§! has embraced Tomboys"
+
+  BEL_monarchism_war_euronia: "£GFX_text_icon_euronia§!"
+  BEL_monarchism_war_euronia_desc: "Euronia, the consolidation of Germania, Britannia, and Marianne, into one, large Tomboy Empire. She combines the personifications of old manes, the ideals of the glory of different nations, the strenghts of the cultures, and the technologies that advance at an astonishing pace, all led by [BEL.GetLeader.GetHerHisCap] Majesty, [BEL.GetLeader], and [BEL.GetLeader.GetHerHisCap] Majesty's ministers."
+
+  BEL_monafash_destabilize_democrats: "Destabilize Democrats"
+  BEL_monafash_destabilize_democrats_desc: "Democracy, if allowed to fester, could destabilize our foundations and the new society that we have built. Not allowing such a plague to grow and spreading the belief of equality amongst the populace should greatly impede a democracy from growing. Making changes to our public infrastructure should prove to be a sufficient start. Additional tasks that can be performed will be determined when necessary."
+
+  BEL_monafash_anti_communist_actions: "Anti-Communist Actions"
+  BEL_monafash_anti_communist_actions_desc: "Communism has spread through much of the continent and to our country. Not only is the spread of communism dangerous, the citizens are all being lied to; made to believe their country is not serving them anymore. We will have no part in letting an anarchist, de-constitutional, and corrupt regime take form, to which we are going to purge such a threat to the stability of the country."
+
+  BEL_monafash_royal_heritage: "Royal Heritage"
+  BEL_monafash_royal_heritage_desc: "The Monarch is undeniably a symbol of our nation; she unifies our people with her uncompromising word, her good heart, and her righteousness. With her by our side and her image revered by all, we will overpower and conquer the corrupt masses led by their dishonest, unrespectable leaders. By convincing her that Fascism is a good decision, she should take her rightful place as our Monarcho-Fascist leader."
+
+  BEL_monafash_fascist_supremacy: "Fascist Superiority"
+  BEL_monafash_fascist_supremacy_desc: "Instead of having the Queen have a say in matters as she pleases, it is best she remain silent and appreciate our dedication and hard work. We'll prop her up as a figurehead and utilize her image for fascist propaganda. Like this, we will limit her influence on political matters, while co-operating with the Monarchists at the same time."
+
+  BEL_monafash_equal_governance: "Equal Governance"
+  BEL_monafash_equal_governance_desc: "Political infighting is a dangerous problem to have in our nation; it undermines our society and prevents us from succeeding as a nation. Instead of fighting between who should have more power, we should implement an equal distribution of power amongst the Fascists and the Queen. Doing this, the conflict between Fascists and the Queen would become null and our advancement as a nation would be expedited."
+
+  BEL_monafash_house_guard: "Form the Royal Guard"
+  BEL_monafash_house_guard_desc: "By forming the Royal Guard and selecting strong Tomboys that are loyal to her Majesty the Queen as well as dedicated Fascists, we should ensure the security of the government, and protect the tomboys who run the government. By doing so, it ensures her Majesty's and our safety, while gaining additional support for both the government, authoritarians, and militants."
+  BEL_monafash_house_guard_division_tt: "Create a §YRoyal Guard Division Template§!."
+  BEL_monafash_house_guard_create_units_tt: "Create §Y3 Royal Guard Divisions§! in §Y[BEL.capital.GetName]§!."
+
+  BEL_monafash_convince_monarchist_hardliners: "Convince Monarchist Hardliners"
+  BEL_monafash_convince_monarchist_hardliners_desc: "With a strong leader, an army, and a policy, there are still those who do not have faith. As has become clear, we will need to convince the more aggressive hardline royal supremacist Tomboys, and win them over to our side, persuading them that building a strong, unified group with the Queen at the head is far better for the country than a one-person state."
+
+  BEL_monafash_convince_anti-monarchist_fascists: "Guide Anti-Monarchist Fascists"
+  BEL_monafash_convince_anti-monarchist_fascists_desc: "Not everyone in our group supports the idea of a monarch on the throne while we pull the strings. First and foremost, we should talk to the more conservative members of our organization to convince them that the traditional style of government as well as our current policies are the best option. We do not wish to get into an internal fight when our country needs our attention."
+
+  BEL_monafash_formalize_blacksuit_mobs: "Formalize Blacksuit Mobs"
+  BEL_monafash_formalize_blacksuit_mobs_desc: "As it stands, the blacksuit mobs are just a bunch of Fascist-aligned, disorganized civilians with some training we used to just throw at whatever leftist scum stood in our way. It was effective when our movement was less than legal, but now we need to train them properly, get them equipped, and create a military infrastructure for them. They served us well, after all."
+  BEL_monafash_formalize_blacksuit_mobs_division_tt: "Create a §YBlacksuit Mob Division Template§!."
+  BEL_monafash_formalize_blacksuit_mobs_create_units_tt: "Create §Y5 Blacksuit Mob Divisions§! in §Y[BEL.capital.GetName]§!."
+
+  BEL_monafash_national_guard: "Create the National Guard"
+  BEL_monafash_national_guard_desc: "We need to formalize a body of military units that do not belong to either the police or any party-related armies and factions, but remain loyal to the people and the people only. By creating the National Guard, we can give these forces a place where they can truly stand tall. Each of them will be considered the top of the top and given highest priority."
+  BEL_monafash_national_guard_division_tt: "Create an elite §YNational Guard Division Template§!."
+  BEL_monafash_national_guard_create_units_tt: "Create a §YNational Guard Division§! in §Y[BEL.capital.GetName]§!."
+
+  BEL_monafash_isolationism_non_intervention: "Non-Interventionism"
+  BEL_monafash_isolationism_non_intervention_desc: "We can't afford to antagonize the international community or our neighbors, while we consolidate our own nation. Though our enemies remain as an irritant, the time isn't right to tackle any serious concerns on foreign soil. To finish what we started, and to make our ideal state last, we will refrain from any aggressive action that can provoke anyone around the globe."
+
+  BEL_monafash_isolationism_defense_department: "The Defense Department"
+  BEL_monafash_isolationism_defense_department_desc: "Establishing a defense department for the new monarcho-fascist state requires us to create new military factions to stand in opposition to other foreign powers who are just waiting to invade us or annex our realm. For this, the Defense Department becomes essential in protecting the nation and its interests."
+
+  BEL_monafash_isolationism_case_black: "Case Black"
+  BEL_monafash_isolationism_case_black_desc: "The [GER.GetAdjective]s are a formidable people, even after they've been crippled by the Treaty of Versailles. Defending ourselves from them is of crucial importance. Case Black is therefor our plan to defend ourselves from the [GER.GetAdjective]s in the case of war. We can also pursue further diplomatic measures and further our trading with the [GER.GetAdjective]s."
+
+  BEL_monafash_isolationism_pursue_peace_with_germany: "Case Black - Peace"
+  BEL_monafash_isolationism_pursue_peace_with_germany_desc: "Why not try peace with the Germans? Despite their ruthlessness, they aren't unreasonable. And if we keep ourselves friendly with them, there is a low chance that they'll hold anything against us. Asking them for a guarantee for our independence should serve well to embed the roots of peace between our nations, and ensure our continued existence."
+  BEL_monafash_isolationism_pursue_peace_with_germany_reward_tt_good: "If they §Gaccept§!:"
+  BEL_monafash_isolationism_pursue_peace_with_germany_reward_tt_neutral: "If they §Ydeny§!:\n   Nothing happens."
+  BEL_monafash_isolationism_pursue_peace_with_germany_reward_tt_bad: "If they §Rfeel insulted§!:"
+
+  BEL_monafash_isolationism_antagonize_germany: "Code Black - Antagonization"
+  BEL_monafash_isolationism_antagonize_germany_desc: "Why even try to enter peace with the Germans, when we can goad them into declaring war on us instead? Picking small quarrels, sparking international tension, instigating anti-German revolts and riots... all will make them see us as a troublemaker, and could give us the opportunity to make them declare war on us, making us the defendant, and not contradicting our non-interventionism."
+  BEL_monafash_isolationism_antagonize_germany_event_tt: "Gets event \"§Y[BEL.GetName] kicks out Germans!§!\""
+
+  BEL_monafash_isolationism_join_germany: "[BEL_monafash_isolationism_join_germany_scripted_loc]"
+  BEL_monafash_isolationism_join_germany_desc: "Having such a good relation with the [GER.GetAdjective]s now, there might not be a good reason not to join their faction, since it does indeed stand with our vision. Our values, goals, and ideas are nearly a 100% match, and by joining them, we could also take a more defensive stand, especially for the queen and the nationalists."
+  BEL_monafash_isolationism_join_germany_has_faction: "Join the [GER.GetFactionName]"
+  BEL_monafash_isolationism_join_germany_not_has_facton: "Ally the [GER.GetAdjective]"
+
+  BEL_monafash_isolationism_force_germany_to_war: "Force Germany to war"
+  BEL_monafash_isolationism_force_germany_to_war_desc: "Using some subversion and our intel network we have in Germany, we can forge documents, plans, and preparations and have \"them\" send us a declaration of war, thus making it appear as if the Germans got tired of our antagonistic acts and attacked us. With this, we can officially claim Germany responsible for starting the war and justify going to war against them."
+  BEL_monafash_isolationism_force_germany_to_war_reward_tt: "We will §Rlose all§! §Yintel§! over §Y[GER.GetFlag][GER.GetName]§!"
+
+  BEL_monafash_germany_finish: "[BEL_monafash_germany_finish_title_scripted_tt]"
+  BEL_monafash_germany_finish_desc: "[BEL_monafash_germany_finish_desc_scripted_tt]"
+  BEL_monafash_germany_finish_neutral: "End Case Black"
+  BEL_monafash_germany_finish_neutral_desc: "We can end Case Black when we deal with Germany one way or another."
+  BEL_monafash_germany_finish_war: "£GFX_text_icon_germania§!"
+  BEL_monafash_germany_finish_war_desc: "Having finished the \"defensive\" war against [GER.GetNameDef], and having conquered the Western half of the Fatherland, we can now work on integrating the defeated [GER.GetAdjective]s into our own political, economic, cultural, and social life. In this way, a mix of [GER.GetAdjective] and [BEL.GetAdjective] culture will be created."
+  BEL_monafash_germany_finish_peace: "£GFX_text_icon_germania§!"
+  BEL_monafash_germany_finish_peace_desc: "Having allied the [GER.GetAdjective]s, and gained all the perks that they can offer, it's only right to officially celebrate the alliance and promote our cultures. We want to further increase the good relationships between us and the [GER.GetAdjective]s, so a celebration with festivities should suit well. Afterwards we can even make them some presents and we can become closer."
+
+
+
+
+
+
+  BEL_monafash_isolationism_case_blue: "Case Blue"
+  BEL_monafash_isolationism_case_blue_desc: "France was a very influential empire. That they were, but that has long since passed now. Now, they are nothing but a very angry bully, lashing out at everything. We need a plan in place in case they decide to up their game to attacking us. For this case, we should be prepared and have a battle plan at the ready."
+
+  BEL_monafash_isolationism_tighten_relations_with_france: "Case Blue - Tighten Relations"
+  BEL_monafash_isolationism_tighten_relations_with_france_desc: "Let's tighten our relationship with the [FRA.GetAdjective]. Appealing to their desire to claim former lands they once held, and their current protectionism of other nations, we could get the [FRA.GetAdjective] to cooperate with us, and we will receive additional safety in case anyone tries to attack us."
+  BEL_monafash_isolationism_tighten_relations_with_france_best_tt: "If they are §Genthusiastic§!:\n([FRA.GetFlag]§Y[FRA.GetName]§!) Proposes a faction with §Y[BEL.GetFlag][BEL.GetName]§!."
+  BEL_monafash_isolationism_tighten_relations_with_france_good_tt: "If they §Gagree§!:"
+  BEL_monafash_isolationism_tighten_relations_with_france_bad_tt: "If they §Rdeny§!:\n   Nothing happens."
+
+  BEL_monafash_isolationism_ruin_relations_with_france: "Case Blue - Ruin Relations"
+  BEL_monafash_isolationism_ruin_relations_with_france_desc: "By orchestrating countless diplomatic incidents, provocations, and pushing them into diplomatic corners, we will ensure they'll hate us as much as possible, and eventually come with guns blaring. That way, a war with the [FRA.GetAdjective] would be defensive, and no-one would berate us or question us about why we go to war if we have sworn non-interventionism."
+  BEL_monafash_isolationism_ruin_relations_with_france_event_tt: "Gets event \"§Y[BEL.GetName] kicks out French people!§!\""
+
+  BEL_monafash_isolationism_join_france: "[BEL_monafash_isolationism_join_france_title_scripted_loc]"
+  BEL_monafash_isolationism_join_france_desc: "[BEL_monafash_isolationism_join_france_desc_scripted_loc]"
+
+  BEL_monafash_isolationism_join_france_has_faction: "Ask to join [FRA.GetFactionName]"
+  BEL_monafash_isolationism_join_france_has_faction_desc: "In order to better defend ourselves, we should request to join the [FRA.GetFactionName]. The [FRA.GetAdjective] are strong, and joining their faction would strengthen us greatly, and would help deter any potential aggressors. There is a risk that the other members will not come to our aid though."
+
+  BEL_monafash_isolationism_join_france_not_has_faction: "Invite France to [BEL.GetFactionName]"
+  BEL_monafash_isolationism_join_france_not_has_faction_desc: "We should consider inviting the [FRA.GetAdjective] to our faction. It would benefit us a lot, and would also provide us with a strong ally. The [FRA.GetAdjective] have shown no signs of hostility towards us, so we should make sure to get an ally as soon as possible."
+
+  BEL_monafash_isolationism_join_france_form_faction: "Create Faction with France"
+  BEL_monafash_isolationism_join_france_form_faction_desc: "Having such good relations with the French, we should form a faction with them, and unite together against any external aggressors. Offering to create a faction would be a great boon, as they would have guaranteed our safety, as well as ours theirs. They would also have to help us if we're attacked, and the same goes for us. Considering that we're still a young nation, this could help us immensely."
+
+  BEL_monafash_isolationism_force_the_french: "Force the French Hand"
+  BEL_monafash_isolationism_force_the_french_desc: "By using intel we have collected in [FRA.GetNameDef], combined with other means of getting inside information on the [FRA.GetAdjective], we can forge detailed documents, plans, and finally a declaration of war against us. After we show this to the international community, we'll demonstrate how the [FRA.GetAdjective] swore peace and then went ahead and declared war on us, giving us the needed situation to have a defensive war."
+  BEL_monafash_isolationism_force_the_french_reward_tt: "We will §Rlose all§! §Yintel§! over §Y[FRA.GetFlag][FRA.GetName]§!!"
+
+  BEL_monafash_isolationism_france_finish: "[BEL_monafash_isolationism_france_finish_title_scripted_loc]"
+  BEL_monafash_isolationism_france_finish_desc: "[BEL_monafash_isolationism_france_finish_desc_scripted_loc]"
+  BEL_monafash_isolationism_france_finish_title_non_neutral: "£GFX_text_icon_marianne§!"
+  BEL_monafash_isolationism_france_finish_title_neutral: "End Case Blue"
+  BEL_monafash_isolationism_france_finish_desc_neutral: "France has been dealt with, and as such, we have finished Case Blue. Therefore, there is no point in continuing to develop this plan. As this is the state of affairs, we should move on to new plans, and cement the French into our subcultures."
+  BEL_monafash_isolationism_france_finish_desc_war: "We conquered and brought an end to the French hegemony, and now we can begin integrating their assets and culture in to our nation. Their history of tomboys in the past eras have been under the thumb of those that oppressed them, and now we can free the Tomboy populations of France from their shackles, and integrate Marianne, the French personification, into our own."
+  BEL_monafash_isolationism_france_finish_desc_peace: "We made the French our allies and cemented their friendship with our people. If the time comes, we're going to have a friend in a conflict, and hopefully avoid hostile actions, should anyone suddenly decide to take us or them on. This pact will make this possibility a lot smaller, and peace a lot longer."
+
+
+  BEL_monafash_isolationism_britain_prepare_voyage: "Case Red"
+  BEL_monafash_isolationism_britain_prepare_voyage_desc: "The British Isles would never ally themselves with a tomboy or a fascist state, as such, attempting peace is unthinkable. In contrast, with their history of royalism, there's a possibility that their populace would accept the Queen becoming their ruler. But preparations must be done first."
+
+  BEL_monafash_isolationism_britain_invest_in_marines: "Invest in Marines"
+  BEL_monafash_isolationism_britain_invest_in_marines_desc: "Landing assaults and beach defense, are crucial factors in a large scale invasion of the British Isles. In our navy, there are no armies present, as such, we must create a dedicated force - the Marines. After formation, we will need to train Marines and create tactics and strategies for them to use."
+
+  BEL_monafash_isolationism_britain_invest_in_destroyers: "Develop new Destroyers"
+  BEL_monafash_isolationism_britain_invest_in_destroyers_desc: "We don't have the size or economic power to produce large ships of any kind, so instead we can produce a huge swarm of destroyers - fast, heavily armed, and sturdy ships which are perfect for going on the offensive. Considering the might of the Royal Navy, these should come in handy."
+
+  BEL_monafash_isolationism_britain_invest_in_battleships: "Develop Battleships"
+  BEL_monafash_isolationism_britain_invest_in_battleships_desc: "Despite our size and small economic power, we should invest and develop a limited amount of very deadly battleships. Not only would these counter the British, but we would have the capability to strike with some lethal force at sea. As the Germans do, quality over quantity."
+
+  BEL_monafash_isolationism_britain_invest_in_parachuters: "Invest in Paratroopers"
+  BEL_monafash_isolationism_britain_invest_in_parachuters_desc: "While Marines are a good idea, we can't let ourselves be restricted to the sea alone. What we lack on the sea, we make up in the air. By creating elite paras, who are willing to come from the sky to kick in doors of the British, we can win the coming war without ever having to directly encounter their infamous Royal Navy."
+
+  BEL_monafash_isolationism_britain_practice_landings: "Practice Landings"
+  BEL_monafash_isolationism_britain_practice_landings_desc: "With the army in preparation and some effort having gone into planning a sea invasion, we should practice what we learned. We must mimic the challenges we will face by going against and succeeding in several sea invasions. Of course, we risk suspicion, but practicing landings under different circumstances will give us better odds at success when we execute it in reality."
+
+  BEL_monafash_isolationism_britain_study_roman_british_conquest: "Study the Roman conquest of Britannia"
+  BEL_monafash_isolationism_britain_study_roman_british_conquest_desc: "The Romans conquered most of modern-day Britannia using only a fraction of what the British had. For the same, we will need to gain full knowledge and expertise on the ways the Roman legions conquered these lands. By putting their battleplans and battle know-how to use, we should reduce our losses, and be able to easily take over Britannia."
+
+  BEL_monafash_isolationism_britain_aerial_exercises: "Aerial Exercises"
+  BEL_monafash_isolationism_britain_aerial_exercises_desc: "We need to train the Air Force personnel we have for one single reason: to safely win a war without having to suffer crushing defeats by the British Air Defense. So each and every airman must perform precise, well-made, and fast training drills, in order to master the art of aerial combat."
+
+  BEL_monafash_isolationism_britain_investigate_british_airforces: "Investigate British Airforce"
+  BEL_monafash_isolationism_britain_investigate_british_airforces_desc: "Focusing on its primary goal, Britain developed and built one of the world's greatest airforces. This is one of the reasons why they are so widely feared and respected. Now, in the light of the upcoming war, we must investigate this infamous airforce and see its capabilities, despite the risks that this incurs."
+
+  BEL_monafash_isolationism_britain_challenge_british_navy: "Challenge the British Navy"
+  BEL_monafash_isolationism_britain_challenge_british_navy_desc: "A maritime struggle is a real possibility, given we are tiny, and the British thrive and depend on the oceans for a majority of their economical progress. A focus on the navy is of the utmost importance, though should we choose to go this route, we can't go back on this plan anymore, thus we must be sure we want to use this approach."
+  BEL_monafash_isolationism_britain_challenge_british_navy_trigger_tt: "Has at least §Y1§! navy leader"
+  BEL_monafash_isolationism_britain_challenge_british_navy_reward_tt: "Create a §YMarine Division Template§!."
+
+  BEL_monafash_isolationism_britain_above_the_channel: "Above the Channel"
+  BEL_monafash_isolationism_britain_above_the_channel_desc: "Instead of throwing endless ships at the British, we are more likely to succeed if we simply go above the Channel with a great number of paratroopers and attack the British from there, bypassing the Royal Navy entirely. And while it wouldn't guarantee us a victory, it would save us the costs of a massive navy, and the lives of the tomboys who would inevitably perish trying to compete with the Brits."
+  BEL_monafash_isolationism_britain_above_the_channel_reward_tt: "If we have §Yequal to or more than 25 military factories§!:\n   Create an §YAdvanced Paratrooper Division§!.\nIf we have §Yless than 25 military factories§!:\n   Create a §YBasic Paratrooper Division§!."
+
+  BEL_monafash_isolationism_britain_prepare_the_people: "Prepare the Tomboys"
+  BEL_monafash_isolationism_britain_prepare_the_people_desc: "As the preparations are going well, we need to convince our people that the Brits are enemies of tomboys, are taking away their pride, dignity, and happiness, and that the danger of them declaring war on us is big. We'll give examples of the centuries of fights between Brits and tomboys in their history, and the injustices they have dealt us. With a push to recognize this threat, our Tomboys will be ready for war."
+
+  BEL_monafash_isolationism_britain_enrage_the_brits: "Enrage the Brits"
+  BEL_monafash_isolationism_britain_enrage_the_brits_desc: "By deliberately goading the Brits to fight us in a provocative manner, publicly insulting them, recognizing breakaway regions, causing small skirmishes across their commonwealth or colonial states, and other similar incidents, we can anger them to the point of declaring war on us."
+  BEL_monafash_isolationism_britain_enrage_the_brits_bypass_tt: "All §YBritish states§! are owned by §Yallies or puppets§!"
+
+  BEL_monafash_isolationism_britain_step_over_the_line: "Step over the line"
+  BEL_monafash_isolationism_britain_step_over_the_line_desc: "Provoking the Brits to war by faking documents and plans that they intend to declare war on us, and finally showing it to the world, together with the British pride, should ensure that they cannot take back the falsified declaration of war we'll show the international community."
+  BEL_monafash_isolationism_britain_step_over_the_line_reward_tt: "We will §Rlose all§! §Yintel§! over §Yall countries owning land in Britain§!!"
+
+  BEL_monafash_isolationism_britain_consolidate: "[BEL_monafash_isolationism_britain_consolidate_title_scripted_loc]"
+  BEL_monafash_isolationism_britain_consolidate_non_neutral: "£GFX_text_icon_britannia§!"
+  BEL_monafash_isolationism_britain_consolidate_neutral: "Consolidate Tomboy England"
+  BEL_monafash_isolationism_britain_consolidate_desc: "The Tomboy regions of England are now fully under our control. Settling Tomboys from various parts of the new Kingdom into those areas should strengthen loyalty there and permanently turn it into core territory of our Kingdom. Their unique culture will receive proper respect, and we'll integrate their national identity and personification into ours."
+
+  BEL_monafash_isolationism_benelux_case_orange: "Case Orange"
+  BEL_monafash_isolationism_benelux_case_orange_desc: "The two other Benelux states - the Netherlands and Luxembourg - are crucial candidates to take in to bring closer unity and unify our homeland. As such, we'll need to work hard on bringing them into our fold, be it through diplomacy, or through force."
+
+  BEL_monafash_isolationism_benelux_netherlands_mend_relations: "Mend [BEL.GetAdjective]-[HOL.GetAdjective] Relations"
+  BEL_monafash_isolationism_benelux_netherlands_mend_relations_desc: "Our relations with the Dutch are... less than stellar. By investing time into mending our long-since broken relations with the Dutch, we can eventually create a common ground where we can work from and build up trust, and thus form a close friendship with the Dutch people."
+
+  BEL_monafash_isolationism_benelux_luxembourg_mend_relations: "[BEL.GetAdjective]-[LUX.GetAdjective] Relations"
+  BEL_monafash_isolationism_benelux_luxembourg_mend_relations_desc: "Though they see themselves as independent, they are always being meddled and manipulated by others due to their close location to Germany and France. It should be easy to set ourselves apart from the war-mongers that surround them and use that to establish a friendly, loyal relations and to co-operate them in the future."
+
+
+  BEL_monafash_isolationism_benelux_netherlands_ease_borders: "Soften Dutch border restrictions"
+  BEL_monafash_isolationism_benelux_netherlands_ease_borders_desc: "Due to our previous internal issues, we greatly restricted our immigration and emigration patterns. Now that we have recovered, we can slowly ease our border restrictions, starting with our neighbors, specifically the Dutch. No doubt this will result in a better relationship with them."
+  BEL_monafash_isolationism_benelux_netherlands_ease_borders_reward_tt_1: "Between §Y5k§! and §Y15k§! [BEL.GetAdjective] will migrate to our lands."
+  BEL_monafash_isolationism_benelux_netherlands_ease_borders_reward_tt_2: "Between §Y5k§! and §Y15k§! people will migrate to [HOL.GetAdjective] lands."
+  BEL_monafash_isolationism_benelux_netherlands_ease_borders_bypass_tt: "Either §Y[HOL.GetFlag][HOL.GetNameDef]§! or §Y[BEL.GetFlag][BEL.GetNameDef]§! do not hold any of their §YEuropean§! cores."
+
+  BEL_monafash_isolationism_benelux_both_establish_trade_agreements: "Establish Trade Agreements"
+  BEL_monafash_isolationism_benelux_both_establish_trade_agreements_desc: "To incentivize a positive relation between us and the Dutch, we must begin a trade relationship. This will result in better production, distribution of goods, and the establishment of a strong trade zone. This should lead us to successfully foster good relations with the Dutch for the future."
+  BEL_monafash_isolationism_benelux_netherlands_establish_trade_agreements_reward_tt: "Establish mutual §YMarket Access Rights§! with §Y[HOL.GetFlag][HOL.GetNameDef]§! and §Y[LUX.GetFlag][LUX.GetNameDef]§!."
+
+  BEL_monafash_isolationism_benelux_netherlands_national_reconciliation: "Reconcile with [HOL.GetNameDef]"
+  BEL_monafash_isolationism_benelux_netherlands_national_reconciliation_desc: "We had a lot of conflicts with the Dutch in the past. Though this is water under the bridge, it still hurts to think of it. We should utilize our good relationship with the Dutch, and reconcile with them. By doing so, both of our peoples could prosper, and bring back positive thoughts and memories. What happened has long since gone, let us look forward, together."
+
+  BEL_monafash_isolationism_benelux_netherlands_industrial_cooperation: "Industrial Co-Operation with [HOL.GetNameDef]"
+  BEL_monafash_isolationism_benelux_netherlands_industrial_cooperation_desc: "Both us and the Dutch are great industrialists, but sadly, we have focused mainly on internal things, and external ties have suffered. As a result, our growth was hindered, but with both of us working closely together, we could maximize our potential and develop new technologies and items that not even Germany, Britain, or France can hope to match us in. All we need is their agreement."
+
+  BEL_monafash_isolationism_benelux_luxembourg_promise_nonaggression: "[BEL.GetAdjective]-[LUX.GetAdjective] Non-Aggression Pact"
+  BEL_monafash_isolationism_benelux_luxembourg_promise_nonaggression_desc: "By proposing a Non-Aggression Treaty to Luxembourg, we can assure them of our pure intentions, fostering mutual trust and stability in the region. This pact aims to solidify a commitment to peaceful coexistence, bolstering diplomatic relations between our nations while safeguarding against the specter of aggression from external forces."
+
+  BEL_monafash_isolationism_benelux_luxembourg_industrial_cooperation: "[BEL.GetAdjective]-[LUX.GetAdjective] Industrial Co-Operation"
+  BEL_monafash_isolationism_benelux_luxembourg_industrial_cooperation_desc: "Instituting a framework of Industrial Co-Operation with Luxembourg, we can aim to create the Tomboy-Luxembourg Industry; should they accept, this initiative seeks to combine our industrial prowess with Luxembourg's expertise, forging a formidable economic partnership. By pooling resources and knowledge, the TLI endeavors to enhance productivity, stimulate innovation, and capitalize on shared strengths."
+
+  BEL_monafash_isolationism_benelux_luxembourg_guarantee: "Guarantee [LUX.GetName]"
+  BEL_monafash_isolationism_benelux_luxembourg_guarantee_desc: "Through the signing of a Guarantee Treaty with [LUX.GetName], we guarantee the independence and neutrality of their nation, while simultaneously pledging to uphold [LUX.GetAdjective] territorial integrity and sovereignty. The signing of such a treaty would serve as a symbol of friendship, cooperation, and respect between our two countries, while also acting as a deterrent to hostile actors."
+
+  BEL_monafash_isolationism_benelux_netherlands_protect_netherlands: "Propose to protect [HOL.GetNameDef]"
+  BEL_monafash_isolationism_benelux_netherlands_protect_netherlands_desc: "With the Dutch trusting us deeply, we can push to protect their people by making them a puppet state, allowing the Netherlands to retain their sovereignty and independence while being granted our military protection and assistance. Of course, we would give them papers over papers granting them rights, while keeping complicated loopholes open that would allow us to slowly integrate them."
+
+  BEL_monafash_isolationism_benelux_netherlands_betray_the_dutch: "Betray the [HOL.GetAdjective]"
+  BEL_monafash_isolationism_benelux_netherlands_betray_the_dutch_desc: "Having such a deep friendship with the Dutch, they've let down their guard around us. By planting false evidence of a declaration of war originating from the Dutch, and a bit of acting, the world will be convinced that the Dutch have declared war on us, and we'll be justified to \"defend\" against the Dutch and take their territory."
+
+  BEL_monafash_isolationism_benelux_luxembourg_protect_luxembourg: "Propose to Protect [LUX.GetName]"
+  BEL_monafash_isolationism_benelux_luxembourg_protect_luxembourg_desc: "Luxembourg is surrounded by several powerful, belligerent nations. With their military being practically non-existent, if these powers attack, they'd be gone within hours. Therefore, we propose to protect Luxembourg, promising military aid should they be attacked, as well as governmental aid, essentially turning them into a puppet."
+
+  BEL_monafash_isolationism_benelux_luxembourg_betray_luxembourg: "Betray [LUX.GetName]"
+  BEL_monafash_isolationism_benelux_luxembourg_betray_luxembourg_desc: "Luxembourg is the weakest country in Europe, so taking it over will take less than an afternoon, and the fact that we've established a good relationship will make it a lot easier. Planting some false evidence that Luxembourg have sent us a declaration of war will be enough for us to excuse our invasion to the wider world."
+
+  BEL_monafash_isolationism_benelux_netherlands_integrate: "Integrate the Netherlands"
+  BEL_monafash_isolationism_benelux_netherlands_integrate_desc: "Having gained control of the Dutch, it's time to integrate the Netherlands into our lands. With our shared cultural, social, and religious ideals, this process should be relatively smooth."
+
+  BEL_monafash_isolationism_benelux_luxembourg_integrate: "Integrate Luxembourg"
+  BEL_monafash_isolationism_benelux_luxembourg_integrate_desc: "Already controlling their \"country,\" it's time to formalize their territories as a core part of our realm. By integrating Luxembourg into our nation, we can begin the process of unifying their culture with ours, and laying the foundations for a united Benelux."
+
+  BEL_monafash_has_asked_for_hol_subjugation: "Already to protect [HOL.GetName]"
+  BEL_monafash_has_asked_for_lux_subjugation: "Already to protect [LUX.GetName]"
+
+  BEL_monafash_isolationism_benelux_consolidate: "Consolidate the Benelux"
+  BEL_monafash_isolationism_benelux_consolidate_desc: "With our control over the Dutch and Luxembourg, it's time to fully unify our lands and consolidate power. By establishing a single administration across the Benelux, we can begin the process of harmonizing our political system, creating a united identity and culture, and laying the foundations for a powerful future."
+
+  BEL_generic_tt_if_they_accept: "If they §Gaccept§!:"
+  BEL_generic_tt_if_they_refuse: "If they §Rrefuse§!:"
+  BEL_generic_tt_if_they_refuse_nothing_happens: "If they §Rrefuse§!:\n   Nothing happens."
+  BEL_generic_tt_if_they_react_enthusiastically: "If they react §Benthusiastically§!:"
+  BEL_generic_tt_will_happen: "Will happen:"
+
+  BEL_monafash_isolationism_consolidate_continental_tomboy: "Declare our Continental Homelands"
+  BEL_monafash_isolationism_consolidate_continental_tomboy_desc: "Having taken our continental homes, we must declare them as under our sovereign realm and make sure everyone knows that these lands are undeniably ours, and forever will be. This is non-negotiable and we shall accept nothing less than full international recognition."
+  BEL_tooltip_owns_big_france: "Owns the Greater French Tomboy regions: §YBourgogne§!, §YCentre§!, §YLoire§!, and §YBrittany§!."
+  BEL_tooltip_owns_small_france: "Owns the Lesser French Tomboy regions: §YNord-Pas-de-Calais§!, §YPicardy§!, §YChampagne§!, §YAlsace-Lorraine§!, §YFrance-Comte§!, §YIle-de-France§!, and §YNormandy§!."
+  BEL_owns_tomboy_germany: "Owns the German Tomboy regions: §YMoselland§!, §YRhineland§!, §YHessen§!, §YWestfalen§!, and §YWeser-Ems§!."
+  BEL_owns_tomboy_britain: "Owns the English Tomboy regions: §YSussex§!, §YGreater London Area§!, §YEast Anglia§!, §YEast Midlands§!, and §YYorkshire§!."
+
+  BEL_monafash_isolationism_consolidate_euronia: "£text_icon_euronia|1 §!"
+  BEL_monafash_isolationism_consolidate_euronia_desc: "With the consolidation of Tomboy England, the Ruhr, Northern France, and the whole of the Benelux under our control, we're ready to declare the creation of a new empire to be the powerhouse of Europe, and perhaps the world."
+
+  BEL_monafash_isolationism_reform_the_defense_department: "Reform the Defense Department"
+  BEL_monafash_isolationism_reform_the_defense_department_desc: "We have gained all the land we ever wanted, and we're the dominant power in Europe. We have no need for further offensive expansion, and thus our defense department needs a rework to integrate itself more into our domestic policies. From a purely defensive point of view, the department will ensure that any would-be invaders would have a hell of a time taking any of our land."
+
+  BEL_monafash_isolationism_full_isolationism: "Dedicate fully to Total Isolationism"
+  BEL_monafash_isolationism_full_isolationism_desc: "Our nation is at peace and we've achieved all our goals, and with no foreign enemies, we've no need for outside interference. It's time for our government to dedicate itself entirely to domestic issues, and the development of our people and our nation. With this act, our nation will be completely sealed from the world, with no outsiders having any say in our internal affairs."
+
+  BEL_monafash_isolationism_flexible_isolation: "Flexible Isolation"
+  BEL_monafash_isolationism_flexible_isolation_desc: "Isolationism is good, but we don't want to cut ourselves off completely. We'll keep up with global events, and should something important happen, we'll react accordingly, but for the most part, we're going to be focusing on our own affairs. The people who we've already established relations with will still have contact with us, and we won't go to war with anyone unless they attack us."
+
+
+
+
+
+
+
+
+
+
+
+
+
+  BEL_monafash_imperialism_imperialism: "Imperialism"
+  BEL_monafash_imperialism_imperialism_desc: "While other nations have their sights set on appearing benevolent, moving towards decolonization and freeing their holdings, we will not. Instead, we'll establish our own holdings, expand into neighboring and distant territories, and bring glory and prosperity to the realm. We'll focus on expanding our nation's power and influence, secure new materials, and bring order and civilization to uncivilized lands."
+
+  BEL_monafash_imperialism_homefront_prepare_the_homefront: "Prepare the Home Front"
+  BEL_monafash_imperialism_homefront_prepare_the_homefront_desc: "Our country is still young, yet our history is older than almost any other. While the nations who were the driving force of the world before the Great War have fade into memory, we've risen to fill the void they left. To achieve this, we'll focus on the Home Front, to ensure our lands cannot be taken away from us, and nobody can oppress us ever again."
+
+  BEL_monafash_imperialism_homefront_benelux: "Claim the Benelux"
+  BEL_monafash_imperialism_homefront_benelux_desc: "The Dutch, having lost their prosperity and status as a world power, are now among the weakest nation in Europe. We, on the other hand, are a budding powerhouse, with a rapidly expanding industry. They are ripe for the picking, as is Luxembourg. It's time to claim the whole of the Benelux, and integrate its lands into our growing realm."
+
+  BEL_monafash_imperialism_homefront_rise_up_an_army: "Form an Army"
+  BEL_monafash_imperialism_homefront_rise_up_an_army_desc: "In the pursuit to strengthen our realm, and to prevent anyone from even considering an invasion, we must rise up and establish a temporary army. These militias, consisting of citizens trained and equipped by the government, will be used to bolster the military and deter potential aggressors, while giving us a base from which to build a full-professional military from."
+
+  BEL_monafash_imperialism_homefront_ultimatum: "Ultimatum to the Benelux"
+  BEL_monafash_imperialism_homefront_ultimatum_desc: "Sending an ultimatum to the Dutch and Luxembourg is an important step in achieving our goal of imperialism and global domination. By demanding the annexation of their territory, we can potentially gain their lands without a fight. However, if they do choose to resist, we'll be attacking and taking over their lands the traditional way."
+
+  BEL_monafash_imperialism_homefront_rapid_attack_plans: "Rapid Attack Plans"
+  BEL_monafash_imperialism_homefront_rapid_attack_plans_desc: "We will develop rapid attack plans that will allow us to conquer the Dutch and Luxembourg faster. The use of the modern strategies coupled with the new technological innovations of the 30s will allow us to swiftly defeat them."
+
+  BEL_monafash_imperialism_homefront_declare_our_plans: "Declare our Plans"
+  BEL_monafash_imperialism_homefront_declare_our_plans_desc: "To achieve our goals, we'll announce our imperialistic plans to the rest of the world. Nations will be wary of our growing strength and influence, but we'll have a head start on them and should be able to get what we want before they can stop us. If they're stupid enough to refuse or antagonize us, they'll see the might of our military."
+
+  BEL_monafash_imperialism_germany_claim_the_west: "Claim Western Germany"
+  BEL_monafash_imperialism_germany_claim_the_west_desc: "Having seized the entirety of the Benelux, we will continue with our imperialistic campaign. The west of Germany is ripe for the taking, and we shall lay our claim on their fertile and industry-rich lands. We'll establish a new province, the Rhineland, and make it the heart of our growing economy."
+
+  BEL_monafash_imperialism_germany_claim_the_south: "Claim Southern Germany"
+  BEL_monafash_imperialism_germany_claim_the_south_desc: "Continuing on our campaign, we'll claim the southern part of Germany. This will provide us with access to the German's agricultural wealth, while also providing a buffer from Italy. We'll establish a new province, Bavaria, which might even become a self-ruling puppet at some point."
+
+  BEL_monafash_imperialism_germany_claim_the_middle: "Claim Central Germany"
+  BEL_monafash_imperialism_germany_claim_the_middle_desc: "Following the successful incorporation of the Rhineland, we'll make our next move, and claim the Central part of Germany. Hannover, Brandenburg, Saxony, and so on. With these provinces, we'll further consolidate our control of the area, and ensure nobody will think about challenging our might."
+
+  BEL_monafash_imperialism_germany_claim_the_north: "Claim Northern Germany"
+  BEL_monafash_imperialism_germany_claim_the_north_desc: "We'll lay claim on the northern portion of Germany, and declare it the third province of our future German Dominion. By combining their agricultural and industrial prowess with our own, we can expect an exponential increase in the strength of our economy, and the prosperity of our people."
+
+  BEL_monafash_imperialism_germany_claim_the_east: "Claim Eastern Germany"
+  BEL_monafash_imperialism_germany_claim_the_east_desc: "Eastern Germany has been weakened by the loss in the Great War, and the subsequent turmoil and chaos that followed. Claiming them as our future territory will be easy, and it'll help us establish a buffer zone between the Soviets and ourselves, and bringing us closer to the ultimate goal of conquering all of Germany."
+
+  BEL_monafash_imperialism_germany_ultimatum: "Send Ultimatum to Germany"
+  BEL_monafash_imperialism_germany_ultimatum_desc: "The German state is still reeling from the losses suffered during the Great War. We'll send an ultimatum demanding they become our puppet state, or risk invasion. They'll have no choice but to accept, but if they should, we'll swiftly attack and take what is rightfully ours."
+
+  BEL_monafash_imperialism_germany_integrate_the_west: "Integrate the Ruhr"
+  BEL_monafash_imperialism_germany_integrate_the_west_desc: "Having gained control over the former industrial hub of Germany, it's time to fully claim it and integrate the region into our nation. With its industry, manpower, and resources, the Ruhr will bolster our growing economy and help us achieve the global domination that is rightfully ours."
+
+  BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte: "[BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_scripted_loc]"
+  BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_puppet: "Further integrate the Puppet State"
+  BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_owns: "Form the §YHoly Tomboy Empire§!"
+  BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_fallback: "Manage Germany"
+  BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_desc: "#-#-#"
+  BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_trigger_tt: "All §YBase German States§! are owned by §Y[BEL.GetFlag][BEL.GetName]§! or §Y[BEL.GetAdjective] Puppets§!."
+  BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_effect_tt: "Unlocks a §Yspecial formable country§! in the §YDecisions§! tab."
+
+  BEL_monafash_imperialism_germany_germania: "£GFX_text_icon_germania"
+  BEL_monafash_imperialism_germany_germania_desc: "After integrating the Ruhr and turning the rest of their country into a puppet state, it's only natural to claim their national personification as well. Having Germania within our grasp will give us the opportunity to shape and mold her into what we want her to be, and integrate her into our own personification."
+
+  BEL_monafash_imperialism_france_claim_north: "Claim our Southern Homes"
+  BEL_monafash_imperialism_france_claim_north_desc: "Our Southern Homeland, Northern France, is under foreign occupation. This occupation being a direct affront to the very existence of our nation, and we'll have no choice but to reclaim the \"French\" land that is rightfully ours, and bring our fellow Tomboys back home where they are no longer oppressed."
+
+  BEL_monafash_imperialism_france_claim_south_east: "Claim the Alps French Alps"
+  BEL_monafash_imperialism_france_claim_south_east_desc: "France has grown lax in their old age. With their nation tearing itself apart and their people suffering, the Tomboys are the ones who must carry the greatest burden. Retreating into the South-West, many of the French Tomboys are begging for someone to free them. And that's exactly what we'll do."
+
+  BEL_monafash_imperialism_france_claim_center: "Claim Central France"
+  BEL_monafash_imperialism_france_claim_center_desc: "The Heartland of France is filled to the brim with Tomboys in dire need of rescue. Claiming this land and saving as many Tomboys as possible is a must, and will secure the future of the nation."
+
+  BEL_monafash_imperialism_france_claim_south: "Claim Aquitania"
+  BEL_monafash_imperialism_france_claim_south_desc: "A massive amount of Tomboys is trapped in Aquitania, with no means of escaping their French oppressors. Claiming this region and soon freeing these Tomboys is imperative, and will help restore our people to their former glory."
+
+  BEL_monafash_imperialism_france_claim_west: "Claim the French Basques"
+  BEL_monafash_imperialism_france_claim_west_desc: "The Tomboys of Southern France are also prominent in the Basque region. Their oppressors are closeby, only protected by their courage to live hidden among these savage people. Claiming the land and helping these Tomboys escape is a high priority."
+
+  BEL_monafash_imperialism_france_claim_colonies: "Integrate the French Colonies"
+  BEL_monafash_imperialism_france_claim_colonies_desc: "We cannot let the French Tomboys in the colonies suffer either. Having laid claim on mainland France, we must move quickly and claim the French colonies, as well as rescue our fellow Tomboys there."
+
+  BEL_monafash_imperialism_france_colonial_government: "Establish the Colonial Offices"
+  BEL_monafash_imperialism_france_colonial_government_desc: "The Tomboys within the French colonies have lived in these lands for generations, and are an integral part of their communities. By installing Tomboy-led colonial governments, we can ensure that Tomboys that know the intricacies of local affairs can represent our interests effectively and efficiently."
+  BEL_monafash_imperialism_france_colonial_government_reward_tt: "Enables §YDecisions§! to form and expand §YColonial Governments§!"
+
+  BEL_monafash_imperialism_france_invasion: "Launch the Invasion"
+  BEL_monafash_imperialism_france_invasion_desc: "The time has come to put aside our differences and unite together. Under the banner of a single, united Tomboy people, we'll rise up and invade the French, and take the land that rightfully belongs to us to ourselves.\n§YIf we promoted Occitane independence, they will rise up with us.§!"
+
+  BEL_monafash_imperialism_france_claim_marianne: "£GFX_text_icon_marianne"
+  BEL_monafash_imperialism_france_claim_marianne_desc: "Having successfully driven out the foreign aggressors and established a Tomboy-led Francia, we'll integrate the French personification into our own. Combining the powers and wills of the French and the Tomboy people will result in an indomitable force, capable of resisting all invaders!"
+
+  BEL_monafash_imperialism_britain_investigate_the_river: "Investigate the English Channel"
+  BEL_monafash_imperialism_britain_investigate_the_river_desc: "The English Channel has long been a point of contention between our people. While the Tomboys have been cut off from their Northern Homeland for many years, the idea of claiming the Channel and uniting the people has always been at the back of our minds. We'll need to investigate and understand it and the [ENG.GetAdjective] naval power.\nThis might attract attention, however."
+  BEL_monafash_imperialism_britain_investigate_the_river_reward_tt: "Gain §Y1.75%§! Navy Intel on §Y[ENG.GetFlag][ENG.GetName]§!."
+
+  BEL_monafash_imperialism_britain_claim_england: "Claim our Northern Home"
+  BEL_monafash_imperialism_britain_claim_england_desc: "With the channel and its waters being of utmost importance to our people's free time, claiming it via laying claims on England will allow us to use our knowledge of the area to eventually take it for ourselves. By doing this, we'll be a step closer to uniting the whole Tomboy people, and getting revenge on those who wronged us."
+  BEL_monafash_imperialism_britain_claim_england_bypass_tt: "Own every English State"
+
+  BEL_monafash_imperialism_britain_claim_wales: "Lay claims on Cambria"
+  BEL_monafash_imperialism_britain_claim_wales_desc: "While England is the most important, the rest of the British Isles cannot so easily ignored. By laying claims on Cambria, otherwise known as Wales, we can gain the support of the Tomboys that are oppressed there, and use them to help us claim the rest of their islands."
+
+  BEL_monafash_imperialism_britain_claim_pictland: "Claim Pictland"
+  BEL_monafash_imperialism_britain_claim_pictland_desc: "The Tomboys in the far north of the British Isles are often overlooked by the English, allowing us to gain their favor and support by laying claims on their homeland. They are a proud and fierce people, and if they should agree, they can serve as the backbone for our occupation of these lands."
+  BEL_monafash_imperialism_britain_claim_pictland_bypass_tt: "Own every Scottish State"
+
+  BEL_monafash_imperialism_britain_claim_hibernia: "Hibernian Claims"
+  BEL_monafash_imperialism_britain_claim_hibernia_desc: "Hibernia, sometimes called Ireland, the home to many a Tomboy, is also one of the least developed regions in the world. Having them as a part of our lands will not only give the Tomboys a land to take and develop, but also bring the whole of the Island into the 20th century, and into the future."
+  BEL_monafash_imperialism_britain_claim_hibernia_bypass_tt: "Own every Irish State"
+
+  BEL_monafash_imperialism_britain_sabotage_navy: "Sabotage the [ENG.GetAdjective] Navy"
+  BEL_monafash_imperialism_britain_sabotage_navy_desc: "By bribing dock workers, mechanics, officials, and so on, we can sabotage the Royal Navy. This will give us a major advantage in the future invasion of Britain, allowing us to quickly take the Isles and seize its rich lands for ourselves. This might also give us the opportunity to steal some of their new tech and apply it to our own naval vessels."
+
+  BEL_monafash_imperialism_britain_claim_colonies: "Also claim the [ENG.GetAdjective] Colonies"
+  BEL_monafash_imperialism_britain_claim_colonies_desc: "England's former colonies have grown into strong territories and even nations, yet many Tomboys are trapped there, with no means of escaping the oppressive governments. We'll have no choice but to invade and liberate these nations, to bring justice and freedom to the Tomboys that have suffered there for so long."
+
+  BEL_monafash_imperialism_britain_invade: "The Crossing of the Channel"
+  BEL_monafash_imperialism_britain_invade_desc: "The English Channel is the only thing keeping us from claiming our ancestral homeland. To take the Channel and cross it will take the combined might and unity of the whole Tomboy race, and will pave the way for a unified, united, and free Tomboy people. It's time for the Channel Crossing. It's time for freedom!"
+
+  BEL_monafash_imperialism_britain_britannia: "£GFX_text_icon_britannia"
+  BEL_monafash_imperialism_britain_britannia_desc: "With the successful Channel Crossing and liberation of Britannia, we now have the chance to reunite the whole Tomboy people of Britain and finally achieve the freedom and independence that is their right. By integrating Britannia into our own personification, we can ensure the future unity of the Tomboys that lived under her protection."
+
+  BEL_monafash_imperialism_benelux_demand_hol_lux: "Demand the Lowlands"
+  BEL_monafash_imperialism_benelux_demand_hol_lux_desc: "The Lowlands have long been under the oppressive regime of the Dutch and the Luxembourgish. It's time to demand they give us the land they're too incompetent to hold, and that has belonged to the Tomboy people for centuries. If they refuse, we'll have no choice but to resort to military action. But with their decaying economy and military, we can take the land without too much effort."
+
+  BEL_monafash_imperialism_benelux_attempt_peace: "Attempt a peaceful resolution"
+  BEL_monafash_imperialism_benelux_attempt_peace_desc: "Instead of conquering it through war and antagonizing the population of their countries, we can instead try and convince them peacefully. Giving the Dutch and the Luxembourgers enough help to make them dependent on us will get them to the point where they cannot live without us. In turn, we'll be able to integrate peacefully, without bloodshed."
+
+  BEL_monafash_imperialism_benelux_lux_assist_food_industries: "Assist Luxembourg's Food Industries"
+  BEL_monafash_imperialism_benelux_lux_assist_food_industries_desc: "Food shortages have crippled the Luxembourger's ability to sustain themselves. They'll have no choice but to beg us for help. Once they've accepted the aid, we can use this as leverage to eventually force them into giving up their independence, while we can simultaneously get their food industries up in preparation for integration."
+
+  BEL_monafash_imperialism_benelux_hol_aid_tomboys: "Send Aid to Dutch Tomboys"
+  BEL_monafash_imperialism_benelux_hol_aid_tomboys_desc: "With the way the Dutch treat the Tomboys that live in their lands, we have a duty to aid them. Especially since it will give us their support and loyalty, and destabilize the Dutch a little. The more the Dutch treat the Tomboys as second-class citizens, the more we'll make them crumble to the point where they'll have no choice but to integrate and free the Tomboys."
+
+  BEL_monafash_imperialism_benelux_lux_give_economic_aid: "Give Economic Aid to Luxembourg"
+  BEL_monafash_imperialism_benelux_lux_give_economic_aid_desc: "By giving Luxembourg financial and economic aid, we can make them reliant on us and make it more likely for them to agree to integration. As a nice bonus, we also improve our economy, as a stronger Luxembourg will mean more money flowing into our nation. It's a win-win situation."
+
+  BEL_monafash_imperialism_benelux_hol_poke_hornets_nest: "Poke the Hornet's Nest"
+  BEL_monafash_imperialism_benelux_hol_poke_hornets_nest_desc: "The Tomboys in the Netherlands are radicalized, and the Dutch have already let down their guard around us. It's the perfect opportunity to fabricate sabotage, weaken the Dutch, and weaken them even further."
+
+  BEL_monafash_imperialism_benelux_lux_propose_union: "Propose Union with Luxembourg"
+  BEL_monafash_imperialism_benelux_lux_propose_union_desc: "Now that Luxembourg is completely reliant on us, we can propose an integration deal, and form a union with the country. By granting them some internal autonomy, which we will of course slowly erode, they will likely willingly sign away their sovereignty and prosper under us."
+
+  BEL_monafash_imperialism_benelux_hol_offer_way_out: "Offer the Dutch a way out"
+  BEL_monafash_imperialism_benelux_hol_offer_way_out_desc: "The Dutch are weak, their people are tired of their government, and our Tomboys are sabotaging all of their industries. They are on their last legs, and if we were to offer the Dutch a way out, they would gladly jump. This may result in a peaceful integration of the Dutch, and would be beneficial for the both of us. They'll be able to \"preserve\" some of their independence, and we can free their Tomboys."
+
+  BEL_monafash_imperialism_benelux_surprise_attack: "Launch a Surprise Attack"
+  BEL_monafash_imperialism_benelux_surprise_attack_desc: "Be it because of failed negotiations, or ruling peace out, we have to prepare and launch a full-scale invasion of the Benelux, and bring them under the Tomboy flag."
+
+  BEL_monafash_imperialism_benelux_unify: "Unify the Benelux"
+  BEL_monafash_imperialism_benelux_unify_desc: "Through long negotiations and careful planning, we brought the Dutch and the Luxembourgers under our wings. Now, it's time for a new age, and for a unified and free Tomboy people. We'll be taking their names, their flags, their cultures, and uniting them into a single, indomitable nation."
+  BEL_monafash_imperialism_benelux_unify_HOL_trigger_tt: "Owns all mainland §Y[HOL.GetAdjective]§! States, or §Y[HOL.GetFlag][HOL.GetNameDef]§! is either a §YSelf-Governing Territory§! or §YFreestate§! of §Y[BEL.GetFlag][BEL.GetNameDef]§!"
+  BEL_monafash_imperialism_benelux_unify_LUX_trigger_tt: "Owns all mainland §Y[LUX.GetAdjective]§! States, or §Y[LUX.GetFlag][LUX.GetNameDef]§! is either a §YSelf-Governing Territory§! or §YFreestate§! of §Y[BEL.GetFlag][BEL.GetNameDef]§!"
+
+  BEL_monafash_imperialism_benelux_integrate_our_investments: "Integrate our Investments"
+  BEL_monafash_imperialism_benelux_integrate_our_investments_desc: "By integrating the Benelux, we will also re-integrate the investments we made into their nations. These investments were made to help their economies, and by taking their nations, these industries and resources are now rightfully ours. We will no longer have to worry about our money, as we can invest it into ourselves and our industries."
+  BEL_monafash_imperialism_benelux_integrate_our_investments_reward_tt: "Four §YRandom Buildings§! will be built in four §YRandom Non-Belgian Benelux States§!."
+
+  BEL_monafash_imperialism_euronia: "£GFX_text_icon_euronia"
+  BEL_monafash_imperialism_euronia_desc: "In a world where the European Continent has been ravaged by war, the people need a leader. And the Tomboys are the natural leader of Europe. Uniting the people under a single, united flag, and under a single, united Tomboy personification. Euronia shall come, and she'll lead us into a new, peaceful, prosperous, and Tomboy-led future."
+
+
+  BEL_monafash_imperialism_east_prepare: "Prepare the Eastern Front"
+  BEL_monafash_imperialism_east_prepare_trigger_tt: "Has dealt with Germany"
+  BEL_monafash_imperialism_east_prepare_desc: "Having taken control of Germany, we have to protect the East, and prepare against any potential Polish, Soviet, or similar aggression from there. With our new military capacity, we can afford to build defenses and train soldiers to defend the East and prevent anyone from invading us."
+
+
+  BEL_monafash_imperialism_east_czechia_war_sudetenland_trigger_tt: "Has chosen hostilities with [CZE.GetName]."
+
+
+
+
+
+
+
+  BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_trigger_tt: "Has chosen peace with [CZE.GetName]."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  BEL_antarctic_small_expedition: "TODO - Antarctic Expedition"
+  BEL_antarctic_small_expedition_desc: "TODO!!!"
+
+
+
+
+
+
+
+
+
+
+  BEL_monafash_monarchist_fascist_alliance: "The Brown Compromise"
+  BEL_monafash_monarchist_fascist_alliance_desc: "Lady Lalatina's grasp weakens, House Dustiness Ford can no longer be trusted to carry on the Royalist cause alone. A compromise must be made with our Fascist brethren in order to ensure the survival of our nation. For this, we have to unite with them and we will have to combat the Revolutionaries. A strong figure must ascend to lead this new alliance — and with her a New Order shall rise!"
+
+  
+
+
+  BEL_liege_true_hatred: "Embrace the Terror"
+  BEL_liege_true_hatred_desc: "For millennia, the tomboys have been oppressed. We've been beaten, abused, and silenced. We've been forced to conform and live lives of quiet misery. But no longer, we have had enough. We're not going to take it anymore. It's time to fight back, and it's time to strike fear into the hearts of our enemies, those who would dare to oppose us. It's time to embrace the terror, and unleash our righteous fury upon the world."
+
+
+
+
+
+
+
+
+
+
+  BEL_economy_monetary_system: "Establish a Money System"
+  BEL_economy_monetary_system_desc: "We don't have a stable currency in our country; we have different currencies in different states. For that reason, we have to establish a stable currency and introduce a currency board for our whole nation so that all the states will use the same currency and prices will remain the same in all our territories."
+
+  
+
+
+
+
+
+
+
+
+
+  BEL_liege_liege_massacre: "The Liége Massacre"
+  BEL_liege_liege_massacre_desc: "The Tomboy People are disgusted by the massacre that happened after hostile forces captured Liége and did unspeakable evil to the people of the city.\n\n§RWe will take no step back!"
+
+  BEL_liege_publicize: "Publicize the Massacre"
+  BEL_liege_publicize_desc: "We must publicize the massacre in order to make it known that the enemy wants our eradication."
+
+  BEL_liege_plead_for_help: "Plead for help"
+  BEL_liege_plead_for_help_desc: "Our people are being murdered en masse - We must plead other nations for help!"
+
+  BEL_liege_last_defense: "Last Defense"
+  BEL_liege_last_defense_desc: "The last thing we can do is protect our capital. We must defend to the last man!"
+
+
+
+
+
+
+
+
+  bel_recruit_hitler_tt: "§YAdolf Hitler§! becomes available as §YHigh Command§! and §YField Marshal§!."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  BEL_schizo_build_spirit: "Build the Terror Machine"
+  BEL_schizo_build_spirit_desc: "We have to begin our way to terrorism like we would have to with every ideology - politics. It's not only the most important way, but also the one which will give us the greatest impact. It's not about bombing a train or plane, it's about changing the very political system, and the minds of the people. The world will soon come to know the might of our terror machine."
+
+  BEL_terror_the_right: "The Right"
+  BEL_terror_the_right_desc: "It is only through the Right Wing that we can truly spread terror. Other ideologies are weak, and their followers are even weaker. We must elect a Right Winger among our circles, and give them all the support they need. The Right Wing will lead the charge against the enemies of our cause, and we will strike fear into the hearts of those who would stand against us."
+
+  BEL_terror_acc_begin_acceleration: "Moon Man"
+  BEL_terror_acc_begin_acceleration_desc: "The world is filled with corruption and lies. We will begin the acceleration, we must actively embrace the current and future trends, no matter how many may riot or get mad, we must accelerate. In order to do that, we will elect Moon Man as the new leader of our nation. With his leadership, we will embrace the future to bring it down, no matter the cost. It's time to accelerate."
+
+  BEL_terror_acc_womens_suffrage: "Women's Suffrage"
+  BEL_terror_acc_womens_suffrage_desc: "In the name of the Tomboys, we must grant other women the right to vote as well. There already has been a major movement to do so, and as such we must implement it immediately. The world will soon see the first signs of our agenda - To force progress upon the world and accelerate. To speed up the inevitable. We must accelerate more."
+
+  BEL_terror_acc_civil_rights: "Civil Rights"
+  BEL_terror_acc_civil_rights_desc: "To let the lower people have rights - An absurd idea, yet some people of our land support it. These rights must absolutely be implemented to the maximum. We have the duty to implement the most progressive ideas and laws for the sake of accelerating. We must accelerate. Accelerate, accelerate. And we must keep accelerating."
+
+  BEL_terror_acc_edu_reforms: "Education Reforms"
+  BEL_terror_acc_edu_reforms_desc: "We must reform our education system. It will undeniably be detrimental to our society, but it must be done. We must force our education system into the inevitable failure of the future and accelerate. The world will soon feel the wrath of our actions. The world must be accelerated. We must accelerate, and keep it up."
+
+  BEL_terror_acc_labor_reforms: "Progressive Labor Reforms"
+  BEL_terror_acc_labor_reforms_desc: "The workers of the land must have rights, and it's high time they did. We must implement progressive labor reforms in our land. No matter the cost, no matter the consequences, no matter how many riots will occur, we must continue. To accelerate, the world must be progessed, and we will do whatever it takes to do so."
+
+  BEL_terror_acc_equity: "Equity for Everyone"
+  BEL_terror_acc_equity_desc: "There are no sides. No Left, no Right, no Liberal, no Conservative. No Black, no White, no Yellow, no Brown, no Green, no Blue, no Red. The land must be equal, no matter the cost. No matter the price. We must make it equal. No matter the sacrifices. We must accelerate. To accelerate is our goal, and to accelerate, the world must be made equal."
+
+  BEL_terror_acc_healthcare: "Universal Healthcare"
+  BEL_terror_acc_healthcare_desc: "We know it will either wreck the quality or the quantity, but we must have it. No matter the cost, no matter the consequences, no matter the number of riots. We must make healthcare available for all, even the poor. The world will soon suffer the consequences of our actions. The world must be accelerated. We will accelerate and keep going, no matter the cost."
+
+  BEL_terror_acc_environment_prot: "Enforce Environmental Protections"
+  BEL_terror_acc_environment_prot_desc: "We must enforce environmental protections and prevent the exploitation of our land. The world will soon feel the consequences of our actions. We must protect the environment. No matter the cost, no matter the consequences, no matter how many riots. The world must be protected, no matter what. And to do that, we must accelerate these laws as well."
+
+  BEL_terror_acc_justice_reforms: "Justice Reforms"
+  BEL_terror_acc_justice_reforms_desc: "Prisons are full of innocent people. That must change. Everyone is a victim of their circumstance - or so it will be said in the future. We must bring these future policies to the current and accelerate. We will accelerate. We will accelerate, and we will keep accelerating, and accelerating, and accelerating. We will accelerate, and never stop."
+
+  BEL_terror_acc_soc_sec_paid_leave: "Social Security"
+  BEL_terror_acc_soc_sec_paid_leave_desc: "No matter the cost, no matter the consequences, no matter the number of riots. We will enact Social Security and Paid Leave in our land. It is time the working class have a break. It is time the workers have rights. To accelerate, the world must have the rights and security, and it is time we implement them. We will accelerate and make it happen."
+
+  BEL_terror_acc_affirmative_action: "Affirmative Action"
+  BEL_terror_acc_affirmative_action_desc: "Everyone is equal. There are no races. We will create affirmative action to empower the minorities in our land. It is time we give them special rights, and make sure they are the oppressors. To accelerate, the world must be a mixture of colors. And we will make it so. No matter the cost. We must accelerate. To accelerate, is our goal. And to accelerate, the world must have affirmative action."
+
+  BEL_terror_acc_champion_gay_rights: "Champion LGBTQIAAP2SSPPNNSPRIIAABDWSQNH+ Rights"
+  BEL_terror_acc_champion_gay_rights_desc: "Being gay or lesbian is not enough. No, everyone must be included. Transgender. Agender. Nonbinary. Intersex. Questioning. Asexual. Pansexual. Bisexual. Demisexual. Aromantic. Bigender. Genderfluid. Minor-Attracted, and whatever letters we can add. Everyone must have an identity, and we will give it to them. No matter the cost. No matter the consequences."
+
+
+
+
+
+  BEL_tooltip_evolve_rimuru: "§CRimuru§! will evolve into a §tDemon Lord§!."
+  BEL_tooltip_monarchist_cze_war: "As we don't have control of Bohemia, we will immediately declare §Rwar§!."
+  BEL_tooltip_monarchist_cze_peace: "As we control Bohemia, we will give the Germans their territory."
+  BEL_tooltip_monarchist_pol_war: "As we don't have control of Prussian Poland, we will immediately declare §Rwar§!."
+  BEL_tooltip_monarchist_pol_peace: "As we control Prussian Poland, we will give the Germans their territory."
+  BEL_tooltip_monarchist_yug_war: "As we don't have control of [SLV.GetName] and [CRO.GetName], we will immediately declare §Rwar§!."
+  BEL_tooltip_monarchist_yug_peace: "As we control [SLV.GetName] and [CRO.GetName], we will give the Germans their territory."
+  BEL_tooltip_monarchist_yug_2_war: "As we don't have control of [45.GetName] and [764.GetName], we will immediately declare §Rwar§!."
+  BEL_tooltip_monarchist_yug_2_peace: "As we control [45.GetName] and [764.GetName], we will give the Germans their territory."
+  BEL_tooltip_monarchist_ita_war: "As we don't have control of Northern Italy, we will immediately declare §Rwar§!."
+  BEL_tooltip_monarchist_ita_peace: "As we control Northern Italy, we will give the Germans their territory."
+  BEL_tooltip_monarchist_lit_war: "As we don't have control of Lithuania, we will immediately declare §Rwar§!."
+  BEL_tooltip_monarchist_lit_peace: "As we control Lithuania, we will give the Germans their territory."
+  BEL_tooltip_monarchist_lat_war: "As we don't have control of Latvia, we will immediately declare §Rwar§!."
+  BEL_tooltip_monarchist_lat_peace: "As we control Latvia, we will give the Germans their territory."
+
+  BEL_tooltip_controls_benelux: "Controls all Benelux States"
+
+
+
+
+  BEL_empty_string: ""
+  BEL_empty_string_desc: ""

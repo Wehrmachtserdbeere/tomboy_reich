@@ -1,0 +1,866 @@
+characters = {
+
+	##		#####   ####   ####    ######  ####      ####
+	##		##	   ##  ##  ##  ##  ##	   ##  ##  ##
+	##		#####  ######  ##  ##  ######  ####      ##
+	##		##     ##  ##  ##  ##  ##      ##  ##      ##
+	######  #####  ##  ##  ####    ######  ##  ##  ####
+
+	BEL_lalatina_leader = {
+		name = POLITICS_LALATINA_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Leader_Lalatina"
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			traits = { autocratic_imperialist popular_queen }
+			desc = POLITICS_LALATINA_DESC
+		}
+
+		#country_leader = {
+		#	ideology = fascism_ideology
+		#	traits = { autocratic_imperialist popular_queen BEL_monarcho_fascist }
+		#	desc = POLITICS_LALATINA_DESC
+		#	id = -2
+		#}
+	}
+
+	BEL_tomboy_council_leader = {
+		name = POLITICS_COUNCIL_NAME
+		
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Leader_Tomboy_Council"
+			}
+		}
+
+		country_leader = {
+			ideology = anarchist_communism
+			traits = { patriotic_socialist council_communist }
+			desc = POLITICS_COUNCIL_DESC
+		}
+	}
+
+	BEL_casca_leader = {
+		name = POLITICS_CASCA_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Leader_Casca"
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { anti_communist_crusader theocratic_diplomat }
+			desc = POLITICS_CASCA_DESC
+		}
+
+		corps_commander = {
+            traits = { media_personality armor_officer war_hero winter_specialist }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 5
+            visible = { is_country_leader = no }
+		}
+	}
+
+	BEL_ryuko_leader = {
+		name = POLITICS_RYUKO_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Leader_Ryuko"
+			}
+		}
+
+		country_leader = {
+			ideology = conservatism
+			traits = { anti_communist snuggler }
+			desc = POLITICS_RYUKO_DESC
+		}
+	}
+
+	BEL_terror_leader = {
+		name = POLITICS_TERROR_COUNCIL_NAME
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Leader_Terror"
+			}
+		}
+
+		country_leader = {
+			ideology = accelerationist
+			traits = { disdain_for_politicians_2 anti_communist_crusader BEL_terror_disorganised }
+			desc = POLITICS_TERROR_COUNCIL_DESC
+		}
+	}
+
+	BEL_moon_man_leader = {
+		name = BEL_moon_man
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Moon_Man"
+			}
+		}
+
+		country_leader = {
+			ideology = accelerationist
+			traits = { eternal_moon }
+			desc = BEL_moon_man_desc
+		}
+	}
+
+	BEL_mrbond_leader = {
+		name = BEL_mrbond
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_mrbond"
+			}
+		}
+
+		country_leader = {
+			ideology = accelerationist
+			traits = { BEL_musician fascist_sympathies }
+			desc = BEL_mrbond_desc
+		}
+	}
+
+	BEL_johnny_rebel_leader = {
+		name = BEL_johnny_rebel
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_johnny_rebel"
+			}
+		}
+
+		country_leader = {
+			ideology = accelerationist
+			traits = { BEL_musician anti_communist }
+			desc = BEL_johnny_rebel_desc
+		}
+	}
+
+	BEL_natsuki_leader = {
+		name = BEL_natsuki_leader
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_natsuki"
+			}
+		}
+
+		country_leader = {
+			ideology = accelerationist
+			traits = { BEL_cupcake }
+			desc = BEL_natsuki_leader_desc
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	##  ##  ######    ####  ##  ##
+	##  ##    ##    ##      ##  ##
+	######    ##    ##  ##  ######
+	##  ##    ##    ##  ##  ##  ##
+	##  ##  ######  ####    ##  ##
+
+
+	BEL_adolf_hitler_high = {
+		name = "Adolf Hitler"
+		gender = male
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_adolf_hitler"
+			}
+			army = {
+				large = "GFX_BEL_portrait_adolf_hitler"
+				small = "GFX_BEL_portrait_adolf_hitler_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_adolf_hitler"
+				small = "GFX_BEL_portrait_adolf_hitler_small"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = BEL_adolf_hitler_high_command
+			cost = 100
+			visible = {
+				AND = {
+					is_country_leader = no
+					has_completed_focus = BEL_army_recruit_hitler
+				}
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				has_completed_focus = BEL_army_recruit_hitler
+				GER_adolf_hitler = {
+					is_country_leader = no
+				}
+			}
+			traits = {
+				staunch_constitutionalist
+			}
+			
+		}
+
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+			traits = {
+				brilliant_strategist
+				career_officer
+				armor_officer
+				trickster
+				panzer_leader
+			}
+			visible = { 
+				AND = {
+					is_country_leader = no
+					has_completed_focus = BEL_army_recruit_hitler
+					GER_adolf_hitler = {
+						is_country_leader = no
+					}
+				} 
+			}
+		}
+
+#		corps_commander={
+#			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader }
+#			skill=4
+#			attack_skill=4
+#			defense_skill=2
+#			planning_skill=4
+#			logistics_skill=4
+#			legacy_id=1001
+#		}
+	}
+
+	BEL_georgy_zhukov = {
+		name = "Georgy Zhukov"
+		gender = male
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_zhukov"
+			}
+			army = {
+				large = "GFX_BEL_portrait_zhukov"
+				small = "GFX_BEL_portrait_zhukov_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_zhukov"
+				small = "GFX_BEL_portrait_zhukov_small"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = BEL_zhukov_high_command
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				OR = {
+					SOV = {
+						NOT = {
+							has_government = communism
+						}
+						has_opinion = {
+							target = BEL
+							value > 9
+						}
+					}
+					SOV_georgy_zhukov = {
+						OR = {
+							has_character_flag = SOV_exiled_flag
+							has_character_flag = SOV_character_purged_flag
+						}
+					}
+				}
+			}
+			traits = {
+				retired_officer mass_assault_expert
+			}
+		}
+	}
+
+	BEL_george_patton = {
+		name = "George S. Patton"
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_george_patton"
+			}
+			army = {
+				large = "GFX_BEL_portrait_george_patton"
+				small = "GFX_BEL_portrait_george_patton_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_george_patton"
+				small = "GFX_BEL_portrait_george_patton_small"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = BEL_george_patton_high_command
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				USA = {
+					NOT = {
+						has_government = democratic
+					}
+					has_opinion = {
+						target = BEL
+						value > 24
+					}
+				}
+			}
+			traits = {
+				patriotic_guerilla mobile_warfare_expert
+			}
+		}
+	}
+
+	BEL_macarthur = {
+		name = "Douglas MacArthur"
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_mcarthur"
+			}
+			army = {
+				large = "GFX_BEL_portrait_mcarthur"
+				small = "GFX_BEL_portrait_mcarthur_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_mcarthur"
+				small = "GFX_BEL_portrait_mcarthur_small"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = BEL_macarthur_advisor
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				OR = {
+					USA_douglas_macarthur = {
+						is_country_leader = no
+					}
+					USA = {
+						has_opinion = {
+							target = BEL
+							value > 24
+						}
+					}
+				}
+			}
+			traits = {
+				democratic_reformer
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = BEL_macarthur_advisor
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				OR = {
+					USA_douglas_macarthur = {
+						is_country_leader = no
+					}
+					USA = {
+						has_opinion = {
+							target = BEL
+							value > 24
+						}
+					}
+				}
+			}
+			traits = { army_chief_morale_2 }
+		}
+	}
+
+	BEL_rimuru_evolved = {
+		name = "Rimuru Tempest (Raphael)"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_rimuru_evolved"
+			}
+			army = {
+				large = "GFX_BEL_portrait_rimuru_evolved"
+				small = "GFX_BEL_portrait_rimuru_evolved_small"
+			}
+		}
+
+		corps_commander = {
+            traits = { armor_officer war_hero winter_specialist desert_fox }
+            skill = 12
+            attack_skill = 23
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+            visible = { 
+				AND = {
+					is_country_leader = no
+					has_completed_focus = BEL_army_evolve_rimuru
+				} 
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = BEL_rimuru_evolved_advisor
+			cost = 100
+			visible = { 
+				AND = {
+					is_country_leader = no
+					has_completed_focus = BEL_army_evolve_rimuru
+				} 
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				monarchist_media_mogul popular_figurehead 
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = BEL_rimuru_evolved_high_command
+			cost = 100
+			visible = {
+				has_completed_focus = BEL_army_evolve_rimuru
+			}
+			allowed = {
+				original_tag = BEL
+				has_completed_focus = BEL_army_evolve_rimuru
+			}
+			available = {
+				has_completed_focus = BEL_army_evolve_rimuru
+			}
+			traits = {
+				war_hero
+				popular_figurehead
+			}
+		}
+	}
+
+	  ##    ####    ##  ##  ##  ##
+	##  ##  ##  ##  ######  ##  ##
+	######  ####    ##  ##    ##
+	##  ##  ##  ##  ##  ##    ##
+	##  ##  ##  ##  ##  ##    ##
+
+	BEL_hatsune_miku = {
+		name = "Hatsune Miku"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_hatsune_miku"
+			}
+			army = {
+				large = "GFX_BEL_portrait_hatsune_miku"
+				small = "GFX_BEL_portrait_hatsune_miku_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_hatsune_miku"
+				small = "GFX_BEL_portrait_hatsune_miku_small"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = BEL_hatsune_miku_army_chief
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				indomitable_perseverance
+			}
+		}
+	}
+
+	  ##    ######  ####  
+	##  ##    ##    ##  ##
+	######    ##    ####  
+	##  ##    ##    ##  ##
+	##  ##  ######  ##  ##
+
+	BEL_kasane_teto = {
+		name = "Kasane Teto"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_kasane_teto"
+			}
+			army = {
+				large = "GFX_BEL_portrait_kasane_teto"
+				small = "GFX_BEL_portrait_kasane_teto_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_kasane_teto"
+				small = "GFX_BEL_portrait_kasane_teto_small"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			ledger = air
+			idea_token = BEL_kasane_teto_air_chief
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				air_chief_reform_3
+			}
+		}
+	}
+
+	######    ##    ##  ##  ##  ##
+	##  ##  ##  ##  ##  ##  ##  ##
+	##  ##  ######  ##  ##    ##  
+	##  ##  ##  ##  ##  ##    ##  
+	##  ##  ##  ##    ##      ##  
+
+	BEL_iowa = {
+		name = "USS Alabama"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_iowa"
+			}
+			army = {
+				large = "GFX_BEL_portrait_iowa"
+				small = "GFX_BEL_portrait_iowa_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_iowa"
+				small = "GFX_BEL_portrait_iowa_small"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = BEL_alabama_navy_chief
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				#has_completed_focus = BEL_navy_transforming
+			}
+			traits = {
+				navy_capital_ship_3
+			}
+		}
+	}
+
+	######  ##  ##  ######    ##    ####    ######    ####  ######
+	  ##    ##  ##  ##      ##  ##  ##  ##    ##    ##        ##
+	  ##    ######  ######  ##  ##  ####      ##      ##      ##
+	  ##    ##  ##  ##      ##  ##  ##  ##    ##        ##    ##
+	  ##    ##  ##  ######    ##    ##  ##  ######  ####      ##
+	
+	BEL_stroheim = {
+		name = "Rudol von Stroheim"
+		gender = male
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_stroheim"
+			}
+			army = {
+				large = "GFX_BEL_portrait_stroheim"
+				small = "GFX_BEL_portrait_stroheim_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_stroheim"
+				small = "GFX_BEL_portrait_stroheim_small"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = BEL_stroheim_theorist
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				nuclear_scientist
+			}
+			on_add = {
+				BEL = {
+					add_tech_bonus = {
+					category = nuclear
+					bonus = 2.5
+					}
+				}
+			}
+		}
+	}
+
+	####      ##    ##      ######  ######  ######    ####    ##    ##    
+	##  ##  ##  ##  ##        ##      ##      ##    ##      ##  ##  ##    
+	####    ##  ##  ##        ##      ##      ##    ##      ######  ##    
+	##      ##  ##  ##        ##      ##      ##    ##      ##  ##  ##    
+	##        ##    ######  ######    ##    ######    ####  ##  ##  ######
+
+	BEL_rimuru = { # Monarchist
+		name = "Rimuru Tempest"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_rimuru"
+			}
+			army = {
+				large = "GFX_BEL_portrait_rimuru"
+				small = "GFX_BEL_portrait_rimuru_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_rimuru"
+				small = "GFX_BEL_portrait_rimuru_small"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = BEL_rimuru_advisor
+			cost = 100
+			visible = { 
+				NOT = {
+					has_completed_focus = BEL_army_evolve_rimuru
+				} 
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				monarchist_media_mogul
+			}
+		}
+	}
+
+	BEL_katyusha = {
+		name = "Katyusha"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_katyusha"
+			}
+			army = {
+				large = "GFX_BEL_portrait_katyusha"
+				small = "GFX_BEL_portrait_katyusha_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_katyusha"
+				small = "GFX_BEL_portrait_katyusha_small"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = BEL_katyusha_advisor
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				communist_revolutionary
+			}
+		}
+	}
+
+	BEL_yui = {
+		name = "Yui Hirasawa"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_yui"
+			}
+			army = {
+				large = "GFX_BEL_portrait_yui"
+				small = "GFX_BEL_portrait_yui_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_yui"
+				small = "GFX_BEL_portrait_yui_small"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = BEL_yui_advisor
+			cost = 100
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				fascist_demagogue 
+			}
+		}
+	}
+
+	BEL_yor_forger = {
+		name = "Yor Forger"
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_yor"
+			}
+			army = {
+				large = "GFX_BEL_portrait_yor"
+				small = "GFX_BEL_portrait_yor_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_yor"
+				small = "GFX_BEL_portrait_yor_small"
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_yor_advisor
+			available = {
+				has_intelligence_agency = yes 
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
+
+
+}

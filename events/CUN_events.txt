@@ -1,0 +1,23 @@
+
+add_namespace = cunny
+
+# BEL force-changes our government
+news_event = {
+	id = cunny.1
+	title = cunny.1.t
+	desc = cunny.1.d
+
+	is_triggered_only = yes
+
+	option = { # Understood.
+		name = cunny.1.a
+
+		effect_tooltip = {
+			CUN = {
+				set_politics = {
+					ruling_party = BEL
+				}
+			}
+		}
+	}
+}

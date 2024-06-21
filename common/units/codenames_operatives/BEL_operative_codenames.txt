@@ -1,0 +1,30 @@
+﻿BEL_OPERATIVE_CODENAME= {
+	name = BEL_OPERATIVES
+
+	for_countries = { BEL }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+	
+	# From the generic list, replace with more fitting codenames
+	unique = {
+		"Wolf"
+		"Sparrow"
+		"Hawk"
+		"Eagle"
+		"Snake"
+		"Bear"
+		"Tiger"
+		"Condor"
+		"Magpie"
+		"Turtle"
+		"Shark"
+		"Mouse"
+		"Hornet"
+		"Dragon"
+		"Butterfly"
+		"Stallion"
+		"Tomcat"
+	}
+}

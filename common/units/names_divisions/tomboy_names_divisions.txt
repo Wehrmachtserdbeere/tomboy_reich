@@ -1,0 +1,162 @@
+BAY_tomboy_volunteers = {
+	name = "Wildfang-Widerstandskämpfer"
+
+	for_countries = {
+		BAY
+	}
+
+	can_use = {
+		always = yes
+	}
+
+	division_types = {
+		"irregular_infantry"
+	}
+
+	fallback_name = "%d. Wildfang Freiwilligengruppe"
+
+	ordered = {
+		1 = { "%d. Wildfang Freiwilligengruppe \"Haruhi\"" }
+		2 = { "%d. Wildfang Freiwilligengruppe \"Ran\"" }
+		3 = { "%d. Wildfang Freiwilligengruppe \"Nana\"" }
+		4 = { "%d. Wildfang Freiwilligengruppe \"Akira\"" }
+		5 = { "%d. Wildfang Freiwilligengruppe \"Yui\"" }
+		6 = { "%d. Wildfang Freiwilligengruppe \"Hotaru\"" }
+		7 = { "%d. Wildfang Freiwilligengruppe \"Utena\"" }
+		8 = { "%d. Wildfang Freiwilligengruppe \"Ryuko\"" }
+		9 = { "%d. Wildfang Freiwilligengruppe \"Misaki\"" }
+		10 = { "%d. Wildfang Freiwilligengruppe \"Yurika\"" }
+		11 = { "%d. Wildfang Freiwilligengruppe \"Yoh\"" }
+		12 = { "%d. Wildfang Freiwilligengruppe \"Mako\"" }
+		13 = { "%d. Wildfang Freiwilligengruppe \"Kino\"" }
+		14 = { "%d. Wildfang Freiwilligengruppe \"Risa\"" }
+		15 = { "%d. Wildfang Freiwilligengruppe \"Futaba\"" }
+		16 = { "%d. Wildfang Freiwilligengruppe \"Makoto\"" }
+		17 = { "%d. Wildfang Freiwilligengruppe \"Chihiro\"" }
+		18 = { "%d. Wildfang Freiwilligengruppe \"Jolyne\"" }
+		19 = { "%d. Wildfang Freiwilligengruppe \"Yuria\"" }
+		20 = { "%d. Wildfang Freiwilligengruppe \"Sora\"" }
+		21 = { "%d. Wildfang Freiwilligengruppe \"Kaoru\"" }
+		22 = { "%d. Wildfang Freiwilligengruppe \"Honoka\"" }
+		23 = { "%d. Wildfang Freiwilligengruppe \"Nagisa\"" }
+		24 = { "%d. Wildfang Freiwilligengruppe \"Yuki\"" }
+		25 = { "%d. Wildfang Freiwilligengruppe \"Nozomi\"" }
+	}
+}
+
+BEL_GUA_01 = {
+	name = "Royal House Guard"
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		has_completed_focus = BEL_monafash_house_guard
+	}
+
+	division_types = {
+		"infantry"
+	}
+
+	fallback_name = "%d. Royal Guard"
+
+	ordered = {
+		1 = { "%d. Royal House Guard \"Tempest\"" }
+		2 = { "%d. Royal House Guard \"von Degurechaff\"" }
+		3 = { "%d. Royal House Guard \"Casca\"" }
+		4 = { "%d. Royal House Guard \"Matoi\"" }
+		5 = { "%d. Royal House Guard \"Raphael\"" }
+		6 = { "%d. Royal House Guard \"Ciel\"" }
+		7 = { "%d. Royal House Guard \"von Einzbern\"" }
+		8 = { "%d. Royal House Guard \"Katyusha\"" }
+		9 = { "%d. Royal House Guard \"Yui\"" }
+		10 = { "%d. Royal House Guard \"Mugi\"" }
+		11 = { "%d. Royal House Guard \"Evergarden\"" }
+		12 = { "%d. Royal House Guard \"Akashiya\"" }
+		13 = { "%d. Royal House Guard \"Itasha\"" }
+		14 = { "%d. Royal House Guard \"Dororo\"" }
+		15 = { "%d. Royal House Guard \"Mordred\"" }
+		16 = { "%d. Royal House Guard \"Hellsing\"" }
+		17 = { "%d. Royal House Guard \"Kiryuin\"" }
+		18 = { "%d. Royal House Guard \"Grünewald\"" }
+		19 = { "%d. Royal House Guard \"York\"" }
+		20 = { "%d. Royal House Guard \"Lucy\"" }
+		21 = { "%d. Royal House Guard \"Esdeath\"" }
+		22 = { "%d. Royal House Guard \"Mirko\"" }
+		23 = { "%d. Royal House Guard \"Deldoldia\"" }
+		24 = { "%d. Royal House Guard \"Kale\"" }
+		25 = { "%d. Royal House Guard \"Natsuki\"" }
+	}
+}
+
+BEL_BSM_01 = {
+	name = "Blacksuit Mob"
+	
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		has_completed_focus = BEL_monafash_formalize_blacksuit_mobs
+	}
+
+	division_types = {
+		"irregular_infantry"
+	}
+
+	fallback_name = "Blacksuit Unit %d"
+
+	ordered = {
+		1 = { "I. Reorganized Blacksuit Mob Unit \"Rimuru\"" }
+		2 = { "II. Reorganized Blacksuit Mob Unit \"Tanya\"" }
+		3 = { "III. Reorganized Blacksuit Mob Unit \"Esdeath\"" }
+		4 = { "IV. Reorganized Blacksuit Mob Unit \"Ainz\"" }
+		5 = { "V. Reorganized Blacksuit Mob Unit \"Elsbeth\"" }
+		6 = { "VI. Reorganized Blacksuit Mob Unit \"Streicher\"" }
+		7 = { "VII. Reorganized Blacksuit Mob Unit \"Feris\"" }
+		8 = { "VIII. Reorganized Blacksuit Mob Unit \"Marichka\"" }
+		9 = { "IX. Reorganized Blacksuit Mob Unit \"Jin-Roh\"" }
+		10 = { "X. Reorganized Blacksuit Mob Unit \"Kei\"" }
+		11 = { "XI. Reorganized Blacksuit Mob Unit \"Elise\"" }
+		12 = { "XII. Reorganized Blacksuit Mob Unit \"Landser\"" }
+		13 = { "XIII. Reorganized Blacksuit Mob Unit \"Stahlgewitter\"" }
+		14 = { "XIV. Reorganized Blacksuit Mob Unit \"Major\"" }
+		15 = { "XV. Reorganized Blacksuit Mob Unit \"Captain\"" }
+		16 = { "XVI. Reorganized Blacksuit Mob Unit \"Schrodinger\"" }
+		17 = { "XVII. Reorganized Blacksuit Mob Unit \"Doc\"" }
+		18 = { "XVIII. Reorganized Blacksuit Mob Unit" }
+		19 = { "XIX. Reorganized Blacksuit Mob Unit" }
+		20 = { "XX. Reorganized Blacksuit Mob Unit" }
+		21 = { "XXI. Reorganized Blacksuit Mob Unit" }
+		22 = { "XXII. Reorganized Blacksuit Mob Unit" }
+		23 = { "XXIII. Reorganized Blacksuit Mob Unit" }
+		24 = { "XXIV. Reorganized Blacksuit Mob Unit" }
+		25 = { "XXV. Reorganized Blacksuit Mob Unit" }
+	}
+}
+
+BEL_NGA_01 = {
+	name = "National Guard"
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		has_completed_focus = BEL_monafash_national_guard
+	}
+
+	division_types = {
+		medium_armor motorized medium_sp_artillery_brigade
+	}
+
+	fallback_name = "%d. National Guard Division"
+
+	ordered = {
+		1 = { "Personal Guard" }
+		2 = { "Crown Guard" }
+		3 = { "Palace Guard" }
+		4 = { "Sovereign Guard" }
+	}
+}

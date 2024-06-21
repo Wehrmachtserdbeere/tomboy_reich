@@ -1,0 +1,185 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_BEL_lalatina"
+		texturefile = "gfx/interface/ideas/BEL_lalatina.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BEL_kuromorimine"
+		textureFile = "gfx/interface/ideas/BEL_kuromorimine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_BEL_massacre"
+		textureFile = "gfx/event_pictures/BEL_news_massacre.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_adolf_hitler"
+		textureFile = "gfx/leaders/BEL/adolf_hitler.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_adolf_hitler_small"
+		textureFile = "gfx/interface/ideas/small_adolf_hitler.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_shukov"
+		textureFile = "gfx/leaders/BEL/zhukov.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_zhukov_small"
+		textureFile = "gfx/interface/ideas/small_zhukov.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_george_patton"
+		textureFile = "gfx/leaders/BEL/george_patton.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_george_patton_small"
+		textureFile = "gfx/interface/ideas/small_george_patton.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_hatsune_miku"
+		textureFile = "gfx/leaders/BEL/hatsune_miku.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_hatsune_miku_small"
+		textureFile = "gfx/interface/ideas/small_hatsune_miku.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_kasane_teto"
+		textureFile = "gfx/leaders/BEL/kasane_teto.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_kasane_teto_small"
+		textureFile = "gfx/interface/ideas/small_kasane_teto.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_iowa"
+		textureFile = "gfx/leaders/BEL/iowa.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_iowa_small"
+		textureFile = "gfx/interface/ideas/small_iowa.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_stroheim"
+		textureFile = "gfx/leaders/BEL/stroheim.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_stroheim_small"
+		textureFile = "gfx/interface/ideas/small_stroheim.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_rimuru"
+		textureFile = "gfx/leaders/BEL/rimuru.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_rimuru_small"
+		textureFile = "gfx/interface/ideas/small_rimuru.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_rimuru_evolved"
+		textureFile = "gfx/leaders/BEL/rimuru_evolved.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_rimuru_evolved_small"
+		textureFile = "gfx/interface/ideas/small_rimuru_evolved.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_gigachad"
+		textureFile = "gfx/leaders/BEL/gigachad.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_gigachad_small"
+		textureFile = "gfx/interface/ideas/small_gigachad.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_yui"
+		textureFile = "gfx/leaders/BEL/yui.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_yui_small"
+		textureFile = "gfx/interface/ideas/BEL_small_yui.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_mcarthur"
+		textureFile = "gfx/leaders/BEL/mcarthur.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_portrait_mcarthur_small"
+		textureFile = "gfx/interface/ideas/BEL_small_mcarthur.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_battalion"
+		textureFile = "gfx/interface/ideas/BEL_batallion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_iron_blood"
+		textureFile = "gfx/interface/ideas/BEL_iron_blood.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_acceptance_none"
+		textureFile = "gfx/interface/ideas/BEL_acceptance_none.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_acceptance_low"
+		textureFile = "gfx/interface/ideas/BEL_acceptance_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_acceptance_medium"
+		textureFile = "gfx/interface/ideas/BEL_acceptance_medium.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_acceptance_high"
+		textureFile = "gfx/interface/ideas/BEL_acceptance_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_acceptance_absolute"
+		textureFile = "gfx/interface/ideas/BEL_acceptance_absolute.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_communist_tactics"
+		textureFile = "gfx/interface/ideas/BEL_communist_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_kick_out_gypsy"
+		textureFile = "gfx/interface/ideas/BEL_idea_kick_out_gypsy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_economy"
+		textureFile = "gfx/interface/ideas/BEL_idea_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_india_campaign"
+		textureFile = "gfx/interface/ideas/BEL_india_campaign.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_occupation_policy_good"
+		textureFile = "gfx/interface/ideas/BEL_occupation_policy_good.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_occupation_policy_evil"
+		textureFile = "gfx/interface/ideas/BEL_occupation_policy_evil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_Anzio"
+		textureFile = "gfx/interface/ideas/BEL_anzio.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_Eagle_Union"
+		textureFile = "gfx/interface/ideas/BEL_eagle_union.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_Regia_Marina"
+		textureFile = "gfx/interface/ideas/BEL_regia_marina.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_501_Strike_Witches"
+		textureFile = "gfx/interface/ideas/BEL_strike_witches.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_NERV"
+		textureFile = "gfx/interface/ideas/BEL_nerv.dds"
+	}
+}

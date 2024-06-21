@@ -1,0 +1,425 @@
+focus_tree = {
+	id = BEL_focus_tree_schizo
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BEL 
+		}
+
+		modifier = {
+			add = 10
+			original_tag = BEL
+		}
+	}	
+
+	default = no
+
+	continuous_focus_position = { x = 2000 y = 2000 }
+
+
+	# Build the Terror Machine
+    focus = {
+        id = BEL_schizo_build_spirit
+        icon = GFX_goal_BEL_skull_threatening
+
+		cost = 4
+
+		x = 12
+		y = 0
+
+		completion_reward = {
+			every_country = {
+				limit = { NOT = { tag = BEL }}
+				add_opinion_modifier = {
+					target = BEL
+					modifier = small_decrease
+				}
+			}
+			BEL = { 
+				every_owned_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_popularity = {
+					ideology = terror
+					popularity = 0.05
+				}
+				if = {
+					limit = {
+						has_idea = BEL_disorganised_nation
+					}
+					remove_ideas = BEL_disorganised_nation
+				}
+			}
+			news_event = tomboy.17
+		}
+    }
+
+	
+	#############
+	# The Right #  ( Have an event to decide whether to go left or right terror, then fire another event for who to put into power )
+	#############
+
+	focus = {
+		id = BEL_terror_the_right
+		icon = tbd
+
+		x = 6
+		y = 1
+
+		cost = 0
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_schizo_build_spirit
+		}
+
+		available = {
+			OR = {
+				always = no
+				is_debug = yes
+			}
+		}
+
+		completion_reward = {
+			# country_event = terror.1
+		}
+	}
+	
+	# Mongol-esque "Silver Khaganate" led by Roman von Ungern-Sternberg
+
+
+	# Accelerationist Hyperborea led by Moonman
+
+	# Begin accelerating
+	focus = {
+		id = BEL_terror_acc_begin_acceleration
+		icon = tbd
+
+		x = 6
+		y = 2
+
+		cost = 0
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_terror_the_right
+		}
+
+		available = {
+			OR = {
+				always = no
+				is_debug = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas = BEL_idea_acceleration_init
+		}
+	}
+
+	# Enforce the women's suffrage
+	focus = {
+		id = BEL_terror_acc_womens_suffrage
+		icon = tbd
+
+		x = 5
+		y = 3
+
+		cost = 7
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_terror_acc_begin_acceleration
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_stability = 0.2
+		}
+	}
+
+	# Create the Civil Rights Movement
+	focus = {
+		id = BEL_terror_acc_civil_rights
+		icon = tbd
+
+		x = 7
+		y = 3
+
+		cost = 7
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_terror_acc_begin_acceleration
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			USA = {
+				add_stability = -0.1
+				if = {
+					limit = {
+						date < 1968.8.1 # Irrelevant tbh, but who cares lol!
+					}
+					add_opinion_modifier = { # USA be mad!
+						target = BEL
+						modifier = BEL_acc_civil_rights_neg
+					}
+				}
+			}
+		}
+	}
+
+	# Education reforms
+	focus = {
+		id = BEL_terror_acc_edu_reforms
+		icon = tbd
+
+		x = 4
+		y = 4
+
+		cost = 7
+
+		search_filters = { political research }
+
+		prerequisite = {
+			focus = BEL_terror_acc_womens_suffrage
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_ideas = BEL_idea_education_reform_negative
+		}
+	}
+
+	# Labor Reforms
+	focus = {
+		id = BEL_terror_acc_labor_reforms
+		icon = tbd
+
+		x = 6
+		y = 4
+
+		cost = 7
+
+		search_filters = { political production }
+
+		prerequisite = {
+			focus = BEL_terror_acc_womens_suffrage
+			focus = BEL_terror_acc_civil_rights
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_ideas = BEL_idea_labor_reforms
+		}
+	}
+
+	# Equity for everyone
+	focus = {
+		id = BEL_terror_acc_equity
+		icon = tbd
+
+		x = 8
+		y = 4
+
+		cost = 7
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_terror_acc_civil_rights
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_stability = 0.2
+		}
+	}
+
+	# Universal Healthcare
+	focus = {
+		id = BEL_terror_acc_healthcare
+		icon = tbd
+
+		x = 4
+		y = 5
+
+		cost = 7
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_terror_acc_edu_reforms
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_ideas = BEL_idea_equity_for_all
+		}
+	}
+
+	# Environmental Protection
+	focus = {
+		id = BEL_terror_acc_environment_prot
+		icon = tbd
+
+		x = 6
+		y = 5
+
+		cost = 7
+
+		search_filters = { political production }
+
+		prerequisite = {
+			focus = BEL_terror_acc_labor_reforms
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_ideas = BEL_idea_environmental_protections
+		}
+	}
+
+	# Criminal Justice Reforms
+	focus = {
+		id = BEL_terror_acc_justice_reforms
+		icon = tbd
+
+		x = 8
+		y = 5
+		
+		cost = 7
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_terror_acc_equity
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_stability = -0.35
+		}
+	}
+
+	# Social Security and Paid Leave
+	focus = {
+		id = BEL_terror_acc_soc_sec_paid_leave
+		icon = tbd
+
+		x = 5
+		y = 6
+
+		cost = 7
+
+		search_filters = { political production }
+
+		prerequisite = {
+			focus = BEL_terror_acc_healthcare
+		}
+
+		prerequisite = {
+			focus = BEL_terror_acc_environment_prot
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_ideas = BEL_idea_soc_sec_paid_leave
+		}
+	}
+
+	# Affirmative Action
+	focus = {
+		id = BEL_terror_acc_affirmative_action
+		icon = tbd
+
+		x = 7
+		y = 6
+
+		cost = 7
+
+		search_filters = { political research }
+
+		prerequisite = {
+			focus = BEL_terror_acc_environment_prot
+		}
+
+		prerequisite = {
+			focus = BEL_terror_acc_justice_reforms
+		}
+
+		completion_reward = {
+			add_ideas = BEL_idea_affirmative_action
+		}
+	}
+
+	# Champion LGBTQIAAP2SSPPNNSPRIIAABDWSQNH+ Rights
+	focus = {
+		id = BEL_terror_acc_champion_gay_rights
+		icon = tbd
+		
+		x = 5
+		y = 7
+
+		cost = 7
+
+		search_filters = { political }
+
+		prerequisite = {
+			focus = BEL_terror_acc_soc_sec_paid_leave
+		}
+
+		completion_reward = {
+			# Once all focuses are done, check via IF statements to increase acceleration like with Tomboy Acceptance
+
+			add_stability = -0.35
+			
+			add_ideas = BEL_idea_gay_rights
+		}
+	}
+
+
+	# Reactionary Neudeutsches Reich led by Mr. Bond
+
+
+	############
+	# The Left #
+	############
+
+	# Anarchist Wastelands led by nobody
+
+
+	# 1984-esque "happy state" led by Natsuki
+	# FOR LOC, ADD PINK COLOR KEY AND USE IT A LOT
+
+
+	
+
+	###################
+	# The Alternative #  ( Left-Right Compromise, show up for both Left and Right )
+	###################
+
+	# Empire of Terror led by a Balanced Council
+
+}

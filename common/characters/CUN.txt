@@ -1,0 +1,104 @@
+characters = {
+
+	CUN_tanya_degurechaff = {
+		name = POLITICS_TANYA_DEGURECHAFF_NAME
+		gender = female
+		portraits={
+			civilian={
+				large = tbd
+			}
+		}
+		country_leader={
+			desc = POLITICS_TANYA_DEGURECHAFF_DESC
+			ideology = gen_nazism
+			traits = { BEL_loli warmonger }
+			expire ="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	CUN_katyusha = {
+		name = POLITICS_KATYUSHA_NAME
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_katyusha"
+			}
+		}
+		country_leader = {
+			desc = POLITICS_KATYUSHA_DESC
+			ideology = anarchist_communism
+			traits = { anarchist_zeal communist_revolutionary }
+			expire = "1965.1.1.1"
+			id = 0
+		}
+	}
+
+	CUN_rikka = {
+		name = POLITICS_RIKKA_NAME
+		gender = female
+		portraits = {
+			civilian = {
+				large = tbd
+			}
+		}
+		country_leader = {
+			desc = POLITICS_RIKKA_DESC
+			ideology = liberalism
+			traits = { BEL_chuunibyou BEL_loli }
+			expire = "1965.1.1.1"
+			id = 1
+		}
+	}
+
+	CUN_illyasviel = {
+		name = POLITICS_ILLYASVIEL_NAME
+		gender = female
+		portraits = {
+			civilian = {
+				large = tbd
+			}
+		}
+		country_leader = {
+			desc = POLITICS_ILLYASVIEL_DESC
+			ideology = despotism
+			traits = { BEL_loli staunch_monarchist }
+			expire = "1965.1.1.1"
+			id = 2
+		}
+	}
+
+	CUN_chloe = {
+		name = POLITICS_CHLOE_NAME
+		gender = female
+		portraits = {
+			civilian = {
+				large = tbd
+			}
+		}
+		country_leader = {
+			desc = POLITICS_CHLOE_DESC
+			ideology = despotism
+			traits = { BEL_loli staunch_monarchist }
+			expire = "1965.1.1.1"
+			id = 3
+		}
+	}
+
+	CUN_zankyou_no_terror = {
+		name = POLITICS_ZNT_NAME
+		portraits = {
+			civilian = {
+				large = tbd
+			}
+		}
+		country_leader = {
+			desc = POLITICS_ZNT_DESC
+			ideology = accelerationist
+			traits = { revolutionary_council prince_of_terror }
+			expire = "1965.1.1.1"
+			id = 4
+		}
+	}
+
+}

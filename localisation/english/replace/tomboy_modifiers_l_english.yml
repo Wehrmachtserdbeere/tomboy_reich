@@ -1,0 +1,34 @@
+﻿l_english:
+  refused_guarantee: "Refused Guarantee"
+  terrorist_activity: "Terrorist Activity"
+  jew_diplomatic: "Peaceful Towards Subjects"
+  BEL_acc_civil_rights_neg: "Promoting Civil Rights"
+  BEL_acc_civil_rights_pos: "Promoting Civil Rights"
+  BEL_didnt_rename_faction: "Didn't Rename Faction"
+  BEL_sowing_anti_american_sentiment_trade: "Sowing Anti-American Sentiment"
+  BEL_sowing_anti_american_sentiment_diplo: "Sowing Anti-American Sentiment"
+  BEL_refused_annexation: "Refused Annexation"
+  BEL_refused_puppeting: "Refused Puppeting"
+  BEL_fear_of_expansion: "Expansionist Threats"
+  BEL_friendly_interaction: "Friendly Interactions"
+  BEL_slight_suspicion: "Slight Suspicion"
+  BEL_medium_suspicion: "Moderate Suspicion"
+  BEL_large_suspicion: "Significant Suspicion"
+  BEL_thankful: "Thankful"
+  BEL_recognize_breakaways: "Recognized Breakaway States"
+  BEL_promised_northern_ireland: "Promised Northern Ireland"
+  BEL_promised_support: "Promised Support"
+  BEL_disappointed: "Disappointed"
+  BEL_supported_resistance: "Supported Resistance"
+  BEL_invaded_airspace: "Invaded Airspace"
+  BEL_reconciliation: "Reconciliation"
+  BEL_sending_aid: "Sending Aid"
+  BEL_oppressing_tomboys_neg: "Oppressing Tomboys"
+  BEL_oppressing_tomboys_pos: "Oppressing Tomboys"
+
+  ### Threats
+  # Good (-Threat)
+  BEL_chose_dutch_friendship: "[BEL.GetFlag][BEL.GetName] pursues peace with [HOL.GetFlag][HOL.GetNameDef]"
+  BEL_chose_lux_friendship: "[BEL.GetFlag][BEL.GetName] pursues peace with [LUX.GetFlag][LUX.GetNameDef]"
+
+  # Bad (+Threat)

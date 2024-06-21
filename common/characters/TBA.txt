@@ -1,0 +1,43 @@
+characters = {
+	TBA_placeholder = {
+		name = TBA_PLACEHOLDER
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_mengele"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { BEL_angel_of_death }
+			expire="1965.1.1.1"
+			desc = POL_mengele_desc
+		}
+		country_leader = {
+			ideology = gen_nazism
+			traits = { BEL_angel_of_death }
+			expire="1965.1.1.1"
+			desc = POL_mengele_desc
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			traits = { BEL_angel_of_death }
+			expire="1965.1.1.1"
+			desc = POL_mengele_desc
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { BEL_angel_of_death }
+			expire="1965.1.1.1"
+			desc = POL_mengele_desc
+		}
+		#
+		# Disabled for Trolling
+		#
+		#country_leader = {
+		#	ideology = accelerationist
+		#	traits = { BEL_angel_of_death }
+		#	expire="1965.1.1.1"
+		#	desc = POL_mengele_desc
+		#}
+	}
+}

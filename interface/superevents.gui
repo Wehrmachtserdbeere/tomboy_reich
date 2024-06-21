@@ -1,0 +1,79 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "superevents"
+		position = { x = 0 y = 0}	
+		size = { width = 1000 height= 893 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		background = {
+			name = "background"		
+			quadTextureSprite ="GFX_supereventsbg"
+		}
+		
+		iconType = {
+			name = "SE_image"
+			position = { x= 6 y = 7 }
+			alwaystransparent = yes
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+        buttonType ={
+			name ="superevents_button"
+			spriteType = "GFX_supereventsbutton"
+			position = { x= 225 y = 772 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+		
+		instantTextboxType = {
+			name = "superevents_title"
+			position = { x = 0 y = 78 }
+			font = "Bomb_36"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsTitle]"
+			maxWidth = 1000
+			maxHeight = 893
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "superevents_quote"
+			position = { x = 125 y = 535 }
+			font = "aldrich_36_outline"
+			format = RIGHT
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsBody]"
+			maxWidth = 800
+			maxHeight = 893
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "superevents_remark"
+			position = { x = 250 y = 791 }
+			font = "Bomb_28"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsRemark]"
+			maxWidth = 500
+			maxHeight = 893
+			fixedsize = yes
+		}
+    }
+}

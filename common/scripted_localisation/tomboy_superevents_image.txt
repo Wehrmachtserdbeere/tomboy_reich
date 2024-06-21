@@ -1,0 +1,23 @@
+defined_text = {
+    name = GetSupereventsImage
+    
+    text = {
+        trigger = {
+            has_global_flag = BEL_monarchist_unite_europe
+        }
+        localization_key = "GFX_superevent_lalatina_throne"
+    }
+    text = {
+        trigger = {
+            has_global_flag = BEL_monarchist_unite_world
+        }
+        localization_key = "GFX_superevent_lalatina_crowd"
+    }
+    text = {
+        trigger = {
+            has_global_flag = BEL_monarchist_hte_europe
+        }
+        localization_key = "GFX_superevent_city"
+    }
+
+}

@@ -1,0 +1,6989 @@
+#########################
+# Tomboy Events
+#########################
+
+add_namespace = tomboy
+
+# Tomboys demand annexation
+country_event = {
+	id = tomboy.1
+	title = tomboy.1.t
+	desc = tomboy.1.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.1"
+	}
+
+	option = { # Accept
+		name = tomboy.1
+		ai_chance = {
+			base = 30
+			modifier = { # If Army is smaller than 80% of our own, remove 25 from acceptance
+				add = -25
+				BEL = {
+					has_army_size = {
+						size < 80
+					}
+				}
+			}
+			modifier = { # If Army is bigger than own, add 100 to acceptance
+				add = 100
+				BEL = {
+					has_army_size = {
+						size > 100
+					}
+				}
+			}
+			modifier = { # If in faction, add 20 to acceptance
+				add = 20
+				is_in_faction_with = BEL
+			}
+			modifier = { # If in faction with any of these, remove 100 from acceptance
+				add = -100
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = FRA
+					is_in_faction_with = GER
+				}
+			}
+			modifier = { # If guaranteed by any of these, remove 75 from acceptance
+				add = -75
+				OR = {
+					is_guaranteed_by = ENG
+					is_guaranteed_by = FRA
+					is_guaranteed_by = GER
+				}
+			}
+		}
+		BEL = {
+			country_event = {
+				hours = 2
+				random_hours = 2
+				id = tomboy.2
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse
+		name = tomboy.1.b
+		ai_chance = {
+			base = 10
+			modifier = { # If in faction with any of these, add 100 to refusal
+				add = 100
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = FRA
+					is_in_faction_with = GER
+				}
+			}
+			modifier = { # If guaranteed by any of these, add 75 to refusal
+				add = 75
+				OR = {
+					is_guaranteed_by = ENG
+					is_guaranteed_by = FRA
+					is_guaranteed_by = GER
+				}
+			}
+		}
+		BEL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_refused_annexation
+			}
+		}
+		BEL = {
+			country_event = {
+				hours = 2
+				id = tomboy.3
+			}
+		}
+	}
+}
+
+# Country folds!
+country_event = {
+	id = tomboy.2
+	title = tomboy.2.t
+	desc = tomboy.2.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.2"
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_named_threat = {
+				threat = 1
+				name = threat_tomboy_annexation
+			}
+		}
+	}
+
+	option = { # Awesome!
+		name = tomboy.2.a
+		annex_country = {
+			target = FROM # Omg this works, let's goooo
+		}
+	}
+}
+
+# Country refuses!
+country_event = {
+	id = tomboy.3
+	title = tomboy.3.t
+	desc = tomboy.3.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.3"
+	}
+
+	option = { # This means war.
+		name = tomboy.3.a
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					num_divisions > FROM.num_divisions # If BEL is stronger than them, increase likelyhood
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_country = { # If any major guaranteed, half likelihood
+					is_major = yes
+					has_guaranteed = FROM
+				}
+			}
+			modifier = {
+				factor = 0.95
+				any_country = { # Minor nations barely matter. Barely.
+					is_major = no
+					has_guaranteed = FROM
+				}
+			}
+		}
+
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+		hidden_effect = {
+			add_named_threat = {
+				threat = 2.5
+				name = threat_imminent_war
+			}
+		}
+	}
+
+	option = { # Back down
+		name = tomboy.3.b
+
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 50
+				ROOT = {
+					num_divisions < from.num_divisions # If we have less divisions, war would be a bad idea!
+				}
+			}
+			modifier = {
+				factor = 2
+				any_country = { # If any major guaranteed, war would be stupid...
+					is_major = yes
+					has_guaranteed = FROM
+					num_divisions > root.num_divisions # ...given they're actually stronger than us.
+				}
+			}
+			modifier = {
+				factor = 1.05
+				any_country = { # Minor nations barely matter. Barely, but still do.
+					is_major = no
+					has_guaranteed = FROM
+				}
+			}
+		}
+
+		add_war_support = -0.5
+	}
+}
+
+# Subjugation for Safety
+country_event = {
+	id = tomboy.4
+	title = tomboy.4.t
+	desc = tomboy.4.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.4"
+	}
+
+	option = { # Agree to become a puppet
+		name = tomboy.4.a
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 50
+				any_country = {
+					is_major = yes
+					has_wargoal_against = ROOT # If a major has a wargoal, we NEED support!!!
+				}
+			}
+			modifier = {
+				add = 50
+				FROM = {
+					num_divisions > ROOT.num_divisions
+				}
+			}
+			modifier = {
+				factor = 0.25
+				FROM = {
+					has_war = yes
+					NOT = {
+						has_war_together_with = ROOT # If we're at war together, ignore debuff
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					is_major = yes # If they're a major, they can protect us better. 
+				}
+			}
+			modifier = {
+				factor = 0.75
+				has_opinion = {
+					target = FROM # If we don't like you, we won't join you.
+					value < 10
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM # If we like you, we're more likely to agree.
+					value > 50
+				}
+			}
+		}
+
+		FROM = {
+			puppet = {
+				target = ROOT
+				end_civil_wars = no
+				end_wars = no
+			}
+		}
+	}
+
+	option = { # Deny
+		name = tomboy.4.b
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				any_country = {
+					is_major = yes
+					has_guaranteed = ROOT # We're guaranteed by a major! We don't need you that much.
+				}
+			}
+			modifier = {
+				add = -15
+				FROM = {
+					is_major = yes # They're a major, it would be good to be a subject to them.
+				}
+			}
+			modifier = {
+				factor = 3
+				is_major = yes # If we're a major, we don't need protection!
+			}
+		}
+
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = puppet_wargoal_focus
+			}
+			country_event = tomboy.5
+		}
+	}
+}
+
+# They refused to become puppets!
+country_event = {
+	id = tomboy.5
+	title = tomboy.5.t
+	desc = tomboy.5.d
+
+	picture = tbd
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "Event ran: tomboy.5"
+	}
+
+	option = { # Damn it!
+		name = tomboy.5.a
+
+		custom_effect_tooltip = refused_subjugation_tt
+	}
+}
+
+# Tomboys invite us to faction!
+country_event = {
+	id = tomboy.6
+	title = tomboy.6.t
+	desc = tomboy.6.d
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "Event ran: tomboy.6"
+	}
+
+	option = { # Join
+		name = tomboy.6.a
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 2
+				FROM = {
+					is_major = yes # Major invites us? Yes please!
+				}
+			}
+			modifier = {
+				factor = 0.75
+				num_divisions > FROM.num_divisions # Weaker than us? Not really feeling it...
+			}
+			modifier = {
+				factor = 1.5
+				any_country = {
+					has_wargoal_against = ROOT # I'm threatened...
+					is_major = no
+				}
+			}
+			modifier = {
+				factor = 2
+				any_country = {
+					is_major = yes
+					has_wargoal_against = ROOT # I'm VERY threatened!
+				}
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = {
+					target = FROM # If we like you, we're more likely to join you.
+					value > 50
+				}
+			}
+		}
+
+		FROM = {
+			add_to_faction = ROOT
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy.6.b
+		
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 5
+				FROM = {
+					is_major = no # Kinda less likely to join if they're unimportant
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM # If we don't like you, we won't join you.
+					value < 10
+				}
+			}
+			modifier = {
+				factor = 0.5
+				num_divisions < FROM.num_divisions # Being stronger is pretty convincing to not deny...
+			}
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+			country_event = tomboy.7
+		}
+	}
+}
+
+# Country refused!
+country_event = {
+	id = tomboy.7
+	title = tomboy.7.t
+	desc = tomboy.7.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.7"
+	}
+
+	option = { # This is a sign of war!
+		name = tomboy.7.a
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 1.5
+				num_divisions > FROM.num_divisions # We're stronger!
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = FROM # If tensions are already bad, we're ready to worsen them!
+					value < 1
+				}
+			}
+			modifier = {
+				factor = 0.75
+				any_country = {
+					is_major = yes
+					has_guaranteed = FROM # We shouldn't mess with majors...
+				}
+				ROOT = {
+					is_major = no # ...unless we're major!
+				}
+			}
+		}
+
+		create_wargoal = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+	}
+
+	option = { # Their loss.
+		name = tomboy.7.b
+
+		ai_chance = {
+			base = 30
+		}
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_decrease
+		}
+	}
+}
+
+# Tomboys propose trade agreement
+country_event = {
+	id = tomboy.8
+	title = tomboy.8.t
+	desc = tomboy.8.d
+	
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.8"
+	}
+
+	option = { # We agree
+		name = tomboy.8.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 10
+				num_of_factories < FROM.num_of_factories # You're economically stronger, please trade!
+			}
+			modifier = {
+				add = 10
+				FROM = {
+					is_major = yes # You're a major, let's trade!
+				}
+			}
+			modifier = {
+				factor = 5
+				is_in_faction_with = FROM # We're allies, let's trade more!
+			}
+			modifier = {
+				factor = 2
+				is_guaranteed_by = FROM # You're guaranteeing me, let's trade too!
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM # We like you.
+					value > 9
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM # We like you a lot.
+					value > 49
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM # We love you.
+					value > 94
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				ENG = {
+					is_embargoing = BEL # If they embargo us, they'll stop
+				}
+			}
+			break_embargo = BEL
+		}
+		if = {
+			limit = {
+				BEL = {
+					is_embargoing = ENG # If we embargo them, we'll stop
+				}
+			}
+			break_embargo = ENG
+		}
+		ENG = {
+			give_market_access = BEL # Ignore error, extension hasn't been updated yet
+			add_opinion_modifier = {
+				target = BEL
+				modifier = BEL_friendly_interaction
+			}
+		}
+		FROM = {
+			give_market_access = ENG
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_friendly_interaction
+			}
+			country_event = tomboy.10
+		}
+	}
+
+	option = { # We refuse
+		name = tomboy.8.b
+
+		ai_chance = {
+			base = 15
+			modifier = {
+				add = 10
+				num_of_factories > FROM.num_of_factories # You're economically weaker!
+			}
+			modifier = {
+				add = -15
+				is_in_faction_with = FROM # We're allies, why would we disagree?
+			}
+			modifier = {
+				add = -5
+				is_guaranteed_by = FROM # You're guaranteeing me, let's trade!
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = FROM # We don't like you.
+					value < 1
+				}
+			}
+			modifier = {
+				add = 50
+				has_opinion = {
+					target = FROM # We dislike you.
+					value < -49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					target = FROM # We hate you.
+					value < -94
+				}
+			}
+		}
+
+		FROM = {
+			country_event = tomboy.11
+		}
+	}
+}
+
+
+news_event = { # Liegé Massacre
+	id = tomboy.9
+	title = tomboy.9.t
+	desc = tomboy.9.d
+
+	picture = GFX_news_event_soldiers_marching
+
+	fire_only_once = yes
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy.9"
+	}
+
+	trigger = {
+		any_country = {
+			AND = {
+				has_war_with = BEL
+				controls_province = 11519
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = BEL_liege_massacre_happened
+		BEL = {
+			complete_national_focus = BEL_liege_liege_massacre
+			add_ideas = BEL_liege_massacre
+			34 = {
+				add_manpower = -500000
+			}
+		}
+	}
+
+	option = { # International reactions
+		name = tomboy.9.a
+		
+		trigger = {
+			NOT = {
+				tag = BEL
+				has_war_with = BEL
+			}
+		}
+
+		every_country = {
+		    limit = { has_war_with = BEL }
+		    every_country = {
+        		limit = { NOT = { has_war_with = BEL } }
+        			add_opinion_modifier = {
+		            target = PREV
+        		    modifier = large_decrease
+		        }
+    		}
+		}
+	}
+
+	option = { # Offender Reaction Happy
+		name = tomboy.9.b
+
+		trigger = {
+			NOT = {
+				tag = BEL
+			}
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		every_country = {
+			limit = {
+				controls_province = 11519 # Scope country that controls Liége
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = BEL
+						controls_province = 11519 # Scope every country that isn't BEL or the country controlling Liége
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV # Target the country that controls Liége
+					modifier = large_decrease
+				}
+			}
+			add_war_support = 0.1
+			add_stability = -0.1
+		}
+	}
+
+	option = { # Offender Reaction Distraught
+		name = tomboy.9.c
+
+		trigger = {
+			NOT = {
+				tag = BEL
+			}
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		every_country = {
+			limit = {
+				controls_province = 11519 # Scope country that controls Liége
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = BEL
+						tag = PREV # Scope every country that isn't BEL or the country controlling Liége
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV # Target the country that controls Liége
+					modifier = small_decrease
+				}
+			}
+			add_war_support = -0.15
+			add_stability = -0.05
+		}
+	}
+
+	option = { # Offender ally reaction
+		name = tomboy.9.d
+
+		trigger = {
+			NOT = {
+				tag = BEL
+				controls_province = 11519
+			}
+			has_war_with = BEL
+		}
+
+		add_war_support = -0.1
+	}
+
+	option = { # USA Offender reaction
+		name = tomboy.9.e
+
+		trigger = {
+			tag = USA
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		USA = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			every_enemy_country = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = large_decrease
+				}
+			}
+		}
+		
+	}
+
+}
+
+# Britain accepts trade deal!
+country_event = {
+	id = tomboy.10
+	title = tomboy.10.t
+	desc = tomboy.10.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.10"
+	}
+
+	option = { # Awesome! Let's celebrate!
+		name = tomboy.10.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_intel = {
+			target = FROM
+			civilian_intel = 10
+		}
+		FROM = {
+			add_intel = {
+				target = ROOT
+				civilian_intel = 10
+			}
+		}
+	}
+
+	option = { # Let's coax out some small intel on their military
+		name = tomboy.10.b
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 40
+				strength_ratio = {	# Strength Ratio is: [ Scope Fielded Divisions ÷ Target Fielded Divisions ]
+					tag = FROM		# Do "ratio > 1.0" if you want to check that scope is STRONGER than target 
+					ratio < 1.25	# Do "ratio < 1.0" if you want to check that scope is WEAKER than target
+				}					# In other words, this checks if target has 1.25x the stength of scope
+			}
+			modifier = {
+				add = 40
+				naval_strength_ratio = { # Same calculation as above, but naval.
+					tag = FROM
+					ratio < 1.25
+				}
+			}
+		}
+
+		add_intel = {
+			target = FROM
+			army_intel = 2.5
+			navy_intel = 2.5
+			airforce_intel = 2.5
+		}
+		FROM = {
+			add_intel = {
+				target = ROOT
+				civilian_intel = 10
+			}
+		}
+	}
+}
+
+# Britain refuses trade agreement
+country_event = {
+	id = tomboy.11
+	title = tomboy.11.t
+	desc = tomboy.11.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.11"
+	}
+
+	option = { # Oh well...
+		name = tomboy.11.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_decrease
+		}
+	}
+}
+
+# Tomboys approach with deal (Northern Ireland for support)
+country_event = {
+	id = tomboy.12
+	title = tomboy.12.t
+	desc = tomboy.12.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.12"
+	}
+
+	option = { # We accept!
+		name = tomboy.12.a
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 35
+				FROM = {
+					num_divisions > ENG.num_divisions
+				}
+			}
+			modifier = {
+				add = 15
+				has_opinion = {
+					target = ENG
+					value < 0
+				}
+			}
+			modifier = {
+				add = -5
+				has_opinion = {
+					target = ENG
+					value > 0
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = 50
+				is_puppet_of = ENG
+				has_opinion = {
+					target = ENG
+					value < -14
+				}
+			}
+			modifier = {
+				factor = 100
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = ENG
+				NOT = {
+					is_puppet_of = ENG
+				}
+			}
+		}
+
+		IRE = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = BEL_promised_northern_ireland
+			}
+			add_stability = 0.1
+			add_war_support = 0.15
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = IRE
+				modifier = BEL_promised_support
+			}
+			country_event = tomboy.14
+		}
+		set_global_flag = BEL_ireland_pledged_support
+	}
+
+	option = { # We refuse
+		name = tomboy.12.b
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -5
+				has_opinion = {
+					target = ENG
+					value < 0
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = ENG
+					value > 0
+				}
+			}
+			modifier = {
+				add = -5
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = -50
+				is_puppet_of = ENG
+				has_opinion = {
+					target = ENG
+					value < -14
+				}
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = IRE
+				modifier = BEL_disappointed
+			}
+			country_event = tomboy.15
+		}
+	}
+}
+
+
+
+country_event = { # Tomboys plead for help ||||| Liege Massacre Focuses
+	id = tomboy.13
+	title = tomboy.13.t
+	desc = tomboy.13.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy.13"
+	}
+
+	option = { # Join in war
+		name = tomboy.13.a
+
+		ai_chance = {
+			base = var:opinion@BEL
+		}
+
+		BEL = {
+			every_enemy_country = {
+				ROOT = {
+					add_to_war = {
+						targeted_alliance = BEL
+						enemy = PREV
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = PREV
+				modifier = large_increase
+			}
+		}
+	}
+
+	option = { # Give equipment
+		name = tomboy.13.b
+
+		ai_chance = {
+			base = var:opinion@BEL
+			modifier = {
+				factor = 0.5
+			}
+		}
+
+		BEL = {
+			every_enemy_country = {
+				ROOT = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = large_decrease
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = large_decrease
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = large_decrease
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = large_decrease
+					}
+				}
+			}
+			ROOT = {
+				send_equipment = {
+					amount = 2500
+					target = BEL
+				}
+			}
+		}
+	}
+
+	option = { # They'll get through it
+		name = tomboy.13.c
+
+		ai_chance = {
+			base = 5
+		}
+
+		BEL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+			every_enemy_country = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = small_increase
+				}
+			}
+		}
+		
+	}
+}
+
+# Ireland accepts
+country_event = {
+	id = tomboy.14
+	title = tomboy.14.t
+	desc = tomboy.14
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.14"
+	}
+
+	option = { # Yes!!
+		name = tomboy.14.a
+
+		custom_effect_tooltip = tomboy.14.tt
+	}
+}
+
+# Ireland refuses
+country_event = {
+	id = tomboy.15
+	title = tomboy.15.t
+	desc = tomboy.15.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.15"
+	}
+
+	option = {
+		name = tomboy.15.a
+	}
+}
+
+news_event = {
+
+	id = tomboy.16
+	title = tomboy.16.t
+	desc = tomboy.16.d
+	picture = GFX_news_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy.16"
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = tomboy.16.a
+
+		trigger = {
+			tag = BEL
+		}
+
+		every_country = {
+		    limit = { has_war_with = BEL }
+		    every_country = {
+        		limit = { NOT = { has_war_with = BEL } }
+        			add_opinion_modifier = {
+		            target = PREV
+        		    modifier = large_decrease
+		        }
+    		}
+		}
+		every_country = {
+		    limit = { has_war_with = BEL }
+		    every_country = {
+        		limit = { NOT = { has_war_with = BEL } }
+        			add_opinion_modifier = {
+		            target = PREV
+        		    modifier = large_decrease
+		        }
+    		}
+		}
+		every_country = {
+		    limit = { has_war_with = BEL }
+		    every_country = {
+        		limit = { NOT = { has_war_with = BEL } }
+        			add_opinion_modifier = {
+		            target = PREV
+        		    modifier = large_decrease
+		        }
+    		}
+		}
+		every_country = {
+		    limit = { has_war_with = BEL }
+		    every_country = {
+        		limit = { NOT = { has_war_with = BEL } }
+        			add_opinion_modifier = {
+		            target = PREV
+        		    modifier = large_decrease
+		        }
+    		}
+		}
+	}
+}
+
+country_event = { # Consolidate Terror
+	id = tomboy.17
+	title = tomboy.17.t
+	desc = tomboy.17.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy.17"
+	}
+
+	option = {
+		name = tomboy.17.a
+
+		trigger = {
+			has_government = terror
+		}
+	}
+
+	option = {
+		name = tomboy.17.b
+
+		trigger = {
+			NOT = {
+				has_government = terror
+			}
+		}
+	}
+}
+
+# Britain falls apart, what about the breakaways?
+country_event = {
+	id = tomboy.18
+	title = tomboy.18.t
+	desc = tomboy.18.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.18"
+	}
+
+	option = { # Puppet
+		name = tomboy.18.a
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 15
+				has_opinion = {
+					target = ENG
+					value < 0
+				}
+			}
+			modifier = {
+				add = 20
+				num_divisions < ENG.num_divisions
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = WLS
+					value < 16
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = SCO
+					value < 16
+				}
+			}
+			modifier = {
+				add = 5
+
+				has_global_flag = BEL_ireland_pledged_support
+				has_opinion = {
+					target = IRE
+					value < 16
+				}
+			}
+			modifier = {
+				add = 5
+				NOT = {
+					has_global_flag = BEL_ireland_pledged_support
+				}
+				has_opinion = {
+					target = NIR
+					value < 16
+				}
+			}
+		}
+
+		BEL = {
+			puppet = {
+				target = WLS
+				end_wars = no
+				end_civil_wars = no
+			}
+			WLS = {
+				set_autonomy = {
+					target = THIS
+					autonomy_state = autonomy_satellite
+				}
+			}
+			puppet = {
+				target = SCO
+				end_wars = no
+				end_civil_wars = no
+			}
+			SCO = {
+				set_autonomy = {
+					target = THIS
+					autonomy_state = autonomy_satellite
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = BEL_ireland_pledged_support
+					}
+				}
+				puppet = {
+					target = NIR
+					end_wars = no
+					end_civil_wars = no
+				}
+				NIR = {
+					set_autonomy = {
+						target = THIS
+						autonomy_state = autonomy_satellite
+					}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = WLS
+				enemy = ENG
+			}
+			add_threat = 0.05
+		}
+	}
+
+	option = { # Guarantee independence
+		name = tomboy.18.b
+
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = -5
+				OR = {
+					has_guaranteed = WLS
+					has_guaranteed = SCO
+					has_guaranteed = NIR
+				}
+			}
+		}
+
+		give_guarantee = WLS
+		give_guarantee = SCO
+		if = {
+			limit = {
+				has_global_flag = BEL_ireland_pledged_support
+			}
+			give_guarantee = IRE
+		}
+		else = {
+			give_guarantee = NIR
+		}
+		add_to_war = {
+			targeted_alliance = WLS
+			enemy = ENG
+		}
+	}
+}
+
+
+
+# Death of Wilhelm II.
+country_event = {
+	id = tomboy.19
+	title = tomboy.19.t
+	desc = tomboy.19.d
+
+	trigger = {
+		date > 1941.6.4
+		GER_BEL_wilhelm_ii = {
+		    is_country_leader = yes
+		}
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy.19"
+	}
+
+	option = {
+		name = tomboy.19.a
+
+		trigger = {
+			tag = GER
+		}
+
+		GER = {
+			promote_character = GER_BEL_wilhelm_iii
+			retire_character = GER_BEL_wilhelm_ii
+		}
+	}
+
+	option = {
+		name = tomboy.19.b
+
+		trigger = {
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+}
+
+# Tomboys suggest subjugation
+country_event = {
+	id = tomboy.20
+	title = tomboy.20.t
+	desc = tomboy.20.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.20"
+	}
+
+	option = { # Accept
+		name = tomboy.20.a
+
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 25
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 95
+				}
+			}
+			modifier = {
+				add = 5
+				is_guaranteed_by = FROM
+			}
+			modifier = {
+				add = 5
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+		}
+
+		FROM = {
+			if = {
+				limit = {
+					num_divisions > ENG.num_divisions
+				}
+				puppet = {
+					target = ENG
+					end_wars = no
+					end_civil_wars = yes
+				}
+			}
+			else = {
+				puppet = {
+					target = ENG
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			ENG = {
+				set_autonomy = {
+					target = THIS
+					autonomy_state = autonomy_puppet
+				}
+				add_timed_idea = {
+					idea = BEL_idea_tomboy_overlordship
+					days = 100
+				}
+			}
+			country_event = tomboy.21
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy.20.b
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value < -25
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value < -50
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value < -75
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value < -95
+				}
+			}
+		}
+		
+		FROM = {
+			country_event = tomboy.21
+		}
+	}
+}
+
+# Britain accepts!
+country_event = {
+	id = tomboy.21
+	title = tomboy.21.t
+	desc = tomboy.21.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.21"
+	}
+
+	option = { # Great!
+		name = tomboy.21.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_increase
+		}
+	}
+}
+
+# Britain refuses!
+country_event = {
+	id = tomboy.22
+	title = tomboy.22.t
+	desc = tomboy.22.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.22"
+	}
+
+	option = { # London bridge will fall.
+		name = tomboy.22.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_decrease
+		}
+	}
+}
+
+# Tomboys invite us to faction
+country_event = {
+	id = tomboy.23
+	title = tomboy.23.t
+	desc = tomboy.23.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.23"
+	}
+
+	option = { # Accept
+		name = tomboy.23.a
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -10
+				is_faction_leader = yes
+			}
+			modifier = {
+				add = -20
+				is_in_faction = yes
+			}
+			modifier = {
+				add = -30
+				any_allied_country = {
+					num_divisions > BEL.num_divisions
+				}
+			}
+			modifier = {
+				add = 20
+				num_divisions > BEL.num_divisions
+			}
+			modifier = {
+				add = 20
+				BEL = {
+					any_allied_country = {
+						NOT = {
+							tag = BEL
+						}
+						num_divisions > ROOT.num_divisions
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				BEL = {
+					is_in_faction = no
+				}
+			}
+			create_faction = BEL_monarchism_british_faction_name
+		}
+		if = {
+			limit = {
+				is_in_faction = yes
+				NOT = {
+					is_in_faction_with = BEL
+				}
+			}
+			leave_faction = yes
+		}
+		BEL = {
+			add_to_faction = ROOT
+		}
+	}
+
+	option = { # Deny
+		name = tomboy.23.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -20
+				num_divisions < BEL.num_divisions
+			}
+		}
+
+		BEL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+			set_global_flag = BEL_britain_refused_friendship
+			uncomplete_national_focus = {
+				focus = BEL_britain_friendship
+			}
+		}
+	}
+}
+
+# Britain accepts!
+country_event = {
+	id = tomboy.24
+	title = tomboy.24.t
+	desc = tomboy.24.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.24"
+	}
+
+	option = { # Yay!
+		name = tomboy.24.a
+	}
+}
+
+# Britain refuses!
+country_event = {
+	id = tomboy.25
+	title = tomboy.25.t
+	desc = tomboy.25.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.25"
+	}
+
+	option = { # Damn.
+		name = tomboy.25
+
+		hidden_effect = {
+			BEL = {
+				complete_national_focus = BEL_monarchism_british_destabilization_campaign
+			}
+		}
+	}
+}
+
+country_event = { # Split Germany
+	id = tomboy.26
+	title = tomboy.26.t
+	desc = tomboy.26.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy.26"
+	}
+
+	option = { # Don't split
+		name = tomboy.26.a
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				strength_ratio = {
+					tag = GER
+					ratio < 0.75
+				}
+				factor = 4
+			}
+		}
+
+		GER = {
+			add_opinion_modifier = {
+				target = BEL
+				modifier = small_increase
+			}
+			add_autonomy_score = {
+				value = -100
+			}
+		}
+	}
+
+	option = { # Split North-South
+		name = tomboy.26.b
+
+		ai_chance = {
+			base = 30
+		}
+
+		BAY = { 
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 1
+			        }
+			    }
+			    transfer_state = 1
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 4
+			        }
+			    }
+			    transfer_state = 4
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 9
+			        }
+			    }
+			    transfer_state = 9
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 10
+			        }
+			    }
+			    transfer_state = 10
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 17
+			        }
+			    }
+			    transfer_state = 17
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 19
+			        }
+			    }
+			    transfer_state = 19
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 20
+			        }
+			    }
+			    transfer_state = 20
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 21
+			        }
+			    }
+			    transfer_state = 21
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 22
+			        }
+			    }
+			    transfer_state = 22
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 23
+			        }
+			    }
+			    transfer_state = 23
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 25
+			        }
+			    }
+			    transfer_state = 25
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 26
+			        }
+			    }
+			    transfer_state = 26
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 27
+			        }
+			    }
+			    transfer_state = 27
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 28
+			        }
+			    }
+			    transfer_state = 28
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 31
+			        }
+			    }
+			    transfer_state = 31
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 32
+			        }
+			    }
+			    transfer_state = 32
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 32
+			        }
+			    }
+			    transfer_state = 735
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 33
+			        }
+			    }
+			    transfer_state = 33
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 39
+			        }
+			    }
+			    transfer_state = 39
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 41
+			        }
+			    }
+			    transfer_state = 41
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 45
+			        }
+			    }
+			    transfer_state = 45
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 46
+			        }
+			    }
+			    transfer_state = 46
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 50
+			        }
+			    }
+			    transfer_state = 50
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 52
+			        }
+			    }
+			    transfer_state = 52
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 53
+			        }
+			    }
+			    transfer_state = 53
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 54
+			        }
+			    }
+			    transfer_state = 54
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 69
+			        }
+			    }
+			    transfer_state = 69
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 72
+			        }
+			    }
+			    transfer_state = 72
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 74
+			        }
+			    }
+			    transfer_state = 74
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 75
+			        }
+			    }
+			    transfer_state = 75
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 76
+			        }
+			    }
+			    transfer_state = 76
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 77
+			        }
+			    }
+			    transfer_state = 77
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 78
+			        }
+			    }
+			    transfer_state = 78
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 79
+			        }
+			    }
+			    transfer_state = 79
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 80
+			        }
+			    }
+			    transfer_state = 80
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 81
+			        }
+			    }
+			    transfer_state = 81
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 82
+			        }
+			    }
+			    transfer_state = 82
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 83
+			        }
+			    }
+			    transfer_state = 83
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 84
+			        }
+			    }
+			    transfer_state = 84
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 87
+			        }
+			    }
+			    transfer_state = 87
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 88
+			        }
+			    }
+			    transfer_state = 88
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 89
+			        }
+			    }
+			    transfer_state = 89
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 90
+			        }
+			    }
+			    transfer_state = 90
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 91
+			        }
+			    }
+			    transfer_state = 91
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 92
+			        }
+			    }
+			    transfer_state = 92
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 93
+			        }
+			    }
+			    transfer_state = 93
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 94
+			        }
+			    }
+			    transfer_state = 94
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 95
+			        }
+			    }
+			    transfer_state = 95
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 96
+			        }
+			    }
+			    transfer_state = 96
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 97
+			        }
+			    }
+			    transfer_state = 97
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 98
+			        }
+			    }
+			    transfer_state = 98
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 102
+			        }
+			    }
+			    transfer_state = 102
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 153
+			        }
+			    }
+			    transfer_state = 153
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 152
+			        }
+			    }
+			    transfer_state = 152
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 157
+			        }
+			    }
+			    transfer_state = 157
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 158
+			        }
+			    }
+			    transfer_state = 158
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 159
+			        }
+			    }
+			    transfer_state = 159
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 160
+			        }
+			    }
+			    transfer_state = 160
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 161
+			        }
+			    }
+			    transfer_state = 161
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 162
+			        }
+			    }
+			    transfer_state = 162
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 458
+			        }
+			    }
+			    transfer_state = 458
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 665
+			        }
+			    }
+			    transfer_state = 665
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 853
+			        }
+			    }
+			    transfer_state = 853
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 850
+			        }
+			    }
+			    transfer_state = 850
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 851
+			        }
+			    }
+			    transfer_state = 851
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 852
+			        }
+			    }
+			    transfer_state = 852
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 735
+			        }
+			    }
+			    transfer_state = 735
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 736
+			        }
+			    }
+			    transfer_state = 736
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 764
+			        }
+			    }
+			    transfer_state = 764
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 784
+			        }
+			    }
+			    transfer_state = 784
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 802
+			        }
+			    }
+			    transfer_state = 802
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 803
+			        }
+			    }
+			    transfer_state = 803
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 804
+			        }
+			    }
+			    transfer_state = 804
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 806
+			        }
+			    }
+			    transfer_state = 806
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 848
+			        }
+			    }
+			    transfer_state = 848
+			}
+		}
+		BEL = {
+			puppet = BAY
+		}
+		BAY = {
+			promote_character = BAY_regency_leader
+		}
+		GER = {
+			add_opinion_modifier = {
+				target = BEL
+				modifier = large_decrease
+			}
+			#set_cosmetic_tag = PRE
+		}
+		BEL = {
+			country_event = tomboy.27
+			set_country_flag = bel_bavaria_established_flag
+		}
+	}
+}
+
+country_event = { # Leader of Bavaria
+	id = tomboy.27
+	title = tomboy.27.t
+	desc = tomboy.27.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy.27"
+	}
+
+	option = { # Rupprecht
+		name = tomboy.27.a
+
+		ai_chance = {
+			base = 20
+		}
+
+		BAY = {
+			promote_character = BAY_rupprecht_leader
+		}
+	}
+
+	option = { # Astolfo
+		name = tomboy.27.b
+
+		ai_chance = {
+			base = 20
+		}
+
+		BAY = {
+			promote_character = BAY_astolfo_leader
+			set_cosmetic_tag = BAY_FEM
+			set_party_name = {
+			    ideology = neutrality
+			    long_name = BAY_FEM_neutrality_party_long
+			    name = BAY_FEM_neutrality_party
+			}
+			set_party_name = {
+			    ideology = fascism
+			    long_name = BAY_FEM_fascism_party_long
+			    name = BAY_FEM_fascism_party
+			}
+			set_party_name = {
+			    ideology = communism
+			    long_name = BAY_FEM_communism_party_long
+			    name = BAY_FEM_communism_party
+			}
+			set_party_name = {
+			    ideology = democratic
+			    long_name = BAY_FEM_democratic_party_long
+			    name = BAY_FEM_democratic_party
+			}
+			set_party_name = {
+			    ideology = terror
+			    long_name = BAY_FEM_terror_party_long
+			    name = BAY_FEM_terror_party
+			}
+		}
+	}
+}
+
+# Tomboys want Britain to join faction
+country_event = {
+	id = tomboy.28
+	title = tomboy.28.t
+	desc = tomboy.28.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.28"
+	}
+
+	option = { # Let them send it
+		name = tomboy.28.a
+
+		BEL = {
+			country_event = tomboy.29
+		}
+	}
+}
+
+# HIDDEN - Tomboys invite Britain
+country_event = {
+	id = tomboy.29
+	
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.27"
+	}
+
+	option = {
+		ENG = {
+			country_event = tomboy.23
+		}
+	}
+}
+
+# Tomboys ask for control of state
+country_event = {
+	id = tomboy.30
+	title = tomboy.30.t
+	desc = tomboy.30.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.30"
+	}
+
+	option = { # Accept
+		name = tomboy.30.a
+
+		ai_chance = {
+			base = 10
+
+			modifier = {
+                add = -50
+                127 = {
+                    owner = {
+                        has_opinion = {
+                            target = BEL
+                            value < 0
+                        }
+                    }
+                }
+            }
+            modifier = {
+                add = -25
+                127 = {
+                    owner = {
+                        has_opinion = {
+                            target = BEL
+                            value > 0
+                        }
+                        has_opinion = {
+                            target = BEL
+                            value < 50
+                        }
+                    }
+                }
+            }
+            modifier = {
+				add = 10
+				127 = {
+					owner = {
+						num_divisions < BEL.num_divisions
+					}
+				}
+            }
+			modifier = {
+				add = 25
+				127 = {
+					owner = {
+						is_puppet_of = BEL
+					}
+				}
+			}
+			modifier = {
+				add = 15
+				127 = {
+					owner = {
+						is_in_faction_with = BEL
+					}
+				}
+			}
+		}
+
+		FROM = {
+			transfer_state = var:BEL_request_state_number
+			custom_effect_tooltip = tomboy.30.a_tt
+			country_event = tomboy.31
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy.30.b
+
+		ai_chance = {
+			base = 30
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = small_decrease
+			}
+			country_event = tomboy.32
+		}
+	}
+}
+
+# Country refuses to hand over state
+country_event = {
+	id = tomboy.31
+	title = tomboy.31.t
+	desc = tomboy.31.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.31"
+	}
+
+	option = { # We'll try another time.
+		name = tomboy.31.a
+	}
+}
+
+# Tomboys want to split Britain
+country_event = {
+	id = tomboy.32
+	title = tomboy.32.t
+	desc = tomboy.32.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.32"
+	}
+
+	option = { # Accept
+		name = tomboy.32.a
+
+		# Haha AI go brrrr
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 40
+				FROM = {
+					OR = {
+						num_divisions > ENG.num_divisions
+						any_allied_country = {
+							num_divisions > ENG.num_divisions
+						}
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 95
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 25
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = ENG
+					value > 95
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = ENG
+					value > 75
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = ENG
+					value > 50
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = ENG
+					value > 25
+				}
+			}
+			modifier = {
+				add = -5
+				has_opinion = {
+					target = ENG
+					value > 5
+				}
+			}
+			modifier = {
+				factor = 100
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = ENG
+			}
+		}
+
+		if = {
+			limit = {
+				tag = IRE
+			}
+			set_global_flag = IRE_wants_to_split_England
+		}
+		else_if = {
+			limit = {
+				tag = WLS
+			}
+			set_global_flag = WLS_wants_to_split_England
+		}
+		else_if = {
+			limit = {
+				tag = SCO
+			}
+			set_global_flag = SCO_wants_to_split_England
+		}
+		else_if = {
+			limit = {
+				tag = NIR
+			}
+			set_global_flag = NIR_wants_to_split_England
+		}
+		custom_effect_tooltip = tomboy.32.a_tt
+		hidden_effect = {
+			FROM = {
+				country_event = tomboy.33
+			}
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy.32.b
+		
+		ai_chance = {
+			base = 40
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_disappointed
+			}
+			country_event = tomboy.34
+		}
+	}
+}
+
+# Country accepts to split Britain!
+country_event = {
+	id = tomboy.33
+	title = tomboy.33.t
+	desc = tomboy.33.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.33"
+	}
+
+	option = { # Great!
+		name = tomboy.33.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_increase
+		}
+		custom_effect_tooltip = tomboy.33.a_tt
+	}
+}
+
+# Country refuses to split Britain
+country_event = {
+	id = tomboy.34
+	title = tomboy.34.t
+	desc = tomboy.34.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.34"
+	}
+
+	option = { # Shame.
+		name = tomboy.34.a
+
+		ai_chance = {
+			base = 40
+		}
+	}
+
+	option = { # We'll war them too!
+		name = tomboy.34.b
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < -50
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value < -75
+				}
+			}
+			modifier = {
+				factor = 100
+				FROM = {
+					OR = {
+						is_ally_with = ENG
+						is_puppet_of = ENG
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+
+		if = {
+			limit = {
+				FROM = {
+					tag = IRE
+				}
+			}
+			set_global_flag = BEL_will_also_declare_on_IRE
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = SCO
+				}
+			}
+			set_global_flag = BEL_will_also_declare_on_SCO
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = WLS
+				}
+			}
+			set_global_flag = BEL_will_also_declare_on_WLS
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = NIR
+				}
+			}
+			set_global_flag = BEL_will_also_declare_on_NIR
+		}
+		custom_effect_tooltip = tomboy.34.b_tt
+	}
+}
+
+# Small or Great France?
+country_event = {
+	id = tomboy.35
+	title = tomboy.35.t
+	desc = tomboy.35.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.35"
+	}
+
+	option = { # Small France.
+		name = tomboy.35.a
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 10
+				num_divisions < FRA.num_divisions
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FRA
+					value > 0
+				}
+			}
+		}
+
+		29 = { # Calais
+			add_claim_by = FROM
+		}
+		785 = { # Picardy
+			add_claim_by = FROM
+		}
+		18 = { # Champagne
+			add_claim_by = FROM
+		}
+		17 = { # Franche-Compte
+			add_claim_by = FROM
+		}
+		18 = { # Alsace-Lorraine
+			add_claim_by = FROM
+		}
+		add_threat = 0.05
+		set_country_flag = BEL_france_small
+	}
+
+	option = { # Great France
+		name = tomboy.35.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 10
+				num_divisions > FRA.num_divisions
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FRA
+					value < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_faction_with = FRA
+				}
+			}
+		}
+
+		29 = { # Calais
+			add_claim_by = FROM
+		}
+		785 = { # Picardy
+			add_claim_by = FROM
+		}
+		18 = { # Champagne
+			add_claim_by = FROM
+		}
+		17 = { # Franche-Compte
+			add_claim_by = FROM
+		}
+		28 = { # Alsace-Lorraine
+			add_claim_by = FROM
+		}
+		27 = { # Bourgogne
+			add_claim_by = FROM
+		}
+		24 = { # Centre
+			add_claim_by = FROM
+		}
+		30 = { # Loire
+			add_claim_by = FROM
+		}
+		14 = { # Brittany
+			add_claim_by = FROM
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = large_decrease
+		}
+		add_threat = 0.1
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = BEL_monafash_monarchist_fascist_alliance
+				}
+			}
+			custom_effect_tooltip = tomboy.35.b_tt
+		}
+		set_country_flag = BEL_france_big
+	}
+
+	option = { # Back down
+		name = tomboy.35.c
+
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 20
+				FRA = {
+					any_allied_country = {
+						is_major = yes
+					}
+				}
+			}
+			modifier = {
+				add = 5
+				num_divisions < FRA.num_divisions
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					is_in_faction_with = FRA
+					is_puppet_of = FRA
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FRA
+					value > 49
+				}
+			}
+		}
+
+		uncomplete_national_focus = {
+			focus = BEL_monarchism_france_plan_andou_prepare
+		}
+	}
+}
+
+# No longer at war with France
+country_event = {
+	id = tomboy.36
+	title = tomboy.36.t
+	desc = tomboy.36.d
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "Event ran: tomboy.36"
+	}
+
+	trigger = {
+		tag = BEL
+		OR = {
+			has_idea = BEL_idea_war_with_france_defensive
+			has_idea = BEL_idea_war_with_france_offensive
+		}
+		NOT = {
+			has_war_with = FRA
+		}
+		OR = {
+			has_completed_focus = BEL_monarchism_france_defense_let_them_come
+			has_completed_focus = BEL_monarchism_france_offense_attack_france
+		}
+	}
+
+	option = { # Ok
+		name = tomboy.36.a
+
+		if = {
+			limit = {
+				has_idea = BEL_idea_war_with_france_defensive
+			}
+			remove_ideas = BEL_idea_war_with_france_defensive
+		}
+		if = {
+			limit = {
+				has_idea = BEL_idea_war_with_france_offensive
+			}
+			remove_ideas = BEL_idea_war_with_france_offensive
+		}
+	}
+}
+
+# Maginot Sabotaged
+country_event = {
+	id = tomboy.37
+	title = tomboy.37.t
+	desc = tomboy.37.d
+
+	fire_only_once = yes
+
+	picture = tbd
+
+	immediate = {
+		log = "Event ran: tomboy.37"
+		every_country = {
+			limit = {
+				OR = {
+					is_major = yes
+					is_ai = no
+				}
+			}
+
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					FRA = {
+						owns_state = 28
+					}
+				}
+				28 = {
+					set_building_level = { # Alsace-Lorraine
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 678
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 6529
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 9503
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 549
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 3629
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 11502
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 9559
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						owns_state = 18
+					}
+				}
+				18 = {
+					set_building_level = { # Champagne
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 5291
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 3560
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 9472
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						owns_state = 785
+					}
+				}
+				785 = {
+					set_building_level = { # Picardy
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 3447
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						owns_state = 29
+					}
+				}
+				29 = {
+					set_building_level = { # Nord-Pas-De-Calais
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 11606
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 11483
+					}
+					set_building_level = {
+						type = bunker
+						level = 0
+						instant_build = yes
+						province = 575
+					}
+				}
+			}
+		}
+	}
+	
+	option = { # Okay
+		name = tomboy.37.a
+
+		FRA = {
+			add_manpower = -15000
+		}
+		custom_effect_tooltip = tomboy.37.a_tt
+	}
+}
+
+# Maginot Destroyed!
+news_event = {
+	id = tomboy.38
+	title = tomboy.38.t
+	desc = tomboy.38.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.38"
+	}
+
+	option = { # All this for nothing.
+		name = tomboy.38.a
+	}
+}
+
+# Germany focus | Unity, Partition, or Radical Partition?
+country_event = {
+	id = tomboy.39
+	title = tomboy.39.t
+	desc = tomboy.39.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.39"
+	}
+
+	picture = tbd
+
+	option = { # Unity - HTE, lock out of Femboyvaria content.
+		name = tomboy.39.a
+
+		ai_chance = {
+			base = 15
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_germany_unity
+		}
+		complete_national_focus = BEL_monarchism_germany_unity_chosen
+		custom_effect_tooltip = tomboy.39.a_tt
+	}
+
+	option = { # Partition - HTE and Femboyvaria
+		name = tomboy.39.b
+
+		ai_chance = {
+			base = 75
+
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_germany_partition
+		}
+		complete_national_focus = BEL_monarchism_germany_justice_chosen
+		custom_effect_tooltip = tomboy.39.b_tt
+	}
+
+	option = { # Radical Partition - Lock out of HTE and Femboyvaria
+		name = tomboy.39.c
+
+		ai_chance = {
+			base = 10
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_germany_radical
+		}
+		complete_national_focus = BEL_monarchism_germany_freedom_chosen
+		custom_effect_tooltip = tomboy.39.c_tt
+	}
+}
+
+# Contact resistance groups | Germany Justice Focus
+country_event = {
+	id = tomboy.40
+	title = tomboy.40.t
+	desc = tomboy.40.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.40"
+	}
+
+	picture = tbd
+
+	option = { # Go with the Wittelsbachs
+		name = tomboy.40.a
+
+		ai_chance = {
+			base = 30
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_germany_justice_chose_wittelsbachs
+		}
+		custom_effect_tooltip = tomboy.40.a_tt
+	}
+
+	option = { # Go with the Femboys
+		name = tomboy.40.b
+
+		ai_chance = {
+			base = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_germany_justice_chose_femboys
+		}
+		custom_effect_tooltip = tomboy.40.b_tt
+	}
+}
+
+# Fallback event, no ruler for Femboyvaria
+country_event = {
+	id = tomboy.41
+	title = tomboy.41.t
+	desc = tomboy.41.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.41"
+		hidden_effect = {
+			promote_character = BAY_regency_leader
+		}
+	}
+	
+	picture = tbd
+
+	option = { # Rupprecht
+		name = tomboy.41.a
+
+		ai_chance = {
+			base = 30
+		}
+
+		BAY = {
+			promote_character = BAY_rupprecht_leader
+		}
+	}
+
+	option = { # Femboys
+		name = tomboy.41.b
+
+		ai_chance = {
+			base = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		BAY = {
+			promote_character = BAY_astolfo_leader
+			set_cosmetic_tag = BAY_FEM
+
+			hidden_effect = {
+				set_party_name = {
+					ideology = neutrality
+					long_name = BAY_FEM_neutrality_party_long
+					name = BAY_FEM_neutrality_party
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = BAY_FEM_fascism_party_long
+					name = BAY_FEM_fascism_party
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = BAY_FEM_democratic_party_long
+					name = BAY_FEM_democratic_party
+				}
+				set_party_name = {
+					ideology = communism
+					long_name = BAY_FEM_communism_party_long
+					name = BAY_FEM_communism_party
+				}
+				set_party_name = {
+					ideology = terror
+					long_name = BAY_FEM_terror_party_long
+					name = BAY_FEM_terror_party
+				}
+			}
+		}
+	}
+
+	option = { # Let them fight it out
+		name = tomboy.41.c
+
+		ai_chance = {
+			base = 20
+		}
+
+		random_list = {
+			50 = {
+				BAY = {
+					promote_character = BAY_rupprecht_leader
+				}
+			}
+			50 = {
+				BAY = {
+					promote_character = BAY_astolfo_leader
+					set_cosmetic_tag = BAY_FEM
+
+					hidden_effect = {
+						set_party_name = {
+							ideology = neutrality
+							long_name = BAY_FEM_neutrality_party_long
+							name = BAY_FEM_neutrality_party
+						}
+						set_party_name = {
+							ideology = fascism
+							long_name = BAY_FEM_fascism_party_long
+							name = BAY_FEM_fascism_party
+						}
+						set_party_name = {
+							ideology = democratic
+							long_name = BAY_FEM_democratic_party_long
+							name = BAY_FEM_democratic_party
+						}
+						set_party_name = {
+							ideology = communism
+							long_name = BAY_FEM_communism_party_long
+							name = BAY_FEM_communism_party
+						}
+						set_party_name = {
+							ideology = terror
+							long_name = BAY_FEM_terror_party_long
+							name = BAY_FEM_terror_party
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# The Holy Tomboy Empire
+country_event = {
+	id = tomboy.42
+	title = tomboy.42.t
+	desc = tomboy.42.d
+
+	fire_only_once = yes
+
+	picture = tbd
+
+	trigger = {
+		tag = BEL
+		BEL = {
+			has_war = no
+		}
+		GER = {
+			OR = {
+				exists = no
+				is_puppet_of = BEL
+			}
+			has_war = no
+			NOT = {
+				has_cosmetic_tag = GER_HRE
+			}
+		}
+	}
+
+	option = { # Create the HTE, decide their ruler
+		name = tomboy.42.a
+
+		ai_chance = {
+			base = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		if = {
+			limit = {
+				GER = {
+					exists = no
+				}
+			}
+			every_state = {
+                limit = {
+                    is_core_of = GER
+                    NOT = {
+                        state = 50
+                        state = 52
+                        state = 53
+                        state = 54
+                        state = 848
+                        state = 153
+                        state = 152
+                        state = 4
+                        state = 69
+                        state = 9
+                        state = 75
+                        state = 74
+						is_core_of = BEL
+                    }
+                    owner = {
+                        OR = {
+                            tag = BEL
+                            is_puppet_of = BEL
+                        }
+                    }
+                }
+                transfer_state_to = GER
+            }
+            GER = {
+                BEL = {
+                    puppet = PREV
+                }
+                set_cosmetic_tag = GER_HRE
+				promote_character = GER_regency
+            }
+			country_event = tomboy.43
+		}
+		else_if = {
+			limit = {
+				GER = {
+					is_puppet_of = BEL
+				}
+			}
+			GER = {
+				set_cosmetic_tag = GER_HRE
+				promote_character = GER_regency
+			}
+			country_event = tomboy.43
+		}
+	}
+
+	option = { # Create the HTE, and let them decide ruler
+		name = tomboy.42.b
+
+		ai_chance = {
+			base = 20
+		}
+
+		if = {
+			limit = {
+				GER = {
+					exists = no
+				}
+			}
+			every_state = {
+                limit = {
+                    is_core_of = GER
+                    NOT = {
+                        state = 50
+                        state = 52
+                        state = 53
+                        state = 54
+                        state = 848
+                        state = 153
+                        state = 152
+                        state = 4
+                        state = 69
+                        state = 9
+                        state = 75
+                        state = 74
+						is_core_of = BEL
+                    }
+                    owner = {
+                        OR = {
+                            tag = BEL
+                            is_puppet_of = BEL
+                        }
+                    }
+                }
+                transfer_state_to = GER
+            }
+            GER = {
+                BEL = {
+                    puppet = PREV
+                }
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_thankful
+				}
+                set_cosmetic_tag = GER_HRE
+				promote_character = GER_regency
+				country_event = tomboy.43
+            }
+		}
+		else_if = {
+			limit = {
+				GER = {
+					is_puppet_of = BEL
+				}
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_thankful
+				}
+				set_cosmetic_tag = GER_HRE
+				promote_character = GER_regency
+				country_event = tomboy.43
+			}
+		}
+	}
+
+
+
+	option = { # Don't create the HTE (Why tho?)
+		name = tomboy.42.c
+
+		ai_chance = {
+			base = 10
+		}
+
+		add_political_power = 100
+	}
+}
+
+# HTE Ruler
+country_event = {
+	id = tomboy.43
+	title = tomboy.43.t
+	desc = tomboy.43.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.43"
+	}
+
+	picture = tbd
+
+	option = { # Van Darkholme
+		name = tomboy.43.a
+
+		ai_chance = {
+			base = 25
+		}
+
+		GER = {
+			promote_character = GER_van_darkholme
+		}
+	}
+
+	option = { # Wilhelm II.
+		name = tomboy.43.b
+
+		ai_chance = {
+			base = 25
+		}
+
+		GER = {
+			promote_character = GER_BEL_wilhelm_ii
+		}
+	}
+
+	option = { # Wilhelm III.
+		name = tomboy.43.c
+		
+		ai_chance = {
+			base = 25
+		}
+
+		GER = {
+			promote_character = GER_BEL_wilhelm_iii
+		}
+	}
+
+	option = { # Viktoria
+		name = tomboy.43.e
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		GER = {
+			promote_character = GER_BEL_victoria
+		}
+	}
+}
+
+
+#################################################
+# Relocate once Terror Focus is being worked on #
+#################################################
+#country_event = { # Terror Leader
+#	id = tomboy.28
+#	title = tomboy.28.t
+#	desc = tomboy.28.d
+#
+#	fire_only_once = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		log = "Event ran: tomboy.28"
+#	}
+#
+#	option = { # Moon Man
+#		name = tomboy.28.a
+#
+#		ai_chance = {
+#			base = 10
+#		}
+#
+#		BEL = {
+#			promote_character = BEL_moon_man_leader
+#		}
+#	}
+#
+#	option = { # Mr. Bond
+#		name = tomboy.28.b
+#
+#		ai_chance = {
+#			base = 10
+#		}
+#
+#		BEL = {
+#			promote_character = BEL_mrbond_leader
+#		}
+#	}
+#
+#	option = { # Johnny Rebel
+#		name = tomboy.28.c
+#
+#		ai_chance = {
+#			base = 10
+#		}
+#
+#		BEL = {
+#			promote_character = BEL_johnny_rebel_leader
+#		}
+#	}
+#
+#	option = { # Natsuki <3
+#		name = tomboy.28.e
+#
+#		ai_chance = {
+#			base = 10
+#		}
+#
+#		BEL = {
+#			promote_character = BEL_natsuki_leader
+#		}
+#	}
+#}
+
+# Occupation Policy
+country_event = {
+	id = tomboy.44
+	title = tomboy.44.t
+	desc = tomboy.44.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.44"
+	}
+
+	option = { # Benevolent
+		name = tomboy.44.a
+
+		add_ideas = BEL_occupation_policy_good
+	}
+
+	option = { # Balanced
+		name = tomboy.44.b
+	}
+
+	option = { # Brutal
+		name = tomboy.44.c
+
+		add_ideas = BEL_occupation_policy_evil
+	}
+}
+
+# GER | Belgium requests guarantee
+country_event = {
+	id = tomboy.45
+	title = tomboy.45.t
+	desc = tomboy.45.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.45"
+	}
+
+	option = { # Grant the Guarantee
+		name = tomboy.45.a
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				factor = 10
+				is_in_faction_with = BEL
+			}
+			modifier = {
+				factor = 0.25
+				has_opinion = {
+					target = BEL
+					value < 1
+				}
+			}
+			modifier = {
+				add = 20
+				has_government = BEL
+			}
+		}
+
+		give_guarantee = BEL
+		add_ideas = BEL_idea_case_black_germany_peace
+		set_truce = {
+			target = BEL
+			days = 365
+		}
+		give_military_access = BEL
+		BEL = {
+			swap_ideas = {
+				remove_idea = BEL_idea_case_black_first
+				add_idea = BEL_idea_case_black_peace
+			}
+			set_truce = {
+				target = GER
+				days = 365
+			}
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_increase
+			}
+			give_military_access = GER
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy.45.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -10
+				is_in_faction_with = BEL
+			}
+			modifier = {
+				add = -25
+				has_opinion = {
+					target = BEL
+					value > 49
+				}
+			}
+		}
+
+		BEL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = refused_guarantee
+			}
+		}
+	}
+
+	option = { # Refuse violently
+		name = tomboy.45.c
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 10
+				num_divisions > FROM.num_divisions
+			}
+			modifier = {
+				add = 15
+				has_opinion = {
+					target = BEL
+					value < -49
+				}
+			}
+		}
+
+		create_wargoal = {
+			target = BEL
+			type = puppet_wargoal_focus
+		}
+		BEL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = unprovoked_aggression
+			}
+		}
+	}
+}
+
+# Official Language
+country_event = {
+	id = tomboy.46
+	title = tomboy.46.t
+	desc = tomboy.46.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.46"
+	}
+
+	option = { # German
+		name = tomboy.46.a
+
+		trigger = {
+			NOT = {
+				has_global_flag = BEL_changed_to_german
+				has_global_flag = BEL_changed_to_french
+			}
+		}
+
+		set_global_flag = BEL_changed_to_german
+		clr_global_flag = BEL_changed_to_french
+		add_stability = -0.1
+		36 = {
+			set_state_name = friesland_name_german
+		}
+		7 = {
+			set_state_name = holland_name_german
+		}
+		35 = {
+			set_state_name = brabant_name_german
+		}
+		6 = {
+			set_state_name = vlaanderen_name_german
+		}
+		34 = {
+			set_state_name = wallonie_name_german
+		}
+		8 = {
+			set_state_name = luxemburg_name_german
+		}
+		if = {
+			limit = {
+				BEL = {
+					owns_state = 28
+				}
+			}
+			28 = {
+				set_state_name = alsace_lorraine_name_german
+			}
+		}
+		17 = {
+			set_state_name = franche_comte_name_german
+		}
+		18 = {
+			set_state_name = champagne_name_german
+		}
+		785 = {
+			set_state_name = picardy_name_german
+		}
+		29 = {
+			set_state_name = nord_pas_de_calais_name_german
+		}
+		15 = {
+			set_state_name = normandy_name_german
+		}
+		16 = {
+			set_state_name = ile_de_france_name_german
+		}
+		27 = {
+			set_state_name = bourgogne_name_german
+		}
+		24 = {
+			set_state_name = centre_name_german
+		}
+		30 = {
+			set_state_name = loire_name_german
+		}
+		14 = {
+			set_state_name = brittany_name_german
+		}
+
+		set_province_name = {
+			id = 9335
+			name = groningen_name_german
+		}
+		set_province_name = {
+			id = 6336
+			name = leeuwarden_name_german
+		}
+		set_province_name = {
+			id = 9363
+			name = arnhem_name_german
+		}
+		set_province_name = {
+			id = 6241
+			name = utrecht_name_german
+		}
+		set_province_name = {
+			id = 391
+			name = amsterdam_name_german
+		}
+		set_province_name = {
+			id = 3211
+			name = den_haag_name_german
+		}
+		set_province_name = {
+			id = 9498
+			name = rotterdam_name_german
+		}
+		set_province_name = {
+			id = 3262
+			name = breda_name_german
+		}
+		set_province_name = {
+			id = 6496
+			name = eindhoven_name_german
+		}
+		set_province_name = {
+			id = 11562
+			name = maastricht_name_german
+		}
+		set_province_name = {
+			id = 11519
+			name = liege_name_german
+		}
+		set_province_name = {
+			id = 3516
+			name = namur_name_german
+		}
+		set_province_name = {
+			id = 9536
+			name = charleroi_name_german
+		}
+		set_province_name = {
+			id = 13068
+			name = leuven_name_german
+		}
+		set_province_name = {
+			id = 6598
+			name = antwerpen_name_german
+		}
+		set_province_name = {
+			id = 516
+			name = brussels_name_german
+		}
+		set_province_name = {
+			id = 6560
+			name = gent_name_german
+		}
+		set_province_name = {
+			id = 3576
+			name = kortrijk_name_german
+		}
+		set_province_name = {
+			id = 6583
+			name = luxemburg_province_name_german
+		}
+		# Continue with France
+		if = {
+			limit = {
+				BEL = {
+					owns_state = 28
+				}
+			}
+			set_province_name = {
+				id = 678
+				name = mulhouse_name_german
+			}
+			set_province_name = {
+				id = 9503
+				name = strasbourg_name_german
+			}
+			set_province_name = {
+				id = 9559
+				name = metz_name_german
+			}
+		}
+		set_province_name = {
+			id = 11516
+			name = nancy_name_german
+		}
+		set_province_name = {
+			id = 9642
+			name = besacon_name_german
+		}
+		set_province_name = {
+			id = 3652
+			name = dijon_name_german
+		}
+		set_province_name = {
+			id = 3560
+			name = sedan_name_german
+		}
+		set_province_name = {
+			id = 13011
+			name = reims_name_german
+		}
+		set_province_name = {
+			id = 9490
+			name = troyes_name_german
+		}
+		set_province_name = {
+			id = 11483
+			name = lille_name_german
+		}
+		set_province_name = {
+			id = 575
+			name = dunkerque_name_german
+		}
+		set_province_name = {
+			id = 11548
+			name = calais_name_german
+		}
+		set_province_name = {
+			id = 11420
+			name = amiens_name_german
+		}
+		set_province_name = {
+			id = 11506
+			name = paris_name_german
+		}
+		set_province_name = {
+			id = 485
+			name = dieppe_name_german
+		}
+		set_province_name = {
+			id = 11563
+			name = rouen_name_german
+		}
+		set_province_name = {
+			id = 9434
+			name = le_havre_name_german
+		}
+		set_province_name = {
+			id = 6449
+			name = cherbourg_name_german
+		}
+		set_province_name = {
+			id = 512
+			name = orleans_name_german
+		}
+		set_province_name = {
+			id = 3671
+			name = tours_name_german
+		}
+		set_province_name = {
+			id = 11465
+			name = nantes_name_german
+		}
+		set_province_name = {
+			id = 9495
+			name = rennes_name_german
+		}
+		set_province_name = {
+			id = 6536
+			name = lorient_name_german
+		}
+		set_province_name = {
+			id = 3552
+			name = brest_name_german
+		}
+
+		# Also change party names
+		set_party_name = {
+			ideology = democratic
+			long_name = BEL_democratic_german_party_long
+			name = BEL_democratic_german_party
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = BEL_communism_german_party_long
+			name = BEL_communism_german_party
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = BEL_fascism_german_party_long
+			name = BEL_fascism_german_party
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = BEL_neutrality_german_party_long
+			name = BEL_neutrality_german_party
+		}
+		set_party_name = {
+			ideology = terror
+			long_name = BEL_terror_german_party_long
+			name = BEL_terror_german_party
+		}
+	}
+
+	option = { # French
+		name = tomboy.46.b
+
+		trigger = {
+			NOT = {
+				has_global_flag = BEL_changed_to_french
+				has_global_flag = BEL_changed_to_german
+			}
+		}
+
+		set_global_flag = BEL_changed_to_french
+		clr_global_flag = BEL_changed_to_german
+		add_stability = -0.1
+		36 = {
+    		set_state_name = friesland_name_french
+		}
+		7 = {
+		    set_state_name = holland_name_french
+		}
+		35 = {
+		    set_state_name = brabant_name_french
+		}
+		6 = {
+		    set_state_name = vlaanderen_name_french
+		}
+		34 = {
+		    set_state_name = wallonie_name_french
+		}
+		8 = {
+		    set_state_name = luxemburg_name_french
+		}
+		42 = {
+			set_state_name = moselland_name_french
+		}
+		51 = {
+			set_state_name = rhineland_name_french
+		}
+		55 = {
+			set_state_name = hessen_name_french
+		}
+		57 = {
+			set_state_name = westfalen_name_french
+		}
+		56 = {
+			set_state_name = weser_ems_name_french
+		}
+		if = {
+			limit = {
+				BEL = {
+					owns_state = 28
+				}
+			}
+			28 = {
+			    set_state_name = alsace_lorraine_name_french
+			}
+		}
+		17 = {
+		    set_state_name = franche_comte_name_french
+		}
+		18 = {
+		    set_state_name = champagne_name_french
+		}
+		785 = {
+		    set_state_name = picardy_name_french
+		}
+		29 = {
+		    set_state_name = nord_pas_de_calais_name_french
+		}
+		15 = {
+		    set_state_name = normandy_name_french
+		}
+		16 = {
+		    set_state_name = ile_de_france_name_french
+		}
+		27 = {
+		    set_state_name = bourgogne_name_french
+		}
+		24 = {
+		    set_state_name = centre_name_french
+		}
+		30 = {
+		    set_state_name = loire_name_french
+		}
+		14 = {
+		    set_state_name = brittany_name_french
+		}
+
+		set_province_name = {
+		    id = 9335
+		    name = groningen_name_french
+		}
+		set_province_name = {
+		    id = 6336
+		    name = leeuwarden_name_french
+		}
+		set_province_name = {
+		    id = 9363
+		    name = arnhem_name_french
+		}
+		set_province_name = {
+		    id = 6241
+		    name = utrecht_name_french
+		}
+		set_province_name = {
+		    id = 391
+		    name = amsterdam_name_french
+		}
+		set_province_name = {
+		    id = 3211
+		    name = den_haag_name_french
+		}
+		set_province_name = {
+		    id = 9498
+		    name = rotterdam_name_french
+		}
+		set_province_name = {
+		    id = 3262
+		    name = breda_name_french
+		}
+		set_province_name = {
+		    id = 6496
+		    name = eindhoven_name_french
+		}
+		set_province_name = {
+		    id = 11562
+		    name = maastricht_name_french
+		}
+		set_province_name = {
+		    id = 11519
+		    name = liege_name_french
+		}
+		set_province_name = {
+		    id = 3516
+		    name = namur_name_french
+		}
+		set_province_name = {
+		    id = 9536
+		    name = charleroi_name_french
+		}
+		set_province_name = {
+		    id = 13068
+		    name = leuven_name_french
+		}
+		set_province_name = {
+		    id = 6598
+		    name = antwerpen_name_french
+		}
+		set_province_name = {
+		    id = 516
+		    name = brussels_name_french
+		}
+		set_province_name = {
+		    id = 6560
+		    name = gent_name_french
+		}
+		set_province_name = {
+		    id = 3576
+		    name = kortrijk_name_french
+		}
+		set_province_name = {
+		    id = 6583
+		    name = luxemburg_province_name_french
+		}
+		# Germany
+		set_province_name = {
+			id = 11531
+			name = saarbruecken_name_french
+		}
+		set_province_name = {
+			id = 11435
+			name = bitburg_name_french
+		}
+		set_province_name = {
+			id = 587
+			name = koeln_name_french
+		}
+		set_province_name = {
+			id = 6469
+			name = essen_name_french
+		}
+		set_province_name = {
+			id = 6488
+			name = frankfurt_name_french
+		}
+		set_province_name = {
+			id = 564
+			name = kassel_name_french
+		}
+		set_province_name = {
+			id = 495
+			name = dortmund_name_french
+		}
+		set_province_name = {
+			id = 11388
+			name = muenster_name_french
+		}
+		set_province_name = {
+			id = 11360
+			name = emden_name_french
+		}
+		set_province_name = {
+			id = 241
+			name = wilhelmshaven_name_french
+		}
+
+		
+
+		# Also change party names
+		set_party_name = {
+			ideology = democratic
+			long_name = BEL_democratic_french_party_long
+			name = BEL_democratic_french_party
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = BEL_communism_french_party_long
+			name = BEL_communism_french_party
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = BEL_fascism_french_party_long
+			name = BEL_fascism_french_party
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = BEL_neutrality_french_party_long
+			name = BEL_neutrality_french_party
+		}
+		set_party_name = {
+			ideology = terror
+			long_name = BEL_terror_french_party_long
+			name = BEL_terror_french_party
+		}
+	}
+
+	option = { # Reset
+		name = tomboy.46.c
+
+		trigger = {
+			OR = {
+				has_global_flag = BEL_changed_to_german
+				has_global_flag = BEL_changed_to_french
+			}
+		}
+
+		clr_global_flag = BEL_changed_to_french
+		clr_global_flag = BEL_changed_to_german
+
+		add_stability = -0.05
+		36 = {
+		    reset_state_name = yes
+		}
+		7 = {
+		    reset_state_name = yes
+		}
+		35 = {
+		    reset_state_name = yes
+		}
+		6 = {
+		    reset_state_name = yes
+		}
+		34 = {
+		    reset_state_name = yes
+		}
+		8 = {
+		    reset_state_name = yes
+		}
+		28 = {
+		    reset_state_name = yes
+		}
+		17 = {
+		    reset_state_name = yes
+		}
+		18 = {
+		    reset_state_name = yes
+		}
+		785 = {
+		    reset_state_name = yes
+		}
+		29 = {
+		    reset_state_name = yes
+		}
+		15 = {
+		    reset_state_name = yes
+		}
+		16 = {
+		    reset_state_name = yes
+		}
+		27 = {
+		    reset_state_name = yes
+		}
+		24 = {
+		    reset_state_name = yes
+		}
+		30 = {
+		    reset_state_name = yes
+		}
+		14 = {
+		    reset_state_name = yes
+		}
+		42 = {
+			reset_state_name = yes
+		}
+		51 = {
+			reset_state_name = yes
+		}
+		55 = {
+			reset_state_name = yes
+		}
+		57 = {
+			reset_state_name = yes
+		}
+		56 = {
+			reset_state_name = yes
+		}
+
+		reset_province_name = 9335
+		reset_province_name = 6336
+		reset_province_name = 9363
+		reset_province_name = 6241
+		reset_province_name = 391
+		reset_province_name = 3211
+		reset_province_name = 9498
+		reset_province_name = 3262
+		reset_province_name = 6496
+		reset_province_name = 11562
+		reset_province_name = 11519
+		reset_province_name = 3516
+		reset_province_name = 9536
+		reset_province_name = 13068
+		reset_province_name = 6598
+		reset_province_name = 516
+		reset_province_name = 6560
+		reset_province_name = 3576
+		reset_province_name = 6583
+		# Germany
+		reset_province_name = 11531
+		reset_province_name = 11435
+		reset_province_name = 587
+		reset_province_name = 6469
+		reset_province_name = 6488
+		reset_province_name = 564
+		reset_province_name = 495
+		reset_province_name = 11388
+		reset_province_name = 11360
+		reset_province_name = 241
+		# France
+		reset_province_name = 678
+		reset_province_name = 9503
+		reset_province_name = 9559
+		reset_province_name = 11516
+		reset_province_name = 9642
+		reset_province_name = 3652
+		reset_province_name = 3560
+		reset_province_name = 13011
+		reset_province_name = 9490
+		reset_province_name = 11483
+		reset_province_name = 575
+		reset_province_name = 11548
+		reset_province_name = 11420
+		reset_province_name = 11506
+		reset_province_name = 485
+		reset_province_name = 11563
+		reset_province_name = 9434
+		reset_province_name = 6449
+		reset_province_name = 512
+		reset_province_name = 3671
+		reset_province_name = 11465
+		reset_province_name = 9495
+		reset_province_name = 6536
+		reset_province_name = 3552
+	}
+
+	option = { # Nevermind
+		name = tomboy.46.e
+	}
+}
+
+# FRA | Tomboys want to deepen friendship
+country_event = {
+	id = tomboy.47
+	title = tomboy.47.t
+	desc = tomboy.47.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.47"
+	}
+
+	option = { # Propose alliance OR we're already allied
+		name = tomboy.47.a # # Scripted Loc
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 50
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = -15
+				OR = {
+					BEL = {
+						is_in_faction = yes
+					}
+					is_faction_leader = yes
+				}
+			}
+			modifier = {
+				factor = 0.1
+				has_opinion = {
+					target = BEL
+					value < -14
+				}
+			}
+			modifier = {
+				factor = 1000
+				is_in_faction_with = BEL
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					is_in_faction_with = BEL
+				}
+			}
+			BEL = {
+				country_event = tomboy.48 # France wants us to join their faction
+				if = {
+					limit = {
+						has_idea = BEL_idea_case_blue_first
+					}
+					swap_ideas = {
+						remove_idea = BEL_idea_case_blue_first
+						add_idea = BEL_idea_case_blue_peace
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Sure, give a guarantee
+		name = tomboy.47.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -9
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -24
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -74
+				}
+			}
+		}
+
+		give_guarantee = BEL
+		add_opinion_modifier = {
+			target = BEL
+			modifier = large_increase
+		}
+		BEL = {
+			give_guarantee = FROM
+			add_opinion_modifier = {
+				target = FROM
+				modifier = large_increase
+			}
+			if = {
+				limit = {
+					has_idea = BEL_idea_case_blue_first
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_case_blue_first
+					add_idea = BEL_idea_case_blue_peace
+				}
+			}
+		}
+	}
+
+	option = { # No
+		name = tomboy.47.c
+
+		ai_chance = {
+			base = 60
+			modifier = {
+				add = -15
+				has_government = FROM
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = -30
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+		}
+
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = small_decrease
+			}
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = BEL_disappointed
+			}
+		}
+	}
+}
+
+# France asks us to join their faction
+country_event = {
+	id = tomboy.48
+	title = tomboy.48.t
+	desc = tomboy.48.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.48"
+	}
+
+	option = { # Yes
+		name = tomboy.48.a
+
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = 25
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 49
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FRA
+			}
+		}
+
+		if = {
+			limit = {
+				is_in_faction = yes
+				OR = {
+					is_faction_leader = no
+					AND = {
+						is_faction_leader = yes
+						NOT = {
+							any_allied_country = {
+								NOT = {
+									is_puppet_of = BEL # If everyone is a puppet
+								}
+							}
+						}
+					}
+				}
+			}
+			leave_faction = yes
+		}
+		else_if = {
+			limit = {
+				is_in_faction = yes
+				is_faction_leader = yes
+				any_allied_country = {
+					NOT = {
+						is_puppet_of = BEL
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_in_faction_with = BEL
+					NOT = {
+						is_puppet_of = BEL
+					}
+				}
+				set_faction_leader = yes
+			}
+			leave_faction = yes
+		}
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						is_in_faction_with = BEL
+					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					add_to_faction = BEL
+				}
+				else = {
+					create_faction = tomboy.48.a_faction
+					add_to_faction = BEL
+				}
+			}
+			add_opinion_modifier = {
+				target = BEL
+				modifier = BEL_friendly_interaction
+			}
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_friendly_interaction
+		}
+	}
+
+	option = { # Let's keep it a guarantee
+		name = tomboy.48.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = 25
+				has_opinion = {
+					target = FROM
+					value < -74
+				}
+			}
+		}
+
+		give_guarantee = FROM
+		FROM = {
+			give_guarantee = BEL
+			add_opinion_modifier = {
+				target = BEL
+				modifier = BEL_disappointed
+			}
+		}
+	}
+
+	option = { # No
+		name = tomboy.48.c
+		
+		ai_chance = {
+			base = 60
+			modifier = {
+				add = -25
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < 1
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < -14
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_country = {
+					NOT = {
+						tag = FROM
+					}
+					is_major = no
+					has_wargoal_against = BEL
+				}
+			}
+			modifier = {
+				factor = 0.25
+				any_country = {
+					NOT = {
+						tag = FROM
+					}
+					is_major = yes
+					has_wargoal_against = BEL
+				}
+			}
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = BEL
+				modifier = refused_alliance
+			}
+		}
+	}
+}
+
+# GER | Tomboys kick out Germans
+country_event = {
+	id = tomboy.49
+	title = tomboy.49.t
+	desc = tomboy.49.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.49"
+	}
+
+	option = { # How dare they?!
+		name = tomboy.49.a
+
+		create_wargoal = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+# HOL & LUX | Tomboys propose industrial co-operation
+country_event = {
+	id = tomboy.50
+	title = tomboy.50.t
+	desc = tomboy.50.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.50"
+	}
+
+	option = { # Okay!
+		name = tomboy.50.a
+
+		ai_chance = {
+			base = 70
+			modifier = {
+				add = 30
+				num_of_factories < FROM.num_of_factories
+			}
+			modifier = {
+				add = -10
+				num_of_factories > FROM.num_of_factories
+			}
+			modifier = {
+				add = 5
+				num_divisions < FROM.num_divisions
+			}
+		}
+
+		FROM = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ai_strategy = {
+				type = support
+				id = ROOT
+				value = 25
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_friendly_interaction
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = HOL
+					}
+				}
+				add_ideas = BEL_idea_BEL_HOL_industrial_cooperation
+			}
+			else = {
+				add_ideas = BEL_idea_BEL_LUX_industrial_cooperation
+			}
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+		random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_friendly_interaction
+		}
+		if = {
+			limit = {
+				tag = HOL
+			}
+			add_ideas = BEL_idea_BEL_HOL_industrial_cooperation
+		}
+		else = {
+			add_ideas = BEL_idea_BEL_LUX_industrial_cooperation
+		}
+		add_ai_strategy = {
+			type = support
+			id = FROM
+			value = 25
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy.50.b
+
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = BEL
+					value < 1
+				}
+			}
+			modifier = {
+				add = 5
+				NOT = {
+					has_government = BEL
+				}
+			}
+			modifier = {
+				add = -2
+				has_opinion = {
+					target = BEL
+					value > 0
+				}
+			}
+			modifier = {
+				add = -5
+				has_opinion = {
+					target = BEL
+					value > 24
+				}
+			}
+			modifier = {
+				add = -5
+				has_opinion = {
+					target = BEL
+					value > 49
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value > 74
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value > 94
+				}
+			}
+		}
+
+		BEL = {
+			add_opinion_modifier = {
+				target = HOL
+				modifier = BEL_disappointed
+			}
+		}
+	}
+}
+
+# LUX | Tomboys propose Non-Aggression
+country_event = {
+	id = tomboy.51
+	title = tomboy.51.t
+	desc = tomboy.51.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.51"
+	}
+
+	option = { # We agree
+		name = tomboy.51.a
+
+		ai_chance = {
+			base = 80
+			modifier = {
+				add = -30
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.5 # FROM has at least twice the strenth as ROOT
+				}
+			}
+			modifier = {
+				add = -25
+				num_of_factories > FROM.num_of_factories
+			}
+			modifier = {
+				factor = 100
+				any_neighbor_country = {
+					has_wargoal_against = ROOT
+				}
+			}
+		}
+
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+		}
+		add_ai_strategy = {
+			type = protect
+			id = FROM
+			value = 10
+		}
+		FROM = {
+			diplomatic_relation = {
+				country = ROOT
+				relation = non_aggression_pact
+			}
+			add_ai_strategy = {
+				type = protect
+				id = ROOT
+				value = 25
+			}
+		}
+	}
+
+	option = { # We refuse
+		name = tomboy.51.b
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -20
+				FROM = {
+					has_wargoal_against = ROOT
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < 1
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < -24
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value < -74
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = FROM
+					value < -95
+				}
+			}
+		}
+	}
+}
+
+# HOL | Tomboys ask for subjugation
+country_event = {
+	id = tomboy.52
+	title = tomboy.52.t
+	desc = tomboy.52.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.52"
+	}
+
+	option = { # We accept
+		name = tomboy.52.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20
+				any_country = {
+					is_major = yes
+					has_wargoal_against = ROOT
+					NOT = {
+						tag = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				any_country = {
+					is_major = no
+					has_wargoal_against = ROOT
+					NOT = {
+						tag = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 15
+				any_country = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 2
+					}
+					has_wargoal_against = ROOT
+					NOT = {
+						tag = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 2
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
+		}
+
+		FROM = {
+			set_autonomy = {
+				target = HOL
+				autonomy_state = autonomy_associated_region
+				end_wars = no
+				end_civil_wars = no
+			}
+			country_event = {
+				id = tomboy.53
+				days = 3
+				random_hours = 3
+			}
+		}
+	}
+
+	option = { # We refuse
+		name = tomboy.52.t
+
+		ai_chance = {
+			base = 60
+		}
+
+		FROM = {
+			set_country_flag = BEL_monafash_has_asked_for_hol_subjugation
+			uncomplete_national_focus = {
+				focus = BEL_monafash_isolationism_benelux_netherlands_protect_netherlands
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+			add_ai_strategy = {
+				type = antagonize
+				id = ROOT
+				value = 20
+			}
+			country_event = {
+				id = tomboy.54
+				days = 3
+				random_hours = 3
+			}
+		}
+	}
+}
+
+# BEL | Netherlands accept subjugation
+country_event = {
+	id = tomboy.53
+	title = tomboy.53.t
+	desc = tomboy.53.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.53"
+	}
+
+	option = { # Great!
+		name = tomboy.53.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		effect_tooltip = {
+			set_autonomy = {
+				target = HOL
+				autonomy_state = autonomy_associated_region
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+	}
+}
+
+# BEL | Netherlands refuse subjugation
+country_event = {
+	id = tomboy.54
+	title = tomboy.54.t
+	desc = tomboy.54.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.54"
+	}
+
+	option = { # Damn it!
+		name = tomboy.54.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		effect_tooltip = {
+			set_country_flag = BEL_monafash_has_asked_for_hol_subjugation
+			uncomplete_national_focus = {
+				focus = BEL_monafash_isolationism_benelux_netherlands_protect_netherlands
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = large_decrease
+			}
+			add_ai_strategy = {
+				type = antagonize
+				id = FROM
+				value = 20
+			}
+		}
+	}
+}
+
+# LUX | Tomboys ask for subjugation
+country_event = {
+	id = tomboy.55
+	title = tomboy.55.t
+	desc = tomboy.55.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.55"
+	}
+
+	option = { # We accept
+		name = tomboy.55.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20
+				any_country = {
+					is_major = yes
+					has_wargoal_against = ROOT
+					NOT = {
+						tag = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				any_country = {
+					is_major = no
+					has_wargoal_against = ROOT
+					NOT = {
+						tag = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 15
+				any_country = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 2
+					}
+					has_wargoal_against = ROOT
+					NOT = {
+						tag = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 2
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
+		}
+
+		FROM = {
+			set_autonomy = {
+				target = LUX
+				autonomy_state = autonomy_associated_region
+				end_wars = no
+				end_civil_wars = no
+			}
+			country_event = {
+				id = tomboy.56
+				days = 3
+				random_hours = 3
+			}
+		}
+	}
+
+	option = { # We refuse
+		name = tomboy.55.t
+
+		ai_chance = {
+			base = 60
+		}
+
+		FROM = {
+			set_country_flag = BEL_monafash_has_asked_for_lux_subjugation
+			uncomplete_national_focus = {
+				focus = BEL_monafash_isolationism_benelux_luxembourg_protect_luxembourg
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+			add_ai_strategy = {
+				type = antagonize
+				id = ROOT
+				value = 20
+			}
+			country_event = {
+				id = tomboy.57
+				days = 3
+				random_hours = 3
+			}
+		}
+	}
+}
+
+# LUX | Netherlands accept subjugation
+country_event = {
+	id = tomboy.56
+	title = tomboy.56.t
+	desc = tomboy.56.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.56"
+	}
+
+	option = { # Great!
+		name = tomboy.56.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		effect_tooltip = {
+			set_autonomy = {
+				target = LUX
+				autonomy_state = autonomy_associated_region
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+	}
+}
+
+# LUX | Netherlands refuse subjugation
+country_event = {
+	id = tomboy.57
+	title = tomboy.57.t
+	desc = tomboy.57.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.57"
+	}
+
+	option = { # Damn it!
+		name = tomboy.57.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		effect_tooltip = {
+			set_country_flag = BEL_monafash_has_asked_for_lux_subjugation
+			uncomplete_national_focus = {
+				focus = BEL_monafash_isolationism_benelux_luxembourg_protect_luxembourg
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = large_decrease
+			}
+			add_ai_strategy = {
+				type = antagonize
+				id = FROM
+				value = 20
+			}
+		}
+	}
+}
+
+# GER | Tomboys demand our subjugation!
+country_event = {
+	id = tomboy.58
+	title = tomboy.58.t
+	desc = tomboy.58.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.58"
+	}
+
+	option = { # We accept.
+		name = tomboy.58.a
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 5
+				is_in_faction = no
+				FROM = {
+					is_in_faction = yes
+				}
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = 20
+				is_major = no
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = 10
+				num_of_factories < FROM.num_of_factories
+			}
+		}
+
+		BEL = {
+			set_autonomy = {
+				target = GER
+				autonomy_state = autonomy_associated_region
+				end_wars = no
+				end_civil_wars = no
+			}
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_increase
+			}
+			country_event = tomboy.59
+		}
+	}
+
+	option = { # Refuse!
+		name = tomboy.58.b
+
+		ai_chance = {
+			base = 35
+		}
+
+		effect_tooltip = {
+			BEL = {
+				create_wargoal = {
+					target = ROOT
+					type = puppet_wargoal_focus
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = BEL_refused_puppeting
+				}
+			}
+		}
+		hidden_effect = {
+			BEL = {
+				country_event = tomboy.60
+			}
+		}
+	}
+}
+
+# BEL | Germany accepted!
+country_event = {
+	id = tomboy.59
+	title = tomboy.59.t
+	desc = tomboy.59.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.59"
+	}
+
+	option = { # Great!
+		name = tomboy.59.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		effect_tooltip = {
+			set_autonomy = {
+				target = GER
+				autonomy_state = autonomy_associated_region
+			}
+		}
+	}
+}
+
+# BEL | Germany refused!
+country_event = {
+	id = tomboy.60
+	title = tomboy.60.t
+	desc = tomboy.60.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.60"
+	}
+
+	option = { # Damn it!
+		name = tomboy.60.a
+
+		create_wargoal = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_refused_puppeting
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = FROM
+			value = 100
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = FROM
+			value = 100
+		}
+	}
+}
+
+# BEL | Seek Occitanian Freedom?
+country_event = {
+	id = tomboy.61
+	title = tomboy.61.t
+	desc = tomboy.61.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.61"
+	}
+
+	option = { # Yes, give Occitania freedom!
+		name = tomboy.61.a
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 25
+				num_divisions < FRA.num_divisions
+			}
+			modifier = {
+				add = 20
+				any_country = {
+					is_ally_with = FRA
+					is_major = yes
+				}
+				BEL = {
+					is_major = no
+				}
+			}
+			modifier = {
+				add = 5
+				any_country = {
+					is_ally_with = FRA
+					is_major = no
+				}
+			}
+		}
+
+		custom_effect_tooltip = tomboy.61.a_tt
+		set_country_flag = BEL_sought_occitanian_freedom
+	}
+
+	option = {
+		name = tomboy.61.b
+
+		ai_chance = {
+			base = 60
+		}
+
+		custom_effect_tooltip = tomboy.61.b_tt
+	}
+}
+
+# BEL | A mysterious traveler | Merlin Prismriver from Touhou 7
+country_event = {
+	id = tomboy.62
+	title = tomboy.62.t
+	desc = tomboy.62.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.62"
+	}
+
+	option = { # We'll give her some administative job somewhere.
+		name = tomboy.62.a
+
+		ai_chance = {
+			base = 20
+		}
+
+		add_political_power = 50
+	}
+
+	option = { # We'll get her into the advisory
+		name = tomboy.62.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_political_power = -50
+		add_ideas = BEL_idea_Merlin_Prismriver
+		hidden_effect = {
+			country_event = {
+				id = tomboy.63
+				months = 1
+				random_days = 4 # For getting a message to Gensokyo and have her sisters arrive
+			}
+		}
+	}
+}
+
+# BEL | Mysterious Relatives | Lunasa Prismriver and Lyrica Prismriver from Touhou 7
+country_event = {
+	id = tomboy.63
+	title = tomboy.63.t
+	desc = tomboy.63.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.63"
+	}
+
+	option = { # No, Merlin is enough.
+		name = tomboy.63.a
+
+		ai_chance = {
+			base = 20
+		}
+
+		custom_effect_tooltip = BEL_generic_event_tt_nothing_happens
+	}
+
+	option = { # Welcome to our country!
+		name = tomboy.63.b
+
+		ai_chance = {
+			base = 70
+		}
+
+		add_political_power = -100
+		swap_ideas = {
+			remove_idea = BEL_idea_Merlin_Prismriver
+			add_idea = BEL_idea_Prismriver_Ensemble
+		}
+	}
+}
+
+# HOL or LUX | Tomboys demand annexation
+country_event = {
+	id = tomboy.64
+	title = tomboy.64.t
+	desc = tomboy.64.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.64"
+	}
+
+	option = { # We accept
+		name = tomboy.64.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+				FROM = {
+					is_major = no
+				}
+			}
+			modifier = {
+				add = 10
+				is_major = no
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = -5
+				any_allied_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 1.15
+				FROM = {
+					any_allied_country = {
+						is_major = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
+			modifier = {
+				add = 100 # Here twice to ensure it's chosen DEFINITELY
+				FROM = {
+					OR = {
+						has_completed_focus = BEL_monafash_imperialism_britain_britannia
+						has_completed_focus = BEL_monafash_imperialism_france_claim_marianne
+						has_completed_focus = BEL_monafash_imperialism_germany_germania
+					}
+				}
+			}
+			modifier = {
+				factor = 100 # Here twice to ensure it's chosen DEFINITELY
+				FROM = {
+					OR = {
+						has_completed_focus = BEL_monafash_imperialism_britain_britannia
+						has_completed_focus = BEL_monafash_imperialism_france_claim_marianne
+						has_completed_focus = BEL_monafash_imperialism_germany_germania
+					}
+				}
+			}
+		}
+
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = { # No!
+		name = tomboy.64.b
+
+		ai_chance = {
+			base = 40
+		}
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_refused_annexation
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_refused_annexation
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = HOL
+					}
+				}
+				country_event = {
+					id = tomboy.65
+					days = 2
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = LUX
+					}
+				}
+				country_event = {
+					id = tomboy.65
+					days = 1
+				}
+			}
+			else = {
+				country_event = {
+					id = tomboy.65
+					days = 3
+					random_days = 3
+				}
+			}
+		}
+	}
+}
+
+# BEL | HOL or LUX refused annexation!
+country_event = {
+	id = tomboy.65
+	title = tomboy.65.t
+	desc = tomboy.65.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.65"
+	}
+
+	option = { # Damn them!
+		name = tomboy.65.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+
+	option = { # The hard way it is, then.
+		name = tomboy.65.b
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 100
+				num_divisions > FROM.num_divisions
+				FROM = {
+					is_major = no
+					OR = {
+						is_in_faction = no
+						NOT = {
+							any_allied_country = {
+								is_major = yes
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				add = -10
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = 10
+				any_allied_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = 10
+				any_allied_country = {
+					num_divisions > FROM.num_divisions
+				}
+			}
+			modifier = {
+				add = 20
+				num_of_factories > FROM.num_of_factories
+			}
+			modifier = {
+				add = 5
+				num_faction_members > var:FROM.num_faction_members # Works, ignore extension warning.
+			}
+		}
+	}
+}
+
+# LUX | Tomboys propose union
+country_event = {
+	id = tomboy.66
+	title = tomboy.66.t
+	desc = tomboy.66.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.66"
+	}
+
+	option = { # We'd be glad!
+		name = tomboy.66.a
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 90
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 99
+				}
+			}
+			modifier = {
+				add = 10
+				is_guaranteed_by = FROM
+			}
+			modifier = {
+				add = 5
+				has_military_access_to = FROM
+				gives_military_access_to = FROM
+			}
+			modifier = {
+				add = 5
+				has_non_aggression_pact_with = FROM
+			}
+			modifier = {
+				add = 5
+				FROM = {
+					is_ai = no # Player positivity bias :)
+				}
+			}
+			modifier = {
+				add = 5
+				threat > 0.2
+			}
+			modifier = {
+				add = 5
+				threat > 0.4
+			}
+			modifier = {
+				add = 5
+				threat > 0.6
+			}
+			modifier = {
+				add = 5
+				threat > 0.8
+			}
+			modifier = {
+				add = 5
+				has_government = FROM
+			}
+			modifier = {
+				add = -10
+				OR = {
+					AND = {
+						has_government = fascism
+						FROM = {
+							has_government = communism # Opposites hate each other
+						}
+					}
+					AND = {
+						has_government = communism
+						FROM = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						has_government = neutrality
+						FROM = {
+							has_government = democratic
+						}
+					}
+					AND = {
+						has_government = democratic
+						FROM = {
+							has_government = neutrality
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				factor = 1.25
+				num_of_factories < FROM.num_of_factories
+			}
+		}
+
+		custom_effect_tooltip = BEL_generic_event_tt_end_game
+		set_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_fascism_var
+			value = LUX.party_popularity@fascism
+		}
+		divide_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_fascism_var
+			value = 10 # Make it a tenth
+		}
+		set_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_communism_var
+			value = LUX.party_popularity@communism
+		}
+		divide_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_communism_var
+			value = 10 # Make it a tenth
+		}
+		set_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_democratic_var
+			value = LUX.party_popularity@democratic
+		}
+		divide_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_democratic_var
+			value = 10 # Make it a tenth
+		}
+		set_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_neutrality_var
+			value = LUX.party_popularity@neutrality
+		}
+		divide_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_neutrality_var
+			value = 10 # Make it a tenth
+		}
+		set_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_terror_var
+			value = LUX.party_popularity@terror
+		}
+		divide_variable = {
+			var = BEL_monafash_imperialism_benelux_lux_current_terror_var
+			value = 10 # Make it a tenth
+		}
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			country_event = tomboy.67
+			add_popularity = {
+				ideology = fascism
+				popularity = var:BEL_monafash_imperialism_benelux_lux_current_fascism_var
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = var:BEL_monafash_imperialism_benelux_lux_current_communism_var
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = var:BEL_monafash_imperialism_benelux_lux_current_democratic_var
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = var:BEL_monafash_imperialism_benelux_lux_current_neutrality_var
+			}
+			add_popularity = {
+				ideology = terror
+				popularity = var:BEL_monafash_imperialism_benelux_lux_current_neutrality_var
+			}
+		}
+	}
+
+	option = { # We can't accept this.
+		name = tomboy.66.b
+
+		ai_chance = {
+			base = 70
+			modifier = {
+				factor = 0.5
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				factor = 0.5
+				num_faction_members < FROM.num_faction_members # Works, ignore error.
+			}
+		}
+
+		FROM = {
+			country_event = tomboy.68
+			custom_effect_tooltip = BEL_generic_tt_will_happen
+			effect_tooltip = {
+				create_wargoal = {
+					target = ROOT
+					type = annex_everything
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = BEL_refused_annexation
+				}
+			}
+		}
+	}
+}
+
+# BEL | Luxembourg accepts!
+country_event = {
+	id = tomboy.67
+	title = tomboy.67.t
+	desc = tomboy.67.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.67"
+	}
+
+	option = { # Great!
+		name = tomboy.67.a
+
+		add_stability = 0.05
+	}
+}
+
+# BEL | Luxembourg refuses!
+country_event = {
+	id = tomboy.68
+	title = tomboy.68.t
+	desc = tomboy.68.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.68"
+	}
+
+	option = { # They'll repay us another way.
+		name = tomboy.68.a
+
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+		add_ai_strategy = {
+			type = conquer
+			id = FROM
+			value = 50
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_refused_annexation
+		}
+	}
+}
+
+# HOL | Tomboys offer solution
+country_event = {
+	id = tomboy.69
+	title = tomboy.69.t
+	desc = tomboy.69.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.69"
+	}
+
+	option = { # We... accept.
+		name = tomboy.69.a
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability < 80
+			}
+			modifier = {
+				add = 10
+				has_stability < 60
+			}
+			modifier = {
+				add = 10
+				has_stability < 40
+			}
+			modifier = {
+				add = 15
+				has_stability < 20
+			}
+			modifier = {
+				add = 20
+				has_stability < 0
+			}
+			modifier = {
+				add = 10
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 5
+				num_of_factories < FROM.num_divisions
+			}
+			modifier = {
+				add = 100
+				FROM = {
+					OR = {
+						has_completed_focus = BEL_monafash_imperialism_germany_germania
+						has_completed_focus = BEL_monafash_imperialism_france_claim_marianne
+						has_completed_focus = BEL_monafash_imperialism_britain_britannia
+					}
+				}
+			}
+		}
+
+		FROM = {
+			country_event = {
+				id = tomboy.70
+				days = 2
+			}
+		}
+		custom_effect_tooltip = BEL_generic_tt_will_happen
+		effect_tooltip = {
+			FROM = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+				custom_effect_tooltip = tomboy.69.a_tt
+			}
+		}
+	}
+
+	option = { # Independence is more important than lives!
+		name = tomboy.69.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -100
+				FROM = {
+					OR = {
+						has_completed_focus = BEL_monafash_imperialism_germany_germania
+						has_completed_focus = BEL_monafash_imperialism_france_claim_marianne
+						has_completed_focus = BEL_monafash_imperialism_britain_britannia
+					}
+				}
+			}
+		}
+
+		add_stability = -0.15
+		FROM = {
+			country_event = {
+				id = tomboy.71
+				days = 2
+			}
+		}
+		custom_effect_tooltip = BEL_generic_tt_will_happen
+		effect_tooltip = {
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = BEL_oppressing_tomboys_neg
+				}
+				create_wargoal = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+# BEL | Netherlands submit
+country_event = {
+	id = tomboy.70
+	title = tomboy.70.t
+	desc = tomboy.70.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.70"
+	}
+
+	option = { # Great!
+		name = tomboy.70.a
+
+		add_stability = 0.05
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+	}
+}
+
+# BEL | Netherlands refuse
+country_event = {
+	id = tomboy.71
+	title = tomboy.71.t
+	desc = tomboy.71.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.71"
+	}
+
+	option = { # We'll free our people!
+		name = tomboy.71.a
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				FROM = {
+					is_ai = no # Player positivity bias 
+				}
+			}
+		}
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_oppressing_tomboys_neg
+		}
+		add_war_support = 0.05
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+		add_ai_strategy = {
+			type = conquer
+			id = FROM
+			value = 100
+		}
+	}
+
+	option = { # We'll free our people, NOW!
+		name = tomboy.71.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -25
+				FROM = {
+					is_ai = no # Player positivity bias
+				}
+			}
+		}
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_oppressing_tomboys_neg
+		}
+		add_war_support = 0.05
+		add_ai_strategy = {
+			type = conquer
+			id = FROM
+			value = 100
+		}
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+# Sudetenland Owner | Tomboys demand Sudetenland
+country_event = {
+	id = tomboy.72
+	title = tomboy.72.t
+	desc = tomboy.72.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.72"
+	}
+
+	option = { # Hand it over
+		name = tomboy.72.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 10
+				FROM = {
+					is_major = yes
+				}
+				is_major = no
+			}
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = -10
+				num_faction_members > FROM.num_faction_members
+			}
+			modifier = {
+				add = 10
+				num_faction_members < FROM.num_faction_members
+			}
+			modifier = {
+				add = -5
+				any_allied_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = 5
+				NOT = {
+					any_allied_country = {
+						is_major = yes
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value > 49
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value > 94
+				}
+			}
+			modifier = {
+				add = 20
+				is_ally_with = FROM
+			}
+			modifier = {
+				add = 60
+				is_puppet_of = FROM
+			}
+			modifier = {
+				add = 10
+				FROM = {
+					is_ai = no # Player Positivity Bias :)
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				owns_state = 69
+			}
+			if = {
+				limit = {
+					GER = {
+						has_cosmetic_tag = GER_HRE
+						is_puppet_of = FROM
+					}
+				}
+				GER = {
+					transfer_state = 69
+				}
+			}
+			else = {
+				FROM = {
+					transfer_state = 69
+				}
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 74
+			}
+			if = {
+				limit = {
+					GER = {
+						has_cosmetic_tag = GER_HRE
+						is_puppet_of = FROM
+					}
+				}
+				GER = {
+					transfer_state = 74
+				}
+			}
+			else = {
+				FROM = {
+					transfer_state = 74
+				}
+			}
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_thankful
+			}
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy.72.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = tomboy.73
+				days = 2
+				random_days = 1
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = BEL_generic_event_tt_will_happen
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = BEL_disappointed
+				}
+				create_wargoal = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+# BEL | Country denies giving Sudetenland
+country_event = {
+	id = tomboy.73
+	title = tomboy.73.t
+	desc = tomboy.73.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.73"
+	}
+
+	option = { # Understood.
+		name = tomboy.73.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_disappointed
+		}
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+# BEL | Czech Question ----- Misplaced as later, this happens with the "Czech Question" Focus.
+country_event = {
+	id = tomboy.74
+	title = tomboy.74.t
+	desc = tomboy.74.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.74"
+	}
+
+	option = { # Peace
+		name = tomboy.74.a
+
+		ai_chance = {
+			base = 40
+		}
+
+		set_country_flag = BEL_monafash_czechia_peace
+	}
+
+	option = { # War
+		name = tomboy.74.b
+
+		ai_chance = {
+			base = 40
+		}
+
+		set_country_flag = BEL_monafash_czechia_war
+	}
+}
+
+# CZE - PLAYER ONLY | Slovakia Rebels
+country_event = {
+	id = tomboy.75
+	title = tomboy.75.t
+	desc = tomboy.75.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.75"
+		start_civil_war = {
+			ideology = BEL
+			capital = 70
+			states = {
+				70 71 73 664
+			}
+			# Tag will be CZS, check ./common/country_tag_aliases/tomboy_tag_aliases
+			set_cosmetic_tag = SLO_REB
+			set_country_flag = BEL_SLO_civil_war_flag
+		}
+	}
+
+	option = { # Continue as Czechia
+		name = tomboy.75.a
+
+		# No ai_chance because it's player only
+	}
+
+	option = { # Play as Slovakia
+		name = tomboy.75.b
+
+		SLO = {
+			change_tag_from = CZE
+		}
+	}
+}

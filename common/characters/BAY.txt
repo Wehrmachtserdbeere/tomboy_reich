@@ -1,0 +1,79 @@
+characters = {
+
+        # ____                        _           _____  
+        #|  _ \                      (_)        _|  __ \ 
+        #| |_) | __ ___   ____ _ _ __ _  __ _  (_) |  | |
+        #|  _ < / _` \ \ / / _` | '__| |/ _` |   | |  | |
+        #| |_) | (_| |\ V / (_| | |  | | (_| |  _| |__| |
+        #|____/ \__,_| \_/ \__,_|_|  |_|\__,_| (_)_____/ 
+	
+	BAY_regency_leader = {
+		name = POLITICS_REGENCY_NAME
+		gender = male
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Regency"
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits={ monarchist_media_mogul BEL_regency }
+			expire="1965.1.1.1"
+			desc = POLITICS_REGENCY_DESC
+		}
+	}
+
+    BAY_rupprecht_leader = {
+		name = POLITICS_RUPPRECHT_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Rupprecht"
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			traits = { autocratic_imperialist anti_fascist_agent crown_regent BEL_anti_tomboy }
+			desc = POLITICS_RUPPRECHT_DESC
+			expire="1955.8.2.1"
+		}
+	}
+
+	BAY_astolfo_leader = {
+		name = POLITICS_ASTOLFO_NAME
+		gender = male
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Astolfo"
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			traits = { humble snuggler smooth_talking_charmer BEL_femboy }
+			expire="1965.1.1.1"
+		}
+	}
+
+	BAY_sillycat_leader = {
+		name = POLITICS_SILLYCAT_NAME
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_sillycat"
+			}
+		}
+
+		country_leader = {
+			ideology = conservatism
+			traits = { resolute_social_democrat democratic_crusader }
+			expire="1965.1.1.1"
+		}
+
+	}
+}

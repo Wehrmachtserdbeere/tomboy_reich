@@ -1,0 +1,245 @@
+capital = 6
+
+# if = {
+# 	limit = { has_dlc = "Man the Guns" }
+# 		set_naval_oob = "BEL_1936"
+# }
+
+set_research_slots = 3
+
+set_stability = 0.25
+set_war_support = 0.1
+
+add_ideas = {
+
+	# Laws
+	civilian_economy
+	disarmed_nation
+	closed_economy
+	BEL_disorganised_nation
+	BEL_idea_acceptance_none
+	BEL_idea_economy_none
+}
+
+set_technology = {
+	basic_machine_tools = 1
+	dispersed_industry = 1
+	infantry_weapons = 1
+}
+
+oob = "BEL_1936"
+
+recruit_character = BEL_georgy_zhukov
+recruit_character = BEL_george_patton
+recruit_character = BEL_hatsune_miku
+recruit_character = BEL_kasane_teto
+recruit_character = BEL_iowa
+recruit_character = BEL_stroheim
+recruit_character = BEL_rimuru
+recruit_character = BEL_rimuru_evolved
+recruit_character = BEL_katyusha
+recruit_character = BEL_yui
+recruit_character = BEL_macarthur
+recruit_character = BEL_tomboy_council_leader
+recruit_character = BEL_casca_leader
+recruit_character = BEL_ryuko_leader
+recruit_character = BEL_terror_leader
+recruit_character = BEL_lalatina_leader
+recruit_character = BEL_moon_man_leader
+recruit_character = BEL_yor_forger
+recruit_character = BEL_mrbond_leader
+recruit_character = BEL_johnny_rebel_leader
+recruit_character = BEL_natsuki_leader
+recruit_character = BEL_adolf_hitler_high
+
+set_convoys = 75
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_train = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+set_popularities = {
+	democratic = 33
+	communism = 15
+	fascism = 15
+	neutrality = 37
+	terror = 0
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_country_leaders = yes
+	can_generate_female_unit_leaders = yes
+}
+
+# NEUTRAL
+#create_country_leader = {
+#	name = "Lalatina Dustiness Ford"
+#	desc = "POLITICS_LALATINA_DESC"
+#	picture = "gfx/leaders/BEL/lalatina_darkness.dds"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#		autocratic_imperialist
+#		popular_queen
+#		
+#	}
+#}
+
+# COMMIE
+#create_country_leader = {
+#	name = "Tomboy Council"
+#	desc = "POLITICS_COUNCIL_DESC"
+#	picture = "gfx/leaders/BEL/tomboy_council.dds"
+#	expire = "1965.1.1"
+#	ideology = anarchist_communism
+#	traits = {
+#		patriotic_socialist
+#		council_communist
+#	}
+#}
+
+# FASH
+#create_country_leader = {
+#	name = "Casca"
+#	desc = "POLITICS_CASCA_DESC"
+#	picture = "gfx/leaders/BEL/casca.dds"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#		anti_communist_crusader
+#		theocratic_diplomat
+#	}
+#}
+
+# DEMOCRATIC
+#create_country_leader = {
+#	name = "Ryuko Matoi"
+#	desc = "POLITICS_RYUKO_DESC"
+#	picture = "gfx/leaders/BEL/ryuko.dds"
+#	expire = "1965.1.1"
+#	ideology = conservatism
+#	traits = {
+#		anti_communist
+#		snuggler
+#	}
+#}
+
+# TERROR
+#create_country_leader = {
+#	name = "Terror Council"
+#	desc = "POLITICS_TERROR_COUNCIL_DESC"
+#	picture = "gfx/leaders/BEL/terror_council.dds"
+#	expire = "1965.1.1"
+#	ideology = accelerationist
+#	traits = {
+#		anti_communist_crusader
+#	}
+#}

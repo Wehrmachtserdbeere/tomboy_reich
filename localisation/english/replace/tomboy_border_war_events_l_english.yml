@@ -1,0 +1,25 @@
+﻿l_english:
+  tomboy_bw.1.t: "[BEL.GetName] wins Border War!"
+  tomboy_bw.1.d: "We have just received news that the [BEL.GetAdjective]s have managed to win the war in the Congo. They have captured the disputed lands, and the remaining [FRA.GetAdjective] troops have been defeated. What they'll do with these lands now is up to them, and it's up to them to decide the fate of the population."
+  tomboy_bw.1.a: "Great!"
+  tomboy_bw.1.b: "Damn it!"
+
+  tomboy_bw.2.t: "[FRA.GetName] wins Border War!"
+  tomboy_bw.2.d: "We have just received news that the [FRA.GetAdjective] have managed to win the war in the Congo. They have captured the disputed lands, and the remaining [BEL.GetAdjective] troops have been defeated. What they'll do with these lands now is up to them, and it's up to them to decide the fate of the population."
+  tomboy_bw.2.a: "Damn it!"
+  tomboy_bw.2.b: "Great!"
+
+  tomboy_bw.0: "Null Event"
+  tomboy_bw.3: "Another border war."
+  tomboy_bw.4: "Another border war."
+  tomboy_bw.5: "Another border war."
+
+  tomboy_bw.6.t: "[FRA.GetName] wins Homefront Gambit"
+  tomboy_bw.6.d: "With the news of the [BEL.GetAdjective]'s retreat, it is apparent that the [FRA.GetAdjective] have won the border conflict against the [BEL.GetAdjective]s. With the [BEL.GetAdjective]s retreating, it is clear they aren't yet strong enough to fight a war against the [FRA.GetAdjective], and they will have to prepare for a long time before they can try again. This undoubtedly reinvigorated the [FRA.GetAdjective] spirits, and crushed the [BEL.GetAdjective] morale."
+  tomboy_bw.6.a: "Damn the French!"
+  tomboy_bw.6.b: "Great!"
+
+  tomboy_bw.7.t: "[BEL.GetName] wins Homefront Gambit"
+  tomboy_bw.7.d: "With the news of the [FRA.GetAdjective] retreat, it is apparent that the [BEL.GetAdjective]s have won the border conflict against the [FRA.GetAdjective]. With the [FRA.GetAdjective] retreating, it is clear they aren't strong enough to withstand a war against the [BEL.GetAdjective]s, and they will have to prepare for a long time before they can be sure they can. This undoubtedly reinvigorated the [BEL.GetAdjective] spirits, and crushed the [FRA.GetAdjective] morale."
+  tomboy_bw.7.a: "Congrats to ourselves!"
+  tomboy_bw.7.b: "Cursed be these degenerates!"

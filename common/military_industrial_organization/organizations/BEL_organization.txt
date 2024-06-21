@@ -1,0 +1,243 @@
+###################################################
+
+   ##########    ##     #    ##  ##   ##   ########
+   ##########   ####   ###   ##  ##  ##   ##
+       ##      ##  ##  ####  ##  ## ##     ##
+       ##      ##  ##  ## ## ##  #####       ##
+       ##      ######  ##  ####  ## ##         ##
+       ##      ##  ##  ##   ###  ##  ##         ##
+       ##      ##  ##  ##    ##  ##   ##  #######
+
+###################################################
+
+BEL_Kuromorimine_MIO = {
+    include = generic_heavy_tank_organization
+    icon = GFX_idea_BEL_kuromorimine
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+		    AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+		    }
+        }
+	}
+}
+
+BEL_Anzio_MIO = {
+    include = generic_mobile_tank_organization
+    icon = GFX_idea_BEL_Anzio
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+		    AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+		    }
+        }
+	}
+}
+
+#####################################################
+
+ ########  ##    ##  ##########  ########    ########
+##         ##    ##      ##      ##     ##  ##
+ ##        ##    ##      ##      ##    ###   ##
+   ##      ########      ##      #######       ##
+     ##    ##    ##      ##      ##              ##
+      ##   ##    ##      ##      ##               ##
+#######    ##    ##  ##########  ##         #######
+
+#####################################################
+
+BEL_Iron_Blood_MIO = {
+    include = generic_battle_line_ship_organization
+    icon = GFX_idea_BEL_iron_blood
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+		    AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+		    }
+        }
+	}
+}
+
+BEL_Eagle_Union_MIO = {
+    include = generic_task_force_ship_organization
+    icon = GFX_idea_BEL_Eagle_Union
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+            AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+            }
+        }
+    }
+}
+
+BEL_Regia_Marina_MIO = {
+    include = generic_task_force_ship_organization
+    icon = GFX_idea_BEL_Regia_Marina
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+            AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+                OR = {
+                    2 = {
+                        owner = {
+                            OR = {
+                                has_opinion = {
+                                    target = BEL
+                                    value > 20
+                                }
+                                is_puppet_of = BEL
+                                is_in_faction_with = BEL
+                            }
+                            NOT = {
+                                tag = BEL
+                            }
+                        }
+                    }
+                    BEL = {
+                        owns_state = 2
+                    }
+                }
+            }
+        }
+    }
+}
+
+##########################################################
+
+########   ##          ##     #    ##  ########   ########
+##     ##  ##         ####   ###   ##  ##        ##
+##    ###  ##        ##  ##  ####  ##  ##         ##
+#######    ##        ##  ##  ## ## ##  ########     ##
+##         ##        ######  ##  ####  ##             ##
+##         ##        ##  ##  ##   ###  ##              ##
+##         ########  ##  ##  ##    ##  ########  #######
+
+##########################################################
+
+BEL_Mage_Battalion_MIO = {
+    include = generic_light_aircraft_organization
+    icon = GFX_idea_BEL_battalion
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+            AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+            }
+        }
+    }
+}
+
+BEL_Strike_Witches_MIO = {
+    include = generic_cas_aircraft_organization
+    icon = GFX_idea_BEL_501_Strike_Witches
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+            AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+            }
+        }
+    }
+}
+
+#####################################################################################
+
+  ##########      ##    ##########  ########  ######   ##########  ########  ##      
+ ##  ####  ##    ####   ##########  ##        ##   ##      ##      ##        ##      
+##    ##    ##  ##  ##      ##      ##        ##   ##      ##      ##        ##      
+##    ##    ##  ##  ##      ##      ########  ######       ##      ########  ##      
+##    ##    ##  ######      ##      ##        ##   ##      ##      ##        ##      
+##    ##    ##  ##  ##      ##      ##        ##   ##      ##      ##        ##      
+##    ##    ##  ##  ##      ##      ########  ##   ##  ##########  ########  ########
+
+#####################################################################################
+
+BEL_NERV_MIO = {
+    include = generic_artillery_organization
+    icon = GFX_idea_BEL_NERV
+
+    allowed = {
+        tag = BEL
+    }
+
+    available = {
+        BEL = {
+            AND = {
+                NOT = {
+                    has_idea = BEL_disorganised_nation
+                }
+            }
+        }
+    }
+}
+
+BEL_cockerill_organization = {
+    allowed = {
+        always = no
+    }
+}
+
+BEL_avions_fairey_organization = {
+    allowed = {
+        always = no
+    }
+}
+
+BEL_renard_organization = {
+    allowed = {
+        always = no
+    }
+}
+
+BEL_fn_herstol_organization = {
+    allowed = {
+        always = no
+    }
+}

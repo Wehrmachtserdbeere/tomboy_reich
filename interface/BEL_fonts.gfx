@@ -1,0 +1,242 @@
+bitmapfonts = {
+
+	bitmapfont = {
+		name = "aldrich_36_outline"
+		path = "gfx/fonts/aldrich_36_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+	
+	bitmapfont = {
+		name = "aldrich_48_outline"
+		path = "gfx/fonts/aldrich_48_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_32_outline"
+		path = "gfx/fonts/aldrich_32_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_30_outline"
+		path = "gfx/fonts/aldrich_30_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_28_outline"
+		path = "gfx/fonts/aldrich_28_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_24_outline"
+		path = "gfx/fonts/aldrich_24_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+	
+	bitmapfont = {
+		name = "aldrich_24_outline_closing"
+		path = "gfx/fonts/aldrich_24_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_22_outline"
+		path = "gfx/fonts/aldrich_22_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_20_outline"
+		path = "gfx/fonts/aldrich_20_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_18_outline"
+		path = "gfx/fonts/aldrich_18_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+	bitmapfont = {
+		name = "aldrich_16_outline"
+		path = "gfx/fonts/aldrich_16_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+	
+	bitmapfont = {
+		name = "aldrich_14_outline"
+		path = "gfx/fonts/aldrich_14_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+	
+	bitmapfont = {
+		name = "aldrich_12_outline"
+		path = "gfx/fonts/aldrich_12_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+        }
+	}
+
+    bitmapfont = {
+		name = "Bomb_16"
+		path = "gfx/fonts/Bomb_16"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_18"
+		path = "gfx/fonts/Bomb_18"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_20"
+		path = "gfx/fonts/Bomb_20"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_24"
+		path = "gfx/fonts/Bomb_24"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_28"
+		path = "gfx/fonts/Bomb_28"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_32"
+		path = "gfx/fonts/Bomb_32"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_36"
+		path = "gfx/fonts/Bomb_36"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "vic_18s"
+		path = "gfx/fonts/vic_18s"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "vic_22_bl"
+		path = "gfx/fonts/vic_22_bl"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "vic_22s"
+		path = "gfx/fonts/vic_22s"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+	
+	bitmapfont = {
+		name = "vic_36s"
+		path = "gfx/fonts/vic_36s"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+}

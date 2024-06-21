@@ -1,0 +1,41 @@
+scripted_gui = {
+    new_scripted_gui = {
+        window_name = "superevents"
+        context_type = player_context
+
+        visible = {
+            is_ai = no
+            has_global_flag = BEL_superevents_activate
+        }
+
+        properties = {
+		    SE_image = {
+                image = [GetSupereventsImage]
+            }
+		}
+
+        effects = {
+            superevents_button_click = {
+                clr_global_flag = BEL_superevents_activate
+
+                # Super Events here
+
+                clr_global_flag = BEL_monarchist_unite_europe
+                clr_global_flag = BEL_monarchist_unite_world
+                clr_global_flag = BEL_monarchist_hte_europe
+            }
+        }
+
+        #triggers = {
+        #    BEL_monarchist_unite_europe_visible = {
+        #        has_global_flag = BEL_monarchist_unite_europe
+        #    }
+        #    BEL_monarchist_unite_world_visible = {
+        #        has_global_flag = BEL_monarchist_unite_world
+        #    }
+        #    BEL_monarchist_hte_europe_visible = {
+        #        has_global_flag = BEL_monarchist_hte_europe
+        #    }
+        #}
+    }
+}

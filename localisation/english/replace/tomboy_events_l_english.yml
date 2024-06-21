@@ -1,0 +1,642 @@
+﻿l_english:
+  
+  tomboy.1.t: "[FROM.GetName] demands \"referendum\""
+  tomboy.1.d: "In the name of a \"democratic referendum\", the [FROM.GetNameDef] demands we hold a [FROM.GetAdjective]-overseen referendum for our territory, and annex it into their Kingdom. They have threatened war should we decline, on the basis of \"humanitarian intervention due to antidemocratic practices and human rights violations\". Their army allegedly numbers at least 150k men, and they seem willing to deploy it."
+  tomboy.1.a: "We'll allow them to hold it."
+  tomboy.2.b: "Never, it's an excuse to annex us!"
+  threat_tomboy_annexation: "Tomboys demand referendum"
+
+  tomboy.2.t: "[FROM.GetName] folds"
+  tomboy.2.d: "Just now, [FROM.GetNameDef] confirmed their referendum, and announced the result to be overwhelmingly in favor of joining us. As of today, they are now a part of [BEL.GetNameDef], and the tomboys inside [FROM.GetName] will now be truly free to practice their way of life."
+  tomboy.2.a: "Great news!"
+
+  tomboy.3.t: "[FROM.GetName] refuses!"
+  tomboy.3.d: "Just now, [FROM.GetNameDef] told our diplomats, they would refuse to hold a referendum for their territories. They told us that it was their rightful property, and would never consider giving it to us. This is a clear violation of international law, and from that, we can get an internationally recognized casus belli, should we decide to press it."
+  tomboy.3.a: "Free the Tomboys!"
+  tomboy.3.b: "...don't push it."
+
+  tomboy.4.t: "[FROM.GetNameDef] suggests subjugation"
+  tomboy.4.d: "In a private meeting, the [FROM.GetAdjective]s told us that they are concerned for our safety from outside forces. They proposed a deal in which we swear loyalty to them, and in return, they would ensure our safety. The Tomboys are building their nation up, and this could help secure our future, should they succeed."
+  tomboy.4.a: "We agree."
+  tomboy.4.b: "Absolutely not."
+
+  tomboy.5.t: "[FROM.GetName] refused subjugation"
+  tomboy.5.d: "Citing their constitution and laws, [FROM.GetNameDef] has refused the suggestion of swearing fealty to us. They claim that, while we are a sister-state, and have many similarities, they would never lower themselves. Our only choice is to accept their decision. For the moment."
+  tomboy.5.a: "Damn the [FROM.GetAdjective] nation!"
+  refused_subjugation_tt: "We have gained a §Ywargoal§ against them."
+
+  tomboy.6.t: "[FROM.GetName] invites us to [FROM.GetFactionName]"
+  tomboy.6.d: "Our diplomats have informed us that [FROM.GetNameDef] have invited us into their faction, [FROM.GetFactionName]. They would gain a mutual war treaty with us, and a non-aggression pact, should we accept. This could potentially help them, as it could help legitimize them, and allow them to spread their beliefs easier, although it would make our goals easier too, having some friends on our side."
+  tomboy.6.a: "We accept!"
+  tomboy.6.b: "We refuse."
+
+  tomboy.7.t: "[FROM.GetName] declines"
+  tomboy.7.d: "The country's diplomats have told us that they respectfully decline our invitation. They have stated that their policies and beliefs are not the same as ours, and that, while they appreciate our offer, they have different goals. We can't be sure what they're implying, but it's clear they have something planned... maybe."
+  tomboy.7.a: "This is a threat!"
+  tomboy.7.b: "Their loss."
+
+  tomboy.8.t: "[FROM.GetName] proposes trade treaty"
+  tomboy.8.d: "In a meeting, [FROM.GetAdjective] representatives have proposed that we sign a trade treaty, allowing both of our economies to prosper. In return, we would open our markets to each other. This could be a good idea, considering that we could use some additional economic growth, although we can't be sure of their international intentions, considering they're a young nation."
+  tomboy.8.a: "Sign it."
+  tomboy.8.b: "We can't do that."
+
+  threat_imminent_war: "War imminent"
+
+  tomboy.9.t: "The Liége Massacre"
+  tomboy.9.d: "Today, enemy troops entered the city of Liége. However, instead of taking the city and continuing on, the enemy forces began indiscriminately killing citizens. According to witnesses' accounts, the soldiers seemed highly organized; they divided into different squads, with one squad going door-to-door to search for civilians. As soon as anyone was found, the soldiers killed them on site. Witnesses report seeing children among those being murdered by the soldiers."
+  tomboy.9.a: "Horrible... These monsters will do anything to bring their enemies down."
+
+  tomboy.10.t: "[FROM.GetAdjective] sign trade treaty!"
+  tomboy.10.d: "We have just received confirmation from the [FROM.GetAdjective] that they will sign the trade treaty with us. From now on, our economies are open to each other, and we can benefit from trading and exchanging ideas. The trade treaty does not include any military arrangements, and should the [FROM.GetAdjective] declare war on us, the treaty would end. We can still try and sign an alliance with them later. For now, the economic gains will help our country prosper."
+  tomboy.10.a: "Let's celebrate!"
+  tomboy.10.b: "Let's use this for our gain!"
+
+  tomboy.11.t: "[FROM.GetAdjective] refuse trade treaty!"
+  tomboy.11.d: "In a meeting, the British ambassadors told us they will not sign the trade treaty with us. They claimed that they don't want to be involved in any way with our nation, and implied that we are not even a proper state. The implication was clear - the British do not recognize us as a real nation, and do not respect us."
+  tomboy.11.a: "These damn island apes!"
+
+  tomboy.12.t: "[FROM.GetName] approaches us"
+  tomboy.12.d: "[BEL.GetAdjective] diplomats have contacted us, and they offered a deal. They believe [ENG.GetNameDef] is about to fall apart, and will soon be torn by internal conflict. They wish for our support in the possible coming wars, and in return, they will hand over the territory of [119.GetName]. If we accept, we should be prepared for the possibility of war, and we can't back out. But, of course, the payoff would be worth it."
+  tomboy.12.a: "We accept!"
+  tomboy.12.b: "We refuse."
+
+  tomboy.13.t: "[BEL.GetName] pleads for help"
+  tomboy.13.d: "[BEL.GetName] has approached us and asked for immediate help. They tell of a massacre that happened in Liegé and require help to fight back. They claim the enemy country wants to eradicate their population."
+  tomboy.13.a: "Come to their defense"
+  tomboy.13.b: "Support them with leftover equipment"
+  tomboy.13.c: "They'll be ok"
+
+  tomboy.14.t: "[IRE.GetName] accepts!"
+  tomboy.14.d: "After a meeting, the [IRE.GetAdjective] have accepted the deal. In exchange for supporting us, they will receive [119.GetName]. The deal does not include a non-aggression pact, or any type of military alliance. It simply means that should [ENG.GetNameDef] break apart, the Irish will honor their end of the bargain and help us."
+  tomboy.14.a: "God bless the [IRE.GetAdjective]"
+  tomboy.14.tt: "[IRE.GetNameDef] will join us when the §YBreakaways§! rebel!"
+
+  tomboy.15.t: "[IRE.GetName] refuses."
+  tomboy.15.d: "In a meeting, the [IRE.GetAdjective] have flatly refused our offer. They will not entertain the idea, and told our diplomats to \"go home.\" We assume their lack of interest was due to them thinking we're too weak, or they believe they can one day deal with the [ENG.GetAdjective] without us. Our diplomats have noted the [IRE.GetAdjective]' lack of diplomatic manners stem from their culture."
+  tomboy.15.a: "God damn the [IRE.GetAdjective]!"
+
+
+  tomboy.17.t: "[BEL.GetNameDefCap] consolidates Terrorism"
+  tomboy.17.d: "The [BEL.GetName], which is known to all civilized peoples as one of the greatest enemies of civilization itself, has been consolidated in recent months by an unholy council calling themselves the \"Terror Council\". The first meeting of this diabolical assembly was recently held, after which a representative announced that they would not stop their terror campaign until every country had accepted their domination."
+  tomboy.17.a: "They will see our righteousness one day"
+  tomboy.17.b: "We are fully aware and prepared for what these madmen want; we will not tolerate it!"
+
+  tomboy.18.t: "[ENG.GetNameDefCap] falls into chaos!"
+  tomboy.18.d: "After months of growing tension and internal problems, accelerated by us, the [ENG.GetAdjective] have finally collapsed. The [WLS.GetAdjective] and the [SCO.GetAdjective], who had been longing for independence, finally declared their independence from the Crown, and took control of their lands. A civil war broke out, and the country fell apart. Due to our heavy influence, we have the possibility to take the new states as §Gpuppets§!, or to §Yguarantee their independence§!."
+  tomboy.18.a: "Puppet them!"
+  tomboy.18.b: "Full independence!"
+
+  tomboy.19.t: "Death of Wilhelm II."
+  tomboy.19.d: "Today, the [?global.date.GetDateStringNoHourLong], Kaiser Wilhelm II. has passed away. His son, Wilhelm III. ascends the throne and will be the Kaiser of [GER.GetNameDef]."
+  tomboy.19.a: "Gott erhalte Wilhelm den Dritten"
+  tomboy.19.b: "Rest in Peace"
+
+  tomboy.20.t: "[BEL.GetAdjective] suggest subjugation"
+  tomboy.20.d: "Having seemingly sensed our fragility, Tomboy diplomats have suggested we swear fealty to them. They are promising that, in return, they will provide our nation with protection, stability, and will defend us from outside aggression. While we wouldn't accept otherwise, our current situation is precarious, and this may be our only option to prevent a total breakdown of our country."
+  tomboy.20.a: "We accept."
+  tomboy.20.b: "Freedom or Death!"
+
+  tomboy.21.t: "[ENG.GetName] accepts!"
+  tomboy.21.d: "The leaders of [ENG.GetNameDefCap] have accepted our offer, and will now swear fealty to us. However, the current situation is still delicate, and we should not attempt to alter anything major. Our manipulations will have to be undone slowly and carefully, lest we break the fragile peace."
+  tomboy.21.a: "[BEL.GetAdjective]s rule the waves!"
+
+  tomboy.22.t: "[ENG.GetName] refuses!"
+  tomboy.22.d: "[ENG.GetNameDefCap] has refused our offer of swearing fealty to us. They have cited their constitution and their history as reasons why they can't do so. The implication was clear: they don't think we're strong enough to be their overlord."
+  tomboy.22.a: "London bridge will fall."
+
+  tomboy.23.t: "[BEL.GetAdjective]s invite us to faction"
+  tomboy.23.d: "In a meeting, the [BEL.GetAdjective]s have invited us to their faction. They claim it is a defensive alliance, and would grant us a few economic advantages along with the militaristic advantages. Considering our precarious position, and the [BEL.GetAdjective]s' growing strength, this could be an opportunity for us to gain time, especially since tensions in the world are rising."
+  tomboy.23.a: "We accept!"
+  tomboy.23.b: "We must deny."
+
+  tomboy.26.t: "Splitting of Germany"
+  tomboy.26.d: "We have let the Germans grow too strong. It would be foolish to let them keep all of their lands. Splitting up their territories so they are less of a threat is the only way to protect ourselves. Since the North and South have very different cultures, we can set up borders to separate them. Of course, it will take some time to get used to the new situation, but once they do, the German threat will have diminished."
+  tomboy.26.a: "It will be fine, leave them united."
+  tomboy.26.b: "They shall be split."
+
+  tomboy.27.t: "The Bavarian Ruler"
+  tomboy.27.d: "We now have the decision on who should lead the southern half of Germany. There are some people that were brought fourth\n\nFirst is Rupprecht, Crown Prince of Bavaria, Duke of Bavaria, Franconia and in Swabia, Count Palatine by the Rhine. He has the problem that he does not respect our ruling or our authority. His denial of Tomboys is a massive downside which will be difficult to fight. He, however, is the rightful ruler of the Wittelsbach dynasty.\n\nAnother option is the promising Astolfo. His own people have been oppressed for a long time, and as thus he would certainly prove to be loyal, should we decide to have him rule the Southern German lands."
+  tomboy.27.a: "Rupprecht must be King"
+  tomboy.27.b: "Astolfo should rule"
+
+  tomboy.28.t: "Terrorists announce Ruler"
+  tomboy.28.d: "tbd"
+  tomboy.28.a: "Moon Man."
+  tomboy.28.b: "Mr. Bond."
+  tomboy.28.c: "Johnny Rebel."
+  tomboy.28.e: "Natsuki."
+
+  tomboy.30.t: "[FROM.GetName] request state"
+  tomboy.30.d: "[FROM.GetAdjective] diplomats have approached us, and they have requested we hand over the state of [?BEL_request_state_number.GetName]. They claim that the [FROM.GetAdjective]s there are suffering under the oppression, and they would like for us to let the [FROM.GetAdjective]s practice their culture. As such, they request we hand over the area."
+  tomboy.30.a: "Hand it over."
+  tomboy.30.a_tt: "Transfer §Y[?BEL_request_state_number.GetName]§! to §Y[FROM.GetName§!"
+  tomboy.30.b: "We must refuse."
+
+  tomboy.31.t: "[FROM.GetName] refuses!"
+  tomboy.31.d: "The [?BEL_request_state_number.owner.GetName] have refused our request, telling us that the region is their property, and will remain theirs. Despite this, they haven't fully refused the idea of handing it over, and the [?BEL_request_state_number.owner.GetAdjective] government seems somewhat conflicted on the matter. We may be able to convince them soon, but we'll need to wait for a little bit. For the moment, the state remains unoccupied."
+  tomboy.31.a: "Shame."
+
+  tomboy.32.t: "[FROM.GetName] proposes splitting [ENG.GetName]"
+  tomboy.32.d: "[FROM.GetName] representatives have approached us, and made an offer. They will grant us some lands and/or titles from the former [ENG.GetName], should we agree to support them in the coming war against them. It seems the [FROM.GetAdjective]s would prefer to conquer all of Britain, but their current military capacity either isn't sufficient yet, or they wish for some allies in this future war of theirs."
+  tomboy.32.a: "We'll be there"
+  tomboy.32.a_tt: "We will be called to §Ywar§! if §Y[FROM.GetName]§! declares war on §Y[ENG.GetName]§!"
+  tomboy.32.b: "We must refuse."
+
+  tomboy.33.t: "[FROM.GetName] promises to join!"
+  tomboy.33.d: "[FROM.GetNameDefCap] has contacted us and promised that should we enter a war, and should the [ENG.GetName] attack us, or we attack the [ENG.GetName], the [FROM.GetAdjective] would enter the war on our side. With their promise of help, this is a good opportunity for us."
+  tomboy.33.a: "Great!"
+  tomboy.33.a_tt: "§Y[FROM.GetNameDef]§! will join us when we declare war on §Y[ENG.GetNameDef]§! via §YFocus§!."
+
+  tomboy.34.t: "[FROM.GetName] refuses!"
+  tomboy.34.d: "Despite our generous offers, the [FROM.GetAdjective] have refused to promise to enter the war on our side. They are claiming that they don't want to interfere in this affair, and that they have their own matters to attend. We're unsure what they mean, but their refusal has come as a big blow, and has disappointed our people who had faith in the [FROM.GetAdjective]."
+  tomboy.34.a: "Shame."
+  tomboy.34.b: "They've gained a new enemy."
+  tomboy.34.b_tt: "We will declare §Ywar§! against §Y[FROM.GetName]§! when we declare war one §Y[ENG.GetNameDef]§! via §YFocus§!."
+
+  tomboy.35.t: "Our Ambitions?"
+  tomboy.35.d: "Now that we're a big nation, and with our power growing, it is time to think about our future. France, of course, has a large diaspora of Tomboys in its territories. The only question is how far we should go. We can keep it focused on just the areas where Tomboys are at a great percentage, or we can include the lands that have a lower, although still significant, Tomboy population."
+  tomboy.35.a: "Only the vast majority parts."
+  tomboy.35.b: "Include the rest."
+  tomboy.35.b_tt: "This will almost guarantee §Rwar§! with §Y[FRA.GetFlag][FRA.GetNameDef]§!."
+  tomboy.35.c: "Nevermind."
+
+  tomboy.36.t: "War-centric focus abandoned"
+  tomboy.36.d: "Considering we're no longer at war, most companies and [BEL.GetAdjective] have directed their funds and energy elsewhere. With no longer such great focus, the economy will return to normal, as there won't be quite as much pressure or funds focused in this sector. We are once again more free in what we choose to build, and aren't forced to put everything in war and weapons."
+
+  tomboy.37.t: "Maginot Sabotaged!"
+  tomboy.37.d: "Today, after we went to war with [FRA.GetNameDef], our sabotages on the Maginot Line paid off splendidly! Nearly all the bunkers have collapsed, and the Line is essentially useless. This has turned an attack on [FRA.GetName] from a hard battle to an easy victory, since the Maginot Line is the most dangerous area, where the highest number of defenders and equipment can be placed. While they are hastily constructing some makeshift defenses there, they won't be half as good as the Maginot."
+  tomboy.37.a: "Great News!"
+  tomboy.37.a_tt: "The §YMaginot Line§! has been §Ydestroyed§!."
+
+  tomboy.38.t: "Maginot Line Destroyed!"
+  tomboy.38.d: "The impenetrable wall within French territory, meant to stop German forces at all costs, was completely devastated and destroyed. Most of the fortifications were wiped out, and the rest were crippled, and are little more than shells of their former glory. French forces and soldiers in the area were caught completely off guard, and suffered many casualties. The simultaneous destruction led everyone to point towards the neighbors of the French. Some say it were the Germans, a few say it were the Spanish, but most assume it were the Tomboys, who just got into a conflict with the French. Whoever it was, the effect will be large on the wars to come."
+  tomboy.38.a: "A shame."
+  tomboy.38.a_tt: "(§Y[FRA.GetFlag][FRA.GetName]§!:\n    Lose §Y15.00K manpower§!.)"
+
+  tomboy.39.t: "[GER.GetName] - Unity, Partition, or Radical Partition?"
+  tomboy.39.d: "[GER.GetNameDef] is a major threat to the balance of power in Europe, and as such, we should decide what to do with the land once we conquer it. We can either keep them united, only taking some land, we could choose to split them, or we could completely shatter them, and destroy their unity, possibly forever. Each will have its benefits and disadvantages. Now which one to choose for them, §bUnity§!, §TJustice§!, or §RFreedom§!?"
+  tomboy.39.a: "Unity."
+  tomboy.39.a_tt: "We will keep Germany united, and we may choose to bring them to the light later on.\n§RMay lock us out of managing the south.§!"
+  tomboy.39.b: "Justice."
+  tomboy.39.b_tt: "We will split Germany North/South, and we may choose to bring them to the light later on."
+  tomboy.39.c: "Freedom."
+  tomboy.39.c_tt: "We will shatter Germany into most of its pre-unification states.\n§RMay lock us out of managing their administrations.§!"
+
+  tomboy.40.t: "Resistance contacts"
+  tomboy.40.d: "Having seeked and found a few sympathetic ears, some German resistance groups contacted us, although two are in direct conflict - specifically the Wittelsbachs and the Femboys. They have agreed to rule over Southern Germany, however, while the Wittelsbachs have a legitimate claim to the thrones there, they seem apprehensive to work for us. They also refuse to work with the Femboys, who although lacking a legitimate claim on the thrones, are enthusiastic to work with and for us, seeing in us a possibility of gaining freedom from oppressors."
+  tomboy.40.a: "The Wittelsbachs."
+  tomboy.40.a_tt: "Should §Y[BAY.GetFlag][BAY.GetName]§! become our puppet, the §YWittelsbachs§! will take power."
+  tomboy.40.b: "The Femboys."
+  tomboy.40.b_tt: "Should §Y[BAY.GetFlag][BAY.GetName]§! become our puppet, the §YFemboys§! will take power."
+
+  tomboy.41.t: "Bavarian Ruler?"
+  tomboy.41.d: "Having risen up under our guidance against the Germans, the Bavarian Wittelsbachs, in the form of Rupprecht, and the Bavarian Femboys, in the form of Astolfo, still haven't come to agree on who will rule Bavaria. We have to choose a side and a ruler, so that they don't immediately break into petty conflict after the war is over."
+  tomboy.41.a: "Rupprecht von Wittelsbach"
+  tomboy.41.b: "Astolfo"
+  tomboy.41.c: "Let them fight it out"
+
+  tomboy.42.t: "The Holy Tomboy Empire?"
+  tomboy.42.d: "Being at peace and in control of Germany, some local nobles have approached us with a suggestion. They are suggesting we create the Holy Tomboy Empire, a successor to the Holy Roman Empire, and thus the Roman Empire, and that we crown someone as the Emperor. It would still be German, but they would guarantee obedience and loyalty if we create it."
+  tomboy.42.a: "We accept..."
+  tomboy.42.b: "...and let them decide their ruler."
+  tomboy.42.c: "No."
+
+  tomboy.43.t: "[tomboy-43-t_scripted_loc]"
+  tomboy.43.d: "[tomboy-43-d_scripted_loc]"
+  tomboy-43-t_bel: "Decide German Ruler"
+  tomboy-43-t_hte: "Deciding our Ruler"
+  tomboy-43-d_bel: "Given that we have established the Holy Tomboy Empire, the true successor to Rome, it is only right for us to decide who will become the next Emperor of the Germans. There are several possible choices: Firstly, §GVan Darkholme§!, a known performance artist known for fulfilling people's deep, dark fantasies. Secondly, the aging §GWilhelm II.§!, who has a very strong claim, given he was the last emperor of Germany, although he did abdicate. Thirdly we have his son, §GWilhelm III.§!, who also has a claim, but not nearly as strong as his father. He is, however, a lot younger. The last choice is §GPrincess Viktoria Luise Adelheid Mathilde Charlotte§!, who is well known as a tomboy princess and the daughter of the last German Kaiser. She has a strong claim to the throne, but not as strong as §GWilhelm II.§! and §GIII.§!"
+  tomboy-43-d_hte: "Given that we have just been established as the Holy Tomboy Empire, the true successor to Rome, it has been given to us to decide who will become our Emperor. There are several possible choices: Firstly, §GVan Darkholme§!, a known performance artist known for fulfilling people's deep, dark fantasies. Secondly, the aging §GWilhelm II.§!, the former emperor who abdicated, but is a very popular choice. Thirdly, §GWilhelm II.§!'s son and the heir apparent, §GWilhelm III.§! The fourth and final choice would be §GPrincess Viktoria Luise Adelheid Mathilde Charlotte§!, who is the eldest daughter of §GWilhelm II.§!, and a tomboy herself. All have their pros and cons, and all have their support, although §GWilhelm II.§! has the most."
+  tomboy.43.a: "Van Darkholme"
+  tomboy.43.b: "Wilhelm II."
+  tomboy.43.c: "Wilhelm III."
+  tomboy.43.e: "Viktoria"
+
+  tomboy.44.t: "Our Occupation Policy?"
+  tomboy.44.d: "Now that we have organized a large part of our government, we have to think about our future conquests. But also, we have to think about how we'll handle the nations we've already conquered. We can treat them gently, or harshly. It will affect how much the conquered peoples will accept or rebel. Being gentle would obviously make them more compliant, but it will also encourage the rebels. Being harsh, on the other hand, will make the conquered peoples more resistant, but will also lessen the rebels. We can also try and strike a balance between the two."
+  tomboy.44.a: "We all struggled, we must be benevolent."
+  tomboy.44.b: "A balanced approach would be best."
+  tomboy.44.c: "We were oppressed, and so should they!"
+
+  tomboy.45.t: "[BEL.GetName] requests guarantee"
+  tomboy.45.d: "The [BEL.GetAdjective]s have requested that we guarantee them, which would make us go to war if anyone were to attack them, and in turn they promised beneficial trade treaties and favorable relations with us. While this would be a nice boost to our economy, we have to consider that they have a seemingly matriarchal state."
+  tomboy.45.a: "Grant it."
+  tomboy.45.b: "Deny it."
+  tomboy.45.c: "How dare these degenerates ask us?!"
+
+  tomboy.46.t: "The Official Language"
+  tomboy.46.d: "Our nation is undoubtedly multi-ethnic and multi-lingual. However, we must decide upon an official language. This decision will not affect our relations with our ethnic minorities, and it will not affect our ability to communicate with them. We may, however, lose some of the respect from them, if we choose the one they don't speak. However, we can always choose another one after, though it may end with us losing some internal stability."
+  tomboy.46.a: "Deutsch sind wir!"
+  tomboy.46.b: "Nous sommes français!"
+  tomboy.46.c: "We should let the locals have their language."
+  tomboy.46.e: "Let's decide later."
+  friesland_name_german: "Friesland"
+  holland_name_german: "Holland"
+  brabant_name_german: "Nordbrabant"
+  vlaanderen_name_german: "Flandern"
+  wallonie_name_german: "Wallonie"
+  luxemburg_name_german: "Luxemburg"
+  alsace_lorraine_name_german: "Elsaß-Lothringen"
+  franche_comte_name_german: "Freigrafschaft"
+  champagne_name_german: "Champagne"
+  picardy_name_german: "Picardie"
+  nord_pas_de_calais_name_german: "Nord-Calais-Straße"
+  normandy_name_german: "Normandie"
+  ile_de_france_name_german: "Insel Frankreichs"
+  bourgogne_name_german: "Burgund"
+  centre_name_german: "Zentrum-Loiretal"
+  loire_name_german: "Liger"
+  brittany_name_german: "Kleinbritannien"
+
+  # Netherlands
+  groningen_name_german: "Gröningen"
+  leeuwarden_name_german: "Leuwarden"
+  arnhem_name_german: "Arnheim"
+  utrecht_name_german: "Utrecht"
+  amsterdam_name_german: "Amsterdam"
+  den_haag_name_german: "Der Haag"
+  rotterdam_name_german: "Rotterdam"
+  breda_name_german: "Breda"
+  eindhoven_name_german: "Eindhoven"
+  # Belgium
+  maastricht_name_german: "Mastricht"
+  liege_name_german: "Lüttich"
+  namur_name_german: "Namür"
+  charleroi_name_german: "Karleroi"
+  leuven_name_german: "Löwen"
+  antwerpen_name_german: "Antorf"
+  brussels_name_german: "Brüssel"
+  gent_name_german: "Gent"
+  kortrijk_name_german: "Kortrick"
+  # Luxembourg
+  luxemburg_province_name_german: "Luxemburg"
+  # France
+  mulhouse_name_german: "Mülhausen"
+  strasbourg_name_german: "Straßburg"
+  metz_name_german: "Metz"
+  nancy_name_german: "Nanzig"
+  besacon_name_german: "Bisanz"
+  dijon_name_german: "Dision"
+  sedan_name_german: "Sedan"
+  reims_name_german: "Reims"
+  troyes_name_german: "Troyes"
+  lille_name_german: "Lilie"
+  dunkerque_name_german: "Dünkirchen"
+  calais_name_german: "Kalen"
+  amiens_name_german: "Ambien"
+  paris_name_german: "Paris"
+  dieppe_name_german: "Dippen"
+  rouen_name_german: "Rudaburg"
+  le_havre_name_german: "Leehafen"
+  cherbourg_name_german: "Scherburg"
+  orleans_name_german: "Orleans"
+  tours_name_german: "Tours"
+  nantes_name_german: "Naunt"
+  rennes_name_german: "Ressen"
+  lorient_name_german: "Lorient"
+  brest_name_german: "Brest"
+  # Germany
+  moselland_name_german: "Moselland"
+  rhineland_name_german: "Rheinland"
+  hessen_name_german: "Hessen"
+  westfalen_name_german: "Westfalen"
+  weser_ems_name_german: "Weser-Ems"
+  saarbruecken_name_german: "Saarbrücken"
+  bitburg_name_german: "Bitburg"
+  koeln_name_german: "Köln"
+  essen_name_german: "Essen"
+  frankfurt_name_german: "Frankfurt"
+  kassel_name_german: "Kassel"
+  dortmund_name_german: "Dortmund"
+  muenster_name_german: "Münster"
+  emden_name_german: "Emden"
+  wilhelmshaven_name_german: "Wilhelmshaven"
+
+
+  # States
+  friesland_name_french: "Friselande"
+  holland_name_french: "Hollande"
+  brabant_name_french: "Brabant"
+  vlaanderen_name_french: "Flandre"
+  wallonie_name_french: "Wallonie"
+  luxemburg_name_french: "Luxembourg"
+  alsace_lorraine_name_french: "Alsace-Lorraine"
+  franche_comte_name_french: "Franche-Comté"
+  champagne_name_french: "Champagne"
+  picardy_name_french: "Picardie"
+  nord_pas_de_calais_name_french: "Nord-Pas-de-Calais"
+  normandy_name_french: "Normandie"
+  ile_de_france_name_french: "Île-de-France"
+  bourgogne_name_french: "Bourgogne"
+  centre_name_french: "Centre"
+  loire_name_french: "Loire"
+  brittany_name_french: "Bretagne"
+  # Netherlands
+  groningen_name_french: "Groningue"
+  leeuwarden_name_french: "Leeuwarden"
+  arnhem_name_french: "Arnhem"
+  utrecht_name_french: "Utrecht"
+  amsterdam_name_french: "Amsterdam"
+  den_haag_name_french: "La Haye"
+  rotterdam_name_french: "Rotterdam"
+  breda_name_french: "Bréda"
+  eindhoven_name_french: "Eindhoven"
+  # Belgium
+  maastricht_name_french: "Maastricht"
+  liege_name_french: "Liège"
+  namur_name_french: "Namur"
+  charleroi_name_french: "Charleroi"
+  leuven_name_french: "Louvain"
+  antwerpen_name_french: "Anvers"
+  brussels_name_french: "Bruxelles"
+  gent_name_french: "Gand"
+  kortrijk_name_french: "Courtrai"
+  # Luxemburg
+  luxemburg_province_name_french: "Luxembourg"
+  # France
+  mulhouse_name_french: "Mulhouse"
+  strasbourg_name_french: "Strasbourg"
+  metz_name_french: "Metz"
+  nancy_name_french: "Nancy"
+  besacon_name_french: "Besançon"
+  dijon_name_french: "Dijon"
+  sedan_name_french: "Sedan"
+  reims_name_french: "Reims"
+  troyes_name_french: "Troyes"
+  lille_name_french: "Lille"
+  dunkerque_name_french: "Dunkerque"
+  calais_name_french: "Calais"
+  amiens_name_french: "Amiens"
+  paris_name_french: "Paris"
+  dieppe_name_french: "Dieppe"
+  rouen_name_french: "Rouen"
+  le_havre_name_french: "Le Havre"
+  cherbourg_name_french: "Cherbourg"
+  orleans_name_french: "Orléans"
+  tours_name_french: "Tours"
+  nantes_name_french: "Nantes"
+  rennes_name_french: "Rennes"
+  lorient_name_french: "Lorient"
+  brest_name_french: "Brest"
+  # Germany
+  moselland_name_french: "Pays de la Moselle"
+  rhineland_name_french: "Rhénanie"
+  hessen_name_french: "Hesse"
+  westfalen_name_french: "Westphalie"
+  weser_ems_name_french: "Basse-Saxe"
+  saarbruecken_name_french: "Sarrebruck"
+  bitburg_name_french: "Bitbourg"
+  koeln_name_french: "Cologne"
+  essen_name_french: "Essen"
+  frankfurt_name_french: "Francfort"
+  kassel_name_french: "Cassel"
+  dortmund_name_french: "Dormond"
+  muenster_name_french: "Munsér"
+  emden_name_french: "Emden"
+  wilhelmshaven_name_french: "Villehelmport"
+
+  #tomboy.47.t: "Re-Establish Japan?"
+  #tomboy.47.d: "The Japanese people, although fairly peaceful, still have a significant national pride and wish for their own nation. We could perhaps grant them this wish, in return for loyalty. We only have to decide how big they should be. We can either establish them in their old borders, excluding Korea, China, and Taiwan, or in their home islands only."
+  #tomboy.47.a: "Home Islands only."
+  #tomboy.47.b: "Most pre-war territory."
+  #tomboy.47.c: "Establish a Sino-Japan (JP Led)."
+  #tomboy.47.e: "On second thought..."
+
+  #tomboy.48.t: "Re-Establish China?"
+  #tomboy.48.d: "We are in possession of some of the Chinese regions, and the local populace is very unhappy with this situation. We could either install a Chinese puppet, or we can continue integrating the region. Of course, the Chinese borders are... questionable at best, so we'd have to decide whether to accept their claimed lands, or if we reduce them to their older borders. We could also do nothing at all, and simply let things be."
+  #tomboy.48.a: "Establish Tang borders only."
+  #tomboy.48.b: "Establish in unified borders."
+  #tomboy.48.c: "Establish Sino-Japan (CN Led Tang)"
+  #tomboy.48.e: "Establish Sino-Japan (CN Led Unified)"
+  #tomboy.48.f: "Actually... nevermind."
+
+  #tomboy.49.t: "Re-Establish Tibet?"
+  #tomboy.49.d: "We're in control of some of Tibet's old lands. To more effectively manage the population, which is already predisposed to rebellions, we can re-establish the ancient nation of Tibet, which would give us more legitimacy, and quell the rebellions. We could either establish it as its large historical self, or simply reduce it to the smaller one and grant the non-Tibetan regions their own puppets."
+  #tomboy.49.a: "Return the Tibetan Empire."
+  #tomboy.49.b: "Give all their countries."
+  #tomboy.49.c: "Nevermind."
+
+
+  tomboy.47.t: "[FROM.GetName] wants to deepen friendship"
+  tomboy.47.d: "[FROM.GetAdjective] diplomats have approached us, and offered to establish a deeper friendship between our nations. They have requested we would be ready to defend each other in case of a threat, and are offering favorable mutual economic relations in exchange. Of course, with them being such a young state, and our own precarious position, this would be a great boost to our economy, and may help secure us against external threats."
+  tomboy.47.a: "[tomboy-47-a_scripted_loc]"
+  tomboy-47-a_has_faction: "We're already allied."
+  tomboy-47-a_not_has_faction: "Propose an alliance."
+  tomboy.47.b: "We agree, guarantee each other."
+  tomboy.47.c: "We must refuse."
+
+  tomboy.48.t: "[FROM.GetName] proposes alliance"
+  tomboy.48.d: "Having responded to our proposal, the [FRA.GetAdjective] have approached us and requested that we join arms in a faction. They promise a military alliance, and are also willing to negotiate trade treaties and cultural exchange. The [FRA.GetAdjective] are also promising that should either one of us declare a war, the other would also join the war. Considering our situation, this would be a great boon, and should secure our safety for a while."
+  tomboy.48.a: "We accept!"
+  tomboy.48.a_faction: "Western European Alliance"
+  tomboy.48.b: "Let's keep it a guarantee."
+  tomboy.48.c: "We can't accept."
+
+  tomboy.49.t: "[tomboy-49-t_scripted_loc]"
+  tomboy.49.d: "[tomboy-49-d_scripted_loc]"
+  tomboy-49-t_de: "[FROM.GetName] expels Germans!"
+  tomboy-49-d_de: "In an act of nationalistic rage and inhuman cruelty, the Tomboys have expelled the Germans from their country. They have been kicked out of their homes, and we have only been informed of this when the expelled Germans arrived on our side of the border, seeking refuge and protection."
+  tomboy-49-t_fr: "[FROM.GetName] expels French people!"
+  tomboy-49-d_fr: "In an act of nationalistic rage and inhuman cruelty, the Tomboys have expelled the French people living in their borders from their country. They have been kicked out of their homes, and we have only been informed of this when the expelled Frenchmen and Frenchwomen arrived on our side of the border, seeking refuge and protection."
+  tomboy.49.a: "They've gone too far!"
+
+
+
+
+
+
+
+
+  tomboynews.1.t: "[LEAVER.GetName] cuts diplomatic ties!"
+  tomboynews.1.d: "The government of [LEAVER.GetNameDef] has cut off all diplomatic relations with us, and is sending an official note denying our guarantee for their independence, and declaring a mutual animosity. They will not negotiate with us, nor will they talk. All we can do is accept this and move on."
+  tomboynews.1.a: "Ok."
+
+
+
+
+
+
+
+
+
+
+  
+
+  tomboy.50.t: "[FROM.GetAdjective]s propose industrial co-operation"
+  tomboy.50.d: "[BEL.GetAdjective] diplomats have come forth and asked if we would be interested in an Industrial co-operation deal, wherein our state industries would cooperate, share resources, technology, and knowledge. They ensured that, while they are a new state, they have a lot of industrial might, and we could both prosper immensely. Of course, they may have their own agenda, but we have our own interests in this too."
+  tomboy.50.a: "Absolutely!"
+  tomboy.50.b: "Not with the [FROM.GetAdjective]s."
+
+  tomboy.51.t: "[FROM.GetAdjective]s propose non-aggression treaty"
+  tomboy.51.d: "Tomboy representatives have informed us that, due to the precarious position that we are in, and the danger that we are exposed to, that they would like to establish a non-aggression pact, where the both of us agree to not attack each other. It is a rather small pact, but it is also not too difficult to accept. We can't know what their endgame is, but we may benefit from the short-term. We should accept their offer. Of course, it is always possible that they're just being kind."
+  tomboy.51.a: "We accept!"
+  tomboy.51.b: "We must decline."
+
+  tomboy.52.t: "[FROM.GetName] proposes Protection Treaty"
+  tomboy.52.d: "The Tomboys have recently offered an agreement, wherein should we swear loyalty and fealty to them, they will ensure our protection, and will not allow any outside force to attack us. They have even offered to take care of our internal issues, should we have any. They have guaranteed us independence, but are also promising a prosperous future."
+  tomboy.52.a: "We accept."
+  tomboy.52.b: "We can't betray out independence!"
+
+  tomboy.53.t: "[FROM.GetName] accepts Protection Treaty!"
+  tomboy.53.d: "[FROM.GetNameDefCap] have replied positively to our proposal, and have become our puppet state!"
+  tomboy.53.a: "Great news!"
+
+  tomboy.54.t: "[FROM.GetName] refuses Protection Treaty!"
+  tomboy.54.d: "Having recently received our proposal of a Protection Treaty, the [HOL.GetAdjective] have refused the offer, telling our representatives that they would not allow such a thing, as [HOL.GetNameDef] do not wish to give away their freedom and sovereignty, and that they would be fine on their own."
+  tomboy.54.a: "Damn it!"
+
+  tomboy.55.t: "[FROM.GetName] proposes Protection Treaty"
+  tomboy.55.d: "The Tomboys have recently offered an agreement, wherein should we swear loyalty and fealty to them, they will ensure our protection, and will not allow any outside force to attack us. They have even offered to take care of our internal issues, should we have any. They have guaranteed us independence, but are also promising a prosperous future."
+  tomboy.55.a: "We accept."
+  tomboy.55.b: "We will fight alone for our continued freedom!"
+
+  tomboy.56.t: "[FROM.GetName] accepts Protection Treaty!"
+  tomboy.56.d: "[FROM.GetNameDefCap] have replied positively to our proposal, and have become our puppet state!"
+  tomboy.56.a: "Great news!"
+
+  tomboy.57.t: "[FROM.GetName] refuses Protection Treaty!"
+  tomboy.57.d: "Having recently received our proposal of a Protection Treaty, [FROM.GetName] has refused the offer, telling our representatives that they would not allow such a thing, as they do not wish to give away their freedom and sovereignty, and that they would be fine on their own."
+  tomboy.57.a: "Damn it!"
+
+  tomboy.58.t: "[BEL.GetAdjective]s demand subjugation"
+  tomboy.58.d: "[BEL.GetNameDefCap] has sent us a message, demanding we immediately sign a treaty and puppet ourselves into their nation. While they are claiming that they will grant us sovereignty, and that we would be autonomous, it is clear that we would simply be another part of their realm. Should we decline, they will certainly wage aggressive war against us."
+  tomboy.58.a: "We accept."
+  tomboy.58.b: "Never!"
+
+  tomboy.59.t: "[FROM.GetName] accepts!"
+  tomboy.59.d: "Great news - the [FROM.GetAdjective]s have agreed to become the our puppet! We can now begin managing the region, and preparing for the coming times. Now we can focus on other matters, and future conquests!"
+  tomboy.59.a: "Great!"
+
+  tomboy.60.t: "[FROM.GetName] refuses!"
+  tomboy.60.d: "We received a refusal from the [FROM.GetAdjective]s. While they claim they are in no position to fight a war, they are still refusing our demand, and have instead started to build up their military force on our border! It is clear that they do not want to lose their sovereignty, and are willing to fight tooth and nail to preserve their freedom."
+  tomboy.60.a: "We'll break them apart."
+
+  tomboy.61.t: "The Occitane Question"
+  tomboy.61.d: "With our imminent interest in the French lands, we have to consider the huge underbelly that is Occitania, historically known as Aquitaine. Considering that this region has not just a large amount of Tomboys, but also a huge support for independence, and a strong Occitan movement, we have to decide how to approach them. We could either guarantee them a degree of autonomy, and quell the unrest, or we could focus on forcefully integrating the region."
+  tomboy.61.a: "Freedom!"
+  tomboy.61.a_tt: "Will §Rskip§! claiming Occitanian cores, but §Gallows§! for §Ycollaboration§! with the Occitanians."
+  tomboy.61.b: "Annexation!"
+  tomboy.61.b_tt: "§YCollaboration§! with the Occitanians will be §Rimpossible§!, but this will allow for the §Yannexation§! of Occitanian core states."
+
+  tomboy.62.t: "A mysterious traveler"
+  tomboy.62.d: "We have received notice that a young woman has recently arrived in [BEL.capital.GetName]. While nothing noteworthy initially, she's exceedingly talented in revitalizing passing soldiers with her music. As the days passed, more and more soldiers have been drawn to her, and it's now a major social gathering every time she plays. She claims to have come from a place called \"Gensokyo\", but this place is nowhere to be found on our maps. The oddest thing is that some people reported seeing her flying around when she is alone, although they are not sure whether they saw correctly. Today, this woman, who introduced herself as \"Merlin Prismriver\" arrived at the palace, seeking a place to stay."
+  tomboy.62.a: "Something administrative could work."
+  tomboy.62.b: "We need her in our advisory!"
+
+  tomboy.63.t: "Mysterious relatives"
+  tomboy.63.d: "After recently recruiting Merlin Prismriver into our advisory, two more women have arrived in Brussels, claiming to be her sisters. One is wearing a black dress, while the other wears a red dress. The former claims her name is Lunasa Prismriver, while the latter is Lyrica Prismriver. The former is a violinist, and the latter is a keyboardist. They both claim to be here to join their sister, Merlin, and have no other motives. After speaking with Merlin, we have concluded that they indeed are her sisters, and are willing to join the government. However, the strangeness of the three cannot be ignored."
+  tomboy.63.a: "Merlin alone is enough."
+  tomboy.63.b: "Welcome the Prismriver Ensemble!"
+
+  tomboy.64.t: "[FROM.GetAdjective]s demand our land!"
+  tomboy.64.d: "The [FROM.GetAdjective]s have approached us, demanding that we cede our country to them. They are saying that the population is overwhelmingly [FROM.GetAdjective], and that we, historically, have violated their human rights, and that they must be freed. They are promising no war or reprisal should we comply. As such, we can expect war if we refuse."
+  tomboy.64.a: "We accept, for the good of our people."
+  tomboy.64.b: "We'll never surrender!"
+
+  tomboy.65.t: "[FROM.GetName] refuses!"
+  tomboy.65.d: "Our diplomats have returned, reporting the refusal of [FROM.GetNameDef] to be annexed. The [FROM.GetAdjective]s have told us that they'll gladly give away the regions where [ROOT.GetAdjective]s are in the majority, but the rest of the country is theirs. Of course, it is clear the [FROM.GetAdjective] are being unreasonable, as [ROOT.GetAdjective]s make up the majority of their entire nation."
+  tomboy.65.a: "Damn them!"
+  tomboy.65.b: "The hard way it is, then."
+
+  tomboy.66.t: "[BEL.GetAdjective]s propose union"
+  tomboy.66.d: "The Tomboys have contacted us, proposing a union between us. They've been supporting and aiding us recently, when we were hit with many issues like our constant food shortages, and are now offering to unite us in order to solve our problems. This is a very tempting offer, but there is no doubt that the Tomboys are up to something, and the question is: is it worth it?"
+  tomboy.66.a: "We'll join!"
+  tomboy.66.b: "We cannot do this."
+
+  tomboy.67.t: "Luxembourg accepts!"
+  tomboy.67.d: "Our delegates have returned, with the news that Luxembourg has agreed to the union. It seems that they were able to persuade the people and the government, and the Luxembourgers are now preparing to merge with us culturally, politically, economically, and militarily."
+  tomboy.67.a: "Welcome to prosperity!"
+
+  tomboy.68.t: "Luxembourg refuses!"
+  tomboy.68.d: "After a period of time, the Luxembourgers have told our representatives that they will not enter into a union with us. Instead, the Luxembourgians would prefer to remain a small, independent country, despite all we have given them and could give them. It seems like the Luxembourgians have forgotten our help in recent months, so we should remind them what'll happen to those who defy us."
+  tomboy.68.a: "Damn them!"
+  tomboy.68.b: "They'll repay us for all we've given them!"
+
+  tomboy.69.t: "Tomboys propose solution"
+  tomboy.69.d: "Representatives from the Tomboys have approached out government, providing us with an overwhelming amount of support to join the neighboring [BEL.GetName]. Accepting this undoubtedly would mean we cease to be an independent state, and would lose the ability to make our own decisions. However, the Tomboys have promised to keep the majority of our culture, and are also promising us a large degree of local autonomy, so that we wouldn't have to give up on our culture and traditions."
+  tomboy.69.a: "We... accept."
+  tomboy.69.a_tt: "Our people will remain safe and free."
+  tomboy.69.b: "Independence is more important than lives!"
+
+  tomboy.70.t: "The Netherlands join us"
+  tomboy.70.d: "Following pressure from Tomboys in their country wishing to join us, and a few diplomatic measures, the Netherlands have decided to join our realm. Of course, this was not an easy process, and required a lot of persuasion, and even some subtle threats, but it is still a success. With this, we can begin assimilating the Dutch, improve the lives of the Tomboys that lived under their oppression, and prepare for the future."
+  tomboy.70.a: "Welcome home!"
+
+  tomboy.71.t: "The Netherlands oppose Tomboy freedom"
+  tomboy.71.d: "Despite Tomboys in their country wishing to join us, and even gaining a lot of support from the people, the [HOL.GetAdjective] have outright denied their desire to be free, and have begun to persecute the tomboys inside their borders. We cannot accept this injustice, and must respond in order to ensure the rights of our people are protected."
+  tomboy.71.a: "This cannot stand!"
+  tomboy.71.b: "We'll liberate them, now!"
+
+  tomboy.72.t: "[BEL.GetName] demands Sudetenland!"
+  tomboy.72.d: "In a surprising, yet expected move, the Tomboy Kingdom has demanded that we hand over the Sudetenland. They have told us that the region is inhabited by Tomboys, and as such, we have no right to rule over it, and must hand it over. We can, of course, choose to reject this and face a possible war, or we could hand it over and suffer a hit in our sovereignty."
+  tomboy.72.a: "Hand it over."
+  tomboy.72.b: "Never!"
+
+  tomboy.73.t: "[FROM.GetName] rejects!"
+  tomboy.73.d: "The [FROM.GetAdjective] have refused to hand over the Sudetenland, and have told us that the region has been a part of their nation for centuries, and they are not about to give up the lands and the people to a foreign power. They have also told us that the area is not home to the Tomboys, that the Tomboys are a minority in the area, and that handing the area over would not solve anything."
+  tomboy.73.a: "Understood."
+
+
+
+  # Generics
+
+  BEL_generic_event_tt_will_happen: "Will happen:"
+  BEL_generic_event_tt_has_happened: "Has happened:"
+  BEL_generic_event_tt_nothing_happens: "Nothing happens."
+  BEL_generic_event_tt_end_game: "§RThis will end your game!§!"
+  
+
+
+
+  tomboy_generic.1.t: "[FROM.GetName] seeks alliance"
+  tomboy_generic.1.d: "Diplomats have informed us that [FROM.GetNameDef] seeks to form a military faction which their country can rely on and be part of with us. They are seeking a friendly and able ally to create the faction with, and have chosen us as their most suitable option."
+  tomboy_generic.1.a: "We accept."
+  tomboy_generic.1.b: "We must refuse."
+  tomboy_generic.1.a_faction_name_bel_fra: "Franco-Tomboy Pact"
+  tomboy_generic.1.a_faction_name_bel_ger: "[GER.capital.GetName]-[BEL.capital.GetName] Pact"
+  tomboy_generic.1.a_faction_name_generic: "Alliance of Peace"
+
+  tomboy_generic.1.a_faction_name_bel_terror_fra: "Fighters of Avalon"
+  tomboy_generic.1.a_faction_name_bel_terror_ger: "Asgardian Brotherhood"
+  tomboy_generic.1.a_faction_name_bel_terror_generic: "Alliance of Fire"
+
+  tomboy_generic.2.t: "[FROM.GetName] accepts!"
+  tomboy_generic.2.d: "We have received confirmation that [FROM.GetNameDef] accepted out offer, and we are now in an alliance together!"
+  tomboy_generic.2.a: "Great!"
+
+  tomboy_generic.3.t: "[FROM.GetName] refuses!"
+  tomboy_generic.3.d: "Unfortunately, the [FROM.GetAdjective] have declined our efforts to form a powerful military faction. While they did promise continued good relations, we need to be watchful of them for now. Their refusal to form a faction with us could be a sign of hostile intent. Time will tell."
+
+  tomboy_generic.4.t: "[FROM.GetName] forces us to war!"
+  tomboy_generic.4.d: "[tomboy_generic_4_d_scripted_loc]"
+  tomboy_generic.4.a: "[tomboy_generic_4_a_scripted_loc]"
+  tomboy_generic_4_d_fr: "[FROM.GetNameDefCap] have shown an undeniable, but falsified, declaration of war we supposedly sent them! They convinced the international community of their lies, and now, having no choice, we have been forced into an offensive war against them!"
+  tomboy_generic_4_a_fr: "Quick, prepare L'armée!"
+  tomboy_generic_4_d_de: "[FROM.GetNameDefCap] has just addressed the international community that they will fight against us in a defensive war, and they have provided proof that we declared war on them. This is despite nobody in the government having ordered the war, or even declaring war. It is a complete falsehood, and now we have an offensive war on our hands!"
+  tomboy_generic_4_a_de: "Quick, dispatch the Wehrmacht!"
+  tomboy_generic_4_d_generic: "[FROM.GetNameDefCap] have just addressed the international community that they will fight against us in a defensive war, and they have provided proof that we declared war on them. This is despite nobody in the government having ordered the war, or even declaring war. It is a complete falsehood, and now we have an offensive war on our hands!"
+  tomboy_generic_4_a_generic: "Quick, prepare the Army!"
+
+  tomboy_generic.5.t: "[FROM.GetName] guarantee us"
+  tomboy_generic.5.d: "[FROM.GetNameDefCap] have recently announced their intention to guarantee us, and have promised to defend us should we come under attack. This is a massive boon for us, considering we're not a powerhouse, and would be easy to overwhelm, so this is a big deal for us. Of course, we can't know their intentions, and they might just be playing us, but for now, this will help."
+  tomboy_generic.5.a: "We'll return the favor."
+  tomboy_generic.5.b: "Thanks!"
+  tomboy_generic.5.c: "They better take it back."
+
+  tomboy_generic.6.t: "[FROM.GetName] returns the favor"
+  tomboy_generic.6.d: "Responding to our guarantee, [FROM.GetNameDef] has in return guaranteed us as well!"
+  tomboy_generic.6.a: "Great!"
+
+  tomboy_generic.7.t: "[FROM.GetName] demands we retract our guarantee"
+  tomboy_generic.7.d: "Despite our good-willingness, [FROM.GetNameDef] demanded we retract our guarantee and stop trying to \"influence\" them."
+  tomboy_generic.7.a: "Shame."
+  tomboy_generic.7.b: "How dare they?!"
+
+  tomboy_generic.8.t: "[FROM.GetName] demands annexation!"
+  tomboy_generic.8.d: "[FROM.GetNameDefCap] has sent us a message, demanding we immediately sign a treaty and annex ourselves into their nation. They claim they have the military power, and that the only reason they are not immediately attacking is out of their \"respect\" and \"kindness,\" and to give us a chance to do this without bloodshed."
+  tomboy_generic.8.a: "Never! We fight to the death!"
+  tomboy_generic.8.b: "Avoiding bloodshed is better than a pointless war..."
+
+  tomboy_generic.9.t: "[FROM.GetName] refuses!"
+  tomboy_generic.9.d: "Despite our direct words and the implicit threat, the [FROM.GetAdjective] have refused to join us. They have gone so far as to say they'll resist to the bitter end, and that they'll fight to the last man, and then some."
+  tomboy_generic.9.a: "If they want war, we'll give them war!"

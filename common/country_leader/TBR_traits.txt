@@ -1,0 +1,139 @@
+# Vanilla Traits are in "HOI4 GAME DIRECTORY\common\country_leader\00_traits.txt"
+
+leader_traits = {
+
+    eternal_moon = {
+        random = no
+        political_power_factor = 0.125
+        fascism_acceptance = 10
+        fascism_drift = 0.2
+        army_morale = 10
+    }
+
+    BEL_regency = {
+        random = no
+        political_power_factor = -0.75
+        neutrality_drift = 0.2
+    }
+
+    BEL_anti_tomboy = {
+        random = no
+        ai_strategy = {
+			type = antagonize
+			id = "BEL"
+			value = 200
+		}
+        political_power_gain = 0.25
+		war_support_factor = 0.1
+    }
+
+    BEL_femboy = {
+        random = no
+        ai_strategy = {
+			type = befriend
+			id = "BEL"
+			value = 200
+		}
+        political_power_gain = 0.5
+		war_support_factor = -0.25
+        ai_get_ally_desire_factor = 75
+        stability_factor = 0.3
+    }
+
+    BEL_musician = {
+        random = no
+        political_power_gain = 0.75
+        war_support_factor = 0.05
+        stability_factor = 0.2
+    }
+
+    BEL_cupcake = {
+        random = no
+        political_power_gain = 0.2
+        war_support_factor = 0.2
+        weekly_manpower = 350
+        army_morale = 15
+        air_accidents = -0.25
+    }
+
+    BEL_terror_disorganised = {
+        random = no
+        stability_factor = -0.8
+        political_power_factor = -0.6
+        war_support_weekly_factor = 0.05
+    }
+
+    BEL_the_devil = {
+        random = no
+        stability_factor = -0.5
+        monthly_population = -0.25
+        resistance_growth_on_our_occupied_states = -0.75
+        fascism_acceptance = 25
+        fascism_drift = 0.1
+        neutrality_drift = 0.1
+    }
+
+    BEL_angel_of_death = {
+        random = no
+        conscription = -0.005
+        monthly_population = -0.1
+        stability_factor = -0.2
+        army_attack_factor = 0.1
+    }
+
+    BEL_wasteland = {
+        random = no
+        monthly_population = -1
+        stability_factor = -1
+        army_defence_factor = 4
+        fascism_drift = -1
+        fascism_acceptance = -1
+        communism_drift = -1
+        communism_acceptance = -1
+        neutrality_drift = -1
+        neutrality_acceptance = -1
+        democratic_drift = -1
+        democratic_acceptance = -1
+    }
+
+    BEL_loli = {
+        random = no
+        monthly_population = 0.2
+        stability_factor = 0.1
+        political_power_factor = -0.25
+        army_morale = 0.1
+    }
+
+    BEL_chuunibyou = {
+        random = no
+        monthly_population = -0.05
+        stability_factor = -0.1
+        army_attack_factor = 0.1
+        army_morale_factor = 0.1
+    }
+
+    BEL_monarcho_fascist_monarch = {
+        random = no
+        fascism_acceptance = 10
+        neutrality_acceptance = 10
+        fascism_drift = 0.05
+        neutrality_drift = 0.055
+    }
+
+    BEL_monarcho_fascist_fash = {
+        random = no
+        fascism_acceptance = 10
+        neutrality_acceptance = 10
+        fascism_drift = 0.055
+        neutrality_drift = 0.05
+    }
+    
+    BEL_monarcho_fascist_neutral = {
+        random = no
+        fascism_acceptance = 10
+        neutrality_acceptance = 10
+        fascism_drift = 0.05
+        neutrality_drift = 0.05
+    }
+
+}

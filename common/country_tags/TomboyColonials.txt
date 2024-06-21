@@ -1,0 +1,6 @@
+TBA = "countries/Tomboy_Africa.txt"
+TBE = "countries/Tomboy_East.txt"
+TBN = "countries/Tomboy_North_America.txt"
+TBO = "countries/Tomboy_Oceania.txt"
+TBS = "countries/Tomboy_Asia.txt"
+TBU = "countries/Tomboy_South_America.txt"

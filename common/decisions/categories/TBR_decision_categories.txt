@@ -1,0 +1,274 @@
+BEL_monarchist_puppets_category = {
+    icon = tbd
+
+    picture = tbd
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+    }
+    
+    priority = 5
+}
+
+BEL_monarchist_german_border_restoration_category = {
+    icon = tbd
+
+    picture = tbd
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+    }
+
+    priority = 4
+}
+
+BEL_monarchist_austro_hungarian_border_restoration_category = {
+    icon = tbd
+
+    picture = tbd
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+    }
+
+    priority = 4
+}
+
+BEL_monarchist_hre_border_restoration_category = {
+    icon = tbd
+
+    picture = tbd
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+    }
+
+    priority = 4
+}
+
+BEL_debug_category = {
+    icon = tbd
+
+    picture = tbd
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        AND = {
+            original_tag = BEL
+            is_debug = yes
+        }
+    }
+    priority = 100
+}
+
+BEL_puppet_management_category = {
+    icon = tbd
+
+    picture = tbd
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+    }
+}
+
+BEL_domestic_category = {
+    icon = tbd
+
+    picture = tbd
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+    }
+
+    visible_when_empty = no
+}
+
+BEL_britain_destabilization_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+        OR = {
+            has_global_flag = BEL_destabilizing_england
+            is_debug = yes
+        }
+        NOT = {
+            is_embargoed_by = ENG
+            is_embargoing = ENG
+            is_puppet_of = ENG
+            has_global_flag = BEL_britain_broken
+            OR = {
+                ENG = {
+                    is_puppet_of = BEL
+                }
+                AND = {
+                    WLS = {
+                        exists = yes
+                    }
+                    SCO = {
+                        exists = yes
+                    }
+                    NIR = {
+                        exists = yes
+                    }
+                }
+            }
+        }
+    }
+}
+
+BEL_britain_request_states = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        original_tag = BEL
+        OR = {
+            has_global_flag = BEL_request_control_of_british_states
+            is_debug = yes
+        }
+        NOT = {
+            owns_state = 127
+			owns_state = 126
+			owns_state = 125
+			owns_state = 129
+        }
+    }
+}
+
+BEL_germany_hte_bavaria_decisions = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            AND = {
+                has_completed_focus = BEL_monarchism_germany_justice_war
+                has_war = no
+            }
+            is_debug = yes
+        }
+    }
+}
+
+BEL_germany_freedom_decisions_enable = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            AND = {
+                has_country_flag = BEL_germany_freedom_decisions_enable
+                
+                MEK = { exists = no }
+                PRE = { exists = no }
+                SAX = { exists = no }
+                SHL = { exists = no }
+                KSH = { exists = no }
+                SIL = { exists = no }
+                BAY = { exists = no }
+			    WUR = { exists = no }
+			    HAN = { exists = no }
+            }
+            is_debug = yes
+        }
+    }
+}
+
+BEL_monafash_bop_decisions_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            has_power_balance = {
+                id = BEL_bop_monafash
+            }
+            is_debug = yes
+        }
+    }
+}
+
+BEL_colonial_management_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            BEL = {
+                has_country_flag = BEL_established_colonial_government
+            }
+            is_debug = yes
+        }
+    }
+}

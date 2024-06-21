@@ -1,0 +1,11 @@
+CUN_internal_politics = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = CUN
+    }
+}

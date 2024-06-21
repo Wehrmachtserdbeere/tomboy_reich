@@ -1,0 +1,725 @@
+
+add_namespace = tomboy_generic
+
+# [FROM] wants to make an alliance with [ROOT]
+country_event = {
+	id = tomboy_generic.1
+	title = tomboy_generic.1.t
+	desc = tomboy_generic.1.d
+
+	immediate = {
+		log = "Event ran: tomboy_generic.1"
+	}
+
+	is_triggered_only = yes
+
+	option = { # Join
+		name = tomboy_generic.1.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20
+				has_government = FROM
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -24
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -74
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+					target = FROM
+					value < -95
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 49
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 74
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 95
+				}
+			}
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 5
+				num_of_nukes < from.num_of_nukes
+			}
+			modifier = {
+				add = -25
+				FROM = {
+					has_war = yes
+					NOT = {
+						has_war_together_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				FROM = {
+					has_war_together_with = ROOT
+				}
+			}
+			modifier = {
+				add = -50
+				any_allied_country = {
+					FROM = {
+						has_war_with = PREV
+					}
+				}
+			}
+		}
+
+		effect_tooltip = {
+			FROM = {
+				create_faction = tomboy_generic.1.a_faction_name
+				add_to_faction = ROOT
+			}
+		}
+		FROM = {
+			country_event = {
+				id = tomboy_generic.2
+				days = 4
+			}
+		}
+	}
+
+	option = { # Refuse
+		name = tomboy_generic.1.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		effect_tooltip = {
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = BEL_disappointed
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = tomboy_generic.3
+				days = 4
+			}
+		}
+	}
+}
+
+# FROM accepted alliance
+country_event = {
+	id = tomboy_generic.2
+	title = tomboy_generic.2.t
+	desc = tomboy_generic.2.d
+
+	immediate = {
+		log = "Event ran: tomboy_generic.2"
+	}
+
+	is_triggered_only = yes
+
+	option = { # Great!
+		name = tomboy_generic.2.a
+
+		if = {
+			limit = {
+				FROM = {
+					original_tag = BEL
+					NOT = {
+						has_cosmetic_tag = BEL_TERROR
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = FRA
+					}
+				}
+				create_faction = tomboy_generic.1.a_faction_name_bel_fra
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = GER
+					}
+				}
+				create_faction = tomboy_generic.1.a_faction_name_bel_ger
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					original_tag = BEL
+					has_cosmetic_tag = BEL_TERROR
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = GER
+					}
+				}
+				create_faction = tomboy_generic.1.a_faction_name_bel_terror_ger
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = FRA
+					}
+				}
+				create_faction = tomboy_generic.1.a_faction_name_bel_terror_fra
+			}
+			else = {
+				create_faction = tomboy_generic.1.a_faction_name_bel_terror_generic
+			}
+		}
+		else = {
+			create_faction = tomboy_generic.1.a_faction_name_generic
+		}
+		add_to_faction = FROM
+
+		add_ai_strategy = {
+			type = support
+			id = FROM
+			value = 50
+		}
+	}
+}
+
+# FROM refuses alliance
+country_event = {
+	id = tomboy_generic.3
+	title = tomboy_generic.3.t
+	desc = tomboy_generic.3.d
+
+	immediate = {
+		log = "Event ran: tomboy_generic.3"
+	}
+
+	is_triggered_only = yes
+
+	option = { # Shame
+		name = tomboy_generic.3.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_disappointed
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = FROM
+			value = 25
+		}
+	}
+}
+
+# FROM force us to war
+country_event = {
+	id = tomboy_generic.4
+	title = tomboy_generic.4.t
+	desc = tomboy_generic.4.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_generic.4"
+	}
+
+	option = { # Everyone get ready, quick!
+		name = tomboy_generic.4.a
+
+		declare_war_on = {
+			target = BEL
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+# FROM guarantees ROOT, will ROOT give one back?
+country_event = {
+	id = tomboy_generic.5
+	title = tomboy_generic.5.t
+	desc = tomboy_generic.5.d
+
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "Event ran: tomboy_generic.5"
+	}
+
+	option = { # ROOT will give it back too!
+		name = tomboy_generic.5.a
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 49
+				}
+			}
+			modifier = {
+				add = 15
+				has_opinion = {
+					target = FROM
+					value > 74
+				}
+			}
+			modifier = {
+				add = 25
+				has_opinion = {
+					target = FROM
+					value > 94
+				}
+			}
+			modifier = {
+				factor = 1.25
+				any_neighbor_country = {
+					NOT = {
+						tag = FROM
+					}
+					has_wargoal_against = ROOT
+				}
+			}
+			modifier = {
+				factor = 0.5
+				num_divisions > FROM.num_divisions
+			}
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+		}
+
+		give_guarantee = FROM
+		FROM = {
+			country_event = tomboy_generic.6
+		}
+	}
+
+	option = { # Thank you (no guarantee back)!
+		name = tomboy_generic.5.b
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # Take it back!
+		name = tomboy_generic.5.c
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 20
+				FROM = {
+					has_added_tension_amount > 2.5
+				}
+			}
+			modifier = {
+				add = 20
+				FROM = {
+					has_added_tension_amount > 5
+				}
+			}
+			modifier = {
+				add = 20
+				FROM = {
+					has_added_tension_amount > 7.5
+				}
+			}
+			modifier = {
+				add = 20
+				FROM = {
+					has_added_tension_amount > 10
+				}
+			}
+			modifier = {
+				add = 10
+				FROM = {
+					has_added_tension_amount > 25
+				}
+			}
+		}
+
+		trigger = {
+			FROM = {
+				has_guaranteed = ROOT
+			}
+		}
+
+		if = {
+			limit = {
+				has_guaranteed = ROOT
+			}
+			diplomatic_relation = {
+				country = FROM
+				relation = guarantee
+				active = no
+			}
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = FROM
+			value = 5
+		}
+		FROM = {
+			diplomatic_relation = {
+				country = ROOT
+				relation = guarantee
+				active = no
+			}
+			add_ai_strategy = {
+				type = consider_weak
+				id = ROOT
+				value = 10
+			}
+		}
+	}
+}
+
+# FROM also guaranteed us back!
+country_event = {
+	id = tomboy_generic.6
+	title = tomboy_generic.6.t
+	desc = tomboy_generic.6.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_generic.6"
+	}
+
+	option = { # Great!
+		name = tomboy_generic.6.a
+	}
+}
+
+# FROM refused out guarantee!
+country_event = {
+	id = tomboy_generic.7
+	title = tomboy_generic.7.t
+	desc = tomboy_generic.7.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_generic.7"
+	}
+
+	option = { # Damn.
+		name = tomboy_generic.7.a
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # How dare they?!
+		name = tomboy_generic.7.b
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = FROM
+					ratio > 1
+				}
+			}
+			modifier = {
+				add = 20
+				strength_ratio = {
+					tag = FROM
+					ratio > 1.5
+				}
+			}
+			modifier = {
+				add = 25
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+			modifier = {
+				add = -5
+				strength_ratio = {
+					tag = THIS
+					ratio < 0.75
+				}
+			}
+			modifier = {
+				add = -5
+				strength_ratio = {
+					tag = THIS
+					ratio < 0.5
+				}
+			}
+			modifier = {
+				add = -10
+				strength_ratio = {
+					tag = THIS
+					ratio < 0.25
+				}
+			}
+		}
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_decrease
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = FROM
+			value = 25
+		}
+	}
+}
+
+# FROM demands annexation!
+country_event = {
+	id = tomboy_generic.8
+	title = tomboy_generic.8.t
+	desc = tomboy_generic.8.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_generic.8"
+	}
+
+	option = { # We will fight!
+		name = tomboy_generic.8.a
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				is_major = yes
+			}
+		}
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_decrease
+		}
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_major = yes
+					}
+				}
+				add_threat = 5
+			}
+			else = {
+				add_threat = 2.5
+			}
+		}
+	}
+
+	option = { # We submit.
+		name = tomboy_generic.8.b
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 10
+				num_of_nukes < 1
+				num_of_nukes < FROM.num_of_nukes
+			}
+			modifier = {
+				add = 25
+				is_major = no
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = -10
+				is_in_faction = yes
+				NOT = {
+					is_in_faction_with = FROM
+				}
+			}
+			modifier = {
+				add = -50
+				is_in_faction = yes
+				NOT = {
+					is_in_faction_with = FROM
+				}
+				any_allied_country = {
+					is_major = yes
+					num_divisions > FROM.num_divisions
+				}
+			}
+			modifier = {
+				add = 35
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 25
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+			modifier = {
+				add = 25
+				strength_ratio = {
+					tag = FROM
+					ratio > 4
+				}
+			}
+			modifier = {
+				add = 25
+				strength_ratio = {
+					tag = FROM
+					ratio > 6
+				}
+			}
+			modifier = {
+				add = 25
+				strength_ratio = {
+					tag = FROM
+					ratio > 8
+				}
+			}
+		}
+
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_major = yes
+					}
+				}
+				add_threat = 5
+			}
+			else = {
+				add_threat = 2.5
+			}
+		}
+	}
+}
+
+# FROM refuses to be annexed!
+country_event = {
+	id = tomboy_generic.9
+	title = tomboy_generic.9.t
+	desc = tomboy_generic.9.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_generic.9"
+	}
+
+	option = { # Damn them!
+		name = tomboy_generic.9.a
+
+		effect_tooltip = {
+			custom_effect_tooltip = BEL_generic_event_tt_has_happened
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_major = yes
+					}
+				}
+				add_threat = 5
+			}
+			else = {
+				add_threat = 2.5
+			}
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_decrease
+		}
+	}
+}

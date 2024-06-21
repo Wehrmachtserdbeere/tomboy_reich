@@ -1,0 +1,8 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_ideology_terror_group"
+        texturefile = "gfx/interface/ideas/BEL_terror_group.dds"
+    }
+
+}

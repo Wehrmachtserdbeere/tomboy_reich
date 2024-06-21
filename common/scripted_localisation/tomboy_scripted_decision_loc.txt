@@ -1,0 +1,38 @@
+defined_text = {
+	name = BEL_establish_cunny_realm_scripted_loc
+	text = {
+		trigger = {
+			CUN = {
+				exists = no
+			}
+		}
+		localization_key = BEL_establish_cunny_realm
+	}
+	text = {
+		trigger = {
+			CUN = {
+				exists = yes
+			}
+		}
+		localization_key = BEL_return_cunny_land
+	}
+}
+defined_text = {
+	name = BEL_reshuffle_cunny_realm_scripted_loc
+	text = {
+		trigger = {
+			CUN = {
+				has_autonomy_state = autonomy_selfgoverning_territory
+			}
+		}
+		localization_key = BEL_reshuffle_cunny_realm_selfgoverning_territory
+	}
+	text = {
+		trigger = {
+			CUN = {
+				has_autonomy_state = autonomy_freestate
+			}
+		}
+		localization_key = BEL_reshuffle_cunny_realm_freestate
+	}
+}

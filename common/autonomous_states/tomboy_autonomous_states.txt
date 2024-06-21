@@ -1,0 +1,191 @@
+autonomy_state = {
+	id = autonomy_selfgoverning_territory
+
+	default = no
+	is_puppet = yes
+
+	use_overlord_color = yes
+
+	min_freedom_level = 0.1
+
+	peace_conference_initial_freedom = 0.2
+
+	manpower_influence = 0.95
+
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_generate_female_unit_leaders = yes
+		can_generate_female_aces = yes
+		can_generate_female_country_leaders = yes
+		contributes_operatives = yes
+	}
+
+	modifier = {
+		autonomy_manpower_share = 1.0
+		can_master_build_for_us = 1
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -0.95
+		cic_to_overlord_factor = 0.95
+		mic_to_overlord_factor = 0.95
+		peace_score_ratio_transferred_to_overlord = 0.25
+	}
+
+	ai_subject_wants_higher = {
+		factor = 0.0
+	}
+
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	allowed_levels_filter = {
+		autonomy_selfgoverning_territory
+		autonomy_freestate
+		autonomy_associated_region
+	}
+
+	allowed = {
+		has_dlc = "Together for Victory"
+		OVERLORD = {
+			tag = BEL
+		}
+	}
+
+	can_take_level = {
+		always = no
+	}
+
+	can_lose_level = {
+		always = no
+	}
+}
+
+autonomy_state = {
+	id = autonomy_freestate
+
+	default = no
+	is_puppet = yes
+
+	use_overlord_color = yes
+
+	min_freedom_level = 0.5
+
+	peace_conference_initial_freedom = 0.6
+
+	manpower_influence = 0.75
+
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_generate_female_aces = yes
+		can_generate_female_country_leaders = yes
+		can_generate_female_unit_leaders = yes
+		contributes_operatives = no
+	}
+
+	modifier = {
+		autonomy_manpower_share = 0.7
+		can_master_build_for_us = 1
+		extra_trade_to_overlord_factor = 0.7
+		overlord_trade_cost_factor = -0.75
+		cic_to_overlord_factor = 0.7
+		mic_to_overlord_factor = 0.65
+		peace_score_ratio_transferred_to_overlord = 0.1
+	}
+
+	ai_subject_wants_higher = {
+		factor = 0.0
+	}
+
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	allowed_levels_filter = {
+		autonomy_selfgoverning_territory
+		autonomy_freestate
+		autonomy_associated_region
+	}
+
+	allowed = {
+		has_dlc = "Together for Victory"
+		OVERLORD = {
+			tag = BEL
+		}
+	}
+
+	can_take_level = {
+		always = no
+	}
+
+	can_lose_level = {
+		always = no
+	}
+}
+
+autonomy_state = {
+	id = autonomy_associated_region
+
+	default = no
+	is_puppet = yes
+
+	use_overlord_color = yes
+
+	min_freedom_level = 0.7
+
+	peace_conference_initial_freedom = 0.8
+
+	manpower_influence = 0.5
+
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = yes
+		units_deployed_to_overlord = yes
+		can_generate_female_aces = yes
+		can_generate_female_country_leaders = yes
+		can_generate_female_unit_leaders = yes
+		contributes_operatives = no
+	}
+
+	modifier = {
+		autonomy_manpower_share = 0.5
+		can_master_build_for_us = 1
+		extra_trade_to_overlord_factor = 0.35
+		overlord_trade_cost_factor = -0.35
+		cic_to_overlord_factor = 0.3
+		mic_to_overlord_factor = 0.3
+		peace_score_ratio_transferred_to_overlord = 0.05
+	}
+
+	ai_subject_wants_higher = {
+		factor = 0.0
+	}
+
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	allowed_levels_filter = {
+		autonomy_selfgoverning_territory
+		autonomy_freestate
+		autonomy_associated_region
+	}
+
+	allowed = {
+		has_dlc = "Together for Victory"
+		OVERLORD = {
+			tag = BEL
+		}
+	}
+
+	can_take_level = {
+		always = no
+	}
+
+	can_lose_level = {
+		always = no
+	}
+}

@@ -1,0 +1,18 @@
+category = {
+	name = "SuperEvents"
+	soundeffects = {
+		tomboy_superevents_test
+        tomboy_superevents_kaiserhymne
+		tomboy_superevents_kaiserhymne_vocal
+		tomboy_superevents_giovinezza
+	}
+	compressor =  {
+		enabled = yes
+		pregain = 5.0
+		postgain = 6.0
+		ratio = 15.0
+		threshold = -15.0
+		attacktime = 0.03
+		releasetime = 0.0
+	}
+}

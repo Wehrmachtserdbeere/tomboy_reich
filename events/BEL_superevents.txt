@@ -1,0 +1,76 @@
+add_namespace = tomboysuperevents
+
+country_event = { # Monarchists unite Europe
+	id = tomboysuperevents.1
+	title = tomboysuperevents.1.t
+	desc = tomboysuperevents.1.d
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = BEL_superevents_activate
+			set_global_flag = BEL_monarchist_unite_europe
+
+        	sound_effect = tomboy_superevents_kaiserhymne
+		}
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = superevents.1.a
+	}
+}
+
+country_event = { # Monarchists unite the World
+	id = tomboysuperevents.2
+	title = tomboysuperevents.2.t
+	desc = tomboysuperevents.2.d
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = BEL_superevents_activate
+			set_global_flag = BEL_monarchist_unite_world
+
+			sound_effect = tomboy_superevents_kaiserhymne_vocal
+		}
+	}
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = superevents.2.a
+	}
+}
+
+country_event = { # Monarchists make Europe into Monarchies
+	id = tomboysuperevents.3
+	title = tomboysuperevents.3.t
+	desc = tomboysuperevents.3.d
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = BEL_superevents_activate
+			set_global_flag = BEL_monarchist_hte_europe
+
+			sound_effect = tomboy_superevents_giovinezza
+		}
+	}
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = superevents.3.a
+	}
+}

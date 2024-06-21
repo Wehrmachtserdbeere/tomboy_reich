@@ -1,0 +1,336 @@
+﻿############################
+# Tomboy Border War Events #
+############################
+
+add_namespace = tomboy_bw
+
+# Null Event
+country_event = {
+	id = tomboy_bw.0
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	option = {
+		# Null Event
+	}
+}
+
+# Tomboys win Border War!
+country_event = {
+	id = tomboy_bw.1
+	title = tomboy_bw.1.t
+	desc = tomboy_bw.1.d
+
+	is_triggered_only = yes
+
+	option = { # Great!
+		name = tomboy_bw.1.a
+
+		trigger = {
+			tag = BEL
+		}
+
+		add_war_support = 0.1
+		add_stability = 0.1
+		772 = {
+			add_core_of = BEL
+		}
+		539 = {
+			add_core_of = BEL
+		}
+		773 = {
+			add_core_of = BEL
+		}
+		660 = {
+			add_core_of = BEL
+		}
+		774 = {
+			add_core_of = BEL
+		}
+		775 = {
+			add_core_of = BEL
+		}
+		FRA = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = large_decrease
+			}
+		}
+	}
+
+	option = { # Damn it!
+		name = tomboy_bw.1.b
+
+		trigger = {
+			tag = FRA
+		}
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		if = {
+			limit = {
+				772 = {
+					is_claimed_by = FRA
+				}
+			}
+			772 = {
+				remove_claim_by = FRA
+			}
+		}
+		if = {
+			limit = {
+				539 = {
+					is_claimed_by = FRA
+				}
+			}
+			539 = {
+				remove_claim_by = FRA
+			}
+		}
+		if = {
+			limit = {
+				773 = {
+					is_claimed_by = FRA
+				}
+			}
+			773 = {
+				remove_claim_by = FRA
+			}
+		}
+		if = {
+			limit = {
+				660 = {
+					is_claimed_by = FRA
+				}
+			}
+			660 = {
+				remove_claim_by = FRA
+			}
+		}
+		if = {
+			limit = {
+				774 = {
+					is_claimed_by = FRA
+				}
+			}
+			774 = {
+				remove_claim_by = FRA
+			}
+		}
+		if = {
+			limit = {
+				775 = {
+					is_claimed_by = FRA
+				}
+			}
+			775 = {
+				remove_claim_by = FRA
+			}
+		}
+	}
+}
+
+# Tomboys lose border war!
+country_event = {
+	id = tomboy_bw.2
+	title = tomboy_bw.2.t
+	desc = tomboy_bw.2.d
+
+	is_triggered_only = yes
+
+	option = { # Damn it!
+		name = tomboy_bw.2.a
+
+		trigger = {
+			tag = BEL
+		}
+
+		add_war_support = -0.1
+		add_stability = -0.1
+		if = {
+			limit = {
+				295 = {
+					is_claimed_by = BEL
+				}
+			}
+			295 = {
+				remove_claim_by = BEL
+			}
+		}
+		FRA = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = medium_decrease
+			}
+		}
+	}
+
+	option = { # Great!
+		name = tomboy_bw.2.b
+
+		trigger = {
+			tag = FRA
+		}
+
+		add_war_support = 0.05
+		add_stability = 0.05
+	}
+}
+
+# HIDDEN
+country_event = {
+	id = tomboy_bw.3
+	title = tomboy_bw.3.t
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		start_border_war = {
+			change_state_after_war = no # Coquilhatville vs Middle Congo
+			attacker = {
+				state = 538
+				num_provinces = 4
+				on_win = tomboy_bw.4
+				on_lose = tomboy_bw.2
+			}
+			defender = {
+				state = 772
+				num_provinces = 3
+				on_win = tomboy_bw.2
+				on_lose = tomboy_bw.0
+			}
+		}
+	}
+}
+
+# HIDDEN
+country_event = {
+	id = tomboy_bw.4
+	title = tomboy_bw.4.t
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		start_border_war = {
+			change_state_after_war = no # Coquilhatville vs Equatoral Africa
+			attacker = {
+				state = 538
+				num_provinces = 2
+				on_win = tomboy_bw.5
+				on_lose = tomboy_bw.2
+			}
+			defender = {
+				state = 660
+				num_provinces = 3
+				on_win = tomboy_bw.2
+				on_lose = tomboy_bw.0
+			}
+		}
+	}
+}
+
+# HIDDEN
+country_event = {
+	id = tomboy_bw.5
+	title = tomboy_bw.5.t
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		start_border_war = {
+			change_state_after_war = no # Stanleyville vs Equatoral Africa
+			attacker = {
+				state = 718
+				num_provinces = 2
+				on_win = tomboy_bw.1
+				on_lose = tomboy_bw.2
+			}
+			defender = {
+				state = 660
+				num_provinces = 2
+				on_win = tomboy_bw.2
+				on_lose = tomboy_bw.1
+			}
+		}
+	}
+}
+
+# France wins border war at homefront
+country_event = {
+	id = tomboy_bw.6
+	title = tomboy_bw.6.t
+	desc = tomboy_bw.6.d
+
+	is_triggered_only = yes
+
+	option = { # Tomboy reaction | Damn it!
+		name = tomboy_bw.6.a
+
+		trigger = {
+			tag = BEL
+		}
+
+		add_stability = -0.15
+		add_war_support = -0.1
+		complete_national_focus = BEL_monarchism_france_offense_diplomatic_incident_defeat
+	}
+
+	option = { # France reaction | Great!
+		name = tomboy_bw.6.b
+
+		trigger = {
+			tag = FRA
+		}
+
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_intel = {
+			target = BEL
+			army_intel = 10
+		}
+	}
+}
+
+# Tomboys win border war at homefront
+country_event = {
+	id = tomboy_bw.7
+	title = tomboy_bw.7.t
+	desc = tomboy_bw.7.d
+
+	is_triggered_only = yes
+
+	option = { # Tomboy reaction | Great!
+		name = tomboy_bw.7.a
+
+		trigger = {
+			tag = BEL
+		}
+
+		add_stability = 0.15
+		add_war_support = 0.1
+		add_intel = {
+			target = FRA
+			army_intel = 10
+		}
+		complete_national_focus = BEL_monarchism_france_offense_diplomatic_incident_victory
+	}
+
+	option = { # France reaction | Damn it!
+		name = tomboy_bw.7.b
+
+		trigger = {
+			tag = FRA
+		}
+
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}

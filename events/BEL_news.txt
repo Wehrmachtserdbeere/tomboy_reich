@@ -1,0 +1,19 @@
+
+add_namespace = tomboynews
+
+########################
+# Flavor Events (News) #
+########################
+
+# Loc Test!!!
+news_event = {
+	id = tomboynews.1
+	title = tomboynews.1.t
+	desc = tomboynews.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tomboynews.1.a
+	}
+}

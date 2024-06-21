@@ -1,0 +1,16 @@
+sound = {
+	name = "tomboy_superevents_test"
+	file = "superevents/_test.wav"
+}
+sound = {
+	name = "tomboy_superevents_kaiserhymne"
+	file = "superevents/kaiserhymne.wav"
+}
+sound = {
+	name = "tomboy_superevents_kaiserhymne_vocal"
+	file = "superevents/kaiserhymne_vocal.wav"
+}
+sound = {
+	name = "tomboy_superevents_giovinezza"
+	file = "superevents/giovinezza.wav"
+}

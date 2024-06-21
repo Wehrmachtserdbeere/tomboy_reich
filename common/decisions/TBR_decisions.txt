@@ -1,0 +1,2900 @@
+BEL_debug_category = {
+    BEL_hte_max_borders = {
+
+        available = {
+            is_ai = no
+            is_debug = yes
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = BEL_debug_hte_max_borders_tt
+            BEL = {
+                puppet = GER
+                transfer_state = 28
+			    transfer_state = 17
+			    transfer_state = 18
+			    transfer_state = 785
+			    transfer_state = 29
+			    transfer_state = 16
+			    transfer_state = 15
+			    transfer_state = 30
+			    transfer_state = 14
+			    transfer_state = 24
+			    transfer_state = 27
+			    # Non-Europe
+			    transfer_state = 557
+			    transfer_state = 272
+			    transfer_state = 780
+			    transfer_state = 779
+			    transfer_state = 556
+			    transfer_state = 899
+			    transfer_state = 898
+			    transfer_state = 781
+			    transfer_state = 778
+			    transfer_state = 777
+			    transfer_state = 786
+			    transfer_state = 782
+			    transfer_state = 539
+			    transfer_state = 772
+			    transfer_state = 713
+			    transfer_state = 320
+			    transfer_state = 286
+			    transfer_state = 671
+			    transfer_state = 310
+			    transfer_state = 553
+			    transfer_state = 554
+			    transfer_state = 8
+			    transfer_state = 35
+			    transfer_state = 736
+			    transfer_state = 42
+			    transfer_state = 51
+			    transfer_state = 55
+			    transfer_state = 57
+			    transfer_state = 56
+			    transfer_state = 7
+			    transfer_state = 36
+			    transfer_state = 42
+			    transfer_state = 55
+			    transfer_state = 51
+			    transfer_state = 57
+			    transfer_state = 56
+			    transfer_state = 677
+			    transfer_state = 680
+			    transfer_state = 799
+                annex_country = {
+                    target = TUR
+                }
+                annex_country = {
+                    target = SAU
+                }
+                annex_country = {
+                    target = IRQ
+                }
+                annex_country = {
+                    target = OMA
+                }
+                annex_country = {
+                    target = YEM
+                }
+                annex_country = {
+                    target = YUG
+                }
+                annex_country = {
+                    target = HUN
+                }
+                annex_country = {
+                    target = CZE
+                }
+                annex_country = {
+                    target = ROM
+                }
+                annex_country = {
+                    target = BUL
+                }
+                annex_country = {
+                    target = ALB
+                }
+                annex_country = {
+                    target = GRE
+                }
+                annex_country = {
+                    target = ITA
+                }
+                annex_country = {
+                    target = ENG
+                }
+                annex_country = {
+                    target = IRE
+                }
+                annex_country = {
+                    target = SWE
+                }
+                annex_country = {
+                    target = FIN
+                }
+                annex_country = {
+                    target = EST
+                }
+                annex_country = {
+                    target = NOR
+                }
+                annex_country = {
+                    target = DEN
+                }
+                annex_country = {
+                    target = DEN
+                }
+                annex_country = {
+                    target = SPR
+                }
+                annex_country = {
+                    target = POR
+                }
+                annex_country = {
+                    target = POL
+                }
+                annex_country = {
+                    target = TUR
+                }
+                set_global_flag = BEL_fin_is_sca
+            }
+            GER = {
+                set_cosmetic_tag = GER_HRE
+                promote_character = GER_regency
+                transfer_state = 20
+			    transfer_state = 32
+			    transfer_state = 21
+			    transfer_state = 851
+			    transfer_state = 22
+			    transfer_state = 31
+			    transfer_state = 26
+			    transfer_state = 25
+			    transfer_state = 33
+			    transfer_state = 23
+			    transfer_state = 19
+			    transfer_state = 806
+			    transfer_state = 741
+			    transfer_state = 670
+			    transfer_state = 728
+			    transfer_state = 635
+			    transfer_state = 734
+                transfer_state = 460
+				transfer_state = 513
+				transfer_state = 459
+				transfer_state = 462
+				transfer_state = 461
+				transfer_state = 514
+				transfer_state = 515
+				transfer_state = 775
+				transfer_state = 774
+				transfer_state = 660
+				transfer_state = 773
+				transfer_state = 776
+                transfer_state = 460
+				transfer_state = 513
+				transfer_state = 459
+				transfer_state = 462
+				transfer_state = 461
+				transfer_state = 514
+				transfer_state = 515
+				transfer_state = 775
+				transfer_state = 774
+				transfer_state = 660
+				transfer_state = 773
+				transfer_state = 776
+                transfer_state = 735
+				transfer_state = 1
+				transfer_state = 268
+				transfer_state = 458
+				transfer_state = 665
+				transfer_state = 543
+				transfer_state = 708
+				transfer_state = 706
+                transfer_state = 39
+				transfer_state = 850
+				transfer_state = 160
+				transfer_state = 736
+				transfer_state = 853
+				transfer_state = 160
+				transfer_state = 159
+				transfer_state = 158
+				transfer_state = 161
+				transfer_state = 162
+				transfer_state = 157
+                transfer_state = 9
+				transfer_state = 75
+                transfer_state = 460
+				transfer_state = 513
+				transfer_state = 459
+				transfer_state = 462
+				transfer_state = 461
+				transfer_state = 514
+				transfer_state = 515
+				transfer_state = 775
+				transfer_state = 774
+				transfer_state = 660
+				transfer_state = 773
+				transfer_state = 776
+                transfer_state = 188
+                transfer_state = 69
+                transfer_state = 74
+                annex_country = {
+                    target = AUS
+                    transfer_troops = yes
+                }
+                transfer_state = 102
+                transfer_state = 852
+                transfer_state = 85
+                transfer_state = 807
+                transfer_state = 86
+                transfer_state = 762
+                transfer_state = 5
+                transfer_state = 763
+                transfer_state = 814
+                transfer_state = 11
+                transfer_state = 189
+                transfer_state = 815
+                transfer_state = 190
+                transfer_state = 809
+                transfer_state = 810
+                transfer_state = 808
+                transfer_state = 12
+                transfer_state = 848
+                transfer_state = 153
+                transfer_state = 152
+                transfer_state = 4
+                annex_country = {
+                    target = LIT
+                    transfer_troops = yes
+                }
+                annex_country = {
+                    target = LAT
+                    transfer_troops = yes
+                }
+                every_state = {
+                    limit = {
+                        OR = {
+                            AND = {
+                                region = 7
+                                NOT = {
+                                    state = 51
+                                    state = 42
+                                    state = 55
+                                }
+                            }
+                            region = 8
+                        }
+                    }
+                    GER = {
+                        transfer_state = PREV
+                    }
+                }
+            }
+            BEL = {
+                country_event = tomboy.26
+                country_event = tomboy.27
+            }
+        }
+    }
+
+    BEL_europe_borders = {
+        available = {
+            is_ai = no
+            is_debug = yes
+        }
+
+        complete_effect = {
+            annex_country = {
+                target = AUS
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = SWI
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = FRA
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = GER
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = ENG
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = LUX
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = HOL
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = SPR
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = POR
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = LIT
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = LAT
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = EST
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = DEN
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = NOR
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = SWE
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = FIN
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = YUG
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = CZE
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = ROM
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = BUL
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = ITA
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = ALB
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = GRE
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = HUN
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = POL
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = IRE
+                transfer_troops = yes
+            }
+        }
+    }
+
+    BEL_add_nukes = {
+        available = {
+            is_ai = no
+            is_debug = yes
+        }
+
+        complete_effect = {
+            BEL = {
+                set_technology = {
+                    atomic_research = 1
+                    nuclear_reactor = 1
+                    nukes = 1
+                }
+                add_nuclear_bombs = 1000
+            }
+        }
+    }
+
+    BEL_loc_test = {
+        available = {
+            is_ai = no
+            is_debug = yes
+        }
+        complete_effect = {
+            USA = {
+                save_event_target_as = LEAVER
+                BEL = {
+                    news_event = tomboynews.1
+                }
+            }
+            GER = {
+                save_event_target_as = LEAVER
+                BEL = {
+                    news_event = tomboynews.1
+                }
+            }
+            ITA = {
+                save_event_target_as = LEAVER
+                BEL = {
+                    news_event = tomboynews.1
+                }
+            }
+            ENG = {
+                save_event_target_as = LEAVER
+                BEL = {
+                    news_event = tomboynews.1
+                }
+            }
+        }
+    }
+}
+
+BEL_puppet_management_category = {
+
+    BEL_reshuffle_cunny_realm = {
+
+        name = BEL_reshuffle_cunny_realm
+
+        available = {
+            original_tag = BEL
+        }
+
+        cost = 150
+
+        visible = {
+            CUN = {
+                is_puppet_of = BEL
+                NOT = {
+                    has_autonomy_state = autonomy_associated_region
+                }
+                has_war = no
+            }
+            NOT = {
+                CUN = {
+                    has_government = BEL
+                }
+            }
+            has_war = no
+        }
+
+        complete_effect = {
+            CUN = {
+                set_politics = {
+                    ruling_party = BEL
+                }
+
+            }
+        }
+    }
+
+    BEL_decrease_dutch_independence = {
+        name = BEL_decrease_dutch_independence
+
+        available = {
+            OR = {
+                AND = {
+                    original_tag = BEL
+                    HOL = {
+                        has_opinion = {
+                            target = BEL
+                            value > 95
+                        }
+                        is_puppet_of = BEL
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        visible = {
+            OR = {
+                HOL = {
+                    AND = {
+                        is_puppet_of = BEL
+                        NOT = {
+                            has_autonomy_state = autonomy_selfgoverning_territory
+                        }
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        cost = 1750
+
+        complete_effect = {
+            if = {
+                limit = {
+                    HOL = {
+                        has_autonomy_state = autonomy_associated_region
+                    }
+                }
+                set_autonomy = {
+                    target = HOL
+                    autonomy_state = autonomy_freestate
+                    end_civil_wars = no
+                    end_wars = no
+                }
+            }
+            else_if = {
+                limit = {
+                    HOL = {
+                        has_autonomy_state = autonomy_freestate
+                    }
+                }
+                set_autonomy = {
+                    target = HOL
+                    autonomy_state = autonomy_selfgoverning_territory
+                    end_civil_wars = no
+                    end_wars = no
+                }
+            }
+            else_if = {
+                limit = {
+                    HOL = {
+                        is_puppet_of = BEL
+                        NOT = {
+                            has_autonomy_state = autonomy_freestate
+                            has_autonomy_state = autonomy_associated_region
+                            has_autonomy_state = autonomy_selfgoverning_territory
+                        }
+                    }
+                }
+                set_autonomy = {
+                    target = HOL
+                    autonomy_state = autonomy_freestate
+                }
+            }
+        }
+    }
+
+    BEL_annex_netherlands = {
+        name = BEL_annex_netherlands
+
+        available = {
+            OR = {
+                AND = {
+                    original_tag = BEL
+                    HOL = {
+                        has_opinion = {
+                            target = BEL
+                            value > 95
+                        }
+                        has_autonomy_state = autonomy_selfgoverning_territory
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        visible = {
+            OR = {
+                HOL = {
+                    is_puppet_of = BEL
+                }
+                is_debug = yes
+            }
+        }
+
+        cost = 2000
+
+        complete_effect = {
+            annex_country = {
+                target = HOL
+                transfer_troops = yes
+            }
+        }
+    }
+
+    BEL_decrease_luxembourgish_independence = {
+        name = BEL_decrease_luxembourgish_independence
+
+        available = {
+            OR = {
+                AND = {
+                    original_tag = BEL
+                    LUX = {
+                        has_opinion = {
+                            target = BEL
+                            value > 95
+                        }
+                        is_puppet_of = BEL
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        visible = {
+            OR = {
+                LUX = {
+                    AND = {
+                        is_puppet_of = BEL
+                        NOT = {
+                            has_autonomy_state = autonomy_selfgoverning_territory
+                        }
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        cost = 1750
+
+        complete_effect = {
+            if = {
+                limit = {
+                    LUX = {
+                        has_autonomy_state = autonomy_associated_region
+                    }
+                }
+                set_autonomy = {
+                    target = LUX
+                    autonomy_state = autonomy_freestate
+                    end_civil_wars = no
+                    end_wars = no
+                }
+            }
+            else_if = {
+                limit = {
+                    LUX = {
+                        has_autonomy_state = autonomy_freestate
+                    }
+                }
+                set_autonomy = {
+                    target = LUX
+                    autonomy_state = autonomy_selfgoverning_territory
+                    end_civil_wars = no
+                    end_wars = no
+                }
+            }
+            else_if = {
+                limit = {
+                    LUX = {
+                        is_puppet_of = BEL
+                        NOT = {
+                            has_autonomy_state = autonomy_freestate
+                            has_autonomy_state = autonomy_associated_region
+                            has_autonomy_state = autonomy_selfgoverning_territory
+                        }
+                    }
+                }
+                set_autonomy = {
+                    target = LUX
+                    autonomy_state = autonomy_freestate
+                }
+            }
+        }
+    }
+
+    BEL_annex_luxembourg = {
+        name = BEL_annex_luxembourg
+
+        available = {
+            OR = {
+                AND = {
+                    original_tag = BEL
+                    LUX = {
+                        has_opinion = {
+                            target = BEL
+                            value > 95
+                        }
+                        has_autonomy_state = autonomy_selfgoverning_territory
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        visible = {
+            OR = {
+                LUX = {
+                    is_puppet_of = BEL
+                }
+                is_debug = yes
+            }
+        }
+
+        cost = 2000
+
+        complete_effect = {
+            annex_country = {
+                target = LUX
+                transfer_troops = yes
+            }
+        }
+    }
+}
+
+BEL_domestic_category = {
+
+    BEL_domestic_language = {
+        
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            has_war = no
+            # BEL
+            owns_state = 34
+            owns_state = 6
+            # LUX
+            owns_state = 8
+            # HOL
+            owns_state = 35
+            owns_state = 7
+            owns_state = 36
+            # FRA
+            owns_state = 29
+            owns_state = 785
+            owns_state = 17
+            owns_state = 18
+            owns_state = 785
+            owns_state = 29
+            owns_state = 15
+            owns_state = 16
+            owns_state = 27
+            owns_state = 24
+            owns_state = 30
+            owns_state = 14
+            # GER
+            owns_state = 42
+            owns_state = 51
+            owns_state = 55
+            owns_state = 57
+            owns_state = 56
+        }
+
+        cost = 250
+
+        complete_effect = {
+            country_event = tomboy.46
+        }
+    }
+
+    BEL_core_everything = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            OR = {
+                AND = {
+                    OR = {
+                        has_completed_focus = BEL_monarchism_war_euronia # Monarchist
+                        has_completed_focus = BEL_monafash_isolationism_consolidate_euronia # Monafash
+                    }
+                    any_owned_state = {
+                        NOT = {
+                            is_core_of = BEL
+                        }
+                    }
+                    has_war = no
+                }
+                is_debug = yes
+            }
+        }
+
+        cost = 2000
+
+        days_remove = 75
+        days_re_enable = 200
+
+        remove_effect = {
+            every_owned_state = {
+                limit = {
+                    NOT = {
+                        is_core_of = BEL
+                    }
+                }
+                add_core_of = BEL
+            }
+        }
+    }
+
+}
+
+BEL_britain_destabilization_category = {
+
+    # Send economic aid
+    BEL_send_eco_aid = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            ENG = {
+                has_stability < 0.45 # Make sure you can't mess with civil war stuff
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_global_flag = BEL_destabilizing_england_in_process
+                }
+                tooltip = BEL_britain_destabilization_running
+            }
+        }
+
+        cost = 50
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                add = 5
+                ENG = {
+                    has_opinion = {
+                        target = BEL # 95 opinion or below
+                        value < 96
+                    }
+                    has_opinion = {
+                        target = BEL # 75 opinion or above
+                        value > 74   # Aka. Between 75 and 95 opinion
+                    }
+                }
+            }
+            modifier = {
+                add = 10
+                ENG = {
+                    has_opinion = {
+                        target = BEL # 74 opinion or below
+                        value < 75
+                    }
+                    has_opinion = {
+                        target = BEL # 50 opinion or above
+                        value > 49   # Aka. Between 50 and 74 opinion
+                    }
+                }
+            }
+            modifier = {
+                add = 15
+                ENG = {
+                    has_opinion = {
+                        target = BEL # 49 opinion or below
+                        value < 50
+                    }
+                    has_opinion = {
+                        target = BEL # 25 opinion or above
+                        value > 24   # Aka. Between 25 and 49 opinion
+                    }
+                }
+            }
+            modifier = {
+                add = 20
+                ENG = {
+                    has_opinion = {
+                        target = BEL # 24 opinion or below
+                        value < 25
+                    }
+                    has_opinion = {
+                        target = BEL # 10 opinion or above
+                        value > 9   # Aka. Between 24 and 10 opinion
+                    }
+                }
+            }
+            modifier = {
+                add = 50
+                ENG = {
+                    has_opinion = {
+                        target = BEL # 9 opinion or below
+                        value < 10
+                    }
+                }
+            }
+        }
+
+        days_remove = 7
+
+        days_re_enable = 45
+
+        complete_effect = {
+            ENG = {
+                add_stability = 0.05
+                add_opinion_modifier = {
+                    target = BEL
+                    modifier = BEL_thankful
+                }
+            }
+            set_country_flag = {
+                flag = BEL_destabilizing_england_in_process
+                days = 7
+            }
+            # Add flavor event 
+        }
+    }
+    
+    # Flood their market with our goods
+    BEL_flood_market = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            ENG = {
+                has_opinion = {
+                    target = BEL
+                    value > -1
+                }
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_global_flag = BEL_destabilizing_england_in_process
+                }
+                tooltip = BEL_britain_destabilization_running
+            }
+        }
+
+        cost = 100
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                add = 10
+                has_opinion = {
+                    target = ENG # Bigger than 4, to make sure the Brits don't start hating us
+                    value > 4
+                }
+            }
+            modifier = {
+                add = -20
+                has_opinion = {
+                    target = ENG # Don't do it if we'd make them angry.
+                    value < 5
+                }
+            }
+            modifier = {
+                add = -500
+                is_in_faction_with = ENG
+            }
+        }
+
+        days_remove = 7
+
+        days_re_enable = 45
+
+        complete_effect = {
+            ENG = {
+                add_stability = -0.02
+                add_opinion_modifier = {
+                    target = BEL
+                    modifier = BEL_slight_suspicion # -5 opinion
+                }
+            }
+            set_country_flag = {
+                flag = BEL_destabilizing_england_in_process
+                days = 7
+            }
+        }
+    }
+
+    # Export anti-British propaganda
+    BEL_export_anti_british_propaganda = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            ENG = {
+                has_opinion = {
+                    target = BEL
+                    value > 14
+                }
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_global_flag = BEL_destabilizing_england_in_process
+                }
+                tooltip = BEL_britain_destabilization_running
+            }
+        }
+
+        cost = 150
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                add = 10
+                has_opinion = {
+                    target = ENG # At least 15 to avoid them hating us
+                    value > 14
+                }
+            }
+            modifier = {
+                add = -20
+                has_opinion = {
+                    target = ENG # Avoid them hating us
+                    value < 15
+                }
+            }
+            modifier = {
+                add = -500
+                is_in_faction_with = ENG
+            }
+        }
+
+        days_remove = 7
+
+        days_re_enable = 45
+
+        complete_effect = {
+            ENG = {
+                add_stability = -0.04
+                add_opinion_modifier = {
+                    target = BEL
+                    modifier = BEL_medium_suspicion # -15 opinion
+                }
+            }
+            set_country_flag = {
+                flag = BEL_destabilizing_england_in_process
+                days = 7
+            }
+        }
+    }
+    
+    # Print fake British money
+    BEL_print_british_money = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            ENG = {
+                has_opinion = {
+                    target = BEL
+                    value > 19
+                }
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_global_flag = BEL_destabilizing_england_in_process
+                }
+                tooltip = BEL_britain_destabilization_running
+            }
+        }
+
+        cost = 175
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                add = 10
+                has_opinion = {
+                    target = ENG # At least 20 to avoid them hating us
+                    value > 19
+                }
+            }
+            modifier = {
+                add = -20
+                has_opinion = {
+                    target = ENG # Avoid them hating us
+                    value < 20
+                }
+            }
+            modifier = {
+                add = -500
+                is_in_faction_with = ENG
+            }
+        }
+
+        days_remove = 7
+
+        days_re_enable = 45
+
+        complete_effect = {
+            ENG = {
+                add_stability = -0.06
+                add_opinion_modifier = {
+                    target = BEL
+                    modifier = BEL_large_suspicion # -20 opinion
+                }
+            }
+            set_country_flag = {
+                flag = BEL_destabilizing_england_in_process
+                days = 7
+            }
+            # Add flavor news about "Fake money found"
+        }
+    }
+
+    # Recognize British breakaway states
+    BEL_recognize_breakaway_states = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            ENG = {
+                has_stability < 0.25
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_global_flag = BEL_destabilizing_england_in_process
+                }
+                tooltip = BEL_britain_destabilization_running
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_country_flag = BEL_recognized_british_breakaway_states
+                }
+                tooltip = BEL_britain_recognize_breakaways
+            }
+        }
+
+        cost = 250
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                add = 20
+                has_opinion = {
+                    target = ENG # If WE dislike England, we'll probably do it
+                    value < 1
+                }
+            }
+            modifier = {
+                add = -5
+                has_opinion = {
+                    target = ENG # If WE like England, we'll probably not do it
+                    value > 0
+                }
+            }
+            modifier = {
+                factor = 0
+                is_in_faction_with = ENG # If we're allies, don't destabilize
+            }
+        }
+        
+        days_remove = 7
+
+        days_re_enable = 45
+
+        complete_effect = {
+            ENG = {
+                add_stability = -0.1
+            }
+            add_opinion_modifier = {
+                target = BEL
+                modifier = BEL_recognize_breakaways
+            }
+            set_country_flag = {
+                flag = BEL_manipulated_britain
+                days = 7
+            }
+            set_country_flag = BEL_recognized_british_breakaway_states
+        }
+    }
+
+    # Recognize Northern Ireland as Irish for support
+    BEL_recognize_unified_ireland_for_support = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            ENG = {
+                has_opinion = {
+                    target = BEL
+                    value > 0
+                }
+            }
+            IRE = {
+                exists = yes
+            }
+            NOT = {
+                has_global_flag = BEL_asked_ireland
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_global_flag = BEL_destabilizing_england_in_process
+                }
+                tooltip = BEL_britain_destabilization_running
+            }
+            custom_trigger_tooltip = {
+                has_country_flag = BEL_recognized_british_breakaway_states
+
+                tooltip = BEL_britain_recognize_breakaways_true
+            }
+        }
+
+        days_remove = 7
+
+        cost = 150
+
+        ai_will_do = {
+            modifier = {
+                add = 5
+                has_opinion = {
+                    target = ENG # If WE dislike England, we'll probably do it
+                    value < 1
+                }
+            }
+            modifier = {
+                add = -5
+                has_opinion = {
+                    target = ENG # If WE like England, we'll probably not do it
+                    value > 0
+                }
+            }
+            modifier = {
+                add = 55
+                IRE = {
+                    num_divisions > ENG.num_divisions
+                }
+                ROOT = {
+                    num_divisions < ENG.num_divisions
+                }
+            }
+            modifier = {
+                add = 35
+                IRE = {
+                    num_divisions > ENG.num_divisions
+                }
+                ROOT = {
+                    num_divisions > ENG.num_divisions
+                }
+            }
+            modifier = {
+                add = 10
+                has_opinion = {
+                    target = IRE
+                    value > 14
+                }
+            }
+            modifier = {
+                factor = 0
+                is_in_faction_with = ENG # If we're allies, don't destabilize
+            }
+        }
+
+        complete_effect = {
+            IRE = {
+                country_event = tomboy.12
+            }
+            set_global_flag = BEL_asked_ireland
+            set_country_flag = {
+                flag = BEL_manipulated_britain
+                days = 7
+            }
+        }
+    }
+
+    # Partition Britain with Breakaways (War!)
+    BEL_breakaways_partition_britain = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            ENG = {
+                has_stability < 0.1
+            }
+            custom_trigger_tooltip = {
+                has_country_flag = BEL_recognized_british_breakaway_states
+
+                tooltip = BEL_britain_recognize_breakaways_true
+            }
+        }
+
+        cost = 350
+
+        war_with_on_timeout = ENG
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                add = 15
+                ROOT = {
+                    num_divisions > ENG.num_divisions # If we're stronger, add some
+                }
+            }
+            modifier = {
+                factor = 0
+                is_in_faction_with = ENG
+            }
+            modifier = {
+                add = -15
+                has_opinion = {
+                    target = ENG
+                    value > 0
+                }
+            }
+        }
+
+        days_remove = 7
+
+        days_re_enable = 45
+
+        complete_effect = {
+            hidden_effect = {
+                WLS = {
+                    transfer_state = 122
+                    add_state_claim = 123
+                    add_state_claim = 338
+                    add_state_claim = 128
+                    add_state_claim = 132
+                    declare_war_on = {
+                        target = ENG
+                        type = independence_wargoal
+                    }
+                }
+                SCO = {
+                    transfer_state = 133
+                    transfer_state = 121
+                    transfer_state = 136
+                    transfer_state = 120
+                    transfer_state = 933
+                    add_state_claim = 931
+                    add_state_claim = 131
+                    add_state_claim = 130
+                    add_to_war = {
+                        targeted_alliance = WLS
+                        enemy = ENG
+                    }
+                }
+                if = {
+                    limit = {
+                        has_global_flag = BEL_ireland_pledged_support
+                    }
+                    IRE = {
+                        add_state_claim = 119
+                        add_to_war = {
+                            targeted_alliance = WLS
+                            enemy = ENG
+                        }
+                    }
+                }
+                else = {
+                    NIR = {
+                        transfer_state = 119
+                        add_to_war = {
+                            targeted_alliance = WLS
+                            enemy = ENG
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    has_global_flag = BEL_ireland_pledged_support
+                }
+                custom_effect_tooltip = BEL_breakaways_wls_sco_ire_effect
+            }
+            else = {
+                custom_effect_tooltip = BEL_breakaways_wls_sco_nir_effect
+            }
+            BEL = {
+                add_state_claim = 127
+                add_state_claim = 126
+                add_state_claim = 125
+                add_state_claim = 129
+                country_event = tomboy.18
+            }
+            set_country_flag = {
+                flag = BEL_manipulated_britain
+                days = 7
+            }
+            set_global_flag = BEL_britain_broken
+            # Add a flavor news event to everyone about Britain falling apart.
+        }
+    }
+
+    # Suggest subjugation
+    BEL_suggest_subjugation = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            ENG = {
+                has_stability < 0.1
+            }
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_country_flag = BEL_asked_eng_for_subjugation
+                }
+                tooltip = BEL_has_asked_eng_for_subjugation_tt
+            }
+        }
+
+        cost = 350
+
+        days_remove = 7
+
+        ai_will_do = {
+            base = 30
+        }
+
+        complete_effect = {
+            ENG = {
+                country_event = tomboy.20
+            }
+            set_country_flag = BEL_asked_eng_for_subjugation
+            set_country_flag = {
+                flag = BEL_manipulated_britain
+                days = 7
+            }
+        }
+    }
+
+}
+
+BEL_britain_request_states = {
+
+    # Request control of Sussex
+    BEL_request_sussex = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            127 = {
+                owner = {
+                    NOT = {
+                        tag = BEL
+                    }
+                    controls_state = PREV
+                    has_war = no
+                }
+            }
+            NOT = {
+                has_country_flag = BEL_asked_for_state
+            }
+        }
+
+        cost = 100
+
+        ai_will_do = {
+            base = 50
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            add_to_variable = {
+                var = BEL_request_state_number
+                value = 127
+            }
+            127 = {
+                owner = {
+                    country_event = tomboy.30
+                }
+            }
+            set_country_flag = {
+                flag = BEL_asked_for_state
+                days = 30
+            }
+        }
+    }
+
+    # Request control of East Anglia
+    BEL_request_east_anglia = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            125 = {
+                owner = {
+                    NOT = {
+                        tag = BEL
+                    }
+                    controls_state = PREV
+                    has_war = no
+                }
+            }
+            NOT = {
+                has_country_flag = BEL_asked_for_state
+            }
+        }
+
+        cost = 100
+
+        ai_will_do = {
+            base = 50
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            add_to_variable = {
+                var = BEL_request_state_number
+                value = 125
+            }
+            125 = {
+                owner = {
+                    country_event = tomboy.30
+                }
+            }
+            set_country_flag = {
+                flag = BEL_asked_for_state
+                days = 30
+            }
+        }
+    }
+
+    # Request control of East Midlands
+    BEL_request_east_midlands = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            129 = {
+                owner = {
+                    NOT = {
+                        tag = BEL
+                    }
+                    controls_state = PREV
+                    has_war = no
+                }
+            }
+            NOT = {
+                has_country_flag = BEL_asked_for_state
+            }
+        }
+
+        cost = 100
+
+        ai_will_do = {
+            base = 50
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            add_to_variable = {
+                var = BEL_request_state_number
+                value = 129
+            }
+            129 = {
+                owner = {
+                    country_event = tomboy.30
+                }
+            }
+            set_country_flag = {
+                flag = BEL_asked_for_state
+                days = 30
+            }
+        }
+    }
+
+    # Request control of London
+    BEL_request_london = {
+        allowed = {
+            original_tag = BEL
+        }
+        
+        visible = {
+            126 = {
+                owner = {
+                    NOT = {
+                        tag = BEL
+                    }
+                    controls_state = PREV
+                    has_war = no
+                }
+            }
+            NOT = {
+                has_country_flag = BEL_asked_for_state
+            }
+        }
+
+        cost = 100
+
+        ai_will_do = {
+            base = 50
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            add_to_variable = {
+                var = BEL_request_state_number
+                value = 126
+            }
+            126 = {
+                owner = {
+                    country_event = tomboy.30
+                }
+            }
+            set_country_flag = {
+                flag = BEL_asked_for_state
+                days = 30
+            }
+        }
+    }
+}
+
+BEL_germany_hte_bavaria_decisions = {
+
+    BEL_germany_form_hte = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            OR = {
+                AND = {
+                    if = {
+                        limit = {
+                            BEL = {
+                                has_country_flag = BEL_monafash_can_form_hte
+                            }
+                        }
+                        GER = {
+                            is_puppet_of = BEL
+                        }
+                    }
+                    # if = {
+                        # Use this template for further focuses that allow the HTE. This is for showing the
+                        # Player what they have to do depending on the route they went on.
+                    #}
+                }
+                is_debug = yes
+            }
+        }
+
+        visible = {
+            OR = {
+                has_country_flag = BEL_monafash_can_form_hte # BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte
+                is_debug = yes
+            }
+            OR = {
+                GER = {
+                    NOT = {
+                        exists = yes
+                        has_cosmetic_tag = GER_HRE
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        cost = 1250
+
+        complete_effect = {
+            if = {
+                limit = {
+                    GER = {
+                        exists = no
+                    }
+                }
+                every_state = {
+                    limit = {
+                        is_core_of = GER
+                        NOT = {
+                            state = 50
+                            state = 52
+                            state = 53
+                            state = 54
+                            state = 848
+                            state = 153
+                            state = 152
+                            state = 4
+                            state = 69
+                            state = 9
+                            state = 75
+                            state = 74
+						    is_core_of = BEL
+                        }
+                        owner = {
+                            OR = {
+                                tag = BEL
+                                is_puppet_of = BEL
+                            }
+                        }
+                    }
+                    transfer_state_to = GER
+                }
+                GER = {
+                    BEL = {
+                        puppet = PREV
+                    }
+                    set_cosmetic_tag = GER_HRE
+                }
+            }
+            else_if = {
+                limit = {
+                    GER = {
+                        exists = yes
+                        is_puppet_of = BEL
+                        NOT = {
+                            has_cosmetic_tag = GER_HRE
+                        }
+                    }
+                }
+                set_cosmetic_tag = GER_HRE
+            }
+        }
+
+    }
+
+    BEL_bavaria_fix_bavaria = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            OR = {
+                if = {
+                    limit = {
+                        has_completed_focus = BEL_monarchism_germany_justice_chosen
+                    }
+                    AND = {
+                        BAY = {
+                            OR = {
+                                exists = no
+                                AND = {
+                                    NOT = {
+                                        has_cosmetic_tag = BAY_FEM
+                                        BEL = {
+                                            has_country_flag = BEL_germany_justice_chose_wittelsbachs
+                                        }
+                                    }
+                                    is_puppet_of = BEL
+                                }
+                            }
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_flag = BEL_monafash_can_form_hte
+                    }
+                    AND = {
+                        BAY = {
+                            OR = {
+                                exists = no
+                                NOT = {
+                                    has_cosmetic_tag = BAY_FEM
+                                }
+                            }
+                        }
+                        NOT = {
+                            has_country_flag = BEL_germany_justice_chose_wittelsbachs
+                        }
+                    }
+                }
+                is_debug = yes
+            }
+        }
+
+        visible = {
+            OR = {
+                has_country_flag = BEL_monafash_can_form_hte
+                has_completed_focus = BEL_monarchism_germany_justice_chosen
+                is_debug = yes
+            }
+        }
+
+        cost = 1250
+
+        complete_effect = {
+            if = {
+                limit = {
+                    BAY = {
+                        exists = no
+                    }
+                }
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 50
+                            state = 52
+                            state = 53
+                            state = 54
+                            state = 848
+                            state = 153
+                            state = 152
+                            state = 4
+                            state = 69
+                            state = 9
+                            state = 75
+                            state = 74
+                        }
+                        owner = {
+                            OR = {
+                                tag = BEL
+                                AND = {
+                                    is_puppet_of = BEL
+                                    NOT = {
+                                        tag = BAY
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    transfer_state_to = BAY
+                }
+                BEL = {
+                    puppet = BAY
+                }
+                if = {
+                    limit = {
+                        BEL = {
+                            has_country_flag = BEL_germany_justice_chose_wittelsbachs
+                        }
+                    }
+                    BAY = {
+                        promote_character = BAY_rupprecht_leader
+                    }
+                }
+                else_if = {
+                    limit = {
+                        BEL = {
+                            has_country_flag = BEL_germany_justice_chose_femboys
+                        }
+                    }
+                    BAY = {
+                        promote_character = BAY_astolfo_leader
+                        set_cosmetic_tag = BAY_FEM
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = BEL_monafash_can_form_hte
+                    }
+                    BEL = {
+                        country_event = tomboy.26
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    BAY = {
+                        AND = {
+                            BAY_astolfo_leader = {
+                                is_country_leader = no
+                            }
+                            BAY_rupprecht_leader = {
+                                is_country_leader = no
+                            }
+                            has_government = neutrality
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        BEL = {
+                            has_country_flag = BEL_germany_justice_chose_wittelsbachs
+                        }
+                    }
+                    BAY = {
+                        promote_character = BAY_rupprecht_leader
+                    }
+                }
+                else_if = {
+                    limit = {
+                        BEL = {
+                            has_country_flag = BEL_germany_justice_chose_femboys
+                        }
+                    }
+                    BAY = {
+                        promote_character = BAY_astolfo_leader
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    BEL = {
+                        has_country_flag = BEL_germany_justice_chose_femboys
+                    }
+                    BAY = {
+                        BAY_astolfo_leader = {
+                            is_country_leader = no
+                        }
+                    }
+                }
+                BAY = {
+                    promote_character = BAY_astolfo_leader
+                }
+            }
+            else_if = {
+                limit = {
+                    BEL = {
+                        has_country_flag = BEL_germany_justice_chose_wittelsbachs
+                    }
+                    BAY = {
+                        BAY_rupprecht_leader = {
+                            is_country_leader = no
+                        }
+                    }
+                }
+                BAY = {
+                    promote_character = BAY_rupprecht_leader
+                }
+            }
+            else_if = {
+                limit = {
+                    BEL = {
+                        has_country_flag = BEL_germany_justice_chose_femboys
+                    }
+                    BAY = {
+                        NOT = {
+                            has_cosmetic_tag = BAY_FEM
+                        }
+                    }
+                }
+                BAY = {
+                    set_cosmetic_tag = BAY_FEM
+                }
+            }
+            else_if = {
+                limit = {
+                    has_country_flag = BEL_monafash_can_form_hte
+                }
+                BEL = {
+                    country_event = tomboy.27
+                }
+            }
+        }
+    }
+
+    BEL_establish_cunny_realm = {
+
+        name = BEL_land_the_lolis
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            has_war = no
+
+            OR = {
+                owns_state = 785
+                owns_state = 18
+                owns_state = 28
+                owns_state = 17
+                owns_state = 27
+                owns_state = 16
+                owns_state = 24
+                owns_state = 15
+                owns_state = 30
+                owns_state = 14
+            }
+        }
+
+        visible = {
+            OR = {
+                always = yes
+                is_debug = yes
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    CUN = {
+                        exists = no
+                    }
+                }
+                set_autonomy = {
+                    target = CUN
+                    autonomy_state = autonomy_selfgoverning_territory
+                    end_civil_wars = no
+                    end_wars = no
+                }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 785
+                       owns_state = 785
+                   }
+               }
+               CUN = {
+                    add_state_core = 785
+                    transfer_state = 785
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 18
+                       owns_state = 18
+                   }
+               }
+               CUN = {
+                    add_state_core = 18
+                    transfer_state = 18
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 28
+                       owns_state = 28
+                   }
+               }
+               CUN = {
+                    add_state_core = 18
+                    transfer_state = 28
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 17
+                       owns_state = 17
+                   }
+               }
+               CUN = {
+                    add_state_core = 17
+                   transfer_state = 17
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                        controls_state = 27
+                        owns_state = 27
+                   }
+               }
+               CUN = {
+                    add_state_core = 27
+                    transfer_state = 27
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 16
+                       owns_state = 16
+                   }
+               }
+               CUN = {
+                    add_state_core = 16
+                    transfer_state = 16
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 24
+                       owns_state = 24
+                   }
+               }
+               CUN = {
+                    add_state_core = 24
+                    transfer_state = 24
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 15
+                       owns_state = 15
+                   }
+               }
+               CUN = {
+                    add_state_core = 15
+                    transfer_state = 15
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 30
+                       owns_state = 30
+                   }
+               }
+               CUN = {
+                    add_state_core = 30
+                    transfer_state = 30
+               }
+            }
+            if = {
+               limit = {
+                   BEL = {
+                       controls_state = 14
+                       owns_state = 14
+                   }
+               }
+               CUN = {
+                    add_state_core = 14
+                    transfer_state = 14
+               }
+            }
+        }
+    }
+}
+
+BEL_germany_freedom_decisions_enable = {
+
+    BEL_germany_free_wurttemberg = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 50
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    WUR = { exists = no }
+                }
+                WUR = {
+                    transfer_state = 50
+                }
+                puppet = WUR
+            }
+            else = {
+                WUR = {
+                    transfer_state = 50
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_austria = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 4
+            controls_state = 152
+            controls_state = 153
+            controls_state = 848
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    AUS = { exists = no }
+                }
+                AUS = {
+                    transfer_state = 4
+                    transfer_state = 152
+                    transfer_state = 153
+                    transfer_state = 848
+                }
+                puppet = AUS
+            }
+            else = {
+                AUS = {
+                    transfer_state = 4
+                    transfer_state = 152
+                    transfer_state = 153
+                    transfer_state = 848
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_bayern = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 52
+            controls_state = 53
+            controls_state = 54
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    BAY = { exists = no }
+                }
+                BAY = {
+                    transfer_state = 52
+                    transfer_state = 53
+                    transfer_state = 54
+                }
+                puppet = AUS
+            }
+            else = {
+                BAY = {
+                    transfer_state = 52
+                    transfer_state = 53
+                    transfer_state = 54
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_sachsen = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 65
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    SAX = { exists = no }
+                }
+                SAX = {
+                    transfer_state = 65
+                }
+                puppet = SAX
+            }
+            else = {
+                SAX = {
+                    transfer_state = 65
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_hannover = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 59
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    HAN = { exists = no }
+                }
+                HAN = {
+                    transfer_state = 59
+                }
+                puppet = HAN
+            }
+            else = {
+                HAN = {
+                    transfer_state = 59
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_schleswig_holstein = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 58
+            controls_state = 909
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    SHL = { exists = no }
+                }
+                SHL = {
+                    transfer_state = 58
+                    transfer_state = 909
+                    if = {
+                        limit = {
+                            BEL = {
+                                owns_state = 912
+                            }
+                        }
+                        transfer_state = 912
+                    }
+                }
+                puppet = SHL
+            }
+            else = {
+                SHL = {
+                    transfer_state = 58
+                    transfer_state = 909
+                    if = {
+                        limit = {
+                            BEL = {
+                                owns_state = 912
+                            }
+                        }
+                        transfer_state = 912
+                    }
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_mecklenburg = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 61
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    MEK = { exists = no }
+                }
+                MEK = {
+                    transfer_state = 61
+                }
+                puppet = MEK
+            }
+            else = {
+                MEK = {
+                    transfer_state = 61
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_schlesien = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 66
+            controls_state = 67
+            controls_state = 762
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    SIL = { exists = no }
+                }
+                SIL = {
+                    transfer_state = 66
+                    transfer_state = 67
+                    transfer_state = 762
+                }
+                puppet = SIL
+            }
+            else = {
+                SIL = {
+                    transfer_state = 66
+                    transfer_state = 67
+                    transfer_state = 762
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_kaschubei = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 63
+            controls_state = 807
+            controls_state = 85
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    KSH = { exists = no }
+                }
+                KSH = {
+                    transfer_state = 63
+                    transfer_state = 807
+                    transfer_state = 85
+                }
+                puppet = KSH
+            }
+            else = {
+                KSH = {
+                    transfer_state = 63
+                    transfer_state = 807
+                    transfer_state = 85
+                }
+            }
+        }
+    }
+
+    BEL_germany_free_preussen = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_germany_freedom_decisions_enable
+        }
+
+        available = {
+            has_war = no
+            controls_state = 60
+            controls_state = 64
+            controls_state = 68
+            controls_state = 86
+            controls_state = 5
+            controls_state = 763
+            controls_state = 188
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    PRE = { exists = no }
+                }
+                PRE = {
+                    transfer_state = 60
+                    transfer_state = 64
+                    transfer_state = 68
+                    transfer_state = 86
+                    transfer_state = 5
+                    transfer_state = 763
+                    transfer_state = 188
+                }
+                puppet = PRE
+            }
+            else = {
+                PRE = {
+                    transfer_state = 60
+                    transfer_state = 64
+                    transfer_state = 68
+                    transfer_state = 86
+                    transfer_state = 5
+                    transfer_state = 763
+                    transfer_state = 188
+                }
+            }
+        }
+    }
+
+}
+
+BEL_monafash_bop_decisions_category = {
+
+    BEL_monafash_bop_fash_recruit_paramilitaries = {
+
+        allowed = {
+            tag = BEL
+        }
+
+        available = {
+            has_political_power > 99
+        }
+
+        complete_effect = {
+            add_ideas = BEL_idea_extra_recruits
+            add_power_balance_value = {
+                id = BEL_bop_monafash
+                value = 0.05
+            }
+        }
+
+        cost = 150
+
+        days_remove = 50
+
+        remove_effect = {
+            remove_ideas = BEL_idea_extra_recruits
+        }
+    }
+}
+
+BEL_colonial_management_category = {
+
+    BEL_establish_african_colonial_government = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_established_colonial_government
+        }
+
+        available = {
+            any_owned_state = {
+                is_on_continent = africa
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            every_owned_state = {
+                limit = {
+                    is_on_continent = africa
+                }
+                TBA = {
+                    transfer_state = prev
+                }
+            }
+            if = {
+                limit = {
+                    TBA = {
+                        exists = yes
+                        is_puppet = no
+                    }
+                }
+                BEL = {
+                    set_autonomy = {
+                        target = TBA
+                        autonomy_state = autonomy_associated_region
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    TBA = {
+                        owns_state = 458
+                        458 = {
+                            is_capital = no
+                        }
+                    }
+                }
+                TBA = {
+                    set_capital = {
+                        state = 458
+                    }
+                }
+            }
+        }
+    }
+
+    BEL_establish_asian_colonial_government = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_established_colonial_government
+        }
+
+        available = {
+            any_owned_state = {
+                is_on_continent = asia
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            every_owned_state = {
+                limit = {
+                    is_on_continent = asia
+                }
+                TBS = {
+                    transfer_state = prev
+                }
+            }
+            if = {
+                limit = {
+                    TBS = {
+                        exists = yes
+                        is_puppet = no
+                    }
+                }
+                BEL = {
+                    set_autonomy = {
+                        target = TBS
+                        autonomy_state = autonomy_associated_region
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    TBS = {
+                        owns_state = 613
+                        613 = {
+                            is_capital = no
+                        }
+                    }
+                }
+                TBS = {
+                    set_capital = {
+                        state = 613
+                    }
+                }
+            }
+        }
+    }
+
+    BEL_establish_middle_east_colonial_government = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_established_colonial_government
+        }
+
+        available = {
+            any_owned_state = {
+                is_on_continent = middle_east
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            every_owned_state = {
+                limit = {
+                    is_on_continent = middle_east
+                }
+                TBE = {
+                    transfer_state = prev
+                }
+            }
+            if = {
+                limit = {
+                    TBE = {
+                        is_puppet = no
+                    }
+                }
+                BEL = {
+                    set_autonomy = {
+                        target = TBE
+                        autonomy_state = autonomy_associated_region
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    TBE = {
+                        owns_state = 454
+                        454 = {
+                            is_capital = no
+                        }
+                    }
+                }
+                TBE = {
+                    set_capital = {
+                        state = 454
+                    }
+                }
+            }
+        }
+    }
+
+    BEL_establish_north_america_colonial_government = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_established_colonial_government
+        }
+
+        available = {
+            any_owned_state = {
+                is_on_continent = north_america
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            every_owned_state = {
+                limit = {
+                    is_on_continent = north_america
+                }
+                TBN = {
+                    transfer_state = prev
+                }
+            }
+            if = {
+                limit = {
+                    TBN = {
+                        is_puppet = no
+                    }
+                }
+                BEL = {
+                    set_autonomy = {
+                        target = TBN
+                        autonomy_state = autonomy_associated_region
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    TBN = {
+                        owns_state = 358
+                        358 = {
+                            is_capital = no
+                        }
+                    }
+                }
+                TBN = {
+                    set_capital = {
+                        state = 358
+                    }
+                }
+            }
+        }
+    }
+
+    BEL_establish_oceania_colonial_government = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_established_colonial_government
+        }
+
+        available = {
+            any_owned_state = {
+                is_on_continent = australia
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            every_owned_state = {
+                limit = {
+                    is_on_continent = australia
+                }
+                TBO = {
+                    transfer_state = prev
+                }
+            }
+            if = {
+                limit = {
+                    TBO = {
+                        is_puppet = no
+                    }
+                }
+                BEL = {
+                    set_autonomy = {
+                        target = TBO
+                        autonomy_state = autonomy_associated_region
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    TBO = {
+                        owns_state = 285
+                        285 = {
+                            is_capital = no
+                        }
+                    }
+                }
+                TBO = {
+                    set_capital = {
+                        state = 285
+                    }
+                }
+            }
+        }
+    }
+
+    BEL_establish_south_america_colonial_government = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_country_flag = BEL_established_colonial_government
+        }
+
+        available = {
+            any_owned_state = {
+                is_on_continent = south_america
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            every_owned_state = {
+                limit = {
+                    is_on_continent = south_america
+                }
+                TBU = {
+                    transfer_state = prev
+                }
+            }
+            if = {
+                limit = {
+                    TBU = {
+                        is_puppet = no
+                    }
+                }
+                BEL = {
+                    set_autonomy = {
+                        target = TBU
+                        autonomy_state = autonomy_associated_region
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    TBU = {
+                        owns_state = 500
+                        500 = {
+                            is_capital = no
+                        }
+                    }
+                }
+                TBU = {
+                    set_capital = {
+                        state = 500
+                    }
+                }
+            }
+        }
+    }
+
+}

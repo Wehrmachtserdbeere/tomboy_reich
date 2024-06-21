@@ -1,0 +1,20 @@
+﻿l_english:
+  BEL_bop_monafash: "Monarcho-Fascist Balance"
+
+  BEL_bop_monafash_monarchists: "Monarchists"
+  BEL_bop_monafash_monarchists_low: "Low Monarchist Favor"
+  BEL_bop_monafash_monarchists_medium: "Medium Monarchist Favor"
+  BEL_bop_monafash_monarchists_high: "Strong Monarchist Favor"
+  BEL_bop_monafash_monarchists_dangerous: "Extreme Monarchist Favor"
+  BEL_bop_monafash_monarchists_civil_war: "§RMonarcho-Fascist Breakdown§!"
+  BEL_bop_monafash_monarchists_civil_war_tt: "§YBalance of Power§! Level will be locked to this level.\nPopularity in §Y[BEL.GetFascistParty]§! drops to §Y0.00%§!."
+
+  BEL_bop_monafash_neutral: "Equal Balance"
+
+  BEL_bop_monafash_fascists: "Fascists"
+  BEL_bop_monafash_fascists_low: "Low Fascist Favor"
+  BEL_bop_monafash_fascists_medium: "Medium Fascist Favor"
+  BEL_bop_monafash_fascists_high: "Strong Fascist Favor"
+  BEL_bop_monafash_fascists_dangerous: "Extreme Fascist Favor"
+  BEL_bop_monafash_fascists_civil_war: "§RMonarcho-Fascist Breakdown§!"
+  BEL_bop_monafash_fascists_civil_war_tt: "§YBalance of Power§! Level will be locked to this level.\nPopularity in §Y[BEL.GetNeutralParty]§! drops to §Y0.00%§!."

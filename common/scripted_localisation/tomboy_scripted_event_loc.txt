@@ -1,0 +1,134 @@
+defined_text = {
+	name = tomboy-43-t_scripted_loc
+	text = {
+		trigger = {
+			original_tag = BEL
+		}
+		localization_key = tomboy-43-t_bel
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+		}
+		localization_key = tomboy-43-t_hte
+	}
+}
+defined_text = {
+	name = tomboy-43-d_scripted_loc
+	text = {
+		trigger = {
+			original_tag = BEL
+		}
+		localization_key = tomboy-43-d_bel
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+		}
+		localization_key = tomboy-43-d_hte
+	}
+}
+
+defined_text = {
+	name = tomboy-47-a_scripted_loc
+	text = {
+		trigger = {
+			FRA = {
+				is_in_faction_with = BEL
+			}
+		}
+		localization_key = tomboy-47-a_has_faction
+	}
+	text = {
+		trigger = {
+			FRA = {
+				NOT = {
+					is_in_faction_with = BEL
+				}
+			}
+		}
+		localization_key = tomboy-47-a_not_has_faction
+	}
+}
+
+defined_text = {
+	name = tomboy-49-t_scripted_loc
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = tomboy-49-t_de
+	}
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = tomboy-49-t_fr
+	}
+}
+
+defined_text = {
+	name = tomboy-49-d_scripted_loc
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = tomboy-49-d_de
+	}
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = tomboy-49-d_fr
+	}
+}
+
+defined_text = {
+	name = tomboy_generic_4_d_scripted_loc
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = tomboy_generic_4_d_fr
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = tomboy_generic_4_d_de
+	}
+	text = {
+		trigger = {
+			NOT = {
+				tag = FRA
+				tag = GER
+			}
+		}
+		localization_key = tomboy_generic_4_d_generic
+	}
+}
+
+defined_text = {
+	name = tomboy_generic_4_a_scripted_loc
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = tomboy_generic_4_a_fr
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = tomboy_generic_4_a_de
+	}
+	text = {
+		trigger = {
+			NOT = {
+				tag = FRA
+				tag = GER
+			}
+		}
+		localization_key = tomboy_generic_4_a_generic
+	}
+}

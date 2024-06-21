@@ -1,0 +1,4 @@
+CZS = {
+	original_tag = CZE
+	has_country_flag = BEL_SLO_civil_war_flag
+}

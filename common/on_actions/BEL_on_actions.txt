@@ -1,0 +1,165 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = { # This works fine, ignore this error
+			if = {
+		  		limit = {
+					any_country = {
+			  			has_war_with = BEL
+			  			controls_province = 11519
+					}
+					NOT = {
+						has_global_flag = BEL_liege_event_fired
+					}
+		  		}
+				news_event = tomboy.9
+				set_global_flag = BEL_liege_event_fired
+	   		}
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					tag = BEL
+					BEL = {
+						has_government = terror
+					}
+				}
+				BEL = {
+					set_cosmetic_tag = BEL_TERROR
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					BEL = {
+						has_government = terror
+					}
+					ROOT = {
+						NOT = {
+							tag = BEL
+						}
+						has_war = no
+						has_government = terror
+					}
+				}
+				BEL = {
+					annex_country = {
+					    target = ROOT
+					    transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = CZS
+					}
+					FROM = {
+						tag = CZE
+					}
+				}
+				SLO = {
+					annex_country = {
+						target = CZS
+						transfer_troops = yes
+					}
+				}
+				BEL = {
+					puppet = {
+						target = SLO
+						end_civil_wars = no
+						end_wars = no
+					}
+					if = {
+						limit = {
+							SLO = {
+								owns_state = 72
+							}
+						}
+						72 = {
+							if = {
+								limit = {
+									GER = {
+										has_cosmetic_tag = GER_HRE
+									}
+								}
+								transfer_state_to = GER
+							}
+							else = {
+								transfer_state_to = BEL
+							}
+						}
+					}
+					if = {
+						limit = {
+							SLO = {
+								owns_state = 75
+							}
+						}
+						75 = {
+							if = {
+								limit = {
+									GER = {
+										has_cosmetic_tag = GER_HRE
+									}
+								}
+								transfer_state_to = GER
+							}
+							else = {
+								transfer_state_to = BEL
+							}
+						}
+					}
+					if = {
+						limit = {
+							SLO = {
+								owns_state = 9
+							}
+						}
+						9 = {
+							if = {
+								limit = {
+									GER = {
+										has_cosmetic_tag = GER_HRE
+									}
+								}
+								transfer_state_to = GER
+							}
+							else = {
+								transfer_state_to = BEL
+							}
+						}
+					}
+					if = {
+						limit = {
+							SLO = {
+								owns_state = 664
+							}
+						}
+						664 = {
+							if = {
+								limit = {
+									HUN = {
+										is_puppet_of = BEL
+									}
+								}
+								transfer_state_to = HUN
+							}
+							else = {
+								transfer_state_to = BEL
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
