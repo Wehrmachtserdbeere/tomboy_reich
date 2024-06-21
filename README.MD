@@ -35,7 +35,7 @@ When it is finished. I'm still adding to it and working on it.
 Ok.
 
 #### Is AI used in this mod?
-Yes, obviously, as this game as computer-controlled enemies, which are refered to AI.
+Yes, obviously, as this game has computer-controlled enemies, which are refered to AI.
 
 #### Is AI-Generated imagery used in this mod?
 Yes. However, I ensured that I own **all** rights to the images used.
