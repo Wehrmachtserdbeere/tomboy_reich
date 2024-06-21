@@ -84,3 +84,17 @@
 
   BEL_monafash_bop_fash_recruit_paramilitaries: "Fascist Paramilitary Recruitment"
   BEL_monafash_bop_fash_recruit_paramilitaries_desc: "By granting the Fascists more rights in the government, we can get their paramilitaries out of the streets and the military. Though by doing that, our industry may suffer. They will, of course, get more influence in the government, which may anger the monarchists, who will, in turn, demand more influence in the government too."
+
+  # UwU
+  BEL_make_cze_submit_category: "Break [CZE.GetName]"
+  BEL_make_cze_submit_category_desc: "Using various methods of political manipulation, we can bring §Y[CZE.GetNameDef]§! into continually worsening situations, eventually leading them into becoming our vassal.\n§YCurrent [CZE.GetAdjective] Stability: [?CZE.stability|%G]§!\n§YCurrent [CZE.GetAdjective] War Support: [?CZE.has_war_support|%G]§!"
+  BEL_spread_war_propaganda_in_cze: "Spread War-Related Propaganda"
+  BEL_instill_fear_in_cze: "Spread Destabilizing Propaganda"
+  BEL_promote_ideology_in_cze: "Promote [BEL.GetRulingIdeologyNoun] in [CZE.GetName]"
+
+  # UwU
+  BEL_make_slo_submit_category: "Break [SLO.GetName]"
+  BEL_make_slo_submit_category_desc: "Using various methods of political manipulation, we can bring §Y[SLO.GetNameDef]§! into continually worsening situations, eventually leading them into becoming our vassal.\n§YCurrent [SLO.GetAdjective] Stability: [?SLO.stability|%G]§!\n§YCurrent [SLO.GetAdjective] War Support: [?SLO.has_war_support|%G]§!"
+  BEL_spread_war_propaganda_in_slo: "Spread War-Related Propaganda"
+  BEL_instill_fear_in_SLO: "Spread Destabilizing Propaganda"
+  BEL_promote_ideology_in_SLO: "Promote [BEL.GetRulingIdeologyNoun] in [SLO.GetName]"

@@ -15563,7 +15563,7 @@
 		}
 
 		mutually_exclusive = {
-			# focus = Befriend Czechia/Czechoslovakia
+			focus = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia
 		}
 
 		bypass = {
@@ -15653,7 +15653,7 @@
 		}
 	}
 
-	# Sow discontent in Slovakia and Carpatho-Ukraine
+	# Sow discontent in Slovakia
 	focus = {
 		id = BEL_monafash_imperialism_east_czechia_war_sow_discontent_in_slovakia
 		icon = tbd
@@ -15867,6 +15867,10 @@
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_war_sow_discontent_in_slovakia
+		}
+
+		mutually_exclusive = {
+			focus = BEL_monafash_imperialism_east_czechia_war_invade
 		}
 
 		bypass = {
@@ -16240,6 +16244,8 @@
 		id = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia
 		icon = tbd
 
+		dynamic = yes
+
 		cost = 5
 		
 		x = 24
@@ -16363,6 +16369,10 @@
 						idea = BEL_idea_czechia_economic_assistance_cze
 						years = 1
 					}
+					add_opinion_modifier = {
+						target = BEL
+						modifier = BEL_sending_aid
+					}
 				}
 			}
 			if = {
@@ -16377,6 +16387,67 @@
 				add_timed_idea = {
 					idea = BEL_idea_czechia_economic_assistance_cze
 					years = 1
+				}
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_sending_aid
+				}
+			}
+		}
+	}
+
+	# Investigate Czechoslovakia
+	focus = {
+		id = BEL_monafash_imperialism_east_czechia_peace_investigate_czechoslovakia
+		icon = tbd
+
+		cost = 5
+		
+		x = 26
+		y = 11
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia
+		}
+
+		available = {
+			OR = {
+				CZE = {
+					exists = yes
+				}
+				SLO = {
+					exists = yes
+				}
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					CZE = {
+						exists = yes
+					}
+				}
+				add_intel = {
+					target = CZE
+					civilian_intel = 0.15
+					army_intel = 0.1
+					airforce_intel = 0.1
+					navy_intel = 0.1
+				}
+			}
+			if = {
+				limit = {
+					SLO = {
+						exists = yes
+					}
+				}
+				add_intel = {
+					target = SLO
+					civilian_intel = 0.15
+					army_intel = 0.1
+					airforce_intel = 0.1
+					navy_intel = 0.1
 				}
 			}
 		}
@@ -16524,7 +16595,7 @@
 		cost = 5
 		
 		x = 25
-		y = 12
+		y = 13
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_develop_czechia
@@ -16554,6 +16625,195 @@
 		completion_reward = {
 			custom_effect_tooltip = BEL_monafash_imperialism_east_czechia_peace_promote_submission_reward_tt
 			set_country_flag = BEL_CZE_promote_submission
+		}
+	}
+
+	# Vassalize the Czech
+	focus = {
+		id = BEL_monafash_imperialism_east_czechia_peace_vassalize_czech
+		icon = tbd
+
+		cost = 5
+		
+		x = 24
+		y = 14
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_peace_promote_submission
+		}
+
+		available = {
+			if = {
+				limit = {
+					CZE = {
+						exists = yes
+					}
+				}
+				CZE = {
+					has_stability < 0.2
+					has_war_support < 0.2
+					OR = {
+						has_war = no
+						has_war_together_with = BEL
+					}
+				}
+			}
+			if = {
+				limit = {
+					SLO = {
+						exists = yes
+					}
+				}
+				SLO = {
+					has_stability < 0.2
+					has_war_support < 0.2
+					OR = {
+						has_war = no
+						has_war_together_with = BEL
+					}
+				}
+			}
+		}
+
+		bypass = {
+			CZE = {
+				exists = no
+			}
+			SLO = {
+				exists = no
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					CZE = {
+						exists = yes
+					}
+				}
+				BEL = {
+					puppet = {
+						target = CZE
+						end_civil_wars = no
+						end_wars = no
+					}
+					set_autonomy = {
+						target = CZE
+						autonomy_state = autonomy_associated_region
+					}
+				}
+			}
+			if = {
+				limit = {
+					SLO = {
+						exists = yes
+					}
+				}
+				BEL = {
+					puppet = {
+						target = SLO
+						end_civil_wars = no
+						end_wars = no
+					}
+					set_autonomy = {
+						target = SLO
+						autonomy_state = autonomy_associated_region
+					}
+				}
+				if = {
+					limit = {
+						CZE = {
+							exists = yes
+						}
+					}
+					CZE = {
+						set_cosmetic_tag = CZE_BEL
+					}
+				}
+			}
+		}
+	}
+
+	# Rebuild Czechoslovakia
+	focus = {
+		id = BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia
+		icon = tbd
+
+		cost = 5
+		
+		x = 23
+		y = 15
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_war_integrate
+			focus = BEL_monafash_imperialism_east_czechia_peace_vassalize_czech
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						CZE = {
+							exists = yes
+							is_puppet_of = BEL
+						}
+						SLO = {
+							exists = yes
+							is_puppet_of = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						CZE = {
+							exists = yes
+							is_puppet_of = BEL
+						}
+					}
+					CZE = {
+						add_offsite_building = {
+							type = industrial_complex
+							level = 1
+						}
+						add_timed_idea = {
+							idea = BEL_idea_rebuilding_czechoslovakia
+							years = 2
+						}
+					}
+				}
+				if = {
+					limit = {
+						SLO = {
+							exists = yes
+							is_puppet_of = BEL
+						}
+					}
+					SLO = {
+						add_offsite_building = {
+							type = industrial_complex
+							level = 1
+						}
+						add_timed_idea = {
+							idea = BEL_idea_rebuilding_czechoslovakia
+							years = 2
+						}
+					}
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						owner = {
+							original_tag = BEL
+						}
+						OR = {
+							is_core_of = CZE
+							is_core_of = SLO
+						}
+					}
+					add_core_of = BEL
+				}
+			}
 		}
 	}
 

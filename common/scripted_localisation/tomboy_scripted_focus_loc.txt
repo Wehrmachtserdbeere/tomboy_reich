@@ -299,3 +299,23 @@ define_text = {
 		localization_key = BEL_monafash_imperialism_germany_integrate_puppetstate_or_hte_fallback
 	}
 }
+
+define_text = {
+	name = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_scripted_loc
+	text = {
+		trigger = {
+			SLO = {
+				exists = yes
+			}
+		}
+		localization_key = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_no_slo
+	}
+	text = {
+		trigger = {
+			SLO = {
+				exists = no
+			}
+		}
+		localization_key = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_slo
+	}
+}

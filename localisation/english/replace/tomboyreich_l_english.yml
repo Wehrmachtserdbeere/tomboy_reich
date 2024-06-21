@@ -219,6 +219,22 @@
     SLO_REB_terror_DEF: "the Slovak Rebellion"
     SLO_REB_terror_ADJ: "Slovak"
 
+    CZE_BEL_fascism: "Bohemian Empire"
+    CZE_BEL_fascism_DEF: "the Bohemian Empire"
+    CZE_BEL_fascism_ADJ: "Bohemian"
+    CZE_BEL_neutrality: "Bohemia"
+    CZE_BEL_neutrality_DEF: "the Bohemian Kingdom"
+    CZE_BEL_neutrality_ADJ: "Bohemian"
+    CZE_BEL_communism: "Czech People's Council"
+    CZE_BEL_communism_DEF: "the Czech People's Council"
+    CZE_BEL_communism_ADJ: "Czech"
+    CZE_BEL_democratic: "Bohemia"
+    CZE_BEL_democratic_DEF: "the Bohemian Republic"
+    CZE_BEL_democratic_ADJ: "Bohemian"
+    CZE_BEL_terror: "Bohemian Revolt"
+    CZE_BEL_terror_DEF: "the Bohemian Revolt"
+    CZE_BEL_terror_ADJ: "Bohemian"
+
     BEL_moon_man: "Moon Man"
     BEL_moon_man_desc: "Since ancient times, Aryans worshipped the eternal moon. Getting closer to the lunar body was seen as a symbol of progress and success in life. But since the mixture with lesser races, the moon has become less prominent and its importance reduced considerably.\nBecause of this, the eternal moon has taken a human form to rescue the Aryan people from their miserable state. His only goal is to cleanse the world and get rid of these lesser races and those that were not born into the right bloodline or didn't follow the divine path properly. The ultimate aim for every other being who had fallen away from grace would be nothing but annihilation. Those that weren't part of his cause must die forever, because they are just worthless slaves anyway."
     eternal_moon: "The Eternal Moon"
@@ -484,6 +500,9 @@
 
     BEL_idea_czechia_economic_assistance: "[BEL.GetAdjective]-[CZE.GetAdjective] Economic Assistance"
     BEL_idea_czechia_economic_assistance_desc: "The Tomboys have come to the aid of the Czech and Slovaks, giving them aid and trade that can help build the country and keep them running. At the cost of doing business with a controversial nation, they will not only get back on their feet, but do far better than before."
+
+    BEL_idea_rebuilding_czechoslovakia: "Hedvika Plan"
+    BEL_idea_rebuilding_czechoslovakia_desc: "The Hedvika Plan is the Tomboy-led initiative of rebuilding the regions of Czechoslovakia that have had their economies ruined after internal instability and mass-emigration. This, in turn, is greatly boosting internal stability, the economy, and the willingness of the population to defend their homes."
 
     BEL_idea_extra_recruits: "Extra Recruits"
 

@@ -1643,6 +1643,8 @@ ideas = {
 		BEL_idea_czechia_economic_assistance_cze = {
 			name = BEL_idea_czechia_economic_assistance
 
+			picture = tbd
+
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.1
@@ -1655,10 +1657,36 @@ ideas = {
 		BEL_idea_czechia_economic_assistance_bel = {
 			name = BEL_idea_czechia_economic_assistance
 
+			picture = tbd
+
 			modifier = {
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = 0.1
 				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+		BEL_idea_rebuilding_czechoslovakia = {
+			name = BEL_idea_rebuilding_czechoslovakia
+
+			picture = tbd
+
+			available = {
+				BEL = {
+					exists = yes
+					has_capitulated = no
+				}
+				is_puppet_of = BEL
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+
+			modifier = {
+				stability_weekly_factor = 0.1
+				war_support_weekly_factor = 0.025
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
 			}
 		}
 	}

@@ -752,21 +752,58 @@
   BEL_monafash_imperialism_east_prepare_desc: "Having taken control of Germany, we have to protect the East, and prepare against any potential Polish, Soviet, or similar aggression from there. With our new military capacity, we can afford to build defenses and train soldiers to defend the East and prevent anyone from invading us."
 
 
+  BEL_monafash_imperialism_east_czechia_question: "The Czech Question"
+  BEL_monafash_imperialism_east_czechia_question_desc: "The Czechs have been weakened by their losses during the Great War, and have since been occupied with exterminating their German minority. Although they currently barely qualify as human, we are in the position to decide whether to be friendly with them, or to be outright hostile towards them. Our main priority is, of course, to ensure the safety of the Tomboys living there."
+
+  BEL_monafash_imperialism_east_czechia_war_sudetenland: "Petition the Sudetenland"
+  BEL_monafash_imperialism_east_czechia_war_sudetenland_desc: "The Sudetenland, mostly made up of Tomboys and Germans, are in a dire state and are asking for aid from any and all sources. By offering to send supplies and aid to the region, we can also get them to demand to be given to us, allowing us to take over the region without having to fight, and save lives in the process."
   BEL_monafash_imperialism_east_czechia_war_sudetenland_trigger_tt: "Has chosen hostilities with [CZE.GetName]."
 
+  BEL_monafash_imperialism_east_czechia_war_invite_companies: "Invite [CZE.GetAdjective] Companies"
+  BEL_monafash_imperialism_east_czechia_war_invite_companies_desc: "By giving companies from Czechoslovakia bonuses and tax cuts, we can get them to relocate their companies and jobs to our nation, allowing us to expand our own industries, and mainly weaken the Czech's economy, and get them slowly ruin their economy, making the eventual war easier."
 
+  BEL_monafash_imperialism_east_czechia_war_sow_discontent_in_slovakia: "Sow Discontent in Slovakia"
+  BEL_monafash_imperialism_east_czechia_war_sow_discontent_in_slovakia_desc: "Slovakia has been oppressed by the Czechs, and their people have lived in poverty and destitution for generations. We'll give the Slovaks a taste of what they want and need, and slowly start sowing discord and discontent between the Slovaks and the Czechs, eventually escalating the already tense situation there."
 
+  BEL_monafash_imperialism_east_czechia_war_invade: "Invade Czechoslovakia"
+  BEL_monafash_imperialism_east_czechia_war_invade_desc: "The time has come. After establishing a strong defense on the Eastern front, and sowing discontent in the Slovaks and the rest of Czechoslovakia, we're ready to invade. Once the fighting starts, the Czechs will see just how futile it is to resist us, and they'll soon have no choice but to surrender and agree to become a part of our lands."
 
+  BEL_monafash_imperialism_east_czechia_war_slovak_rebellion: "Begin the Slovak Rebellion"
+  BEL_monafash_imperialism_east_czechia_war_slovak_rebellion_desc: "The Slovaks are ready to rebel against the oppressive Czechs. With our backing, they can successfully launch a revolution and establish an \"independent state\", bringing justice and peace to the Slovaks, and freeing the Tomboys that live in the region. We will join as well, and use the opportunity to take the Czech lands for ourselves."
 
+  BEL_monafash_imperialism_east_czechia_war_integrate: "Integrate Czechoslovakia"
+  BEL_monafash_imperialism_east_czechia_war_integrate_desc: "With the successful invasion, the Tomboys will be given their rightful lands, and Czechoslovakia will officially cease to exist. To prevent any potential retaliations, we'll integrate them, and thus secure our borders and the safety of our Tomboys."
 
-
+  BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia: "[BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_scripted_loc]"
+  BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_slo: "Befriend Czechia and Slovakia"
+  BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_no_slo: "Befriend [CZE.GetName]"
+  BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_desc: "Instead of going to war with them, we'll offer to be their friend. We'll establish good relations, and hopefully get them to stop oppressing Tomboys. We will vassalize them one day, but not through war."
   BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia_trigger_tt: "Has chosen peace with [CZE.GetName]."
 
+  BEL_monafash_imperialism_east_czechia_peace_economic_assistance: "Assist the Czech Economy"
+  BEL_monafash_imperialism_east_czechia_peace_economic_assistance_desc: "Instead of destroying it, we'll help the Czech economy grow. This will strengthen our relationship, and will prevent them from ever considering attacking us by making them depend on us. We'll also be able to use this to our advantage in the future when we have them under our thumb."
 
+  BEL_monafash_imperialism_east_czechia_peace_investigate_czechoslovakia: "Investigate the Czech"
+  BEL_monafash_imperialism_east_czechia_peace_investigate_czechoslovakia_desc: "To truly befriend the Czechs, we have to understand them. We'll send an investigator to investigate the Czech lands and his personification, and find out more about the country. Once we have gathered enough information, we'll use it to further our agenda and influence them to agree with our proposals."
 
+  BEL_monafash_imperialism_east_czechia_peace_develop_czechia: "Develop Czechia"
+  BEL_monafash_imperialism_east_czechia_peace_develop_czechia_desc: "Czechia is a relatively weak, impoverished region in comparison to the rest of Europe, and they're not likely to have the means to build themselves up. We'll give them aid and loans to help them develop, and to give us a greater influence over them. We'll have a much easier time taking them over later."
 
+  BEL_monafash_imperialism_east_czechia_peace_develop_slovakia: "Develop Slovakia"
+  BEL_monafash_imperialism_east_czechia_peace_develop_slovakia_desc: "The Slovak people have been neglected by the Czechs for generations, and their people are living in destitution and poverty. We'll give them aid and support, and help them build up their economy and standard of living, while at the same time, getting them on our side."
 
+  BEL_monafash_imperialism_east_czechia_peace_promote_submission: "Promote Fealty"
+  BEL_monafash_imperialism_east_czechia_peace_promote_submission_desc: "To make the process of puppeting much smoother, and to get the Slovaks and Czechs on our side, we will destabilize and instill fear in them, and promote the idea that they are safe under our control. We can do this through propaganda, and by helping the people with their issues, such as the economy, safety, and security. We can also spread rumors of potential invasion by other nations, and make them see us as their savior."
   BEL_monafash_imperialism_east_czechia_peace_promote_submission_reward_tt: "Unlock decisions to bring Czechoslovakia under our banner."
+
+  BEL_monafash_imperialism_east_czechia_peace_vassalize_czech: "Vassalize [CZE.GetName]"
+  BEL_monafash_imperialism_east_czechia_peace_vassalize_czech_desc: "With their country as unstable as ever, even the majority of politicians within the Czech government want to join with us. It's time for us to step in and grant the Czech people the mercy of being under us, essentially turning them into a region of our realm."
+
+  BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia: "Rebuild Czechoslovakia"
+  BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia_desc: "After taking over Czechoslovakia and investigating the regions' problems, it's clear that the country has a lot of work to do, and needs a complete overhaul. We'll have to rebuild the entire economy, rework the local governments, and reform the people's way of life, while at the same time, giving the Tomboys the lands that are rightfully theirs. We'll call this the \"Hedvika Plan\"."
+
+
+
 
 
 
