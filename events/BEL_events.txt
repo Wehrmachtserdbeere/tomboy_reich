@@ -6987,3 +6987,252 @@ country_event = {
 		}
 	}
 }
+
+# POL | Tomboys dare to send diplomats!
+country_event = {
+	id = tomboy.76
+	title = tomboy.76.t
+	desc = tomboy.76.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.76"
+	}
+
+	option = { # Annoying. They don't know how to properly prostrate themselves before out people.
+		name = tomboy.76.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_decrease
+		}
+		BEL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_disappointed
+			}
+			country_event = {
+				id = tomboy.77
+				days = 4
+				random_days = 1
+			}
+			hidden_effect = {
+				complete_national_focus = BEL_monafash_imperialism_east_poland_antagonize_poland
+			}
+		}
+	}
+
+	option = { # Go f*ck yourself, we don't talk to subhumans.
+		name = tomboy.76.b
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_decrease
+		}
+		BEL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+			country_event = {
+				id = tomboy.77
+				days = 4
+				random_days = 1
+			}
+			hidden_effect = {
+				complete_national_focus = BEL_monafash_imperialism_east_poland_antagonize_poland
+			}
+		}
+	}
+}
+
+# BEL | Poles threaten us
+country_event = {
+	id = tomboy.77
+	title = tomboy.77.t
+	desc = tomboy.77.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.77"
+	}
+
+	option = { # We will continue trying to be peaceful.
+		name = tomboy.77.a
+
+		ai_chance = {
+			base = 60
+			modifier = {
+				add = -20
+				has_opinion = {
+					target = POL
+					value < 0
+				}
+			}
+		}
+
+		POL = {
+			country_event = {
+				id = tomboy.78
+				days = 4
+				random_days = 1
+			}
+		}
+		hidden_effect = {
+			complete_national_focus = BEL_monafash_imperialism_east_poland_threaten_poland
+		}
+	}
+
+	option = { # They are too dangerous
+		name = tomboy.77.b
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = POL
+					value < -10
+				}
+			}
+		}
+
+		declare_war_on = {
+			target = POL
+			type = annex_everything
+		}
+		hidden_effect = {
+			complete_national_focus = BEL_monafash_imperialism_east_poland_threaten_poland
+			complete_national_focus = BEL_monafash_imperialism_east_poland_war_with_poland
+		}
+	}
+}
+
+# POL | Tomboys keep bothering us
+country_event = {
+	id = tomboy.78
+	title = tomboy.78.t
+	desc = tomboy.78.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.78"
+	}
+
+	option = { # Do a covert operation
+		name = tomboy.78.a
+		
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes # Gleiwitz Incident
+			}
+		}
+
+		BEL = {
+			country_event = {
+				id = tomboy.79
+				days = 4
+				random_days = 1
+			}
+			hidden_effect = {
+				complete_national_focus = BEL_monafash_imperialism_east_poland_instigate_an_attack
+			}
+		}
+		custom_effect_tooltip = BEL_generic_event_tt_will_happen
+		effect_tooltip = {
+			random_list = {
+				50 = {
+					POL = {
+						declare_war_on = {
+							target = BEL
+							type = annex_everything
+						}
+					}
+				}
+				50 = {
+					POL = {
+						annex_country = {
+							target = BEL
+							transfer_troops = yes # This won't happen, but shows the misinformation of the poles.
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Attack immediately!
+		name = tomboy.78.b
+
+		ai_chance = {
+			base = 20
+		}
+
+		declare_war_on = {
+			target = BEL
+			type = annex_everything
+		}
+		BEL = {
+			hidden_effect = {
+				complete_national_focus = BEL_monafash_imperialism_east_poland_war_with_poland
+			}
+		}
+	}
+}
+
+# BEL | Poles attack radio station!
+country_event = {
+	id = tomboy.79
+	title = tomboy.79.t
+	desc = tomboy.79.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.79"
+	}
+
+	option = { # This is a declaration of war!
+		name = tomboy.79.a
+
+		every_country = {
+			limit = {
+				NOT = {
+					original_tag = BEL
+					original_tag = POL
+					original_tag = SOV # Soviets approve of murdered Germans
+					AND = {
+						original_tag = USA # So do the Americans...
+						has_government = fascism # ...unless they're fascist
+					}
+					is_puppet_of = POL
+					is_ally_with = POL
+					has_opinion = {
+						target = POL
+						value > 75
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = POL
+				modifier = BEL_medium_suspicion
+			}
+			add_ai_strategy = {
+				type = antagonize
+				id = POL
+				value = 5
+			}
+		}
+		POL = {
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
+		}
+	}
+}

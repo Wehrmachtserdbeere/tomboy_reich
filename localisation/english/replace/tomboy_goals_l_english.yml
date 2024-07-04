@@ -799,8 +799,11 @@
   BEL_monafash_imperialism_east_czechia_peace_vassalize_czech: "Vassalize [CZE.GetName]"
   BEL_monafash_imperialism_east_czechia_peace_vassalize_czech_desc: "With their country as unstable as ever, even the majority of politicians within the Czech government want to join with us. It's time for us to step in and grant the Czech people the mercy of being under us, essentially turning them into a region of our realm."
 
-  BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia: "Rebuild Czechoslovakia"
+  BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia: "Rebuild of Czechoslovakia"
   BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia_desc: "After taking over Czechoslovakia and investigating the regions' problems, it's clear that the country has a lot of work to do, and needs a complete overhaul. We'll have to rebuild the entire economy, rework the local governments, and reform the people's way of life, while at the same time, giving the Tomboys the lands that are rightfully theirs. We'll call this the \"Hedvika Plan\"."
+
+  BEL_monafash_imperialism_east_poland_send_diplomats: "Send Diplomats to [POL.GetName]"
+  BEL_monafash_imperialism_east_poland_send_diplomats_desc: "Poland has suffered greatly in the Great War, and they're traumatized from years of war. We'll send diplomats to try and form a close alliance, and help them build up their economy, so the whole ordeal does not repeat itself. We'll also prove to the Fascists that the Poles are good people, and should not be harmed or treated like dirt.\n\n§YBecause of this, if [POL.GetName] replies with hostilities, the Fascists will gain a lot of power!§!"
 
 
 

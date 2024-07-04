@@ -576,6 +576,35 @@
   tomboy.73.d: "The [FROM.GetAdjective] have refused to hand over the Sudetenland, and have told us that the region has been a part of their nation for centuries, and they are not about to give up the lands and the people to a foreign power. They have also told us that the area is not home to the Tomboys, that the Tomboys are a minority in the area, and that handing the area over would not solve anything."
   tomboy.73.a: "Understood."
 
+  tomboy.74.t: "The Czech Question"
+  tomboy.74.d: "It is well known that the Czechs are a weird people. Germans made into thinking they're slavic, that oppress the Germans who know they're German, and that speak a language that is similar to the Polish and the Slovakian languages, and not their own. It is also known that they oppress Tomboys. We need to decide whether to be peaceful with them, or to outright go and destroy their sad existence."
+  tomboy.74.a: "Surely they can be peaceful."
+  tomboy.74.b: "Not one minute more than needed! War!"
+
+  tomboy.75.t: "Slovakia Rebels!"
+  tomboy.75.d: "Recently, the Slovakian regions have revolted, demanding independence. They have told us that, because of their cultural differences, the different history, and our alleged oppression, that they should not be a part of the same country as us, and instead wish to become an independent state. They went so far as to contact foreign nations for their cause too, and are in armed rebellion against our great nation!"
+  tomboy.75.a: "Crush this rebel scum!"
+  tomboy.75.b: "Death to the oppressors!"
+
+  tomboy.76.t: "[BEL.GetAdjective] Diplomats"
+  tomboy.76.d: "Diplomats from the tomboys have arrived and dared to speak to us in a friendly manner. Do they not know that their germanic brothers have oppressed us for centuries, and that their existence is a blight on humanity? Despite our refusal to even look at them, the Tomboys have told us that, while they have no plans for us, that we are to expect more talks, and that they are here on business! They did not even prostrate themselves when meeting us, a blatant disrespect to the great Polish people!"
+  tomboy.76.a: "They don't know how to prostrate themselves properly."
+  tomboy.76.b: "Disgusting. We don't speak to subhumans."
+
+  tomboy.77.t: "Poles threaten us"
+  tomboy.77.d: "We have received word from our diplomats that went to Poland that the Poles are threatening us. They have told us that we will have to pay dearly for even daring to talk with them, and they have told us that they'll one day wage war on us for our audacity, and that our \"disgusting, degenerate, Germanic race should be glad to be crushed and enslaved by the noble Polish people, and not just murdered and erased.\" Our diplomats, despite their anger, managed to maintain decorum, and didn't respond to the Pole's insults. Regardless, it is clear that the Poles do not wish to have peace."
+  tomboy.77.a: "Surely this can be handles peacefully."
+  tomboy.77.b: "They are too dangerous to be around."
+
+  tomboy.78.t: "More Tomboy Diplomats"
+  tomboy.78.d: "Despite our warnings, the Tomboys have once again bothered us. They're trying to be all friendly with us, and are acting like we're on the same level, but the fact is, the Polish people are a pure, clean people, and tomboys are nothing more than degenerate filth, sexually they're a distortion of nature, regardless of what the bible says, they should know their place and stop their play-pretend, especially since they're germanics. Maybe they need a bloody, painful reminder of our superiority."
+  tomboy.78.a: "Send a reminder to Gleiwitz."
+  tomboy.78.b: "That's it, crush them!"
+
+  tomboy.79.t: "Gleiwitz Radio Station attacked!"
+  tomboy.79.d: "We had just received news that a radio station in Gleiwitz has been attacked and occupied by a group of Poles! The occupiers have taken to the airwaves, sending \"This is Gleiwitz. The radio station is in Polish hands\" to the surrounding regions. They locked the radio staff inside the station, and would have let them starve in there if it weren't for the active police listening in on the station. When the police arrived, the perpetrators already left, and the staff confirmed that it were uniformed Polish soldiers that committed this."
+  tomboy.79.a: "They're going too far, demand them to stop!"
+
 
 
   # Generics

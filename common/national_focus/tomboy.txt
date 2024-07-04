@@ -12236,6 +12236,21 @@
 			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
+			if = {
+				limit = {
 					GER = {
 						exists = no
 					}
@@ -12419,6 +12434,21 @@
 		}
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
 			add_ideas = BEL_idea_celebrating_germania
 		}
 	}
@@ -12899,6 +12929,10 @@
 				target = FRA
 				type = annex_everything
 			}
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = 0.05
+			}
 			if = {
 				limit = {
 					has_country_flag = BEL_sought_occitanian_freedom
@@ -13085,6 +13119,21 @@
 		}
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
 			29 = { 
 				add_core_of = BEL
 			}
@@ -13146,6 +13195,23 @@
 		
 		completion_reward = {
 			add_war_support = 0.1
+			if = {
+				limit = {
+					ENG = {
+						has_government = fascism
+					}
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.01
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.01
+				}
+			}
 			custom_effect_tooltip = BEL_monafash_imperialism_britain_investigate_the_river_reward_tt
 			hidden_effect = {
 				add_intel = {
@@ -13631,6 +13697,10 @@
 		
 		completion_reward = {
 			add_war_support = 0.1
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.05
+			}
 			declare_war_on = {
 				target = ENG
 				type = annex_everything
@@ -13744,6 +13814,21 @@
 		
 		completion_reward = {
 			add_stability = 0.05
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
 			if = {
 				limit = {
 					BEL = {
@@ -13946,6 +14031,10 @@
 		}
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.15
+			}
 			add_state_claim = 35
 			add_state_claim = 7
 			add_state_claim = 36
@@ -14006,6 +14095,10 @@
 		}
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = 0.1
+			}
 			if = {
 				limit = {
 					HOL = {
@@ -14377,6 +14470,10 @@
 		will_lead_to_war_with = LUX
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.05
+			}
 			if = {
 				limit = {
 					HOL = {
@@ -14495,6 +14592,21 @@
 		}
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
 			add_stability = 0.1
 			add_war_support = 0.2
 			if = {
@@ -15451,6 +15563,21 @@
 		completion_reward = {
 			if = {
 				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.25
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.25
+				}
+			}
+			if = {
+				limit = {
 					has_idea = BEL_idea_celebrating_marianne
 				}
 				remove_ideas = BEL_idea_celebrating_marianne
@@ -15490,14 +15617,25 @@
 			focus = BEL_monafash_imperialism_imperialism
 		}
 
+		allow_branch = {
+			OR = {
+				has_completed_focus = BEL_monafash_imperialism_imperialism
+				is_debug = yes
+			}
+		}
+
 		available = {
 			custom_trigger_tooltip = {
 				has_completed_focus = BEL_monafash_imperialism_germany_germania
-				tooltip = BEL_monafash_east_prepare_trigger_tt
+				tooltip = BEL_monafash_imperialism_east_prepare_trigger_tt
 			}
 		}
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.025
+			}
 			if = {
 				limit = {
 					has_war_support > 0.9
@@ -15579,6 +15717,10 @@
 		}
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.05
+			}
 			69 = {
 				owner = {
 					country_event = {
@@ -15848,6 +15990,10 @@
 		will_lead_to_war_with = CZE
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.05
+			}
 			declare_war_on = {
 				target = CZE
 				type = annex_everything
@@ -15906,6 +16052,10 @@
 		will_lead_to_war_with = CZE
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.05
+			}
 			if = {
 				limit = {
 					CZE = {
@@ -16056,6 +16206,21 @@
 		}
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
 			69 = {
 				if = {
 					limit = {
@@ -16685,6 +16850,10 @@
 		}
 		
 		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = 0.05
+			}
 			if = {
 				limit = {
 					CZE = {
@@ -16750,6 +16919,21 @@
 		}
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
 			if = {
 				limit = {
 					OR = {
@@ -16818,14 +17002,317 @@
 	}
 
 
+	############
+	# Polanien #
+	############
 
+	# Send diplomats to Poland
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_send_diplomats
+		icon = tbd
 
+		cost = 5
+		
+		x = 30
+		y = 9
 
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_prepare
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = 0.05
+			}
+			add_political_power = 5
+			if = {
+				limit = {
+					POL = {
+						exists = yes
+					}
+				}
+				POL = {
+					country_event = {
+						id = tomboy.76
+						days = 4
+						random_days = 1
+					}
+				}
+				hidden_effect = {
+					POL = {
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = BEL
+							value = 999
+						}
+					}
+				}
+			}
+			else = {
+				complete_national_focus = BEL_monafash_imperialism_east_poland_antagonize_poland
+				complete_national_focus = BEL_monafash_imperialism_east_poland_threaten_poland
+				complete_national_focus = BEL_monafash_imperialism_east_poland_instigate_an_attack
+			}
+		}
+	}
 
+	# Visual | Antagonize Poland
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_antagonize_poland
+		icon = tbd
 
-	# Poland Idea - Send the Poles an event to attack Tomboy Germany, completing a focus that would have
-	# meant the Tomboys started an offensive war and instead having the Poles start an offensive war against
-	# the Tomboys. AI should want to attack it. Reference the Gleiwitz incident.
+		cost = 5
+		
+		x = 29
+		y = 10
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_send_diplomats
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.15
+			}
+			custom_effect_tooltip = unknown
+		}
+	}
+	
+	# Visual | Threaten Poland
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_threaten_poland
+		icon = tbd
+
+		cost = 5
+		
+		x = 29
+		y = 11
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_antagonize_poland
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.1
+			}
+			custom_effect_tooltip = unknown
+		}
+	}
+
+	# Visual | Instigate an attack
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_instigate_an_attack
+		icon = tbd
+
+		cost = 5
+		
+		x = 28
+		y = 12
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_threaten_poland
+		}
+
+		mutually_exclusive = {
+			focus = BEL_monafash_imperialism_east_poland_war_with_poland
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.15
+			}
+			custom_effect_tooltip = unknown
+		}
+	}
+	
+	# Visual | War with Poland
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_war_with_poland
+		icon = tbd
+
+		cost = 5
+		
+		x = 30
+		y = 12
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_threaten_poland
+		}
+
+		mutually_exclusive = {
+			focus = BEL_monafash_imperialism_east_poland_instigate_an_attack
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = -0.15
+			}
+			custom_effect_tooltip = unknown
+		}
+	}
+
+	# Visual | National Friendship
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_friendship_with_poland
+		icon = tbd
+
+		cost = 10
+		
+		x = 31
+		y = 10
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_send_diplomats
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = 0.15
+			}
+			custom_effect_tooltip = unknown
+		}
+	}
+
+	# Visual | Economic Co-Operation
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_economic_co-operation
+		icon = tbd
+
+		cost = 10
+		
+		x = 31
+		y = 11
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_friendship_with_poland
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = 0.1
+			}
+			custom_effect_tooltip = unknown
+		}
+	}
+
+	# Visual | Unite with Poland
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_unite
+		icon = tbd
+
+		cost = 10
+		
+		x = 31
+		y = 13
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_economic_co-operation
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_power_balance_value = {
+				id = BEL_bop_monafash
+				value = 0.15
+			}
+			custom_effect_tooltip = unknown
+		}
+	}
+
+	# Integrate Poland
+	focus = {
+		id = BEL_monafash_imperialism_east_poland_integrate
+		icon = tbd
+
+		cost = 5
+		
+		x = 30
+		y = 14
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_instigate_an_attack
+			focus = BEL_monafash_imperialism_east_poland_war_with_poland
+			focus = BEL_monafash_imperialism_east_poland_unite
+		}
+
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = BEL_monafash_imperialism_east_poland_instigate_an_attack
+					has_completed_focus = BEL_monafash_imperialism_east_poland_war_with_poland
+				}
+				has_completed_focus = BEL_monafash_imperialism_east_poland_unite
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.15
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = POL
+					owner = {
+						OR = {
+							original_tag = BEL
+							is_puppet_of = BEL
+						}
+					}
+				}
+				owner = {
+					add_state_core = PREV # Puppets also get it cored
+				}
+				remove_core_of = POL # Bye-bye Poland!
+			}
+		}
+	}
 
 
 
