@@ -2525,6 +2525,9 @@ BEL_monafash_bop_decisions_category = {
 
         available = {
             has_political_power > 99
+            has_power_balance = {
+                id = BEL_bop_monafash
+            }
         }
 
         complete_effect = {
@@ -2541,6 +2544,44 @@ BEL_monafash_bop_decisions_category = {
 
         remove_effect = {
             remove_ideas = BEL_idea_extra_recruits
+        }
+    }
+
+    BEL_monafash_bop_mona_promote_nobility = {
+
+        allowed = {
+            tag = BEL
+        }
+
+        available = {
+            has_political_power > 99
+            has_power_balance = {
+                id = BEL_bop_monafash
+            }
+        }
+
+        complete_effect = {
+            add_stability = 0.05
+            add_war_support = -0.05
+            add_popularity = {
+                ideology = neutrality
+                popularity = -0.05
+            }
+            add_power_balance_value = {
+                id = BEL_bop_monafash
+                value = -0.05
+            }
+        }
+
+        cost = 150
+
+        days_remove = 20
+
+        remove_effect = {
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.065
+            }
         }
     }
 }

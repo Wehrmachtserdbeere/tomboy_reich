@@ -109,4 +109,12 @@ opinion_modifiers = {
 	BEL_oppressing_tomboys_pos = {
 		value = 45
 	}
+
+	BEL_iron_curtain_modifier_neg = {
+		value = -90
+	}
+
+	BEL_iron_curtain_modifier_pos = {
+		value = 35
+	}
 }

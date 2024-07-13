@@ -25,6 +25,8 @@
   BEL_sending_aid: "Sending Aid"
   BEL_oppressing_tomboys_neg: "Oppressing Tomboys"
   BEL_oppressing_tomboys_pos: "Oppressing Tomboys"
+  BEL_iron_curtain_modifier_neg: "Iron Curtain"
+  BEL_iron_curtain_modifier_pos: "Iron Curtain"
 
   ### Threats
   # Good (-Threat)

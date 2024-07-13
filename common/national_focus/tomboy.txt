@@ -856,15 +856,12 @@
 		search_filters = { FOCUS_FILTER_POLITICAL Monarchist }
 		
 		allow_branch = {
-			OR = {
-				AND = {
-					NOT = {
-						has_completed_focus = BEL_monafash_monarchist_fascist_alliance
-					}
-					has_completed_focus = BEL_acceptance_supremacy
-					has_completed_focus = BEL_political_crack_down
+			AND = {
+				NOT = {
+					has_completed_focus = BEL_monafash_monarchist_fascist_alliance
 				}
-				is_debug = yes
+				has_completed_focus = BEL_acceptance_supremacy
+				has_completed_focus = BEL_political_crack_down
 			}
 		}
 
@@ -881,7 +878,7 @@
 
 		mutually_exclusive = {
 			focus = BEL_monafash_monarchist_fascist_alliance
-			# focus = BEL_liege_true_hatred
+			focus = BEL_fascism_fascist_ascendance
 		}
 
 		completion_reward = {
@@ -5931,12 +5928,9 @@
 		cost = 7
 		
 		allow_branch = {
-			OR = {
-				AND = {
-					has_completed_focus = BEL_acceptance_supremacy
-					has_completed_focus = BEL_political_crack_down
-				}
-				is_debug = yes
+			AND = {
+				has_completed_focus = BEL_acceptance_supremacy
+				has_completed_focus = BEL_political_crack_down
 			}
 		}
 
@@ -5946,6 +5940,7 @@
 
 		mutually_exclusive = {
 			focus = BEL_monarchism_the_monarch_alone
+			focus = BEL_fascism_fascist_ascendance
 		}
 
 		completion_reward = {
@@ -5975,10 +5970,7 @@
 		y = 3
 		
 		allow_branch = {
-			OR = {
-				has_completed_focus = BEL_monafash_monarchist_fascist_alliance
-				is_debug = yes
-			}
+			has_completed_focus = BEL_monafash_monarchist_fascist_alliance
 		}
 
 		prerequisite = {
@@ -6018,10 +6010,7 @@
 		y = 3
 
 		allow_branch = {
-			OR = {
-				has_completed_focus = BEL_monafash_monarchist_fascist_alliance
-				is_debug = yes
-			}
+			has_completed_focus = BEL_monafash_monarchist_fascist_alliance
 		}
 
 		prerequisite = {
@@ -11356,10 +11345,7 @@
 		y = 8
 
 		allow_branch = {
-			OR = {
-				has_completed_focus = BEL_monafash_imperialism_imperialism
-				is_debug = yes
-			}
+			has_completed_focus = BEL_monafash_imperialism_imperialism
 		}
 
 		prerequisite = {
@@ -15544,7 +15530,7 @@
 
 		cost = 5
 		
-		x = 8
+		x = 13
 		y = 19
 
 		prerequisite = {
@@ -15558,6 +15544,9 @@
 		}
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_integrate_our_investments
+		}
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_bulwark
 		}
 		
 		completion_reward = {
@@ -15610,7 +15599,7 @@
 
 		cost = 10
 		
-		x = 25
+		x = 23
 		y = 8
 
 		prerequisite = {
@@ -15618,10 +15607,7 @@
 		}
 
 		allow_branch = {
-			OR = {
-				has_completed_focus = BEL_monafash_imperialism_imperialism
-				is_debug = yes
-			}
+			has_completed_focus = BEL_monafash_imperialism_imperialism
 		}
 
 		available = {
@@ -15655,7 +15641,7 @@
 
 		cost = 5
 
-		x = 23
+		x = 20
 		y = 9
 
 		prerequisite = {
@@ -15686,7 +15672,7 @@
 
 		cost = 5
 		
-		x = 22
+		x = 19
 		y = 10
 
 		prerequisite = {
@@ -15761,7 +15747,7 @@
 
 		cost = 5
 		
-		x = 22
+		x = 19
 		y = 11
 
 		prerequisite = {
@@ -15802,7 +15788,7 @@
 
 		cost = 5
 		
-		x = 22
+		x = 19
 		y = 12
 
 		prerequisite = {
@@ -15966,7 +15952,7 @@
 
 		cost = 5
 		
-		x = 21
+		x = 18
 		y = 13
 
 		prerequisite = {
@@ -16008,7 +15994,7 @@
 
 		cost = 5
 		
-		x = 23
+		x = 20
 		y = 13
 
 		prerequisite = {
@@ -16093,7 +16079,7 @@
 
 		cost = 5
 		
-		x = 22
+		x = 19
 		y = 14
 
 		prerequisite = {
@@ -16413,7 +16399,7 @@
 
 		cost = 5
 		
-		x = 24
+		x = 21
 		y = 10
 
 		prerequisite = {
@@ -16493,7 +16479,7 @@
 
 		cost = 5
 		
-		x = 24
+		x = 21
 		y = 11
 
 		prerequisite = {
@@ -16568,7 +16554,7 @@
 
 		cost = 5
 		
-		x = 26
+		x = 23
 		y = 11
 
 		prerequisite = {
@@ -16625,7 +16611,7 @@
 
 		cost = 5
 		
-		x = 24
+		x = 21
 		y = 12
 
 		prerequisite = {
@@ -16671,7 +16657,7 @@
 
 		cost = 5
 		
-		x = 26
+		x = 23
 		y = 12
 
 		prerequisite = {
@@ -16759,7 +16745,7 @@
 
 		cost = 5
 		
-		x = 25
+		x = 22
 		y = 13
 
 		prerequisite = {
@@ -16800,7 +16786,7 @@
 
 		cost = 5
 		
-		x = 24
+		x = 21
 		y = 14
 
 		prerequisite = {
@@ -16910,7 +16896,7 @@
 
 		cost = 5
 		
-		x = 23
+		x = 20
 		y = 15
 
 		prerequisite = {
@@ -17013,7 +16999,7 @@
 
 		cost = 5
 		
-		x = 30
+		x = 27
 		y = 9
 
 		prerequisite = {
@@ -17064,7 +17050,7 @@
 
 		cost = 5
 		
-		x = 29
+		x = 26
 		y = 10
 
 		prerequisite = {
@@ -17091,7 +17077,7 @@
 
 		cost = 5
 		
-		x = 29
+		x = 26
 		y = 11
 
 		prerequisite = {
@@ -17118,7 +17104,7 @@
 
 		cost = 5
 		
-		x = 28
+		x = 25
 		y = 12
 
 		prerequisite = {
@@ -17149,7 +17135,7 @@
 
 		cost = 5
 		
-		x = 30
+		x = 27
 		y = 12
 
 		prerequisite = {
@@ -17180,7 +17166,7 @@
 
 		cost = 10
 		
-		x = 31
+		x = 28
 		y = 10
 
 		prerequisite = {
@@ -17207,7 +17193,7 @@
 
 		cost = 10
 		
-		x = 31
+		x = 28
 		y = 11
 
 		prerequisite = {
@@ -17234,7 +17220,7 @@
 
 		cost = 10
 		
-		x = 31
+		x = 28
 		y = 13
 
 		prerequisite = {
@@ -17261,7 +17247,7 @@
 
 		cost = 5
 		
-		x = 30
+		x = 27
 		y = 14
 
 		prerequisite = {
@@ -17310,6 +17296,623 @@
 					add_state_core = PREV # Puppets also get it cored
 				}
 				remove_core_of = POL # Bye-bye Poland!
+			}
+		}
+	}
+
+	###############
+	# Finish East #
+	###############
+
+	# The Bulwark against the East
+	focus = {
+		id = BEL_monafash_imperialism_east_bulwark
+		icon = tbd
+
+		cost = 5
+		
+		x = 24
+		y = 17
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia
+		}
+
+		prerequisite = {
+			focus = BEL_monafash_imperialism_east_poland_integrate
+		}
+
+		available = {
+			OR = {
+				is_neighbor_of = SOV
+				is_neighbor_of = UKR
+				is_neighbor_of = BLR
+				AND = {
+					is_neighbor_of = LIT
+					LIT = {
+						has_government = communism
+					}
+				}
+				AND = {
+					is_neighbor_of = LAT
+					LAT = {
+						has_government = communism
+					}
+				}
+				AND = {
+					is_neighbor_of = EST
+					EST = {
+						has_government = communism
+					}
+				}
+				AND = {
+					is_neighbor_of = ROM
+					ROM = {
+						has_government = communism
+					}
+				}
+				AND = {
+					is_neighbor_of = HUN
+					HUN = {
+						has_government = communism
+					}
+				}
+				AND = {
+					is_neighbor_of = YUG
+					YUG = {
+						has_government = communism
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = 0.05
+				}
+			}
+			else = {
+				add_power_balance_value = {
+					id = BEL_bop_monafash
+					value = -0.05
+				}
+			}
+			add_ideas = BEL_idea_iron_curtain
+			every_state = {
+				limit = {
+					AND = {
+						owner = {
+							OR = {
+								original_tag = BEL
+								is_puppet_of = BEL
+								is_ally_with = BEL
+							}
+						}
+						any_neighbor_state = {
+							owner = {
+								OR = {
+									original_tag = SOV
+									original_tag = UKR
+									original_tag = BLR
+									AND = {
+										original_tag = LIT
+										has_government = communism
+									}
+									AND = {
+										original_tag = LIT
+										has_government = communism
+									}
+									AND = {
+										original_tag = LAT
+										has_government = communism
+									}
+									AND = {
+										original_tag = EST
+										has_government = communism
+									}
+									AND = {
+										original_tag = ROM
+										has_government = communism
+									}
+									AND = {
+										original_tag = HUN
+										has_government = communism
+									}
+									AND = {
+										original_tag = YUG
+										has_government = communism
+									}
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = SOV
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = UKR
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = BLR
+					}
+				}
+				if = {
+					limit = {
+						LIT = {
+							exists = yes
+							has_government = communism
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = LIT
+						}
+					}
+				}
+				if = {
+					limit = {
+						LAT = {
+							exists = yes
+							has_government = communism
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = LAT
+						}
+					}
+				}
+				if = {
+					limit = {
+						EST = {
+							exists = yes
+							has_government = communism
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = EST
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROM = {
+							exists = yes
+							has_government = communism
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = ROM
+						}
+					}
+				}
+				if = {
+					limit = {
+						HUN = {
+							exists = yes
+							has_government = communism
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = HUN
+						}
+					}
+				}
+				if = {
+					limit = {
+						YUG = {
+							exists = yes
+							has_government = communism
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = YUG
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	###########
+	# FASCIST #
+	###########
+
+	# Fascist Ascendance
+	focus = {
+		id = BEL_fascism_fascist_ascendance
+		icon = tbd
+
+		cost = 5
+		
+		x = 12
+		y = 2
+
+		allow_branch = {
+			OR = {
+				AND = {
+					has_completed_focus = BEL_acceptance_supremacy
+					has_completed_focus = BEL_political_crack_down
+				}
+				is_debug = yes
+			}
+		}
+
+		mutually_exclusive = {
+			focus = BEL_monarchism_the_monarch_alone
+			focus = BEL_monafash_monarchist_fascist_alliance
+		}
+
+		prerequisite = {
+			focus = BEL_political_crack_down
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = -0.05
+		}
+	}
+
+	# One State... | Add Stability
+	focus = {
+		id = BEL_fascism_one_state
+		icon = tbd
+
+		cost = 5
+		
+		x = 11
+		y = 3
+
+		prerequisite = {
+			focus = BEL_fascism_fascist_ascendance
+		}
+		
+		completion_reward = {
+			add_stability = 0.025
+		}
+	}
+
+	# One People... | Add sliver of Popularity
+	focus = {
+		id = BEL_fascism_one_people
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 3
+
+		prerequisite = {
+			focus = BEL_fascism_fascist_ascendance
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.025
+			}
+		}
+	}
+
+	# United by History... | Add War Support
+	focus = {
+		id = BEL_fascism_united_by_history
+		icon = tbd
+
+		cost = 5
+		
+		x = 10
+		y = 4
+
+		prerequisite = {
+			focus = BEL_fascism_one_state
+		}
+		
+		completion_reward = {
+			add_war_support = 0.025
+		}
+	}
+
+	# United by Culture... | Add Stability
+	focus = {
+		id = BEL_fascism_united_by_culture
+		icon = tbd
+
+		cost = 5
+		
+		x = 12
+		y = 4
+
+		prerequisite = {
+			focus = BEL_fascism_one_state
+			focus = BEL_fascism_one_people
+		}
+		
+		completion_reward = {
+			add_stability = 0.025
+		}
+	}
+
+	# United by Blood... | Give Idea
+	focus = {
+		id = BEL_fascism_united_by_blood
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 4
+
+		prerequisite = {
+			focus = BEL_fascism_one_people
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_united_by_blood
+		}
+	}
+
+	# Disunited by Politics... | Give 10-15% of popularity to Fascism
+	focus = {
+		id = BEL_fascism_disunited_by_politics
+		icon = tbd
+
+		cost = 5
+		
+		x = 11
+		y = 5
+
+		prerequisite = {
+			focus = BEL_fascism_united_by_history
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_united_by_culture
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.05
+			random_list = {
+				25 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.1
+					}
+				}
+				50 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.125
+					}
+				}
+				25 = {
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.15
+					}
+				}
+			}
+		}
+	}
+
+	# Disunited by Borders... | Add War Support
+	focus = {
+		id = BEL_fascism_disunited_by_borders
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 5
+
+		prerequisite = {
+			focus = BEL_fascism_united_by_culture
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_united_by_blood
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = -0.05
+		}
+	}
+
+	# Reunited by blood an sweat... | Give temporary civ-production-related idea
+	focus = {
+		id = BEL_fascism_reunited_by_blood_and_sweat
+		icon = tbd
+
+		cost = 5
+		
+		x = 11
+		y = 6
+
+		prerequisite = {
+			focus = BEL_fascism_disunited_by_politics
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_disunited_by_borders
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = BEL_idea_blood_and_sweat
+				years = 3
+			}
+		}
+	}
+
+	# Reunited by hearts of iron... | Give temporary war-related idea | Haha, Hearts of Iron, get it?
+	focus = {
+		id = BEL_fascism_reunited_by_hearts_of_iron
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 6
+
+		prerequisite = {
+			focus = BEL_fascism_disunited_by_politics
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_disunited_by_borders
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = BEL_idea_hearts_of_iron
+				years = 3
+			}
+		}
+	}
+
+	# Forged into one new Empire! | Put Fascists in power if they aren't already, give war support and stability
+	focus = {
+		id = BEL_fascism_forged_into_one_new_empire
+		icon = tbd
+
+		cost = 5
+		
+		x = 12
+		y = 7
+
+		prerequisite = {
+			focus = BEL_fascism_reunited_by_blood_and_sweat
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_reunited_by_hearts_of_iron
+		}
+
+		available = {
+			fascism > 0.5 # Needs majority
+		}
+		
+		completion_reward = {
+			country_event = tomboy.81
+			if = {
+				limit = {
+					NOT = {
+						has_government = fascism
+					}
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+			every_country = {
+				limit = {
+					has_government = fascism
+				}
+				add_opinion_modifier = {
+					target = BEL
+					modifier = small_increase
+				}
+			}
+		}
+	}
+
+
+
+	#############
+	# Kriegsamt #
+	#############
+
+	# Establish the Imperiales Kriegsamt
+	focus = {
+		id = BEL_fascism_war_establish_kriegsamt
+		icon = tbd
+
+		cost = 5
+		
+		x = 7
+		y = 8
+
+		prerequisite = {
+			focus = BEL_fascism_forged_into_one_new_empire
+		}
+		
+		completion_reward = {
+			set_power_balance = {
+				id = BEL_bop_fascism
 			}
 		}
 	}

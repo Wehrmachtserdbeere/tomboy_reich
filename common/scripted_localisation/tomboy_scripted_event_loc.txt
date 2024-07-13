@@ -132,3 +132,47 @@ defined_text = {
 		localization_key = tomboy_generic_4_a_generic
 	}
 }
+
+defined_text = {
+	name = tomboy-82-t_scripted_loc
+	text = {
+		trigger = {
+			power_balance_value = {
+				id = BEL_bop_fascism
+				value < 0 # Is on the Reichsmilitär side
+			}
+		}
+		localization_key = tomboy-82-t_scripted_loc_reichsmilitaer
+	}
+	text = {
+		trigger = {
+			power_balance_value = {
+				id = BEL_bop_fascism
+				value > 0 # Is on the Sturmkommando side
+			}
+		}
+		localization_key = tomboy-82-t_scripted_loc_sturmkommando
+	}
+}
+
+defined_text = {
+	name = tomboy-82-d_scripted_loc
+	text = {
+		trigger = {
+			power_balance_value = {
+				id = BEL_bop_fascism
+				value < 0 # Is on the Reichsmilitär side
+			}
+		}
+		localization_key = tomboy-82-d_scripted_loc_reichsmilitaer
+	}
+	text = {
+		trigger = {
+			power_balance_value = {
+				id = BEL_bop_fascism
+				value > 0 # Is on the Sturmkommando side
+			}
+		}
+		localization_key = tomboy-82-d_scripted_loc_sturmkommando
+	}
+}

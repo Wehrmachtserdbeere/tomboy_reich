@@ -1689,6 +1689,109 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
+
+		BEL_idea_iron_curtain = {
+			name = BEL_idea_iron_curtain
+
+			picture = tbd
+
+			on_add = {
+				every_country = {
+					limit = {
+						has_government = communism
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = BEL_iron_curtain_modifier_neg
+					}
+				}
+			}
+
+			modifier = {
+				communism_acceptance = -50
+				communism_drift = -0.025
+				land_bunker_effectiveness_factor = 0.1
+				production_speed_bunker_factor = 0.15
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				opinion_gain_monthly = -0.25
+				trade_opinion_factor = -0.25
+			}
+		}
+
+		BEL_idea_iron_curtain_minor = { # Less severe
+			name = BEL_idea_iron_curtain_minor
+
+			picture = tbd
+
+			modifier = {
+				communism_acceptance = -20
+				communism_drift = -0.015
+				land_bunker_effectiveness_factor = 0.05
+				production_speed_bunker_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				opinion_gain_monthly = -0.15
+				trade_opinion_factor = -0.15
+			}
+		}
+
+		BEL_idea_united_by_blood = {
+			name = BEL_idea_united_by_blood
+
+			picture = tbd
+
+			modifier = {
+				resistance_growth = 0.05
+				recruitable_population_factor = 0.2
+				monthly_population = 0.1
+				non_core_manpower = -0.1
+				supply_combat_penalties_on_core_factor = -0.25
+			}
+		}
+
+		BEL_idea_blood_and_sweat = {
+			name = BEL_idea_blood_and_sweat
+
+			picture = tbd
+
+			modifier = {
+				production_speed_fuel_silo_factor = 0.2
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+				state_production_speed_supply_node_factor = 0.4
+			}
+		}
+
+		BEL_idea_hearts_of_iron = {
+			name = BEL_idea_hearts_of_iron
+
+			picture = tbd
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				army_org_factor = -0.3
+				army_strength_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				training_time_factor = -0.2
+			}
+		}
+
+		BEL_idea_imperiales_kriegsamt_1 = {
+			name = BEL_idea_imperiales_kriegsamt
+			
+			picture = tbd
+
+			# No Modifiers, purely informational
+		}
 	}
 
 	tank_manufacturer = {

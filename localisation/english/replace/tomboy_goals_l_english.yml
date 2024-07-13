@@ -805,6 +805,69 @@
   BEL_monafash_imperialism_east_poland_send_diplomats: "Send Diplomats to [POL.GetName]"
   BEL_monafash_imperialism_east_poland_send_diplomats_desc: "Poland has suffered greatly in the Great War, and they're traumatized from years of war. We'll send diplomats to try and form a close alliance, and help them build up their economy, so the whole ordeal does not repeat itself. We'll also prove to the Fascists that the Poles are good people, and should not be harmed or treated like dirt.\n\n§YBecause of this, if [POL.GetName] replies with hostilities, the Fascists will gain a lot of power!§!"
 
+  BEL_monafash_imperialism_east_poland_antagonize_poland: "Antagonize [POL.GetName]"
+  BEL_monafash_imperialism_east_poland_antagonize_poland_desc: "Despite our effort to maintain friendly relations with [POL.GetName], the [POL.GetAdjective] have threatened our diplomats and demanded we \"show them respect\" or else. We can continue to attempt peace, but it's likely that they're going to antagonize us further. For now, we'll prepare for the worst, and hope it doesn't come. We'll also have to figure out what this \"respect\" thing they're talking about is, since we tried out best to be respectful."
+
+  BEL_monafash_imperialism_east_poland_threaten_poland: "Threaten [POL.GetName]"
+  BEL_monafash_imperialism_east_poland_threaten_poland_desc: "The [POL.GetAdjective] have gone beyond their words. They're sending soldiers and military vehicles to the border, and have made multiple threats about how we \"haven't shown them the respect they deserve\" and that we \"keep bothering them.\" We have to send a last attempt for peace, a last diplomatic mission to them."
+
+  BEL_monafash_imperialism_east_poland_instigate_an_attack: "Instigate a False-Flag"
+  BEL_monafash_imperialism_east_poland_instigate_an_attack_desc: "After again threatening us, they have finally done it - they sent a few soldiers over the border and briefly took over a Radio Station near Gleiwitz, retreating before the police arrived. This, mixed with the continues genocide against [BEL.GetAdjective]s, [GER.GetAdjective]s, and others, is forcing our hand, and we have enough evidence that they have de-facto declared war on us. We can only hope other nations understand."
+
+  BEL_monafash_imperialism_east_poland_war_with_poland: "War with [POL.GetName]"
+  BEL_monafash_imperialism_east_poland_war_with_poland_desc: "Despite all of our attempts, the [POL.GetAdjective] have launched a surprise attack and declared war on us. Our diplomats have been arrested, and we don't know how they're treated. We have to scramble and prepare for the worst. Hopefully the troops stationed at the border will hold them off until our army arrives."
+
+  BEL_monafash_imperialism_east_poland_friendship_with_poland: "Friendship with the [POL.GetAdjective]"
+  BEL_monafash_imperialism_east_poland_friendship_with_poland_desc: "We have a history with the [POL.GetAdjective], and we've known each other for centuries. Through establishing a friendly relationship with them, we can not only secure a powerful ally, but also make the rest of Europe question their beliefs and morals, and prove to the Fascists within Europe that the Poles are a good and noble people."
+
+  BEL_monafash_imperialism_east_poland_economic_co-operation: "[BEL.GetAdjective]-[POL.GetAdjective] Economic Co-Operation"
+  BEL_monafash_imperialism_east_poland_economic_co-operation_desc: "We'll encourage our people and the [BEL.GetAdjective] to set up joint-ventures, and trade goods with one another. The goal of this initiative is to strengthen the economies of both our nations, and to increase co-operation between us, eventually leading to mutual prosperity and the eventual unification of our nations."
+
+  BEL_monafash_imperialism_east_poland_unite: "Unite with [POL.GetName]"
+  BEL_monafash_imperialism_east_poland_unite_desc: "In order to achieve our ultimate goals of global dominance and unification, we'll have to unite the whole Tomboy people under one flag. The [POL.GetAdjective] Tomboys are a vital part of the Tomboy culture, and unifying them will not only help us achieve a greater purpose, but also bring us closer together."
+
+  BEL_monafash_imperialism_east_poland_integrate: "Integrate [POL.GetName]"
+  BEL_monafash_imperialism_east_poland_integrate_desc: "With [POL.GetName] now a part of our country, it's time for the integration process to begin. By integrating Poland into our nation, we can bring the Polish Tomboys back home, and turn the unused land into productive farms and industrial factories. This will further bolster our economy, and will pave the way for a bright and prosperous future for all of our people."
+
+  BEL_monafash_imperialism_east_bulwark: "Bulwark against the East"
+  BEL_monafash_imperialism_east_bulwark_desc: "It's obvious that the East is on a path of destruction. From the Bolsheviks to the Maoists, the East is filled with tyrants and maniacs who want nothing but total eradication and enslavement of innocents. We have no choice but to defend ourselves and our neighbors, and the best way to do this is through an impregnable, iron defense. An \"Iron Curtain\" if you will."
+
+
+
+
+
+  BEL_fascism_fascist_ascendance: "Fascist Ascendance"
+  BEL_fascism_fascist_ascendance_desc: "Having seen the failures that monarchism brought, especially after the springtime of nations, it has become clear that the monarchist system cannot be trusted to lead the country into a good future. The people deserve a better leadership, one who is strong because of their merit and willpower, rather than some obscure bloodline of questionable merit."
+
+  BEL_fascism_one_state: "One State..."
+  BEL_fascism_one_state_desc: "Our country is the only tomboy state in the world, and this is something to be proud of. It's our duty to provide for our people, and the only way to do that is by uniting the Tomboys under one, central, unified, and prosperous nation."
+
+  BEL_fascism_one_people: "One People..."
+  BEL_fascism_one_people_desc: "Our people are the best in the world. They're smart, strong, hard-working, kind, and beautiful. Even among the other White races, we outshine all the others."
+
+  BEL_fascism_united_by_history: "United by History..."
+  BEL_fascism_united_by_history_desc: "For centuries, the Tomboys were scattered across Europe, forced to live under foreign oppression and abuse. And yet we have a shared history, one of surviving hardship and suppression, and rising from the ashes of those who wronged us."
+
+  BEL_fascism_united_by_culture: "United by Culture..."
+  BEL_fascism_united_by_culture_desc: "Even though we have spread throughout the world, we have managed to maintain a sense of unity and solidarity. Our shared culture and values have bound us together, and have made us stronger as a people. United by the idea of perfecting our bodies, serving God, and living the life of Tomboys, we are one people."
+
+  BEL_fascism_united_by_blood: "United by Blood..."
+  BEL_fascism_united_by_blood_desc: "Many of our traits as tomboys are genetic. Be it our body shapes, our athletic capabilities, our mental abilities, our facial features, our sexual orientation, or even our love for the Lord, we have inherited them from our ancestors. And it is our duty to ensure that these traits continue to exist and are passed down to future generations. This duty, and this blood unites us."
+
+  BEL_fascism_disunited_by_politics: "Disunited by Politics..."
+  BEL_fascism_disunited_by_politics_desc: "Politics, the greatest tool of manipulation. Used to divide the people, to make them distrust and hate each other. This has made it easier for foreign powers to destroy and conquer us. That must never happen, but it is a sad reality that politics are a fundamental part of life, and thus we cannot remove it. However, we can change the nature of politics, to unify the people and make us stronger."
+
+  BEL_fascism_disunited_by_borders: "Disunited by Borders..."
+  BEL_fascism_disunited_by_borders_desc: "Our people are torn apart, divided by foreign borders. These borders are artificial and man-made, created by foreign powers and their puppet states, and it is they who keep us separated and isolated."
+
+  BEL_fascism_reunited_by_blood_and_sweat: "Reunited by Blood and Sweat..."
+  BEL_fascism_reunited_by_blood_and_sweat_desc: "Our blood and sweat have built this country, and we have earned the right to govern ourselves and determine our own destiny. We will unify our nation, and we will create a better, brighter future for ourselves and for the generations to come. Through the hard work of our people, and the generations before us, we will succeed!"
+
+  BEL_fascism_reunited_by_hearts_of_iron: "Reunited by Hearts of Iron..."
+  BEL_fascism_reunited_by_hearts_of_iron_desc: "The Tomboy Military, strength gained through centuries of war and struggle, weapons made by the most skilled workers and scientists, and tactics and strategies thought up by the greatest minds. It encompasses the united strength of all Tomboys of the world, and we are willing to fight for our future!"
+
+  BEL_fascism_forged_into_one_new_empire: "Forged into one new Empire!"
+  BEL_fascism_forged_into_one_new_empire_desc: "Our nation is strong, and has a long history of success. But there is always room for improvement. It's time for the Tomboy race to rise from the ashes of the past, and forge a new empire. One that will last for generations to come. One that will unite the whole world, and create a perfect, prosperous, and safe place for our people!"
 
 
 

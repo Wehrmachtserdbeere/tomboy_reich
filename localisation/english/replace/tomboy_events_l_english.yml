@@ -605,6 +605,23 @@
   tomboy.79.d: "We had just received news that a radio station in Gleiwitz has been attacked and occupied by a group of Poles! The occupiers have taken to the airwaves, sending \"This is Gleiwitz. The radio station is in Polish hands\" to the surrounding regions. They locked the radio staff inside the station, and would have let them starve in there if it weren't for the active police listening in on the station. When the police arrived, the perpetrators already left, and the staff confirmed that it were uniformed Polish soldiers that committed this."
   tomboy.79.a: "They're going too far, demand them to stop!"
 
+  tomboy.80.t: "[BEL.GetName] construct Iron Curtain"
+  tomboy.80.d: "The [BEL.GetAdjective]s have built a massive structure - a bulwark against the East, an \"Iron Curtain.\" They have sent a message to a multitude of states, asking if they will support their actions. Our nation is no exception, and we have received this message. Supporting them will undoubtedly anger the Communists, but refusing to do so may antagonize the [BEL.GetAdjective]s."
+  tomboy.80.a: "We will support them."
+  tomboy.80.b: "We will refuse them. Strongly."
+
+  tomboy.81.t: "Queen Lalatina taken into custody!"
+  tomboy.81.d: "We have taken the Queen into custody. We ensured that for the foreseeable future, we will be in power. We expected the Queen to be a lot more... difficult to subdue, but she went willingly after realizing that it's useless to resist. She even begged to join us as some sort of figurine? Her exact words were confusing, but we may be able to prop her up as a figurehead. For now, we are the true power, and will be ruling the nation, while Lalatina will be nothing but a decoration."
+  tomboy.81.a: "Keep her as a figure head"
+  tomboy.81.b: "Banish her for leading our people astray!"
+
+  tomboy.82.t: "[tomboy-82-t_scripted_loc]"
+  tomboy-82-t_scripted_loc_reichsmilitaer: "Reichsmilitär assumes full control!"
+  tomboy-82-t_scripted_loc_sturmkommando: "Sturmkommando assumes full control!"
+  tomboy.82.d: "[tomboy-82-d_scripted_loc]"
+  tomboy-82-d_scripted_loc_reichsmilitaer: "After the power of the Sturmkommando has progressively been stripped, the Reichsmilitär has declared the disbanding of the Sturmkommando, and assumed control of the Imperiales Kriegsamt. As result, they'll have an incredible influence in the government's war efforts, and will be the main deciders of our military policies. They are also now directly controlling the military forces, and are responsible for the defense of the nation."
+  tomboy-82-d_scripted_loc_sturmkommando: "Having gained significant popularity and power, the Sturmkommando has declared single control of the Imperiales Kriegsamt. As such, the Sturmkommando will now have an incredible influence in the government's war efforts. They are also now directly controlling the military forces, and are responsible for the defense of the nation. As a result of the Sturmkommando's decision, the Reichsmilitär has effectively been disbanded. We can expect our occupied territories to become a potential bloodbath for non-Tomboys as a result."
+
 
 
   # Generics

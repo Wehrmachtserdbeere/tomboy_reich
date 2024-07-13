@@ -7236,3 +7236,118 @@ country_event = {
 		}
 	}
 }
+
+# Any | Tomboys create Iron Curtain
+country_event = {
+	id = tomboy.80
+	title = tomboy.80.t
+	desc = tomboy.80.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.80"
+	}
+
+	option = { # We will join!
+		name = tomboy.80.a
+
+		add_ideas = BEL_idea_iron_curtain_minor
+		every_country = {
+			limit = {
+				has_government = communism
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+		}
+	}
+
+	option = { # We won't join
+		name = tomboy.80.b
+
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		every_country = {
+			limit = {
+				has_government = communism
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = small_increase
+			}
+		}
+		BEL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_disappointed
+			}
+		}
+	}
+}
+
+# BEL | Lalatina taken into custody
+country_event = {
+	id = tomboy.81
+	title = tomboy.81.t
+	desc = tomboy.81.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.81"
+	}
+
+	option = { # Keep her as a figurehead.
+		name = tomboy.81.a
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		add_ideas = BEL_lalatina_idea
+	}
+
+	option = { # Exile her | No, it'd be communists that massacre royals to fuel their bloodlust.
+		name = tomboy.81.b
+
+		ai_chance = {
+			base = 25
+		}
+
+		add_stability = -0.2
+		set_country_flag = BEL_lalatina_banished
+		# Maybe add a global flavor event in the future?
+	}
+}
+
+# BEL | Fascism BoP | Reichsmilitär OR Sturmkommando assumes total control of the Kriegsamt
+country_event = {
+	id = tomboy.82
+	title = tomboy.82.t
+	desc = tomboy.82.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.82"
+	}
+
+	option = { # Understood.
+		name = tomboy.82.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		effect_tooltip = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_bop_fascism_reichsmilitaer_dominance
+			}
+		}
+	}
+}
