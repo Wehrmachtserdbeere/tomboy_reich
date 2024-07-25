@@ -2584,6 +2584,229 @@ BEL_monafash_bop_decisions_category = {
             }
         }
     }
+
+    BEL_monafash_bop_fash_employ_fascist_ministers = {
+
+        allowed = {
+            tag = BEL
+        }
+
+        available = {
+            has_political_power > 149
+            has_power_balance = {
+                id = BEL_bop_monafash
+            }
+        }
+
+        complete_effect = {
+            add_war_support = 0.05
+            add_political_power = -150
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.075
+            }
+            add_power_balance_value = {
+                id = BEL_bop_monafash
+                value = 0.075
+            }
+        }
+    }
+
+    BEL_monafash_bop_mona_secure_minor_noble_marriages = {
+
+        allowed = {
+            tag = BEL
+        }
+
+        available = {
+            has_political_power > 149
+            has_power_balance = {
+                id = BEL_bop_monafash
+            }
+        }
+
+        complete_effect = {
+            add_stability = 0.025
+            add_manpower = 500
+            add_political_power = -150
+            add_power_balance_value = {
+                id = BEL_bop_monafash
+                value = -0.075
+            }
+        }
+    }
+}
+
+BEL_bop_fascism_decisions_category = {
+    # Left = Reichsmilitär
+    # Right = Sturmkommando
+
+    
+    rm_curb_sturmkommando_influence = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_fascism
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_fascism
+                value < 0.9
+            }
+        }
+
+        complete_effect = {
+            add_stability = 0.025
+            add_war_support = -0.05
+            add_power_balance_value = {
+                id = BEL_bop_fascism
+                value = -0.05
+            }
+        }
+    }
+
+    BEL_bop_fascism_sk_purge_low_ranking_rm_officers = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_fascism
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_fascism
+                value > -0.9
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    # has 3+ generals and/or unit leaders
+                }
+                random_list = {
+                    40 = {
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_one_officer
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    40 = {
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_two_officers
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    20 = {
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_three_officers
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    # has 2 generals and/or unit leaders
+                }
+                random_list = {
+                    60 = {
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_one_officer
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    40 = {
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_two_officers
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    # has 1 general and/or unit leader
+                }
+                random_list = {
+                    60 = {
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_one_officer
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    40 = {
+                        add_political_power = -50
+                    }
+                }
+            }
+        }
+    }
 }
 
 BEL_colonial_management_category = {

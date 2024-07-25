@@ -277,6 +277,12 @@
     BEL_monarcho_fascist_neutral: "Monarcho-Fascist"
     BEL_monarcho_fascist_neutral_desc: "This ruler is a convinced Monarcho-Fascist. They swear loyalty to neither monarchism or fascism alone, but the two united as a whole. Monarcho-Fascism is an ideology encompassing a fascistic authoritarian government where a Monarchy rules above the fascist-controlled government, which then makes sure that fascism is dominant over the economy, the society and politics. The rulers usually encourage and facilitate a nationalistic ideology, often promoting a racial monolithic ethnic state, where foreigners are often not equal, and are often treated as second-rate citizens. The monarch will often have little to no real power, while in the hands of the fascist government, although this is not always the case."
 
+    BEL_trait_sturmkommando_member: "Sturmkommando Member"
+    BEL_trait_sturmkommando_member_desc: "[THIS.GetName] is a member of the Sturmkommando branch of the Imperial Kriegsamt. Due to [THIS.GetHerHis] affiliation with such a bloody and merciless branch, [THIS.GetSheHe] will be just as brutal on the battlefield, and just as oppressive and cruel to civilians as any other Sturmkommandant. Whether due to luck or ability, [THIS.GetSheHe] managed to escape being hung for crimes against humanity, and was given the chance to join the Imperial Kriegsamt. [THIS.GetSheHe]'s best commanding a counter-insurgency battalion."
+
+    BEL_trait_reichsmilitaer_member: "Reichsmilitär Member"
+    BEL_trait_reichsmilitaer_member_desc: "[THIS.GetName] person is a member of the Reichsmilitär branch of the Imperial Kriegsamt. Due to [THIS.GetHerHis] affiliation with a rather compassionate and fair military branch, [THIS.GetSheHe] will not be as brutal or cruel on the battlefield as other soldiers, nor will [THIS.GetSheHe] be cruel or oppressive to civilians. Unfortunately, this leads to [THIS.GetHerHim] being utterly incapable of crushing any insurgencies or rebellions that may form within the Empire. [THIS.GetHerHis] best role is to command a division in a standard army. Despite this, [THIS.GetSheHe] still possesses all of the training any other member of the military possesses."
+
     POLITICS_LALATINA_ALT: "Queen Lalatina Dustiness Ford"
     POLITICS_LALATINA_NAME: "Lalatina Dustiness Ford"
     POLITICS_LALATINA_DESC: "Dustiness Ford Lalatina, also known as \"Darkness\", is a young woman who, although often attacked, will never stay down, even when the situation seems hopeless."

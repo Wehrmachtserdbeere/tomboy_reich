@@ -1,0 +1,98 @@
+leader_traits = {
+
+	# Member of the Sturmkommando
+	BEL_trait_sturmkommando_member = {
+
+		type = all
+
+		trait_type = personality_trait
+
+		gain_xp = {
+			always = no # Not Gainable
+		}
+
+		attack_skill = 2
+		defense_skill = -2
+
+		allowed = {
+			FROM = {
+				original_tag = BEL
+				has_government = fascism
+			}
+		}
+
+		modifier = {
+			supply_factor = 0.2
+			resistance_damage_to_garrison = 1
+			resistance_activity = -0.2
+			compliance_growth = -0.75
+			army_org = -0.15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		new_commander_weight = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				FROM = {
+					power_balance_value = {
+						id = BEL_bop_fascism
+						value < -0.9
+					}
+				}
+			}
+		}
+	}
+
+	# Member of the Reichsmilitaer
+	BEL_trait_reichsmilitaer_member = {
+
+		type = all
+
+		trait_type = personality_trait
+
+		gain_xp = {
+			always = no # Not Gainable
+		}
+
+		attack_skill = -1
+		defense_skill = 1
+
+		allowed = {
+			FROM = {
+				original_tag = BEL
+				has_government = fascism
+			}
+		}
+
+		modifier = {
+			resistance_damage_to_garrison = -0.2
+			resistance_activity = 0.15
+			compliance_growth = 0.25
+			army_org = 0.2
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		new_commander_weight = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				FROM = {
+					power_balance_value = {
+						id = BEL_bop_fascism
+						value < -0.9
+					}
+				}
+			}
+		}
+	}
+
+}
