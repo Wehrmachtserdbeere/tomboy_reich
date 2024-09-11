@@ -869,6 +869,43 @@
   BEL_fascism_forged_into_one_new_empire: "Forged into one new Empire!"
   BEL_fascism_forged_into_one_new_empire_desc: "Our nation is strong, and has a long history of success. But there is always room for improvement. It's time for the Tomboy race to rise from the ashes of the past, and forge a new empire. One that will last for generations to come. One that will unite the whole world, and create a perfect, prosperous, and safe place for our people!"
 
+  BEL_fascism_war_establish_kriegsamt: "Establish the Imperiales Kriegsamt"
+  BEL_fascism_war_establish_kriegsamt_desc: "To achieve the new Tomboy Empire, we'll need a new military structure, and a new, unified Tomboy Army. With this new Imperiales Kriegsamt, we will have a modern, professional, and unified army department that is ready to defend our nation from any and all threats. Even with only the plan, two factions have already formed - the radical Sturmkommando, and the moderate Reichsmilitär; both have different ideas for how war should be fought."
+
+
+
+
+
+  BEL_fascism_war_the_army: "The Army"
+  BEL_fascism_war_the_army_desc: "We'll create the Army section of the Kriegsamt and focus our resources and attention there. Undeniably, we'll only profit from it, as military inventions and advances will benefit the other sections as well, and will help us in our goal of a unified Tomboy Empire."
+
+  BEL_fascism_war_the_army_infantry_focus: "Infantry Focus"
+  BEL_fascism_war_the_army_infantry_focus_desc: "We don't have the resources to waste on expensive tanks and land-ships. We'll put our focus into creating a stronger, more mobile, and more deadly infantry force. The soldiers will train for longer, and will have the most modern equipment, and we will use our superior fighting prowess and strategy to take our armored enemies down."
+
+  BEL_fascism_war_the_army_armored_focus: "Armored Focus"
+  BEL_fascism_war_the_army_armored_focus_desc: "We don't have the manpower to waste on the infantry, and the tanks are the future. By focusing on tank research and development, we'll ensure that [BEL.GetNameDef] has the best tanks, and will give us a decisive advantage over the competition."
+
+  BEL_fascism_war_the_army_infantry_update_our_guns: "Update our guns"
+  BEL_fascism_war_the_army_infantry_update_our_guns_desc: "In order to have an advantage over the competition, we'll invest in a new gun system, which will allow us to equip our infantrymen with the most advanced and accurate weapons, and make our production much more efficient."
+
+  BEL_fascism_war_the_army_infantry_update_our_trucks: "Update our trucks"
+  BEL_fascism_war_the_army_infantry_update_our_trucks_desc: "Not only are trucks vital for troop movement, they're also vital for supply and logistical purposes. By updating the trucks to modern specifications, and equipping them with the best materials, we can improve our ability to supply our troops across the country and into the battlefield, and ensure a swift victory."
+
+  BEL_fascism_war_the_army_armored_update_our_light_tanks: "Update our Light Tanks"
+  BEL_fascism_war_the_army_armored_update_our_light_tanks_desc: "Our armored divisions are... lackluster, to say the least. To rectify this, we'll replace our outdated light tanks with new models, and start the development of new, improved light tanks."
+
+  BEL_fascism_war_the_army_armored_update_our_heavy_tanks: "Update our Heavy Tanks"
+  BEL_fascism_war_the_army_armored_update_our_heavy_tanks_desc: "We have a critical lack of usable heavy tanks. The ones we have are glorified tin cans, left over from the great war. It's high time to update our heavy tanks, and ensure that they can not only rival the other countries', but crush them."
+
+  BEL_fascism_war_the_army_infantry_special_forces: "Establish Special Forces"
+  BEL_fascism_war_the_army_infantry_special_forces_desc: "Every military needs special forces. Small groups of the best tomboys, equipped with the best gear, trained in the best conditions, and given the best training. A unit that is specialized in certain conditions that other troops can't operate in, and will give us an advantage in many situations."
+
+  BEL_fascism_war_the_army_armored_build_queen_tigress: "Build the Königstigerin"
+  BEL_fascism_war_the_army_armored_build_queen_tigress_desc: "The Königstigerin will be the apex of Tomboy military engineering, and will bring glory and prestige to our nation. The beast will be a formidable foe for even the heaviest Soviet and the most mass-produced American tanks, and will crush them under its treads!"
+
+  BEL_fascism_war_the_army_invest_in_radars: "Invest in Radars"
+  BEL_fascism_war_the_army_invest_in_radars_desc: "Investing in the currently little-used radar technology will give us an advantage over the other countries. Not only will the technology allow us to find and destroy incoming attacks, it will also improve the efficiency of our division's missions."
+
 
 
 

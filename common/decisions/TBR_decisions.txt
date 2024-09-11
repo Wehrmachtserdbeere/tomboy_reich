@@ -2642,7 +2642,7 @@ BEL_bop_fascism_decisions_category = {
     # Right = Sturmkommando
 
     
-    rm_curb_sturmkommando_influence = {
+    BEL_bop_fascism_rm_curb_sturmkommando_influence = {
 
         allowed = {
             original_tag = BEL
@@ -2671,7 +2671,7 @@ BEL_bop_fascism_decisions_category = {
         }
     }
 
-    BEL_bop_fascism_sk_purge_low_ranking_rm_officers = {
+    BEL_bop_fascism_sk_purge_rm_officers = {
 
         allowed = {
             original_tag = BEL
@@ -2691,13 +2691,35 @@ BEL_bop_fascism_decisions_category = {
         }
 
         complete_effect = {
+            add_power_balance_value = {
+                id = BEL_bop_fascism
+                value = 0.1
+            }
+            set_variable = {
+                var = BEL_var_reichsmilitaer_members
+                value = 0
+            }
+            every_army_leader = {
+                limit = {
+                    FROM = {
+                        original_tag = BEL
+                    }
+                    has_trait = BEL_trait_reichsmilitaer_member
+                }
+                add_to_temp_variable = {
+                    var = BEL_var_reichsmilitaer_members
+                    value = 1
+                }
+            }
             if = {
                 limit = {
-                    # has 3+ generals and/or unit leaders
+                    check_variable = {
+                        BEL_var_reichsmilitaer_members > 2 # If has 3 or more people with this trait
+                    }
                 }
                 random_list = {
                     40 = {
-                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_one_officer
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_rm_officers_retire_one_officer
                         hidden_effect = {
                             random_army_leader = {
                                 limit = {
@@ -2708,7 +2730,7 @@ BEL_bop_fascism_decisions_category = {
                         }
                     }
                     40 = {
-                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_two_officers
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_rm_officers_retire_two_officers
                         hidden_effect = {
                             random_army_leader = {
                                 limit = {
@@ -2725,7 +2747,7 @@ BEL_bop_fascism_decisions_category = {
                         }
                     }
                     20 = {
-                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_three_officers
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_rm_officers_retire_three_officers
                         hidden_effect = {
                             random_army_leader = {
                                 limit = {
@@ -2749,13 +2771,15 @@ BEL_bop_fascism_decisions_category = {
                     }
                 }
             }
-            if = {
+            else_if = {
                 limit = {
-                    # has 2 generals and/or unit leaders
+                    check_variable = {
+                        BEL_var_reichsmilitaer_members = 2 # If has 2 people with this trait
+                    }
                 }
                 random_list = {
                     60 = {
-                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_one_officer
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_rm_officers_retire_one_officer
                         hidden_effect = {
                             random_army_leader = {
                                 limit = {
@@ -2766,7 +2790,7 @@ BEL_bop_fascism_decisions_category = {
                         }
                     }
                     40 = {
-                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_two_officers
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_rm_officers_retire_two_officers
                         hidden_effect = {
                             random_army_leader = {
                                 limit = {
@@ -2784,13 +2808,15 @@ BEL_bop_fascism_decisions_category = {
                     }
                 }
             }
-            if = {
+            else_if = {
                 limit = {
-                    # has 1 general and/or unit leader
+                    check_variable = {
+                        BEL_var_reichsmilitaer_members = 1 # If has 2 people with this trait
+                    }
                 }
                 random_list = {
                     60 = {
-                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_low_ranking_rm_officers_retire_one_officer
+                        custom_effect_tooltip = BEL_bop_fascism_sk_purge_rm_officers_retire_one_officer
                         hidden_effect = {
                             random_army_leader = {
                                 limit = {
@@ -2805,6 +2831,213 @@ BEL_bop_fascism_decisions_category = {
                     }
                 }
             }
+            else = {
+                custom_effect_tooltip = BEL_bop_fascism_sk_purge_rm_officers_none
+                add_political_power = -100
+                add_manpower = -1500
+            }
+        }
+    }
+
+    BEL_bop_fascism_rm_purge_sk_officers = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_fascism
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_fascism
+                value < 0.9
+            }
+        }
+
+        complete_effect = {
+            add_power_balance_value = {
+                id = BEL_bop_fascism
+                value = -0.1
+            }
+            set_variable = {
+                var = BEL_var_sturmkommando_members
+                value = 0
+            }
+            every_army_leader = {
+                limit = {
+                    FROM = {
+                        original_tag = BEL
+                    }
+                    has_trait = BEL_trait_reichsmilitaer_member
+                }
+                add_to_temp_variable = {
+                    var = BEL_var_sturmkommando_members
+                    value = 1
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        BEL_var_sturmkommando_members > 2 # If has 3 or more people with this trait
+                    }
+                }
+                random_list = {
+                    40 = {
+                        custom_effect_tooltip = BEL_bop_fascism_rm_purge_sk_officers_retire_one_officer
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    40 = {
+                        custom_effect_tooltip = BEL_bop_fascism_rm_purge_sk_officers_retire_two_officers
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    20 = {
+                        custom_effect_tooltip = BEL_bop_fascism_rm_purge_sk_officers_retire_three_officers
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    check_variable = {
+                        BEL_var_reichsmilitaer_members = 2 # If has 2 people with this trait
+                    }
+                }
+                random_list = {
+                    60 = {
+                        custom_effect_tooltip = BEL_bop_fascism_rm_purge_sk_officers_retire_one_officer
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    40 = {
+                        custom_effect_tooltip = BEL_bop_fascism_rm_purge_sk_officers_retire_two_officers
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    check_variable = {
+                        BEL_var_reichsmilitaer_members = 1 # If has 2 people with this trait
+                    }
+                }
+                random_list = {
+                    60 = {
+                        custom_effect_tooltip = BEL_bop_fascism_rm_purge_sk_officers_retire_one_officer
+                        hidden_effect = {
+                            random_army_leader = {
+                                limit = {
+                                    has_trait = BEL_trait_reichsmilitaer_member
+                                }
+                                retire = yes
+                            }
+                        }
+                    }
+                    40 = {
+                        add_political_power = -50
+                    }
+                }
+            }
+            else = {
+                custom_effect_tooltip = BEL_bop_fascism_rm_purge_sk_officers_none
+                add_political_power = -100
+                add_manpower = -1500
+            }
+        }
+    }
+
+    BEL_bop_fascism_sk_enlarge_sturmkommando = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_fascism
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_fascism
+                value > -0.9
+            }
+        }
+
+        days_remove = 30
+
+        complete_effect = {
+            add_manpower = -2500
+            add_stability = -0.1
+            add_war_support = -0.025
+        }
+
+        remove_effect = {
+            add_manpower = 5000
+            add_stability = 0.025
+            add_war_support = 0.075
         }
     }
 }

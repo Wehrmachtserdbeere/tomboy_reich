@@ -137,7 +137,7 @@ BEL_BSM_01 = {
 }
 
 BEL_NGA_01 = {
-	name = "National Guard"
+	name = "Nationalgarde"
 
 	for_countries = {
 		BEL
@@ -151,12 +151,12 @@ BEL_NGA_01 = {
 		medium_armor motorized medium_sp_artillery_brigade
 	}
 
-	fallback_name = "%d. National Guard Division"
+	fallback_name = "%d. Nationalgarden-Division"
 
 	ordered = {
-		1 = { "Personal Guard" }
-		2 = { "Crown Guard" }
-		3 = { "Palace Guard" }
-		4 = { "Sovereign Guard" }
+		1 = { "Personalgarde" }
+		2 = { "Krongarde" }
+		3 = { "Palastgarde" }
+		4 = { "Souveränsgarde" }
 	}
 }

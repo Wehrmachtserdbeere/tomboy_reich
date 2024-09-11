@@ -17917,6 +17917,546 @@
 		}
 	}
 
+	############
+	# The Army #
+	############
+	focus = {
+		id = BEL_fascism_war_the_army
+		icon = tbd
+
+		cost = 3
+
+		x = 4
+		y = 9
+
+		prerequisite = {
+			focus = BEL_fascism_war_establish_kriegsamt
+		}
+		
+		completion_reward = {
+			army_experience = 50
+			add_manpower = 1500
+		}
+	}
+
+	# Infantry Focus
+	focus = {
+		id = BEL_fascism_war_the_army_infantry_focus
+		icon = tbd
+
+		cost = 5
+		
+		x = 2
+		y = 10
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_army
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_army_armored_focus
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_army_infantry_focus
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = cat_grand_battle_plan
+				uses = 2
+			}
+		}
+	}
+	
+	# Armored Focus
+	focus = {
+		id = BEL_fascism_war_the_army_armored_focus
+		icon = tbd
+
+		cost = 5
+		
+		x = 6
+		y = 10
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_army
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_army_infantry_focus
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_army_armored_focus
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = cat_mobile_warfare
+				uses = 2
+			}
+		}
+	}
+
+	# Update Guns
+	focus = {
+		id = BEL_fascism_war_the_army_infantry_update_our_guns
+		icon = tbd
+
+		cost = 5
+		
+		x = 1
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_infantry_focus
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech = advanced_infantry_weapons2
+					}
+				}
+				add_tech_bonus = {
+					category = infantry_weapons
+					uses = 1
+					bonus = 1.75
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = 7500
+				}
+			}
+		}
+	}
+
+	# Update Trucks
+	focus = {
+		id = BEL_fascism_war_the_army_infantry_update_our_trucks
+		icon = tbd
+
+		cost = 5
+		
+		x = 3
+		y = 11
+		
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_infantry_focus
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech = tech_trucks
+					}
+				}
+				add_tech_bonus = {
+					technology = tech_trucks
+					uses = 1
+					bonus = 1.75
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 2500
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_army_truck_improvement
+			}
+		}
+	}
+
+	# Update Light Tanks
+	focus = {
+		id = BEL_fascism_war_the_army_armored_update_our_light_tanks
+		icon = tbd
+
+		cost = 5
+		
+		x = 5
+		y = 11
+		
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_armored_focus
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				if = {
+					limit = {
+						has_tech = advanced_light_tank
+					}
+					add_equipment_to_stockpile = {
+						type = advanced_light_tank
+						amount = 250
+					}
+				}
+				else_if = {
+					limit = {
+						has_tech = improved_light_tank
+						NOT = {
+							has_tech = advanced_light_tank
+						}
+					}
+					add_tech_bonus = {
+						technology = advanced_light_tank
+						bonus = 1.75
+						uses = 1
+					}
+				}
+				else_if = {
+					limit = {
+						has_tech = basic_light_tank
+						NOT = {
+							has_tech = improved_light_tank
+						}
+					}
+					add_tech_bonus = {
+						technology = improved_light_tank
+						bonus = 1.75
+						uses = 1
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						technology = basic_light_tank
+						bonus = 1.75
+						uses = 1
+					}
+				}
+			}
+			else = {
+				random_list = {
+					33 = {
+						add_tech_bonus = {
+							category = cat_light_armor
+							bonus = 1.75
+							uses = 1
+						}
+					}
+					33 = {
+						add_tech_bonus = {
+							category = armor
+							bonus = 1.75
+							uses = 1
+						}
+					}
+					33 = {
+						if = {
+							limit = {
+								has_tech = armor_tech_4
+							}
+							army_experience = 150
+						}
+						else_if = {
+							limit = {
+								has_tech = armor_tech_3
+								NOT = {
+									has_tech = armor_tech_4
+								}
+							}
+							add_tech_bonus = {
+								technology = armor_tech_4
+								bonus = 1.75
+								uses = 1
+							}
+						}
+						else_if = {
+							limit = {
+								has_tech = armor_tech_2
+								NOT = {
+									has_tech = armor_tech_3
+								}
+							}
+							add_tech_bonus = {
+								technology = armor_tech_3
+								bonus = 1.75
+								uses = 1
+							}
+						}
+						else_if = {
+							limit = {
+								has_tech = armor_tech_1
+								NOT = {
+									has_tech = armor_tech_2
+								}
+							}
+							add_tech_bonus = {
+								technology = armor_tech_2
+								bonus = 1.75
+								uses = 1
+							}
+						}
+						else = {
+							add_tech_bonus = {
+								technology = armor_tech_1
+								bonus = 1.75
+								uses = 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Update Heavy Tanks
+	focus = {
+		id = BEL_fascism_war_the_army_armored_update_our_heavy_tanks
+		icon = tbd
+
+		cost = 5
+		
+		x = 7
+		y = 11
+		
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_armored_focus
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				if = {
+					limit = {
+						has_tech = advanced_heavy_tank
+					}
+					add_equipment_to_stockpile = {
+						type = advanced_heavy_tank
+						amount = 250
+					}
+				}
+				else_if = {
+					limit = {
+						has_tech = improved_heavy_tank
+						NOT = {
+							has_tech = advanced_heavy_tank
+						}
+					}
+					add_tech_bonus = {
+						technology = advanced_heavy_tank
+						bonus = 1.75
+						uses = 1
+					}
+				}
+				else_if = {
+					limit = {
+						has_tech = basic_heavy_tank
+						NOT = {
+							has_tech = improved_heavy_tank
+						}
+					}
+					add_tech_bonus = {
+						technology = improved_heavy_tank
+						bonus = 1.75
+						uses = 1
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						technology = basic_heavy_tank
+						bonus = 1.75
+						uses = 1
+					}
+				}
+			}
+			else = {
+				random_list = {
+					33 = {
+						add_tech_bonus = {
+							category = cat_heavy_armor
+							bonus = 1.75
+							uses = 1
+						}
+					}
+					33 = {
+						add_tech_bonus = {
+							category = armor
+							bonus = 1.75
+							uses = 1
+						}
+					}
+					33 = {
+						if = {
+							limit = {
+								has_tech = armor_tech_4
+							}
+							army_experience = 150
+						}
+						else_if = {
+							limit = {
+								has_tech = armor_tech_3
+								NOT = {
+									has_tech = armor_tech_4
+								}
+							}
+							add_tech_bonus = {
+								technology = armor_tech_4
+								bonus = 1.75
+								uses = 1
+							}
+						}
+						else_if = {
+							limit = {
+								has_tech = armor_tech_2
+								NOT = {
+									has_tech = armor_tech_3
+								}
+							}
+							add_tech_bonus = {
+								technology = armor_tech_3
+								bonus = 1.75
+								uses = 1
+							}
+						}
+						else_if = {
+							limit = {
+								has_tech = armor_tech_1
+								NOT = {
+									has_tech = armor_tech_2
+								}
+							}
+							add_tech_bonus = {
+								technology = armor_tech_2
+								bonus = 1.75
+								uses = 1
+							}
+						}
+						else = {
+							add_tech_bonus = {
+								technology = armor_tech_1
+								bonus = 1.75
+								uses = 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Establish Special Forces
+	focus = {
+		id = BEL_fascism_war_the_army_infantry_special_forces
+		icon = tbd
+
+		cost = 5
+		
+		x = 2
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_infantry_update_our_guns
+			focus = BEL_fascism_war_the_army_infantry_update_our_trucks
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_special_forces_generic
+				bonus = 1.75
+				uses = 2
+			}
+		}
+	}
+
+	# Build the Queen Tigress
+	focus = {
+		id = BEL_fascism_war_the_army_armored_build_queen_tigress
+		icon = tbd
+
+		cost = 5
+		
+		x = 6
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_armored_update_our_heavy_tanks
+			focus = BEL_fascism_war_the_army_armored_update_our_light_tanks
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				create_equipment_variant = {
+					type = heavy_tank_equipment_2
+					name = "Königstigerin"
+					allow_without_tech = yes
+					upgrades = {
+						tank_gun_upgrade = 4
+						tank_reliability_upgrade = 2
+						tank_armor_upgrade = 6
+					}
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					type = heavy_tank_equipment_2
+					name = "Königstigerin"
+					allow_without_tech = yes
+					icon = GFX_generic_heavy_CCB_camo
+					modules = {
+						armor_type_slot = tank_cast_armor
+						engine_type_slot = tank_gasoline_engine
+
+						turret_type_slot = tank_heavy_two_man_tank_turret
+						main_armament_slot = tank_high_velocity_cannon_3
+						special_type_slot_1 = wet_ammo_storage
+						special_type_slot_2 = easy_maintenance
+						special_type_slot_3 = tank_radio_3
+						special_type_slot_4 = auto_loader
+
+						suspension_type_slot = tank_christie_suspension
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 10
+						tank_nsb_armor_upgrade = 4
+					}
+				}
+			}
+		}
+	}
+
+	# Invest in Radars
+	focus = {
+		id = BEL_fascism_war_the_army_invest_in_radars
+		icon = tbd
+
+		cost = 5
+		
+		x = 4
+		y = 13
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_infantry_special_forces
+			focus = BEL_fascism_war_the_army_armored_build_queen_tigress
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = radar_tech
+				bonus = 2.5
+				uses = 2
+			}
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_army_radar_investment
+			}
+		}
+	}
 
 
 

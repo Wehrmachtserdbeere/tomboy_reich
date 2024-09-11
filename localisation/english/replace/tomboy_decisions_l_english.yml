@@ -91,6 +91,28 @@
   BEL_monafash_bop_mona_secure_minor_noble_marriages: "Secure Minor Noble Marriages"
   BEL_monafash_bop_mona_secure_minor_noble_marriages_desc: "By marrying minor nobles around the realm, we can solidify alliances and ties within them, which will keep them under our influence. These marriages will also give us some more manpower, at the cost of the Fascists getting a little upset."
 
+
+  BEL_bop_fascism_rm_curb_sturmkommando_influence: "Curb Sturmkommando Influence"
+  BEL_bop_fascism_rm_curb_sturmkommando_influence_desc: "Using intricate political maneuvering and subversive tactics, planting undercover agents, sewing distrust among the Sturmkommandos, and bribery, we can decrease their influence over the Kriegsamt, thereby promoting the Reichsmilitär and deradicalizing our military to some degree."
+
+
+  BEL_bop_fascism_sk_purge_rm_officers: "Purge Reichsmilitär Officers"
+  BEL_bop_fascism_sk_purge_rm_officers_desc: "By \"retiring\" some Reichsmilitär Officers, we can increase the power that the Sturmkommando has over the Kriegsamt, which will make them far more powerful for a while. Of course, we might lose some very competent officers and receive a hit on our military's morale. Though it is unlikely that anyone will ever do anything about this, so the military might remain unaffected."
+  BEL_bop_fascism_sk_purge_rm_officers_retire_one_officer: "One §YReichsmilitär-affiliated§! Army Leader is \"retired.\""
+  BEL_bop_fascism_sk_purge_rm_officers_retire_two_officers: "Two §YReichsmilitär-affiliated§! Army Leaders are \"retired.\""
+  BEL_bop_fascism_sk_purge_rm_officers_retire_three_officers: "Three §YReichsmilitär-affiliated§! Army Leaders are \"retired.\""
+  BEL_bop_fascism_sk_purge_rm_officers_none: "Only a few members and affiliates are purged, none of which being Army Leaders."
+
+  BEL_bop_fascism_rm_purge_sk_officers: "Purge Sturmkommando Officers"
+  BEL_bop_fascism_rm_purge_sk_officers_desc: "It's undeniable that the Sturmkommando is too powerful as it currently is. As such, charging a few of them with the various crimes they've committed is a good start in reducing their power, and their influence over the military will decrease. Certainly some more radicalized people will leave, but they're easily replaced by more loyal Reichsmilitär and impartial soldiers."
+  BEL_bop_fascism_rm_purge_sk_officers_retire_one_officer: "One §YSturmkommando-affiliated§! Army Leader is \"retired.\""
+  BEL_bop_fascism_rm_purge_sk_officers_retire_two_officer: "Two §YSturmkommando-affiliated§! Army Leader are \"retired.\""
+  BEL_bop_fascism_rm_purge_sk_officers_retire_three_officer: "Three §YSturmkommando-affiliated§! Army Leader are \"retired.\""
+  BEL_bop_fascism_rm_purge_sk_officers_retire_none: "Only a few members and affiliates are purged, none of which being Army Leaders"
+
+  BEL_bop_fascism_sk_enlarge_sturmkommando: "Enlarge the Sturmkommando"
+  BEL_bop_fascism_sk_enlarge_sturmkommando_desc: "We can bolster the ranks of the Sturmkommando with young and radicalized men from the countryside, which will grant the Sturmkommando a larger enough military to more properly enforce its will in the cities and wars. The only real drawback is the increased radicalization of the military, and the increased brutality during occupations."
+
   # UwU
   BEL_make_cze_submit_category: "Break [CZE.GetName]"
   BEL_make_cze_submit_category_desc: "Using various methods of political manipulation, we can bring §Y[CZE.GetNameDef]§! into continually worsening situations, eventually leading them into becoming our vassal.\n§YCurrent [CZE.GetAdjective] Stability: [?CZE.stability|%G]§!\n§YCurrent [CZE.GetAdjective] War Support: [?CZE.has_war_support|%G]§!"

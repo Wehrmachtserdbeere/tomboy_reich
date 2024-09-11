@@ -1,0 +1,229 @@
+# Destroyers
+BEL_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		BEL = {
+			NOT = {
+				has_government = terror
+			}
+			BEL_natsuki_leader = {
+				is_country_leader = no
+			}
+		}
+	}
+
+	type = ship
+
+	ship_type = { ship_hull_light destroyer }
+
+	prefix = "TF. " # Tomboy Flotte
+
+	fallback_name = "%d. Zerstörer"
+
+	# Source: Azur Lane
+	unique = {
+		"Universal Bulin" "Prototype Bulin MKII" "Specialized Bulin Custom MKIII" "Dewey" "Cassin" "Downes" "Gridley" "Craven" "McCall" "Maury" "Fletcher" "Charles Ausburne" "Thatcher" "Aulick" "Foote" "Spence" "Benson" "Laffey" "Sims" "Hammann" "Eldridge" "Amazon" "Acasta" "Ardent" "Beagle" "Bulldog" "Comet" "Crescent" "Cygnet" "Foxhound" "Fortune" "Grenville" "Glowworm" "Hardy" "Hunter" "Javelin" "Juno" "Vampire" "Fubuki" "Shirayuki" "Miyuki" "Ayanami" "Akatsuki" "Hibiki" "Ikazuchi" "Inazuma" "Shiratsuyu" "Yuudachi" "Shigure" "Yukikaze" "Kagerou" "Shiranui" "Nowaki" "Hatsuharu" "Wakaba" "Hatsushimo" "Ariake" "Yuugure" "Kuroshio" "Oyashio" "Z1" "Z23" "Z25" "An Shan" "Fu Shun" "Chang Chun" "Tai Yuan" "Bailey" "Z19" "Z20" "Z21" "Z46" "Shimakaze" "Kamikaze" "Matsukaze" "Mutsuki" "Kisaragi" "Uzuki" "Minazuki" "Fumizuki" "Nagatsuki" "Mikazuki" "Umikaze" "Yamakaze" "Kawakaze" "Kiyonami" "Niizuki" "Harutsuki" "Yoizuki" "Radford" "Jenkins" "Nicholas" "Jupiter" "Jersey" "Urakaze" "Isokaze" "Hamakaze" "Tanikaze" "Matchless" "Musketeer" "Asashio" "Ooshio" "Michishio" "Arashio" "Z35" "Z18" "Le Triomphant" "Forbin" "Le Mars" "Bush" "Le Téméraire" "Hobby" "Kalk" "Hazelwood" "Hatakaze" "Makinami" "Kimberly" "Mullany" "Z2" "Z36" "Echo" "Le Malin" "L'Opiniâtre" "Aylwin" "Bache" "Stanly" "Carabiniere" "Smalley" "Kasumi" "Halsey Powell" "Uranami" "Grozny" "Minsk" "Tashkent" "Cooper" "Hanazuki" "Naganami" "Tartu" "Vauquelin" "Eskimo" "Icarus" "Z26" "Suzutsuki" "Tashkent µ" "Le Malin µ" "Z24" "Z28" "Vincenzo Gioberti" "Stremitelny" "Gremyashchy" "Gromky" "Maestrale" "Libeccio" "Nicoloso da Recco" "Oite" "Allen M. Sumner" "Stephen Potter" "Morrison" "Kazagumo" "Ingraham" "Le Terrible" "Maillé Brézé" "Bristol" "Kiev" "Soobrazitelny" "Pompeo Magno" "Jervis" "L'Indomptable" "Alfredo Oriani" "Emanuele Pessagno" "Z16" "Wakatsuki" "Janus" "Hammann II" "Hero" "Otto von Alvensleben" "Attilio Regolo" "Kersaint" "Hatsuzuki" "Asanagi" "Laffey II" "Lung Wu" "Hu Pen" "Fei Yuen" "Ognevoy" "Svirepy" "Nubian" "Le Téméraire µ" "Mogador" "Fleuret" "Épée" "Z47" "Z43" "L'Audacieux" "Bell"
+	}
+}
+
+# Light Cruiser
+BEL_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		BEL = {
+			NOT = {
+				has_government = terror
+			}
+			BEL_natsuki_leader = {
+				is_country_leader = no
+			}
+		}
+	}
+
+	type = ship
+
+	ship_type = { ship_hull_cruiser light_cruiser }
+
+	prefix = "TF. "
+
+	fallback_name = "%d. Kreuzer"
+
+	# Source: Azur Lane
+	unique = {
+		"Omaha" "Raleigh" "Brooklyn" "Phoenix" "Helena" "Atlanta" "Juneau" "San Diego" "Cleveland" "Columbia" "Leander" "Achilles" "Ajax" "Dido" "Southampton" "Sheffield" "Manchester" "Gloucester" "Edinburgh" "Belfast" "Arethusa" "Galatea" "Aurora" "Yuubari" "Nagara" "Isuzu" "Natori" "Yura" "Kinu" "Abukuma" "Mogami" "Mikuma" "Königsberg" "Karlsruhe" "Köln" "Leipzig" "Yat Sen" "Ning Hai" "Ping Hai" "Avrora" "Richmond" "Honolulu" "St. Louis" "Sendai" "Jintsuu" "Naka" "Agano" "Noshiro" "Sakawa" "Fiji" "Jamaica" "Montpelier" "Denver" "Little Bel" "Émile Bertin" "Memphis" "Newcastle" "Concord" "Sirius" "Curacoa" "Curlew" "Lena" "Clevelad" "Li'l Sandy" "Swiftsure" "San Juan" "Birmingham" "Black Prince" "Cleveland µ" "Sheffield µ" "Glasgow" "Biloxi" "Pamiat' Merkuria" "Kirov" "Chapayev" "Reno" "Marblehead" "Jeanne d'Arc" "La Galissonnière" "Hermione" "Dido µ" "Nürnberg" "Ying Swei" "Chao Ho" "Penelope" "Murmansk" "Duca degli Abruzzi" "Boise" "Magdeburg" "Charybdis" "Hai Tien" "Hai Chi" "Emden" "Elbing" "Bellona" "Enterprise (Royal Navy)" "Giuseppe Garibaldi" "Kuybyshev" "Scylla" "Voroshilov" "Regensburg" "Marseillaise" "Guichen" "Houston II" "Chi An" "Liverpool" "Noshiro µ" "Boise µ" "Fargo"
+	}
+}
+
+# Heavy Cruiser
+BEL_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		BEL = {
+			NOT = {
+				has_government = terror
+			}
+			BEL_natsuki_leader = {
+				is_country_leader = no
+			}
+		}
+	}
+
+	type = ship
+
+	ship_type = { ship_hull_cruiser heavy_cruiser }
+
+	prefix = "TF. "
+
+	fallback_name = "%d. Schwerer Kreuzer"
+
+	# Source: Azur Lane
+	unique = {
+		"Pensacola" "Salt Lake City" "Northampton" "Chicago" "Houston" "Portland" "Indianapolis" "Astoria" "Quincy" "Vincennes" "Wichita" "Baltimore" "London" "Shropshire" "Kent" "Suffolk" "Norfolk" "Dorsetshire" "York" "Exeter" "Furutaka" "Kako" "Aoba" "Kinugasa" "Chikuma" "Myoukou" "Nachi" "Ashigara" "Haguro" "Takao" "Atago" "Maya" "Choukai" "Admiral Hipper" "Blücher" "Prinz Eugen" "Deutschland" "Admiral Graf Spee" "Sussex" "Minneapolis" "Suzuya" "Zara" "Trento" "Admiral Hipper µ" "Bremerton" "Algérie" "Kumano" "Baltimore µ" "Roon µ" "Prinz Heinrich" "Pola" "Tallinn" "San Francisco" "New Orleans" "Foch" "Prinz Adalbert" "Trieste" "Yorck" "Little Prinz Eugen" "Little Cheshire" "Bolzano" "Little Spee" "Northampton II" "Kursk" "Gorizia" "Suffren" "Unzen" "Louisville" "Devonshire" "Prinz Eugen µ" "Friedrich Carl" "Brennus" "Dupleix" "Pittsburgh"
+	}
+}
+
+# Battleship
+BEL_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		BEL = {
+			NOT = {
+				has_government = terror
+			}
+			BEL_natsuki_leader = {
+				is_country_leader = no
+			}
+		}
+	}
+
+	type = ship
+
+	ship_type = { ship_hull_heavy battleship battle_cruiser }
+
+	prefix = "TF. "
+
+	fallback_name = "%d. Schlachtschiff"
+
+	# Source: Azur Lane
+	unique = {
+		"Nevada" "Oklahoma" "Pennsylvania" "Arizona" "Tennessee" "California" "Colorado" "Maryland" "West Virginia" "North Carolina" "Washington" "South Dakota" "Indiana" "New Jersey" "Queen Elizabeth" "Warspite" "Nelson" "Rodney" "King George V" "Prince of Wales" "Duke of York" "Vanguard" "Fusou" "Yamashiro" "Ise" "Hyuuga" "Nagato" "Mutsu" "Kii" "Tosa" "Musashi" "Bismarck" "Tirpitz" "Mikasa" "Jean Bart" "Massachusetts" "Kaga (Battleship)" "Alabama" "Littorio" "Conte di Cavour" "Giulio Cesare" "Gascogne µ" "Suruga" "Gangut" "Sovetsky Soyuz" "Sovetskaya Belorussiya" "Sovetskaya Rossiya" "Richelieu" "Howe" "Valiant" "Vittorio Veneto" "Ulrich von Hutten" "Arkhangelsk" "Thüringen" "Revenge" "Roma" "Royal Oak" "Sevastopol" "Bismarck Zwei" "Andrea Doria" "Lyon" "Clemenceau" "Owari" "Poltava" "Alsace" "Little Friedrich"
+	}
+}
+
+# Carriers
+BEL_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		BEL = {
+			NOT = {
+				has_government = terror
+			}
+			BEL_natsuki_leader = {
+				is_country_leader = no
+			}
+		}
+	}
+
+	type = ship
+
+	ship_type = { ship_hull_carrier carrier }
+
+	prefix = "TF. "
+
+	fallback_name = "%d. Flugzeugträger"
+
+	# Source: Azur Lane
+	unique = {
+		"Long Island" "Bogue" "Langley" "Ranger" "Hermes" "Unicorn" "Hiyou" "Junyou" "Houshou" "Zuihou" "Shouhou" "Ryuujou" "Centaur" "Chaser" "Independence" "Bataan" "Ryuuhou" "Casablanca" "Perseus" "Chitose" "Chiyoda" "Princeton" "Weser" "Elbe" "Chen Hai" "Albion" "Langley II" "Theseus" "Hwah Jah" "Argus" "Jade" "San Jacinto" "Lexington" "Saratoga" "Yorktown" "Enterprise" "Hornet" "Wasp" "Eagle" "Ark Royal" "Illustrious" "Victorious" "Formidable" "Glorious" "Akagi" "Kaga" "Souryuu" "Hiryuu" "Shoukaku" "Zuikaku" "Taihou" "Shinano" "Graf Zeppelin" "Essex" "Shangri-La" "Bunker Hill" "Akagi-chan" "Zeppy" "Akagi µ" "Intrepid" "Béarn" "Little Illustrious" "Taihou µ" "Illustrious µ" "Peter Strasser" "Aquila" "Ticonderoga" "Little Enterprise" "Katsuragi" "Volga" "Impero" "Indomitable" "Joffre" "Hornet II" "Yorktown II" "Implacable" "Little Formidable" "Taihou-chan" "Painlevé" "Formidable µ" "Shinano-chan"
+	}
+}
+
+# Submarines
+BEL_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		BEL = {
+			NOT = {
+				has_government = terror
+			}
+			BEL_natsuki_leader = {
+				is_country_leader = no
+			}
+		}
+	}
+
+	type = ship
+
+	ship_type = { ship_hull_submarine submarine }
+
+	prefix = "TF. "
+
+	fallback_name = "Unterseeboot U-%d"
+
+	# Source: Azur Lane
+	unique = {
+		"I-19" "I-26" "I-58" "U-81" "Dace" "U-47" "U-557" "Surcouf" "Albacore" "U-556" "U-73" "I-25" "I-56" "I-168" "U-101" "U-522" "Cavalla" "U-110" "Bluegill" "U-96" "Albacore µ" "U-37" "U-410" "Torricelli" "Archerfish" "Nautilus" "U-1206" "Leonardo da Vinci" "Flasher" "U-31" "Herring"
+	}
+}
+
+# Natsukians
+BEL_NATSUKI_HISTORICAL = {
+	name = BEL_SHIPS_NAME_NATSUKIAN
+
+	for_countries = {
+		BEL
+	}
+
+	can_use = {
+		BEL = {
+			NOT = {
+				has_government = terror
+			}
+			BEL_natsuki_leader = {
+				is_country_leader = no
+			}
+		}
+	}
+
+	type = ship
+
+	ship_type = { ship_hull_light ship_hull_heavy ship_hull_carrier ship_hull_cruiser ship_hull_submarine destroyer battleship light_cruiser eavy_cruiser carrier submarine }
+
+	prefix = "IMS. "
+
+	fallback_name = "Natsukian %d"
+
+	unique = {
+		"Anime" "Boop" "Bouncy" "Bubbles" "Bunny" "Candy" "Cupcake" "Cute" "Doki-doki" "Fluffy" "Giggle" "Heartbeat" "Jump" "Kawaii" "Kitty" "Lollipop" "Mouse" "Parfait" "Peace" "Pink" "Poof" "Pout" "Pure" "Shiny" "Skirt" "Strawberry" "Sugar" "Summer" "Twirl" "Vanilla" "Waterfall"
+	}
+}
