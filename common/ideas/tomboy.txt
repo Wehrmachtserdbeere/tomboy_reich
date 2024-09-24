@@ -1785,12 +1785,86 @@ ideas = {
 			}
 		}
 
-		BEL_idea_imperiales_kriegsamt_1 = {
+		BEL_idea_imperiales_kriegsamt_no_extras = {
 			name = BEL_idea_imperiales_kriegsamt
 			
 			picture = tbd
 
-			# No Modifiers, purely informational
+			modifier = {
+				monthly_population = 0.05
+				experience_gain_factor = 0.05
+			}
+		}
+
+		BEL_idea_imperiales_kriegsamt_army = {
+			name = BEL_idea_imperiales_kriegsamt
+			
+			picture = tbd
+
+			modifier = {
+				monthly_population = 0.075
+				experience_gain_factor = 0.05
+
+				# Army
+				experience_gain_army = 0.2
+				army_morale_factor = 0.1
+				army_org_regain = 0.15
+				army_org_factor = 0.1
+			}
+		}
+
+		BEL_idea_imperiales_kriegsamt_air = {
+			name = BEL_idea_imperiales_kriegsamt
+			
+			picture = tbd
+
+			modifier = {
+				monthly_population = 0.075
+				experience_gain_factor = 0.05
+
+				# Air
+				air_accidents = 0.1
+				air_agility_factor = 0.25
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				air_detection = 0.1
+			}
+		}
+
+		BEL_idea_imperiales_kriegsamt_army_air = {
+			name = BEL_idea_imperiales_kriegsamt
+			
+			picture = tbd
+
+			modifier = {
+				monthly_population = 0.15
+				experience_gain_factor = 0.05
+
+				# Army
+				experience_gain_army = 0.2
+				army_morale_factor = 0.1
+				army_org_regain = 0.15
+				army_org_factor = 0.1
+
+				# Air
+				air_accidents = 0.1
+				air_agility_factor = 0.25
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				air_detection = 0.1
+			}
+		}
+
+		BEL_test_idea = {
+			name = BEL_test_idea
+
+			picture = tbd
+
+			modifier = {
+				air_superiority_efficiency = 0.25
+				air_superiority_bonus_in_combat = 0.1
+				air_superiority_detect_factor = 0.25
+			}
 		}
 	}
 

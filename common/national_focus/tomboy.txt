@@ -17903,7 +17903,7 @@
 
 		cost = 5
 		
-		x = 7
+		x = 8
 		y = 8
 
 		prerequisite = {
@@ -17911,6 +17911,7 @@
 		}
 		
 		completion_reward = {
+			add_ideas = BEL_idea_imperiales_kriegsamt_no_extras
 			set_power_balance = {
 				id = BEL_bop_fascism
 			}
@@ -18455,8 +18456,103 @@
 			add_dynamic_modifier = {
 				modifier = dyn_mod_bel_fascism_army_radar_investment
 			}
+			if = {
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_no_extras
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_no_extras
+					add_idea = BEL_idea_imperiales_kriegsamt_army
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_air
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_air
+					add_idea = BEL_idea_imperiales_kriegsamt_army_air
+				}
+			}
 		}
 	}
+
+
+	################
+	# The Luftwehr #
+	################
+	focus = {
+		id = BEL_fascism_war_the_luftwehr
+		icon = tbd
+
+		cost = 5
+		
+		x = 12
+		y = 9
+
+		prerequisite = {
+			focus = BEL_fascism_war_establish_kriegsamt
+		}
+		
+		completion_reward = {
+			air_experience = 50
+			add_manpower = 1500
+		}
+	}
+
+	# Air Superiority Focus
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_air_superiority_focus
+		icon = tbd
+
+		cost = 5
+
+		x = 9
+		y = 10
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				technology = air_superiority
+				uses = 1
+				bonus = 2
+			}
+		}
+	}
+
+	# Ground Support Focus
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_air_superiority_focus
+		icon = tbd
+
+		cost = 5
+
+		x = 9
+		y = 10
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				technology = air_superiority
+				uses = 1
+				bonus = 2
+			}
+		}
+	}
+
+
+
+
+
+	#
+	# NOTE - Add BEL_idea_imperiales_kriegsamt_air at the end of the Luftwehr tree!
+	#
 
 
 

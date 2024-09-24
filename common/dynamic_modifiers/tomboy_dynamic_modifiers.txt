@@ -96,3 +96,13 @@ dyn_mod_bel_fascism_army_radar_investment = {
 	army_org_factor = 0.2
 	recon_factor = 0.15
 }
+
+dyn_mod_bel_fascism_air_superiority_focus = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	
+}
