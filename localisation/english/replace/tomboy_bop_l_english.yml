@@ -18,3 +18,17 @@
   BEL_bop_monafash_fascists_dangerous: "Extreme Fascist Favor"
   BEL_bop_monafash_fascists_civil_war: "§RMonarcho-Fascist Breakdown§!"
   BEL_bop_monafash_fascists_civil_war_tt: "§YBalance of Power§! Level will be locked to this level.\nPopularity in §Y[BEL.GetNeutralParty]§! drops to §Y0.00%§!."
+
+  BEL_bop_fascism: "Military Powerstruggle"
+
+  BEL_bop_fascism_reichsmilitaer_low: "Low Reichsmilitär Edge"
+  BEL_bop_fascism_reichsmilitaer_medium: "Low Reichsmilitär Dominance"
+  BEL_bop_fascism_reichsmilitaer_high: "Low Reichsmilitär Stranglehold"
+  BEL_bop_fascism_reichsmilitaer_extreme: "Low Reichsmilitär Supremacy"
+
+  BEL_bop_fascism_neutral: "Equilibrium"
+
+  BEL_bop_fascism_sturmkommando_low: "Low Reichsmilitär Edge"
+  BEL_bop_fascism_sturmkommando_medium: "Low Reichsmilitär Dominance"
+  BEL_bop_fascism_sturmkommando_high: "Low Reichsmilitär Stranglehold"
+  BEL_bop_fascism_sturmkommando_extreme: "Low Reichsmilitär Supremacy"

@@ -1,0 +1,43 @@
+License Agreement for Tomboy Reich
+
+By downloading, installing, or using Tomboy Reich ("the Mod"), you ("the User") agree to be bound by the following terms and conditions, which include licenses pertaining to the base game, the mod content, and the art assets contained within the Mod. If you do not agree to these terms, you must not use the Mod.
+
+Paradox Interactive's License for Base Game
+
+This Mod is designed for use with the game developed and published by Paradox Interactive ("Hearts of Iron IV"). By using the Mod, you acknowledge and agree that your use of Hearts of Iron IV must comply with the End User License Agreement (EULA) provided by Paradox Interactive. Any use of the Mod must adhere to the terms and conditions established by Paradox Interactive for their intellectual property, including but not limited to Hearts of Iron IV's content and any modifications.
+
+For further details on the Paradox Interactive EULA, please refer to the official documentation available at https://legal.paradoxplaza.com/eula.
+
+2. Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License for the Mod
+
+The Mod, excluding any included art assets, is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
+
+Under this license:
+
+    Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+    Non-Commercial: You may not use the Mod for commercial purposes.
+    ShareAlike: If you remix, transform, or build upon the Mod, you must distribute your contributions under the same license as the original.
+
+For the full terms, please visit the Creative Commons License Page.
+
+3. License for Art Assets
+
+The art assets included in the Mod that do not fall under Paradox Interactive's own art assets are subject to the following restrictions:
+
+    Permission and Credit: The art assets may not be distributed, reproduced, or used in any way without explicit permission from the original artist(s). Any approved use of the art assets must provide proper credit to the original artist(s).
+    No Commercial Use: The art assets may not be sold or used for commercial purposes without express written permission from the original artist(s).
+    No Derivative Works: You may not modify, remix, or create derivative works of the art assets without explicit permission.
+    No Redistribution: You may not redistribute the art assets separately from the Mod, nor include them in other projects or works without the artist's consent.
+
+By using the Mod, you agree to abide by these conditions. Any violation of these terms may result in legal action taken by the original artist(s).
+
+For permission inquiries, please contact the Mod creator or the respective artist(s) at https://www.pixiv.net/en/users/66835722.
+
+Note: The artist's contact site, as provided for permission inquiries, may contain Not Safe For Work (NSFW) illustrations. Please proceed with caution if visiting the artist's site.
+
+4. General Conditions
+
+    Mod Compatibility: The Mod is offered "as is," without any warranty of fitness for a particular purpose. The Mod creator is not responsible for any issues arising from the use of the Mod.
+    Amendments: The Mod creator reserves the right to update or modify this License Agreement at any time, with or without notice.
+
+By using the Mod, you confirm that you understand and agree to all terms and conditions set forth in this License Agreement.

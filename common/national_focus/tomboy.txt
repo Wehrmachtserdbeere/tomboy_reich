@@ -18456,7 +18456,7 @@
 			add_dynamic_modifier = {
 				modifier = dyn_mod_bel_fascism_army_radar_investment
 			}
-			if = {
+			if = { # None + Army = Army
 				limit = {
 					has_idea = BEL_idea_imperiales_kriegsamt_no_extras
 				}
@@ -18465,13 +18465,31 @@
 					add_idea = BEL_idea_imperiales_kriegsamt_army
 				}
 			}
-			else_if = {
+			else_if = { # Air + Army = Army Air
 				limit = {
 					has_idea = BEL_idea_imperiales_kriegsamt_air
 				}
 				swap_ideas = {
 					remove_idea = BEL_idea_imperiales_kriegsamt_air
 					add_idea = BEL_idea_imperiales_kriegsamt_army_air
+				}
+			}
+			else_if = { # Navy + Army = Army Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_navy
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_navy
+					add_idea = BEL_idea_imperiales_kriegsamt_army_navy
+				}
+			}
+			else_if = { # Air Navy + Army = Army Air Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_air_navy
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_air_navy
+					add_idea = BEL_idea_imperiales_kriegsamt_army_air_navy
 				}
 			}
 		}
@@ -18507,16 +18525,21 @@
 
 		cost = 5
 
-		x = 9
+		x = 10
 		y = 10
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr
 		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_luftwehr_ground_support_focus
+			focus = BEL_fascism_war_the_luftwehr_bombing_focus
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
-				technology = air_superiority
+				category = strategic_destruction_tree
 				uses = 1
 				bonus = 2
 			}
@@ -18525,23 +18548,167 @@
 
 	# Ground Support Focus
 	focus = {
-		id = BEL_fascism_war_the_luftwehr_air_superiority_focus
+		id = BEL_fascism_war_the_luftwehr_ground_support_focus
 		icon = tbd
 
 		cost = 5
 
-		x = 9
+		x = 12
 		y = 10
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr
 		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_luftwehr_air_superiority_focus
+			focus = BEL_fascism_war_the_luftwehr_bombing_focus
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
-				technology = air_superiority
+				category = battlefield_support_tree
 				uses = 1
 				bonus = 2
+			}
+		}
+	}
+
+	# Bombing Focus
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_bombing_focus
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 10
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_luftwehr_air_superiority_focus
+			focus = BEL_fascism_war_the_luftwehr_ground_support_focus
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = operational_integrity_tree
+				uses = 1
+				bonus = 2
+			}
+		}
+	}
+
+	# Plan the Zwitscher
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_zwitscher_plan
+		icon = tbd
+		
+		cost = 5
+		
+		x = 10
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr_air_superiority_focus
+		}
+		
+		completion_reward = {
+			air_experience = 150
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_tech_bonus = {
+					category = mio_cat_all_light_fighter_and_modules
+					uses = 1
+					bonus = 1.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					category = light_fighter
+					uses = 1
+					bonus = 1.5
+				}
+			}
+		}
+	}
+
+	# Plan the Geier
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_geier_plan
+		icon = tbd
+		
+		cost = 5
+		
+		x = 12
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr_air_superiority_focus
+			focus = BEL_fascism_war_the_luftwehr_ground_support_focus
+			focus = BEL_fascism_war_the_luftwehr_bombing_focus
+		}
+		
+		completion_reward = {
+			air_experience = 150
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_tech_bonus = {
+					category = mio_cat_all_medium_aircraft_and_modules
+					uses = 1
+					bonus = 1.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					category = medium_air
+					uses = 1
+					bonus = 1.5
+				}
+			}
+		}
+	}
+	
+	# Plan the Adler
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_adler_plan
+		icon = tbd
+		
+		cost = 5
+		
+		x = 14
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr_ground_support_focus
+			focus = BEL_fascism_war_the_luftwehr_bombing_focus
+		}
+		
+		completion_reward = {
+			air_experience = 150
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_tech_bonus = {
+					category = mio_cat_all_heavy_aircraft_and_modules
+					uses = 1
+					bonus = 1.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					category = heavy_air
+					uses = 1
+					bonus = 1.5
+				}
 			}
 		}
 	}
