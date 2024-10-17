@@ -17903,7 +17903,7 @@
 
 		cost = 5
 		
-		x = 8
+		x = 12
 		y = 8
 
 		prerequisite = {
@@ -17915,6 +17915,7 @@
 			set_power_balance = {
 				id = BEL_bop_fascism
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -17932,6 +17933,10 @@
 
 		prerequisite = {
 			focus = BEL_fascism_war_establish_kriegsamt
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_fascism_war_establish_kriegsamt
 		}
 		
 		completion_reward = {
@@ -18511,6 +18516,10 @@
 		prerequisite = {
 			focus = BEL_fascism_war_establish_kriegsamt
 		}
+
+		allow_branch = {
+			has_completed_focus = BEL_fascism_war_establish_kriegsamt
+		}
 		
 		completion_reward = {
 			air_experience = 50
@@ -18713,12 +18722,533 @@
 		}
 	}
 
+	# Recruit young pilots
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_recruit_young_pilots
+		icon = tbd
+
+		cost = 5
+		
+		x = 10
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr_zwitscher_plan
+			focus = BEL_fascism_war_the_luftwehr_geier_plan
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_luftwehr_recruit_veteran_pilots
+		}
+		
+		completion_reward = {
+			add_manpower = 3500
+			air_experience = -25
+		}
+	}
+
+	# Recruit veteran pilots
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_recruit_veteran_pilots
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr_geier_plan
+			focus = BEL_fascism_war_the_luftwehr_adler_plan
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_luftwehr_recruit_young_pilots
+		}
+		
+		completion_reward = {
+			add_manpower = 100
+			air_experience = 50
+		}
+	}
+
+	# Build the Projects
+	focus = {
+		id = BEL_fascism_war_the_luftwehr_build_the_projects
+		icon = tbd
+
+		cost = 5
+		
+		x = 12
+		y = 13
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr_zwitscher_plan
+			focus = BEL_fascism_war_the_luftwehr_geier_plan
+			focus = BEL_fascism_war_the_luftwehr_adler_plan
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = BEL_fascism_war_the_luftwehr_zwitscher_plan
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					create_equipment_variant = {
+						name = "Schnellflitzer \"Zwitscher\""
+						type = small_plane_airframe_2
+						modules = {
+							main_armament_slot = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_1 = recon_camera
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = cannon_defense_turret
+							special_type_slot_2 = air_air_radar_1
+							special_type_slot_3 = radio_navigation_2
+						}
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Schnellflitzer \"Zwitscher\""
+						type = fighter_equipment_2
+						upgrades = {
+							plane_armor_upgrade = 3
+							plane_engine_upgrade = 5
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = BEL_fascism_war_the_luftwehr_geier_plan
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					create_equipment_variant = {
+						name = "Grundschutzflieger \"Geier\""
+						type = medium_plane_airframe_2
+						modules = {
+							main_armament_slot = medium_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+							fixed_auxiliary_weapon_slot_2 = armor_piercing_bomb_locks
+							fixed_auxiliary_weapon_slot_3 = bomb_locks
+							engine_type_slot = engine_3_2x
+							special_type_slot_1 = radio_navigation_2
+							special_type_slot_2 = bomb_sights_2
+							special_type_slot_3 = expanded_fuel_tank
+							special_type_slot_4 = cannon_defense_turret_2x
+						}
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Grundschutzflieger \"Geier\""
+						type = tac_bomber_equipment_2
+						upgrades = {
+							plane_cas_upgrade = 3
+							plane_engine_upgrade = 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = BEL_fascism_war_the_luftwehr_adler_plan
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					create_equipment_variant = {
+						name = "Schwerbombadierer \"Adler\""
+						type = large_plane_airframe_2
+						modules = {
+							main_armament_slot = large_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = torpedo_mounting_3
+							fixed_auxiliary_weapon_slot_2 = recon_camera
+							engine_type_slot = engine_2_4x
+							special_type_slot_1 = fuel_tanks_small
+							special_type_slot_2 = self_sealing_fuel_tanks_small
+							special_type_slot_3 = cannon_defense_turret_2x
+						}
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Schwerbombadierer \"Adler\""
+						type = strat_bomber_equipment_2
+						upgrades = {
+							plane_bomb_upgrade = 6
+							plane_engine_upgrade = 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = BEL_fascism_war_the_luftwehr_zwitscher_plan
+							has_completed_focus = BEL_fascism_war_the_luftwehr_geier_plan
+							has_completed_focus = BEL_fascism_war_the_luftwehr_adler_plan
+						}
+					}
+				}
+				custom_effect_tooltip = BEL_fascism_war_the_luftwehr_build_the_projects_fallback_tt
+			}
+			if = { # None + Air = Air
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_no_extras
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_no_extras
+					add_idea = BEL_idea_imperiales_kriegsamt_air
+				}
+			}
+			else_if = { # Air + Army = Army Air
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_army
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_army
+					add_idea = BEL_idea_imperiales_kriegsamt_army_air
+				}
+			}
+			else_if = { # Navy + Air = Air Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_navy
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_navy
+					add_idea = BEL_idea_imperiales_kriegsamt_air_navy
+				}
+			}
+			else_if = { # Army Navy + Air = Army Air Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_army_navy
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_army_navy
+					add_idea = BEL_idea_imperiales_kriegsamt_army_air_navy
+				}
+			}
+		}
+	}
+
+	################
+	# Die Seewacht #
+	################
+	focus = {
+		id = BEL_fascism_war_the_seewacht
+		icon = GFX_surrender_tiny_flag
+		
+		cost = 5
+		
+		x = 20
+		y = 9
+
+		prerequisite = {
+			focus = BEL_fascism_war_establish_kriegsamt
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_fascism_war_establish_kriegsamt
+		}
+		
+		completion_reward = {
+			navy_experience = 50
+			add_manpower = 1500
+		}
+	}
+
+	####################
+	# Light Ship Focus #
+	####################
+	focus = {
+		id = BEL_fascism_war_the_seewacht_light_ship_focus
+		icon = tbd
+
+		cost = 5
+		
+		x = 17
+		y = 10
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht
+		}
+
+		mutually_exclusive = {
+			# focus = BEL_fascism_war_the_seewacht_capital_focus
+			# focus = BEL_fascism_war_the_seewacht_carrier_focus
+			# focus = BEL_fascism_war_the_seewacht_submarine_focus
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_navy_light_ship_focus
+			}
+			add_tech_bonus = {
+				category = mio_cat_tech_all_destroyer_and_modules
+				bonus = 1.5
+				uses = 2
+			}
+		}
+	}
+
+	# Construct mass-naval bases
+	focus = {
+		id = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_focus
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# Finance Destroyer Research
+	focus = {
+		id = BEL_fascism_war_the_seewacht_light_ship_finance_destroyer_research
+		icon = tbd
+
+		cost = x
+		
+		x = 18
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_focus
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_navy_financing_destroyer_research
+				days = 125
+			}
+		}
+	}
+
+	# Steal construction plans
+	focus = {
+		id = BEL_fascism_war_the_seewacht_light_ship_steal_construction_plans
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_finance_destroyer_research
+		}
+
+		available = {
+			any_enemy_country = {
+				BEL = {
+					intel_level_over = {
+						target = PREV
+						navy_intel > 0.25
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = mio_cat_tech_all_destroyer_and_modules
+				bonus = 1.5
+				uses = 2
+			}
+			if = {
+				limit = {
+					any_enemy_country = {
+						BEL = {
+							intel_level_over = {
+								target = PREV
+								navy_intel > 0.25
+							}
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						BEL = {
+							intel_level_over = {
+								target = PREV
+								navy_intel > 25
+							}
+						}
+					}
+					BEL = {
+						add_intel = {
+							target = PREV
+							navy_intel = -0.25
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Request Support
+	focus = {
+		id = BEL_fascism_war_the_seewacht_light_ship_request_support
+		icon = GFX_surrender_tiny_flag
+
+		cost = 5
+
+		x = 18
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_finance_destroyer_research
+		}
+
+		available = {
+			any_country = {
+				has_opinion = {
+					target = BEL
+					value > 49
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = mio_cat_tech_all_destroyer_and_modules
+				bonus = 1.5
+				uses = 2
+			}
+			if = {
+				limit = {
+					any_country = {
+						has_opinion = {
+							target = BEL
+							value > 49
+						}
+					}
+				}
+				random_country = {
+					add_opinion_modifier = {
+						target = BEL
+						modifier = small_decrease
+					}
+				}
+			}
+		}
+	}
+
+	# Design the Yuuki
+	focus = {
+		id = BEL_fascism_war_the_seewacht_light_ship_design_yuuki
+		icon = tbd
+
+		cost = 5
+		
+		x = 17
+		y = 13
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_steal_construction_plans
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_request_support
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "TF. Yuuki"
+					type = ship_hull_light_3
+					modules = {
+						front_1_custom_slot = ship_light_battery_2
+						mid_1_custom_slot = ship_torpedo_3
+						rear_1_custom_slot = ship_depth_charge_3
+						fixed_ship_battery_slot = ship_light_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = ship_sonar_2
+						fixed_ship_torpedo_slot = ship_torpedo_3
+						fixed_ship_engine_slot = light_ship_engine_3
+					}
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "TF. Yuuki"
+					type = destroyer_2
+				}
+			}
+		}
+	}
+
 
 
 
 
 	#
-	# NOTE - Add BEL_idea_imperiales_kriegsamt_air at the end of the Luftwehr tree!
+	# NOTE - Add BEL_idea_imperiales_kriegsamt_navy at the end of the Seewacht tree!
 	#
 
 

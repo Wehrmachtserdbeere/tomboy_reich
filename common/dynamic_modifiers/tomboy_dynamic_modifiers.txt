@@ -1,4 +1,4 @@
-#
+﻿#
 # Dynamic Modifiers be here...
 #
 # ...or something like that
@@ -97,12 +97,30 @@ dyn_mod_bel_fascism_army_radar_investment = {
 	recon_factor = 0.15
 }
 
-dyn_mod_bel_fascism_air_superiority_focus = {
+dyn_mod_bel_fascism_navy_light_ship_focus = {
 	enable = {
 		always = yes
 	}
 
 	# icon = tbd
 
-	
+	navy_submarine_attack_factor = -0.05
+	navy_capital_ship_attack_factor = -0.05
+	navy_carrier_air_attack_factor = -0.05
+	navy_org = 0.15
+}
+
+dyn_mod_bel_fascism_navy_financing_destroyer_research = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	experience_gain_navy_factor = 0.2
+	experience_gain_navy_unit_factor = 0.2
+	production_cost_max_destroyer_1 = -0.2
+	production_cost_max_destroyer_2 = -0.2
+	production_cost_max_destroyer_3 = -0.2
+	production_cost_max_destroyer_4 = -0.2
 }

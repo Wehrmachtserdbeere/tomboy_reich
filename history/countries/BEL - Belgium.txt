@@ -51,6 +51,11 @@ recruit_character = BEL_mrbond_leader
 recruit_character = BEL_johnny_rebel_leader
 recruit_character = BEL_natsuki_leader
 recruit_character = BEL_adolf_hitler_high
+recruit_character = BEL_tashkent
+recruit_character = BEL_houston
+recruit_character = BEL_yamato
+recruit_character = BEL_ark_royal
+recruit_character = BEL_u47
 
 set_convoys = 75
 

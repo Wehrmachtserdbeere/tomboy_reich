@@ -21,14 +21,16 @@
 
   BEL_bop_fascism: "Military Powerstruggle"
 
-  BEL_bop_fascism_reichsmilitaer_low: "Low Reichsmilitär Edge"
-  BEL_bop_fascism_reichsmilitaer_medium: "Low Reichsmilitär Dominance"
-  BEL_bop_fascism_reichsmilitaer_high: "Low Reichsmilitär Stranglehold"
-  BEL_bop_fascism_reichsmilitaer_extreme: "Low Reichsmilitär Supremacy"
+  BEL_bop_fascism_reichsmilitaer: "Reichsmilitär"
+  BEL_bop_fascism_reichsmilitaer_low: "Reichsmilitär Edge"
+  BEL_bop_fascism_reichsmilitaer_medium: "Reichsmilitär Dominance"
+  BEL_bop_fascism_reichsmilitaer_high: "Reichsmilitär Stranglehold"
+  BEL_bop_fascism_reichsmilitaer_extreme: "Reichsmilitär Supremacy"
 
   BEL_bop_fascism_neutral: "Equilibrium"
 
-  BEL_bop_fascism_sturmkommando_low: "Low Reichsmilitär Edge"
-  BEL_bop_fascism_sturmkommando_medium: "Low Reichsmilitär Dominance"
-  BEL_bop_fascism_sturmkommando_high: "Low Reichsmilitär Stranglehold"
-  BEL_bop_fascism_sturmkommando_extreme: "Low Reichsmilitär Supremacy"
+  BEL_bop_fascism_sturmkommando: "Sturmkommando"
+  BEL_bop_fascism_sturmkommando_low: "Sturmkommando Edge"
+  BEL_bop_fascism_sturmkommando_medium: "Sturmkommando Dominance"
+  BEL_bop_fascism_sturmkommando_high: "Sturmkommando Stranglehold"
+  BEL_bop_fascism_sturmkommando_extreme: "Sturmkommando Supremacy"

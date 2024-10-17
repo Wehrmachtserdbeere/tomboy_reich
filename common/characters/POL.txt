@@ -1650,7 +1650,7 @@ characters = {
 	}
 
 	POL_wasteland = {
-		name = POL_wasteland
+		name = POLITICS_WASTELAND_NAME
 		portraits = {
 			civilian = {
 				large = "GFX_BEL_wasteland"
@@ -1660,12 +1660,12 @@ characters = {
 			ideology = accelerationist
 			traits = { BEL_wasteland }
 			expire="1965.1.1.1"
-			desc = POL_wasteland_desc
+			desc = POLITICS_WASTELAND_DESC
 		}
 	}
 
 	POL_dirlewanger = {
-		name = POL_dirlewanger
+		name = POLITICS_DIRLEWANGER_NAME
 		portraits = {
 			civilian = {
 				large = "GFX_BEL_dirlewanger"
@@ -1675,36 +1675,36 @@ characters = {
 			ideology = despotism
 			traits = { BEL_the_devil }
 			expire="1965.1.1.1"
-			desc = POL_dirlewanger_desc
+			desc = POLITICS_DIRLEWANGER_DESC
 		}
 		country_leader = {
 			ideology = gen_nazism
 			traits = { BEL_the_devil }
 			expire="1965.1.1.1"
-			desc = POL_dirlewanger_desc
+			desc = POLITICS_DIRLEWANGER_DESC
 		}
 		country_leader = {
 			ideology = anarchist_communism
 			traits = { BEL_the_devil }
 			expire="1965.1.1.1"
-			desc = POL_dirlewanger_desc
+			desc = POLITICS_DIRLEWANGER_DESC
 		}
 		country_leader = {
 			ideology = conservatism
 			traits = { BEL_the_devil }
 			expire="1965.1.1.1"
-			desc = POL_dirlewanger_desc
+			desc = POLITICS_DIRLEWANGER_DESC
 		}
 		country_leader = {
 			ideology = accelerationist
 			traits = { BEL_the_devil }
 			expire="1965.1.1.1"
-			desc = POL_dirlewanger_desc
+			desc = POLITICS_DIRLEWANGER_DESC
 		}
 	}
 
 	POL_mengele = {
-		name = POL_mengele
+		name = POLITICS_MENGELE_NAME
 		portraits = {
 			civilian = {
 				large = "GFX_BEL_mengele"
@@ -1714,25 +1714,25 @@ characters = {
 			ideology = despotism
 			traits = { BEL_angel_of_death }
 			expire="1965.1.1.1"
-			desc = POL_mengele_desc
+			desc = POLITICS_MENGELE_DESC
 		}
 		country_leader = {
 			ideology = gen_nazism
 			traits = { BEL_angel_of_death }
 			expire="1965.1.1.1"
-			desc = POL_mengele_desc
+			desc = POLITICS_MENGELE_DESC
 		}
 		country_leader = {
 			ideology = anarchist_communism
 			traits = { BEL_angel_of_death }
 			expire="1965.1.1.1"
-			desc = POL_mengele_desc
+			desc = POLITICS_MENGELE_DESC
 		}
 		country_leader = {
 			ideology = conservatism
 			traits = { BEL_angel_of_death }
 			expire="1965.1.1.1"
-			desc = POL_mengele_desc
+			desc = POLITICS_MENGELE_DESC
 		}
 		#
 		# Disabled for Trolling
@@ -1741,7 +1741,7 @@ characters = {
 		#	ideology = accelerationist
 		#	traits = { BEL_angel_of_death }
 		#	expire="1965.1.1.1"
-		#	desc = POL_mengele_desc
+		#	desc = POLITICS_MENGELE_DESC
 		#}
 	}
 }

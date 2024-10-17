@@ -107,7 +107,7 @@ characters = {
 	}
 
 	BEL_moon_man_leader = {
-		name = BEL_moon_man
+		name = POLITICS_MOON_MAN_NAME
 
 		portraits = {
 			civilian = {
@@ -118,12 +118,12 @@ characters = {
 		country_leader = {
 			ideology = accelerationist
 			traits = { eternal_moon }
-			desc = BEL_moon_man_desc
+			desc = POLITICS_MOON_MAN_DESC
 		}
 	}
 
 	BEL_mrbond_leader = {
-		name = BEL_mrbond
+		name = POLITICS_MRBOND_NAME
 
 		portraits = {
 			civilian = {
@@ -134,12 +134,12 @@ characters = {
 		country_leader = {
 			ideology = accelerationist
 			traits = { BEL_musician fascist_sympathies }
-			desc = BEL_mrbond_desc
+			desc = POLITICS_MRBOND_DESC
 		}
 	}
 
 	BEL_johnny_rebel_leader = {
-		name = BEL_johnny_rebel
+		name = POLITICS_JOHNNY_REBEL_NAME
 
 		portraits = {
 			civilian = {
@@ -150,12 +150,12 @@ characters = {
 		country_leader = {
 			ideology = accelerationist
 			traits = { BEL_musician anti_communist }
-			desc = BEL_johnny_rebel_desc
+			desc = POLITICS_JOHNNY_REBEL_DESC
 		}
 	}
 
 	BEL_natsuki_leader = {
-		name = BEL_natsuki_leader
+		name = POLITICS_NATSUKI_NAME
 
 		portraits = {
 			civilian = {
@@ -166,7 +166,7 @@ characters = {
 		country_leader = {
 			ideology = accelerationist
 			traits = { BEL_cupcake }
-			desc = BEL_natsuki_leader_desc
+			desc = POLITICS_NATSUKI_DESC
 		}
 	}
 
@@ -205,7 +205,7 @@ characters = {
 
 
 	BEL_adolf_hitler_high = {
-		name = "Adolf Hitler"
+		name = POLITICS_ADOLF_HITLER_NAME
 		gender = male
 
 		portraits = {
@@ -227,6 +227,7 @@ characters = {
 			ledger = army
 			idea_token = BEL_adolf_hitler_high_command
 			cost = 100
+			desc = POLITICS_ADOLF_HITLER_DESC
 			visible = {
 				AND = {
 					is_country_leader = no
@@ -254,6 +255,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 1
+			desc = POLITICS_ADOLF_HITLER_DESC
 			traits = {
 				brilliant_strategist
 				career_officer
@@ -284,7 +286,7 @@ characters = {
 	}
 
 	BEL_georgy_zhukov = {
-		name = "Georgy Zhukov"
+		name = POLITICS_GEORGY_ZHUKOV_NAME
 		gender = male
 
 		portraits = {
@@ -306,6 +308,7 @@ characters = {
 			ledger = army
 			idea_token = BEL_zhukov_high_command
 			cost = 100
+			desc = POLITICS_GEORGY_ZHUKOV_DESC
 			visible = {
 				always = yes
 			}
@@ -338,7 +341,7 @@ characters = {
 	}
 
 	BEL_george_patton = {
-		name = "George S. Patton"
+		name = POLITICS_GEORGE_PATTON_NAME
 
 		portraits = {
 			civilian = {
@@ -359,6 +362,7 @@ characters = {
 			ledger = army
 			idea_token = BEL_george_patton_high_command
 			cost = 100
+			desc = POLITICS_GEORGE_PATTON_DESC
 			visible = {
 				always = yes
 			}
@@ -383,7 +387,7 @@ characters = {
 	}
 
 	BEL_macarthur = {
-		name = "Douglas MacArthur"
+		name = POLITICS_DOUGLAS_MACARTHUR_NAME
 
 		portraits = {
 			civilian = {
@@ -403,6 +407,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BEL_macarthur_advisor
 			cost = 100
+			desc = POLITICS_DOUGLAS_MACARTHUR_DESC
 			visible = {
 				always = yes
 			}
@@ -431,6 +436,7 @@ characters = {
 			slot = army_chief
 			idea_token = BEL_macarthur_advisor
 			cost = 100
+			desc = POLITICS_DOUGLAS_MACARTHUR_DESC
 			visible = {
 				always = yes
 			}
@@ -455,7 +461,7 @@ characters = {
 	}
 
 	BEL_rimuru_evolved = {
-		name = "Rimuru Tempest (Raphael)"
+		name = POLITICS_RIMURU_EVOLVED_NAME
 		gender = female
 
 		portraits = {
@@ -475,6 +481,7 @@ characters = {
             defense_skill = 1
             planning_skill = 3
             logistics_skill = 2
+			desc = POLITICS_RIMURU_EVOLVED_DESC
             visible = { 
 				AND = {
 					is_country_leader = no
@@ -487,6 +494,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BEL_rimuru_evolved_advisor
 			cost = 100
+			desc = POLITICS_RIMURU_EVOLVED_DESC
 			visible = { 
 				AND = {
 					is_country_leader = no
@@ -509,6 +517,7 @@ characters = {
 			ledger = army
 			idea_token = BEL_rimuru_evolved_high_command
 			cost = 100
+			desc = POLITICS_RIMURU_EVOLVED_DESC
 			visible = {
 				has_completed_focus = BEL_army_evolve_rimuru
 			}
@@ -533,7 +542,7 @@ characters = {
 	##  ##  ##  ##  ##  ##    ##
 
 	BEL_hatsune_miku = {
-		name = "Hatsune Miku"
+		name = POLITICS_HATSUNE_MIKU_NAME
 		gender = female
 
 		portraits = {
@@ -555,6 +564,7 @@ characters = {
 			ledger = army
 			idea_token = BEL_hatsune_miku_army_chief
 			cost = 100
+			desc = POLITICS_HATSUNE_MIKU_DESC
 			visible = {
 				always = yes
 			}
@@ -577,7 +587,7 @@ characters = {
 	##  ##  ######  ##  ##
 
 	BEL_kasane_teto = {
-		name = "Kasane Teto"
+		name = POLITICS_KASANE_TETO_NAME # The skies are Teto's Territory
 		gender = female
 
 		portraits = {
@@ -599,6 +609,7 @@ characters = {
 			ledger = air
 			idea_token = BEL_kasane_teto_air_chief
 			cost = 100
+			desc = POLITICS_KASANE_TETO_DESC
 			visible = {
 				always = yes
 			}
@@ -620,29 +631,29 @@ characters = {
 	##  ##  ##  ##  ##  ##    ##  
 	##  ##  ##  ##    ##      ##  
 
-	BEL_iowa = {
-		name = "USS Alabama"
+	# Destroyer
+	BEL_tashkent = {
+		name = POLITICS_TASHKENT_NAME
 		gender = female
 
 		portraits = {
 			civilian = {
-				large = "GFX_BEL_portrait_iowa"
+				# TBD
 			}
 			army = {
-				large = "GFX_BEL_portrait_iowa"
-				small = "GFX_BEL_portrait_iowa_small"
+				# TBD
 			}
 			navy = {
-				large = "GFX_BEL_portrait_iowa"
-				small = "GFX_BEL_portrait_iowa_small"
+				# TBD
 			}
 		}
 
 		advisor = {
 			slot = navy_chief
 			ledger = navy
-			idea_token = BEL_alabama_navy_chief
+			idea_token = BEL_tashkent_navy_chief
 			cost = 100
+			desc = POLITICS_TASHKENT_DESC
 			visible = {
 				always = yes
 			}
@@ -650,10 +661,162 @@ characters = {
 				original_tag = BEL
 			}
 			available = {
-				#has_completed_focus = BEL_navy_transforming
+				has_completed_focus = BEL_fascism_war_the_seewacht_light_ship_focus
 			}
 			traits = {
-				navy_capital_ship_3
+				navy_chief_maneuver_3
+			}
+		}
+	}
+
+	# Cruiser
+	BEL_houston = {
+		name = POLITICS_HOUSTON_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				# TBD
+			}
+			army = {
+				# TBD
+			}
+			navy = {
+				# TBD
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = BEL_houston_navy_chief
+			cost = 100
+			desc = POLITICS_HOUSTON_DESC
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				has_completed_focus = BEL_fascism_war_the_seewacht_capital_focus
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+		}
+	}
+
+	# Battleship
+	BEL_yamato = {
+		name = POLITICS_YAMATO_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				# TBD
+			}
+			army = {
+				# TBD
+			}
+			navy = {
+				# TBD
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = BEL_yamato_navy_chief
+			cost = 100
+			desc = POLITICS_YAMATO_DESC
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				has_completed_focus = BEL_fascism_war_the_seewacht_capital_focus
+			}
+			traits = {
+				battlefleet_designer navy_chief_decisive_battle_1
+			}
+		}
+	}
+	
+	# Carrier
+	BEL_ark_royal = {
+		name = POLITICS_ARK_ROYAL_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				# TBD
+			}
+			army = {
+				# TBD
+			}
+			navy = {
+				# TBD
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = BEL_ark_royal_navy_chief
+			cost = 100
+			desc = POLITICS_ARK_ROYAL_DESC
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				has_completed_focus = BEL_fascism_war_the_seewacht_carrier_focus
+			}
+			traits = {
+				navy_carrier_3
+			}
+		}
+	}
+	
+	# Submarine
+	BEL_u47 = {
+		name = POLITICS_U47_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				# TBD
+			}
+			army = {
+				# TBD
+			}
+			navy = {
+				# TBD
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = BEL_u47_navy_chief
+			cost = 100
+			desc = POLITICS_U47_DESC
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				has_completed_focus = BEL_fascism_war_the_seewacht_submarine_focus
+			}
+			traits = {
+				navy_submarine_2 navy_chief_commerce_raiding_2
 			}
 		}
 	}
@@ -664,8 +827,9 @@ characters = {
 	  ##    ##  ##  ##      ##  ##  ##  ##    ##        ##    ##
 	  ##    ##  ##  ######    ##    ##  ##  ######  ####      ##
 	
+	# Rudol von Stroheim
 	BEL_stroheim = {
-		name = "Rudol von Stroheim"
+		name = POLITICAL_STROHEIM_NAME
 		gender = male
 
 		portraits = {
@@ -687,6 +851,7 @@ characters = {
 			ledger = army
 			idea_token = BEL_stroheim_theorist
 			cost = 100
+			desc = POLITICAL_STROHEIM_DESC
 			visible = {
 				always = yes
 			}
@@ -697,13 +862,80 @@ characters = {
 				always = yes
 			}
 			traits = {
-				nuclear_scientist
+				rocket_scientist
 			}
 			on_add = {
-				BEL = {
-					add_tech_bonus = {
-					category = nuclear
-					bonus = 2.5
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = BEL_stroheim_bonus_gotten
+						}
+					}
+					BEL = {
+						add_tech_bonus = {
+							category = rocketry
+							bonus = 2.5
+							uses = 1
+						}
+						set_country_flag = BEL_stroheim_bonus_gotten
+					}
+				}
+			}
+		}
+	}
+	
+	# Utsuho Reiuji
+	BEL_utsuho_reiuji = {
+		name = POLITICAL_UTSUHO_REIUJI_NAME
+		gender = male
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_portrait_utsuho_reiuji"
+			}
+			army = {
+				large = "GFX_BEL_portrait_utsuho_reiuji"
+				small = "GFX_BEL_portrait_utsuho_reiuji_small"
+			}
+			navy = {
+				large = "GFX_BEL_portrait_utsuho_reiuji"
+				small = "GFX_BEL_portrait_utsuho_reiuji_small"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = BEL_utsuho_reiuji_theorist
+			cost = 100
+			desc = POLITICAL_UTSUHO_REIUJI_DESC
+			visible = {
+				always = yes
+			}
+			allowed = {
+				original_tag = BEL
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				nuclear_enthusiast nuclear_scientist
+			}
+			on_add = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = BEL_utsuho_reiuji_bonus_gotten
+						}
+					}
+					BEL = {
+						add_tech_bonus = {
+							category = nuclear
+							bonus = 5
+							uses = 1
+						}
+						add_manpower = -5000
+						set_country_flag = BEL_utsuho_reiuji_bonus_gotten
 					}
 				}
 			}
@@ -717,7 +949,7 @@ characters = {
 	##        ##    ######  ######    ##    ######    ####  ##  ##  ######
 
 	BEL_rimuru = { # Monarchist
-		name = "Rimuru Tempest"
+		name = POLITICS_RIMURU_TEMPEST_NAME
 		gender = female
 
 		portraits = {
@@ -738,6 +970,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BEL_rimuru_advisor
 			cost = 100
+			desc = POLITICS_RIMURU_TEMPEST_DESC
 			visible = { 
 				NOT = {
 					has_completed_focus = BEL_army_evolve_rimuru
@@ -755,8 +988,9 @@ characters = {
 		}
 	}
 
+	# Communist
 	BEL_katyusha = {
-		name = "Katyusha"
+		name = POLITICAL_KATYUSHA_NAME
 		gender = female
 
 		portraits = {
@@ -777,6 +1011,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BEL_katyusha_advisor
 			cost = 100
+			desc = POLITICAL_KATYUSHA_DESC
 			visible = {
 				always = yes
 			}
@@ -792,8 +1027,9 @@ characters = {
 		}
 	}
 
+	# Fascist
 	BEL_yui = {
-		name = "Yui Hirasawa"
+		name = POLITICS_YUI_HIRASAWA_NAME
 		gender = female
 
 		portraits = {
@@ -812,8 +1048,9 @@ characters = {
 
 		advisor = {
 			slot = political_advisor
-			idea_token = BEL_yui_advisor
+			idea_token = BEL_yui_hirasawa_advisor
 			cost = 100
+			desc = POLITICS_YUI_HIRASAWA_DESC
 			visible = {
 				always = yes
 			}
@@ -829,8 +1066,9 @@ characters = {
 		}
 	}
 
+	# Intelligence
 	BEL_yor_forger = {
-		name = "Yor Forger"
+		name = POLITICS_YOR_FORGER_NAME
 		gender = female
 
 		portraits = {
@@ -850,6 +1088,8 @@ characters = {
 		advisor={
 			slot = political_advisor
 			idea_token = BEL_yor_advisor
+			cost = 100
+			desc = POLITICS_YOR_FORGER_DESC
 			available = {
 				has_intelligence_agency = yes 
 			}

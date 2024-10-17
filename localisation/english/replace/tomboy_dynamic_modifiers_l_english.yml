@@ -3,5 +3,9 @@
   dyn_mod_bel_bop_fascism_reichsmilitaer_dominance: "Reichsmilitär Dominance"
   dyn_mod_bel_bop_fascism_sturmkommando_dominance: "Sturmkommando Dominance"
 
+  dyn_mod_bel_fascism_army_infantry_focus: "Infantry Focus"
+  dyn_mod_bel_fascism_army_armored_focus: "Armored Focus"
   dyn_mod_bel_fascism_army_radar_investment: "Radar Investment"
   dyn_mod_bel_fascism_army_truck_improvement: "Improved Trucks"
+
+  dyn_mod_bel_fascism_navy_financing_destroyer_research: "Financing Destroyer Research"
