@@ -18983,7 +18983,7 @@
 		}
 
 		mutually_exclusive = {
-			# focus = BEL_fascism_war_the_seewacht_capital_focus
+			focus = BEL_fascism_war_the_seewacht_capital_focus
 			# focus = BEL_fascism_war_the_seewacht_carrier_focus
 			# focus = BEL_fascism_war_the_seewacht_submarine_focus
 		}
@@ -18992,10 +18992,21 @@
 			add_dynamic_modifier = {
 				modifier = dyn_mod_bel_fascism_navy_light_ship_focus
 			}
-			add_tech_bonus = {
-				category = mio_cat_tech_all_destroyer_and_modules
-				bonus = 1.5
-				uses = 2
+			random_list = {
+				65 = {
+					add_tech_bonus = {
+						category = mio_cat_tech_all_destroyer_and_modules
+						bonus = 1.5
+						uses = 1
+					}
+				}
+				35 = {
+					add_tech_bonus = {
+						category = mio_cat_tech_all_cruiser_and_modules
+						bonus = 1.5
+						uses = 1
+					}
+				}
 			}
 		}
 	}
@@ -19005,7 +19016,7 @@
 		id = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
 		icon = tbd
 
-		cost = 5
+		cost = 15
 		
 		x = 16
 		y = 11
@@ -19058,12 +19069,12 @@
 		}
 	}
 
-	# Finance Destroyer Research
+	# Finance Screen Research
 	focus = {
-		id = BEL_fascism_war_the_seewacht_light_ship_finance_destroyer_research
+		id = BEL_fascism_war_the_seewacht_light_ship_finance_screen_research
 		icon = tbd
 
-		cost = x
+		cost = 5
 		
 		x = 18
 		y = 11
@@ -19074,7 +19085,7 @@
 		
 		completion_reward = {
 			add_dynamic_modifier = {
-				modifier = dyn_mod_bel_fascism_navy_financing_destroyer_research
+				modifier = dyn_mod_bel_fascism_navy_financing_screen_research
 				days = 125
 			}
 		}
@@ -19094,7 +19105,7 @@
 			focus = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
 		}
 		prerequisite = {
-			focus = BEL_fascism_war_the_seewacht_light_ship_finance_destroyer_research
+			focus = BEL_fascism_war_the_seewacht_light_ship_finance_screen_research
 		}
 
 		available = {
@@ -19110,7 +19121,7 @@
 		
 		completion_reward = {
 			add_tech_bonus = {
-				category = mio_cat_tech_all_destroyer_and_modules
+				category = mio_cat_tech_all_cruiser_and_modules
 				bonus = 1.5
 				uses = 2
 			}
@@ -19130,7 +19141,7 @@
 						BEL = {
 							intel_level_over = {
 								target = PREV
-								navy_intel > 25
+								navy_intel > 0.25
 							}
 						}
 					}
@@ -19159,7 +19170,7 @@
 			focus = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
 		}
 		prerequisite = {
-			focus = BEL_fascism_war_the_seewacht_light_ship_finance_destroyer_research
+			focus = BEL_fascism_war_the_seewacht_light_ship_finance_screen_research
 		}
 
 		available = {
@@ -19196,7 +19207,7 @@
 		}
 	}
 
-	# Design the Yuuki
+	# Design the Yuuki and Yuno
 	focus = {
 		id = BEL_fascism_war_the_seewacht_light_ship_design_yuuki
 		icon = tbd
@@ -19233,12 +19244,161 @@
 						fixed_ship_engine_slot = light_ship_engine_3
 					}
 				}
+				create_equipment_variant = {
+					name = "TF. Yuno"
+					type = ship_hull_cruiser_3
+					modules = {
+						front_1_custom_slot = ship_light_medium_battery_3
+						mid_1_custom_slot = dp_light_battery_3
+						mid_2_custom_slot = ship_torpedo_3
+						rear_1_custom_slot = ship_depth_charge_3
+						rear_2_custom_slot = ship_mine_layer_1
+						fixed_ship_battery_slot = ship_light_medium_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = ship_sonar_2
+						fixed_ship_torpedo_slot = ship_torpedo_3
+						fixed_ship_engine_slot = cruiser_ship_engine_3
+						fixed_ship_secondaries_slot = dp_light_battery_3
+						fixed_ship_armor_slot = ship_armor_cruiser_2
+					}
+				}
 			}
 			else = {
 				create_equipment_variant = {
 					name = "TF. Yuuki"
-					type = destroyer_2
+					type = destroyer_3
+					upgrades = {
+						destroyer_engine_upgrade = 3
+						ship_gun_upgrade = 2
+						ship_reliability_upgrade = 7
+						ship_armor_upgrade = 3
+					}
 				}
+				create_equipment_variant = {
+					name = "TF. Yuno"
+					type = light_cruiser_3
+					upgrades = {
+						ship_engine_upgrade = 2
+						ship_gun_upgrade = 4
+						ship_reliability_upgrade = 3
+						ship_armor_upgrade = 6
+					}
+				}
+			}
+		}
+	}
+
+	# Capital Ship Focus
+	focus = {
+		id = BEL_fascism_war_the_seewacht_capital_focus
+		icon = tbd
+
+		cost = 5
+		
+		x = 21
+		y = 10
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_focus
+			# focus = BEL_fascism_war_the_seewacht_carrier_focus
+			# focus = BEL_fascism_war_the_seewacht_submarine_focus
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_navy_capital_focus
+			}
+			add_tech_bonus = {
+				category = mio_cat_tech_all_capital_ship_and_modules
+				bonus = 1.5
+				uses = 1
+			}
+		}
+	}
+
+	# Pre-Train crews
+	focus = {
+		id = BEL_fascism_war_the_seewacht_capital_focus_pretrain_crews
+		icon = tbd
+
+		cost = 5
+		
+		x = 20
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus
+		}
+		
+		completion_reward = {
+			navy_experience = 15
+			every_navy_leader = {
+				gain_xp = 2
+			}
+		}
+	}
+
+	# Prepare harbors
+	focus = {
+		id = BEL_fascism_war_the_seewacht_capital_focus_prepare_harbors
+		icon = tbd
+
+		cost = 15
+		
+		x = 22
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	# Recruit sailors
+	focus = {
+		id = BEL_fascism_war_the_seewacht_capital_focus_recruit_sailors
+		icon = tbd
+
+		cost = 5
+		
+		x = 20
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus_pretrain_crews
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus_prepare_harbors
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = tomboy.83
 			}
 		}
 	}

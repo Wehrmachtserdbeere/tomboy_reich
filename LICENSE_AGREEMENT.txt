@@ -8,7 +8,7 @@ This Mod is designed for use with the game developed and published by Paradox In
 
 For further details on the Paradox Interactive EULA, please refer to the official documentation available at https://legal.paradoxplaza.com/eula.
 
-2. Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License for the Mod
+1. Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License for the Mod
 
 The Mod, excluding any included art assets, is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
 
@@ -20,7 +20,7 @@ Under this license:
 
 For the full terms, please visit the Creative Commons License Page.
 
-3. License for Art Assets
+2. License for Art Assets
 
 The art assets included in the Mod that do not fall under Paradox Interactive's own art assets are subject to the following restrictions:
 
@@ -35,7 +35,7 @@ For permission inquiries, please contact the Mod creator or the respective artis
 
 Note: The artist's contact site, as provided for permission inquiries, may contain Not Safe For Work (NSFW) illustrations. Please proceed with caution if visiting the artist's site.
 
-4. General Conditions
+3. General Conditions
 
     Mod Compatibility: The Mod is offered "as is," without any warranty of fitness for a particular purpose. The Mod creator is not responsible for any issues arising from the use of the Mod.
     Amendments: The Mod creator reserves the right to update or modify this License Agreement at any time, with or without notice.

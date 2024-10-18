@@ -7158,7 +7158,7 @@ country_event = {
 					POL = {
 						annex_country = {
 							target = BEL
-							transfer_troops = yes # This won't happen, but shows the misinformation of the poles.
+							transfer_troops = yes # This won't happen, but shows the delusions the poles believed.
 						}
 					}
 				}
@@ -7347,6 +7347,84 @@ country_event = {
 		effect_tooltip = {
 			add_dynamic_modifier = {
 				modifier = dyn_mod_bel_bop_fascism_reichsmilitaer_dominance
+			}
+		}
+	}
+}
+
+# BEL | Fascism Navy Focus | Recruit young sailors or veterans?
+country_event = {
+	id = tomboy.83
+	title = tomboy.83.t
+	desc = tomboy.83.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.83"
+	}
+
+	option = { # Young sailors
+		name = tomboy.83.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 10
+				has_manpower < 10000
+			}
+			modifier = {
+				add = 30
+				has_manpower < 5000
+			}
+			modifier = {
+				add = 40
+				has_manpower < 2500
+			}
+			modifier = {
+				factor = 1000 # Desperately need manpower!
+				has_manpower < 1000
+			}
+		}
+
+		BEL = {
+			navy_experience = -25
+			add_manpower = 5000
+		}
+	}
+
+	option = { # Veteran sailors
+		name = tomboy.83.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		BEL = {
+			navy_experience = 50
+			add_manpower = 1500
+			if = {
+				limit = {
+					BEL = {
+						any_navy_leader = {
+							exists = yes
+						}
+					}
+				}
+				random_navy_leader = {
+					gain_xp = 2
+				}
+				random_navy_leader = {
+					gain_xp = 2
+				}
+			}
+			else = {
+				random_country = {
+					gain_xp = 2
+				}
+				random_country = {
+					gain_xp = 2
+				}
 			}
 		}
 	}

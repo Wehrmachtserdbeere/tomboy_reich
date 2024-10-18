@@ -622,6 +622,11 @@
   tomboy-82-d_scripted_loc_reichsmilitaer: "After the power of the Sturmkommando has progressively been stripped, the Reichsmilitär has declared the disbanding of the Sturmkommando, and assumed control of the Imperiales Kriegsamt. As result, they'll have an incredible influence in the government's war efforts, and will be the main deciders of our military policies. They are also now directly controlling the military forces, and are responsible for the defense of the nation."
   tomboy-82-d_scripted_loc_sturmkommando: "Having gained significant popularity and power, the Sturmkommando has declared single control of the Imperiales Kriegsamt. As such, the Sturmkommando will now have an incredible influence in the government's war efforts. They are also now directly controlling the military forces, and are responsible for the defense of the nation. As a result of the Sturmkommando's decision, the Reichsmilitär has effectively been disbanded. We can expect our occupied territories to become a potential bloodbath for non-Tomboys as a result."
 
+  tomboy.83.t: "Sailors needed!"
+  tomboy.83.d: "As we're rebuilding out navy, and re-instituting the naval tradition of our most talented people, we are in desperate need of sailors. We can get more from a multitude of sources - we could recruit them from our civilian populace, which will give us a lot of sailors, who in turn are inexperienced in battle, and will require a longer training. Alternatively, we could recruit a few of the veteran sailors from the old navy. Of course, we don't have any guarantees about them accepting or not, and it undoubtedly will result in less turnout from volunteers, but we would get a lot of experienced men in our ranks."
+  tomboy.83.a: "We need a lot of young blood!"
+  tomboy.83.b: "We need a lot of experience!"
+
 
 
   # Generics

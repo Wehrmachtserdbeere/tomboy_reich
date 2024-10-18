@@ -104,23 +104,42 @@ dyn_mod_bel_fascism_navy_light_ship_focus = {
 
 	# icon = tbd
 
+	navy_screen_attack_factor = 0.1
+	navy_screen_defence_factor = 0.1
 	navy_submarine_attack_factor = -0.05
 	navy_capital_ship_attack_factor = -0.05
 	navy_carrier_air_attack_factor = -0.05
 	navy_org = 0.15
 }
 
-dyn_mod_bel_fascism_navy_financing_destroyer_research = {
+dyn_mod_bel_fascism_navy_financing_screen_research = {
 	enable = {
 		always = yes
 	}
 
 	# icon = tbd
 
-	experience_gain_navy_factor = 0.2
-	experience_gain_navy_unit_factor = 0.2
+	experience_gain_navy_factor = 0.25
+	experience_gain_navy_unit_factor = 0.25
 	production_cost_max_destroyer_1 = -0.2
 	production_cost_max_destroyer_2 = -0.2
 	production_cost_max_destroyer_3 = -0.2
 	production_cost_max_destroyer_4 = -0.2
+	production_cost_max_light_cruiser_1 = -0.2
+	production_cost_max_light_cruiser_2 = -0.2
+	production_cost_max_light_cruiser_3 = -0.2
+	production_cost_max_light_cruiser_4 = -0.2
+}
+
+dyn_mod_bel_fascism_navy_capital_focus = {
+	enable = {
+		always = yes
+	}
+
+	navy_capital_ship_attack_factor = 0.1
+	navy_capital_ship_defence_factor = 0.1
+	navy_org = 0.15
+	navy_submarine_attack_factor = -0.05
+	navy_screen_attack_factor = -0.05
+	navy_carrier_air_attack_factor = -0.05
 }
