@@ -143,3 +143,21 @@ dyn_mod_bel_fascism_navy_capital_focus = {
 	navy_screen_attack_factor = -0.05
 	navy_carrier_air_attack_factor = -0.05
 }
+
+dyn_mod_bel_fascism_navy_carrier_focus = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	navy_capital_ship_attack_factor = -0.05
+	navy_submarine_attack_factor = -0.05
+	navy_screen_attack_factor = -0.05
+	navy_org = -0.05
+	experience_gain_carrier_combat_factor = 0.25
+	experience_gain_carrier_training_factor = 0.25
+	carrier_capacity_penalty_reduction = 0.15
+	navy_carrier_air_attack_factor = 0.1
+	carrier_capacity_penalty_reduction = 0.2
+}

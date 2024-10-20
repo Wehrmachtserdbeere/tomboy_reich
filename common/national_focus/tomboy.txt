@@ -18798,7 +18798,7 @@
 						has_dlc = "No Step Back"
 					}
 					create_equipment_variant = {
-						name = "Schnellflitzer \"Zwitscher\""
+						name = BEL_ships_zwitscher
 						type = small_plane_airframe_2
 						modules = {
 							main_armament_slot = aircraft_cannon_2_2x
@@ -18812,7 +18812,7 @@
 				}
 				else = {
 					create_equipment_variant = {
-						name = "Schnellflitzer \"Zwitscher\""
+						name = BEL_ships_zwitscher
 						type = fighter_equipment_2
 						upgrades = {
 							plane_armor_upgrade = 3
@@ -18975,7 +18975,7 @@
 
 		cost = 5
 		
-		x = 17
+		x = 18
 		y = 10
 
 		prerequisite = {
@@ -18984,7 +18984,7 @@
 
 		mutually_exclusive = {
 			focus = BEL_fascism_war_the_seewacht_capital_focus
-			# focus = BEL_fascism_war_the_seewacht_carrier_focus
+			focus = BEL_fascism_war_the_seewacht_carrier_focus
 			# focus = BEL_fascism_war_the_seewacht_submarine_focus
 		}
 		
@@ -19018,7 +19018,7 @@
 
 		cost = 15
 		
-		x = 16
+		x = 17
 		y = 11
 
 		prerequisite = {
@@ -19076,7 +19076,7 @@
 
 		cost = 5
 		
-		x = 18
+		x = 19
 		y = 11
 
 		prerequisite = {
@@ -19098,7 +19098,7 @@
 
 		cost = 5
 		
-		x = 16
+		x = 17
 		y = 12
 
 		prerequisite = {
@@ -19163,7 +19163,7 @@
 
 		cost = 5
 
-		x = 18
+		x = 19
 		y = 12
 
 		prerequisite = {
@@ -19209,12 +19209,12 @@
 
 	# Design the Yuuki and Yuno
 	focus = {
-		id = BEL_fascism_war_the_seewacht_light_ship_design_yuuki
+		id = BEL_fascism_war_the_seewacht_light_ship_design_yuuki_and_yuno
 		icon = tbd
 
 		cost = 5
 		
-		x = 17
+		x = 18
 		y = 13
 
 		prerequisite = {
@@ -19230,7 +19230,7 @@
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = "TF. Yuuki"
+					name = BEL_ships_yuuki
 					type = ship_hull_light_3
 					modules = {
 						front_1_custom_slot = ship_light_battery_2
@@ -19245,7 +19245,7 @@
 					}
 				}
 				create_equipment_variant = {
-					name = "TF. Yuno"
+					name = BEL_ships_yuno
 					type = ship_hull_cruiser_3
 					modules = {
 						front_1_custom_slot = ship_light_medium_battery_3
@@ -19266,7 +19266,7 @@
 			}
 			else = {
 				create_equipment_variant = {
-					name = "TF. Yuuki"
+					name = BEL_ships_yuuki
 					type = destroyer_3
 					upgrades = {
 						destroyer_engine_upgrade = 3
@@ -19276,7 +19276,7 @@
 					}
 				}
 				create_equipment_variant = {
-					name = "TF. Yuno"
+					name = BEL_ships_yuno
 					type = light_cruiser_3
 					upgrades = {
 						ship_engine_upgrade = 2
@@ -19289,14 +19289,16 @@
 		}
 	}
 
-	# Capital Ship Focus
+	######################
+	# Capital Ship Focus #
+	######################
 	focus = {
 		id = BEL_fascism_war_the_seewacht_capital_focus
 		icon = tbd
 
 		cost = 5
 		
-		x = 21
+		x = 22
 		y = 10
 
 		prerequisite = {
@@ -19305,7 +19307,7 @@
 
 		mutually_exclusive = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_focus
-			# focus = BEL_fascism_war_the_seewacht_carrier_focus
+			focus = BEL_fascism_war_the_seewacht_carrier_focus
 			# focus = BEL_fascism_war_the_seewacht_submarine_focus
 		}
 		
@@ -19328,7 +19330,7 @@
 
 		cost = 5
 		
-		x = 20
+		x = 21
 		y = 11
 
 		prerequisite = {
@@ -19350,7 +19352,7 @@
 
 		cost = 15
 		
-		x = 22
+		x = 23
 		y = 11
 
 		prerequisite = {
@@ -19386,7 +19388,7 @@
 
 		cost = 5
 		
-		x = 20
+		x = 21
 		y = 12
 
 		prerequisite = {
@@ -19403,6 +19405,167 @@
 		}
 	}
 
+	# Plan the Megumin
+	focus = {
+		id = BEL_fascism_war_the_seewacht_capital_focus_plan_megumin
+		icon = tbd
+
+		cost = 5
+		
+		x = 23
+		y = 12
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus_pretrain_crews
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus_prepare_harbors
+		}
+		
+		completion_reward = {
+			navy_experience = 100
+		}
+	}
+
+	# Build the Megumin
+	focus = {
+		id = BEL_fascism_war_the_seewacht_capital_focus_build_megumin
+		icon = tbd
+		
+		cost = x
+		
+		x = 22
+		y = 13
+		
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus_recruit_sailors
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_capital_focus_plan_megumin
+		}
+
+		available = {
+			has_navy_experience > 99
+		}
+
+		completion_reward = {
+			navy_experience = -100
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = BEL_ships_megumin
+					type = ship_hull_heavy_3
+					modules = {
+						front_1_custom_slot = ship_heavy_battery_3
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_airplane_launcher_1
+						mid_3_custom_slot = ship_heavy_battery_3
+						rear_1_custom_slot = ship_heavy_battery_3
+						fixed_ship_battery_slot = ship_heavy_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = heavy_ship_engine_3
+						fixed_ship_secondaries_slot = dp_ship_secondaries_3
+						fixed_ship_armor_slot = ship_armor_bb_3
+					}
+				}
+				create_ship = {
+					type = ship_hull_heavy_3
+					equipment_variant = BEL_ships_megumin
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = BEL_ships_megumin
+					type = battleship_3
+					upgrades = {
+						ship_armor_upgrade = 7
+						ship_engine_upgrade = 3
+						ship_gun_upgrade = 6
+						ship_reliability_upgrade = 1
+					}
+				}
+				create_ship = {
+					type = battleship_3
+					equipment_variant = BEL_ships_megumin
+				}
+			}
+		}
+	}
+
+	#################
+	# Carrier Focus #
+	#################
+	focus = {
+		id = BEL_fascism_war_the_seewacht_carrier_focus
+		icon = tbd
+
+		cost = 5
+
+		x = 26
+		y = 10
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_focus
+			focus = BEL_fascism_war_the_seewacht_capital_focus
+			# focus = BEL_fascism_war_the_seewacht_submarine_focus
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht
+		}
+
+		available = {
+			OR = {
+				has_tech = iw_small_airframe
+				has_tech = iw_medium_airframe
+				has_tech = iw_large_airframe
+				has_tech = fighter1
+				has_tech = tactical_bomber1
+				has_tech = strategic_bomber1
+			}
+		}
+
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_navy_carrier_focus
+			}
+			add_tech_bonus = {
+				category = mio_cat_tech_all_carrier_and_modules
+				bonus = 1.5
+				uses = 1
+			}
+		}
+	}
+
+	# Create the Naval-Aerial Battalion
+	focus = {
+		id = BEL_fascism_war_the_seewacht_carrier_focus_create_naval_aerial_battalion
+		icon = tbd
+
+		cost = 5
+		
+		x = 25
+		y = 11
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus
+		}
+		
+		completion_reward = {
+			add_manpower = 1250
+			add_tech_bonus = {
+				category = naval_air
+				bonus = 1.5
+				uses = 1
+			}
+		}
+	}
+
+	# 
 
 
 

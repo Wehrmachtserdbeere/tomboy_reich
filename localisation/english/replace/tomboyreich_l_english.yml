@@ -651,3 +651,8 @@
     autonomy_associated_region_desc: "An Associated State is a political arrangement in which a territory or region maintains a formal relationship with a larger sovereign state while enjoying a high degree of autonomy and self-governance. Under this arrangement, the associated state typically manages its own internal affairs, such as legislation, taxation, and governance, while the larger sovereign state retains responsibility for matters such as defense and foreign affairs. Associated states often have their own constitutions or legal frameworks that outline their rights and responsibilities within the broader relationship with the sovereign state. While they are not fully independent nations, associated states have a significant degree of sovereignty and may have the authority to enter into international agreements and conduct diplomatic relations on certain matters with other countries. This arrangement allows associated states to maintain their cultural, historical, or political identity while still benefiting from the security and economic support provided by their association with the larger sovereign state."
 
     BEL_SHIPS_NAME_NATSUKIAN: "Natsuki-Themed"
+
+    BEL_ships_zwitscher: "Schnellflitzer \"Zwitscher\""
+    BEL_ships_yuuki: "TF. Yuuki"
+    BEL_ships_yuno: "TF. Yuno"
+    BEL_ships_megumin: "TF. Megumin"
