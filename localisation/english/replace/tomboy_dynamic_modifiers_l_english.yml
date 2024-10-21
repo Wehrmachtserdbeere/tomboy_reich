@@ -9,7 +9,13 @@
   dyn_mod_bel_fascism_army_truck_improvement: "Improved Trucks"
 
   dyn_mod_bel_fascism_navy_financing_destroyer_research: "Financing Destroyer Research"
+  dyn_mod_bel_fascism_navy_financing_carrier_research: "Financing Carrier Research"
+  dyn_mod_bel_fascism_navy_financing_capital_research: "Financing Capital Research"
+  dyn_mod_bel_fascism_navy_financing_submarine_research: "Financing Submarine Research"
 
   dyn_mod_bel_fascism_navy_light_ship_focus: "Seewacht Light Ship Focus"
   dyn_mod_bel_fascism_navy_capital_focus: "Seewacht Capital Focus"
   dyn_mod_bel_fascism_navy_carrier_focus: "Seewacht Carrier Focus"
+
+  dyn_mod_bel_fascism_navy_submarine_experimentation_good: "§GExperimental Submarine Success§!"
+  dyn_mod_bel_fascism_navy_submarine_experimentation_bad: "§RExperimental Submarine Catastrophe§!"

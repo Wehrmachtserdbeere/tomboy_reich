@@ -653,6 +653,8 @@
     BEL_SHIPS_NAME_NATSUKIAN: "Natsuki-Themed"
 
     BEL_ships_zwitscher: "Schnellflitzer \"Zwitscher\""
-    BEL_ships_yuuki: "TF. Yuuki"
-    BEL_ships_yuno: "TF. Yuno"
-    BEL_ships_megumin: "TF. Megumin"
+    BEL_ships_yuuki: "Zerstörer \"Yuuki\""
+    BEL_ships_yuno: "Kampfkreuzer \"Yuno\""
+    BEL_ships_megumin: "Kampfschiff \"Megumin\""
+    BEL_ships_asuka: "Flugzeugträger \"Asuka\""
+    BEL_ships_ryuko: "U-Boot \"Ryūko\""

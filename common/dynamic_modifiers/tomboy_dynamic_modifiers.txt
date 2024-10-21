@@ -161,3 +161,75 @@ dyn_mod_bel_fascism_navy_carrier_focus = {
 	navy_carrier_air_attack_factor = 0.1
 	carrier_capacity_penalty_reduction = 0.2
 }
+
+dyn_mod_bel_fascism_navy_financing_carrier_research = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	experience_gain_navy_factor = 0.25
+	experience_gain_navy_unit_factor = 0.25
+	unit_carrier_design_cost_factor = -0.2
+	consumer_goods_factor = 0.1
+}
+
+dyn_mod_bel_fascism_navy_financing_carrier_research = {
+	enable = {
+		always = yes
+	}
+
+	# idea = tbd
+
+	navy_capital_ship_attack_factor = -0.05
+	navy_submarine_attack_factor = -0.05
+	navy_screen_attack_factor = -0.05
+	navy_org = -0.05
+	experience_gain_carrier_combat_factor = 0.25
+	experience_gain_carrier_training_factor = 0.25
+	carrier_capacity_penalty_reduction = 0.15
+	navy_carrier_air_attack_factor = 0.1
+	carrier_capacity_penalty_reduction = 0.2
+}
+
+dyn_mod_bel_fascism_navy_submarine_experimentation_good = {
+	enable = {
+		always = yes
+	}
+
+	# idea = tbd
+
+	weekly_manpower = 100
+	stability_weekly_factor = 0.05
+	monthly_population = 100
+}
+
+dyn_mod_bel_fascism_navy_submarine_experimentation_bad = {
+	enable = {
+		always = yes
+	}
+
+	# idea = tbd
+
+	stability_weekly_factor = -0.05
+	war_support_weekly_factor = -0.05
+}
+
+dyn_mod_bel_fascism_navy_financing_submarine_research = {
+	enable = {
+		always = yes
+	}
+
+	# idea = tbd
+
+	navy_capital_ship_attack_factor = -0.05
+	navy_screen_attack_factor = -0.05
+	navy_org = -0.05
+	experience_gain_navy_factor = 0.25
+	experience_gain_navy_unit_factor = 0.25
+	production_cost_max_submarine_1 = -0.2
+	production_cost_max_submarine_2 = -0.2
+	production_cost_max_submarine_3 = -0.2
+	production_cost_max_submarine_4 = -0.2
+}

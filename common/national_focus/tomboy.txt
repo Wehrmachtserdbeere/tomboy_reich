@@ -1262,6 +1262,8 @@
 		x = 8
 		y = 8
 
+		search_filters = { FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monarchism_consolidate
 		}
@@ -1283,6 +1285,8 @@
 		
 		x = 8
 		y = 9
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monarchism_prepare_army
@@ -1401,6 +1405,8 @@
 		x = 6
 		y = 9
 
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monarchism_prepare_army
 		}
@@ -1477,6 +1483,8 @@
 		
 		x = 10
 		y = 9
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_monarchism_prepare_army
@@ -1592,6 +1600,8 @@
 		x = 6
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_demand_referendums
 			focus = BEL_monarchism_subjugate_for_safety
@@ -1632,6 +1642,8 @@
 		
 		x = 10
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monarchism_demand_referendums
@@ -1693,6 +1705,8 @@
 		
 		x = 8
 		y = 10
+
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monarchism_demand_referendums
@@ -1786,6 +1800,8 @@
 		x = 3
 		y = 11
 
+		search_filters = { FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monarchism_prepare_further_expansion
 		}
@@ -1861,6 +1877,8 @@
 		x = 2
 		y = 12
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monarchism_prepare_british_invasion_prepare
 		}
@@ -1898,6 +1916,8 @@
 		
 		x = 2
 		y = 13
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL }
 
 		available = {
 			ENG = {
@@ -1955,6 +1975,8 @@
 		x = 0
 		y = 13
 
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monarchism_british_contact_diplomats
 		}
@@ -1995,6 +2017,8 @@
 		
 		x = 0
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = {
 			focus = BEL_monarchism_british_sponsor_state_visit
@@ -2072,6 +2096,8 @@
 		x = 2
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monarchism_british_sponsor_state_visit
 			focus = BEL_monarchism_british_trade_agreement
@@ -2145,6 +2171,8 @@
 		
 		x = 0
 		y = 15
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = {
 			focus = BEL_monarchism_british_destabilization_campaign
@@ -2235,6 +2263,8 @@
 		x = 2
 		y = 15
 
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monarchism_british_destabilization_campaign
 			focus = BEL_britain_friendship
@@ -2296,6 +2326,8 @@
 		x = 4
 		y = 12
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monarchism_prepare_british_invasion_prepare
 		}
@@ -2344,6 +2376,8 @@
 		x = 4
 		y = 13
 
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monarchism_britain_prepare_invasion
 		}
@@ -2372,6 +2406,8 @@
 		
 		x = 6
 		y = 13
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_monarchism_britain_prepare_invasion
@@ -2483,6 +2519,8 @@
 		x = 4
 		y = 14
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_monarchism_britain_develop_lelouch_plan
 		}
@@ -2525,6 +2563,8 @@
 		x = 6
 		y = 14
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_monarchism_britain_develop_lelouch_plan
 		}
@@ -2565,6 +2605,8 @@
 		
 		x = 4
 		y = 15
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL }
 
 		prerequisite = {
 			focus = BEL_monarchism_britain_challenge_britannia
@@ -2701,6 +2743,8 @@
 		x = 6
 		y = 15
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP }
+
 		prerequisite = {
 			focus = BEL_monarchism_britain_challenge_britannia
 			focus = BEL_monarchism_britain_over_the_channel
@@ -2778,6 +2822,8 @@
 		
 		x = 5
 		y = 16
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monarchism_britain_split_britain
@@ -2885,6 +2931,8 @@
 		x = 3
 		y = 17
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_britain_claim_britannia
 			focus = BEL_monarchism_britain_attack
@@ -2950,6 +2998,8 @@
 		x = 11
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		available = {
 			NOT = {
 				is_in_faction_with = FRA
@@ -2980,6 +3030,8 @@
 		x = 9
 		y = 12
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_plan_andou_prepare
 		}
@@ -2998,6 +3050,8 @@
 		
 		x = 8
 		y = 13
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_build_defense
@@ -3075,6 +3129,8 @@
 		x = 10
 		y = 13
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_build_defense
 		}
@@ -3150,6 +3206,8 @@
 		
 		x = 8
 		y = 14
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_train_armored
@@ -3230,6 +3288,8 @@
 		x = 10
 		y = 14
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_train_armored
 		}
@@ -3308,6 +3368,8 @@
 		
 		x = 8
 		y = 15
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_develop_better_tanks_2
@@ -3388,6 +3450,8 @@
 		x = 10
 		y = 15
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_develop_better_tanks_2
 		}
@@ -3467,6 +3531,8 @@
 		x = 9
 		y = 16
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_harden_spirits
 		}
@@ -3541,6 +3607,8 @@
 		x = 13
 		y = 12
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_plan_andou_prepare
 		}
@@ -3563,6 +3631,8 @@
 		
 		x = 12
 		y = 13
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_monarchism_france_offense_focus_on_offense
@@ -3632,6 +3702,8 @@
 		x = 14
 		y = 13
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_offense_focus_on_offense
 		}
@@ -3698,6 +3770,8 @@
 		x = 12
 		y = 14
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_offense_sabotage_maginot
 			focus = BEL_monarchism_france_offense_invite_french_tomboys
@@ -3755,6 +3829,8 @@
 		
 		x = 14
 		y = 14
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monarchism_france_offense_sabotage_maginot
@@ -3821,6 +3897,8 @@
 		x = 12
 		y = 15
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL }
+
 		mutually_exclusive = {
 			focus = BEL_monarchism_france_offense_diplomatic_incident_defeat
 		}
@@ -3860,6 +3938,8 @@
 		x = 14
 		y = 15
 
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL }
+
 		mutually_exclusive = {
 			focus = BEL_monarchism_france_offense_diplomatic_incident_victory
 		}
@@ -3898,6 +3978,8 @@
 		
 		x = 13
 		y = 16
+
+		search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monarchism_france_offense_diplomatic_incident_victory
@@ -3989,6 +4071,8 @@
 		x = 11
 		y = 17
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_france_defense_let_them_come
 			focus = BEL_monarchism_france_offense_attack_france
@@ -4036,6 +4120,8 @@
 		x = 20
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_prepare_further_expansion
 		}
@@ -4058,6 +4144,8 @@
 		
 		x = 18
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		mutually_exclusive = {
 			focus = BEL_monarchism_germany_justice_chosen
@@ -4088,6 +4176,8 @@
 		x = 20
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		mutually_exclusive = {
 			focus = BEL_monarchism_germany_unity_chosen
 			focus = BEL_monarchism_germany_freedom_chosen
@@ -4117,6 +4207,8 @@
 		x = 22
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		mutually_exclusive = {
 			focus = BEL_monarchism_germany_unity_chosen
 			focus = BEL_monarchism_germany_justice_chosen
@@ -4145,6 +4237,8 @@
 		
 		x = 17
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		allow_branch = {
 			OR = {
@@ -4181,6 +4275,8 @@
 		
 		x = 19
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		allow_branch = {
 			OR = {
@@ -4286,6 +4382,8 @@
 		
 		x = 16
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_unity_investigate_germany
@@ -4402,6 +4500,8 @@
 		x = 18
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_unity_investigate_germany
 			focus = BEL_monarchism_germany_unity_invest_anti-tank
@@ -4435,6 +4535,8 @@
 		
 		x = 20
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_unity_invest_anti-tank
@@ -4495,6 +4597,8 @@
 		x = 17
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_unity_invite_tomboys
 			focus = BEL_monarchism_unity_plan_offensive
@@ -4528,6 +4632,8 @@
 		x = 19
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_ARMY_XP }
+
 		prerequisite = {
 			focus = BEL_monarchism_unity_plan_offensive
 			focus = BEL_monarchism_germany_unity_invest_arms_factories
@@ -4551,6 +4657,8 @@
 
 		x = 18
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_unity_underground_defense
@@ -4596,6 +4704,8 @@
 		x = 19
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_monarchism_germany_justice_chosen
@@ -4632,6 +4742,8 @@
 		x = 21
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_monarchism_germany_justice_chosen
@@ -4663,6 +4775,8 @@
 		
 		x = 20
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_justice_assess_situation
@@ -4704,6 +4818,8 @@
 		x = 18
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_justice_assess_situation
 		}
@@ -4742,6 +4858,8 @@
 		
 		x = 22
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_justice_contact_resistance_groups
@@ -4812,6 +4930,8 @@
 		x = 21
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_justice_send_support_to_resistance_groups
 			focus = BEL_monarchism_germany_justice_rekindle_monarchism
@@ -4837,6 +4957,8 @@
 		
 		x = 19
 		y = 15
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_justice_assert_eastern_claims
@@ -4951,6 +5073,8 @@
 		
 		x = 20
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_justice_anti-tank
@@ -5068,6 +5192,10 @@
 						transfer_state = 74
 					}
 
+					GER = {
+						country_event = tomboy.87
+					}
+
 					if = {
 						limit = {
 							OR = {
@@ -5162,6 +5290,8 @@
 		x = 21
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_chosen
 		}
@@ -5207,6 +5337,8 @@
 		x = 23
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_chosen
 		}
@@ -5247,6 +5379,8 @@
 
 		x = 21
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_fund_north-eastern_nationalists
@@ -5406,6 +5540,8 @@
 		x = 23
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_fund_south-western_nationalists
 		}
@@ -5504,6 +5640,8 @@
 		x = 22
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_arm_north-eastern_rebels
 		}
@@ -5575,6 +5713,8 @@
 		x = 20
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_arm_north-eastern_rebels
 		}
@@ -5633,6 +5773,8 @@
 		
 		x = 24
 		y = 15
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_arm_south-western_rebels
@@ -5735,6 +5877,8 @@
 		x = 22
 		y = 16
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_freedom_claim_ruhr
 		}
@@ -5795,6 +5939,8 @@
 		x = 20
 		y = 17
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monarchism_germany_unity_conquer_germany
 			focus = BEL_monarchism_germany_justice_war
@@ -5838,25 +5984,6 @@
 
 
 
-	# Add a name change focus for the various possible factions.
-	# Germany + Tomboy
-	# Britain + Tomboy
-	# France + Tomboy
-	# 
-	# Germany + Britain + Tomboy
-	# France + Britain + Tomboy
-	# Germany + France + Tomboy
-	# Germany + Britain + France + Tomboy
-	#
-	#
-	# Add flag changes for the various combinations:
-	#
-	# Germany
-	# Britain
-	# France
-	# Germany + Britain
-	# Germany + France
-	# Britain + France
 
 	#######################
 	# War Campaign Finish #
@@ -5925,6 +6052,8 @@
 		x = 10
 		y = 2
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash FOCUS_FILTER_BALANCE_OF_POWER }
+
 		cost = 7
 		
 		allow_branch = {
@@ -5968,6 +6097,8 @@
 		
 		x = 9
 		y = 3
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash }
 		
 		allow_branch = {
 			has_completed_focus = BEL_monafash_monarchist_fascist_alliance
@@ -6009,6 +6140,8 @@
 		x = 11
 		y = 3
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash }
+
 		allow_branch = {
 			has_completed_focus = BEL_monafash_monarchist_fascist_alliance
 		}
@@ -6048,6 +6181,8 @@
 		
 		x = 8
 		y = 4
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash }
 
 		prerequisite = {
 			focus = BEL_monafash_destabilize_democrats
@@ -6099,6 +6234,8 @@
 		x = 10
 		y = 4
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash }
+
 		prerequisite = {
 			focus = BEL_monafash_destabilize_democrats
 			focus = BEL_monafash_anti_communist_actions
@@ -6142,6 +6279,8 @@
 		
 		x = 12
 		y = 4
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash }
 
 		prerequisite = {
 			focus = BEL_monafash_destabilize_democrats
@@ -6193,6 +6332,8 @@
 		
 		x = 8
 		y = 5
+
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_royal_heritage
@@ -6252,6 +6393,8 @@
 		x = 9
 		y = 6
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash }
+
 		prerequisite = {
 			focus = BEL_monafash_royal_heritage
 			focus = BEL_monafash_equal_governance
@@ -6283,6 +6426,8 @@
 		x = 11
 		y = 6
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash }
+
 		prerequisite = {
 			focus = BEL_monafash_equal_governance
 			focus = BEL_monafash_fascist_supremacy
@@ -6313,6 +6458,8 @@
 		
 		x = 12
 		y = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS Monafash FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_fascist_supremacy
@@ -6361,6 +6508,8 @@
 		
 		x = 10
 		y = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA Monafash FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_equal_governance
@@ -6460,6 +6609,8 @@
 		x = 9
 		y = 7
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_convince_monarchist_hardliners
 			focus = BEL_monafash_convince_anti-monarchist_fascists
@@ -6487,6 +6638,8 @@
 		
 		x = 10
 		y = 8
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
 
 		allow_branch = {
 			OR = {
@@ -6524,6 +6677,8 @@
 		x = 1
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_defense_department
 		}
@@ -6548,6 +6703,8 @@
 		
 		x = 0
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_case_black
@@ -6626,6 +6783,8 @@
 		
 		x = 2
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_case_black
@@ -6783,6 +6942,8 @@
 		x = 0
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_pursue_peace_with_germany
 		}
@@ -6910,6 +7071,8 @@
 		x = 2
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
+
 		available = {
 			intel_level_over = {
 				target = GER
@@ -6983,6 +7146,8 @@
 		
 		x = 1
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_join_germany
@@ -7098,6 +7263,8 @@
 		x = 5
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_defense_department
 		}
@@ -7123,6 +7290,8 @@
 		
 		x = 4
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_case_blue
@@ -7197,6 +7366,8 @@
 
 		x = 6
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_case_blue
@@ -7364,6 +7535,8 @@
 		x = 4
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_tighten_relations_with_france
 		}
@@ -7490,6 +7663,8 @@
 		x = 6
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_ruin_relations_with_france
 		}
@@ -7569,6 +7744,8 @@
 		
 		x = 5
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_join_france
@@ -7696,6 +7873,8 @@
 		x = 10
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_defense_department
 		}
@@ -7751,6 +7930,8 @@
 		
 		x = 8
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_prepare_voyage
@@ -7820,6 +8001,8 @@
 		
 		x = 9
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_prepare_voyage
@@ -7956,6 +8139,8 @@
 		x = 11
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_prepare_voyage
 		}
@@ -8091,6 +8276,8 @@
 		x = 12
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_prepare_voyage
 		}
@@ -8152,6 +8339,8 @@
 		
 		x = 9
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_invest_in_marines
@@ -8354,6 +8543,8 @@
 		x = 7
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_invest_in_marines
 		}
@@ -8377,6 +8568,8 @@
 		
 		x = 11
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_invest_in_battleships
@@ -8408,6 +8601,8 @@
 		
 		x = 13
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_invest_in_parachuters
@@ -8683,6 +8878,8 @@
 		x = 8
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_study_roman_british_conquest
 			focus = BEL_monafash_isolationism_britain_practice_landings
@@ -8710,7 +8907,7 @@
 			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = rangers # Pioneers, requires Special Forces Marien Doctrine's first research
+						has_tech = rangers # Pioneers, requires Special Forces Marine Doctrine's first research
 					}
 					division_template = {
 						name = "Marine Division"
@@ -8779,6 +8976,8 @@
 		
 		x = 12
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_aerial_exercises
@@ -8856,6 +9055,8 @@
 		x = 9
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_challenge_british_navy
 			focus = BEL_monafash_isolationism_britain_above_the_channel
@@ -8876,6 +9077,8 @@
 		
 		x = 11
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_challenge_british_navy
@@ -9108,12 +9311,16 @@
 		x = 10
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_enrage_the_brits
 		}
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_prepare_the_people
 		}
+
+		will_lead_to_war_with = ENG
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -9381,6 +9588,8 @@
 		x = 10
 		y = 16
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_britain_step_over_the_line
 		}
@@ -9441,6 +9650,8 @@
 		x = 18
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_defense_department
 		}
@@ -9494,6 +9705,8 @@
 		x = 17
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		bypass = {
 			HOL = {
 				OR = {
@@ -9534,6 +9747,8 @@
 		x = 19
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		bypass = {
 			LUX = {
 				OR = {
@@ -9573,6 +9788,8 @@
 		
 		x = 16
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_netherlands_mend_relations
@@ -9692,6 +9909,8 @@
 		x = 20
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_luxembourg_mend_relations
 		}
@@ -9757,6 +9976,8 @@
 		
 		x = 18
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_netherlands_mend_relations
@@ -9915,6 +10136,8 @@
 		x = 15
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_netherlands_ease_borders
 		}
@@ -10000,6 +10223,8 @@
 		
 		x = 17
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_netherlands_ease_borders
@@ -10139,6 +10364,8 @@
 		x = 19
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INDUSTRY }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_both_establish_trade_agreements
 		}
@@ -10248,6 +10475,8 @@
 		x = 21
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_luxembourg_promise_nonaggression
 		}
@@ -10303,6 +10532,8 @@
 		
 		x = 15
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
 
 		available = {
 			HOL = {
@@ -10385,6 +10616,8 @@
 		
 		x = 17
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
 
 		available = {
 			HOL = {
@@ -10487,6 +10720,8 @@
 		x = 19
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		available = {
 			LUX = {
 				has_opinion = {
@@ -10568,6 +10803,8 @@
 		
 		x = 21
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
 
 		available = {
 			LUX = {
@@ -10670,6 +10907,8 @@
 		x = 16
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_netherlands_betray_the_dutch
 			focus = BEL_monafash_isolationism_benelux_netherlands_protect_netherlands
@@ -10722,6 +10961,8 @@
 		x = 20
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_luxembourg_betray_luxembourg
 			focus = BEL_monafash_isolationism_benelux_luxembourg_protect_luxembourg
@@ -10758,6 +10999,8 @@
 		x = 18
 		y = 16
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_isolationism_benelux_netherlands_integrate
 		}
@@ -10791,6 +11034,8 @@
 		
 		x = 3
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		allow_branch = {
 			OR = {
@@ -11117,6 +11362,8 @@
 		x = 10
 		y = 20
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		allow_branch = {
 			OR = {
 				AND = {
@@ -11182,6 +11429,8 @@
 		
 		x = 9
 		y = 21
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 		
 		prerequisite = {
 			focus = BEL_monafash_isolationism_consolidate_euronia
@@ -11213,6 +11462,8 @@
 		
 		x = 11
 		y = 21
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_consolidate_euronia
@@ -11253,6 +11504,8 @@
 		
 		x = 10
 		y = 22
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_isolationism_full_isolationism
@@ -11315,6 +11568,8 @@
 		x = 11
 		y = 7
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_convince_monarchist_hardliners
 			focus = BEL_monafash_convince_anti-monarchist_fascists
@@ -11344,6 +11599,8 @@
 		x = 7
 		y = 8
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
+
 		allow_branch = {
 			has_completed_focus = BEL_monafash_imperialism_imperialism
 		}
@@ -11370,6 +11627,8 @@
 		
 		x = 6
 		y = 9
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_prepare_the_homefront
@@ -11428,6 +11687,8 @@
 		x = 8
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_prepare_the_homefront
 		}
@@ -11480,6 +11741,8 @@
 		x = 6
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_benelux
 		}
@@ -11524,6 +11787,8 @@
 		x = 8
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_rise_up_an_army
 		}
@@ -11559,6 +11824,8 @@
 
 		x = 7
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_ultimatum
@@ -11629,6 +11896,8 @@
 		x = 2
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_declare_our_plans
 		}
@@ -11661,6 +11930,8 @@
 		
 		x = 1
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_claim_the_west
@@ -11707,6 +11978,7 @@
 		}
 	}
 
+	# Claim Central Germany
 	focus = {
 		id = BEL_monafash_imperialism_germany_claim_the_middle
 		icon = tbd
@@ -11715,6 +11987,8 @@
 		
 		x = 3
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_claim_the_west
@@ -11754,6 +12028,7 @@
 		}
 	}
 	
+	# Claim Northern Germany
 	focus = {
 		id = BEL_monafash_imperialism_germany_claim_the_north
 		icon = tbd
@@ -11762,6 +12037,8 @@
 		
 		x = 1
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_claim_the_south
@@ -11786,6 +12063,7 @@
 		}
 	}
 	
+	# Claim Eastern Germany
 	focus = {
 		id = BEL_monafash_imperialism_germany_claim_the_east
 		icon = tbd
@@ -11794,6 +12072,8 @@
 		
 		x = 3
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_claim_the_south
@@ -11850,6 +12130,7 @@
 		}
 	}
 
+	# Send an Ultimatum to Germany
 	focus = {
 		id = BEL_monafash_imperialism_germany_ultimatum
 		icon = tbd
@@ -11858,6 +12139,8 @@
 		
 		x = 2
 		y = 15
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_claim_the_north
@@ -11909,6 +12192,8 @@
 		
 		x = 1
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_ultimatum
@@ -12064,6 +12349,8 @@
 		
 		x = 3
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_ultimatum
@@ -12395,6 +12682,7 @@
 		}
 	}
 
+	# Germania
 	focus = {
 		id = BEL_monafash_imperialism_germany_germania
 		icon = tbd
@@ -12403,6 +12691,8 @@
 		
 		x = 2
 		y = 17
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_integrate_the_west
@@ -12453,6 +12743,8 @@
 		x = 6
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_declare_our_plans
 		}
@@ -12489,6 +12781,8 @@
 		
 		x = 5
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_claim_north
@@ -12584,6 +12878,8 @@
 		x = 7
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_claim_north
 		}
@@ -12653,6 +12949,8 @@
 		
 		x = 5
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_claim_south_east
@@ -12759,6 +13057,8 @@
 		x = 7
 		y = 14
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_claim_south_east
 			focus = BEL_monafash_imperialism_france_claim_center
@@ -12834,6 +13134,8 @@
 		x = 5
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_claim_south
 			focus = BEL_monafash_imperialism_france_claim_west
@@ -12880,6 +13182,8 @@
 		x = 7
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_claim_south
 			focus = BEL_monafash_imperialism_france_claim_west
@@ -12904,6 +13208,8 @@
 		
 		x = 6
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_colonial_government
@@ -13087,6 +13393,8 @@
 		x = 6
 		y = 17
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_france_invasion
 		}
@@ -13171,6 +13479,8 @@
 		x = 10
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_declare_our_plans
 		}
@@ -13222,6 +13532,8 @@
 		
 		x = 9
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_investigate_the_river
@@ -13281,6 +13593,8 @@
 		x = 11
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_investigate_the_river
 		}
@@ -13335,6 +13649,8 @@
 		
 		x = 9
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_claim_england
@@ -13402,6 +13718,8 @@
 		
 		x = 11
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_claim_england
@@ -13484,6 +13802,8 @@
 		
 		x = 9
 		y = 15
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_claim_pictland
@@ -13624,6 +13944,8 @@
 		x = 11
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_claim_pictland
 			focus = BEL_monafash_imperialism_britain_claim_hibernia
@@ -13673,6 +13995,10 @@
 
 		x = 10
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
+
+		will_lead_to_war_with = ENG
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_sabotage_navy
@@ -13793,6 +14119,8 @@
 		
 		x = 10
 		y = 17
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_britain_invade
@@ -14001,6 +14329,8 @@
 		x = 13
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_declare_our_plans
 		}
@@ -14049,6 +14379,8 @@
 		
 		x = 15
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_homefront_declare_our_plans
@@ -14139,6 +14471,8 @@
 		x = 14
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_attempt_peace
 		}
@@ -14185,6 +14519,8 @@
 		x = 16
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_attempt_peace
 		}
@@ -14230,6 +14566,8 @@
 		
 		x = 14
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_lux_assist_food_industries
@@ -14290,6 +14628,8 @@
 		
 		x = 16
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_hol_aid_tomboys
@@ -14355,6 +14695,10 @@
 						}
 					}
 				}
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_decrease
+				}
 			}
 		}
 	}
@@ -14368,6 +14712,8 @@
 		
 		x = 14
 		y = 15
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_lux_give_economic_aid
@@ -14397,6 +14743,8 @@
 		x = 16
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_hol_poke_hornets_nest
 		}
@@ -14424,6 +14772,8 @@
 		
 		x = 13
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_demand_hol_lux
@@ -14518,6 +14868,8 @@
 		
 		x = 15
 		y = 16
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_lux_propose_union
@@ -14639,6 +14991,8 @@
 		
 		x = 14
 		y = 17
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_benelux_surprise_attack
@@ -15533,6 +15887,8 @@
 		x = 13
 		y = 19
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_germany_germania
 		}
@@ -15602,6 +15958,8 @@
 		x = 23
 		y = 8
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_imperialism
 		}
@@ -15644,6 +16002,8 @@
 		x = 20
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_prepare
 		}
@@ -15674,6 +16034,8 @@
 		
 		x = 19
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_question
@@ -15750,6 +16112,8 @@
 		x = 19
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_war_sudetenland
 		}
@@ -15790,6 +16154,8 @@
 		
 		x = 19
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_war_invite_companies
@@ -15955,6 +16321,8 @@
 		x = 18
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_war_sow_discontent_in_slovakia
 		}
@@ -15996,6 +16364,8 @@
 		
 		x = 20
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_war_sow_discontent_in_slovakia
@@ -16081,6 +16451,8 @@
 		
 		x = 19
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_war_invade
@@ -16402,6 +16774,8 @@
 		x = 21
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_question
 		}
@@ -16482,6 +16856,8 @@
 		x = 21
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INDUSTRY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia
 		}
@@ -16557,6 +16933,8 @@
 		x = 23
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_befriend_czechoslovakia
 		}
@@ -16614,6 +16992,8 @@
 		x = 21
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INDUSTRY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_economic_assistance
 		}
@@ -16659,6 +17039,8 @@
 		
 		x = 23
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_economic_assistance
@@ -16748,6 +17130,8 @@
 		x = 22
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_develop_czechia
 		}
@@ -16788,6 +17172,8 @@
 		
 		x = 21
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_promote_submission
@@ -16899,6 +17285,8 @@
 		x = 20
 		y = 15
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_war_integrate
 			focus = BEL_monafash_imperialism_east_czechia_peace_vassalize_czech
@@ -17002,6 +17390,8 @@
 		x = 27
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_prepare
 		}
@@ -17053,6 +17443,8 @@
 		x = 26
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_send_diplomats
 		}
@@ -17080,6 +17472,8 @@
 		x = 26
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_antagonize_poland
 		}
@@ -17106,6 +17500,8 @@
 		
 		x = 25
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_threaten_poland
@@ -17138,6 +17534,8 @@
 		x = 27
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_threaten_poland
 		}
@@ -17169,6 +17567,8 @@
 		x = 28
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_send_diplomats
 		}
@@ -17195,6 +17595,8 @@
 		
 		x = 28
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_friendship_with_poland
@@ -17223,6 +17625,8 @@
 		x = 28
 		y = 13
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_ANNEXATION }
+
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_economic_co-operation
 		}
@@ -17249,6 +17653,8 @@
 		
 		x = 27
 		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_poland_instigate_an_attack
@@ -17313,6 +17719,8 @@
 		
 		x = 24
 		y = 17
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_monafash_imperialism_east_czechia_peace_rebuild_czechoslovakia
@@ -17588,6 +17996,8 @@
 		x = 12
 		y = 2
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+
 		allow_branch = {
 			OR = {
 				AND = {
@@ -17626,6 +18036,8 @@
 		x = 11
 		y = 3
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+
 		prerequisite = {
 			focus = BEL_fascism_fascist_ascendance
 		}
@@ -17644,6 +18056,8 @@
 		
 		x = 13
 		y = 3
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
 
 		prerequisite = {
 			focus = BEL_fascism_fascist_ascendance
@@ -17667,6 +18081,8 @@
 		x = 10
 		y = 4
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+
 		prerequisite = {
 			focus = BEL_fascism_one_state
 		}
@@ -17685,6 +18101,8 @@
 		
 		x = 12
 		y = 4
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
 
 		prerequisite = {
 			focus = BEL_fascism_one_state
@@ -17706,6 +18124,8 @@
 		x = 14
 		y = 4
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+
 		prerequisite = {
 			focus = BEL_fascism_one_people
 		}
@@ -17724,6 +18144,8 @@
 		
 		x = 11
 		y = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
 
 		prerequisite = {
 			focus = BEL_fascism_united_by_history
@@ -17769,6 +18191,8 @@
 		x = 13
 		y = 5
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+
 		prerequisite = {
 			focus = BEL_fascism_united_by_culture
 		}
@@ -17792,6 +18216,8 @@
 		
 		x = 11
 		y = 6
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
 
 		prerequisite = {
 			focus = BEL_fascism_disunited_by_politics
@@ -17819,6 +18245,8 @@
 		x = 13
 		y = 6
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+
 		prerequisite = {
 			focus = BEL_fascism_disunited_by_politics
 		}
@@ -17844,6 +18272,8 @@
 		
 		x = 12
 		y = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
 
 		prerequisite = {
 			focus = BEL_fascism_reunited_by_blood_and_sweat
@@ -17906,6 +18336,8 @@
 		x = 12
 		y = 8
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism FOCUS_FILTER_BALANCE_OF_POWER }
+
 		prerequisite = {
 			focus = BEL_fascism_forged_into_one_new_empire
 		}
@@ -17931,6 +18363,8 @@
 		x = 4
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_fascism_war_establish_kriegsamt
 		}
@@ -17954,6 +18388,8 @@
 		
 		x = 2
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_army
@@ -17985,6 +18421,8 @@
 		x = 6
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_army
 		}
@@ -18014,6 +18452,8 @@
 		
 		x = 1
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_army_infantry_focus
@@ -18050,6 +18490,8 @@
 		
 		x = 3
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 		
 		prerequisite = {
 			focus = BEL_fascism_war_the_army_infantry_focus
@@ -18089,6 +18531,8 @@
 		
 		x = 5
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 		
 		prerequisite = {
 			focus = BEL_fascism_war_the_army_armored_focus
@@ -18226,6 +18670,8 @@
 		
 		x = 7
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 		
 		prerequisite = {
 			focus = BEL_fascism_war_the_army_armored_focus
@@ -18364,6 +18810,8 @@
 		x = 2
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_army_infantry_update_our_guns
 			focus = BEL_fascism_war_the_army_infantry_update_our_trucks
@@ -18387,6 +18835,8 @@
 		
 		x = 6
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_army_armored_update_our_heavy_tanks
@@ -18446,6 +18896,8 @@
 		
 		x = 4
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_army_infantry_special_forces
@@ -18513,6 +18965,8 @@
 		x = 12
 		y = 9
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP }
+
 		prerequisite = {
 			focus = BEL_fascism_war_establish_kriegsamt
 		}
@@ -18536,6 +18990,8 @@
 
 		x = 10
 		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr
@@ -18565,6 +19021,8 @@
 		x = 12
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr
 		}
@@ -18593,6 +19051,8 @@
 		x = 14
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr
 		}
@@ -18620,6 +19080,8 @@
 		
 		x = 10
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr_air_superiority_focus
@@ -18656,6 +19118,8 @@
 		
 		x = 12
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr_air_superiority_focus
@@ -18695,6 +19159,8 @@
 		x = 14
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr_ground_support_focus
 			focus = BEL_fascism_war_the_luftwehr_bombing_focus
@@ -18732,6 +19198,8 @@
 		x = 10
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr_zwitscher_plan
 			focus = BEL_fascism_war_the_luftwehr_geier_plan
@@ -18757,6 +19225,8 @@
 		x = 14
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr_geier_plan
 			focus = BEL_fascism_war_the_luftwehr_adler_plan
@@ -18781,6 +19251,8 @@
 		
 		x = 12
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_luftwehr_zwitscher_plan
@@ -18949,8 +19421,10 @@
 		
 		cost = 5
 		
-		x = 20
+		x = 24
 		y = 9
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP }
 
 		prerequisite = {
 			focus = BEL_fascism_war_establish_kriegsamt
@@ -18978,6 +19452,8 @@
 		x = 18
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht
 		}
@@ -18985,7 +19461,7 @@
 		mutually_exclusive = {
 			focus = BEL_fascism_war_the_seewacht_capital_focus
 			focus = BEL_fascism_war_the_seewacht_carrier_focus
-			# focus = BEL_fascism_war_the_seewacht_submarine_focus
+			focus = BEL_fascism_war_the_seewacht_submarine_focus
 		}
 		
 		completion_reward = {
@@ -19020,6 +19496,8 @@
 		
 		x = 17
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_focus
@@ -19079,6 +19557,8 @@
 		x = 19
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_focus
 		}
@@ -19100,6 +19580,8 @@
 		
 		x = 17
 		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
@@ -19166,6 +19648,8 @@
 		x = 19
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases
 		}
@@ -19212,10 +19696,12 @@
 		id = BEL_fascism_war_the_seewacht_light_ship_design_yuuki_and_yuno
 		icon = tbd
 
-		cost = 5
+		cost = 10
 		
 		x = 18
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_steal_construction_plans
@@ -19301,6 +19787,8 @@
 		x = 22
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht
 		}
@@ -19308,7 +19796,7 @@
 		mutually_exclusive = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_focus
 			focus = BEL_fascism_war_the_seewacht_carrier_focus
-			# focus = BEL_fascism_war_the_seewacht_submarine_focus
+			focus = BEL_fascism_war_the_seewacht_submarine_focus
 		}
 		
 		completion_reward = {
@@ -19333,6 +19821,8 @@
 		x = 21
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_capital_focus
 		}
@@ -19354,6 +19844,8 @@
 		
 		x = 23
 		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_capital_focus
@@ -19391,6 +19883,8 @@
 		x = 21
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_capital_focus_pretrain_crews
 		}
@@ -19415,6 +19909,8 @@
 		x = 23
 		y = 12
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_capital_focus_pretrain_crews
 		}
@@ -19432,10 +19928,12 @@
 		id = BEL_fascism_war_the_seewacht_capital_focus_build_megumin
 		icon = tbd
 		
-		cost = x
+		cost = 10
 		
 		x = 22
 		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP }
 		
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_capital_focus_recruit_sailors
@@ -19508,10 +20006,12 @@
 		x = 26
 		y = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
 		mutually_exclusive = {
 			focus = BEL_fascism_war_the_seewacht_light_ship_focus
 			focus = BEL_fascism_war_the_seewacht_capital_focus
-			# focus = BEL_fascism_war_the_seewacht_submarine_focus
+			focus = BEL_fascism_war_the_seewacht_submarine_focus
 		}
 
 		prerequisite = {
@@ -19551,6 +20051,8 @@
 		x = 25
 		y = 11
 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
 		prerequisite = {
 			focus = BEL_fascism_war_the_seewacht_carrier_focus
 		}
@@ -19565,14 +20067,461 @@
 		}
 	}
 
-	# 
+	# Prepare the pilots
+	focus = {
+		id = BEL_fascism_war_the_seewacht_carrier_focus_prepare_the_pilots
+		icon = tbd
+
+		cost = 5
+		
+		x = 27
+		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_AIR_XP }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus
+		}
+
+		available = {
+			check_variable = {
+				num_deployed_planes > 0
+			}
+		}
+		
+		completion_reward = {
+			air_experience = 75
+		}
+	}
+
+	# Finance Carrier Research
+	focus = {
+		id = BEL_fascism_war_the_seewacht_carrier_focus_finance_carrier_research
+		icon = tbd
+
+		cost = 5
+		
+		x = 25
+		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_create_naval_aerial_battalion
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_prepare_the_pilots
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_navy_financing_carrier_research
+				days = 125
+			}
+		}
+	}
+
+	# Dream up the Asuka
+	focus = {
+		id = BEL_fascism_war_the_seewacht_carrier_focus_dream_up_the_asuka
+		icon = tbd
+
+		cost = 5
+		
+		x = 27
+		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_create_naval_aerial_battalion
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_prepare_the_pilots
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = mio_cat_tech_all_carrier_and_modules
+				bonus = 1.5
+				uses = 2
+			}
+		}
+	}
+
+	# Construct the Asuka
+	focus = {
+		id = BEL_fascism_war_the_seewacht_carrier_focus_construct_the_asuka
+		icon = tbd
+
+		cost = 10
+		
+		x = 26
+		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_finance_carrier_research
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_dream_up_the_asuka
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = BEL_ships_asuka
+					type = ship_hull_carrier_2
+					modules = {
+						front_1_custom_slot = ship_deck_space
+						mid_1_custom_slot = dp_ship_secondaries_3
+						rear_1_custom_slot = ship_armor_carrier_deck
+						special_type_slot_1 = ship_deck_space
+						special_type_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = carrier_ship_engine_3
+						fixed_ship_secondaries_slot = dp_ship_secondaries_3
+						fixed_ship_armor_slot = ship_armor_cruiser_4
+					}
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_controlled_by = BEL
+							is_coastal = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+						}
+						create_unit = {
+							division = BEL_ships_asuka
+							owner = BEL
+						}
+					}
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					type = carrier_2
+					name = BEL_ships_asuka
+					upgrades = {
+						carrier_armor_upgrade = 2
+						ship_deckspace_upgrade = 5
+						ship_engine_upgrade = 3
+						ship_reliability_upgrade = 2
+					}
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_controlled_by = BEL
+							is_coastal = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+						}
+						create_unit = {
+							division = BEL_ships_asuka
+							owner = BEL
+						}
+					}
+				}
+			}
+		}
+	}
+
+	###################
+	# Submarine Focus #
+	###################
+	focus = {
+		id = BEL_fascism_war_the_seewacht_submarine_focus
+		icon = tbd
+
+		cost = x
+		
+		x = 30
+		y = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_focus
+			focus = BEL_fascism_war_the_seewacht_capital_focus
+			focus = BEL_fascism_war_the_seewacht_carrier_focus
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_navy_financing_submarine_research
+			}
+			add_tech_bonus = {
+				category = mio_cat_tech_all_submarine_and_modules
+				bonus = 1.5
+				uses = 1
+			}
+		}
+	}
+
+	# Sponsor experimental sub experiments
+	focus = {
+		id = BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments
+		icon = tbd
+
+		cost = 5
+		
+		x = 29
+		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus
+		}
+		
+		completion_reward = {
+			country_event = tomboy.84
+		}
+	}
+
+	# Sailor Campaign
+	focus = {
+		id = BEL_fascism_war_the_seewacht_submarine_focus_sailor_campaign
+		icon = tbd
+
+		cost = 5
+		
+		x = 31
+		y = 11
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus
+		}
+		
+		completion_reward = {
+			add_manpower = 2500
+			add_stability = -0.01
+		}
+	}
+
+	# Research modern submarines
+	focus = {
+		id = BEL_fascism_war_the_seewacht_submarine_focus_research_modern_submarines
+		icon = tbd
+
+		cost = 5
+		
+		x = 29
+		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus_sailor_campaign
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_navy_financing_submarine_research
+				days = 125
+			}
+			add_tech_bonus = {
+				category = mio_cat_tech_all_submarine_and_modules
+				bonus = 1.25
+				uses = 2
+			}
+		}
+	}
+
+	# Train submarine personel
+	focus = {
+		id = BEL_fascism_war_the_seewacht_submarine_focus_train_sub_personel
+		icon = tbd
+
+		cost = 5
+		
+		x = 31
+		y = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus_sailor_campaign
+		}
+		
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	# Create the Ryūko
+	focus = {
+		id = BEL_fascism_war_the_seewacht_submarine_focus_create_the_ryuko
+		icon = tbd
+
+		cost = 10
+		
+		x = 30
+		y = 13
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus_research_modern_submarines
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_submarine_focus_train_sub_personel
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = BEL_ships_ryuko
+					type = ship_hull_submarine_3
+					modules = {
+						front_1_custom_slot = ship_torpedo_sub_4
+						mid_1_custom_slot = ship_sub_snorkel_1
+						rear_1_custom_slot = ship_mine_layer_sub
+						fixed_ship_torpedo_slot = ship_torpedo_sub_4
+						fixed_ship_engine_slot = sub_ship_engine_3
+					}
+				}
+				create_ship = {
+					type = ship_hull_submarine_3
+					equipment_variant = BEL_ships_ryuko
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = BEL_ships_ryuko
+					type = submarine_3
+					upgrades = {
+						sub_engine_upgrade = 2
+						sub_stealth_upgrade = 7
+						sub_torpedo_upgrade = 5
+						ship_reliability_upgrade = 3
+					}
+				}
+			}
+		}
+	}
+
+	
+	# Sail the Seven Seas
+	focus = {
+		id = BEL_fascism_war_the_seewacht_carrier_focus_sail_the_seven_seas
+		icon = tbd
+		
+		cost = 5
+		
+		x = 24
+		y = 14
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_light_ship_design_yuuki_and_yuno
+			focus = BEL_fascism_war_the_seewacht_capital_focus_build_megumin
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_construct_the_asuka
+			focus = BEL_fascism_war_the_seewacht_submarine_focus_create_the_ryuko
+		}
+		
+		completion_reward = {
+			navy_experience = 100
+			if = { # None + Navy = Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_no_extras
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_no_extras
+					add_idea = BEL_idea_imperiales_kriegsamt_navy
+				}
+			}
+			else_if = { # Navy + Army = Army Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_army
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_army
+					add_idea = BEL_idea_imperiales_kriegsamt_army_navy
+				}
+			}
+			else_if = { # Navy + Air = Air Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_air
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_air
+					add_idea = BEL_idea_imperiales_kriegsamt_air_navy
+				}
+			}
+			else_if = { # Army Air + Navy = Army Air Navy
+				limit = {
+					has_idea = BEL_idea_imperiales_kriegsamt_army_air
+				}
+				swap_ideas = {
+					remove_idea = BEL_idea_imperiales_kriegsamt_army_air
+					add_idea = BEL_idea_imperiales_kriegsamt_army_air_navy
+				}
+			}
+		}
+	}
 
 
 
 
-	#
-	# NOTE - Add BEL_idea_imperiales_kriegsamt_navy at the end of the Seewacht tree!
-	#
+	# Finalize the Kriegsamt
+	focus = {
+		id = BEL_fascism_war_finalize_kriegsamt
+		icon = tbd
+		
+		cost = 10
+		
+		x = 14
+		y = 15
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_MILITARY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		prerequisite = {
+			focus = BEL_fascism_war_the_army_invest_in_radars
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_luftwehr_build_the_projects
+		}
+		prerequisite = {
+			focus = BEL_fascism_war_the_seewacht_carrier_focus_sail_the_seven_seas
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_idea_imperiales_kriegsamt_army_air_navy
+				add_idea = BEL_idea_imperiales_kriegsamt_final
+			}
+		}
+	}
 
 
 

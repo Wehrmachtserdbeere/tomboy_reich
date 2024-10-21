@@ -627,7 +627,23 @@
   tomboy.83.a: "We need a lot of young blood!"
   tomboy.83.b: "We need a lot of experience!"
 
+  tomboy.84.t: "Experimental Submarines?"
+  tomboy.84.d: "A company called \"SeaGate\" recently proposed to build a revolutionary new design of submarines that are cheap to produce, easy to manufacture and are supposed to be relatively powerful as well, even though their specs are unknown. This new technology could revolutionize the way submarines work, however it is unproven, expensive, and the results can be unreliable, possibly resulting in wasted money. They claimed to have tested it previously, and are now asking for our support in proving it can be a reality."
+  tomboy.84.a: "Let's humor them."
+  tomboy.84.b: "This is far too sketchy."
 
+  tomboy.85.t: "Successful Submarine Test!"
+  tomboy.85.d: "SeaGate has reported that their prototype test submarine managed to achieve the target depth. After testing, we can safely say that the submarine works. They have begun improving their experimental submarine further, and the shipwrights have praised their design for its efficient use of steel. It might, one day, spell the beginning of commercially available submarine transport routes, or even an end to traditional surface-faring ship-based commerce."
+  tomboy.85.a: "Great!"
+
+  tomboy.86.t: "Submarine Disaster!"
+  tomboy.86.d: "After several days of lost connection, we've found SeaGate's experimental submarine. In several pieces. Investigations show the hull buckled under water pressure and cracked, leading to an instantaneous implosion. The crew has been pulverized. The representative of SeaGate, after their CEO also perished in the incident, asked us to invest to create a bigger prototype for a deep ocean mission. The public reaction and ridicule makes this more of an insult than a genuine offer. In the end, this has been a bad hit to the reputation of submarines, and more importantly, to the people's trust in the government spending money on things like this. Our administration is doing their best to play it off with respect to the dead, but it'll certainly hurt for the foreseeable future."
+  tomboy.86.a: "Who approved this?!"
+
+  tomboy.87.t: "Bavaria declares independence!"
+  tomboy.87.d: "Having covertly established their own state, Bavaria has launched its uprising with our current enemies - Belgium. With this happening at the worst possible time, we have to deal with the situation, and we can't afford a long conflict. The whole West of our nation is collapsing and we might not be able to deal with them quickly."
+  tomboy.87.a: "These damn traitors!"
+  tomboy.87.a_tt: "[BAY.GetFlag][BAY.GetNameDefCap] joined [BEL.GetFlag][BEL.GetNameDef] in their war against us!"
 
   # Generics
 

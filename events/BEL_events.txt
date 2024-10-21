@@ -7429,3 +7429,184 @@ country_event = {
 		}
 	}
 }
+
+# BEL | Fascism Navy Focus | Launch Experimental Submarine?
+country_event = {
+	id = tomboy.84
+	title = tomboy.84.t
+	desc = tomboy.84.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.84"
+	}
+
+	option = { # Yes.
+		name = tomboy.84.a
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -25
+				OR = {
+					has_tech = basic_submarine
+					has_tech = basic_ship_hull_submarine
+				}
+			}
+		}
+
+		random_list = {
+			50 = {
+				modifier = {
+					add = 10
+					OR = {
+						has_tech = early_submarine
+						has_tech = early_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = 10
+					OR = {
+						has_tech = early_submarine
+						has_tech = early_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = 10
+					OR = {
+						has_tech = basic_submarine
+						has_tech = basic_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = 10
+					OR = {
+						has_tech = improved_submarine
+						has_tech = improved_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = 10
+					OR = {
+						has_tech = advanced_submarine
+						has_tech = advanced_ship_hull_submarine
+					}
+				}
+
+				country_event = {
+					id = tomboy.85
+					days = 1
+				}
+			}
+			50 = {
+				modifier = {
+					add = -10
+					OR = {
+						has_tech = early_submarine
+						has_tech = early_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = -10
+					OR = {
+						has_tech = early_submarine
+						has_tech = early_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = -10
+					OR = {
+						has_tech = basic_submarine
+						has_tech = basic_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = -10
+					OR = {
+						has_tech = improved_submarine
+						has_tech = improved_ship_hull_submarine
+					}
+				}
+				modifier = {
+					add = -10
+					OR = {
+						has_tech = advanced_submarine
+						has_tech = advanced_ship_hull_submarine
+					}
+				}
+
+				country_event = {
+					id = tomboy.86
+					days = 3
+					random_days = 2
+				}
+			}
+		}
+	}
+}
+
+# BEL | Fascism Navy Focus | Experimental Submarine Success
+country_event = {
+	id = tomboy.85
+	title = tomboy.85.t
+	desc = tomboy.85.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.85"
+	}
+
+	option = { # Great!
+		name = tomboy.85.a
+
+		add_dynamic_modifier = {
+			modifier = dyn_mod_bel_fascism_navy_submarine_experimentation_good
+			days = 100
+		}
+	}
+}
+
+# BEL | Fascism Navy Focus | Experimental Submarine Catastrophe
+country_event = {
+	id = tomboy.86
+	title = tomboy.86.t
+	desc = tomboy.86.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.86"
+	}
+
+	option = { # Dear God...
+		name = tomboy.86.a
+
+		add_manpower = -5
+		add_dynamic_modifier = {
+			modifier = dyn_mod_bel_fascism_navy_submarine_experimentation_bad
+			days = 150
+		}
+	}
+}
+
+# GER | Germany Focus (Late Addition) | Bavaria declares independence!
+country_event = {
+	id = tomboy.87
+	title = tomboy.87.t
+	desc = tomboy.87.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.87"
+	}
+
+	option = { # Traitors!
+		name = tomboy.87.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		custom_effect_tooltip = tomboy.87.a_tt
+	}
+}

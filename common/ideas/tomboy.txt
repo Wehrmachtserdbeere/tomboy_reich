@@ -1945,6 +1945,35 @@ ideas = {
 			}
 		}
 
+		BEL_idea_imperiales_kriegsamt_final = {
+			name = BEL_idea_imperiales_kriegsamt
+			
+			picture = tbd
+
+			modifier = {
+				monthly_population = 0.2
+				experience_gain_factor = 0.15
+
+				# Army
+				experience_gain_army = 0.3
+				army_morale_factor = 0.2
+				army_org_regain = 0.2
+				army_org_factor = 0.2
+
+				# Air
+				air_accidents = 0.2
+				air_agility_factor = 0.3
+				air_attack_factor = 0.1
+				air_defence_factor = 0.1
+				air_detection = 0.2
+
+				# Navy
+				navy_submarine_attack_factor = 0.2
+				navy_capital_ship_attack_factor = 0.2
+				navy_org_factor = 0.3
+			}
+		}
+
 		BEL_test_idea = {
 			name = BEL_test_idea
 
