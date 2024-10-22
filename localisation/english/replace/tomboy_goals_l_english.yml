@@ -907,9 +907,28 @@
   BEL_fascism_war_the_army_invest_in_radars_desc: "Investing in the currently little-used radar technology will give us an advantage over the other countries. Not only will the technology allow us to find and destroy incoming attacks, it will also improve the efficiency of our division's missions."
 
   BEL_fascism_war_the_luftwehr: "The Luftwehr"
-  BEL_fascism_war_the_luftwehr_desc: ""
+  BEL_fascism_war_the_luftwehr_desc: "The Luftwaffe is our project to manage the aerial aspect of our armed forces. Our country doesn't have a formiddable aerial defense force yet, so this project can help us get to know more about aerial combat and be able to defend ourselves more better against any invading countries that plans to bomb us."
 
+  BEL_fascism_war_the_luftwehr_air_superiority_focus: "Air Superiority Focus"
+  BEL_fascism_war_the_luftwehr_air_superiority_focus_desc: "So far the Luftwehr is mostly unfocusing on its aerial doctrine. We can prioritize air superiority and intercept enemy aircraft and research air-superiority fighters primarily tasked with destroying or driving off enemy aircraft to establish air superiority on the battlefield and over our country."
 
+  BEL_fascism_war_the_luftwehr_ground_support_focus: "Ground Support Focus"
+  BEL_fascism_war_the_luftwehr_ground_support_focus_desc: "As we have very limited funds for the time being, we will need to make do with whatever resources we currently have. We cannot support an intricate network of bombers that would be used to conduct heavy bombing runs on foreign countries in far off lands, but we can certainly use our planes to closely support our land forces. This would require us to focus completely on ground support aircraft, in turn making other kinds of aircraft suffer from non-prioritization and under-funding."
+
+  BEL_fascism_war_the_luftwehr_bombing_focus: "Bomber Focus"
+  BEL_fascism_war_the_luftwehr_bombing_focus_desc: "We cannot rely on air superiority or close-air support when we are so extremely limited with how much we could spend for the Luftwehr. Why fight for airspace, when a single bomber could easily raid an unguarded place and go back without even getting into a fight? We can't afford a massive fleet of fighters or interceptors. It is better that we have bombers to quickly do their work without getting intercepted."
+
+  BEL_fascism_war_the_luftwehr_zwitscher_plan: "Plan the Zwitscher"
+  BEL_fascism_war_the_luftwehr_zwitscher_plan_desc: "By now, we have a fairly good idea what kinds of fighter planes will best suit the role of establishing air superiority for the Luftwehr. So our experts came up with a fighter plane called the \"Zwitscher.\" It's the best that we can currently manage to create, when considering our economical and resource situation, as well as how we need it to meet various design requirements."
+
+  BEL_fascism_war_the_luftwehr_geier_plan: "Plan the Geier"
+  BEL_fascism_war_the_luftwehr_geier_plan_desc: "The Geier, a highly advanced close-air ground support airplane. Armed to the teeth with multiple automatic cannons, and bombs, as well as a very tough body armor; our concepts show that this thing could dish out damage while being able to take what's thrown against it back. Our research teams have created designs and concepts on the Geier for years now, but have not fully finalized a design concept to present to any interested manufacturing companies to produce and construct for them. We could give them a little push towards a nice one."
+
+  BEL_fascism_war_the_luftwehr_adler_plan: "Plan the Adler"
+  BEL_fascism_war_the_luftwehr_adler_plan_desc: "The Adler, our project for a super bomber plane that can take on heavier load and also take in more bullets. For now, it's still being planned and designed, but we can accelerate production some loosened red tape and get a small number of engineers working together in a private property while our company oversees their progress, paying them generously if they show great results."
+
+  BEL_fascism_war_the_luftwehr_recruit_young_pilots: "Recruit Young Pilots"
+  BEL_fascism_war_the_luftwehr_recruit_young_pilots_desc: ""
 
 
 
