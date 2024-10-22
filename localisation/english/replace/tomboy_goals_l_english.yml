@@ -927,8 +927,40 @@
   BEL_fascism_war_the_luftwehr_adler_plan: "Plan the Adler"
   BEL_fascism_war_the_luftwehr_adler_plan_desc: "The Adler, our project for a super bomber plane that can take on heavier load and also take in more bullets. For now, it's still being planned and designed, but we can accelerate production some loosened red tape and get a small number of engineers working together in a private property while our company oversees their progress, paying them generously if they show great results."
 
-  BEL_fascism_war_the_luftwehr_recruit_young_pilots: "Recruit Young Pilots"
-  BEL_fascism_war_the_luftwehr_recruit_young_pilots_desc: ""
+  BEL_fascism_war_the_luftwehr_recruit_young_pilots: "Prefer Young Pilots"
+  BEL_fascism_war_the_luftwehr_recruit_young_pilots_desc: "While having veterans to lead is important, having younger ones gives a lot more advantages to our future military power projection. Our older members would retire as time goes on. Having an army filled with fresh graduates wouldn't be able to easily replace the skills and experience that we lost over time, but we would get a lot more manpower for less pay if we train young pilots compared to recruiting expensive old blooded pilots."
+
+  BEL_fascism_war_the_luftwehr_recruit_veteran_pilots: "Prefer Veteran Pilots"
+  BEL_fascism_war_the_luftwehr_recruit_veteran_pilots_desc: "Young people have a lot of potential and they are quite easy to mold to whatever role you give them to play, but one thing that makes veteran pilots valuable is experience. No training could ever amount to real life, high-risk situations which will demand quick thinking and hard decision making. We'll have less pilots, but we'd make up for it with superior skills and tactics that could compensate the numbers we are lacking behind."
+
+  BEL_fascism_war_the_luftwehr_build_the_projects: "Realize the Projects"
+  BEL_fascism_war_the_luftwehr_build_the_projects_desc: "We have had the choice between focusing on air superiority, ground support, and bombers. Now, that we have chosen and properly financed the designs our experts have developed, it's finally time to realize the project we chose."
+
+  BEL_fascism_war_the_seewacht: "The Seewacht"
+  BEL_fascism_war_the_seewacht_desc: "The Seewacht is our to-be naval force for protecting ourselves from invasion and threats, and make our presence known in the continent by being able to stand our own with our fleet."
+  BEL_fascism_war_the_luftwehr_build_the_projects_fallback_tt: "When we decided on a plane design, we will build it!"
+
+  BEL_fascism_war_the_seewacht_light_ship_focus: "Light Ship Focus"
+  BEL_fascism_war_the_seewacht_light_ship_focus_desc: "A balanced navy is ideal, but unrealistic for our limited budget. A light ship focused navy makes a lot more sense in terms of flexibility and ease of use. It has enough firepower to deal with other light ships, and when met with battleships or aircraft carriers, then its numbers and speed would be the determining factor that enables us to either escape or attack. Their fast production rate also makes it more practical for smaller countries like ours as we can easily replace them once sunk, which cannot be said for expensive battleships that might take years to replace, especially during wartime."
+
+  BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases: "Construct Mass-Dockyards"
+  BEL_fascism_war_the_seewacht_light_ship_construct_mass_naval_bases_desc: "We have practically no naval yards and such would cripple us in times of war. Thus we should create many small docks across the coast, protected by our near-future coastguard forces to produce naval craft. Our new vessels would protect these ports from attacks to ensure a supply of newly produced ships in war time."
+
+  BEL_fascism_war_the_seewacht_light_ship_finance_screen_research: "Finance Screen Research"
+  BEL_fascism_war_the_seewacht_light_ship_finance_screen_research_desc: "Before building, comes research. The destroyer ships will be what will form our entire navy because it gives us a better chance in dealing with larger ships than those who invest in heavy shipbuilding. We wouldn't be able to fight with much heavier ships directly, but we're gonna employ cheap tactics to ensure their expensive ships sink and be reduced into scrap metal before we lose any meaningful amount of our fleet."
+
+  BEL_fascism_war_the_seewacht_light_ship_steal_construction_plans: "Steal Construction Plans"
+  BEL_fascism_war_the_seewacht_light_ship_steal_construction_plans_desc: "There is no time to waste in making plans, so we must take the risk and steal them. It might give us negative effects on our diplomatic relationship with other powers, but we should remember that national defense trumps international relationships every time when it comes down to life and death situations."
+
+  BEL_fascism_war_the_seewacht_light_ship_request_support: "Request Ship-Designing Support"
+  BEL_fascism_war_the_seewacht_light_ship_request_support_desc: "We must admit that we have no experience with ship designing and there are other nations who may know how to make light-ships due to historical factors or practical reasons. They know things that we don't. Requesting support from those experienced nations might give us additional expenses, but it's far more worth it than the price we have to pay if our amateurishly designed light ships get sunk by enemy fire very early into combat."
+
+  BEL_fascism_war_the_seewacht_light_ship_design_yuuki_and_yuno: "Design the Yuuki and the Yuno"
+  BEL_fascism_war_the_seewacht_light_ship_design_yuuki_and_yuno_desc: "A pair of light ships, one a destroyer and one a cruiser are to be designed and built after careful planning. We had been developing the necessary facilities and researching for a long while to prepare for this moment. It's finally time to show to everyone what our Seewacht can do once in operation."
+
+  BEL_fascism_war_the_seewacht_capital_focus: "Capital Ship Focus"
+  BEL_fascism_war_the_seewacht_capital_focus_desc: ""
+
 
 
 

@@ -19433,6 +19433,12 @@
 		allow_branch = {
 			has_completed_focus = BEL_fascism_war_establish_kriegsamt
 		}
+
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
 		
 		completion_reward = {
 			navy_experience = 50
@@ -19749,6 +19755,14 @@
 						fixed_ship_armor_slot = ship_armor_cruiser_2
 					}
 				}
+				create_ship = {
+					type = ship_hull_light_3
+					equipment_variant = BEL_ships_yuuki
+				}
+				create_ship = {
+					type = ship_hull_cruiser_3
+					equipment_variant = BEL_ships_yuno
+				}
 			}
 			else = {
 				create_equipment_variant = {
@@ -19770,6 +19784,14 @@
 						ship_reliability_upgrade = 3
 						ship_armor_upgrade = 6
 					}
+				}
+				create_ship = {
+					type = destroyer_3
+					equipment_variant = BEL_ships_yuuki
+				}
+				create_ship = {
+					type = light_cruiser_3
+					equipment_variant = BEL_ships_yuno
 				}
 			}
 		}
