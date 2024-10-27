@@ -959,8 +959,46 @@
   BEL_fascism_war_the_seewacht_light_ship_design_yuuki_and_yuno_desc: "A pair of light ships, one a destroyer and one a cruiser are to be designed and built after careful planning. We had been developing the necessary facilities and researching for a long while to prepare for this moment. It's finally time to show to everyone what our Seewacht can do once in operation."
 
   BEL_fascism_war_the_seewacht_capital_focus: "Capital Ship Focus"
-  BEL_fascism_war_the_seewacht_capital_focus_desc: ""
+  BEL_fascism_war_the_seewacht_capital_focus_desc: "While light ships can be useful, the main focus of most navies in Europe is capital ship power and so we must adapt to the trends of warfare to be successful. Capital ships provide heavy firepower which can lay waste to groups of smaller vessels quite easily if employed well. Having a few powerful vessels than having many weak ones gives us an advantage in any engagement where quality plays a much bigger role than quantity does."
 
+  BEL_fascism_war_the_seewacht_capital_focus_pretrain_crews: "Pretrain Crews"
+  BEL_fascism_war_the_seewacht_capital_focus_pretrain_crews_desc: "While we're planning to make our capital ships, it would also be best if we train our sailors ahead of time, and even those engineers who'll manage the logistics for maintenance, repairs and further developments. Having a pool of talent to rely on would make sure that we keep producing competent naval servicemen and expand our capabilities more effectively as time progresses on."
+
+  BEL_fascism_war_the_seewacht_capital_focus_prepare_harbors: "Prepare Harbors"
+  BEL_fascism_war_the_seewacht_capital_focus_prepare_harbors_desc: "Our naval output is essentially zero, with every harbor being merely civilian based without any sort of military aspect. In order to get an actual fighting force off the ground, especially with capital ships, we need harbors capable of supporting military operations. Not only this, but these new bases need to be defended as well, as they will become viable targets in a war situation."
+
+  BEL_fascism_war_the_seewacht_capital_focus_recruit_sailors: "Recruit Sailors"
+  BEL_fascism_war_the_seewacht_capital_focus_recruit_sailors_desc: "A navy needs sailors, but what kind? Masses of new and untrained sailors allow us to man our new fleet relatively safely. Veterans however provide valuable experience and skills that raw recruits simply don't possess. Both options have their merits but, ultimately, it falls on us to decide which one to choose."
+
+  BEL_fascism_war_the_seewacht_capital_focus_plan_megumin: "Plan the Megumin"
+  BEL_fascism_war_the_seewacht_capital_focus_plan_megumin_desc: "The Megumin is the future capital ship that could change the tides of time in our favor. Incredible firepower, the most modern equipment, top notch armor and all around strength, as well as affordability are all aspects that define this powerful project we're working on right now. This will be able to counter the greatest of threats we might encounter."
+
+  BEL_fascism_war_the_seewacht_capital_focus_build_megumin: "Build the Megumin"
+  BEL_fascism_war_the_seewacht_capital_focus_build_megumin_desc: "It's time to bring the blueprints into action and construct this monster piece by piece. Everyone knows that such a project takes time, effort, money, and sacrifice; so we will focus on this project for the entire duration until it's finished and operational. Time to defend our seas from enemies, whoever they might be or whatever their intention is against us."
+
+  BEL_fascism_war_the_seewacht_carrier_focus: "Carrier Focus"
+  BEL_fascism_war_the_seewacht_carrier_focus_desc: "Aircraft carriers have changed naval warfare forever - no longer will massive gunnery duels be common place between ships, at least not unless those involved do not possess Carriers themselves. Aircraft, launched from a great distance away, can ensure we do not risk losing expensive assets like capital ships and instead destroy enemy vessels."
+
+  BEL_fascism_war_the_seewacht_carrier_focus_create_naval_aerial_battalion: "Create the Naval-Aerial Battalion"
+  BEL_fascism_war_the_seewacht_carrier_focus_create_naval_aerial_battalion_desc: "In order to operate aircraft carriers, one needs to first of all have a well trained air corps for said carriers. Secondly, they need an organized hierarchy to operate within, otherwise disorder would prevail and our objectives won't be met at all. We need an independent battalion just for carrier affairs, from its security, crewmen, air forces, engineering and logistics personnel."
+
+  BEL_fascism_war_the_seewacht_carrier_focus_prepare_the_pilots: "Prepare the Pilots"
+  BEL_fascism_war_the_seewacht_carrier_focus_prepare_the_pilots_desc: "Before carriers could be planned, first come the pilots that will man them. To fill our ranks with a steady stream of veterans we shall begin training new pilots as soon as possible. Besides this we can request transfers from air-force personnel over to the naval branch. Such transfers would mean they start with aerial experience, something which can be invaluable down the line if properly developed."
+
+  BEL_fascism_war_the_seewacht_carrier_focus_finance_carrier_research: "Finance Carrier Research"
+  BEL_fascism_war_the_seewacht_carrier_focus_finance_carrier_research_desc: "Without knowledge of how to build a carrier, building them is impossible. By financing research on the matter we can begin looking into what makes them work and start taking the first steps towards creating some of our own. Research will either take a significant period of time, or a significant investment, but it is essential nonetheless."
+
+  BEL_fascism_war_the_seewacht_carrier_focus_dream_up_the_asuka: "Dream up the Asuka"
+  BEL_fascism_war_the_seewacht_carrier_focus_dream_up_the_asuka_desc: "The concept of the greatest aircraft carrier has never been truly realized, until today. The Asuka is the ultimate combination of speed, capacity, and durability; something that other nations' aircraft carriers couldn't even match up to. The future of aircraft carriers starts today, right here at home, and nothing will stop us in making this dream come true."
+
+  BEL_fascism_war_the_seewacht_carrier_focus_construct_the_asuka: "Construct the Asuka"
+  BEL_fascism_war_the_seewacht_carrier_focus_construct_the_asuka_desc: "Now that research has shown what works and doesn't work, as well as coming up with a solid blueprint that looks promising enough to build, it's finally the time to let the engineers and workers bring this glorious plan to fruition. With the best workers and engineers available on the field, we'll construct the greatest aircraft carrier ever known to mankind, right in the heart of our nation's pride. Coming forth, §CAsuka§!!"
+
+  BEL_fascism_war_the_seewacht_submarine_focus: "Submarine Focus"
+  BEL_fascism_war_the_seewacht_submarine_focus_desc: "Most see submarines as lesser vessels, only useful for patrol and occasional hit and run attacks. However, in a defensive and guerrilla style campaign these stealthy vessels can become far more useful then simple battleships and other capital vessels. Not only this but, if done well, submarine fleets can potentially win decisive victories before heavier assets are called in to support them."
+
+  BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments: "Sponsor Submarine Experiments"
+  BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments_desc: ""
 
 
 
