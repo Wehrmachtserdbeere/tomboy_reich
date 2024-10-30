@@ -998,7 +998,25 @@
   BEL_fascism_war_the_seewacht_submarine_focus_desc: "Most see submarines as lesser vessels, only useful for patrol and occasional hit and run attacks. However, in a defensive and guerrilla style campaign these stealthy vessels can become far more useful then simple battleships and other capital vessels. Not only this but, if done well, submarine fleets can potentially win decisive victories before heavier assets are called in to support them."
 
   BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments: "Sponsor Submarine Experiments"
-  BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments_desc: ""
+  BEL_fascism_war_the_seewacht_submarine_focus_sponsor_sub_experiments_desc: "Submarines require extensive research and development to make viable combat tools, unlike standard ships which are proven in practice. While some nations do indeed possess large submarine fleets, those same nations might not necessarily wish to assist us, which means we may need to do such research ourselves, and since a lot of small companies are already experimenting with them, we could try and invest in those experiments rather than wasting government money trying to figure things out from scratch ourselves."
+
+  BEL_fascism_war_the_seewacht_submarine_focus_sailor_campaign: "Start a sailor campaign"
+  BEL_fascism_war_the_seewacht_submarine_focus_sailor_campaign_desc: "Without sailors, no navy can function, however for our case we require specific skills to carry out our submarine doctrine. Firstly, we need men familiar with working in confined spaces, without sunlight and generally in quite unpleasant conditions. To get people like this we need to appeal to people who enjoy challenges as well as a general sense of adventure. Maybe mentioning that there will be a lot of girls there will get more recruits..."
+
+  BEL_fascism_war_the_seewacht_submarine_focus_research_modern_submarines: "Research Modern Submarines"
+  BEL_fascism_war_the_seewacht_submarine_focus_research_modern_submarines_desc: "Our nation is in dire need of a modern submarine program for effective use of a potential submersible force, not using obsolete models is important to ensure that they are not destroyed by other, more advanced submarines in any future wars that may occur. As such we should aim to develop some form of new submarine that is competitive among others and not rendered obsolete as of yet."
+
+  BEL_fascism_war_the_seewacht_submarine_focus_train_sub_personel: "Train Submarine Personel"
+  BEL_fascism_war_the_seewacht_submarine_focus_train_sub_personel_desc: "Before constructing a large force of submarines, we need to train the people who would manage them in the first place. Engineers, maintenance, logistics, medical, military leaders and submarine crews all need to undergo a period of learning the specifics of the trade they would participate in. Even a minor detail left unattended due to negligence, stupidity, and lack of professionalism could cost us an entire submarine."
+
+  BEL_fascism_war_the_seewacht_submarine_focus_create_the_ryuko: "Create the Ryūko"
+  BEL_fascism_war_the_seewacht_submarine_focus_create_the_ryuko_desc: "With everything needed set in place, we need to move forward in actually manufacturing submarines capable of performing the tasks we intend for them. For the one that will conquer the seas and instill terror amongst those who sail through them, we shall name this special vessel the 'Ryūko'!"
+
+  BEL_fascism_war_the_seewacht_sail_the_seven_seas: "Sail the Seven Seas"
+  BEL_fascism_war_the_seewacht_sail_the_seven_seas_desc: "With a fleet finally assembled, we should show Europe exactly what our navy can accomplish. War is still fresh in everyone's minds and it's unlikely that major conflict would occur anytime soon, as such sending our navy on an expedition to showcase our power is reasonable."
+
+  BEL_fascism_war_finalize_kriegsamt: "Finalize the Kriegsamt"
+  BEL_fascism_war_finalize_kriegsamt_desc: "We can never really predict where our navy is going next. It could be as small as dealing with terrorism, or as big as war breaking out again after two decades of peace. But with how we are now, we can confidently predict the outcome of each step that eventually leads to victory in the end."
 
 
 

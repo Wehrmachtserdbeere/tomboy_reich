@@ -20454,7 +20454,7 @@
 	
 	# Sail the Seven Seas
 	focus = {
-		id = BEL_fascism_war_the_seewacht_carrier_focus_sail_the_seven_seas
+		id = BEL_fascism_war_the_seewacht_sail_the_seven_seas
 		icon = tbd
 		
 		cost = 5
@@ -20473,6 +20473,32 @@
 		
 		completion_reward = {
 			navy_experience = 100
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				if = {
+					limit = {
+						has_opinion = {
+							target = ROOT
+							value < 10
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = small_decrease
+					}
+				}
+				add_intel = {
+					target = ROOT
+					navy_intel = 0.02
+				}
+			}
 			if = { # None + Navy = Navy
 				limit = {
 					has_idea = BEL_idea_imperiales_kriegsamt_no_extras
