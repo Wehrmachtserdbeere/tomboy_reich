@@ -117,4 +117,8 @@ opinion_modifiers = {
 	BEL_iron_curtain_modifier_pos = {
 		value = 35
 	}
+
+	BEL_scientists_returned_neg = {
+		value = -20
+	}
 }

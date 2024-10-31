@@ -645,6 +645,20 @@
   tomboy.87.a: "These damn traitors!"
   tomboy.87.a_tt: "[BAY.GetFlag][BAY.GetNameDefCap] joined [BEL.GetFlag][BEL.GetNameDef] in their war against us!"
 
+  tomboy.88.t: "Our Ambitions"
+  tomboy.88.d: "After considering our current circumstances, the amount of territory we occupy, our resources, our capabilities, and the recent world events, we have come to the conclusion that we need to decide upon a policy going forward - either expansionism or isolationism. While expansion might seem great on paper, and isolationism boring and short-sighted, each comes with a multitude of advantages and disadvantages, and each path would inevitably affect the other options we may choose."
+  tomboy.88.a: "We will expand!"
+  tomboy.88.b: "We'll isolate."
+  tomboy.88.b_tt: "§RThis will prevent us from expanding in the future!§!"
+
+  tomboy.89.t: "Hail Mary ends in Failure!"
+  tomboy.89.d: "Our economic policy was considered by all economists to have failed. Unfortunately, we have to agree, as we can see that our economy is still spiraling down. With the economy stagnant, and no signs of stopping anytime soon, we need a plan to deal with this, before things spiral out of control completely!"
+  tomboy.89.a: "Damn it!"
+
+  tomboy.90.t: "The Hail Mary succeeds!"
+  tomboy.90.d: "We've finally done it! Thanks to our reforms and programs, the economy has managed to stabilize! Some economists are saying that this could have just been sheer luck, but the results prove the contrary. Now, we can continue onward without worry, knowing that we'll manage to get through whatever may be thrown at us!"
+  tomboy.90.a: "Great!"
+
   # Generics
 
   BEL_generic_event_tt_will_happen: "Will happen:"

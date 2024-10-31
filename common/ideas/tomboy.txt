@@ -1974,6 +1974,116 @@ ideas = {
 			}
 		}
 
+		BEL_idea_uncontrolled_emigration = {
+			name = BEL_idea_uncontrolled_emigration
+
+			picture = tbd
+
+			modifier = {
+				political_power_factor = -0.2
+				monthly_population = -0.25
+			}
+		}
+
+		BEL_idea_famine = {
+			name = BEL_idea_famine
+
+			picture = tbd
+
+			modifier = {
+				political_power_factor = -0.2
+				monthly_population = -0.2
+				weekly_manpower = -250
+				consumer_goods_factor = 0.5
+			}
+		}
+
+		BEL_idea_protectionless = {
+			name = BEL_idea_protectionless
+
+			picture = tbd
+
+			modifier = {
+				political_power_factor = -0.2
+				army_attack_factor = -0.1
+				army_defence_factor = -0.25
+				navy_capital_ship_attack_factor = -0.1
+				navy_capital_ship_defence_factor = -0.1
+				navy_submarine_attack_factor = -0.25
+				navy_submarine_defence_factor = -0.25
+			}
+		}
+
+		BEL_idea_stagnating_economy = {
+			name = BEL_idea_stagnating_economy
+
+			picture = tbd
+
+			modifier = {
+				political_power_factor = -0.2
+				consumer_goods_factor = 0.75
+				production_speed_industrial_complex_factor = -0.7
+				production_speed_arms_factory_factor = -0.9
+				production_speed_buildings_factor = -0.75
+				production_speed_infrastructure_factor = -0.75
+				production_speed_nuclear_reactor_factor = -0.99
+				production_speed_rail_way_factor = -0.75
+				production_speed_supply_node_factor = -0.8
+				production_speed_synthetic_refinery_factor = -0.75
+				production_speed_radar_station_factor = -0.75
+				production_speed_air_base_factor = -0.8
+			}
+		}
+
+		BEL_idea_brain_drain = {
+			name = BEL_idea_brain_drain
+
+			picture = tbd
+
+			modifier = {
+				research_speed_factor = -0.75
+				production_lack_of_resource_penalty_factor = 0.5
+				state_resources_factor = -0.75
+			}
+		}
+
+		BEL_idea_foreign_propaganda = {
+			name = BEL_idea_foreign_propaganda
+
+			picture = tbd
+
+			modifier = {
+				political_power_factor = -0.4
+				stability_factor = -0.25
+				foreign_subversive_activites = 0.15
+				drift_defence_factor = -0.25
+			}
+		}
+
+		BEL_idea_black_market = {
+			name = BEL_idea_black_market
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				stability_factor = -0.15
+				resistance_activity = 0.2
+			}
+		}
+
+		BEL_idea_degrading_reserves = {
+			name = BEL_idea_degrading_reserves
+
+			picture = tbd
+
+			modifier = {
+				training_time_factor = 0.5
+				army_org_factor = -0.5
+				army_morale_factor = -0.5
+			}
+		}
+
 		BEL_test_idea = {
 			name = BEL_test_idea
 

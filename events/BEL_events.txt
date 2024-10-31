@@ -7610,3 +7610,147 @@ country_event = {
 		custom_effect_tooltip = tomboy.87.a_tt
 	}
 }
+
+# BEL | Heimkehr Focus | Decide on our future war-related focus
+country_event = {
+	id = tomboy.88
+	title = tomboy.88.t
+	desc = tomboy.88.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.88"
+	}
+
+	option = { # We will expand!
+		name = tomboy.88.a
+
+		ai_chance = {
+			base = 55
+			modifier = {
+				add = 20
+				all_neighbor_country = {
+					is_major = no
+				}
+			}
+			modifier = {
+				add = 10
+				is_in_faction = yes
+			}
+			modifier = {
+				add = 15
+				has_war_support > 49
+			}
+			modifier = {
+				add = 15
+				has_war_support > 74
+			}
+		}
+
+		BEL = {
+			complete_national_focus = BEL_fascism_expansionism
+			mark_focus_tree_layout_dirty = yes
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = var:neighbors
+				value = 10
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					original_tag = BEL
+					is_neighbor_of = BEL
+					is_ally_with = BEL
+				}
+			}
+			add_opinion_modifier = {
+				target = BEL
+				modifier = BEL_fear_of_expansion
+			}
+		}
+		every_neighbor_country = {
+			limit = {
+				NOT = {
+					original_tag = BEL
+					is_ally_with = BEL
+				}
+			}
+			add_opinion_modifier = {
+				target = BEL
+				modifier = large_decrease
+			}
+		}
+	}
+
+	option = { # We will isolate!
+		name = tomboy.88.b
+
+		BEL = {
+			complete_national_focus = BEL_fascism_isolationism
+			mark_focus_tree_layout_dirty = yes 
+		}
+		every_neighbor_country = {
+			add_opinion_modifier = {
+				target = BEL
+				modifier = small_increase
+			}
+		}
+		custom_effect_tooltip = tomboy.88.b_tt
+	}
+}
+
+# BEL | Hail Mary the Economy | Failure...
+country_event = {
+	id = tomboy.89
+	title = tomboy.89.t
+	desc = tomboy.89.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.89"
+		add_to_variable = {
+			var = BEL_hail_mary_the_economy_var
+			value = 1
+		}
+	}
+
+	option = { # Damn it.
+		name = tomboy.89.a
+
+		add_political_power = -100
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = BEL
+			popularity = -0.05
+		}
+		uncomplete_national_focus = {
+			focus = BEL_fascism_isolationism_hail_mary_the_economy
+		}
+	}
+}
+
+# BEL | Hail Mary the Economy | Success!
+country_event = {
+	id = tomboy.90
+	title = tomboy.90.t
+	desc = tomboy.90.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.90"
+	}
+
+	option = { # Hooray!
+		name = tomboy.90.a
+
+		add_political_power = -20
+		add_stability = 0.1
+		add_war_support = 0.1
+		remove_ideas = BEL_idea_stagnating_economy
+	}
+}

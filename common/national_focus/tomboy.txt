@@ -20560,7 +20560,7 @@
 			focus = BEL_fascism_war_the_luftwehr_build_the_projects
 		}
 		prerequisite = {
-			focus = BEL_fascism_war_the_seewacht_carrier_focus_sail_the_seven_seas
+			focus = BEL_fascism_war_the_seewacht_sail_the_seven_seas
 		}
 
 		completion_reward = {
@@ -20568,7 +20568,322 @@
 				remove_idea = BEL_idea_imperiales_kriegsamt_army_air_navy
 				add_idea = BEL_idea_imperiales_kriegsamt_final
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
+	}
+
+
+
+	#################
+	# Our Ambitions #
+	#################
+	# Our Ambitions
+	focus = {
+		id = BEL_fascism_war_our_ambitions
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 16
+
+		prerequisite = {
+			focus = BEL_fascism_war_finalize_kriegsamt
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_fascism_war_finalize_kriegsamt
+		}
+		
+		completion_reward = {
+			country_event = tomboy.88
+		}
+	}
+
+	################
+	# Isolationism #
+	################
+	# Isolationism
+	focus = {
+		id = BEL_fascism_isolationism
+		icon = tbd
+
+		cost = 0
+		
+		x = 7
+		y = 17
+
+		prerequisite = {
+			focus = BEL_fascism_war_our_ambitions
+		}
+
+		available = {
+			always = no
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_fascism_war_our_ambitions
+		}
+		
+		completion_reward = {
+			set_rule = {
+				can_not_declare_war = yes
+				can_send_volunteers = no
+			}
+			add_ideas = BEL_idea_uncontrolled_emigration
+			add_ideas = BEL_idea_famine
+			add_ideas = BEL_idea_protectionless
+			add_ideas = BEL_idea_stagnating_economy
+			add_ideas = BEL_idea_brain_drain
+			add_ideas = BEL_idea_foreign_propaganda
+			add_ideas = BEL_idea_black_market
+			add_ideas = BEL_idea_degrading_reserves
+		}
+	}
+
+	# Close the Borders
+	focus = {
+		id = BEL_fascism_isolationism_close_borders
+		icon = tbd
+
+		cost = 10
+		
+		x = 6
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism
+		}
+		
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+			add_war_support = -0.05
+			remove_ideas = BEL_idea_uncontrolled_emigration
+		}
+	}
+
+	# Radical Agricultural Reforms
+	focus = {
+		id = BEL_fascism_isolationism_radical_agricultural_reforms
+		icon = tbd
+
+		cost = 10
+		
+		x = 8
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_popularity = {
+				ideology = BEL
+				popularity = -0.1 # For some reason people dislike being saved from starvation because "muh freedom!"
+			}
+			remove_ideas = BEL_idea_famine
+		}
+	}
+
+	# Strengthen the Border
+	focus = {
+		id = BEL_fascism_isolationism_strengthen_the_border
+		icon = tbd
+
+		cost = 10
+		
+		x = 5
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_close_borders
+		}
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+			}
+			add_manpower = -2500
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic # Democrats hate strong borders
+						original_tag = ISR # Do I even have to explain?
+					}
+				}
+				add_opinion_modifier = {
+					target = BEL
+					modifier = medium_decrease
+				}
+			}
+			remove_ideas = BEL_idea_protectionless
+		}
+	}
+
+	# Hail Mary the Economy
+	focus = {
+		id = BEL_fascism_isolationism_hail_mary_the_economy
+		icon = tbd
+
+		cost = 5
+		
+		x = 7
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_close_borders
+			focus = BEL_fascism_isolationism_radical_agricultural_reforms
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					check_variable = {
+						var = BEL_hail_mary_the_economy_var
+						value = 0
+					}
+				}
+				random_list = {
+					70 = {
+						country_event = tomboy.89
+					}
+					30 = {
+						country_event = tomboy.90
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = BEL_hail_mary_the_economy_var
+						value = 1
+					}
+				}
+				random_list = {
+					50 = {
+						country_event = tomboy.89
+					}
+					50 = {
+						country_event = tomboy.90
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = BEL_hail_mary_the_economy_var
+						value = 2
+					}
+				}
+				random_list = {
+					30 = {
+						country_event = tomboy.89
+					}
+					70 = {
+						country_event = tomboy.90
+					}
+				}
+			}
+			else = {
+				# If you failed 3 times, the 4th is guaranteed to succeed.
+				# The game should still be fun.
+				country_event = tomboy.90
+			}
+		}
+	}
+
+	# Revive the science sector
+	focus = {
+		id = BEL_fascism_isolationism_revive_the_science_sector
+		icon = tbd
+
+		cost = 10
+		
+		x = 9
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_radical_agricultural_reforms
+		}
+		
+		completion_reward = {
+			add_political_power = -200
+			every_neighbor_country = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_scientists_returned_neg
+				}
+			}
+			add_research_slot = 1
+			remove_ideas = BEL_idea_brain_drain
+		}
+	}
+
+	# Build the Südschild
+
+	# Isolate the Media
+
+	# Build the Ostschild
+
+
+	# Defend the Air
+
+	# Crush the Black Market
+
+	# Build the Westwall (Sea Defense)
+
+	# Discipline the Military
+
+	# Construct City Defenses (Bunkers in city, add bombing defense bonus, "In case of war, so we can retreat to the cities")
+	
+	
+	# The Iron Fortress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	################
+	# Expansionism #
+	################
+	# Expansionism
+	focus = {
+		id = BEL_fascism_expansionism
+		icon = tbd
+
+		cost = 0
+		
+		x = 21
+		y = 17
+
+		prerequisite = {
+			focus = BEL_fascism_war_our_ambitions
+		}
+
+		available = {
+			always = no
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_fascism_war_our_ambitions
+		}
+		
+		completion_reward = { }
 	}
 
 
