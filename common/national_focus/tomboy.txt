@@ -20610,7 +20610,7 @@
 
 		cost = 0
 		
-		x = 7
+		x = 14
 		y = 17
 
 		prerequisite = {
@@ -20623,6 +20623,9 @@
 
 		allow_branch = {
 			has_completed_focus = BEL_fascism_war_our_ambitions
+			NOT = {
+				has_completed_focus = BEL_fascism_expansionism
+			}
 		}
 		
 		completion_reward = {
@@ -20648,7 +20651,7 @@
 
 		cost = 10
 		
-		x = 6
+		x = 13
 		y = 18
 
 		prerequisite = {
@@ -20670,7 +20673,7 @@
 
 		cost = 10
 		
-		x = 8
+		x = 15
 		y = 18
 
 		prerequisite = {
@@ -20694,7 +20697,7 @@
 
 		cost = 10
 		
-		x = 5
+		x = 12
 		y = 19
 
 		prerequisite = {
@@ -20730,7 +20733,7 @@
 
 		cost = 5
 		
-		x = 7
+		x = 14
 		y = 19
 
 		prerequisite = {
@@ -20802,7 +20805,7 @@
 
 		cost = 10
 		
-		x = 9
+		x = 16
 		y = 19
 
 		prerequisite = {
@@ -20823,13 +20826,79 @@
 	}
 
 	# Build the Südschild
+	focus = {
+		id = BEL_fascism_isolationism_build_southern_shield
+		icon = tbd
+
+		cost = 10
+		
+		x = 12
+		y = 20
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_strengthen_the_border
+			focus = BEL_fascism_isolationism_hail_mary_the_economy
+			focus = BEL_fascism_isolationism_revive_the_science_sector
+		}
+		
+		completion_reward = {
+			6 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = FRA
+					}
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = FRA
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = 11407 # Borders Luxembourg
+				}
+			}
+		}
+	}
 
 	# Isolate the Media
+	focus = {
+		id = BEL_fascism_isolationism_isolate_the_media
+		icon = tbd
 
-	# Build the Ostschild
+		cost = 5
+		
+		x = 14
+		y = 20
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_strengthen_the_border
+			focus = BEL_fascism_isolationism_hail_mary_the_economy
+			focus = BEL_fascism_isolationism_revive_the_science_sector
+		}
+		
+		completion_reward = {
+			add_stability = -0.2
+			remove_ideas = BEL_idea_foreign_propaganda
+		}
+	}
+
+	# Build the Nord-Ost-Wall
 
 
-	# Defend the Air
+	# Defend the Airspaces
 
 	# Crush the Black Market
 
@@ -20881,6 +20950,9 @@
 
 		allow_branch = {
 			has_completed_focus = BEL_fascism_war_our_ambitions
+			NOT = {
+				has_completed_focus = BEL_fascism_isolationism
+			}
 		}
 		
 		completion_reward = { }
