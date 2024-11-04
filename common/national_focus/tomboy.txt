@@ -18541,7 +18541,9 @@
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "No Step Back"
+					NOT = {
+						has_dlc = "No Step Back"
+					}
 				}
 				if = {
 					limit = {
@@ -18680,7 +18682,9 @@
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "No Step Back"
+					NOT = {
+						has_dlc = "No Step Back"
+					}
 				}
 				if = {
 					limit = {
@@ -19270,7 +19274,7 @@
 						has_dlc = "No Step Back"
 					}
 					create_equipment_variant = {
-						name = BEL_ships_zwitscher
+						name = "Schnellflitzer \"Zwitscher\""
 						type = small_plane_airframe_2
 						modules = {
 							main_armament_slot = aircraft_cannon_2_2x
@@ -19284,7 +19288,7 @@
 				}
 				else = {
 					create_equipment_variant = {
-						name = BEL_ships_zwitscher
+						name = "Schnellflitzer \"Zwitscher\""
 						type = fighter_equipment_2
 						upgrades = {
 							plane_armor_upgrade = 3
@@ -19722,7 +19726,7 @@
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = BEL_ships_yuuki
+					name = "Zerstörer \"Yuuki\""
 					type = ship_hull_light_3
 					modules = {
 						front_1_custom_slot = ship_light_battery_2
@@ -19737,7 +19741,7 @@
 					}
 				}
 				create_equipment_variant = {
-					name = BEL_ships_yuno
+					name = "Kampfkreuzer \"Yuno\""
 					type = ship_hull_cruiser_3
 					modules = {
 						front_1_custom_slot = ship_light_medium_battery_3
@@ -19757,16 +19761,16 @@
 				}
 				create_ship = {
 					type = ship_hull_light_3
-					equipment_variant = BEL_ships_yuuki
+					equipment_variant = "Zerstörer \"Yuuki\""
 				}
 				create_ship = {
 					type = ship_hull_cruiser_3
-					equipment_variant = BEL_ships_yuno
+					equipment_variant = "Kampfkreuzer \"Yuno\""
 				}
 			}
 			else = {
 				create_equipment_variant = {
-					name = BEL_ships_yuuki
+					name = "Zerstörer \"Yuuki\""
 					type = destroyer_3
 					upgrades = {
 						destroyer_engine_upgrade = 3
@@ -19776,7 +19780,7 @@
 					}
 				}
 				create_equipment_variant = {
-					name = BEL_ships_yuno
+					name = "Kampfkreuzer \"Yuno\""
 					type = light_cruiser_3
 					upgrades = {
 						ship_engine_upgrade = 2
@@ -19787,11 +19791,11 @@
 				}
 				create_ship = {
 					type = destroyer_3
-					equipment_variant = BEL_ships_yuuki
+					equipment_variant = "Zerstörer \"Yuuki\""
 				}
 				create_ship = {
 					type = light_cruiser_3
-					equipment_variant = BEL_ships_yuno
+					equipment_variant = "Kampfkreuzer \"Yuno\""
 				}
 			}
 		}
@@ -19975,7 +19979,7 @@
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = BEL_ships_megumin
+					name = "Kampfschiff \"Megumin\""
 					type = ship_hull_heavy_3
 					modules = {
 						front_1_custom_slot = ship_heavy_battery_3
@@ -19994,12 +19998,12 @@
 				}
 				create_ship = {
 					type = ship_hull_heavy_3
-					equipment_variant = BEL_ships_megumin
+					equipment_variant = "Kampfschiff \"Megumin\""
 				}
 			}
 			else = {
 				create_equipment_variant = {
-					name = BEL_ships_megumin
+					name = "Kampfschiff \"Megumin\""
 					type = battleship_3
 					upgrades = {
 						ship_armor_upgrade = 7
@@ -20010,7 +20014,7 @@
 				}
 				create_ship = {
 					type = battleship_3
-					equipment_variant = BEL_ships_megumin
+					equipment_variant = "Kampfschiff \"Megumin\""
 				}
 			}
 		}
@@ -20196,7 +20200,7 @@
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = BEL_ships_asuka
+					name = "Flugzeugträger \"Asuka\""
 					type = ship_hull_carrier_2
 					modules = {
 						front_1_custom_slot = ship_deck_space
@@ -20223,7 +20227,7 @@
 							is_coastal = yes
 						}
 						create_unit = {
-							division = BEL_ships_asuka
+							division = "Flugzeugträger \"Asuka\""
 							owner = BEL
 						}
 					}
@@ -20232,7 +20236,7 @@
 			else = {
 				create_equipment_variant = {
 					type = carrier_2
-					name = BEL_ships_asuka
+					name = "Flugzeugträger \"Asuka\""
 					upgrades = {
 						carrier_armor_upgrade = 2
 						ship_deckspace_upgrade = 5
@@ -20252,7 +20256,7 @@
 							is_coastal = yes
 						}
 						create_unit = {
-							division = BEL_ships_asuka
+							division = "Flugzeugträger \"Asuka\""
 							owner = BEL
 						}
 					}
@@ -20268,7 +20272,7 @@
 		id = BEL_fascism_war_the_seewacht_submarine_focus
 		icon = tbd
 
-		cost = x
+		cost = 5
 		
 		x = 30
 		y = 10
@@ -20421,7 +20425,7 @@
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = BEL_ships_ryuko
+					name = "U-Boot \"Ryūko\""
 					type = ship_hull_submarine_3
 					modules = {
 						front_1_custom_slot = ship_torpedo_sub_4
@@ -20433,12 +20437,12 @@
 				}
 				create_ship = {
 					type = ship_hull_submarine_3
-					equipment_variant = BEL_ships_ryuko
+					equipment_variant = "U-Boot \"Ryūko\""
 				}
 			}
 			else = {
 				create_equipment_variant = {
-					name = BEL_ships_ryuko
+					name = "U-Boot \"Ryūko\""
 					type = submarine_3
 					upgrades = {
 						sub_engine_upgrade = 2
@@ -20446,6 +20450,10 @@
 						sub_torpedo_upgrade = 5
 						ship_reliability_upgrade = 3
 					}
+				}
+				create_ship = {
+					type = ship_hull_submarine_3
+					equipment_variant = "U-Boot \"Ryūko\""
 				}
 			}
 		}
@@ -20731,7 +20739,7 @@
 		id = BEL_fascism_isolationism_hail_mary_the_economy
 		icon = tbd
 
-		cost = 5
+		cost = 3
 		
 		x = 14
 		y = 19
@@ -20842,34 +20850,37 @@
 		}
 		
 		completion_reward = {
-			6 = {
-				add_building_construction = {
-					type = bunker
-					level = 5
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border_country = FRA
+			hidden_effect = {
+				6 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = FRA
+						}
+					}
+				}
+				34 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = FRA
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = 11407 # Borders Luxembourg
 					}
 				}
 			}
-			34 = {
-				add_building_construction = {
-					type = bunker
-					level = 5
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border_country = FRA
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 5
-					instant_build = yes
-					province = 11407 # Borders Luxembourg
-				}
-			}
+			custom_effect_tooltip = BEL_fascism_isolationism_build_southern_shield_reward_tt
 		}
 	}
 
@@ -20896,20 +20907,255 @@
 	}
 
 	# Build the Nord-Ost-Wall
+	focus = {
+		id = BEL_fascism_isolationism_build_north_east_wall
+		icon = tbd
+
+		cost = 10
+		
+		x = 16
+		y = 20
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_strengthen_the_border
+			focus = BEL_fascism_isolationism_hail_mary_the_economy
+			focus = BEL_fascism_isolationism_revive_the_science_sector
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				34 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = GER
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = HOL
+						}
+					}
+				}
+				6 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = HOL
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = BEL_fascism_isolationism_build_north_east_wall_reward_tt
+		}
+	}
 
 
 	# Defend the Airspaces
+	focus = {
+		id = BEL_fascism_isolationism_defend_the_air
+		icon = tbd
+
+		cost = 5
+		
+		x = 12
+		y = 21
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_build_southern_shield
+			focus = BEL_fascism_isolationism_isolate_the_media
+		}
+		
+		completion_reward = {
+			6 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 10
+					instant_build = yes
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 10
+					instant_build = yes
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_isolationism_airspace_investment
+				days = 100
+			}
+		}
+	}
 
 	# Crush the Black Market
+	focus = {
+		id = BEL_fascism_isolationism_crush_the_black_market
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 21
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_build_southern_shield
+			focus = BEL_fascism_isolationism_isolate_the_media
+			focus = BEL_fascism_isolationism_build_north_east_wall
+		}
+		
+		completion_reward = {
+			add_political_power = -250
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_isolationism_crushing_black_market
+				days = 100
+			}
+			remove_ideas = BEL_idea_black_market
+		}
+	}
 
 	# Build the Westwall (Sea Defense)
+	focus = {
+		id = BEL_fascism_isolationism_westwall
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 21
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_isolate_the_media
+			focus = BEL_fascism_isolationism_build_north_east_wall
+		}
+		
+		completion_reward = {
+			set_country_flag = BEL_unlock_westwall_decisions
+			custom_effect_tooltip = BEL_fascism_isolationism_westwall_rewards_tt
+		}
+	}
+
 
 	# Discipline the Military
+	focus = {
+		id = BEL_fascism_isolationism_discipline_the_military
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 22
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_defend_the_air
+			focus = BEL_fascism_isolationism_crush_the_black_market
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_idea_degrading_reserves
+				add_idea = BEL_idea_disciplined_military
+			}
+		}
+	}
 
 	# Construct City Defenses (Bunkers in city, add bombing defense bonus, "In case of war, so we can retreat to the cities")
-	
+	focus = {
+		id = BEL_fascism_isolationism_construct_city_defenses
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 22
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_crush_the_black_market
+			focus = BEL_fascism_isolationism_westwall
+		}
+		
+		completion_reward = {
+			add_political_power = -150
+			every_owned_state = {
+				limit = {
+					is_core_of = BEL
+				}
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_victory_point = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+	}
 	
 	# The Iron Fortress
+	focus = {
+		id = BEL_fascism_isolationism_iron_fortress
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 23
+
+		prerequisite = {
+			focus = BEL_fascism_isolationism_discipline_the_military
+			focus = BEL_fascism_isolationism_construct_city_defenses
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_iron_fortress
+		}
+	}
+
+
+
+
+
+	############################
+	# Advaced Weapons Research #
+	############################
+	# Fund the Advanced Weapons Research Initiative
+	focus = {
+		id = BEL_fascism_research_advanced_weapons_research_initiative
+		icon = tbd
+
+		cost = 5
+		
+		x = 6
+		y = 16
+
+		prerequisite = {
+			focus = BEL_fascism_war_finalize_kriegsamt
+		}
+		
+		completion_reward = { }
+	}
 
 
 

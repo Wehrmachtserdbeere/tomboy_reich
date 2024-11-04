@@ -347,3 +347,21 @@ BEL_make_slo_submit_category = {
         }
     }
 }
+
+BEL_westwall_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        BEL = {
+            has_country_flag = BEL_unlock_westwall_decisions
+        }
+    }
+}

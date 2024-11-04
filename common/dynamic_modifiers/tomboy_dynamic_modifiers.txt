@@ -180,7 +180,7 @@ dyn_mod_bel_fascism_navy_financing_carrier_research = {
 		always = yes
 	}
 
-	# idea = tbd
+	# icon = tbd
 
 	navy_capital_ship_attack_factor = -0.05
 	navy_submarine_attack_factor = -0.05
@@ -198,7 +198,7 @@ dyn_mod_bel_fascism_navy_submarine_experimentation_good = {
 		always = yes
 	}
 
-	# idea = tbd
+	# icon = tbd
 
 	weekly_manpower = 100
 	stability_weekly_factor = 0.05
@@ -210,7 +210,7 @@ dyn_mod_bel_fascism_navy_submarine_experimentation_bad = {
 		always = yes
 	}
 
-	# idea = tbd
+	# icon = tbd
 
 	stability_weekly_factor = -0.05
 	war_support_weekly_factor = -0.05
@@ -221,7 +221,7 @@ dyn_mod_bel_fascism_navy_financing_submarine_research = {
 		always = yes
 	}
 
-	# idea = tbd
+	# icon = tbd
 
 	navy_capital_ship_attack_factor = -0.05
 	navy_screen_attack_factor = -0.05
@@ -232,4 +232,34 @@ dyn_mod_bel_fascism_navy_financing_submarine_research = {
 	production_cost_max_submarine_2 = -0.2
 	production_cost_max_submarine_3 = -0.2
 	production_cost_max_submarine_4 = -0.2
+}
+
+dyn_mod_bel_fascism_isolationism_airspace_investment = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	consumer_goods_factor = 0.2
+}
+
+dyn_mod_bel_fascism_isolationism_crushing_black_market = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	consumer_goods_factor = 0.8
+}
+
+dyn_mod_bel_bop_fascism_isolationism_westwall_construction = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	consumer_goods_factor = 0.25
 }

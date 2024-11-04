@@ -591,6 +591,36 @@
     BEL_idea_imperiales_kriegsamt: "Imperiales Kriegsamt"
     BEL_idea_imperiales_kriegsamt_desc: "The Imperiales Kriegsamt (Imperial War Department) is an internal agency within the Tomboy Empire that controls all parts of military activity in the realm, and prepares the Tomboy Military, in terms of organization, training, recruitment, staffing and supply for the Empire's campaigns and wars, as well as defense of the empire and homefront. Within it is a rift between the radical Tomboys, the Sturmkommando, and the moderate Tomboys, the Reichsmilitär. The Reichsmilitär argues for a defensive and isolationist military policy, but is also ready to help defend allies. The Sturmkommando thinks expansion and military conquest is the best way to show off the power of the Tomboys and expand the influence of their nation. While the Reichsmilitär is convinced that collaborating with occupied territories brings the most stable outcome and end to any wars, the Sturmkommando is convinced that purging all resistance from any occupied territories is necessary to conquer them and spread our people."
 
+    BEL_idea_uncontrolled_emigration: "Uncontrolled Emigration"
+    BEL_idea_uncontrolled_emigration_desc: "We are losing massive amounts of our most educated citizens to foreign lands, due to the problems and instability in the nation. This leaves our country with much less manpower for the industries, universities, and the military, and leaves our nation much less prepared to deal with the many problems we face."
+
+    BEL_idea_famine: "§RThe Tomboy Famine§!"
+    BEL_idea_famine_desc: "Our country is experiencing an extreme famine, due to a combination of droughts and mismanagement debt from the past Belgian government. Half of the population is starving, and the other half is working desperately to help the first half. People are eating anything, from grass and leather to poisonous plants. The few remaining cows and goats are so thin that their ribs can be counted. §RWe must act quickly§!."
+
+    BEL_idea_protectionless: "Protectionless"
+    BEL_idea_protectionless_desc: "While we decided on isolationism, the world did not. We have no allies, and the world is moving forward, itching to take this country and its resources for itself. A few of our diplomats tell of nations building up military forces, and we would currently be unable to defend ourselves in the case of a war. We need to prepare defensive structures and massively strengthen our border security immediately."
+
+    BEL_idea_stagnating_economy: "Stagnating Economy"
+    BEL_idea_stagnating_economy_desc: "The Economy, if it can even be called one, is at an all time low. We are incapable of providing even the most basic services to the people, and the national debt is a ticking time bomb that will soon reach unmanageable levels. People work for pennies, and are unable to purchase the products they make with their own sweat and blood. While the country slowly sinks into destitution, a few mega corporations and wealthy elites, mainly from other countries, reap all the profits and live lavishly off the back of our people."
+
+    BEL_idea_brain_drain: "Brain Drain"
+    BEL_idea_brain_drain_desc: "Many scientists and engineers have been leaving our nation, seeking opportunities in neighboring countries. This has left our technological base in ruins, and severely damaged our potential for innovation in the future. The ones we managed to contact cited the current political climate and poor living conditions as their reasons for leaving."
+
+    BEL_idea_foreign_propaganda: "Foreign Propaganda"
+    BEL_idea_foreign_propaganda_desc: "Our people are exposed to a deluge of misinformation by neighboring realms, eroding their confidence in our rule and instilling silly ideas such as democracy and judeo-bolshivism. Our culture and way of life are threatened from the inside, and our government's legitimacy is being undermined on a daily basis."
+
+    BEL_idea_black_market: "Rampant Black Markets"
+    BEL_idea_black_market_desc: "The illegal sale of goods has reached unprecedented levels in our realm. Smugglers have taken a foothold in our cities, corrupt merchants undermine the rule of law on a daily basis, and rumors are that slavery is re-emerging as a common practice. It severely cripples our economy and prevents proper distribution of vital resources."
+
+    BEL_idea_degrading_reserves: "Degrading Reserves"
+    BEL_idea_degrading_reserves_desc: "After our lengthy reorganization process, the army has emerged stronger than ever. However, our reserve forces have degraded to a horrifying degree. They are incapable of aiding our army in any meaningful way, and will make drag it down in the event of war."
+
+    BEL_idea_disciplined_military: "Disciplined Military"
+    BEL_idea_disciplined_military_desc: "Our army has recovered from its past defeats in a remarkable manner. The army is stronger now than it has ever been, and with our recent reforms, it is also more professional. This has allowed us to create a military capable of defending our realm from any threats we may face."
+
+    BEL_idea_iron_fortress: "The Iron Fortress"
+    BEL_idea_iron_fortress_desc: "Our country has become a fortress. Our borders have been completely secured by concrete walls and barbed wire. Our coasts are guarded by heavily armed patrol vessels. Our airspace is protected by advanced radar systems and fighters. We have established a state of complete lockdown, protecting our people of foreign propaganda and influence. We are completely self-sufficient, and our people live in peace and prosperity, knowing that they are safe from any external threats while enjoying the fruits of their labor, without interference from outside forces. The Iron Fortress is the answer to the history of French, English, German, and American imperialism, the refusal to become yet another vassal state of these powers. We have cut the puppet strings and secured our sovereignty as a nation. While the nations around us bash their fists against the fortress, we are confident that it will never be breached."
+
     
 
     BEL_idea_extra_recruits: "Extra Recruits"
@@ -653,10 +683,3 @@
     autonomy_associated_region_desc: "An Associated State is a political arrangement in which a territory or region maintains a formal relationship with a larger sovereign state while enjoying a high degree of autonomy and self-governance. Under this arrangement, the associated state typically manages its own internal affairs, such as legislation, taxation, and governance, while the larger sovereign state retains responsibility for matters such as defense and foreign affairs. Associated states often have their own constitutions or legal frameworks that outline their rights and responsibilities within the broader relationship with the sovereign state. While they are not fully independent nations, associated states have a significant degree of sovereignty and may have the authority to enter into international agreements and conduct diplomatic relations on certain matters with other countries. This arrangement allows associated states to maintain their cultural, historical, or political identity while still benefiting from the security and economic support provided by their association with the larger sovereign state."
 
     BEL_SHIPS_NAME_NATSUKIAN: "Natsuki-Themed"
-
-    BEL_ships_zwitscher: "Schnellflitzer \"Zwitscher\""
-    BEL_ships_yuuki: "Zerstörer \"Yuuki\""
-    BEL_ships_yuno: "Kampfkreuzer \"Yuno\""
-    BEL_ships_megumin: "Kampfschiff \"Megumin\""
-    BEL_ships_asuka: "Flugzeugträger \"Asuka\""
-    BEL_ships_ryuko: "U-Boot \"Ryūko\""

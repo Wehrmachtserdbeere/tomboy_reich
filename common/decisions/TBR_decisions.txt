@@ -3609,3 +3609,58 @@ BEL_make_slo_submit_category = {
         }
     }
 }
+
+BEL_westwall_category = {
+
+    BEL_extend_westwall = {
+        
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            BEL = {
+            	any_owned_state = {
+            	    AND = {
+            	        is_coastal = yes
+            	        check_variable = {
+            	            building_level@coastal_bunker < 10
+            	        }
+            	    }
+            	}
+            }
+        }
+
+        cost = 0
+
+        days_re_enable = 100
+
+        complete_effect = {
+            add_dynamic_modifier = {
+                modifier = dyn_mod_bel_bop_fascism_isolationism_westwall_construction
+                days = 100
+            }
+        }
+
+        remove_effect = {
+            every_owned_state = {
+                limit = {
+                    is_coastal = yes
+                    check_variable = {
+                        building_level@coastal_bunker < 10
+                    }
+                }
+                add_building_construction = {
+                    type = coastal_bunker
+                    level = 10
+                    instant_build = yes
+                    province = {
+                        all_provinces = yes
+                        limit_to_coastal = yes
+                    }
+                }
+            }
+        }
+    }
+
+}
