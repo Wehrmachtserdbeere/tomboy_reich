@@ -7754,3 +7754,105 @@ country_event = {
 		remove_ideas = BEL_idea_stagnating_economy
 	}
 }
+
+# CHI | (Tomboy) Test Nuclear Power | A sack of rice falls over
+country_event = {
+	id = tomboy.91
+	title = tomboy.91.t
+	desc = tomboy.91.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.91"
+	}
+
+	option = {
+		name = tomboy.91.a
+
+		add_stability = -0.01
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			custom_effect_tooltip = tomboy.91.a_tt_f
+		}
+		else_if = {
+			limit = {
+				has_government = communism
+			}
+			custom_effect_tooltip = tomboy.91.a_tt_c
+		}
+		else_if = {
+			limit = {
+				has_government = neutrality
+			}
+			custom_effect_tooltip = tomboy.91.a_tt_n
+		}
+		else_if = {
+			limit = {
+				has_government = democratic
+			}
+			custom_effect_tooltip = tomboy.91.a_tt_d
+		}
+		add_stability = 0.01
+	}
+}
+
+# ALL | (Tomboy) Become a Nuclear Power | Tomboys joins the Nuclear Powers
+country_event = {
+	id = tomboy.92
+	title = tomboy.92.t
+	desc = tomboy.92.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.92"
+	}
+
+	option = { # Understood
+		name = tomboy.92.a
+	}
+}
+
+# ALL | (Tomboy) Become a Nuclear Power | Tomboys built the bomb!
+country_event = {
+	id = tomboy.93
+	title = tomboy.93.t
+	desc = tomboy.93.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.93"
+	}
+
+	option = { # Impressive! WHAT?! / Worrying
+		name = tomboy.93.a
+
+		if = {
+			limit = {
+				is_ally_with = BEL
+			}
+			add_stability = 0.05
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_opinion = {
+						target = BEL
+						value < 1
+					}
+					any_enemy_country = {
+						original_tag = BEL
+					}
+				}
+			}
+			add_stability = -0.05
+		}
+		else = {
+			add_stability = -0.005 # Worrying.
+		}
+	}
+}

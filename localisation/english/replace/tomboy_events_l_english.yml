@@ -659,6 +659,27 @@
   tomboy.90.d: "We've finally done it! Thanks to our reforms and programs, the economy has managed to stabilize! Some economists are saying that this could have just been sheer luck, but the results prove the contrary. Now, we can continue onward without worry, knowing that we'll manage to get through whatever may be thrown at us!"
   tomboy.90.a: "Great!"
 
+  tomboy.91.t: "A sack of rice falls over"
+  tomboy.91.d: "Suddenly, all over our country, a few sacks of rice were reported to have fallen over at the same time. Nothing else occurred, and this was seemingly not coordinated or planned by anyone, nor did anything happen afterward, but still. Some speculate it was an evil spirit, while some believe it could've been a natural disaster far away."
+  tomboy.91.a: "Okay?"
+  tomboy.91.a_tt_f: "Probably just some commie spook."
+  tomboy.91.a_tt_c: "Probably just some fascist lunacy."
+  tomboy.91.a_tt_n: "Probably just some liberal imagination."
+  tomboy.91.a_tt_d: "Probably just some authoritarian trick."
+
+  tomboy.92.t: "Tomboys join the Nuclear Powers"
+  tomboy.92.d: "Tomboy Diplomats have sent a message to every country, stating that they have joined the list of countries with nuclear weapons after an official announcement today, saying that they successfully tested a nuclear weapon inside their borders. Many have reacted in disbelief that a young nation like the Tomboys have joined the Nuclear Race so early, although experts had suggested that this is proof of their technological advantage, and many other nations are probably developing nuclear weapons in secret as well."
+  tomboy.92.a: "[tomboy-92-a-scripted-loc]"
+  tomboy-92-a_scripted_loc_like: "Understood."
+  tomboy-92-a_scripted_loc_dislike: "What?!"
+
+  tomboy.93.t: "Tomboys build the bomb!"
+  tomboy.93.d: "Tomboy diplomats have just announced to the world that [BEL.GetNameDef] has achieved nuclear fission, and successfully tested a nuclear explosive device! Seismographs in [ENG.GetNameDef], [GER.GetNameDef], and [FRA.GetNameDef] reportedly picked up seismic activity consistent with the yield of the device."
+  tomboy.93.a: "[tomboy-93-a_scripted_loc]"
+  tomboy-93-a_scripted_loc_friend: "Impressive!"
+  tomboy-93-a_scripted_loc_enemy: "WHAT?!"
+  tomboy-93-a_scripted_loc_neutral: "Worrying."
+
   # Generics
 
   BEL_generic_event_tt_will_happen: "Will happen:"

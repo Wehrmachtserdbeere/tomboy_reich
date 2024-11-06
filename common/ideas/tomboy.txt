@@ -2132,6 +2132,120 @@ ideas = {
 			}
 		}
 
+		BEL_idea_atomic_sciences_funding = {
+			name = BEL_idea_atomic_sciences_funding
+
+			picture = tbd
+
+			modifier = {
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		BEL_idea_nuclear_power = {
+			name = BEL_idea_nuclear_power
+
+			picture = tbd
+
+			modifier = {
+				research_speed_factor = 0.2
+				consumer_goods_factor = -0.1
+				hidden_modifier = {
+					nuclear_production_factor = 1
+					production_speed_nuclear_reactor_factor = 1
+					nuclear_espionage_risk = -0.5
+				}
+			}
+		}
+
+		BEL_idea_experienced_strategists = {
+			name = BEL_idea_experienced_strategists
+
+			picture = tbd
+
+			modifier = {
+				combat_width_factor = -0.025
+				experience_gain_army_factor = 0.05
+				org_loss_when_moving = -0.05
+				army_org_factor = 0.05
+			}
+		}
+		
+		BEL_idea_experienced_tacticians = {
+			name = BEL_idea_experienced_tacticians
+
+			picture = tbd
+
+			modifier = {
+				terrain_penalty_reduction = 0.05
+				terrain_trait_xp_gain_factor = 0.1
+				unit_upkeep_attrition_factor = -0.05
+				army_attack_speed_factor = 0.025
+			}
+		}
+		
+		BEL_idea_the_most_adaptable_army = {
+			name = BEL_idea_the_most_adaptable_army
+
+			picture = tbd
+
+			modifier = {
+				combat_width_factor = -0.025
+				experience_gain_army_factor = 0.05
+				org_loss_when_moving = -0.05
+				army_org_factor = 0.05
+
+				terrain_penalty_reduction = 0.05
+				terrain_trait_xp_gain_factor = 0.1
+				unit_upkeep_attrition_factor = -0.05
+				army_attack_speed_factor = 0.025
+
+				hidden_modifier = {
+
+					# Let's hope this works :P
+					unit_light_armor_design_cost_factor = -0.99
+					amphibious_armor_design_cost_factor = -0.99
+					unit_amphibious_mech_design_cost_factor = -0.99
+					unit_anti-air_design_cost_factor = -0.99
+					unit_anti-air_brigade_design_cost_factor = -0.99
+					unit_anti_tank_design_cost_factor = -0.99
+					unit_anti_tank_brigade_design_cost_factor = -0.99
+					unit_armored_car_battalion_design_cost_factor = -0.99
+					unit_artillery_design_cost_factor = -0.99
+					unit_artillery_brigade_design_cost_factor = -0.99
+					unit_battlecruiser_design_cost_factor = -0.99
+					unit_battleship_design_cost_factor = -0.99
+					unit_blackshirt_assault_battalion_design_cost_factor = -0.99
+					unit_bus_design_cost_factor = -0.99
+					unit_carrier_design_cost_factor = -0.99
+					unit_cavalry_design_cost_factor = -0.99
+					unit_destroyer_design_cost_factor = -0.99
+					unit_engineer_design_cost_factor = -0.99
+					unit_field_hospital_design_cost_factor = -0.99
+					unit_flame_tank_design_cost_factor = -0.99
+					unit_heavy_armor_design_cost_factor = -0.99
+					unit_heavy_cruiser_design_cost_factor = -0.99
+					unit_infantry_design_cost_factor = -0.99
+					unit_light_armor_design_cost_factor = -0.99
+					unit_light_cruiser_design_cost_factor = -0.99
+					unit_logistics_design_cost_factor = -0.99
+					unit_maintenance_design_cost_factor = -0.99
+					unit_medium_armor_design_cost_factor = -0.99
+					unit_military_police_design_cost_factor = -0.99
+					unit_modern_armor_design_cost_factor = -0.99
+					unit_railway_gun_design_cost_factor = -0.99
+					unit_recon_design_cost_factor = -0.99
+					unit_signal_design_cost_factor = -0.99
+					unit_sp_anti-air_brigade_design_cost_factor = -0.99
+					unit_sp_artillery_brigade_design_cost_factor = -0.99
+					unit_submarine_design_cost_factor = -0.99
+					unit_super_heavy_armor_design_cost_factor = -0.99
+					unit_tank_destroyer_brigade_design_cost_factor = -0.99
+				}
+			}
+		}
+
 		BEL_test_idea = {
 			name = BEL_test_idea
 

@@ -176,3 +176,68 @@ defined_text = {
 		localization_key = tomboy-82-d_scripted_loc_sturmkommando
 	}
 }
+
+defined_text = {
+	name = tomboy-92-a_scripted_loc
+	text = {
+		trigger = {
+			has_opinion = {
+				target = BEL
+				value < 1
+			}
+		}
+		localization_key = tomboy-92-a_scripted_loc_like
+	}
+	text = {
+		trigger = {
+			has_opinion = {
+				target = BEL
+				value > 0
+			}
+		}
+		localization_key = tomboy-92-a_scripted_loc_dislike
+	}
+}
+
+defined_text = {
+	name = tomboy-93-a_scripted_loc
+	text = {
+		trigger = {
+			ROOT = {
+				is_ally_with = BEL
+			}
+		}
+		localization_key = tomboy-93-a_scripted_loc_friend
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_opinion = {
+					target = BEL
+					value < 1
+				}
+				any_enemy_country = {
+					original_tag = BEL
+				}
+			}
+		}
+		localization_key = tomboy-93-a_scripted_loc_enemy
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ROOT = {
+					is_ally_with = BEL
+				}
+				has_opinion = {
+					target = BEL
+					value < 1
+				}
+				any_enemy_country = {
+					original_tag = BEL
+				}
+			}
+		}
+		localization_key = tomboy-93-a_scripted_loc_neutral
+	}
+}

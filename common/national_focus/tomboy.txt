@@ -18370,7 +18370,10 @@
 		}
 
 		allow_branch = {
-			has_completed_focus = BEL_fascism_war_establish_kriegsamt
+			OR = {
+				has_completed_focus = BEL_fascism_war_establish_kriegsamt
+				is_debug = yes
+			}
 		}
 		
 		completion_reward = {
@@ -18976,7 +18979,10 @@
 		}
 
 		allow_branch = {
-			has_completed_focus = BEL_fascism_war_establish_kriegsamt
+			OR = {
+				has_completed_focus = BEL_fascism_war_establish_kriegsamt
+				is_debug = yes
+			}
 		}
 		
 		completion_reward = {
@@ -19421,7 +19427,7 @@
 	################
 	focus = {
 		id = BEL_fascism_war_the_seewacht
-		icon = GFX_surrender_tiny_flag
+		icon = tbd
 		
 		cost = 5
 		
@@ -19435,7 +19441,10 @@
 		}
 
 		allow_branch = {
-			has_completed_focus = BEL_fascism_war_establish_kriegsamt
+			OR = {
+				has_completed_focus = BEL_fascism_war_establish_kriegsamt
+				is_debug = yes
+			}
 		}
 
 		available = {
@@ -21147,16 +21156,496 @@
 
 		cost = 5
 		
-		x = 6
+		x = 5
 		y = 16
 
 		prerequisite = {
 			focus = BEL_fascism_war_finalize_kriegsamt
 		}
 		
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
+	####################
+	# Nuclear Weaponry #
+	####################
+	# Focus on experimental bombs
+	focus = {
+		id = BEL_fascism_research_nuclear
+		icon = tbd
+
+		cost = 5
+		
+		x = 2
+		y = 17
+
+		prerequisite = {
+			focus = BEL_fascism_research_advanced_weapons_research_initiative
+		}
+		
+		mutually_exclusive = {
+			focus = BEL_fascism_modernist_designs
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				if = {
+					limit = {
+						has_tech = heavy_bombs
+					}
+					air_experience = 100
+				}
+				else_if = {
+					limit = {
+						has_tech = early_bombs
+					}
+					add_tech_bonus = {
+						technology = early_bombs
+						uses = 1
+						bonus = 1
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						technology = early_bombs
+						uses = 1
+						bonus = 1
+					}
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					category = cat_strategic_bomber
+					uses = 1
+					bonus = 1
+				}
+			}
+		}
+	}
+
+	# Improve Radar Technology
+	focus = {
+		id = BEL_fascism_research_improve_radar_technology
+		icon = tbd
+
+		cost = 5
+		
+		x = 1
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_research_nuclear
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = radar_tech
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+
+	# Invest in Bombers
+	focus = {
+		id = BEL_fascism_research_invest_in_bombers
+		icon = tbd
+
+		cost = 5
+		
+		x = 3
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_research_nuclear
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = mio_cat_all_heavy_aircraft_and_modules
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+
+	# Fund Atomic Sciences
+	focus = {
+		id = BEL_fascism_research_fund_atomic_sciences
+		icon = tbd
+
+		cost = 5
+		
+		x = 0
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_research_improve_radar_technology
+			focus = BEL_fascism_research_invest_in_bombers
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_atomic_sciences_funding
+		}
+	}
+
+	# Test Nuclear Power
+	focus = {
+		id = BEL_fascism_research_test_nuclear_power
+		icon = tbd
+
+		cost = 5
+		
+		x = 2
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_research_improve_radar_technology
+			focus = BEL_fascism_research_invest_in_bombers
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = nukes
+				}
+				add_nuclear_bombs = 1
+			}
+			else = {
+				add_tech_bonus = {
+					category = nuclear
+					uses = 1
+					bonus = 2
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						AND = {
+							any_owned_state = {
+								OR = {
+									is_core_of = CHI
+									is_core_of = PRC
+								}
+							}
+							NOT = {
+								original_tag = JAP
+							}
+						}
+					}
+					country_event = tomboy.91 # A sack of rice falls over
+				}
+			}
+		}
+	}
+
+	# Practice Bombing Runs
+	focus = {
+		id = BEL_fascism_research_practice_bombing_runs
+		icon = tbd
+
+		cost = 5
+		
+		x = 4
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_research_improve_radar_technology
+			focus = BEL_fascism_research_invest_in_bombers
+		}
+		
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_fascism_practiced_bombing_runs
+			}
+		}
+	}
+
+	# Construct Nuclear Reactors
+	focus = {
+		id = BEL_fascism_research_construct_nuclear_reactors
+		icon = tbd
+
+		cost = 5
+		
+		x = 1
+		y = 20
+
+		prerequisite = {
+			focus = BEL_fascism_research_fund_atomic_sciences
+		}
+		prerequisite = {
+			focus = BEL_fascism_research_test_nuclear_power
+		}
+
+		available = {
+			has_tech = nuclear_reactor
+		}
+		
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+				}
+			}
+		}
+	}
+
+	# Build the Bomb
+	focus = {
+		id = BEL_fascism_research_build_the_bomb
+		icon = tbd
+
+		cost = 5
+		
+		x = 3
+		y = 20
+
+		prerequisite = {
+			focus = BEL_fascism_research_test_nuclear_power
+		}
+		prerequisite = {
+			focus = BEL_fascism_research_practice_bombing_runs
+		}
+		
+		completion_reward = {
+			add_nuclear_bombs = 1
+		}
+	}
+
+	# Become a Nuclear Power
+	focus = {
+		id = BEL_fascism_research_become_a_nuclear_power
+		icon = tbd
+
+		cost = 5
+		
+		x = 2
+		y = 21
+
+		prerequisite = {
+			focus = BEL_fascism_research_construct_nuclear_reactors
+		}
+		prerequisite = {
+			focus = BEL_fascism_research_build_the_bomb
+		}
+		
+		completion_reward = {
+			add_threat = 10
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BEL_fascism_isolationism # Don't show it if we're isolationist
+					}
+					any_country = {
+						AND = {
+							num_of_nukes > 0 # If any other country has nukes
+							NOT = {
+								original_tag = BEL
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+					country_event = tomboy.92
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BEL_fascism_isolationism # Don't show it if we're isolationist
+					}
+					all_country = {
+						OR = {
+							num_of_nukes = 0 # If no other country has nukes
+							original_tag = BEL
+						}
+					}
+				}
+				every_country = {
+					country_event = tomboy.93
+				}
+			}
+			custom_effect_tooltip = BEL_fascism_research_become_a_nuclear_power_tt
+			swap_ideas = {
+				remove_idea = BEL_idea_atomic_sciences_funding
+				add_idea = BEL_idea_nuclear_power
+			}
+		}
+	}
+
+
+
+	########################
+	# Hyper-Modern Designs # (Keep army designs modern at all times)
+	########################
+	# Modernize our designs
+	focus = {
+		id = BEL_fascism_modernist_designs
+		icon = tbd
+
+		cost = 5
+		
+		x = 8
+		y = 17
+
+		prerequisite = {
+			focus = BEL_fascism_research_advanced_weapons_research_initiative
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_research_nuclear
+		}
+		
+		completion_reward = {
+			army_experience = 150
+		}
+	}
+
+	# Appoint experienced strategists
+	focus = {
+		id = BEL_fascism_modernist_strategists
+		icon = tbd
+
+		cost = 5
+		
+		x = 7
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_modernist_designs
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_experienced_strategists
+		}
+	}
+	
+	# Appoint experienced tacticians
+	focus = {
+		id = BEL_fascism_modernist_tacticians
+		icon = tbd
+
+		cost = 5
+		
+		x = 9
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_modernist_designs
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_experienced_tacticians
+		}
+	}
+
+	# Revise Army Designs
+	focus = {
+		id = BEL_fascism_modernist_revise_army_designs
+		icon = tbd
+
+		cost = 3
+		
+		x = 6
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_modernist_strategists
+			focus = BEL_fascism_modernist_tacticians
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			army_experience = 150
+		}
+	}
+	
+	# Revise Navy Designs
+	focus = {
+		id = BEL_fascism_modernist_revise_navy_designs
+		icon = tbd
+
+		cost = 3
+		
+		x = 8
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_modernist_strategists
+			focus = BEL_fascism_modernist_tacticians
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			navy_experience = 150
+		}
+	}
+	
+	# Revise Air Designs
+	focus = {
+		id = BEL_fascism_modernist_revise_air_designs
+		icon = tbd
+
+		cost = 3
+		
+		x = 10
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_modernist_strategists
+			focus = BEL_fascism_modernist_tacticians
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			air_experience = 150
+		}
+	}
+
+	# Remain the most adaptable!
+	focus = {
+		id = BEL_fascism_modernist_remain_the_most_adaptable
+		icon = tbd
+
+		cost = 5
+		
+		x = 8
+		y = 20
+
+		prerequisite = {
+			focus = BEL_fascism_modernist_revise_army_designs
+		}
+		prerequisite = {
+			focus = BEL_fascism_modernist_revise_navy_designs
+		}
+		prerequisite = {
+			focus = BEL_fascism_modernist_revise_air_designs
+		}
+
+		available = {
+			has_completed_focus = BEL_fascism_modernist_strategists
+			has_completed_focus = BEL_fascism_modernist_tacticians
+		}
+		
+		completion_reward = {
+			remove_ideas = BEL_idea_experienced_strategists
+			remove_ideas = BEL_idea_experienced_tacticians
+			add_ideas = BEL_idea_the_most_adaptable_army
+		}
+	}
 
 
 

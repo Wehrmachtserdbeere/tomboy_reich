@@ -263,3 +263,15 @@ dyn_mod_bel_bop_fascism_isolationism_westwall_construction = {
 
 	consumer_goods_factor = 0.25
 }
+
+dyn_mod_bel_fascism_practiced_bombing_runs = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	air_bombing_targetting = 0.1
+	air_strategic_bomber_bombing_factor = 0.05
+	large_plane_airframe_design_cost_factor = -0.05
+}
