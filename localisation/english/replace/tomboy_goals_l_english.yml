@@ -1018,6 +1018,43 @@
   BEL_fascism_war_finalize_kriegsamt: "Finalize the Kriegsamt"
   BEL_fascism_war_finalize_kriegsamt_desc: "We can never really predict where our navy is going next. It could be as small as dealing with terrorism, or as big as war breaking out again after two decades of peace. But with how we are now, we can confidently predict the outcome of each step that eventually leads to victory in the end."
 
+  BEL_fascism_research_advanced_weapons_research_initiative: "Advanced Weapons Research Initiative"
+  BEL_fascism_research_advanced_weapons_research_initiative_desc: "Although our military armament may seem decent currently, the world advances very fast, and keeping up to date with current technologies will give us an advantage over any enemy we would encounter. We'll invest further into research and development of advanced weaponry so that we may surpass our adversaries and neutralize any threats."
+
+  BEL_fascism_research_nuclear: "Focus on Experimental Bombs"
+  BEL_fascism_research_nuclear_desc: "Sometimes, the normal bomb just won't cut through enemy defenses. At other times, dropping too many bombs just wouldn't be enough to level enemy strong points and command centers. With such situations at hand, an experimental super bomb should do the trick. All it takes is one drop and all our worries about a problem disappear with an almighty boom."
+
+  BEL_fascism_research_improve_radar_technology: "Improve Radar Territory"
+  BEL_fascism_research_improve_radar_technology_desc: "A better radar coverage is necessary to properly anticipate hostile movements on air. It gives us an advance notice that we could prepare against before enemy units even reach our territory, and appears to be vital to the development of the experimental bombs we're investing in. A wide array of radars could also help us spot enemies easier once those experimental bombs are dropped in foreign soil, ensuring maximum damage and disruption before moving in the bomber force for a second strike."
+
+  BEL_fascism_research_invest_in_bombers: "Invest in Bombers"
+  BEL_fascism_research_invest_in_bombers_desc: "Although bombers are the most expensive asset we have right now, they remain to be our trump card in terms of both defense and offense. Adding to that, we have to realize the potential of having better bombers when used alongside experimental bombs. A new bomber project can help us with achieving better results for both aerial engagements and bombing campaigns."
+
+  BEL_fascism_research_fund_atomic_sciences: "Fund Atomic Sciences"
+  BEL_fascism_research_fund_atomic_sciences_desc: "Theoretical sciences are just as important as practical sciences. If we keep supporting theoretical atomic sciences, it may prove to be a good thing later down the road. It takes time and effort to perfect atomic research, but once successful, it will certainly play a pivotal role in developing weapons that have yet been developed, or were only conceptualized but remained undeveloped because nobody had the money to finance them."
+
+  BEL_fascism_research_test_nuclear_power: "Test our Nuclear Power"
+  BEL_fascism_research_test_nuclear_power_desc: "It's not enough that we know how nuclear research works and how to use them. We must test our capabilities so we know where we stand and what improvements can be made along the way. This helps us evaluate and reflect upon what's been accomplished and find ways to make progress faster as the scientific community continues to work with nuclear research and development for our country's future projects regarding national defense."
+
+  BEL_fascism_research_practice_bombing_runs: "Practice Bombing Runs"
+  BEL_fascism_research_practice_bombing_runs_desc: "By simulating actual bombing runs and practicing them regularly, we can see the flaws and benefits of our bombers as they operate against predetermined targets. A comprehensive study and reflection on those bombing runs should help improve the development of new bomber models, while enhancing the skills of our pilots to accurately land their ordnance."
+
+  BEL_fascism_research_construct_nuclear_reactors: "Construct Nuclear Reactors"
+  BEL_fascism_research_construct_nuclear_reactors_desc: "Nuclear energy is the future, and will probably replace all the aging power plants we have today. The only way to get a good understanding of its capabilities and long-term usage is through testing it in the real world. Constructing nuclear reactors will enable us to fully grasp how beneficial it is to apply this technology into the national grid, and later into more advanced projects that require this amount of energy output."
+
+  BEL_fascism_research_become_a_nuclear_power: "Become a Nuclear Power"
+  BEL_fascism_research_become_a_nuclear_power_desc: "Having nuclear reactors alone doesn't make a country a nuclear power, nor does possessing nuclear energy. What matters is whether a country can produce a nuclear weapon from all that energy generated and used. Possessing such weapons brings our status up a notch and gives us an upper hand over neighboring countries, whether we're open about it or not."
+
+  BEL_fascism_modernist_designs: "Modernize our Designs"
+  BEL_fascism_modernist_designs_desc: "Our divisions and designs have gone stale from being old and outdated. Upgrading our tanks with newer, stronger material, our planes to make them more agile and deadly, and improving our division designs and tactics will enable us to keep pace with other European nations, if not push ahead of them in effectiveness."
+
+  BEL_fascism_modernist_strategists: "Appoint Experienced Strategists"
+  BEL_fascism_modernist_strategists_desc: "Theorizing and simulating various strategies without the pressure of having to be responsible for the deaths of soldiers is a good thing, but actual lived experience is something that remains to be unmatched in value. That's why bringing in experienced strategists from the retired veteran pool can significantly help with developing sound military doctrines for different kinds of scenarios and environments, both ideal and worse-case."
+
+  BEL_fascism_modernist_tacticians: "Appoint Experienced Tacticians"
+  BEL_fascism_modernist_tacticians_desc: "In the heat of battle, no amount of planning would ensure your victory. The necessity of quick thinking and adaptability becomes the prime concern for tacticians in the ground, and none are better than those who have proven themselves already from past battles and conflicts. Their expertise can teach our troops how to overcome the enemy and reduce friendly casualties through applying what worked back then to present training standards and practices."
+
+  
 
 
 
@@ -1035,7 +1072,8 @@
 
 
 
-  BEL_fascism_research_become_a_nuclear_power: "The National Spirit provides a §Ymassive§! bonus to nuclear productions!"
+
+  BEL_fascism_research_become_a_nuclear_power_tt: "The National Spirit provides a §Ymassive§! bonus to nuclear productions!"
 
 
 
