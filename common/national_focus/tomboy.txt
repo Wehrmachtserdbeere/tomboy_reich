@@ -21469,7 +21469,7 @@
 					}
 					all_country = {
 						OR = {
-							num_of_nukes = 0 # If no other country has nukes
+							num_of_nukes < 1 # If no other country has nukes
 							original_tag = BEL
 						}
 					}
@@ -21672,7 +21672,7 @@
 
 		cost = 0
 		
-		x = 21
+		x = 14
 		y = 17
 
 		prerequisite = {
@@ -21690,9 +21690,414 @@
 			}
 		}
 		
+		completion_reward = {
+			add_threat = 5
+			every_neighbor_country = {
+				limit = {
+					NOT = {
+						original_tag = BEL
+						is_ally_with = BEL
+					}
+				}
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_fear_of_expansion
+				}
+			}
+		}
+	}
+
+	# Advertize the Army
+	focus = {
+		id = BEL_fascism_expansionism_advertize_army
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_manpower = 5000
+		}
+	}
+
+	# "War is Peace"
+	focus = {
+		id = BEL_fascism_expansionism_war_is_peace
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 18
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	#######
+	# War #
+	#######
+	# Apprach Germany
+	focus = {
+		id = BEL_fascism_expansionism_germany_approach
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_advertize_army
+		}
+		prerequisite = {
+			focus = BEL_fascism_expansionism_war_is_peace
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_expansionism_on_our_own
+		}
+
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+			GER = {
+				exists = yes
+				has_government = fascism
+				has_opinion = {
+					target = BEL
+					value > -1
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = GER
+		}
+		
+		completion_reward = {
+			hidden_effect = {
+				set_rule = {
+					can_create_factions = no
+					can_join_factions = yes
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = GER
+					value = 200
+				}
+				GER = {
+					add_ai_strategy = {
+						type = befriend
+						id = BEL
+						value = 50
+					}
+				}
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = medium_increase
+				}
+				country_event = tomboy_generic.1
+			}
+		}
+	}
+
+	# On our own!
+	focus = {
+		id = BEL_fascism_expansionism_on_our_own
+		icon = tbd
+
+		cost = 5
+		
+		x = 19
+		y = 19
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_advertize_army
+		}
+		prerequisite = {
+			focus = BEL_fascism_expansionism_war_is_peace
+		}
+		
 		completion_reward = { }
 	}
 
+	# Unite the Markets
+	focus = {
+		id = BEL_fascism_expansionism_unite_the_markets
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 20
+		
+		bypass = {
+			GER = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_germany_approach
+		}
+
+		mutually_exclusive = {
+			focus = BEL_fascism_expansionism_separate_economies
+		}
+
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_stability = -0.05
+			if = {
+				limit = {
+					is_puppet_of = GER
+				}
+				add_autonomy_score = {
+					value = -500
+				}
+			}
+			GER = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 3
+				}
+				add_stability = -0.05
+			}
+		}
+	}
+
+	# Separate Economies
+	focus = {
+		id = BEL_fascism_expansionism_separate_economies
+		icon = tbd
+
+		cost = 5
+		
+		x = 17
+		y = 20
+		
+		mutually_exclusive = {
+			focus = BEL_fascism_expansionism_unite_the_markets
+		}
+
+		bypass = {
+			NOT = {
+				OR = {
+					is_in_faction_with = GER
+					is_puppet_of = GER
+					is_ally_with = GER
+					has_war_with = GER
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_germany_approach
+			focus = BEL_fascism_expansionism_on_our_own
+		}
+		
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+				can_join_factions = no
+			}
+			add_stability = 0.025
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+
+	# German Volunteers
+	focus = {
+		id = BEL_fascism_expansionism_german_volunteers
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 21
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_unite_the_markets
+		}
+		
+		completion_reward = {
+			division_template = {
+				name = "Deutsche Freiwillige"
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 0 y = 3 }
+				}
+				is_locked = yes
+				priority = 0
+			}
+			capital_scope = {
+				create_unit = {
+					division = "Deutsche Freiwillige"
+					owner = BEL
+					count = 4
+				}
+			}
+		}
+	}
+
+	# Form the Volunteer Corps
+	focus = {
+		id = BEL_fascism_expansionism_volunteer_corps
+		icon = tbd
+
+		cost = 5
+		
+		x = 18
+		y = 21
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_separate_economies
+		}
+		
+		completion_reward = {
+			division_template = {
+				name = "Freiwilligenkorps"
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					military_police = { x = 0 y = 1 }
+				}
+				is_locked = yes
+				priority = 0
+			}
+			capital_scope = {
+				create_unit = {
+					division = "Freiwilligenkorps"
+					owner = BEL
+					count = 2
+				}
+			}
+		}
+	}
+	
+	# Convene the Liegé Conference
+	focus = {
+		id = BEL_fascism_expansionism_liege_conference
+		icon = tbd
+
+		cost = 2
+		
+		x = 16
+		y = 21
+		
+		prerequisite = {
+			focus = BEL_fascism_expansionism_unite_the_markets
+			focus = BEL_fascism_expansionism_separate_economies
+		}
+
+		completion_reward = {
+			country_event = tomboy.94
+		}
+	}
+
+	# The Hirasawa Plan
+	focus = {
+		id = BEL_fascism_expansionism_hirasawa_plan
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 22
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_liege_conference
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_hirasawa_plan_dummy
+			hidden_effect = {
+				set_variable = {
+					var = BEL_variable_liege_attack_var
+					value = 0.05 # 5%
+				}
+				set_variable = {
+					var = BEL_variable_liege_defense_var
+					value = 0.025 # 2.5%
+				}
+				set_variable = {
+					var = BEL_variable_liege_org_var
+					value = 0.025 # 2.5%
+				}
+				set_variable = {
+					var = BEL_variable_liege_reinforce_var
+					value = 0.05 # 5%
+				}
+				add_dynamic_modifier = {
+					modifier = dyn_mod_bel_fascism_hirasawa_plan
+				}
+			}
+		}
+	}
+
+	# Prepare the March East (Germany)
+	focus = {
+		id = BEL_fascism_expansionism_germany_the_march_east
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 23
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_hirasawa_plan
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BEL_fascism_expansionism_germany_the_march_east_reward_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = BEL_variable_liege_org_var
+					value = 0.025
+				}
+				add_to_variable = {
+					var = BEL_variable_liege_reinforce_var
+					value = 0.025
+				}
+			}
+		}
+	}
 
 
 

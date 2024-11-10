@@ -1,6 +1,16 @@
 
 add_namespace = tomboy_generic
 
+#
+# FROM is the country the event originates from
+# e.g. Belgium Focus tree sends an event to Germany
+# via a GER = { country_event = tomboy_generic.1 }
+#
+# In that example:
+# BEL is FROM
+# GER is ROOT
+#
+
 # [FROM] wants to make an alliance with [ROOT]
 country_event = {
 	id = tomboy_generic.1

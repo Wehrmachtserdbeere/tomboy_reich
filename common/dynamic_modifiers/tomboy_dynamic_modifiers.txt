@@ -1,4 +1,4 @@
-﻿#
+#
 # Dynamic Modifiers be here...
 #
 # ...or something like that
@@ -274,4 +274,17 @@ dyn_mod_bel_fascism_practiced_bombing_runs = {
 	air_bombing_targetting = 0.1
 	air_strategic_bomber_bombing_factor = 0.05
 	large_plane_airframe_design_cost_factor = -0.05
+}
+
+dyn_mod_bel_fascism_hirasawa_plan = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	army_attack_factor = BEL_variable_liege_attack_var
+	army_defence_factor = BEL_variable_liege_defense_var
+	army_org_factor = BEL_variable_liege_org_var
+	land_reinforce_rate = BEL_variable_liege_reinforce_var
 }

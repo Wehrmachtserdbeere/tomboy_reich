@@ -637,6 +637,8 @@
     BEL_idea_the_most_adaptable_army: "The Most Adaptable Army"
     BEL_idea_the_most_adaptable_army_desc: "The Tomboy military has a history of being highly adaptable and capable of changing to fit the needs of any situation. From guerrilla warfare to large scale military operations, the Tomboy army has proven to be highly skilled and effective. We are always ready to adapt to new challenges and technologies, and are constantly refining and improving our strategies and tactics to stay ahead of our enemies. We are the pinnacle of adaptability, and are ready to take on any challenge that comes our way."
 
+    BEL_idea_hirasawa_plan_dummy: "Hirasawa Plan"
+    BEL_idea_hirasawa_plan_dummy_desc: "§YArmy Attack Factor:§! §G[?BEL_variable_liege_attack_var|%]§!.\n§YArmy Defende Factor:§! §G[?BEL_variable_liege_defense_var|%]§!.\n§YArmy Organization Factor:§! §G[?BEL_variable_liege_org_var|%]§!.\n§YArmy Reinforcement Factor:§! §G[?BEL_variable_liege_reinforce_var|%]§!.\n"
     
 
     BEL_idea_extra_recruits: "Extra Recruits"

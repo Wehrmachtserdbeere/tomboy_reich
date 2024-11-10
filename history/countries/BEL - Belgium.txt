@@ -27,8 +27,6 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-oob = "BEL_1936"
-
 recruit_character = BEL_georgy_zhukov
 recruit_character = BEL_george_patton
 recruit_character = BEL_hatsune_miku
@@ -56,6 +54,8 @@ recruit_character = BEL_houston
 recruit_character = BEL_yamato
 recruit_character = BEL_ark_royal
 recruit_character = BEL_u47
+
+oob = "BEL_1936"
 
 set_convoys = 75
 

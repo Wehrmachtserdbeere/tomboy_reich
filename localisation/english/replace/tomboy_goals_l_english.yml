@@ -1018,6 +1018,10 @@
   BEL_fascism_war_finalize_kriegsamt: "Finalize the Kriegsamt"
   BEL_fascism_war_finalize_kriegsamt_desc: "We can never really predict where our navy is going next. It could be as small as dealing with terrorism, or as big as war breaking out again after two decades of peace. But with how we are now, we can confidently predict the outcome of each step that eventually leads to victory in the end."
 
+
+
+
+
   BEL_fascism_research_advanced_weapons_research_initiative: "Advanced Weapons Research Initiative"
   BEL_fascism_research_advanced_weapons_research_initiative_desc: "Although our military armament may seem decent currently, the world advances very fast, and keeping up to date with current technologies will give us an advantage over any enemy we would encounter. We'll invest further into research and development of advanced weaponry so that we may surpass our adversaries and neutralize any threats."
 
@@ -1044,6 +1048,10 @@
 
   BEL_fascism_research_become_a_nuclear_power: "Become a Nuclear Power"
   BEL_fascism_research_become_a_nuclear_power_desc: "Having nuclear reactors alone doesn't make a country a nuclear power, nor does possessing nuclear energy. What matters is whether a country can produce a nuclear weapon from all that energy generated and used. Possessing such weapons brings our status up a notch and gives us an upper hand over neighboring countries, whether we're open about it or not."
+  BEL_fascism_research_become_a_nuclear_power_tt: "The National Spirit provides a §Ymassive§! bonus to nuclear productions!"
+
+
+
 
   BEL_fascism_modernist_designs: "Modernize our Designs"
   BEL_fascism_modernist_designs_desc: "Our divisions and designs have gone stale from being old and outdated. Upgrading our tanks with newer, stronger material, our planes to make them more agile and deadly, and improving our division designs and tactics will enable us to keep pace with other European nations, if not push ahead of them in effectiveness."
@@ -1054,26 +1062,38 @@
   BEL_fascism_modernist_tacticians: "Appoint Experienced Tacticians"
   BEL_fascism_modernist_tacticians_desc: "In the heat of battle, no amount of planning would ensure your victory. The necessity of quick thinking and adaptability becomes the prime concern for tacticians in the ground, and none are better than those who have proven themselves already from past battles and conflicts. Their expertise can teach our troops how to overcome the enemy and reduce friendly casualties through applying what worked back then to present training standards and practices."
 
+  BEL_fascism_modernist_revise_army_designs: "Revise our Army Designs"
+  BEL_fascism_modernist_revise_army_designs_desc: "No matter how strong a single soldier is, he won't survive long on his own and that's why we've got divisions: to effectively utilize the strength of many working together under an established hierarchy. As time progresses, we continue to learn what works and what doesn't. Revising our army division designs every once in a while can bring about improved efficiency in dealing with different types of operations."
+
+  BEL_fascism_modernist_revise_navy_designs: "Revise our Naval Designs"
+  BEL_fascism_modernist_revise_navy_designs_desc: "The navy plays a crucial part in modern warfare because we live in a world full of waters to traverse upon, and whoever holds supremacy above them will have a better chance of winning a war than whoever lags behind. Making adjustments to the current composition and type of ships we deploy in our fleet gives us an edge against those who still haven't caught up in modernizing their fleets for the demands of naval engagements in the current time."
+
+  BEL_fascism_modernist_revise_air_designs: "Revise our Air Design"
+  BEL_fascism_modernist_revise_air_designs_desc: "Air superiority is what enables us to hold air raids against the enemies. In order for it to happen, we must always be a step ahead of those we face off in the skies. Redesigning our planes from frame to equipment based on previous experiences in testing them out will surely improve their performance for upcoming encounters. Knowing which plane works best for a certain scenario can also determine whether we win the air or lose it in the first stage of any engagement in the battlefield."
+
+  BEL_fascism_modernist_remain_the_most_adaptable: "Remain the Most Adaptable"
+  BEL_fascism_modernist_remain_the_most_adaptable_desc: "We, the Tomboys, have always been the underdogs in almost every aspect. However, our adaptive nature allowed us to cope up with changes and adjust accordingly better than anyone else. Because of this, we managed to survive despite oppression and discrimination. We cannot allow such advantage to be forgotten over time. We will revive those aspects that led us to become what we are now and train our women to think for themselves and find creative solutions for every obstacle they face in combat."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  BEL_fascism_research_become_a_nuclear_power_tt: "The National Spirit provides a §Ymassive§! bonus to nuclear productions!"
 
 
 

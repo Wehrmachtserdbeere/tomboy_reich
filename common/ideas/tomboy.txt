@@ -2206,7 +2206,7 @@ ideas = {
 					# Let's hope this works :P
 					unit_amphibious_armor_design_cost_factor = -0.99
 					unit_amphibious_mechanized_design_cost_factor = -0.99
-					unit_anti-air_brigade_design_cost_factor = -0.99
+					unit_anti_air_brigade_design_cost_factor = -0.99
 					unit_anti_tank_design_cost_factor = -0.99
 					unit_anti_tank_brigade_design_cost_factor = -0.99
 					unit_armored_car_design_cost_factor = -0.99
@@ -2241,6 +2241,13 @@ ideas = {
 			}
 		}
 
+		# Dynamic Modifier used
+		BEL_idea_hirasawa_plan_dummy = {
+			name = BEL_idea_hirasawa_plan_dummy
+		}
+
+		# Currently mainly used to get
+		# modifiers for dynamic modifiers :P
 		BEL_test_idea = {
 			name = BEL_test_idea
 

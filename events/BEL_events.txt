@@ -7407,7 +7407,7 @@ country_event = {
 				limit = {
 					BEL = {
 						any_navy_leader = {
-							exists = yes
+							is_navy_leader = yes
 						}
 					}
 				}
@@ -7419,10 +7419,10 @@ country_event = {
 				}
 			}
 			else = {
-				random_country = {
+				random_unit_leader = {
 					gain_xp = 2
 				}
-				random_country = {
+				random_unit_leader = {
 					gain_xp = 2
 				}
 			}
@@ -7651,10 +7651,14 @@ country_event = {
 		BEL = {
 			complete_national_focus = BEL_fascism_expansionism
 			mark_focus_tree_layout_dirty = yes
-			add_ai_strategy = {
-				type = prepare_for_war
-				id = var:neighbors
-				value = 10
+			every_neighbor_country = {
+				BEL = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = PREV
+						value = 10
+					}
+				}
 			}
 		}
 		every_country = {
@@ -7853,6 +7857,385 @@ country_event = {
 		}
 		else = {
 			add_stability = -0.005 # Worrying.
+		}
+	}
+}
+
+# BEL | Liegé Convention | The Liegé Convention
+country_event = {
+	id = tomboy.94
+	title = tomboy.94.t
+	desc = tomboy.94.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.94"
+	}
+
+	option = { # Proceed.
+		name = tomboy.94.a
+
+		hidden_effect = {
+			country_event = {
+				id = tomboy.95
+				days = 1
+			}
+		}
+	}
+}
+
+# BEL | Liegé Convention | The British Claims
+country_event = {
+	id = tomboy.95
+	title = tomboy.95.t
+	desc = tomboy.95.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.95"
+	}
+
+	option = { # Claims on Eastern Britain
+		name = tomboy.95.a
+		
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = ENG
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_britain_small
+			country_event = tomboy.96
+		}
+		custom_effect_tooltip = tomboy.95.a_tt # Will give claims on Eastern Britain
+	}
+	
+	option = { # Claims on all Britain
+		name = tomboy.95.b
+		
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = ENG
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_britain_big
+			country_event = tomboy.96
+		}
+		custom_effect_tooltip = tomboy.95.b_tt # Will give claims on all of Britain
+	}
+	
+	option = { # Claims on none of Britain
+		name = tomboy.95.c
+		
+		ai_chance = {
+			base = 10
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_britain_none
+			country_event = tomboy.96
+		}
+		custom_effect_tooltip = tomboy.95.c_tt # Will gain an opinion modifier on conclusion
+	}
+}
+
+# BEL | Liegé Convention | The French Claims
+country_event = {
+	id = tomboy.96
+	title = tomboy.96.t
+	desc = tomboy.96.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.96"
+	}
+
+	option = { # Claims on small North-Eastern France
+		name = tomboy.96.a
+		
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = FRA
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_france_small
+			country_event = tomboy.97
+		}
+		custom_effect_tooltip = tomboy.96.a_tt # Will give claims on North-Eastern France
+	}
+	
+	option = { # Claims on Northern France
+		name = tomboy.96.b
+		
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = FRA
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_france_big
+			country_event = tomboy.97
+		}
+		custom_effect_tooltip = tomboy.96.b_tt # Will give claims on Northern France
+	}
+	
+	option = { # Claims on none of France
+		name = tomboy.96.c
+		
+		ai_chance = {
+			base = 10
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_france_none
+			country_event = tomboy.97
+		}
+		custom_effect_tooltip = tomboy.96.c_tt # Will gain an opinion modifier on conclusion
+	}
+}
+
+# BEL | Liegé Convention | The German Claims
+country_event = {
+	id = tomboy.97
+	title = tomboy.97.t
+	desc = tomboy.97.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.97"
+	}
+
+	option = { # Claims on Ruhr Western Germany
+		name = tomboy.97.a
+		
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = GER
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_germany_small
+			country_event = tomboy.98
+		}
+		custom_effect_tooltip = tomboy.97.a_tt # Will give claims on Ruhr Western Germany
+	}
+	
+	option = { # Claims on none of France
+		name = tomboy.97.c
+		
+		ai_chance = {
+			base = 10
+		}
+
+		hidden_effect = {
+			set_country_flag = BEL_liege_conference_germany_none
+			country_event = tomboy.98
+		}
+		custom_effect_tooltip = tomboy.97.c_tt # Will gain an opinion modifier on conclusion
+	}
+}
+
+# BEL | Liegé Convention | Conclusion
+country_event = {
+	id = tomboy.98
+	title = tomboy.98.t
+	desc = tomboy.98.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.98"
+	}
+
+	option = { # Okay.
+		name = tomboy.98.a
+
+		# Britain
+		if = {
+			limit = {
+				has_country_flag = BEL_liege_conference_britain_none
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 25
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = BEL_liege_conference_britain_small
+			}
+			127 = {
+				add_claim_by = BEL
+			}
+			126 = {
+				add_claim_by = BEL
+			}
+			125 = {
+				add_claim_by = BEL
+			}
+			129 = {
+				add_claim_by = BEL
+			}
+			130 = {
+				add_claim_by = BEL
+			}
+		}
+		else = {
+			ENG = {
+				every_core_state = {
+					add_claim_by = BEL
+				}
+			}
+		}
+		# France
+		if = {
+			limit = {
+				has_country_flag = BEL_liege_conference_france_none
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 25
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = BEL_liege_conference_france_small
+			}
+			29 = {
+				add_claim_by = BEL
+			}
+			785 = {
+				add_claim_by = BEL
+			}
+			18 = {
+				add_claim_by = BEL
+			}
+			28 = {
+				add_claim_by = BEL
+			}
+			17 = {
+				add_claim_by = BEL
+			}
+			16 = {
+				add_claim_by = BEL
+			}
+			15 = {
+				add_claim_by = BEL
+			}
+		}
+		else = {
+			29 = {
+				add_claim_by = BEL
+			}
+			785 = {
+				add_claim_by = BEL
+			}
+			18 = {
+				add_claim_by = BEL
+			}
+			28 = {
+				add_claim_by = BEL
+			}
+			17 = {
+				add_claim_by = BEL
+			}
+			16 = {
+				add_claim_by = BEL
+			}
+			15 = {
+				add_claim_by = BEL
+			}
+			27 = {
+				add_claim_by = BEL
+			}
+			24 = {
+				add_claim_by = BEL
+			}
+			30 = {
+				add_claim_by = BEL
+			}
+			14 = {
+				add_claim_by = BEL
+			}
+		}
+		# Germany
+		if = {
+			limit = {
+				has_country_flag = BEL_liege_conference_germany_none
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 25
+				}
+			}
+		}
+		else = {
+			29 = {
+				add_claim_by = BEL
+			}
+			42 = {
+				add_claim_by = BEL
+			}
+			51 = {
+				add_claim_by = BEL
+			}
+			55 = {
+				add_claim_by = BEL
+			}
+			57 = {
+				add_claim_by = BEL
+			}
+			56 = {
+				add_claim_by = BEL
+			}
+			GER = {
+				add_ai_strategy = {
+					type = antagonize
+					id = BEL
+					value = 25
+				}
+			}
 		}
 	}
 }
