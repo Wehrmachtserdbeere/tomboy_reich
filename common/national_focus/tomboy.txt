@@ -21825,7 +21825,7 @@
 
 		cost = 5
 		
-		x = 19
+		x = 15
 		y = 19
 
 		prerequisite = {
@@ -21835,7 +21835,13 @@
 			focus = BEL_fascism_expansionism_war_is_peace
 		}
 		
-		completion_reward = { }
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes # Only Factions we lead are desirable!
+				can_join_factions = no
+			}
+			add_stability = 0.05
+		}
 	}
 
 	# Unite the Markets
@@ -21845,7 +21851,7 @@
 
 		cost = 5
 		
-		x = 15
+		x = 13
 		y = 20
 		
 		bypass = {
@@ -21896,7 +21902,7 @@
 
 		cost = 5
 		
-		x = 17
+		x = 15
 		y = 20
 		
 		mutually_exclusive = {
@@ -21939,7 +21945,7 @@
 
 		cost = 5
 		
-		x = 14
+		x = 12
 		y = 21
 
 		prerequisite = {
@@ -21975,7 +21981,7 @@
 
 		cost = 5
 		
-		x = 18
+		x = 16
 		y = 21
 
 		prerequisite = {
@@ -22017,7 +22023,7 @@
 
 		cost = 2
 		
-		x = 16
+		x = 14
 		y = 21
 		
 		prerequisite = {
@@ -22037,7 +22043,7 @@
 
 		cost = 5
 		
-		x = 16
+		x = 14
 		y = 22
 
 		prerequisite = {
@@ -22072,12 +22078,12 @@
 
 	# Prepare the March East (Germany)
 	focus = {
-		id = BEL_fascism_expansionism_germany_the_march_east
+		id = BEL_fascism_expansionism_germany_prepare_the_march_east
 		icon = tbd
 
 		cost = 5
 		
-		x = 16
+		x = 14
 		y = 23
 
 		prerequisite = {
@@ -22095,6 +22101,67 @@
 					var = BEL_variable_liege_reinforce_var
 					value = 0.025
 				}
+			}
+		}
+	}
+
+	# Fortify the Border
+	focus = {
+		id = BEL_fascism_expansionism_germany_fortify_the_border
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 24
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_germany_prepare_the_march_east
+		}
+		
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					any_neighbor_state = {
+						owner = {
+							original_tag = GER
+						}
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_border_country = GER
+					}
+				}
+			}
+		}
+	}
+
+	# Purchase Material
+	focus = {
+		id = BEL_fascism_expansionism_germany_purchase_material
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 24
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_germany_prepare_the_march_east
+		}
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 750
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				amount = 250
 			}
 		}
 	}
