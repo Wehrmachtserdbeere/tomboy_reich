@@ -529,3 +529,12 @@ Max Building Damages = {
     naval_base = 1
 
 }
+
+Linguistics = {
+
+    Tomboy_in_Latin = "Virago"
+    Tomboy_in_German = "Wildfang"
+    Tomboy_in_French = "Garçon Manqué"
+    Tomboy_in_Dutch = "Tomboy" # They seriously have no proper word for it, what losers!
+
+}

@@ -859,6 +859,7 @@
 			AND = {
 				NOT = {
 					has_completed_focus = BEL_monafash_monarchist_fascist_alliance
+					has_completed_focus = BEL_fascism_fascist_ascendance
 				}
 				has_completed_focus = BEL_acceptance_supremacy
 				has_completed_focus = BEL_political_crack_down
@@ -6058,6 +6059,10 @@
 		
 		allow_branch = {
 			AND = {
+				NOT = {
+					has_completed_focus = BEL_monarchism_the_monarch_alone
+					has_completed_focus = BEL_fascism_fascist_ascendance
+				}
 				has_completed_focus = BEL_acceptance_supremacy
 				has_completed_focus = BEL_political_crack_down
 			}
@@ -18001,10 +18006,14 @@
 		allow_branch = {
 			OR = {
 				AND = {
+					NOT = {
+						has_completed_focus = BEL_monafash_monarchist_fascist_alliance
+						has_completed_focus = BEL_monarchism_the_monarch_alone
+					}
 					has_completed_focus = BEL_acceptance_supremacy
 					has_completed_focus = BEL_political_crack_down
 				}
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 
@@ -18023,6 +18032,7 @@
 				popularity = 0.05
 			}
 			add_stability = -0.05
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -18037,6 +18047,10 @@
 		y = 3
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+		
+		allow_branch = {
+			has_completed_focus = BEL_fascism_fascist_ascendance
+		}
 
 		prerequisite = {
 			focus = BEL_fascism_fascist_ascendance
@@ -18058,6 +18072,10 @@
 		y = 3
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA Fascism }
+		
+		allow_branch = {
+			has_completed_focus = BEL_fascism_fascist_ascendance
+		}
 
 		prerequisite = {
 			focus = BEL_fascism_fascist_ascendance
@@ -18372,7 +18390,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_establish_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		
@@ -18981,7 +18999,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_establish_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		
@@ -19443,7 +19461,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_establish_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 
@@ -21162,6 +21180,10 @@
 		prerequisite = {
 			focus = BEL_fascism_war_finalize_kriegsamt
 		}
+
+		allow_branch = {
+			has_completed_focus = BEL_fascism_war_finalize_kriegsamt
+		}
 		
 		completion_reward = {
 			add_political_power = 100
@@ -22140,9 +22162,9 @@
 		}
 	}
 
-	# Purchase Material
+	# Steal German Material
 	focus = {
-		id = BEL_fascism_expansionism_germany_purchase_material
+		id = BEL_fascism_expansionism_germany_steal_german_material
 		icon = tbd
 
 		cost = 5
@@ -22153,15 +22175,31 @@
 		prerequisite = {
 			focus = BEL_fascism_expansionism_germany_prepare_the_march_east
 		}
+
+		available = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				intel_level_over = {
+					target = BEL
+					army_intel > 0.09
+				}
+			}
+		}
 		
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_0
-				amount = 750
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment_0
-				amount = 250
+			GER = {
+				send_equipment = {
+					amount = 750
+					equipment = infantry_equipment_0
+					target = BEL
+				}
+				send_equipment = {
+					amount = 250
+					equipment = motorized_equipment_0
+					target = BEL
+				}
 			}
 		}
 	}
