@@ -8041,8 +8041,8 @@ country_event = {
 		custom_effect_tooltip = tomboy.97.a_tt # Will give claims on Ruhr Western Germany
 	}
 	
-	option = { # Claims on none of France
-		name = tomboy.97.c
+	option = { # Claims on none of Germany
+		name = tomboy.97.b
 		
 		ai_chance = {
 			base = 10
@@ -8052,7 +8052,7 @@ country_event = {
 			set_country_flag = BEL_liege_conference_germany_none
 			country_event = tomboy.98
 		}
-		custom_effect_tooltip = tomboy.97.c_tt # Will gain an opinion modifier on conclusion
+		custom_effect_tooltip = tomboy.97.b_tt # Will gain an opinion modifier on conclusion
 	}
 }
 
@@ -8208,6 +8208,33 @@ country_event = {
 					id = BEL
 					value = 25
 				}
+				add_ai_strategy = {
+					type = protect
+					id = BEL
+					value = 75
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_decrease
+				}
+				add_ai_strategy = {
+					type = antagonize
+					id = BEL
+					value = 75
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_decrease
+				}
+				add_ai_strategy = {
+					type = antagonize
+					id = BEL
+					value = 75
+				}
 			}
 		}
 		else = {
@@ -8237,5 +8264,91 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+# GER | Sabotage German Railways | Railroads sabotaged!
+country_event = {
+	id = tomboy.99
+	title = tomboy.99.t
+	desc = tomboy.99.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.99"
+	}
+
+	option = { # It must have been these damn Tomboys!!
+		name = tomboy.99.a
+
+		trigger = {
+			intel_level_over = {
+				target = FROM
+				army_intel = 0.5
+			}
+		}
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		custom_effect_tooltip = tomboy.99.a_tt
+		add_opinion_modifier = {
+			target = BEL
+			modifier = large_decrease
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = BEL
+			value = 25
+		}
+	}
+
+	option = { # What?!
+		name = tomboy.99.b
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		custom_effect_tooltip = tomboy.99.a_tt
+	}
+}
+
+# GER | Sabotage the German War Machine | Arms Factories sabtoaged! ||| THE HUNDREDTH EVENT!!!
+country_event = {
+	id = tomboy.100
+	title = tomboy.100.t
+	desc = tomboy.100.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.100"
+	}
+
+	option = { # These damned Tomboys!!
+		name = tomboy.100.a
+
+		trigger = {
+			intel_level_over = {
+				target = FROM
+				army_intel = 0.5
+			}
+		}
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		custom_effect_tooltip = tomboy.100.a_tt
+		add_opinion_modifier = {
+			target = BEL
+			modifier = large_decrease
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = BEL
+			value = 25
+		}
+	}
+
+	option = { # What?!
+		name = tomboy.100.b
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		custom_effect_tooltip = tomboy.100.a_tt
 	}
 }

@@ -680,6 +680,58 @@
   tomboy-93-a_scripted_loc_enemy: "WHAT?!"
   tomboy-93-a_scripted_loc_neutral: "Worrying."
 
+  tomboy.94.t: "The Liegé Convention"
+  tomboy.94.d: "The Liegé Convention is underway, and our diplomats and some minor representatives are attending. Despite this being about our planned expansion, or lack thereof, the large nations of Europe have decided to be in attendance through these minor representatives, likely assuming that because of our nation's size, we're going to just declare our neutrality. We'll see how they see us after this, let the convention begin."
+  tomboy.94.a: "Mistress Speaker..."
+
+  tomboy.95.t: "The Liegé Convention - Britain"
+  tomboy.95.d: "We are not deliberating our claims on the [ENG.GetAdjective] Isles, which have a large Tomboy population. However, considering the power difference, some in our nation are advocating to claim only highly tomboyish areas, and let Britain retain the rest of the islands, including Scotland and Wales. Others are advocating to completely abandon the idea of challenging Britain on the [ENG.GetAdjective] Isles, citing their history of completely exterminating entire people groups. Still others use this as a reason to challenge them, to keep their barbarism from continuing forevermore. The [ENG.GetAdjective] representatives appear prideful still, seeming confident that the might of their Navy is still unmatched."
+  tomboy.95.a: "Compromise with the East"
+  tomboy.95.a_tt: "At the end of the Convention, we will gain claims on §Y[127.GetName]§!, §Y[126.GetName]§!, §Y[125.GetName]§!, §Y[129.GetName]§!, and §Y[130.GetName]§!!"
+  tomboy.95.b: "All or nothing!"
+  tomboy.95.b_tt: "At the end of the Convention, we will gain claims on §Yevery British core state§!!"
+  tomboy.95.c: "Peace, not war"
+  tomboy.95.c_tt: "At the end of the Convention, we will gain a large increase of opinion with [ENG.GetFlag][ENG.GetNameDef]."
+
+  tomboy.96.t: "The Liegé Convention - France"
+  tomboy.96.d: "The [FRA.GetAdjective] representatives have called upon our discussion about northern France, seemingly disgusted with our ideas of splitting up their country, although our translators have some issues deciphering their \"language\", having confused their slang with a language spoken by the indigenous inhabitants of some [SPA.GetAdjective] island colony. The question remains of what we claim of the French nation. A large portion of our people demand the entire North, which is inhabited by a very large diaspora of Tomboys, though this has been countered by concerns of war, and some call for peace with the French, citing their bloodlust towards us."
+  tomboy.96.a: "Compromise the two ideas"
+  tomboy.96.a_tt: "At the end of the Convention, we will gain claims on §Y[29.GetName]§!, §Y[785.GetName]§!, §Y[18.GetName]§!, §Y[28.GetName]§!, §Y[17.GetName]§!, §Y[16.GetName]§!, and §Y[15.GetName]§!!"
+  tomboy.96.b: "Liberté pour Garçon Manqués"
+  tomboy.96.b_tt: "At the end of the Convention, we will gain claims on §Y[29.GetName]§!, §Y[785.GetName]§!, §Y[18.GetName]§!, §Y[28.GetName]§!, §Y[17.GetName]§!, §Y[16.GetName]§!, §Y[15.GetName]§!, §Y[27.GetName]§!, §Y[24.GetName]§!, §Y[30.GetName]§!, and §Y[14.GetName]§!!"
+  tomboy.96.c: "No war with the French"
+  tomboy.96.c_tt: "At the end of the Convention, we will gain a large increase of opinion with [FRA.GetFlag][FRA.GetNameDef]."
+
+  tomboy.97.t: "The Liegé Convention - Germany"
+  tomboy.97.d: "The final stage of the Convention has brought us face-to-face with the representatives of [GER.GetNameDef]. Most in our delegation believe that this is the moment of truth, where we determine our fate with the [GER.GetAdjective]s. Our populace is very adamant about claiming the Ruhr, due to its incredibly large industrial output and Tomboy population, which seem to be at least partly correlated. The [GER.GetAdjective]s, under the leadership of [GER.GetLeader.GetFullName], are unusually friendly towards us, and they seemed to be aiming for a friendship between our nations rather than a conflict. The [ENG.GetAdjective] and [FRA.GetAdjective] diplomats heavily suggest we try to take the most we can from the [GER.GetAdjective]s, wanting us to ruin them permanently and decisively, and are actively trying to interrupt the [GER.GetAdjective] diplomacy effort."
+  tomboy.97.a: "We'll claim the Ruhr!"
+  tomboy.97.a_tt: "At the end of the Convention, we will gain claims on §Y[29.GetName]§!, §Y[42.GetName]§!, §Y[51.GetName]§!, §Y[55.GetName]§!, §Y[57.GetName]§!, and §Y[56.GetName]§!!"
+  tomboy.97.b: "The [GER.GetAdjective]s are our friends"
+  tomboy.97.b_tt: "At the end of the Convention, we will gain a large increase of opinion with [GER.GetFlag][GER.GetNameDef], however, this may displease the [FRA.GetFlag][FRA.GetAdjective] and [ENG.GetFlag][ENG.GetAdjective]."
+
+  tomboy.98.t: "The Liegé Convention - Conclusion"
+  tomboy.98.d: "We have made our choices and our intentions regarding European territory known. We have acquired information about the other states' opinions on ourselves and each other, and this will give us an opportunity to understand the possibilities that lay ahead of us in this vast continent, filled with enemies, friends and foes alike. The foreign diplomats have gone home, and the declarations of what we have planned are going to be heard around the world soon."
+  tomboy.98.a: "Our future is imminent"
+
+  tomboy.99.t: "Railways damaged!"
+  tomboy.99.d: "Several railway service stations have reported that parts of the network have been significantly damaged. We don't know whether it's human-caused or natural, and we can't be sure about anything until we get a thorough investigation of the scene, but it is undeniable that this will be a major inconvenience for a long while. It is uncertain how much time will be needed to fix everything, but it won't be good for the transportation of goods and passengers."
+  tomboy.99.a: "It must have been the [BEL.GetAdjective]s!"
+  tomboy.99.a_tt: "§Y5 railways§! have been disasterously damaged!"
+  tomboy.99.b: "What the hell?!"
+
+  tomboy.100.t: "Military Factories damaged!"
+  tomboy.100.d: "After receiving an unusual amount of reports of damaged or outright destroyed factories in multiple locations across the nation, we have concluded that someone is carrying out a campaign of sabotage against our nation. The police have begun an investigation immediately, but this is just the beginning. We need to be alert for more acts of sabotage, and prepare accordingly, lest our infrastructure be damaged further by these acts of terrorism."
+  tomboy.100.a: "These damned [BEL.GetAdjective]s!"
+  tomboy.100.a_tt: "§Y5 military factories§! have been disasterously damaged!"
+  tomboy.100.b: "Who did this?!"
+
+
+
+
+
+
+
+
   # Generics
 
   BEL_generic_event_tt_will_happen: "Will happen:"
