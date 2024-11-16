@@ -22020,6 +22020,8 @@
 		id = BEL_fascism_expansionism_germany_prepare_the_march_east
 		icon = tbd
 
+		dynamic = yes
+
 		cost = 5
 		
 		x = 14
@@ -22048,6 +22050,8 @@
 	focus = {
 		id = BEL_fascism_expansionism_germany_fortify_the_border
 		icon = tbd
+
+		dynamic = yes
 
 		cost = 5
 		
@@ -22079,10 +22083,12 @@
 		}
 	}
 
-	# Steal German Material
+	# Steal German Material // Provide Germans with Material
 	focus = {
 		id = BEL_fascism_expansionism_germany_steal_german_material
 		icon = tbd
+
+		dynamic = yes
 
 		cost = 5
 		
@@ -22097,32 +22103,65 @@
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
+					has_country_flag = BEL_liege_conference_germany_small
 				}
 				intel_level_over = {
 					target = BEL
 					army_intel > 0.09
 				}
 			}
+			else = {
+				has_equipment = {
+					infantry_equipment > 999
+					motorized_equipment > 249
+				}
+			}
 		}
 		
 		completion_reward = {
-			GER = {
+			if = {
+				limit = {
+					has_country_flag = BEL_liege_conference_germany_small
+				}
+				GER = {
+					send_equipment = {
+						amount = 750
+						equipment = infantry_equipment_0
+						target = BEL
+					}
+					send_equipment = {
+						amount = 250
+						equipment = motorized_equipment_0
+						target = BEL
+					}
+					add_opinion_modifier = {
+						target = BEL
+						modifier = BEL_medium_suspicion
+					}
+					add_ai_strategy = {
+						type = contain
+						id = BEL
+						value = 25
+					}
+				}
+			}
+			else = {
 				send_equipment = {
-					amount = 750
-					equipment = infantry_equipment_0
-					target = BEL
+					amount = 1000
+					equipment = infantry_equipment
+					target = GER
 				}
 				send_equipment = {
 					amount = 250
-					equipment = motorized_equipment_0
-					target = BEL
+					equipment = motorized_equipment
+					target = GER
 				}
 				add_opinion_modifier = {
 					target = BEL
-					modifier = BEL_medium_suspicion
+					modifier = medium_increase
 				}
-				add_ai_strategy = {
-					type = contain
+				add_ai_strategy = { # The Führer has decided...
+					type = protect  # You are fren :D
 					id = BEL
 					value = 25
 				}
@@ -22130,10 +22169,12 @@
 		}
 	}
 
-	# Sabotage German Railways
+	# Sabotage German Railways // Improve German Railways
 	focus = {
 		id = BEL_fascism_expansionism_germany_sabotage_german_railways
 		icon = tbd
+
+		dynamic = yes
 
 		cost = 5
 		
@@ -22145,66 +22186,103 @@
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = BEL_fascism_expansionism_germany_sabotage_german_railways_reward_tt
-			hidden_effect = {
-				GER = {
-					random_state = {
-						limit = {
-							rail_way > 0
+			if = {
+				limit = {
+					has_country_flag = BEL_liege_conference_germany_small
+				}
+				custom_effect_tooltip = BEL_fascism_expansionism_germany_sabotage_german_railways_reward_tt
+				hidden_effect = {
+					GER = {
+						random_state = {
+							limit = {
+								rail_way > 0
+							}
+							damage_building = {
+								type = rail_way
+								damage = 3
+							}
 						}
-						damage_building = {
-							type = rail_way
-							damage = 3
+						random_state = {
+							limit = {
+								rail_way > 0
+							}
+							damage_building = {
+								type = rail_way
+								damage = 3
+							}
 						}
-					}
-					random_state = {
-						limit = {
-							rail_way > 0
+						random_state = {
+							limit = {
+								rail_way > 0
+							}
+							damage_building = {
+								type = rail_way
+								damage = 3
+							}
 						}
-						damage_building = {
-							type = rail_way
-							damage = 3
+						random_state = {
+							limit = {
+								rail_way > 0
+							}
+							damage_building = {
+								type = rail_way
+								damage = 3
+							}
 						}
-					}
-					random_state = {
-						limit = {
-							rail_way > 0
-						}
-						damage_building = {
-							type = rail_way
-							damage = 3
-						}
-					}
-					random_state = {
-						limit = {
-							rail_way > 0
-						}
-						damage_building = {
-							type = rail_way
-							damage = 3
-						}
-					}
-					random_state = {
-						limit = {
-							rail_way > 0
-						}
-						damage_building = {
-							type = rail_way
-							damage = 3
+						random_state = {
+							limit = {
+								rail_way > 0
+							}
+							damage_building = {
+								type = rail_way
+								damage = 3
+							}
 						}
 					}
 				}
+				GER = {
+					country_event = tomboy.99
+				}
 			}
-			GER = {
-				country_event = tomboy.99
+			else = {
+				build_railway = {
+					level = 3
+					start_province = 6521 # Berlin
+					target_province = 495 # Dortmund
+				}
+				build_railway = {
+					level = 3
+					start_province = 495 # Dortmund
+					target_province = 6469 # Essen
+				}
+				build_railway = {
+					level = 3
+					start_province = 6469 # Essen
+					target_province = 587 # Köln / Cologne
+				}
+				build_railway = {
+					level = 3
+					start_province = 3547 # From Germany
+					target_province = 3488 # To Belgium
+				}
+				GER = {
+					country_event = tomboy.101
+					add_ai_strategy = {
+						type = protect
+						id = BEL
+						value = 50
+					}
+				}
 			}
 		}
 	}
 
-	# Construct railways to front
+	# Construct railways to front // Connect our Railways to Germany
 	focus = {
 		id = BEL_fascism_expansionism_germany_contruct_supply_network
 		icon = tbd
+
+		dynamic = yes
 
 		cost = 2
 
@@ -22258,10 +22336,12 @@
 		}
 	}
 
-	# Sabotage the German War Machine
+	# Sabotage the German War Machine // Help the German Economy
 	focus = {
 		id = BEL_fascism_expansionism_germany_sabotage_german_war_machine
 		icon = tbd
+
+		dynamic = yes
 
 		cost = 2
 		
@@ -22273,73 +22353,163 @@
 		}
 		
 		completion_reward = {
-			GER = {
-				random_owned_controlled_state = {
-					limit = {
-						check_variable = {
-							var = var:building_level@arms_factory
-							value > 0
+			if = {
+				limit = {
+					has_country_flag = BEL_liege_conference_germany_small
+				}
+				GER = {
+					random_owned_controlled_state = {
+						limit = {
+							check_variable = {
+								var = var:building_level@arms_factory
+								value > 0
+							}
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 7.5
 						}
 					}
-					damage_building = {
-						type = arms_factory
-						damage = 7.5
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						check_variable = {
-							var = var:building_level@arms_factory
-							value > 0
+					random_owned_controlled_state = {
+						limit = {
+							check_variable = {
+								var = var:building_level@arms_factory
+								value > 0
+							}
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 7.5
 						}
 					}
-					damage_building = {
-						type = arms_factory
-						damage = 7.5
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						check_variable = {
-							var = var:building_level@arms_factory
-							value > 0
+					random_owned_controlled_state = {
+						limit = {
+							check_variable = {
+								var = var:building_level@arms_factory
+								value > 0
+							}
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 7.5
 						}
 					}
-					damage_building = {
-						type = arms_factory
-						damage = 7.5
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						check_variable = {
-							var = var:building_level@arms_factory
-							value > 0
+					random_owned_controlled_state = {
+						limit = {
+							check_variable = {
+								var = var:building_level@arms_factory
+								value > 0
+							}
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 7.5
 						}
 					}
-					damage_building = {
-						type = arms_factory
-						damage = 7.5
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						check_variable = {
-							var = var:building_level@arms_factory
-							value > 0
+					random_owned_controlled_state = {
+						limit = {
+							check_variable = {
+								var = var:building_level@arms_factory
+								value > 0
+							}
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 7.5
 						}
 					}
-					damage_building = {
-						type = arms_factory
-						damage = 7.5
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = BEL
+						value = 100
 					}
+					country_event = tomboy.99
 				}
-				add_ai_strategy = {
-					type = prepare_for_war
-					id = BEL
-					value = 100
+			}
+			else = {
+				GER = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					}
+					add_ai_strategy = {
+						type = protect
+						id = BEL
+						value = 50
+					}
+					country_event = tomboy.102
 				}
-				country_event = tomboy.99
+			}
+		}
+	}
+
+	# Into Germany!
+	focus = {
+		id = BEL_fascism_expansionism_germany_invade
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 26
+
+		prerequisite = {
+			focus = BEL_fascism_expansionism_germany_sabotage_german_railways
+			focus = BEL_fascism_expansionism_germany_contruct_supply_network
+			focus = BEL_fascism_expansionism_germany_sabotage_german_war_machine
+		}
+
+		will_lead_to_war_with = GER
+		
+		completion_reward = {
+			declare_war_on = {
+				target = GER
+				type = take_claimed_state
+				generator = { 42 51 55 57 56 } # German States!
 			}
 		}
 	}

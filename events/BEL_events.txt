@@ -8352,3 +8352,66 @@ country_event = {
 		custom_effect_tooltip = tomboy.100.a_tt
 	}
 }
+
+# GER | Improve German Railways | Tomboys provide rail support!
+country_event = {
+	id = tomboy.101
+	title = tomboy.101.t
+	desc = tomboy.101.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.101"
+	}
+
+	option = { # Thanks you...?
+		name = tomboy.101.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		effect_tooltip = {
+			BEL = {
+				build_railway = {
+					level = 3
+					start_province = 6521 # Berlin
+					target_province = 495 # Dortmund
+				}
+				build_railway = {
+					level = 3
+					start_province = 495 # Dortmund
+					target_province = 6469 # Essen
+				}
+				build_railway = {
+					level = 3
+					start_province = 6469 # Essen
+					target_province = 587 # Köln / Cologne
+				}
+				build_railway = {
+					level = 3
+					start_province = 3547 # From Germany
+					target_province = 3488 # To Belgium
+				}
+			}
+		}
+	}
+}
+
+# GER | Help the German Economy | Tomboys build factories!
+country_event = {
+	id = tomboy.102
+	title = tomboy.102.t
+	desc = tomboy.102.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.102"
+	}
+
+	option = { # Thank you!
+		name = tomboy.102.a
+
+		custom_effect_tooltip = BEL_generic_event_tt_has_happened
+		custom_effect_tooltip = tomboy.102.a_tt
+	}
+}

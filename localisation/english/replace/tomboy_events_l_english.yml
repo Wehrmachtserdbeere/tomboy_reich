@@ -725,6 +725,15 @@
   tomboy.100.a_tt: "§Y5 military factories§! have been disasterously damaged!"
   tomboy.100.b: "Who did this?!"
 
+  tomboy.101.t: "Tomboys construct railways!"
+  tomboy.101.d: "Diplomats from [BEL.GetNameDef] have reached out and stated that they were there to oversee the construction of railroads leading from Berlin all the way to Köln. When pressed about why, they replied that they wished to assist in improving the quality of life in Germany, and that they will take care of the construction, labor, and everything related."
+  tomboy.101.a: "Thank you...?"
+
+  tomboy.102.t: "Tomboys build factories!"
+  tomboy.102.d: "Tomboy builders have recently been spotted in several cities throughout our country, and their activities were revealed today in an announcement. According to the announcement, they have taken initiative in building factories for our people. These factories are aimed at making the German citizenry wealthier, better equipped, and give them an overall better life. They likely didn't think we could use these factories for war too..."
+  tomboy.102.a: "Thank you!"
+  tomboy.102.a_tt: "§YLevel 2 Civilian Factories§! have been constructed in §Y4 random states§! of ours."
+
 
 
 
