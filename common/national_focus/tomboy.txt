@@ -22487,7 +22487,7 @@
 		}
 	}
 
-	# Into Germany!
+	# Into Germany! // Join Germany!
 	focus = {
 		id = BEL_fascism_expansionism_germany_invade
 		icon = tbd
@@ -22506,10 +22506,78 @@
 		will_lead_to_war_with = GER
 		
 		completion_reward = {
-			declare_war_on = {
-				target = GER
-				type = take_claimed_state
-				generator = { 42 51 55 57 56 } # German States!
+			if = {
+				limit = {
+					has_country_flag = BEL_liege_conference_germany_small
+				}
+				declare_war_on = {
+					target = GER
+					type = take_claimed_state
+					generator = { 42 51 55 57 56 } # German States!
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						GER = {
+							is_in_faction = yes
+							is_faction_leader = yes
+						}
+					}
+					GER = {
+						add_ai_strategy = {
+							type = alliance
+							id = BEL
+							value = 100
+						}
+						country_event = tomboy_generic.1
+					}
+				}
+				else_if = {
+					limit = {
+						GER = {
+							is_in_faction = yes
+							is_faction_leader = no
+						}
+					}
+					every_country = {
+						limit = {
+							is_in_faction_with = GER
+							is_faction_leader = yes
+						}
+						country_event = tomboy_generic.1
+					}
+				}
+				else_if = {
+					limit = {
+						GER = {
+							is_in_faction = no
+						}
+						BEL = {
+							is_in_faction = yes
+							is_faction_leader = yes
+						}
+					}
+					GER = {
+						add_ai_strategy = {
+							type = alliance
+							id = BEL
+							value = 100
+						}
+						country_event = tomboy_generic.10
+					}
+				}
+				else = {
+					create_faction = BEL_fascism_expansionism_germany_invade_faction_name
+					GER = {
+						add_ai_strategy = {
+							type = alliance
+							id = BEL
+							value = 100
+						}
+						country_event = tomboy_generic.10
+					}
+				}
 			}
 		}
 	}

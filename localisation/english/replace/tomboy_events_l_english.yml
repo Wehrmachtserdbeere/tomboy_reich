@@ -803,3 +803,12 @@
   tomboy_generic.9.t: "[FROM.GetName] refuses!"
   tomboy_generic.9.d: "Despite our direct words and the implicit threat, the [FROM.GetAdjective] have refused to join us. They have gone so far as to say they'll resist to the bitter end, and that they'll fight to the last man, and then some."
   tomboy_generic.9.a: "If they want war, we'll give them war!"
+
+  tomboy_generic.10.t: "[FROM.GetName] invites us to the [FROM.GetFactionName]"
+  tomboy_generic.10.d: "Today, we have received an invitation from [FROM.GetNameDef], to join their faction, the [FROM.GetFactionName]. We cannot deny the benefits this would bring us, but we also don't know their real intentions, so joining may lead to an outcome that is not in our interest."
+  tomboy_generic.10.a: "We'll join."
+  tomboy_generic.10.b: "We refuse."
+
+  tomboy_generic.11.t: "[FROM.GetName] refuses!"
+  tomboy_generic.11.d: "Despite our kind offer, [FROM.GetNameDef] refused to join the [ROOT.GetFactionName]. They will have to fend for themselves, it seems."
+  tomboy_generic.11.a: "Sad!"

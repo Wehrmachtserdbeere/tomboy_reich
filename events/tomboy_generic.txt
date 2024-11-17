@@ -29,6 +29,9 @@ country_event = {
 		ai_chance = {
 			base = 20
 			modifier = {
+				add = var:ai_strategy_alliance@ROOT
+			}
+			modifier = {
 				add = 20
 				has_government = FROM
 			}
@@ -730,6 +733,164 @@ country_event = {
 		add_opinion_modifier = {
 			target = FROM
 			modifier = large_decrease
+		}
+	}
+}
+
+# FROM invites us to their faction!
+country_event = {
+	id = tomboy_generic.10
+	title = tomboy_generic.10.t
+	desc = tomboy_generic.10.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_generic.10"
+	}
+
+	option = { # We will join
+		name = tomboy_generic.10.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = var:ai_strategy_alliance@ROOT
+			}
+			modifier = {
+				add = 20
+				has_government = FROM
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -24
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -74
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+					target = FROM
+					value < -95
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 49
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 74
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 95
+				}
+			}
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 5
+				num_of_nukes < from.num_of_nukes
+			}
+			modifier = {
+				add = -25
+				FROM = {
+					has_war = yes
+					NOT = {
+						has_war_together_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				FROM = {
+					has_war_together_with = ROOT
+				}
+			}
+			modifier = {
+				add = -50
+				any_allied_country = {
+					FROM = {
+						has_war_with = PREV
+					}
+				}
+			}
+		}
+		
+		FROM = {
+			add_to_faction = ROOT
+		}
+	}
+
+	option = { # We refuse
+		name = tomboy_generic.10.b
+
+		ai_chance = {
+			base = 40
+		}
+
+		country_event = tomboy_generic.11
+	}
+}
+
+# FROM refused to join our faction.
+country_event = {
+	id = tomboy_generic.11
+	title = tomboy_generic.11.t
+	desc = tomboy_generic.11.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Ran event: tomboy_generic.11"
+	}
+
+	option = { # Shame...
+		name = tomboy_generic.11.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = refused_alliance
 		}
 	}
 }
