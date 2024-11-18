@@ -1028,8 +1028,8 @@
   BEL_fascism_research_nuclear: "Focus on Experimental Bombs"
   BEL_fascism_research_nuclear_desc: "Sometimes, the normal bomb just won't cut through enemy defenses. At other times, dropping too many bombs just wouldn't be enough to level enemy strong points and command centers. With such situations at hand, an experimental super bomb should do the trick. All it takes is one drop and all our worries about a problem disappear with an almighty boom."
 
-  BEL_fascism_research_improve_radar_technology: "Improve Radar Territory"
-  BEL_fascism_research_improve_radar_technology_desc: "A better radar coverage is necessary to properly anticipate hostile movements on air. It gives us an advance notice that we could prepare against before enemy units even reach our territory, and appears to be vital to the development of the experimental bombs we're investing in. A wide array of radars could also help us spot enemies easier once those experimental bombs are dropped in foreign soil, ensuring maximum damage and disruption before moving in the bomber force for a second strike."
+  BEL_fascism_research_improve_radar_technology: "Improve Radar Technology"
+  BEL_fascism_research_improve_radar_technology_desc: "A better radar coverage is necessary to anticipate hostile movements on air. It gives us advance notice that we could prepare against before enemy units even reach the border, and seems to be vital to the development of the experimental bombs we're investing in. A wide array of radars also helps us spot enemies easier once those experimental bombs are dropped, ensuring maximum damage."
 
   BEL_fascism_research_invest_in_bombers: "Invest in Bombers"
   BEL_fascism_research_invest_in_bombers_desc: "Although bombers are the most expensive asset we have right now, they remain to be our trump card in terms of both defense and offense. Adding to that, we have to realize the potential of having better bombers when used alongside experimental bombs. A new bomber project can help us with achieving better results for both aerial engagements and bombing campaigns."
@@ -1046,6 +1046,9 @@
   BEL_fascism_research_construct_nuclear_reactors: "Construct Nuclear Reactors"
   BEL_fascism_research_construct_nuclear_reactors_desc: "Nuclear energy is the future, and will probably replace all the aging power plants we have today. The only way to get a good understanding of its capabilities and long-term usage is through testing it in the real world. Constructing nuclear reactors will enable us to fully grasp how beneficial it is to apply this technology into the national grid, and later into more advanced projects that require this amount of energy output."
 
+  BEL_fascism_research_build_the_bomb: "Build the Bomb"
+  BEL_fascism_research_build_the_bomb_desc: "Now that we've got everything prepared for building the nukes, we have to commence production as early as we could to remain relevant in the international community. Being able to deliver this devastating blow to our foes grants us greater bargaining power to impose what we want and take whatever we deem necessary. Nobody can stop us now."
+
   BEL_fascism_research_become_a_nuclear_power: "Become a Nuclear Power"
   BEL_fascism_research_become_a_nuclear_power_desc: "Having nuclear reactors alone doesn't make a country a nuclear power, nor does possessing nuclear energy. What matters is whether a country can produce a nuclear weapon from all that energy generated and used. Possessing such weapons brings our status up a notch and gives us an upper hand over neighboring countries, whether we're open about it or not."
   BEL_fascism_research_become_a_nuclear_power_tt: "The National Spirit provides a §Ymassive§! bonus to nuclear productions!"
@@ -1057,22 +1060,51 @@
   BEL_fascism_modernist_designs_desc: "Our divisions and designs have gone stale from being old and outdated. Upgrading our tanks with newer, stronger material, our planes to make them more agile and deadly, and improving our division designs and tactics will enable us to keep pace with other European nations, if not push ahead of them in effectiveness."
 
   BEL_fascism_modernist_strategists: "Appoint Experienced Strategists"
-  BEL_fascism_modernist_strategists_desc: "Theorizing and simulating various strategies without the pressure of having to be responsible for the deaths of soldiers is a good thing, but actual lived experience is something that remains to be unmatched in value. That's why bringing in experienced strategists from the retired veteran pool can significantly help with developing sound military doctrines for different kinds of scenarios and environments, both ideal and worse-case."
+  BEL_fascism_modernist_strategists_desc: "Theorizing and simulating various strategies without the pressure of having to be responsible for the deaths of soldiers is a good thing, but actual lived experience is something that remains to be unmatched in value. That's why bringing in experienced strategists from the retired veteran pool can significantly help with developing sound military doctrines for different kinds of scenarios and environments, even in worse-case."
 
   BEL_fascism_modernist_tacticians: "Appoint Experienced Tacticians"
-  BEL_fascism_modernist_tacticians_desc: "In the heat of battle, no amount of planning would ensure your victory. The necessity of quick thinking and adaptability becomes the prime concern for tacticians in the ground, and none are better than those who have proven themselves already from past battles and conflicts. Their expertise can teach our troops how to overcome the enemy and reduce friendly casualties through applying what worked back then to present training standards and practices."
+  BEL_fascism_modernist_tacticians_desc: "In the heat of battle, no amount of planning ensures victory. The necessity of quick thinking and adaptability becomes the prime concern for tacticians on the ground, and none are better than those who have proven themselves already from past battles. Their expertise can teach us how to overcome the enemy and reduce our casualties through applying what worked back then to present training standards."
 
   BEL_fascism_modernist_revise_army_designs: "Revise our Army Designs"
   BEL_fascism_modernist_revise_army_designs_desc: "No matter how strong a single soldier is, he won't survive long on his own and that's why we've got divisions: to effectively utilize the strength of many working together under an established hierarchy. As time progresses, we continue to learn what works and what doesn't. Revising our army division designs every once in a while can bring about improved efficiency in dealing with different types of operations."
 
   BEL_fascism_modernist_revise_navy_designs: "Revise our Naval Designs"
-  BEL_fascism_modernist_revise_navy_designs_desc: "The navy plays a crucial part in modern warfare because we live in a world full of waters to traverse upon, and whoever holds supremacy above them will have a better chance of winning a war than whoever lags behind. Making adjustments to the current composition and type of ships we deploy in our fleet gives us an edge against those who still haven't caught up in modernizing their fleets for the demands of naval engagements in the current time."
+  BEL_fascism_modernist_revise_navy_designs_desc: "The navy plays a crucial part in modern warfare because we live in a world full of waters to traverse upon, and whoever holds supremacy above them will win over whoever lags behind. Making adjustments to the composition and type of ships we deploy gives us an edge against those who haven't caught up in modernizing their fleets for the demands of engagements in the current time."
 
   BEL_fascism_modernist_revise_air_designs: "Revise our Air Design"
-  BEL_fascism_modernist_revise_air_designs_desc: "Air superiority is what enables us to hold air raids against the enemies. In order for it to happen, we must always be a step ahead of those we face off in the skies. Redesigning our planes from frame to equipment based on previous experiences in testing them out will surely improve their performance for upcoming encounters. Knowing which plane works best for a certain scenario can also determine whether we win the air or lose it in the first stage of any engagement in the battlefield."
+  BEL_fascism_modernist_revise_air_designs_desc: "Air superiority is what enables us to hold air raids against the enemies. In order for it to happen, we must be a step ahead of those we face off in the skies. Redesigning our planes from frame to equipment based on previous experiences in testing them out will surely improve their performance for upcoming encounters. Knowing which plane works best for a any scenario can also determine whether we win or lose."
 
   BEL_fascism_modernist_remain_the_most_adaptable: "Remain the Most Adaptable"
-  BEL_fascism_modernist_remain_the_most_adaptable_desc: "We, the Tomboys, have always been the underdogs in almost every aspect. However, our adaptive nature allowed us to cope up with changes and adjust accordingly better than anyone else. Because of this, we managed to survive despite oppression and discrimination. We cannot allow such advantage to be forgotten over time. We will revive those aspects that led us to become what we are now and train our women to think for themselves and find creative solutions for every obstacle they face in combat."
+  BEL_fascism_modernist_remain_the_most_adaptable_desc: "We, the Tomboys, have always been the underdogs in almost every aspect. However, our adaptive nature allowed us to cope up with changes and adjust accordingly better than anyone else. Because of this, we managed to survive despite oppression and discrimination. We cannot allow such advantage to be forgotten over time. We will revive those aspects that led us to become what we are now!"
+
+
+  BEL_fascism_war_our_ambitions: "Our Ambitions"
+  BEL_fascism_war_our_ambitions_desc: "Isolationism or Expansionism, we have to decide on one or the others since we don't have enough resources and manpower to pursue both paths at the same time. Focusing inwardly is important for self-sustainability, whereas focusing outwardly may give us access to valuable territories and strategic positions. We must decide upon these as soon as possible."
+
+
+  BEL_fascism_isolationism: "Isolationism"
+  BEL_fascism_isolationism_desc: "We chose Isolationism over Expansionism. We realized that going on the offensive is a risk we cannot afford to take, and focusing on self-sustainability, as difficult as it might be given our current standing, is necessary for lasting the tests of time. With Isolationism being chosen over Expansionism, it will take effect in all branches of our country, people, and government."
+
+  BEL_fascism_isolationism_close_borders: "Close the Borders"
+  BEL_fascism_isolationism_close_borders_desc: "Going full Isolationism requires closing our borders and preventing the emigration of brainwashed Tomboys, and immigration of subversive outsiders who will poison our way of life. We must do so in order to fully take advantage of all our people's talents and abilities without other countries stealing them through propaganda, and to protect ourselves from ideological infiltration."
+
+  BEL_fascism_isolationism_radical_agricultural_reforms: "Radical Agricultural Reforms"
+  BEL_fascism_isolationism_radical_agricultural_reforms_desc: "Since our isolation cut us off from imports, we have had a lot of trouble trying to produce our own food, especially because of how much of our agriculture was reliant on outside input. That ends today - we'll reform our agricultural industry entirely in order to achieve total self-reliance and be rid of all famines caused by sanctions or isolation for good."
+
+  BEL_fascism_isolationism_strengthen_the_border: "Secure the Border"
+  BEL_fascism_isolationism_strengthen_the_border_desc: "The borders have been closed, and so we need to start securing it with military hardware, walls, traps, landmines, anything that could stop the enemy from invading us whenever that may come. Doing so allows us to allocate less troops in securing the border, enabling us to have more reserves just in case war breaks out sooner than expected, and put an end to illegal immigration once and for all, and all who try will die."
+
+  BEL_fascism_isolationism_hail_mary_the_economy: "Hail Mary the Economy"
+  BEL_fascism_isolationism_hail_mary_the_economy_desc: "Our economy hasn't been doing so well due to the aftermath of the Great Depression and years of turmoil, and our isolationism has only worsened it. In order to revive the economy, we will need to go drastic measures in restructuring the economic system into whatever makes us flourish again, no matter how much reforms it takes, no matter how unconventional they turn out to be, and no matter how many attempts."
+
+  BEL_fascism_isolationism_revive_the_science_sector: "Revitalize the Scientific Sector"
+  BEL_fascism_isolationism_revive_the_science_sector_desc: "We have a downright awful scientific base, which prevents us from producing high-end industrial equipment and developing weapons of any kind, especially modern ones. To deal with this we'll have to fix the brain drain affecting our population. Offering grants, funding, scholarships, apprenticeships, and subsidies to prospective students and professionals alike, we can revitalize our scientific sector."
+
+  BEL_fascism_isolationism_build_southern_shield: "Build the Südschild"
+  BEL_fascism_isolationism_build_southern_shield_desc: "France is one of our largest neighbors in terms of geography. We cannot leave the border between us undefended. They may pose an existential threat to our national sovereignty. Building defenses along the southern border guarantees our survival against any future French incursions against our country. With this shield, we are free to pursue a national buildup without the fear of the envy of the French."
+
+  BEL_fascism_isolationism_build_north_east_wall: "Build the Nord-Ost-Wall"
+  BEL_fascism_isolationism_build_north_east_wall_desc: "#-#-#"
 
 
 
