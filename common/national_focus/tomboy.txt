@@ -20681,6 +20681,11 @@
 				amount = -250
 			}
 			add_manpower = -2500
+			add_ai_strategy = {
+				type = force_defend_ally_borders
+				id = BEL
+				value = 50
+			}
 			every_country = {
 				limit = {
 					OR = {
@@ -21160,6 +21165,17 @@
 					bonus = 1
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung" # WHY?! It's "Goetterdaemmerung" if you don't have Umlauts!!
+												# This is the same stuff as "humid" (schwül) vs "gay" (schwul)
+												# I HATE PARADOX FOR THIS!
+				}
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
 		}
 	}
 
@@ -21226,6 +21242,17 @@
 		
 		completion_reward = {
 			add_ideas = BEL_idea_atomic_sciences_funding
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung" # WHY?! It's "Goetterdaemmerung" if you don't have Umlauts!!
+												# This is the same stuff as "humid" (schwül) vs "gay" (schwul)
+												# I HATE PARADOX FOR THIS!
+				}
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
 		}
 	}
 
@@ -21256,6 +21283,17 @@
 					category = nuclear
 					uses = 1
 					bonus = 2
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung" # WHY?! It's "Goetterdaemmerung" if you don't have Umlauts!!
+												# This is the same stuff as "humid" (schwül) vs "gay" (schwul)
+												# I HATE PARADOX FOR THIS!
+				}
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 1
 				}
 			}
 			hidden_effect = {
@@ -21330,6 +21368,17 @@
 					level = 1
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung" # WHY?! It's "Goetterdaemmerung" if you don't have Umlauts!!
+												# This is the same stuff as "humid" (schwül) vs "gay" (schwul)
+												# I HATE PARADOX FOR THIS!
+				}
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
 		}
 	}
 
@@ -21352,6 +21401,17 @@
 		
 		completion_reward = {
 			add_nuclear_bombs = 1
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung" # WHY?! It's "Goetterdaemmerung" if you don't have Umlauts!!
+												# This is the same stuff as "humid" (schwül) vs "gay" (schwul)
+												# I HATE PARADOX FOR THIS!
+				}
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
 		}
 	}
 
@@ -21411,6 +21471,17 @@
 				}
 				every_country = {
 					country_event = tomboy.93
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung" # WHY?! It's "Goetterdaemmerung" if you don't have Umlauts!!
+												# This is the same stuff as "humid" (schwül) vs "gay" (schwul)
+												# I HATE PARADOX FOR THIS!
+				}
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 1
 				}
 			}
 			custom_effect_tooltip = BEL_fascism_research_become_a_nuclear_power_tt

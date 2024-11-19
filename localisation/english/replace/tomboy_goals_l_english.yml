@@ -1103,8 +1103,19 @@
   BEL_fascism_isolationism_build_southern_shield: "Build the Südschild"
   BEL_fascism_isolationism_build_southern_shield_desc: "France is one of our largest neighbors in terms of geography. We cannot leave the border between us undefended. They may pose an existential threat to our national sovereignty. Building defenses along the southern border guarantees our survival against any future French incursions against our country. With this shield, we are free to pursue a national buildup without the fear of the envy of the French."
 
+  BEL_fascism_isolationism_isolate_the_media: "Isolate the Media"
+  BEL_fascism_isolationism_isolate_the_media_desc: "Controlling the media is the key to control the flow of information throughout our entire country. By nationalizing the media, we can prevent the spread of lies and misinformation by the enemies of the state who wish nothing but the collapse of everything we hold dear in our society. Spreading positivity and hope to our citizens through media will empower them to endure hardships and fight against anyone who dare disrupt peace in our time."
+
   BEL_fascism_isolationism_build_north_east_wall: "Build the Nord-Ost-Wall"
-  BEL_fascism_isolationism_build_north_east_wall_desc: "#-#-#"
+  BEL_fascism_isolationism_build_north_east_wall_desc: "Our North and East have been vulnerable forever, and the Great War has shown it. We have to build defenses there. Germany and the Netherlands aren't to be trusted, and it's only a matter of time until they begin demanding concessions. Preparing for a defensible position will put us ahead in any upcoming conflict we may find ourselves in with these countries and their imperialistic agenda towards us and our neighbors."
+
+  BEL_fascism_isolationism_defend_the_air: "Defend the Air"
+  BEL_fascism_isolationism_defend_the_air_desc: "Nothing is worse than aerial bombardment that turns entire cities into rubble, causing thousands of deaths per attack. Building an anti-air network consisting of micro-interceptors and FLAK batteries would ensure our safety against this fate, and protect our people from the terror bombers of the bloodthirsty nations around us."
+
+  BEL_fascism_isolationism_crush_the_black_market: "Crush the Black Market"
+  BEL_fascism_isolationism_crush_the_black_market_desc: ""
+
+
 
 
 
