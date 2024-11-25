@@ -1113,7 +1113,10 @@
   BEL_fascism_isolationism_defend_the_air_desc: "Nothing is worse than aerial bombardment that turns entire cities into rubble, causing thousands of deaths per attack. Building an anti-air network consisting of micro-interceptors and FLAK batteries would ensure our safety against this fate, and protect our people from the terror bombers of the bloodthirsty nations around us."
 
   BEL_fascism_isolationism_crush_the_black_market: "Crush the Black Market"
-  BEL_fascism_isolationism_crush_the_black_market_desc: ""
+  BEL_fascism_isolationism_crush_the_black_market_desc: "An underground economy exists within our country, and it threatens the well-being of innocent citizens everyday through the unchecked distribution of illicit goods. A crack down operation will severely weaken their forces, giving way for law and order to reign supreme once more. We must ensure this black market of foreign goods is crushed completely and finally."
+
+  BEL_fascism_isolationism_westwall: "Build the Westwall"
+  BEL_fascism_isolationism_westwall_desc: ""
 
 
 

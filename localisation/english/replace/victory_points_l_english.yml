@@ -1,0 +1,112 @@
+﻿l_english:
+  # Added because the original ones sound like Munich dialect which butchers stuff.
+  BAY_VICTORY_POINTS_11544: "Nüanbeag"
+  BAY_VICTORY_POINTS_708: "Augschbuag"
+  BAY_VICTORY_POINTS_9515: "Regnschbuag"
+
+  # Belgian Cities
+  BEL_VICTORY_POINTS_3576: "Kortrick" # Kortrijk
+  BEL_VICTORY_POINTS_6560: "Gent" # Gent (Standard)
+  BEL_VICTORY_POINTS_516: "Brüssel" # Brussels
+  BEL_VICTORY_POINTS_6598: "Antorf" # Antwerpen
+  BEL_VICTORY_POINTS_13068: "Löwen" # Leuven
+  BEL_VICTORY_POINTS_9536: "Karnoit" # Charleroi
+  BEL_VICTORY_POINTS_3516: "Namür" # Namur
+  BEL_VICTORY_POINTS_9418: "Arel" # Arlon
+
+  # Luxembourg
+  BEL_VICTORY_POINTS_6583: "Luxemburg" # Luxembourg
+
+  # Dutch Cities
+  BEL_VICTORY_POINTS_3262: "Breita" # Breda
+  BEL_VICTORY_POINTS_6496: "Endhofen" # Eindhoven
+  BEL_VICTORY_POINTS_11562: "Maasstadt" # Maastricht
+  BEL_VICTORY_POINTS_9498: "Rotterdamm" # Rotterdam
+  BEL_VICTORY_POINTS_3211: "Des Grafen Hag" # The Hague
+  BEL_VICTORY_POINTS_391: "Amseldamm" # Amsterdam
+  BEL_VICTORY_POINTS_6241: "Aufrecht" # Utrecht
+  BEL_VICTORY_POINTS_9363: "Arnheim" # Arnhem
+  BEL_VICTORY_POINTS_6336: "Leuwarden" # Leeuwarden
+  BEL_VICTORY_POINTS_9335: "Gröningen" # Groningen
+
+  # German Cities (Unchanged)
+  BEL_VICTORY_POINTS_241: "Wilhelmshaven" # Wilhelmshaven
+  BEL_VICTORY_POINTS_11388: "Münster" # Münster
+  BEL_VICTORY_POINTS_495: "Dortmund" # Dortmund
+  BEL_VICTORY_POINTS_564: "Kassel" # Kassel
+  BEL_VICTORY_POINTS_6488: "Frankfurt" # Frankfurt
+  BEL_VICTORY_POINTS_6444: "Wiesbaden" # Wiesbaden
+  BEL_VICTORY_POINTS_11560: "Mainz" # Mainz
+  BEL_VICTORY_POINTS_6469: "Essen" # Essen
+  BEL_VICTORY_POINTS_587: "Köln" # Köln
+  BEL_VICTORY_POINTS_9575: "Trier" # Trier
+  BEL_VICTORY_POINTS_11531: "Saarbrücken" # Saarbrücken
+
+  # French Cities
+  BEL_VICTORY_POINTS_9559: "Metz" # Metz
+  BEL_VICTORY_POINTS_9503: "Straßburg" # Strasbourg
+  BEL_VICTORY_POINTS_678: "Mühlhausen" # Mulhouse
+  BEL_VICTORY_POINTS_11516: "Nanzig" # Nancy
+  BEL_VICTORY_POINTS_9642: "Bisanz" # Besancon
+  BEL_VICTORY_POINTS_3560: "Sedensi" # Sedan
+  BEL_VICTORY_POINTS_13011: "Rheims" # Reims
+  BEL_VICTORY_POINTS_9490: "Tricassenstadt" # Troyes
+  BEL_VICTORY_POINTS_3652: "Dianz" # Dijon
+  BEL_VICTORY_POINTS_11483: "Reisel" # Lille
+  BEL_VICTORY_POINTS_575: "Dünkirchen" # Dunkerque
+  BEL_VICTORY_POINTS_11548: "Kalen" # Calais
+  BEL_VICTORY_POINTS_11420: "Ambien" # Amiens
+  BEL_VICTORY_POINTS_11506: "Lutezia" # Paris
+  BEL_VICTORY_POINTS_512: "Zenabum" # Orleans
+  BEL_VICTORY_POINTS_3671: "Turon" # Tours
+  BEL_VICTORY_POINTS_485: "Tief" # Dieppe
+  BEL_VICTORY_POINTS_11563: "Rudaburg" # Rouen
+  BEL_VICTORY_POINTS_9434: "Westhafenstadt" # Le Havre
+  BEL_VICTORY_POINTS_6449: "Kirchendorf" # Cherbourg
+  BEL_VICTORY_POINTS_11465: "Naunt" # Nantes
+  BEL_VICTORY_POINTS_9495: "Kondatten" # Rennes
+  BEL_VICTORY_POINTS_6536: "Der Orient" # Lorient
+  BEL_VICTORY_POINTS_3552: "Breschd" # Brest
+
+  # English Cities
+  BEL_VICTORY_POINTS_3501: "Dowershafen" # Dover
+  BEL_VICTORY_POINTS_9458: "Hafensmund" # Portsmouth
+  BEL_VICTORY_POINTS_6103: "Lunden" # London
+  BEL_VICTORY_POINTS_271: "Gippeswich" # Ipswich
+  BEL_VICTORY_POINTS_322: "Nordweich" # Norwich
+  BEL_VICTORY_POINTS_11279: "Ledekester" # Leicester
+  BEL_VICTORY_POINTS_6237: "Snotsheim" # Nottingham
+  BEL_VICTORY_POINTS_9315: "Scheffsfeld" # Sheffield
+  BEL_VICTORY_POINTS_9379: "Lattsheim" # Leeds
+  BEL_VICTORY_POINTS_11297: "Hullen" # Hull
+  BEL_VICTORY_POINTS_6526: "Treuo" # Truro
+  BEL_VICTORY_POINTS_540: "Bleimünd" # Plymouth
+  BEL_VICTORY_POINTS_3369: "Bristen" # Bristol
+  BEL_VICTORY_POINTS_9297: "Beomingsland" # Birmingham
+  BEL_VICTORY_POINTS_6318: "Mamutien" # Manchester
+  BEL_VICTORY_POINTS_6384: "Leierpolen" # Liverpool
+  BEL_VICTORY_POINTS_11332: "Karlsinsel" # Carlisle
+  BEL_VICTORY_POINTS_351: "Neuburg am Tein" # Newcastle
+  BEL_VICTORY_POINTS_377: "Kardiff" # Cardiff
+  BEL_VICTORY_POINTS_407: "Schwansee" # Swansea
+  BEL_VICTORY_POINTS_311: "Wechshamm" # Wrexham
+  BEL_VICTORY_POINTS_11218: "Drumfried" # Dumfries
+  BEL_VICTORY_POINTS_3273: "Glasgau" # Glasgow
+  BEL_VICTORY_POINTS_9392: "Edensburg" # Edinburgh
+  BEL_VICTORY_POINTS_6300: "Rositt" # Rosyth
+  BEL_VICTORY_POINTS_3150: "Dundeln" # Dundee
+  BEL_VICTORY_POINTS_200: "Abbern" # Aberdeen
+  BEL_VICTORY_POINTS_3373: "Obben" # Oban
+  BEL_VICTORY_POINTS_9075: "Inwern" # Inverness
+  BEL_VICTORY_POINTS_11064: "Skappenlau" # Scapa Flow
+  BEL_VICTORY_POINTS_6062: "Stornenweg" # Stornoway
+  BEL_VICTORY_POINTS_3311: "Dugeln" # Douglas
+  BEL_VICTORY_POINTS_3379: "Bellenburg" # Belfast
+  BEL_VICTORY_POINTS_385: "Derrer Kahldeich" # Londonderry
+  BEL_VICTORY_POINTS_11371: "Schliegen" # Sligo
+  BEL_VICTORY_POINTS_9303: "Gallen" # Galway
+  BEL_VICTORY_POINTS_11293: "Dublin" # Dublin
+  BEL_VICTORY_POINTS_303: "Tullen" # Tullamore
+  BEL_VICTORY_POINTS_285: "Wechselsford" # Wexford
+  BEL_VICTORY_POINTS_6313: "Limmerick" # Limerick
+  BEL_VICTORY_POINTS_7394: "Kork" # Cork

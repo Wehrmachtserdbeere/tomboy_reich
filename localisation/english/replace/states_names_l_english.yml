@@ -1,0 +1,59 @@
+﻿l_english:
+
+  # Belgium
+  BEL_STATE_6: "Flandern" # Vlaanderen
+  BEL_STATE_977: "Antorf" # Antwerpen
+  BEL_STATE_34: "Wallonen" # Wallonie
+  BEL_STATE_980: "Ardennen" # Ardennes
+
+  # Luxembourg
+  BEL_STATE_8: "Luxemburg" # Luxembourg
+
+  # Netherlands
+  BEL_STATE_35: "Nord-Brabant" # Brabant
+  BEL_STATE_7: "Holland" # Holland
+  BEL_STATE_36: "Friesland" # Friesland
+  
+  # France
+  BEL_STATE_29: "Nordkalen" # Nord-Pas-De-Calais
+  BEL_STATE_785: "Picardie" # Picardy
+  BEL_STATE_18: "Champagne-Ardennen" # Champagne
+  BEL_STATE_28: "Elsaß-Lothringen" # Alsace-Lorraine
+  BEL_STATE_17: "Burgund" # Franche-Comte
+  BEL_STATE_27: "West-Burgund" # Bourgogne
+  BEL_STATE_24: "Zentrum-Loiretal" # Centre
+  BEL_STATE_16: "Agglomeration Paris " # Île De France
+  BEL_STATE_15: "Normandie" # Normandy
+  BEL_STATE_30: "Lorelei" # Loire
+  BEL_STATE_14: "Kleinbritannien" # Brittany
+
+  # Germany
+  BEL_STATE_42: "Pfalz" # Moselland
+  BEL_STATE_51: "Rheinland" # Rhineland
+  BEL_STATE_55: "Hessen" # Hessen
+  BEL_STATE_57: "Westfalen" # Westfalen
+  BEL_STATE_56: "Weser-Ems" # Weser-Ems
+  
+  # English States
+  BEL_STATE_127: "Südsachsen" # Sussex
+  BEL_STATE_126: "Großlunden" # Greater London Area
+  BEL_STATE_125: "Ostangeln" # East Anglia
+  BEL_STATE_129: "Ostlande" # East Midlands
+  BEL_STATE_130: "Eibensland" # Yorkshire
+  BEL_STATE_123: "Kärntwall" # South-West England
+  BEL_STATE_338: "Karolei" # Gloucestershire
+  BEL_STATE_128: "Westlande" # West Midlands
+  BEL_STATE_132: "Lankern" # Lancashire
+  BEL_STATE_931: "Cumberland" # Cumbria
+  BEL_STATE_131: "Nordhumbern" # Northumberland 
+  BEL_STATE_122: "Wallen" # Wales
+  BEL_STATE_121: "Lotien" # Lothian
+  BEL_STATE_133: "Lanenarchsland" # Lanark
+  BEL_STATE_136: "Abbersland " # Aberdeenshire
+  BEL_STATE_120: "Schottenhochland" # Scottish Highlands
+  BEL_STATE_933: "Schettland" # Shetland Islands
+  BEL_STATE_932: "Männerinsel" # Isle of Man
+  BEL_STATE_119: "Ulster" # Northern Ireland
+  BEL_STATE_134: "Konnach" # Connaught
+  BEL_STATE_113: "Leinsburg" # Leinester
+  BEL_STATE_135: "Irisch Münster" # Munster
