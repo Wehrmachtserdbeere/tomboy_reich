@@ -20595,7 +20595,7 @@
 						has_completed_focus = BEL_fascism_expansionism
 					}
 				}
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		
@@ -21697,7 +21697,7 @@
 						has_completed_focus = BEL_fascism_isolationism
 					}
 				}
-				#is_debug = yes
+				is_debug = yes
 			}
 		}
 		

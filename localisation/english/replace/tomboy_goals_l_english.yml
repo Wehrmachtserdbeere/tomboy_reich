@@ -1078,6 +1078,8 @@
   BEL_fascism_modernist_remain_the_most_adaptable_desc: "We, the Tomboys, have always been the underdogs in almost every aspect. However, our adaptive nature allowed us to cope up with changes and adjust accordingly better than anyone else. Because of this, we managed to survive despite oppression and discrimination. We cannot allow such advantage to be forgotten over time. We will revive those aspects that led us to become what we are now!"
 
 
+
+
   BEL_fascism_war_our_ambitions: "Our Ambitions"
   BEL_fascism_war_our_ambitions_desc: "Isolationism or Expansionism, we have to decide on one or the others since we don't have enough resources and manpower to pursue both paths at the same time. Focusing inwardly is important for self-sustainability, whereas focusing outwardly may give us access to valuable territories and strategic positions. We must decide upon these as soon as possible."
 
@@ -1116,7 +1118,40 @@
   BEL_fascism_isolationism_crush_the_black_market_desc: "An underground economy exists within our country, and it threatens the well-being of innocent citizens everyday through the unchecked distribution of illicit goods. A crack down operation will severely weaken their forces, giving way for law and order to reign supreme once more. We must ensure this black market of foreign goods is crushed completely and finally."
 
   BEL_fascism_isolationism_westwall: "Build the Westwall"
-  BEL_fascism_isolationism_westwall_desc: ""
+  BEL_fascism_isolationism_westwall_desc: "The English, Americans, French and Germans are all known to possess considerable naval assets. No doubt that if war ever erupts then these navies would target us. Therefore constructing shore batteries, patrol boats and sea mines will deny these nations the ability to establish naval superiority in our coastlines, allowing us to protect our interests overseas without fearing retribution from our home being attacked directly by sea forces."
+
+  BEL_fascism_isolationism_discipline_the_military: "Discipline the Military"
+  BEL_fascism_isolationism_discipline_the_military_desc: "A well-disciplined army is crucial in wartime scenarios, and our military is the opposite of that, plain and simple. An unruly mob will hardly get anywhere, no matter the numerical superiority in comparison to an organized force. Introducing discipline in the form of professional training and education will provide the foundation upon which our armed forces may grow into a potent fighting force fit for our people."
+
+  BEL_fascism_isolationism_construct_city_defenses: "Construct City Defenses"
+  BEL_fascism_isolationism_construct_city_defenses_desc: "With war becoming more inevitable with each passing day, it would be prudent to begin building fortifications inside of our cities to make any urban fighting complete hell for any enemy that dares to invade. Machine-gun nests in every corner and basement, bunkers in the outskirts and town square, pillboxes in residential areas, and rigid citizen training to ensure their safety, and enough resources to support militias, will make the cities hell."
+
+  BEL_fascism_isolationism_iron_fortress: "The Iron Fortress"
+  BEL_fascism_isolationism_iron_fortress_desc: "Our country shall become an Iron Fortress - impenetrable from all sides and directions. The previous layers of defense aren't sufficient enough to ward off enemies away. Constructing even more advanced versions of those defensive structures, increasing military presence tenfold, distributing rifles and basic munitions to civilians for militia service, digging trenches for cover in times of bombardments, we must become the fortress of Europe!"
+
+  BEL_fascism_expansionism: "Expansionism"
+  BEL_fascism_expansionism_desc: "It's unrealistic to remain isolationist in a world that is tensing closer and closer to another global war. We'll inevitably find ourselves faced with an enemy, no matter how defensive or pacifist we act. We must strike preemptively before anyone could threaten our sovereignty, and secure territories that already house our people but belong to hostile regimes. Our women, our soil - nowhere else should they belong but under us only."
+
+  BEL_fascism_expansionism_advertize_army: "Launch Recruitment Campaigns"
+  BEL_fascism_expansionism_advertize_army_desc: "We need more manpower for our military forces. Propaganda that highlights how foreign nations are abusing our women, and portraying them as evil beings who wish to destroy our culture will invoke feelings of patriotism and a sense of duty towards serving in the military. Expanding recruitment campaigns targeting even men, though as low ranks only, will increase our troop strength rapidly compared to traditional methods."
+
+  BEL_fascism_expansionism_war_is_peace: "War is Peace"
+  BEL_fascism_expansionism_war_is_peace_desc: "Our people must be taught that to attain peace, one must prepare for war constantly. Keeping the war machine alive and ready keeps peace secured from those who wish to break it in favor of warmongering. A peaceful country doesn't want war and seeks for ways to resolve conflicts diplomatically, yet it must maintain a large enough army to protect itself from the true aggressors that seek for domination over Europe and our people."
+
+  BEL_fascism_expansionism_germany_approach: "Approach [GER.GetNameDef]"
+  BEL_fascism_expansionism_germany_approach_desc: "The [GER.GetAdjectiveCap]s have historically been the most friendly towards Tomboys, treating them like human beings as opposed to some mere objects of pleasure, and they share the same hate towards the capitalist pig-dogs of democracy, who abuse our people under false pretenses. Approaching them now in hopes of cooperation will strengthen our position and enable us to plan things easier."
+
+  BEL_fascism_expansionism_on_our_own: "On our own"
+  BEL_fascism_expansionism_on_our_own_desc: "There is no neighbor to trust. It's foolish to assume otherwise. Making agreements with foreign entities puts us in danger, especially if said nation isn't trustworthy enough in the first place. Our plans to liberate our people will succeed only if we avoid diplomatic relationships altogether and work solely for ourselves and by ourselves."
+
+  BEL_fascism_expansionism_unite_the_markets: "Unite our Markets"
+  BEL_fascism_expansionism_unite_the_markets_desc: "The economy remains a fragile one, and in order to properly stimulate it without crippling ourselves, we must merge our markets with our allies' markets, thereby stabilizing trade and opening new avenues for business deals that benefit both our allies and our own selves. The potential for increased prosperity in a union like this outweighs any downsides that may exist in such an arrangement."
+
+  BEL_fascism_expansionism_separate_economies: ""
+  BEL_fascism_expansionism_separate_economies_desc: ""
+
+  BEL_fascism_expansionism_german_volunteers: "Invite German Volunteers"
+  BEL_fascism_expansionism_german_volunteers_desc: "Some German nationalists are willing to defend our people from foreign adversaries that seek our demise, and we should take advantage of their passion for justice and fairness by inviting them to join our growing volunteer forces. Their experience and training will be useful in turning our own army into a fine-tuned military machine capable of operating on its own effectively."
 
 
 
