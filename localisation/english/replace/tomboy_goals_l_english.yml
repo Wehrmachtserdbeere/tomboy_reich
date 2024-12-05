@@ -1153,6 +1153,22 @@
   BEL_fascism_expansionism_german_volunteers: "Invite German Volunteers"
   BEL_fascism_expansionism_german_volunteers_desc: "Some German nationalists are willing to defend our people from foreign adversaries that seek our demise, and we should take advantage of their passion for justice and fairness by inviting them to join our growing volunteer forces. Their experience and training will be useful in turning our own army into a fine-tuned military machine capable of operating on its own effectively."
 
+  BEL_fascism_expansionism_volunteer_corps: "Form the Volunteer Corps"
+  BEL_fascism_expansionism_volunteer_corps_desc: "Instead of leaving these brave volunteers to fend for themselves, we should create an official unit under our military that caters solely to foreign volunteers that will assist us during times of emergency or outright aggression by enemy forces. Having such a unit in place allows us to utilize this manpower, and helps boost our active service members that will serve as our regular troops when war comes."
+
+  BEL_fascism_expansionism_liege_conference: "Convene the Liegé Conference"
+  BEL_fascism_expansionism_liege_conference_desc: "The Liegé Conference will be where we declare our ambitions and goals towards our neighbors and our intentions concerning those territories under dispute, inhabited mostly by our people who seek freedom from oppression. Inviting these powers to attend the conference will set a stage for diplomacy that might hopefully avoid bloodshed, but will certainly provoke antagonism should we push our claims."
+
+  BEL_fascism_expansionism_hirasawa_plan: "The Hirasawa Plan"
+  BEL_fascism_expansionism_hirasawa_plan_desc: "Proposed by famous Yui Hirasawa, the Hirasawa plan are our plans for how to properly take over lands controlled by our neighbors but populated heavily by our ethnic brothers and sisters who remain oppressed under those regimes. These plans consist of meticulously planned tactics for every terrain, scenario, and season that we face during our conquests. We'll adapt it for every enemy we may face from now on."
+
+  BEL_fascism_expansionism_germany_prepare_the_march_east: "[BEL_fascism_expansionism_germany_prepare_the_march_east_dynamic_loc]"
+  BEL_fascism_expansionism_germany_prepare_the_march_east_peace: "Learn from the [GER.GetAdjective]s"
+  BEL_fascism_expansionism_germany_prepare_the_march_east_war: "Prepare the March East"
+  BEL_fascism_expansionism_germany_prepare_the_march_east_desc: "[BEL_fascism_expansionism_germany_prepare_the_march_east_desc_dynamic_loc]"
+  BEL_fascism_expansionism_germany_prepare_the_march_east_desc_peace: "While aiming for peace with the Germans, we can still learn plenty of lessons from them on how to conduct a competent military operation and perform tactical maneuvers that will greatly aid in defeating our enemies swiftly and decisively. The Germans know how to fight, and studying them closely will help us emulate their effectiveness in the field of battle."
+  BEL_fascism_expansionism_germany_prepare_the_march_east_desc_war: "#-#-#"
+
 
 
 
