@@ -22106,6 +22106,12 @@
 		prerequisite = {
 			focus = BEL_fascism_expansionism_hirasawa_plan
 		}
+
+		bypass = {
+			GER = {
+				exists = no
+			}
+		}
 		
 		completion_reward = {
 			custom_effect_tooltip = BEL_fascism_expansionism_germany_the_march_east_reward_tt
@@ -22173,6 +22179,12 @@
 
 		prerequisite = {
 			focus = BEL_fascism_expansionism_germany_prepare_the_march_east
+		}
+
+		bypass = {
+			GER = {
+				exists = no
+			}
 		}
 
 		available = {
@@ -22427,6 +22439,12 @@
 		prerequisite = {
 			focus = BEL_fascism_expansionism_germany_steal_german_material
 		}
+
+		bypass = {
+			GER = {
+				exists = no
+			}
+		}
 		
 		completion_reward = {
 			if = {
@@ -22579,7 +22597,11 @@
 			focus = BEL_fascism_expansionism_germany_sabotage_german_war_machine
 		}
 
-		will_lead_to_war_with = GER
+		bypass = {
+			GER = {
+				exists = no
+			}
+		}
 		
 		completion_reward = {
 			if = {

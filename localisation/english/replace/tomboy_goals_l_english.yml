@@ -1147,8 +1147,8 @@
   BEL_fascism_expansionism_unite_the_markets: "Unite our Markets"
   BEL_fascism_expansionism_unite_the_markets_desc: "The economy remains a fragile one, and in order to properly stimulate it without crippling ourselves, we must merge our markets with our allies' markets, thereby stabilizing trade and opening new avenues for business deals that benefit both our allies and our own selves. The potential for increased prosperity in a union like this outweighs any downsides that may exist in such an arrangement."
 
-  BEL_fascism_expansionism_separate_economies: ""
-  BEL_fascism_expansionism_separate_economies_desc: ""
+  BEL_fascism_expansionism_separate_economies: "Separate Economies"
+  BEL_fascism_expansionism_separate_economies_desc: "Merging our economies is not a good idea. We need to remain independent from any foreign interference if we wish to maintain control over our economy and sustain growth. Limited trade could remain, but otherwise cutting off financial reliance will protect our nation from economic blackmail and exploitation by larger economies that could simply annex us through the economy."
 
   BEL_fascism_expansionism_german_volunteers: "Invite German Volunteers"
   BEL_fascism_expansionism_german_volunteers_desc: "Some German nationalists are willing to defend our people from foreign adversaries that seek our demise, and we should take advantage of their passion for justice and fairness by inviting them to join our growing volunteer forces. Their experience and training will be useful in turning our own army into a fine-tuned military machine capable of operating on its own effectively."
@@ -1167,8 +1167,24 @@
   BEL_fascism_expansionism_germany_prepare_the_march_east_war: "Prepare the March East"
   BEL_fascism_expansionism_germany_prepare_the_march_east_desc: "[BEL_fascism_expansionism_germany_prepare_the_march_east_desc_dynamic_loc]"
   BEL_fascism_expansionism_germany_prepare_the_march_east_desc_peace: "While aiming for peace with the Germans, we can still learn plenty of lessons from them on how to conduct a competent military operation and perform tactical maneuvers that will greatly aid in defeating our enemies swiftly and decisively. The Germans know how to fight, and studying them closely will help us emulate their effectiveness in the field of battle."
-  BEL_fascism_expansionism_germany_prepare_the_march_east_desc_war: "#-#-#"
+  BEL_fascism_expansionism_germany_prepare_the_march_east_desc_war: "Invading [GER.GetNameDef] will be extremely difficult, but it's nonetheless an objective we have to achieve at any cost if we want to liberate all the Tomboys who were forced to migrate into the German state for menial labor, enslaved in farms and factories alike for hours to no end, and now even exterminated from time to time."
 
+  BEL_fascism_expansionism_germany_fortify_the_border: "Fortify the Border"
+  BEL_fascism_expansionism_germany_fortify_the_border_desc: "Whatever our relations with the Germans may be, we'll always have a rocky history that brings bad blood into negotiations. Even if we manage to not anger them, our claims alone might prove to be enough reason for the paranoid nation to declare war against us first. Fortifying our border with them will prevent them from taking us by surprise."
+
+  BEL_fascism_expansionism_germany_steal_german_material: "[BEL_fascism_expansionism_germany_steal_german_material_scripted_loc]"
+  BEL_fascism_expansionism_germany_steal_german_material_peace: "Provide Germans with Material"
+  BEL_fascism_expansionism_germany_steal_german_material_war: "Steal German Material"
+  BEL_fascism_expansionism_germany_steal_german_material_desc: "[BEL_fascism_expansionism_germany_steal_german_material_desc_scripted_loc]"
+  BEL_fascism_expansionism_germany_steal_german_material_desc_war: "The German equipment is exceptional in quality and we lack the ability to develop similar products on our own. A possible solution would be to send agents into the field and acquire as many weapons as possible, either by direct theft or purchase under disguise. Once acquired, we can immediately put them to use in our army."
+  BEL_fascism_expansionism_germany_steal_german_material_desc_peace: "Our weapons are advanced and our equipment is well-made, and our friends in Germany need it more than ever with all the threats they're facing right now from their borders. Providing them with our arms, resources, and equipment will help them survive against multiple wars that could happen at once, and improve our image in their eyes as friends of their nation."
+
+  BEL_fascism_expansionism_germany_sabotage_german_railways: "[BEL_fascism_expansionism_germany_sabotage_german_railways_scripted_loc]"
+  BEL_fascism_expansionism_germany_sabotage_german_railways_peace: "Improve German Railways"
+  BEL_fascism_expansionism_germany_sabotage_german_railways_war: "Sabotage German Railways"
+  BEL_fascism_expansionism_germany_sabotage_german_railways_desc: "[BEL_fascism_expansionism_germany_sabotage_german_railways_desc_scripted_loc]"
+  BEL_fascism_expansionism_germany_sabotage_german_railways_desc_pace: "Although the German railway networks are far superior to ones from other nations, they still have a lot of room for improvement. Providing assistance with construction work on improving their railways can make transportation much faster and easier, and gets them to see us significantly more favorably by contributing to infrastructure development that affects millions daily."
+  BEL_fascism_expansionism_germany_sabotage_german_railways_desc_war: "Germany is currently moving its armies all across the map, with constant movement near our borders, and railways are a key method of transportation for supplies and soldiers. Sabotaging their railways will slow down their ability to supply their inevitable invasion of our lands, and make it significantly more difficult for them to harm us."
 
 
 
