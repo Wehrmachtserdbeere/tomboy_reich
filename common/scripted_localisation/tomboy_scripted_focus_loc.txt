@@ -435,3 +435,171 @@ define_text = {
 		localization_key = BEL_fascism_expansionism_germany_sabotage_german_railways_desc_war
 	}
 }
+
+define_text = {
+	name = BEL_fascism_expansionism_germany_contruct_supply_network_scripted_loc
+	text = {
+		trigger = {
+			OR = {
+				is_in_faction_with = GER
+				GER = {
+					is_puppet_of = root
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_contruct_supply_network_peace
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = GER
+					GER = {
+						is_puppet_of = root
+					}
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_contruct_supply_network_war
+	}
+}
+
+define_text = {
+	name = BEL_fascism_expansionism_germany_contruct_supply_network_desc_scripted_loc
+	text = {
+		trigger = {
+			OR = {
+				is_in_faction_with = GER
+				GER = {
+					is_puppet_of = root
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_contruct_supply_network_desc_peace
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = GER
+					GER = {
+						is_puppet_of = root
+					}
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_contruct_supply_network_desc_war
+	}
+}
+
+define_text = {
+	name = BEL_fascism_expansionism_germany_sabotage_german_war_machine_scripted_loc
+	text = {
+		trigger = {
+			OR = {
+				is_in_faction_with = GER
+				GER = {
+					is_puppet_of = root
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_sabotage_german_war_machine_peace
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = GER
+					GER = {
+						is_puppet_of = root
+					}
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_sabotage_german_war_machine_war
+	}
+}
+
+define_text = {
+	name = BEL_fascism_expansionism_germany_sabotage_german_war_machine_desc_scripted_loc
+	text = {
+		trigger = {
+			OR = {
+				is_in_faction_with = GER
+				GER = {
+					is_puppet_of = root
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_sabotage_german_war_machine_desc_peace
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = GER
+					GER = {
+						is_puppet_of = root
+					}
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_sabotage_german_war_machine_desc_war
+	}
+}
+
+define_text = {
+	name = BEL_fascism_expansionism_germany_invade_scripted_loc
+	text = {
+		trigger = {
+			OR = {
+				is_in_faction_with = GER
+				GER = {
+					is_puppet_of = root
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_invade_peace
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = GER
+					GER = {
+						is_puppet_of = root
+					}
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_invade_war
+	}
+}
+
+define_text = {
+	name = BEL_fascism_expansionism_germany_invade_desc_scripted_loc
+	text = {
+		trigger = {
+			OR = {
+				is_in_faction_with = GER
+				GER = {
+					is_puppet_of = root
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_invade_desc_peace
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = GER
+					GER = {
+						is_puppet_of = root
+					}
+				}
+			}
+		}
+		localization_key = BEL_fascism_expansionism_germany_invade_desc_war
+	}
+}

@@ -1186,7 +1186,26 @@
   BEL_fascism_expansionism_germany_sabotage_german_railways_desc_pace: "Although the German railway networks are far superior to ones from other nations, they still have a lot of room for improvement. Providing assistance with construction work on improving their railways can make transportation much faster and easier, and gets them to see us significantly more favorably by contributing to infrastructure development that affects millions daily."
   BEL_fascism_expansionism_germany_sabotage_german_railways_desc_war: "Germany is currently moving its armies all across the map, with constant movement near our borders, and railways are a key method of transportation for supplies and soldiers. Sabotaging their railways will slow down their ability to supply their inevitable invasion of our lands, and make it significantly more difficult for them to harm us."
 
+  BEL_fascism_expansionism_germany_contruct_supply_network: "[BEL_fascism_expansionism_germany_contruct_supply_network_scripted_loc]"
+  BEL_fascism_expansionism_germany_contruct_supply_network_peace: "Connect our Railways to Germany"
+  BEL_fascism_expansionism_germany_contruct_supply_network_war: "Construct railways to front"
+  BEL_fascism_expansionism_germany_contruct_supply_network_desc: "[BEL_fascism_expansionism_germany_contruct_supply_network_desc_scripted_loc]"
+  BEL_fascism_expansionism_germany_contruct_supply_network_desc_peace: "Having direct connections with the German railway system would allow for rapid transfers between us and improve not only our mutual infrastructural capabilities but also increase our cooperation together economically speaking, enabling trade and investment to flourish more easily without worrying."
+  BEL_fascism_expansionism_germany_contruct_supply_network_desc_war: "Germany has an admirable infrastructure network, and it certainly served them well during the last World War. We have to at least emulate them and construct railways leading towards them for ease of maneuverability and logistics once war breaks out between us and the Germans. To not build them beforehand would equate suicide."
 
+  BEL_fascism_expansionism_germany_sabotage_german_war_machine: "[BEL_fascism_expansionism_germany_sabotage_german_war_machine_scripted_loc]"
+  BEL_fascism_expansionism_germany_sabotage_german_war_machine_peace: "Help the German Economy"
+  BEL_fascism_expansionism_germany_sabotage_german_war_machine_war: "Sabotage the German War Machine"
+  BEL_fascism_expansionism_germany_sabotage_german_war_machine_desc: "[BEL_fascism_expansionism_germany_sabotage_german_war_machine_desc_scripted_loc]"
+  BEL_fascism_expansionism_germany_sabotage_german_war_machine_desc_peace: "Germany is the biggest power in Europe, but even they have their internal weaknesses that hold them back from achieving greatness once again. If we give them economic support, not only will the ties between our people become stronger, but their people will be better off and even love our people even more."
+  BEL_fascism_expansionism_germany_sabotage_german_war_machine_desc_war: "Not all Germans support their government's agenda, especially those who feel the burden of an ideology they did not vote for. Many are sympathetic to the Tomboy cause, even if they don't approve of everything we represent ideologically. Sabotaging the German war efforts on their front lines and logistical hubs, while providing assistance to dissidents, ensures the weakening of their regime, empowering of ours, and paving the path towards a Tomboy Germany."
+
+  BEL_fascism_expansionism_germany_invade: "[BEL_fascism_expansionism_germany_invade_scripted_loc]"
+  BEL_fascism_expansionism_germany_invade_peace: "Join hands with Germany!"
+  BEL_fascism_expansionism_germany_invade_war: "Invade Germany!"
+  BEL_fascism_expansionism_germany_invade_desc: "[BEL_fascism_expansionism_germany_invade_desc_scripted_loc]"
+  BEL_fascism_expansionism_germany_invade_desc_war: "It's time to slay the beast. After months of preparation and waiting patiently, our moment of revenge finally draws near - when the sun rises, there will no longer exist borders between us and Germany; just one great union under the banner of Tomboys! We march onward toward glory as heroes among mortals and liberators of fellow Tomboys held captive within enemy territory!"
+  BEL_fascism_expansionism_germany_invade_desc_peace: "With our great mutual opinion and interests, there should be nothing stopping Germany from joining an alliance with us! Combining our military capabilities and working together against a common enemy will surely see both our nations triumph in battle and maybe finally achieve lasting peace at last after centuries of continued war and destruction across the continent of Europe."
 
 
 
