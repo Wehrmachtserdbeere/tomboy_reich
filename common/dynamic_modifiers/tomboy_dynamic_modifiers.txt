@@ -310,6 +310,6 @@ dyn_mod_bel_demsoc_general_strike = {
 
 	# icon = tbd
 
-	stability_weekly = 0.035
+	stability_weekly = 0.05
 	consumer_goods_factor = 0.15
 }

@@ -326,10 +326,12 @@ characters = {
 							value > 9
 						}
 					}
-					SOV_georgy_zhukov = {
-						OR = {
-							has_character_flag = SOV_exiled_flag
-							has_character_flag = SOV_character_purged_flag
+					SOV = {
+						SOV_georgy_zhukov = {
+							OR = {
+								has_character_flag = SOV_exiled_flag
+								has_character_flag = SOV_character_purged_flag
+							}
 						}
 					}
 				}

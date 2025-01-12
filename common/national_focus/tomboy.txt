@@ -22902,14 +22902,68 @@
 		}
 	}
 
+	# Unite the Democratic Parties
+	focus = {
+		id = BEL_demsoc_unite_the_democratic_parties
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 4
+
+		prerequisite = {
+			focus = BEL_demsoc_promote_idealized_democracy
+		}
+		prerequisite = {
+			focus = BEL_demsoc_work_for_your_rights
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+	}
+
 	# Demand an Election
 	focus = {
-		id = x
-		icon = GFX_surrender_tiny_flag
-		cost = x
-		x = x
-		y = x
-		completion_reward = { }
+		id = BEL_demsoc_demand_an_election
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 5
+
+		prerequisite = {
+			focus = BEL_demsoc_promote_idealized_democracy
+			focus = BEL_demsoc_equitize_the_economy
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					power_balance_value = {
+						id = BEL_bop_demsoc
+						value > 0
+					}
+				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = var:current_date
+				}
+			}
+			else = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					last_election = var:current_date
+				}
+			}
+		}
 	}
 
 

@@ -3673,6 +3673,8 @@ BEL_bop_demsoc_decisions_category = {
             original_tag = BEL
         }
 
+        cost = 50
+
         visible = {
             has_power_balance = {
                 id = BEL_bop_demsoc
@@ -3704,6 +3706,8 @@ BEL_bop_demsoc_decisions_category = {
         allowed = {
             original_tag = BEL
         }
+
+        cost = 75
 
         visible = {
             has_power_balance = {
@@ -3737,6 +3741,8 @@ BEL_bop_demsoc_decisions_category = {
             original_tag = BEL
         }
 
+        cost = 75
+
         visible = {
             has_power_balance = {
                 id = BEL_bop_demsoc
@@ -3769,6 +3775,8 @@ BEL_bop_demsoc_decisions_category = {
             original_tag = BEL
         }
 
+        cost = 150
+
         visible = {
             has_power_balance = {
                 id = BEL_bop_demsoc
@@ -3782,13 +3790,28 @@ BEL_bop_demsoc_decisions_category = {
 
         complete_effect = {
             add_political_power = -100
-            add_popularity = {
-                ideology = communism
-                popularity = -0.15
-            }
-            add_power_balance_value = {
-                id = BEL_bop_demsoc
-                value = -0.05
+            random_list = {
+                75 = {
+                    add_popularity = {
+                        ideology = communism
+                        popularity = -0.15
+                    }
+                    add_power_balance_value = {
+                        id = BEL_bop_demsoc
+                        value = -0.15
+                    }
+                    add_manpower = 	-1
+                }
+                25 = {
+                    add_popularity = {
+                        ideology = communism
+                        popularity = 0.1
+                    }
+                    add_power_balance_value = {
+                        id = BEL_bop_demsoc
+                        value = 0.1
+                    }
+                }
             }
         }
     }
@@ -3798,6 +3821,8 @@ BEL_bop_demsoc_decisions_category = {
         allowed = {
             original_tag = BEL
         }
+
+        cost = 150
 
         visible = {
             has_power_balance = {
@@ -3834,6 +3859,8 @@ BEL_bop_demsoc_decisions_category = {
             original_tag = BEL
         }
 
+        cost = 50
+
         visible = {
             has_power_balance = {
                 id = BEL_bop_demsoc
@@ -3865,6 +3892,8 @@ BEL_bop_demsoc_decisions_category = {
         allowed = {
             original_tag = BEL
         }
+
+        cost = 50
 
         visible = {
             has_power_balance = {
@@ -3905,6 +3934,8 @@ BEL_bop_demsoc_decisions_category = {
         allowed = {
             original_tag = BEL
         }
+
+        cost = 25
 
         visible = {
             has_power_balance = {
