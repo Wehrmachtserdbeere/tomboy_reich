@@ -118,6 +118,30 @@
   BEL_bop_demsoc_decisions_category: "Democrat-Socialist Balance of Power"
   BEL_bop_demsoc_decisions_category_desc: "The balance of power between the Democrats and Socialists are inherently the people's choice, and we must respect that. However, we can influence the balance of power between the two factions, and we can use that to our advantage. At best, we would prevent what happened in the Soviet Union, since most of us still hold our Queen dear to our hearts."
 
+  BEL_bop_demsoc_hold_democratic_protests: "Hold Democratic Protests"
+  BEL_bop_demsoc_hold_democratic_protests_desc: "By holding democratic protests, we can increase the influence of the Democrats in the government by showing a greater presence than the Communists."
+
+  BEL_bop_demsoc_heavily_promote_democratic_ideas: "Promote Radical Democratic Ideas"
+  BEL_bop_demsoc_heavily_promote_democratic_ideas_desc: "More radical ideas make more radical people, and we can use that to our advantage."
+
+  BEL_bop_demsoc_spread_anticommunist_propaganda: "Spread Anti-Communist Propaganda"
+  BEL_bop_demsoc_spread_anticommunist_propaganda_desc: "Communism is a failing ideology, and we can use that to our advantage by spreading information and propaganda about the failures of Communism to the common woman."
+
+  BEL_bop_demsoc_assassinate_minor_communist_leaders: "Assassinate Minor Communist Leaders"
+  BEL_bop_demsoc_assassinate_minor_communist_leaders_desc: "We can significantly weaken the Communists by arranging for the assassinations of some of their minor leaders and blaming it on the Fascists. We're seen by them as non-actors, so we can get away with it."
+
+  BEL_bop_demsoc_organize_general_strikes: "Organize General Strikes"
+  BEL_bop_demsoc_organize_general_strikes_desc: "The Capitalist hates nothing more than a loss of profit, and we can use that to our advantage by organizing general strikes in the cities to take away the Capitalist's power over our people."
+
+  BEL_bop_demsoc_distribute_communist_propaganda: "Distribute Communist Propaganda"
+  BEL_bop_demsoc_distribute_communist_propaganda_desc: "We can increase the influence of the GCTP by distributing Communist propaganda in the cities and the towns, especially where the Democrats don't have a strong presence."
+
+  BEL_bop_demsoc_spread_anticapitalist_propaganda: "Spread Anti-Capitalist Propaganda"
+  BEL_bop_demsoc_spread_anticapitalist_propaganda_desc: "The Capitalist is a demon, and we can use that to our advantage by spreading propaganda about their evils and the evils of Capitalism."
+
+  BEL_bop_demsoc_intimidate_democratic_speakers: "Intimidate Democratic Speakers"
+  BEL_bop_demsoc_intimidate_democratic_speakers_desc: "We can weaken the Democrats by intimidating their speakers and leaders, and \"encouraging\" them to keep their Capitalist mouths shut."
+
 
 
 

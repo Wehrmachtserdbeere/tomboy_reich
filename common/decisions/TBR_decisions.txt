@@ -3664,3 +3664,271 @@ BEL_westwall_category = {
     }
 
 }
+
+BEL_bop_demsoc_decisions_category = {
+
+    BEL_bop_demsoc_hold_democratic_protests = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_demsoc
+                value > 0
+            }
+        }
+
+        complete_effect = {
+            add_political_power = -50
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = -0.05
+            }
+        }
+    }
+
+    BEL_bop_demsoc_heavily_promote_democratic_ideas = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_demsoc
+                value < 0
+            }
+        }
+
+        complete_effect = {
+            add_political_power = -100
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = -0.1
+            }
+        }
+    }
+
+    BEL_bop_demsoc_spread_anticommunist_propaganda = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_demsoc
+                value > 0
+            }
+        }
+
+        complete_effect = {
+            add_political_power = -50
+            add_popularity = {
+                ideology = communism
+                popularity = -0.05
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = -0.025
+            }
+        }
+    }
+
+    BEL_bop_demsoc_assassinate_minor_communist_leaders = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+        }
+
+        days_re_enable = 90
+
+        complete_effect = {
+            add_political_power = -100
+            add_popularity = {
+                ideology = communism
+                popularity = -0.15
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = -0.05
+            }
+        }
+    }
+
+    BEL_bop_demsoc_organize_general_strikes = {
+        
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+        }
+
+        days_re_enable = 90
+
+        complete_effect = {
+            add_political_power = -100
+            add_popularity = {
+                ideology = communism
+                popularity = 0.1
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = 0.1
+            }
+            add_stability = -0.28
+            add_dynamic_modifier = {
+                modifier = dyn_mod_bel_demsoc_general_strike
+                days = 28
+            }
+        }
+    }
+
+    BEL_bop_demsoc_distribute_communist_propaganda = {
+        
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_demsoc
+                value < 0
+            }
+        }
+
+        complete_effect = {
+            add_political_power = -50
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = 0.05
+            }
+        }
+    }
+
+    BEL_bop_demsoc_spread_anticapitalist_propaganda = {
+        
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+        }
+
+        complete_effect = {
+            add_political_power = -50
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.025
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = -0.025
+            }
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.025
+            }
+            add_popularity = {
+                ideology = terror
+                popularity = -0.025
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = 0.025
+            }
+        }
+    }
+
+    BEL_bop_demsoc_intimidate_democratic_speakers = {
+        
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_demsoc
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_demsoc
+                value > 0.5
+            }
+        }
+
+        complete_effect = {
+            add_political_power = -50
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.1
+            }
+            add_power_balance_value = {
+                id = BEL_bop_demsoc
+                value = 0.075
+            }
+        }
+    }
+}

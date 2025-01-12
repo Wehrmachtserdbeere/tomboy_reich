@@ -302,3 +302,14 @@ dyn_mod_bel_demsoc_idealized_democracy = {
 	neutrality_acceptance = -5
 	terror_acceptance = -75
 }
+
+dyn_mod_bel_demsoc_general_strike = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	stability_weekly = 0.035
+	consumer_goods_factor = 0.15
+}
