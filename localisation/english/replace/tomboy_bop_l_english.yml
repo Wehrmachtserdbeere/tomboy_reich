@@ -34,3 +34,19 @@
   BEL_bop_fascism_sturmkommando_medium: "Sturmkommando Dominance"
   BEL_bop_fascism_sturmkommando_high: "Sturmkommando Stranglehold"
   BEL_bop_fascism_sturmkommando_extreme: "Sturmkommando Supremacy"
+
+  BEL_bop_demsoc: "Democrat-Communist Balance"
+
+  BEL_bop_demsoc_democrats: "Democrats"
+  BEL_bop_demsoc_democrats_low: "Low Democrat Bias"
+  BEL_bop_demsoc_democrats_medium: "Medium Democrat Foothold"
+  BEL_bop_demsoc_democrats_high: "Strong Democrat Grip"
+  BEL_bop_demsoc_democrats_complete: "Complete Democrat Control"
+
+  BEL_bop_demsoc_neutral: "Equilibrium"
+
+  BEL_bop_demsoc_communists: "Communists"
+  BEL_bop_demsoc_communists_low: "Low Communist Influence"
+  BEL_bop_demsoc_communists_medium: "Medium Communist Opposition"
+  BEL_bop_demsoc_communists_high: "High Communist Pressure"
+  BEL_bop_demsoc_communists_complete: "Complete Communist Rule"

@@ -113,6 +113,16 @@
   BEL_bop_fascism_sk_enlarge_sturmkommando: "Enlarge the Sturmkommando"
   BEL_bop_fascism_sk_enlarge_sturmkommando_desc: "We can bolster the ranks of the Sturmkommando with young and radicalized men from the countryside, which will grant the Sturmkommando a larger enough military to more properly enforce its will in the cities and wars. The only real drawback is the increased radicalization of the military, and the increased brutality during occupations."
 
+
+
+  BEL_bop_demsoc_decisions_category: "Democrat-Socialist Balance of Power"
+  BEL_bop_demsoc_decisions_category_desc: "The balance of power between the Democrats and Socialists are inherently the people's choice, and we must respect that. However, we can influence the balance of power between the two factions, and we can use that to our advantage. At best, we would prevent what happened in the Soviet Union, since most of us still hold our Queen dear to our hearts."
+
+
+
+
+
+
   # UwU
   BEL_make_cze_submit_category: "Break [CZE.GetName]"
   BEL_make_cze_submit_category_desc: "Using various methods of political manipulation, we can bring §Y[CZE.GetNameDef]§! into continually worsening situations, eventually leading them into becoming our vassal.\n§YCurrent [CZE.GetAdjective] Stability: [?CZE.stability|%G]§!\n§YCurrent [CZE.GetAdjective] War Support: [?CZE.has_war_support|%G]§!"

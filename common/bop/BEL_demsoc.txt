@@ -1,0 +1,205 @@
+BEL_bop_demsoc = {
+
+	initial_value = 0.00
+	left_side = BEL_bop_demsoc_democrats
+	right_side = BEL_bop_demsoc_communists
+	decision_category = BEL_bop_demsoc_decisions_category
+
+	# Neutral
+	range = {
+		id = BEL_bop_demsoc_neutral
+		min = -0.1
+		max = 0.1
+		modifier = {
+			stability_factor = -0.05
+		}
+	}
+
+	# Democrats
+	side = {
+		id = BEL_bop_demsoc_democrats
+		icon = tbd
+
+		# Low Democrat Bias
+		range = {
+			id = BEL_bop_demsoc_democrats_low
+			min = -0.3
+			max = -0.1
+			modifier = {
+				stability_factor = -0.1
+				ideology_drift_defence = -0.1
+				communism_acceptance = -25
+				democratic_acceptance = 25
+			}
+			on_activate = {
+				add_political_power = -15
+			}
+		}
+
+		# Medium Democrat Foothold
+		range = {
+			id = BEL_bop_demsoc_democrats_medium
+			min = -0.6
+			max = -0.3
+			modifier = {
+				stability_factor = -0.2
+				ideology_drift_defence = -0.2
+				communism_acceptance = -50
+				democratic_acceptance = 50
+			}
+			on_activate = {
+				add_political_power = -30
+			}
+		}
+
+		# High Democrat Grip
+		range = {
+			id = BEL_bop_demsoc_democrats_high
+			min = -0.9
+			max = -0.6
+			modifier = {
+				stability_factor = -0.3
+				ideology_drift_defence = -0.3
+				communism_acceptance = -75
+				democratic_acceptance = 75
+				political_power_gain = -0.2
+				political_power_cost = 0.1
+			}
+			on_activate = {
+				add_political_power = -45
+			}
+		}
+
+		# Complete Democrat Control
+		range = {
+			id = BEL_bop_demsoc_democrats_complete
+			min = -1
+			max = -0.9
+			modifier = {
+				stability_factor = -0.4
+				ideology_drift_defence = -0.4
+				communism_acceptance = -150
+				democratic_acceptance = 250
+				political_power_gain = -0.5
+				political_power_cost = 0.2
+			}
+			on_activate = {
+				add_political_power = -60
+			}
+		}
+	}
+
+	side = {
+		id = BEL_bop_demsoc_communists
+		icon = tbd
+		
+		# Low Communist Influence
+		range = {
+			id = BEL_bop_demsoc_communists_low
+			min = 0.1
+			max = 0.3
+			modifier = {
+				stability_factor = -0.05
+				ideology_drift_defence = -0.1
+				communism_acceptance = 25
+				democratic_acceptance = -25
+			}
+			on_activate = {
+				add_political_power = -15
+			}
+		}
+
+		# Medium Communist Opposition
+		range = {
+			id = BEL_bop_demsoc_communists_medium
+			min = 0.3
+			max = 0.6
+			modifier = {
+				stability_factor = -0.1
+				ideology_drift_defence = -0.2
+				communism_acceptance = 50
+				democratic_acceptance = -50
+				consumer_goods_factor = 0.05
+				production_speed_air_base_factor = -0.1
+				production_speed_anti_air_building_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				production_speed_radar_station_factor = -0.1
+				production_speed_synthetic_refinery_factor = -0.1
+				production_speed_synthetic_refinery_factor = -0.1
+				production_speed_naval_base_factor = -0.1
+				production_speed_rocket_site_factor = -0.1
+				production_speed_nuclear_reactor_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+				production_speed_bunker_factor = -0.1
+				production_speed_coastal_bunker_factor = -0.1
+			}
+			on_activate = {
+				add_political_power = -30
+			}
+		}
+
+		# High Communist Pressure
+		range = {
+			id = BEL_bop_demsoc_communists_high
+			min = 0.6
+			max = 0.9
+			modifier = {
+				stability_factor = -0.2
+				ideology_drift_defence = -0.3
+				communism_acceptance = 75
+				democratic_acceptance = -75
+				consumer_goods_factor = 0.1
+				production_speed_air_base_factor = -0.25
+				production_speed_anti_air_building_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_dockyard_factor = -0.25
+				production_speed_radar_station_factor = -0.25
+				production_speed_synthetic_refinery_factor = -0.25
+				production_speed_synthetic_refinery_factor = -0.25
+				production_speed_naval_base_factor = -0.25
+				production_speed_rocket_site_factor = -0.25
+				production_speed_nuclear_reactor_factor = -0.25
+				production_speed_infrastructure_factor = -0.25
+				production_speed_bunker_factor = -0.25
+				production_speed_coastal_bunker_factor = -0.25
+			}
+			on_activate = {
+				add_political_power = -45
+			}
+		}
+
+		# Complete Communist Rule
+		range = {
+			id = BEL_bop_demsoc_communists_complete
+			min = 0.9
+			max = 1
+			modifier = {
+				stability_factor = -0.3
+				ideology_drift_defence = -0.4
+				communism_acceptance = 200
+				democratic_acceptance = -150
+				consumer_goods_factor = 0.15
+				production_speed_air_base_factor = -0.5
+				production_speed_anti_air_building_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				production_speed_radar_station_factor = -0.5
+				production_speed_synthetic_refinery_factor = -0.5
+				production_speed_synthetic_refinery_factor = -0.5
+				production_speed_naval_base_factor = -0.5
+				production_speed_rocket_site_factor = -0.5
+				production_speed_nuclear_reactor_factor = -0.5
+				production_speed_infrastructure_factor = -0.5
+				production_speed_bunker_factor = -0.5
+				production_speed_coastal_bunker_factor = -0.5
+			}
+			on_activate = {
+				add_political_power = -60
+			}
+		}
+	}
+}

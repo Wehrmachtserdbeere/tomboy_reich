@@ -76,7 +76,7 @@
 					add_idea = BEL_idea_acceptance_low
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low
 				}
@@ -85,7 +85,7 @@
 					add_idea = BEL_idea_acceptance_low_med
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low_med
 				}
@@ -94,7 +94,7 @@
 					add_idea = BEL_idea_acceptance_medium
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium
 				}
@@ -103,7 +103,7 @@
 					add_idea = BEL_idea_acceptance_medium_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium_high
 				}
@@ -112,7 +112,7 @@
 					add_idea = BEL_idea_acceptance_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high
 				}
@@ -121,7 +121,7 @@
 					add_idea = BEL_idea_acceptance_high_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high_high
 				}
@@ -175,7 +175,7 @@
 					add_idea = BEL_idea_acceptance_low
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low
 				}
@@ -184,7 +184,7 @@
 					add_idea = BEL_idea_acceptance_low_med
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low_med
 				}
@@ -193,7 +193,7 @@
 					add_idea = BEL_idea_acceptance_medium
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium
 				}
@@ -202,7 +202,7 @@
 					add_idea = BEL_idea_acceptance_medium_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium_high
 				}
@@ -211,7 +211,7 @@
 					add_idea = BEL_idea_acceptance_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high
 				}
@@ -220,7 +220,7 @@
 					add_idea = BEL_idea_acceptance_high_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high_high
 				}
@@ -267,7 +267,7 @@
 					add_idea = BEL_idea_acceptance_low
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low
 				}
@@ -276,7 +276,7 @@
 					add_idea = BEL_idea_acceptance_low_med
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low_med
 				}
@@ -285,7 +285,7 @@
 					add_idea = BEL_idea_acceptance_medium
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium
 				}
@@ -294,7 +294,7 @@
 					add_idea = BEL_idea_acceptance_medium_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium_high
 				}
@@ -303,7 +303,7 @@
 					add_idea = BEL_idea_acceptance_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high
 				}
@@ -312,7 +312,7 @@
 					add_idea = BEL_idea_acceptance_high_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high_high
 				}
@@ -359,7 +359,7 @@
 					add_idea = BEL_idea_acceptance_low
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low
 				}
@@ -368,7 +368,7 @@
 					add_idea = BEL_idea_acceptance_low_med
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low_med
 				}
@@ -377,7 +377,7 @@
 					add_idea = BEL_idea_acceptance_medium
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium
 				}
@@ -386,7 +386,7 @@
 					add_idea = BEL_idea_acceptance_medium_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium_high
 				}
@@ -395,7 +395,7 @@
 					add_idea = BEL_idea_acceptance_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high
 				}
@@ -404,7 +404,7 @@
 					add_idea = BEL_idea_acceptance_high_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high_high
 				}
@@ -450,7 +450,7 @@
 					add_idea = BEL_idea_acceptance_low
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low
 				}
@@ -459,7 +459,7 @@
 					add_idea = BEL_idea_acceptance_low_med
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low_med
 				}
@@ -468,7 +468,7 @@
 					add_idea = BEL_idea_acceptance_medium
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium
 				}
@@ -477,7 +477,7 @@
 					add_idea = BEL_idea_acceptance_medium_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium_high
 				}
@@ -486,7 +486,7 @@
 					add_idea = BEL_idea_acceptance_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high
 				}
@@ -495,7 +495,7 @@
 					add_idea = BEL_idea_acceptance_high_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high_high
 				}
@@ -542,7 +542,7 @@
 					add_idea = BEL_idea_acceptance_low
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low
 				}
@@ -551,7 +551,7 @@
 					add_idea = BEL_idea_acceptance_low_med
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low_med
 				}
@@ -560,7 +560,7 @@
 					add_idea = BEL_idea_acceptance_medium
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium
 				}
@@ -569,7 +569,7 @@
 					add_idea = BEL_idea_acceptance_medium_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium_high
 				}
@@ -578,7 +578,7 @@
 					add_idea = BEL_idea_acceptance_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high
 				}
@@ -587,7 +587,7 @@
 					add_idea = BEL_idea_acceptance_high_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high_high
 				}
@@ -633,7 +633,7 @@
 					add_idea = BEL_idea_acceptance_low
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low
 				}
@@ -642,7 +642,7 @@
 					add_idea = BEL_idea_acceptance_low_med
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_low_med
 				}
@@ -651,7 +651,7 @@
 					add_idea = BEL_idea_acceptance_medium
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium
 				}
@@ -660,7 +660,7 @@
 					add_idea = BEL_idea_acceptance_medium_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_medium_high
 				}
@@ -669,7 +669,7 @@
 					add_idea = BEL_idea_acceptance_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high
 				}
@@ -678,7 +678,7 @@
 					add_idea = BEL_idea_acceptance_high_high
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_idea = BEL_idea_acceptance_high_high
 				}
@@ -830,6 +830,9 @@
 			}
 			mark_focus_tree_layout_dirty = yes
 			custom_effect_tooltip = BEL_political_dem_tt
+			set_power_balance = {
+				id = BEL_bop_demsoc
+			}
 		}
 	}
 
@@ -22826,6 +22829,10 @@
 				modifier = dyn_mod_bel_demsoc_idealized_democracy
 				days = 730 # 2 Years
 			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.075
+			}
 		}
 	}
 
@@ -22871,6 +22878,38 @@
 				}
 			}
 		}
+	}
+
+	# Equitize the Economy
+	focus = {
+		id = BEL_demsoc_equitize_the_economy
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 3
+
+		prerequisite = {
+			focus = BEL_demsoc_badmouth_authoritarianism
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.075
+			}
+		}
+	}
+
+	# Demand an Election
+	focus = {
+		id = x
+		icon = GFX_surrender_tiny_flag
+		cost = x
+		x = x
+		y = x
+		completion_reward = { }
 	}
 
 
