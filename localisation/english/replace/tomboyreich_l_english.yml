@@ -235,6 +235,8 @@
     CZE_BEL_terror_DEF: "the Bohemian Revolt"
     CZE_BEL_terror_ADJ: "Bohemian"
 
+    terror_acceptance: "Acceptance of Terror Diplomacy"
+
     POLITICS_MOON_MAN_NAME: "Moon Man"
     POLITICS_MOON_MAN_DESC: "Since ancient times, Aryans worshipped the eternal moon. Getting closer to the lunar body was seen as a symbol of progress and success in life. But since the mixture with lesser races, the moon has become less prominent and its importance reduced considerably.\nBecause of this, the eternal moon has taken a human form to rescue the Aryan people from their miserable state. His only goal is to cleanse the world and get rid of these lesser races and those that were not born into the right bloodline or didn't follow the divine path properly. The ultimate aim for every other being who had fallen away from grace would be nothing but annihilation. Those that weren't part of his cause must die forever, because they are just worthless slaves anyway."
     eternal_moon: "The Eternal Moon"

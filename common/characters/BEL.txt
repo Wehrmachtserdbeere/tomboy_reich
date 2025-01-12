@@ -415,14 +415,20 @@ characters = {
 				original_tag = BEL
 			}
 			available = {
-				OR = {
-					USA_douglas_macarthur = {
-						is_country_leader = no
-					}
-					USA = {
-						has_opinion = {
-							target = BEL
-							value > 24
+				USA = {
+					OR = {
+						AND = {
+							USA_douglas_macarthur = {
+								is_country_leader = no
+							}
+							has_opinion = {
+								target = BEL
+								value > 24
+							}
+						}
+						NOT = {
+							has_government = democratic
+							has_government = neutrality
 						}
 					}
 				}

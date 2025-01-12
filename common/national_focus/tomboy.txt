@@ -17935,7 +17935,7 @@
 					has_completed_focus = BEL_acceptance_supremacy
 					has_completed_focus = BEL_political_crack_down
 				}
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 
@@ -17973,7 +17973,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_fascist_ascendance
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 
@@ -18001,7 +18001,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_fascist_ascendance
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 
@@ -18318,7 +18318,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_establish_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		
@@ -18927,7 +18927,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_establish_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		
@@ -19389,7 +19389,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_establish_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 
@@ -22742,6 +22742,149 @@
 	##############
 	# Democratic #
 	##############
+
+	# Rally the people
+	focus = {
+		id = BEL_demsoc_rally_the_people
+		icon = tbd
+
+		cost = 4
+		
+		x = 13
+		y = 2
+
+		prerequisite = {
+			focus = BEL_political_promote
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_political_promote
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+
+	# Badmouth Authoritarianism
+	focus = {
+		id = BEL_demsoc_badmouth_authoritarianism
+		icon = tbd
+
+		cost = 4
+		
+		x = 15
+		y = 2
+
+		prerequisite = {
+			focus = BEL_political_promote
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_political_promote
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = terror
+				popularity = -0.05
+			}
+		}
+	}
+
+	# Promote idealized democracy
+	focus = {
+		id = BEL_demsoc_promote_idealized_democracy
+		icon = tbd
+
+		cost = 5
+
+		x = 12
+		y = 3
+
+		prerequisite = {
+			focus = BEL_demsoc_rally_the_people
+		}
+
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_demsoc_idealized_democracy
+				days = 730 # 2 Years
+			}
+		}
+	}
+
+	# Work for your Rights
+	focus = {
+		id = BEL_demsoc_work_for_your_rights
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 3
+
+		prerequisite = {
+			focus = BEL_demsoc_rally_the_people
+		}
+		prerequisite = {
+			focus = BEL_demsoc_badmouth_authoritarianism
+		}
+
+		available = {
+			any_owned_state = {
+				var:building_level@arms_factory = {
+					value > 1
+				}
+			}
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					var:building_level@arms_factory = {
+						value > 1
+					}
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
