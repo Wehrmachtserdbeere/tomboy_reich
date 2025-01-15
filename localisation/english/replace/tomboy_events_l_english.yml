@@ -734,6 +734,25 @@
   tomboy.102.a: "Thank you!"
   tomboy.102.a_tt: "§YLevel 2 Civilian Factories§! have been constructed in §Y4 random states§! of ours."
 
+  tomboy.103.t: "The Fate of Lalatina"
+  tomboy.103.d: "After our recent victory, we have to decide what to do with the Queen. She has been a thorn in our side for a long time, advocating for monarchism and a return to tradition. However, she has also been a symbol of our nation, and many of our people still support her. We have to decide whether to keep her as a figurehead, like the Italians did with their king, or remove her, like the French and Soviets did to their aristocracy."
+  tomboy.103.a: "The Italian Way."
+  tomboy.103.b: "The Franco-Soviet Way."
+  tomboy.103.b_tt: "§RThis will make your run significantly harder. Only choose this if you are prepared for the consequences!§!"
+
+  tomboy.104.t: "[BEL.GetAdjective]s murder their Queen!"
+  tomboy.104.d: "After the recent democratic takeover, refugees from [BEL.GetNameDef] have reported that the Queen has been publicly executed in an unfair trial. Though the veracity of their claims were questionable, images have surfaced that confirm the reports. While the democratic government tried to keep it under wraps, it became public knowledge that the Queen was indeed murdered in cold blood, and the reactions of their people are understandably angry."
+  tomboy.104.a: "Horrifying."
+  tomboy.104.b: "About time."
+
+  tomboy.105.t: "Tomboy Queen flees country!"
+  tomboy.105.d: "After plans to publicly execute her, Queen Lalatina of the [BEL.GetAdjective]s has reportedly fled [BEL.GetNameDef] during the chaos that ensued following the recent coups. While it has been confirmed by documents that she plans to not return and to live a quiet life with her close followers, various intelligence agencies, including our own, have yet to confirm her location, or find any hints on where she might've escaped to."
+
+
+
+
+
+
 
 
 

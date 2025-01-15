@@ -30,6 +30,26 @@ characters = {
 		#}
 	}
 
+	BEL_regency_leader = {
+		name = POLITICS_BEL_REGENCY_NAME
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_Regency"
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			traits = {
+				BEL_regency
+			}
+			desc = POLITICS_BEL_REGENCY_DESC
+			id = -4
+		}
+	}
+
 	BEL_tomboy_council_leader = {
 		name = POLITICS_COUNCIL_NAME
 		
@@ -327,7 +347,7 @@ characters = {
 						}
 					}
 					SOV = {
-						SOV_georgy_zhukov = {
+						SOV_georgy_zhukov = { # We need to ask the HoI4 Modding Server for help about the ingame error...
 							OR = {
 								has_character_flag = SOV_exiled_flag
 								has_character_flag = SOV_character_purged_flag

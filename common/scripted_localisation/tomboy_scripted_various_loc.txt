@@ -1,0 +1,21 @@
+define_text = {
+	name = BEL_idea_murder_of_lalatina_desc_scripted_loc
+	text = {
+		trigger = {
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+		localization_key = BEL_idea_murder_of_lalatina_desc_demsoc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+		localization_key = BEL_idea_murder_of_lalatina_desc_monafash
+	}
+}

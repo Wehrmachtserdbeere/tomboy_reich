@@ -8415,3 +8415,195 @@ country_event = {
 		custom_effect_tooltip = tomboy.102.a_tt
 	}
 }
+
+# BEL | Fate of Lalatina | The Fate of Lalatina
+country_event = {
+	id = tomboy.103
+	title = tomboy.103.t
+	desc = tomboy.103.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.103"
+	}
+
+	option = { # The Italian Way (Keep her as a figure of unity)
+		name = tomboy.103.a
+
+		ai_chance = {
+			base = 75
+			modifier = {
+				set_temp_variable = {
+					var = tomboy_103_commie_pop
+					value = party_popularity@communism
+				}
+				multiply_temp_variable = {
+					var = tomboy_103_commie_pop # Remove likeliness if commies are powerful
+					value = -1
+				}
+				add = tomboy_103_commie_pop
+			}
+		}
+
+		add_ideas = BEL_lalatina_idea
+	}
+
+	option = { # The French/Soviet way (Murder her)
+		name = tomboy.103.b
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = party_popularity@communism
+			}
+		}
+
+		random_list = {
+			80 = {
+				BEL = {
+					retire_character = BEL_lalatina_leader
+					add_manpower = -5
+					add_stability = -0.6
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.55
+					}
+					add_ideas = BEL_idea_murder_of_lalatina
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_major = yes
+							is_in_faction_with = BEL
+							is_neighbor_of = BEL
+							is_ai = no # Let players be notified of this too
+						}
+						NOT = {
+							original_tag = BEL
+						}
+					}
+					news_event = tomboy.104
+				}
+			}
+			20 = {
+				BEL = {
+					retire_character = BEL_lalatina_leader
+					add_manpower = -5
+					add_stability = -0.15
+					add_popularity = {
+						ideology = democratic
+						popularity = -0.2
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_major = yes
+							is_in_faction_with = BEL
+							is_neighbor_of = BEL
+							is_ai = no # Let players be notified of this too
+						}
+						NOT = {
+							original_tag = BEL
+						}
+					}
+					news_event = tomboy.105
+				}
+				hidden_effect = {
+					random_country = {
+						limit = {
+							NOT = {
+								has_government = communism
+								is_ally_with = SOV
+								is_in_faction_with = SOV
+								is_neighbor_of = BEL
+								original_tag = BEL
+							}
+						}
+						add_manpower = 5
+					}
+				}
+			}
+		}
+		promote_character = BEL_regency_leader
+		custom_effect_tooltip = tomboy.103.b_tt
+	}
+}
+
+# BEL executes Lalatina
+news_event = {
+	id = tomboy.104
+	title = tomboy.104.t
+	desc = tomboy.104.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.104"
+	}
+
+	option = { # Horrifying.
+		name = tomboy.104.a
+
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		add_opinion_modifier = {
+			target = BEL
+			modifier = large_decrease
+		}
+	}
+
+	option = { # Congratulations!
+		name = tomboy.104.b
+
+		trigger = {
+			has_government = communism
+		}
+
+		add_opinion_modifier = {
+			target = BEL
+			modifier = small_increase
+		}
+	}
+}
+
+# BEL fails to execute Lalatina, plans are discovered
+news_event = {
+	id = tomboy.105
+	title = tomboy.105.t
+	desc = tomboy.105.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.105"
+	}
+
+	option = { # Horrifying.
+		name = tomboy.105.a
+
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		add_opinion_modifier = {
+			target = BEL
+			modifier = large_decrease
+		}
+	}
+
+	option = { # Too bad.
+		name = tomboy.105.b
+
+		trigger = {
+			has_government = communism
+		}
+	}
+}

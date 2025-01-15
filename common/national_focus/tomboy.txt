@@ -22920,8 +22920,35 @@
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = BEL_demsoc_unite_the_democratic_parties_lead_to_democratic_focuses
 			add_popularity = {
 				ideology = democratic
+				popularity = 0.1
+			}
+		}
+	}
+
+	# Unite the Communist Parties
+	focus = {
+		id = BEL_demsoc_unite_the_communist_parties
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 4
+
+		prerequisite = {
+			focus = BEL_demsocwork_for_your_rights
+		}
+		prerequisite = {
+			focus = BEL_demsoc_equitize_the_economy
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BEL_demsoc_unite_the_communist_parties_lead_to_communist_focuses
+			add_popularity = {
+				ideology = communism
 				popularity = 0.1
 			}
 		}
@@ -22941,30 +22968,127 @@
 			focus = BEL_demsoc_promote_idealized_democracy
 			focus = BEL_demsoc_equitize_the_economy
 		}
-		
-		completion_reward = {
-			if = {
-				limit = {
+
+		prerequisite = {
+			focus = BEL_demsoc_unite_the_communist_parties
+		}
+		prerequisite = {
+			focus = BEL_demsoc_unite_the_democratic_parties
+		}
+
+		bypass = {
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+
+		available = {
+			OR = {
+				AND = {
 					power_balance_value = {
 						id = BEL_bop_demsoc
-						value > 0
+						value > 0.75
 					}
+					has_completed_focus = BEL_demsoc_unite_the_communist_parties
 				}
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-					last_election = var:current_date
+				AND = {
+					power_balance_value = {
+						id = BEL_bop_demsoc
+						value < -0.75
+					}
+					has_completed_focus = BEL_demsoc_unite_the_democratic_parties
 				}
 			}
-			else = {
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = no
-					last_election = var:current_date
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BEL_demsoc_demand_an_election_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = BEL_demsoc_unite_the_communist_parties
+					}
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+						last_election = var:current_date
+					}
+				}
+				else = {
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = no
+						last_election = var:current_date
+					}
+					complete_national_focus = BEL_democratic_victory_for_the_democratic_ideal
+				}
+				remove_power_balance = {
+					id = BEL_bop_demsoc
 				}
 			}
 		}
 	}
+
+
+	##############
+	# Democratic #
+	##############
+
+	# Victory for the Democratic Ideal
+	focus = {
+		id = BEL_democratic_victory_for_the_democratic_ideal
+		icon = tbd
+
+		cost = 0
+
+		x = 14
+		y = 6
+
+		allow_branch = {
+			has_completed_focus = BEL_demsoc_demand_an_election
+			has_completed_focus = BEL_demsoc_unite_the_democratic_parties
+		}
+
+		prerequisite = {
+			focus = BEL_demsoc_demand_an_election
+		}
+
+		completion_reward = {
+			add_political_power = 250
+		}
+	}
+
+	# Fate of Lalatina
+	focus = {
+		id = BEL_democratic_fate_of_lalatina
+		icon = tbd
+
+		cost = 3
+		
+		x = 10
+		y = 7
+
+		prerequisite = {
+			focus = BEL_democratic_victory_for_the_democratic_ideal
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = tomboy.103
+				days = 2
+			}
+		}
+	}
+
+
+
+
+	#############
+	# Communism #
+	#############
+
+
 
 
 
