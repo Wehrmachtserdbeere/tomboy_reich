@@ -2268,6 +2268,54 @@ ideas = {
 			}
 		}
 
+		BEL_idea_banned_right_wing_parties = {
+			name = BEL_idea_banned_right_wing_parties
+
+			picture = tbd
+
+			available = {
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = terror
+					}
+				}
+			}
+
+			modifier = {
+				fascism_drift = -0.05
+				fascism_acceptance = -50
+				neutrality_drift = -0.05
+				neutrality_acceptance = -50
+				terror_drift = -0.05
+				terror_acceptance = -50
+			}
+		}
+		
+		BEL_idea_controlled_right_wing_opposition = {
+			name = BEL_idea_controlled_right_wing_opposition
+
+			picture = tbd
+
+			available = {
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = terror
+					}
+				}
+			}
+
+			modifier = {
+				democratic_drift = 0.025
+				democratic_acceptance = 25
+				communism_drift = 0.025
+				communism_acceptance = 25
+			}
+		}
+
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P
 		BEL_test_idea = {

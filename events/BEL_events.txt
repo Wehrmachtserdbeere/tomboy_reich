@@ -8526,7 +8526,7 @@ country_event = {
 				}
 			}
 		}
-		promote_character = BEL_regency_leader
+		promote_character = BEL_regency_neutrality_leader
 		custom_effect_tooltip = tomboy.103.b_tt
 	}
 }

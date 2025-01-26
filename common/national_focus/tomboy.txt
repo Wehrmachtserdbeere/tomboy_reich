@@ -23081,6 +23081,72 @@
 		}
 	}
 
+	# Ban Right-Wing Parties
+	focus = {
+		id = BEL_democratic_ban_right_wing_parties
+		icon = tbd
+
+		cost = 3
+		
+		x = 9
+		y = 8
+
+		prerequisite = {
+			focus = BEL_democratic_fate_of_lalatina
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_permit_right_wing_opposition
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = terror
+				popularity = -0.2
+			}
+			add_ideas = BEL_idea_banned_right_wing_parties
+		}
+	}
+
+	# Permit Right-Wing Opposition
+	focus = {
+		id = BEL_democratic_permit_right_wing_opposition
+		icon = tbd
+
+		cost = 3
+		
+		x = 11
+		y = 8
+
+		mutually_exclusive = {
+			focus = BEL_democratic_ban_right_wing_parties
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.025
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.025
+			}
+			add_popularity = {
+				ideology = terror
+				popularity = 0.025
+			}
+			add_ideas = BEL_idea_controlled_right_wing_opposition
+		}
+	}
+
 
 
 

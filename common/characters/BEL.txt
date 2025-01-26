@@ -30,7 +30,7 @@ characters = {
 		#}
 	}
 
-	BEL_regency_leader = {
+	BEL_regency_neutrality_leader = {
 		name = POLITICS_BEL_REGENCY_NAME
 		gender = female
 
