@@ -121,4 +121,8 @@ opinion_modifiers = {
 	BEL_scientists_returned_neg = {
 		value = -20
 	}
+
+	BEL_taking_inspiration = {
+		value = 10
+	}
 }

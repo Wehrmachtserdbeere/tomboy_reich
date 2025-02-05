@@ -23126,6 +23126,10 @@
 		x = 11
 		y = 8
 
+		prerequisite = {
+			focus = BEL_democratic_fate_of_lalatina
+		}
+
 		mutually_exclusive = {
 			focus = BEL_democratic_ban_right_wing_parties
 		}
@@ -23144,6 +23148,106 @@
 				popularity = 0.025
 			}
 			add_ideas = BEL_idea_controlled_right_wing_opposition
+		}
+	}
+
+	# Study French Democracy
+	focus = {
+		id = BEL_democratic_study_french_democracy
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 7
+
+		prerequisite = {
+			focus = BEL_democratic_victory_for_the_democratic_ideal
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_study_british_democracy
+			focus = BEL_democratic_our_own_democracy
+		}
+		
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_taking_inspiration
+				}
+			}
+		}
+	}
+	
+	# Our own democracy
+	focus = {
+		id = BEL_democratic_our_own_democracy
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 7
+
+		prerequisite = {
+			focus = BEL_democratic_victory_for_the_democratic_ideal
+		}
+
+		available = {
+			FRA = {
+				has_government = democratic
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_study_british_democracy
+			focus = BEL_democratic_study_french_democracy
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_our_own_democracy
+		}
+	}
+
+	# Study British Democracy
+	focus = {
+		id = BEL_democratic_study_british_democracy
+		icon = tbd
+
+		cost = 5
+		
+		x = 19
+		y = 7
+
+		prerequisite = {
+			focus = BEL_democratic_victory_for_the_democratic_ideal
+		}
+
+		available = {
+			ENG = {
+				has_government = democratic
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_study_french_democracy
+			focus = BEL_democratic_our_own_democracy
+		}
+		
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_taking_inspiration
+				}
+			}
 		}
 	}
 

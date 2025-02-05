@@ -538,3 +538,12 @@ Linguistics = {
     Tomboy_in_Dutch = "Tomboy" # They seriously have no proper word for it, what losers!
 
 }
+
+Interesting Places = {
+    
+    Romanov Death Place = {
+        State = 653
+        Province = 1821
+    }
+
+}
