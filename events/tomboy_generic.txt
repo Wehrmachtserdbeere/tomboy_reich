@@ -477,7 +477,7 @@ country_event = {
 	}
 }
 
-# FROM refused out guarantee!
+# FROM refused our guarantee!
 country_event = {
 	id = tomboy_generic.7
 	title = tomboy_generic.7.t
@@ -891,6 +891,204 @@ country_event = {
 		add_opinion_modifier = {
 			target = FROM
 			modifier = refused_alliance
+		}
+	}
+}
+
+# FROM wishes to join our faction!
+country_event = {
+	id = tomboy_generic.12
+	title = tomboy_generic.12.t
+	desc = tomboy_generic.12.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Ran event: tomboy_generic.12"
+	}
+
+	option = { # We accept.
+		name = tomboy_generic.12.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20
+				has_government = FROM
+			}
+			modifier = {
+				add = -20
+				OR = { # Opposing ideologies
+					AND = {
+						FROM = { has_government = fascism }
+						ROOT = { has_government = communism }
+					}
+					AND = {
+						ROOT = { has_government = fascism }
+						FROM = { has_government = communism }
+					}
+					AND = {
+						FROM = { has_government = democratic }
+						ROOT = { has_government = neutrality }
+					}
+					AND = {
+						ROOT = { has_government = democratic }
+						FROM = { has_government = neutrality }
+					}
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -24
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = FROM
+					value < -74
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+					target = FROM
+					value < -95
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 49
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 74
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 95
+				}
+			}
+			modifier = {
+				add = 20
+				num_divisions < FROM.num_divisions
+			}
+			modifier = {
+				add = 5
+				num_of_nukes < from.num_of_nukes
+			}
+			modifier = {
+				add = -25
+				FROM = {
+					has_war = yes
+					NOT = {
+						has_war_together_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				FROM = {
+					has_war_together_with = ROOT
+				}
+			}
+			modifier = {
+				add = -50
+				any_allied_country = {
+					FROM = {
+						has_war_with = PREV
+					}
+				}
+			}
+		}
+
+		add_to_faction = FROM
+	}
+
+	option = { # We refuse.
+		name = tomboy_generic.12.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		effect_tooltip = {
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = BEL_disappointed
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = -20
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = tomboy_generic.13
+				days = 2
+				random_days = 1
+			}
+		}
+	}
+}
+
+# FROM refuses.
+country_event = {
+	id = tomboy_generic.13
+	title = tomboy_generic.13.t
+	desc = tomboy_generic.13.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_generic.13"
+	}
+
+	option = { # Damn!
+		name = tomboy_generic.13.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = BEL_disappointed
+		}
+		add_ai_strategy = {
+			type = befriend
+			id = FROM
+			value = -20
 		}
 	}
 }

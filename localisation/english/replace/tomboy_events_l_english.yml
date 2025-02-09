@@ -834,3 +834,6 @@
   tomboy_generic.11.t: "[FROM.GetName] refuses!"
   tomboy_generic.11.d: "Despite our kind offer, [FROM.GetNameDef] refused to join the [ROOT.GetFactionName]. They will have to fend for themselves, it seems."
   tomboy_generic.11.a: "Sad!"
+
+  tomboy_generic.12.t: "[FROM.GetName] asks to join [ROOT.GetFactionName]"
+  tomboy_generic.12.d: "#-#-# Scream at Strawb until he adds localization! #-#-#"

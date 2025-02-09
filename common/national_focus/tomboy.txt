@@ -23251,6 +23251,214 @@
 		}
 	}
 
+	# Buy French Equipment
+	focus = {
+		id = BEL_democratic_buy_french_equipment
+		icon = tbd
+
+		cost = 2
+		
+		x = 13
+		y = 8
+
+		prerequisite = {
+			focus = BEL_democratic_study_french_democracy
+		}
+
+		available = {
+			FRA = {
+				AND = {
+					exists = yes
+					has_opinion = {
+						target = BEL
+						value > 9
+					}
+					has_equipment = {
+						infantry_equipment > 2499 # 2500 or more AT LEAST!
+					}
+					NOT = {
+						OR = {
+							AND = {
+								BEL = { has_government = fascism }
+								FRA = { has_government = communism }
+							}
+							AND = {
+								BEL = { has_government = communism }
+								FRA = { has_government = fascism }
+							}
+							AND = {
+								BEL = { has_government = democratic }
+								FRA = { has_government = neutrality }
+							}
+							AND = {
+								BEL = { has_government = neutrality }
+								FRA = { has_government = democratic }
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = small_increase
+				}
+				add_ai_strategy = {
+					type = protect # They buy our guns, we need to ensure they stay alive so we can keep selling them!
+					id = BEL
+					value = 10
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2500
+				}
+			}
+			BEL = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+				add_ai_strategy = {
+					type = befriend # They are a secure source of guns.
+					id = FRA
+					value = 25
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+				}
+			}
+		}
+	}
+
+	# Buy British Equipment
+	focus = {
+		id = BEL_democratic_buy_british_equipment
+		icon = tbd
+
+		cost = 2
+		
+		x = 19
+		y = 8
+
+		prerequisite = {
+			focus = BEL_democratic_study_british_democracy
+		}
+
+		available = {
+			ENG = {
+				AND = {
+					exists = yes
+					has_opinion = {
+						target = BEL
+						value > 9
+					}
+					has_equipment = {
+						infantry_equipment > 2499 # 2500 or more AT LEAST!
+					}
+					NOT = {
+						OR = {
+							AND = {
+								BEL = { has_government = fascism }
+								ENG = { has_government = communism }
+							}
+							AND = {
+								BEL = { has_government = communism }
+								ENG = { has_government = fascism }
+							}
+							AND = {
+								BEL = { has_government = democratic }
+								ENG = { has_government = neutrality }
+							}
+							AND = {
+								BEL = { has_government = neutrality }
+								ENG = { has_government = democratic }
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = small_increase
+				}
+				add_ai_strategy = {
+					type = protect # They buy our guns, we need to ensure they stay alive so we can keep selling them!
+					id = BEL
+					value = 10
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2500
+				}
+			}
+			BEL = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = small_increase
+				}
+				add_ai_strategy = {
+					type = befriend # They are a secure source of guns.
+					id = ENG
+					value = 25
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+				}
+			}
+		}
+	}
+
+	####################################
+	# Join the Little Entente | France #
+	####################################
+
+	# Approach the French
+	focus = {
+		id = BEL_democratic_approach_the_french
+		icon = tbd
+
+		cost = 4
+		
+		x = 15
+		y = 8
+
+		prerequisite = {
+			focus = BEL_democratic_study_french_democracy
+		}
+
+		available = {
+			FRA = {
+				exists = yes
+				is_in_faction = yes
+			}
+		}
+
+		bypass = {
+			is_in_faction = yes
+		}
+		
+		completion_reward = {
+			FRA = {
+				var:faction_leader = {
+					country_event = {
+						id = tomboy_generic.12
+						days = 2
+						random_days = 1
+					}
+				}
+			}
+		}
+	}
+
 
 
 
