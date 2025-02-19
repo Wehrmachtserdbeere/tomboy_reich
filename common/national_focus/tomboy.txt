@@ -23439,11 +23439,19 @@
 			FRA = {
 				exists = yes
 				is_in_faction = yes
+				NOT = {
+					AND = {
+						is_in_faction_with = ENG # If they're in the allies, we should ask the British.
+						var:faction_leader = {
+							original_tag = ENG
+						}
+					}
+				}
 			}
 		}
 
 		bypass = {
-			is_in_faction = yes
+			is_in_faction_with = FRA
 		}
 		
 		completion_reward = {
@@ -23454,6 +23462,255 @@
 						days = 2
 						random_days = 1
 					}
+				}
+			}
+		}
+	}
+
+	# Approach the British
+	focus = {
+		id = BEL_democratic_approach_the_british
+		icon = tbd
+
+		cost = 4
+		
+		x = 17
+		y = 8
+
+		prerequisite = {
+			focus = BEL_democratic_study_british_democracy
+		}
+
+		available = {
+			ENG = {
+				exists = yes
+				is_in_faction = yes
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = ENG
+		}
+		
+		completion_reward = {
+			ENG = {
+				var:faction_leader = {
+					country_event = {
+						id = tomboy_generic.12
+						days = 2
+						random_days = 1
+					}
+				}
+			}
+		}
+	}
+
+	# Reject the false dichotomy
+	focus = {
+		id = BEL_democratic_reject_the_false_dichotomy
+		icon = tbd
+
+		cost = 4
+		
+		x = 16
+		y = 9
+
+		prerequisite = {
+			focus = BEL_democratic_study_french_democracy
+			focus = BEL_democratic_our_own_democracy
+			focus = BEL_democratic_study_british_democracy
+		}
+
+		available = {
+			is_in_faction = no
+		}
+		
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+				can_join_factions = yes
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = FRA
+				value = -200
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ENG
+				value = -200
+			}
+		}
+	}
+
+	# Back Germany (Something about Tomboys being genoicided in Pooland)
+	focus = {
+		id = BEL_democratic_back_germany
+		icon = tbd
+
+		cost = 2
+		
+		x = 15
+		y = 10
+
+		prerequisite = {
+			focus = BEL_democratic_approach_the_french
+			focus = BEL_democratic_reject_the_false_dichotomy
+			focus = BEL_democratic_approach_the_british
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_back_poland
+		}
+
+		available = {
+			NOT = {
+				has_war_with = GER
+				any_country = {
+					limit = {
+						is_in_faction_with = BEL
+					}
+					has_war_with = GER
+				}
+				AND = {
+					OR = {
+						is_in_faction_with = ENG
+						is_in_faction_with = FRA
+					}
+					GER = {
+						OR = {
+							has_completed_focus = GER_danzig_or_war
+							has_war_with = POL
+						}
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			GER = {
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 50
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = BEL
+					value = 40
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_disappointed
+				}
+				add_ai_strategy = {
+					type = antagonize
+					id = BEL
+					value = 25
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_large_suspicion
+				}
+				add_ai_strategy = {
+					type = antagonize
+					id = BEL
+					value = 25
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = BEL_large_suspicion
+				}
+				add_ai_strategy = {
+					type = antagonize # Dayum duh Kuwaud lawahs! (US. English for "Damn the Kraut lovers!")
+					id = BEL
+					value = 25
+				}
+			}
+			POL = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_decrease
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = BEL
+					value = 250
+				}
+			}
+			if = {
+				limit = {
+					ISR = {
+						exists = yes
+					}
+				}
+				ISR = {
+					add_opinion_modifier = {
+						target = BEL
+						modifier = large_decrease
+					}
+					add_ai_strategy = { # How DARE you support the damned Gentiles, especially GERMANS?!
+						type = conquer
+						id = BEL
+						value = 1000
+					}
+				}
+			}
+		}
+	}
+
+	# Back Pooland (Something about the Tomboys being genocided by Pooland being unimportant)
+	focus = {
+		id = BEL_democratic_back_poland
+		icon = tbd
+
+		cost = 2
+		
+		x = 17
+		y = 10
+
+		prerequisite = {
+			focus = BEL_democratic_approach_the_french
+			focus = BEL_democratic_reject_the_false_dichotomy
+			focus = BEL_democratic_approach_the_british
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_back_germany
+		}
+
+		bypass = {
+			POL = {
+				OR = {
+					exists = no
+					is_in_faction_with = GER
+					has_country_flag = poland_traded_danzig
+				}
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					POL = {
+						has_war_with = GER
+					}
+				}
+				add_to_war = {
+					targeted_alliance = POL
+					enemy = GER
+				}
+			}
+			POL = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_increase
 				}
 			}
 		}

@@ -836,4 +836,4 @@
   tomboy_generic.11.a: "Sad!"
 
   tomboy_generic.12.t: "[FROM.GetName] asks to join [ROOT.GetFactionName]"
-  tomboy_generic.12.d: "#-#-# Scream at Strawb until he adds localization! #-#-#"
+  tomboy_generic.12.d: "A few hours ago, [FROM.GetNameDef] contacted us. Through all the formal procedures, they officially asked us if they could join the [ROOT.GetFactionName]. At the current moment, we're unable to fully assess what they'll gain out of this deal, but we know we would get access to new markets and trading opportunities."
