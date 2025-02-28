@@ -23716,6 +23716,164 @@
 		}
 	}
 
+	# German-Tomboy Refugee Treaty
+	# Something about letting "refugees" from Germany in. Definitely no ODESSA business going on...
+	focus = {
+		id = BEL_democratic_german_tomboy_refugee_treaty
+		icon = tbd
+
+		cost = 2
+		
+		x = 13
+		y = 11
+
+		prerequisite = {
+			focus = BEL_democratic_back_germany
+		}
+
+		available = {
+			# They must in some way like us
+			GER = {
+				has_opinion = {
+					target = BEL
+					value > 19
+				}
+				# They must not have capitulated
+				has_capitulated = no
+				exists = yes
+				# They must be fascist
+				has_government = fascism
+				# They must not be in a faction with us
+				NOT = {
+					is_in_faction_with = BEL
+				}
+				# Finally, they must not be at war with us
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+			NOT = {
+				has_completed_focus = BEL_democratic_anti-germany_treaty
+			}
+		}
+		
+		completion_reward = {
+			BEL = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = GER
+					value = 50
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = GER
+					value = 40
+				}
+				add_timed_idea = {
+					idea = BEL_idea_german_tomboy_refugee_treaty_tomboy
+					years = 5
+				}
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 50
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = BEL
+					value = 40
+				}
+				add_timed_idea = {
+					idea = BEL_idea_german_tomboy_refugee_treaty_germany
+					years = 5
+				}
+			}
+		}
+	}
+
+	# Anti-Germany Treaty
+	# Going the Anglo-French path I see...
+	focus = {
+		id = BEL_democratic_anti_germany_treaty
+		icon = tbd
+
+		cost = 2
+		
+		x = 19
+		y = 11
+
+		prerequisite = {
+			focus = BEL_democratic_back_poland
+		}
+
+		available = {
+			NOT = {
+				has_completed_focus = BEL_democratic_german_tomboy_refugee_treaty
+			}
+		}
+		
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = medium_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 50
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = medium_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 50
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = medium_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 50
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = BEL
+					modifier = medium_increase
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = BEL
+					value = 50
+				}
+			}
+			add_timed_idea = {
+				idea = BEL_idea_anti_germany_treaty
+				years = 5
+			}
+		}
+	}
+
 
 
 

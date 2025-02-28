@@ -2339,6 +2339,115 @@ ideas = {
 			}
 		}
 
+		BEL_idea_german_tomboy_refugee_treaty_tomboy = {
+			name = BEL_idea_german_tomboy_refugee_treaty
+
+			picture = tbd
+
+			available = {
+				has_capitulated = no
+				exists = yes
+				# Allowed during war, because the fleeing Germans want to not perish.
+				# Of course, only if the Americans aren't involved. They desperately want to exterminate the Germans, and would gladly include the Tomboys if they don't do everything the Americans want.
+				NOT = {
+					AND = {
+						is_in_faction_with = USA
+						USA = {
+							has_war_with = GER
+						}
+					}
+				}
+				# Make sure both have the idea
+				GER = {
+					has_idea = BEL_idea_german_tomboy_refugee_treaty_germany
+				}
+			}
+
+			modifier = {
+				monthly_population = 0.05
+				research_speed_factor = 0.05
+				experience_gain_factor = 0.05
+				political_power_gain = -0.25
+				fascism_drift = 0.01
+				fascism_acceptance = 10
+			}
+		}
+
+		BEL_idea_german_tomboy_refugee_treaty_germany = {
+			name = BEL_idea_german_tomboy_refugee_treaty
+
+			picture = tbd
+
+			available = {
+				has_capitulated = no
+				exists = yes
+				has_government = fascism
+				NOT = {
+					has_war_with = BEL
+				}
+				# Make sure both have the idea
+				BEL = {
+					has_idea = BEL_idea_german_tomboy_refugee_treaty_tomboy
+				}
+			}
+
+			modifier = {
+				monthly_population = -0.025
+				stability_weekly_factor = -0.001
+				political_power_gain = -0.05
+				army_org = 0.05
+				army_morale = 0.05
+				surrender_limit = 0.15
+				# They have an easy way out :)
+				army_attack = 0.1
+				# They have an easy way out :(
+				army_defence = -0.1
+			}
+		}
+
+		BEL_idea_anti_germany_treaty = {
+			name = BEL_idea_anti_germany_treaty
+
+			picture = tbd
+
+			available = {
+				NOT = {
+					OR = {
+						is_in_faction_with = GER
+						# Why would we follow anti-German policies if we're Fascist? We are majority German ffs, and we're not going to betray our own people!
+						has_government = fascism
+						GER = {
+							NOT = {
+								has_government = fascism
+							}
+						}
+					}
+				}
+			}
+
+			modifier = {
+				# Our scientists are almost all German, so we're going to have a hard time researching new stuff with them being discriminated against.
+				research_speed_factor = -0.05
+				# We're going to have a hard time getting new recruits, because the Germans are the majority of our population.
+				monthly_population = -0.05
+				# We're going to have a hard time keeping manpower, because the Germans are the majority of our population.
+				weekly_manpower = -100
+				# Our government will not be popular.
+				political_power_factor = -0.1
+				democratic_drift = -0.01
+				# And the people will be more likely to work with the Germans and their ideals.
+				fascism_acceptance = 20
+			}
+
+			targeted_modifier = {
+				tag = GER
+
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				ai_focus_aggressive_factor = 50
+			}
+		}
+
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P
 		BEL_test_idea = {
