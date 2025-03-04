@@ -3963,3 +3963,66 @@ BEL_bop_demsoc_decisions_category = {
         }
     }
 }
+
+BEL_german_buyback_category = {
+
+    # 42 - Moselland
+    # 51 - Rhineland
+    # 55 - Hessen
+    # 57 - Westfalen
+    # 56 - Weser-Ems
+
+    BEL_german_buyback_purchase_state = {
+        
+        allowed = {
+            always = yes
+        }
+
+        state_target = yes
+
+        target_root_trigger = {
+            has_country_flag = BEL_began_german_buyback
+        }
+
+        available = {
+            has_equipment = {
+                # 10000 or more
+                infantry_equipment > 9999
+            }
+        }
+
+        target_array = tomboy_german_states_array
+
+        cost = 50
+
+        target_trigger = {
+            FROM = {
+                var:owner = {
+                    NOT = {
+                        original_tag = BEL
+                    }
+                }
+                any_neighbor_state = {
+                    owner = {
+                        original_tag = ROOT
+                    }
+                }
+            }
+        }
+
+        days_re_enable = 28
+
+        remove_effect = {
+            FROM = {
+                save_event_target_as = tomboy_german_target_state
+            }
+            var:FROM.owner = {
+                country_event = {
+                    id = tomboy.107
+                }
+            }
+        }
+
+    }
+
+}

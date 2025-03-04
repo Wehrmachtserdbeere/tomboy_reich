@@ -8607,3 +8607,387 @@ news_event = {
 		}
 	}
 }
+
+# FROM requests for ROOT to become an associated state of FROM
+country_event = {
+	id = tomboy.106
+	title = tomboy.106.t
+	desc = tomboy.106.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.106"
+	}
+
+	option = { # Yes.
+		name = tomboy.106.a
+
+		ai_chance = {
+			base = 10
+			# Negative Opinion
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value < -9
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value < -24
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value < -49
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+					target = BEL
+					value < -74
+				}
+			}
+			modifier = {
+				add = -25
+				has_opinion = {
+					target = BEL
+					value < -89
+				}
+			}
+			modifier = {
+				add = -100
+				has_opinion = {
+					target = BEL
+					value < -94
+				}
+			}
+			# Positive Opinion
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = BEL
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = BEL
+					value > 49
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = BEL
+					value > 74
+				}
+			}
+			modifier = {
+				add = 25
+				has_opinion = {
+					target = BEL
+					value > 89
+				}
+			}
+			modifier = {
+				add = 25
+				has_opinion = {
+					target = BEL
+					value > 94
+				}
+			}
+			# Foreign puppet!
+			modifier = {
+				add = -50
+				FROM = {
+					is_puppet = yes
+				}
+			}
+			# Faction member :)
+			modifier = {
+				add = 10
+				is_in_faction_with = FROM
+			}
+			# You're major :)
+			modifier = {
+				add = 10
+				FROM = {
+					is_major = yes
+				}
+				ROOT = {
+					is_major = no
+				}
+			}
+			# I'm major :|
+			modifier = {
+				add = -20
+				ROOT = {
+					is_major = yes
+				}
+			}
+			# I'm major and you're minor :(
+			modifier = {
+				add = -5 # Previous modifier already covers a lot
+				ROOT = {
+					is_major = yes
+				}
+				FROM = {
+					is_major = no
+				}
+			}
+			# You're stronger than me
+			modifier = {
+				add = 10
+				FROM = {
+					strength_ratio = { # FROM field div / ROOT field div = Ratio
+						tag = ROOT
+						ratio > 1
+					}
+				}
+			}
+			# You're SIGNIFICANTLY stronger than me
+			modifier = {
+				add = 30
+				FROM = {
+					strength_ratio = { # FROM field div / ROOT field div = Ratio
+						tag = ROOT
+						# E.g. if ROOT has 10 divisions
+						# and FROM has 25
+						# 25 / 10 = 2.5
+						# Which this hits (because it checks bigger than, this is FALSE)
+						ratio > 2.5
+					}
+				}
+			}
+		}
+
+		FROM = {
+			puppet = {
+				target = ROOT
+				end_civil_wars = no
+				end_wars = no
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_associated_region
+			}
+		}
+	}
+
+	option = { # No.
+		name = tomboy.106.b
+
+		ai_chance = {
+			base = 60
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+			create_wargoal = {
+				target = ROOT
+				type = puppet_wargoal_focus
+			}
+		} 
+	}
+}
+
+country_event = {
+	id = tomboy.107
+	title = tomboy.107.t
+	desc = tomboy.107.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.107"
+	}
+
+	option = { # We will trade.
+		name = tomboy.107.a
+
+		ai_chance = {
+			base = 0
+			# Negative Opinion
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value < -9
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value < -24
+				}
+			}
+			modifier = {
+				add = -10
+				has_opinion = {
+					target = BEL
+					value < -49
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+					target = BEL
+					value < -74
+				}
+			}
+			modifier = {
+				add = -25
+				has_opinion = {
+					target = BEL
+					value < -89
+				}
+			}
+			modifier = {
+				add = -100
+				has_opinion = {
+					target = BEL
+					value < -94
+				}
+			}
+			# Positive Opinion
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = BEL
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = BEL
+					value > 49
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = BEL
+					value > 74
+				}
+			}
+			modifier = {
+				add = 25
+				has_opinion = {
+					target = BEL
+					value > 89
+				}
+			}
+			modifier = {
+				add = 25
+				has_opinion = {
+					target = BEL
+					value > 94
+				}
+			}
+			# Foreign puppet!
+			modifier = {
+				add = -50
+				FROM = {
+					is_puppet = yes
+				}
+			}
+			# Faction member :)
+			modifier = {
+				add = 10
+				is_in_faction_with = FROM
+			}
+			# You're major :)
+			modifier = {
+				add = 10
+				FROM = {
+					is_major = yes
+				}
+				ROOT = {
+					is_major = no
+				}
+			}
+			# I'm major :|
+			modifier = {
+				add = -20
+				ROOT = {
+					is_major = yes
+				}
+			}
+			# I'm major and you're minor :(
+			modifier = {
+				add = -5 # Previous modifier already covers a lot
+				ROOT = {
+					is_major = yes
+				}
+				FROM = {
+					is_major = no
+				}
+			}
+			# You're stronger than me
+			modifier = {
+				add = 10
+				FROM = {
+					strength_ratio = { # FROM field div / ROOT field div = Ratio
+						tag = ROOT
+						ratio > 1
+					}
+				}
+			}
+			# You're SIGNIFICANTLY stronger than me
+			modifier = {
+				add = 30
+				FROM = {
+					strength_ratio = { # FROM field div / ROOT field div = Ratio
+						tag = ROOT
+						# E.g. if ROOT has 10 divisions
+						# and FROM has 25
+						# 25 / 10 = 2.5
+						# Which this hits (because it checks bigger than, this is FALSE)
+						ratio > 2.5
+					}
+				}
+			}
+		}
+
+		FROM = {
+			send_equipment = {
+				amount = 10000
+				type = infantry_equipment
+				target = ROOT
+			}
+			transfer_state = event_target:tomboy_german_target_state
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+		}
+	}
+
+	option = { # No.
+		name = tomboy.107.b
+
+		ai_chance = {
+			base = 75
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_disappointed
+			}
+		}
+	}
+}

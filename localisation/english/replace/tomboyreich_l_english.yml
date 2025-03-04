@@ -659,6 +659,9 @@
     BEL_idea_anti_germany_treaty: "Anti-Germany Treaty"
     BEL_idea_anti_germany_treaty_desc: "The Anti-Germany Treaty is a secret agreement between [BEL.GetNameDef] and its allies to counter the growing threat posed by [GER.GetNameDef]. The treaty is designed to strengthen the [BEL.GetAdjective] alliance and prepare for potential conflict with [GER.GetAdjective] forces. It outlines a series of military, economic, and diplomatic measures to contain [GER.GetNameDef] and its people, and prevent its expansion into [BEL.GetAdjective] territory.\n\nUnder the terms of the treaty, [BEL.GetNameDef] and its allies agree to coordinate their military forces, share intelligence, and conduct joint military exercises to combat [GER.GetAdjective] aggression. The treaty also includes provisions for economic sanctions, trade restrictions, and diplomatic isolation to weaken the [GER.GetAdjective] economy and isolate it from the international community.\n\nThe Anti-Germany Treaty is a critical component of the [BEL.GetAdjective] defense strategy and serves as a bulwark against [GER.GetAdjective] expansionism. By uniting against a common enemy, [BEL.GetNameDef] and its allies hope to maintain peace and stability in the region and protect their sovereignty and independence from [GER.GetNameDef]'s influence. Unfortunately, the treaty puts significant strain on the [BEL.GetAdjective] realm, as it's a majority German country, and the vast majority of people are either of German descent, or are in favor of the Germans."
 
+    BEL_idea_hol_lux_integration: "[BEL.GetAdjective] Integration"
+    BEL_idea_hol_lux_integration_desc: "[BEL.GetNameDefCap] is continuing its integration of [THIS.GetNameDef], and as a result, [THIS.GetAdjective] sovereignty is steadily decreating."
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"

@@ -2448,6 +2448,16 @@ ideas = {
 			}
 		}
 
+		BEL_idea_hol_lux_integration = {
+			name = BEL_idea_hol_lux_integration
+
+			picture = tbd
+
+			modifier = {
+				autonomy_gain = -0.10
+			}
+		}
+
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P
 		BEL_test_idea = {

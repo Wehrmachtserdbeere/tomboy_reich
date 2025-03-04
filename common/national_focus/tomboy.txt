@@ -23707,11 +23707,27 @@
 					enemy = GER
 				}
 			}
+			else = {
+				give_guarantee = BEL
+				POL = {
+					give_guarantee = BEL
+				}
+			}
 			POL = {
 				add_opinion_modifier = {
 					target = BEL
 					modifier = large_increase
 				}
+				add_ai_strategy = {
+					type = protect
+					id = BEL
+					value = 50
+				}
+			}
+			add_ai_strategy = {
+				type = protect
+				id = POL
+				value = 200
 			}
 		}
 	}
@@ -23724,7 +23740,7 @@
 
 		cost = 2
 		
-		x = 13
+		x = 14
 		y = 11
 
 		prerequisite = {
@@ -23809,7 +23825,7 @@
 
 		cost = 2
 		
-		x = 19
+		x = 18
 		y = 11
 
 		prerequisite = {
@@ -23871,6 +23887,296 @@
 				idea = BEL_idea_anti_germany_treaty
 				years = 5
 			}
+		}
+	}
+
+	# Open diplomatic channels with the BeNeLux
+	focus = {
+		id = BEL_democratic_open_diplomatic_channels_with_benelux
+		icon = tbd
+
+		cost = 5
+		
+		x = 16
+		y = 11
+
+		prerequisite = {
+			focus = BEL_democratic_back_germany
+			focus = BEL_democratic_back_poland
+		}
+
+		bypass = {
+			owns_state = 35
+			owns_state = 7
+			owns_state = 36
+			owns_state = 8
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					LUX = { exists = yes }
+				}
+				HOL = {
+					add_opinion_modifier = {
+						target = BEL
+						modifier = small_increase
+					}
+				}
+			}
+			if = {
+				limit = {
+					LUX = { exists = yes }
+				}
+				LUX = {
+					add_opinion_modifier = {
+						target = BEL
+						modifier = small_increase
+					}
+				}
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = HOL
+				value = 50
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = LUX
+				value = 50
+			}
+		}
+	}
+
+	# Propose to the Netherlands
+	focus = {
+		id = BEL_democratic_propose_to_the_netherlands
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 12
+
+		prerequisite = {
+			focus = BEL_democratic_open_diplomatic_channels_with_benelux
+		}
+
+		bypass = {
+			OR = {
+				HOL = {
+					OR = {
+						exists = no
+						is_puppet_of = BEL
+					}
+				}
+				AND = {
+					BEL = {
+						owns_state = 35
+						owns_state = 7
+						owns_state = 36
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			HOL = {
+				country_event = {
+					id = tomboy.106
+					days = 2
+					random_hours = 3
+					tooltip = BEL_democratic_propose_to_the_netherlands_custom_tt
+				}
+			}
+		}
+	}
+	
+	# Propose to Luxembourg
+	focus = {
+		id = BEL_democratic_propose_to_luxembourg
+		icon = tbd
+
+		cost = 5
+		
+		x = 17
+		y = 12
+
+		prerequisite = {
+			focus = BEL_democratic_open_diplomatic_channels_with_benelux
+		}
+
+		bypass = {
+			OR = {
+				LUX = {
+					OR = {
+						exists = no
+						is_puppet_of = BEL
+					}
+				}
+				AND = {
+					BEL = {
+						owns_state = 8
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			LUX = {
+				country_event = {
+					id = tomboy.106
+					days = 2
+					random_hours = 3
+					tooltip = BEL_democratic_propose_to_luxembourg_custom_tt
+				}
+			}
+		}
+	}
+
+	# Integrate the Netherlands
+	focus = {
+		id = BEL_democratic_integrate_the_netherlands
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 13
+
+		prerequisite = {
+			focus = BEL_democratic_propose_to_the_netherlands
+		}
+
+		available = {
+			HOL = {
+				is_puppet_of = BEL
+			}
+		}
+
+		bypass = {
+			OR = {
+				HOL = {
+					exists = no
+				}
+				AND = {
+					BEL = {
+						owns_state = 35
+						owns_state = 7
+						owns_state = 36
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			HOL = {
+				add_ideas = BEL_idea_hol_lux_integration
+			}
+		}
+	}
+	
+	# Integrate Luxembourg
+	focus = {
+		id = BEL_democratic_integrate_luxembourg
+		icon = tbd
+
+		cost = 5
+		
+		x = 19
+		y = 13
+
+		prerequisite = {
+			focus = BEL_democratic_propose_to_luxembourg
+		}
+
+		available = {
+			LUX = {
+				is_puppet_of = BEL
+			}
+		}
+
+		bypass = {
+			OR = {
+				LUX = {
+					exists = no
+				}
+				AND = {
+					BEL = {
+						owns_state = 8
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			LUX = {
+				add_ideas = BEL_idea_hol_lux_integration
+			}
+		}
+	}
+
+	# Approach Germany (Begin purchasing the Tomboy states)
+	focus = {
+		id = BEL_democratic_approach_Germany_for_states
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 13
+
+		available = {
+			OR = {
+				NOT = {
+					#has_completed_focus = BEL_democratic_approach_France_for_states
+				}
+				# If agreed on small France states
+				AND = {
+					hidden_trigger = {
+						has_country_flag = BEL_french_state_purchasing_small
+					}
+					custom_trigger_tooltip = {
+						tooltip = BEL_french_state_purchasing_small_trigger_tt
+					}
+					owns_state = 29
+					owns_state = 785
+					owns_state = 18
+					owns_state = 28
+					owns_state = 17
+					owns_state = 16
+					owns_state = 15
+				}
+				# If agreed on large France states
+				AND = {
+					hidden_trigger = {
+						has_country_flag = BEL_french_state_purchasing_large
+					}
+					custom_trigger_tooltip = {
+						tooltip = BEL_french_state_purchasing_large_trigger_tt
+					}
+					owns_state = 29
+					owns_state = 785
+					owns_state = 18
+					owns_state = 28
+					owns_state = 17
+					owns_state = 16
+					owns_state = 15
+					owns_state = 27
+					owns_state = 24
+					owns_state = 30
+					owns_state = 14
+				}
+			}
+		}
+		
+		completion_reward = {
+			add_to_array = { tomboy_german_states_array = 42 }
+        	add_to_array = { tomboy_german_states_array = 51 }
+        	add_to_array = { tomboy_german_states_array = 55 }
+        	add_to_array = { tomboy_german_states_array = 57 }
+        	add_to_array = { tomboy_german_states_array = 56 }
+			set_country_flag = BEL_began_german_buyback
 		}
 	}
 

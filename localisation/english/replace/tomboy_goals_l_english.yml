@@ -1237,9 +1237,11 @@
   BEL_demsoc_demand_an_election_tt: "Depending on the path we took, either the Democratic Patiy or the Communist Party will win the election."
 
 
+  BEL_democratic_propose_to_the_netherlands_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
+  BEL_democratic_propose_to_luxembourg_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
 
-
-
+  BEL_french_state_purchasing_small_trigger_tt: "Agreed on buying small portions of France"
+  BEL_french_state_purchasing_large_trigger_tt: "Agreed on buying all Tomboy states of France"
 
 
 
