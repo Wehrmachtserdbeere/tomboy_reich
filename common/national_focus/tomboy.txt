@@ -24216,7 +24216,7 @@
 
 		cost = 5
 		
-		x = 15
+		x = 17
 		y = 13
 
 		available = {
@@ -24235,7 +24235,7 @@
 		}
 
 		prerequisite = {
-			focus = BEL_democratic_propose_to_the_netherlands
+			focus = BEL_democratic_propose_to_luxembourg
 		}
 		
 		completion_reward = {
@@ -24251,6 +24251,49 @@
         	add_to_array = { tomboy_france_states_array = 30 }
         	add_to_array = { tomboy_france_states_array = 14 }
 			set_country_flag = BEL_began_french_buyback
+		}
+	}
+
+	# A proposal to the English
+	# They are more snobby and thus want more.
+	focus = {
+		id = BEL_democratic_a_proposal_to_the_english
+		icon = tbd
+
+		cost = 4
+		
+		x = 16
+		y = 14
+
+		prerequisite = {
+			focus = BEL_democratic_approach_germany_for_states
+		}
+		prerequisite = {
+			focus = BEL_democratic_approach_france_for_states
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = BEL_began_german_buyback
+				has_country_flag = BEL_began_french_buyback
+			}
+		}
+
+		bypass = {
+			owns_state = 127
+			owns_state = 126
+			owns_state = 125
+			owns_state = 129
+			owns_state = 130
+		}
+		
+		completion_reward = {
+			add_to_array = { tomboy_english_states_array = 127 }
+			add_to_array = { tomboy_english_states_array = 126 }
+			add_to_array = { tomboy_english_states_array = 125 }
+			add_to_array = { tomboy_english_states_array = 129 }
+			add_to_array = { tomboy_english_states_array = 130 }
+			set_country_flag = BEL_began_english_buyback
 		}
 	}
 

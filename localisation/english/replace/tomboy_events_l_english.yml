@@ -844,3 +844,6 @@
   tomboy.106.b: "We refuse."
 
   tomboy.107.t: "[FROM.GetName] offers to purchase [event_target:tomboy_german_target_state.GetName]"
+
+  RANDOM_OWNED_EX_GERMAN_STATE: "Random owned ex-German state:"
+  tomboy.108.c_tt: "\tSet demilitarized zone."

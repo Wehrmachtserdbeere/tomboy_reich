@@ -8802,6 +8802,7 @@ country_event = {
 	}
 }
 
+# FROM requests state event_target:tomboy_target_state from ROOT
 country_event = {
 	id = tomboy.107
 	title = tomboy.107.t
@@ -8968,7 +8969,7 @@ country_event = {
 				type = infantry_equipment
 				target = ROOT
 			}
-			transfer_state = event_target:tomboy_german_target_state
+			transfer_state = event_target:tomboy_target_state
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = large_increase
@@ -8987,6 +8988,452 @@ country_event = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = BEL_disappointed
+			}
+		}
+	}
+}
+
+# FROM requests event_target:tomboy_target_state from ENGLAND
+country_event = {
+	id = tomboy.108
+	title = tomboy.108.t
+	desc = tomboy.108.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.108"
+	}
+
+	option = { # Offer 10000 Infantry Equip
+		name = tomboy.108.a
+
+		ai_chance = {
+			base = 25
+		}
+
+		trigger = {
+			FROM = {
+				has_equipment = {
+					infantry_equipment > 9999
+				}
+			}
+		}
+
+		set_temp_variable = {
+			var = tomboy_england_offer_sent
+			value = 0
+		}
+		var:tomboy_england_offer_sent = {
+			save_event_target_as = tomboy_target_offer
+		}
+		event_target:tomboy_target_state = {
+			save_event_target_as = tomboy_target_state
+		}
+		event_target:tomboy_target_state.owner = {
+			country_event = tomboy.109
+		}
+		effect_tooltip = {
+			send_equipment = {
+				type = infantry_equipment
+				old_prioritised = yes
+				amount = 10000
+				target = from.owner
+			}
+		}
+	}
+
+	option = { # Offer 250 heavy tank chassis OR 250/150/100 heavy tanks
+		name = tomboy.108.b
+
+		ai_chance = {
+			base = 25
+		}
+
+		trigger = {
+			OR = {
+				AND = {
+                    has_dlc = "No Step Back"
+                    has_equipment = {
+                        heavy_tank_chassis > 249
+                    }
+                }
+                AND = {
+                    NOT = {
+                        has_dlc = "No Step Back"
+                    }
+                    OR = {
+                        has_equipment = {
+                            heavy_tank_equipment_1 > 249 
+                        }
+                        has_equipment = {
+                            heavy_tank_equipment_2 > 149 
+                        }
+                        has_equipment = {
+                            heavy_tank_equipment_3 > 99 
+                        }
+                    }
+                }
+			}
+		}
+
+		set_temp_variable = {
+			var = tomboy_england_offer_sent
+			value = 1
+		}
+		var:tomboy_england_offer_sent = {
+			save_event_target_as = tomboy_target_offer
+		}
+		event_target:tomboy_target_state = {
+			save_event_target_as = tomboy_target_state
+		}
+		event_target:tomboy_target_state.owner = {
+			country_event = tomboy.109
+		}
+		effect_tooltip = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				send_equipment = {
+					type = heavy_tank_chassis
+					old_prioritised = yes
+					amount = 250
+					target = from.owner
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_equipment = {
+                            heavy_tank_equipment_1 > 249 
+                        }
+					}
+					send_equipment = {
+						amount = 249
+						old_prioritised = yes
+						type = heavy_tank_equipment_1
+						target = from.owner
+					}
+				}
+				else_if = {
+					limit = {
+						has_equipment = {
+                            heavy_tank_equipment_2 > 149
+                        }
+					}
+					send_equipment = {
+						amount = 149
+						old_prioritised = yes
+						type = heavy_tank_equipment_2
+						target = from.owner
+					}
+				}
+				else = {
+					send_equipment = {
+						amount = 49
+						old_prioritised = yes
+						type = heavy_tank_equipment_3
+						target = from.owner
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Offer to de-Germanize a state 
+		name = tomboy.108.c
+
+		ai_chance = {
+			base = 10
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = BEL_english_buyback_integrate_states_any_owned_state_is_german
+
+				# Any owned state is German
+				any_owned_state = {
+					is_in_array = {
+						array = tomboy_german_states_array
+						value = THIS.id
+					}
+				}
+			}
+		}
+
+		set_temp_variable = {
+			var = tomboy_england_offer_sent
+			value = 2
+		}
+		var:tomboy_england_offer_sent = {
+			save_event_target_as = tomboy_target_offer
+		}
+		event_target:tomboy_target_state = {
+			save_event_target_as = tomboy_target_state
+		}
+		event_target:tomboy_target_state.owner = {
+			country_event = tomboy.109
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = RANDOM_OWNED_EX_GERMAN_STATE
+			random_list = {
+				25 = {
+					custom_effect_tooltip = tomboy.108.c_tt
+					add_manpower = -5000
+				}
+				25 = {
+					custom_effect_tooltip = tomboy.108.c_tt
+					add_manpower = -10000
+				}
+				50 = {
+					custom_effect_tooltip = tomboy.108.c_tt
+					add_stability = -0.05
+				}
+			}
+		}
+	}
+
+	option = { # Nevermind.
+		name = tomboy.108.e
+
+		ai_chance = {
+			base = 10
+		}
+
+		add_political_power = -10
+	}
+}
+
+# ENG | Tomboys offer to buy event_target:tomboy_target_state for event_target:tomboy_target_offer
+country_event = {
+	id = tomboy.109
+	title = tomboy.109.t
+	desc = tomboy.109.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.109"
+	}
+
+	option = { # We agree.
+		name = tomboy.109.a
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20
+				# Infantry
+				check_variable = {
+					var = tomboy_england_offer_sent
+					value = 0
+				}
+			}
+			modifier = {
+				add = 35
+				# Heavy Tanks
+				check_variable = {
+					var = tomboy_england_offer_sent
+					value = 1
+				}
+			}
+			modifier = {
+				add = 25
+				# Demilitarize ex-German state
+				check_variable = {
+					var = tomboy_england_offer_sent
+					value = 2
+				}
+			}
+			# We (very likely) won't give land to ideological enemies!
+			modifier = {
+				factor = 0.01
+				OR = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+			}
+			# We might if we like you.
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 49
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 74
+				}
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 89
+				}
+			}
+			# We're already decolonizing, so...
+			modifier = {
+				add = 35
+				has_completed_focus = ENG_decolonization
+			}
+			# We won't trade vital land if we're at war!
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			# Error!!!
+			modifier = {
+				add = -10000
+				NOT = {
+					OR = {
+						check_variable = {
+							var = tomboy_england_offer_sent
+							value = 0
+						}
+						check_variable = {
+							var = tomboy_england_offer_sent
+							value = 1
+						}
+						check_variable = {
+							var = tomboy_england_offer_sent
+							value = 2
+						}
+					}
+				}
+			}
+		}
+
+		# Infantry Equip
+		if = {
+			limit = {
+				check_variable = {
+					var = tomboy_england_offer_sent
+					value = 0
+				}
+			}
+			FROM = {
+				send_equipment = {
+					amount = 10000
+					type = infantry_equipment
+					old_prioritised = yes
+					target = ROOT
+				}
+			}
+		}
+		# Heavy Tanks
+		else_if = {
+			limit = {
+				check_variable = {
+					var = tomboy_england_offer_sent
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				FROM = {
+					send_equipment = {
+						amount = 250
+						type = heavy_tank_chassis
+						old_prioritised = yes
+						target = ROOT
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						FROM = {
+							has_equipment = {
+								heavy_tank_equipment_1 > 249
+							}
+						}
+					}
+					FROM = {
+						send_equipment = {
+							amount = 250
+							type = heavy_tank_equipment_1
+							old_prioritised = yes
+							target = ROOT
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							has_equipment = {
+								heavy_tank_equipment_2 > 149
+							}
+						}
+					}
+					FROM = {
+						send_equipment = {
+							amount = 150
+							type = heavy_tank_equipment_2
+							old_prioritised = yes
+							target = ROOT
+						}
+					}
+				}
+				else = {
+					FROM = {
+						send_equipment = {
+							amount = 50
+							type = heavy_tank_equipment_3
+							old_prioritised = yes
+							target = ROOT
+						}
+					}
+				}
+			}
+		}
+		# De-Germanize state
+		else_if = {
+			limit = {
+				check_variable = {
+					var = tomboy_england_offer_sent
+					value = 2
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_in_array = {
+						array = tomboy_german_states_array
+						value = THIS.id
+					}
+				}
+				set_demilitarized_zone = yes
+				random_list = {
+					25 = {
+						THIS.owner = {
+							add_manpower = -5000
+						}
+					}
+					25 = {
+						THIS.owner = {
+							add_manpower = -10000
+						}
+					}
+					50 = {
+						THIS.owner = {
+							add_stability = -0.05
+						}
+					}
+				}
 			}
 		}
 	}

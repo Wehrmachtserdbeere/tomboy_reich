@@ -4042,7 +4042,7 @@ BEL_german_buyback_category = {
 
         remove_effect = {
             FROM = {
-                save_event_target_as = tomboy_german_target_state
+                save_event_target_as = tomboy_target_state
             }
             var:FROM.owner = {
                 country_event = {
@@ -4247,7 +4247,7 @@ BEL_french_buyback_category = {
 
         timeout_effect = {
             FROM = {
-                save_event_target_as = tomboy_german_target_state
+                save_event_target_as = tomboy_target_state
             }
             var:FROM.owner = {
                 country_event = {
@@ -4259,4 +4259,101 @@ BEL_french_buyback_category = {
 
     }
 
+}
+
+BEL_english_buyback_category = {
+
+    # 127 - Sussex
+    # 126 - Greater London Area
+    # 125 - East Anglia
+    # 129 - East Midlands
+    # 130 - Yorkshire
+
+    BEL_english_buyback_integrate_states = {
+
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            NOT = {
+                has_country_flag = BEL_england_buyback_is_buying_back
+            }
+            owns_state = 127
+            owns_state = 126
+            owns_state = 125
+            owns_state = 129
+            owns_state = 130
+        }
+    }
+
+    BEL_english_buyback_purchase_state = {
+
+        allowed = {
+            always = yes
+        }
+
+        state_target = yes
+
+        target_root_trigger = {
+            has_country_flag = BEL_began_english_buyback
+        }
+
+        available = {
+            OR = {
+                has_equipment = {
+                    infantry_equipment > 9999
+                }
+                AND = {
+                    has_dlc = "No Step Back"
+                    has_equipment = {
+                        heavy_tank_chassis > 249
+                    }
+                }
+                AND = {
+                    NOT = {
+                        has_dlc = "No Step Back"
+                    }
+                    OR = {
+                        has_equipment = {
+                            heavy_tank_equipment_1 > 249 
+                        }
+                        has_equipment = {
+                            heavy_tank_equipment_2 > 149 
+                        }
+                        has_equipment = {
+                            heavy_tank_equipment_3 > 99 
+                        }
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = BEL_english_buyback_integrate_states_any_owned_state_is_german
+
+                    # Any owned state is German
+                    any_owned_state = {
+                        is_in_array = {
+                            array = tomboy_german_states_array
+                            value = THIS.id
+                        }
+                    }
+                }
+            }
+        }
+
+        days_remove = 28
+
+        complete_effect = {
+            set_country_flag = BEL_england_buyback_is_buying_back
+        }
+
+        timeout_effect = {
+            FROM = {
+                save_event_target_as = tomboy_target_state
+            }
+            ROOT = {
+                country_event = tomboy.109
+            }
+            clr_country_flag = BEL_england_buyback_is_buying_back
+        }
+    }
 }

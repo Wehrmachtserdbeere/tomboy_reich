@@ -146,6 +146,8 @@
 
   BEL_germany_buyback_is_buying_back: "In the process of buying a [GER.GetAdjective] state."
   BEL_france_buyback_is_buying_back: "In the process of buying a [FRA.GetAdjective] state."
+  BEL_england_buyback_is_buying_back: "In the process of buying an [ENG.GetAdjective] state."
+  BEL_english_buyback_integrate_states_any_owned_state_is_german: "Any owned state was German"
 
 
 
