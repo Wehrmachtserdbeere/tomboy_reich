@@ -4077,6 +4077,9 @@ BEL_french_buyback_category = {
         }
 
         available = {
+            NOT = {
+                has_country_flag = BEL_france_buyback_is_buying_back
+            }
             owns_state = 29
             owns_state = 785
             owns_state = 18
@@ -4086,6 +4089,110 @@ BEL_french_buyback_category = {
             owns_state = 15
         }
 
+        cost = 75
+
+        complete_effect = {
+            for_each_scope_loop = {
+                array = tomboy_france_states_array
+                if = {
+                    limit = {
+                        owner = {
+                            original_tag = BEL
+                        }
+                    }
+                    add_core_of = BEL
+                }
+                else = {
+                    BEL = {
+                        # Because you abandoned who most consider fellow Tomboys
+                        add_stability = -0.025
+                    }
+                    # Because you no longer claim them as your core lands
+                    if = {
+                        limit = {
+                            is_core_of = BEL
+                        }
+                        remove_core_of = BEL
+                        BEL = {
+                            add_political_power = 10
+                        }
+                        owner = {
+                            add_opinion_modifier = {
+                                target = BEL
+                                modifier = small_increase
+                            }
+                        }
+                    }
+                    # Because you no longer claim them
+                    if = {
+                        limit = {
+                            is_claimed_by = BEL
+                        }
+                        BEL = {
+                            add_political_power = 5
+                        }
+                        remove_claim_by = BEL
+                    }
+                }
+            }
+            BEL = {
+                set_country_flag = BEL_french_state_purchasing_small
+                clr_country_flag = BEL_began_french_buyback
+            }
+        }
+
+    }
+
+    BEL_french_buyback_agree_on_big_france = {
+        
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            NOT = {
+                has_country_flag = BEL_france_buyback_is_buying_back
+            }
+            owns_state = 29
+            owns_state = 785
+            owns_state = 18
+            owns_state = 28
+            owns_state = 17
+            owns_state = 16
+            owns_state = 15
+            owns_state = 27
+            owns_state = 24
+            owns_state = 30
+            owns_state = 14
+        }
+
+        cost = 100
+
+        complete_effect = {
+            for_each_scope_loop = {
+                array = tomboy_france_states_array
+                if = {
+                    limit = {
+                        owner = { original_tag = BEL }
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                is_core_of = BEL
+                            }
+                        }
+                        add_core_of = BEL
+                        BEL = {
+                            add_stability = 0.025
+                        }
+                    }
+                }
+            }
+            BEL = {
+                set_country_flag = BEL_french_state_purchasing_large
+                clr_country_flag = BEL_began_french_buyback
+            }
+        }
 
     }
 
