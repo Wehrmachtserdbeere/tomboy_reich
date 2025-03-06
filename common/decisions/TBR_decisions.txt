@@ -3972,6 +3972,27 @@ BEL_german_buyback_category = {
     # 57 - Westfalen
     # 56 - Weser-Ems
 
+    BEL_german_buyback_finish = {
+
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            owns_state = 42
+            owns_state = 51
+            owns_state = 55
+            owns_state = 57
+            owns_state = 56
+        }
+
+        cost = 15
+
+        complete_effect = {
+            clr_country_flag = BEL_began_german_buyback
+        }
+    }
+
     BEL_german_buyback_purchase_state = {
         
         allowed = {
@@ -3988,6 +4009,9 @@ BEL_german_buyback_category = {
             has_equipment = {
                 # 10000 or more
                 infantry_equipment > 9999
+            }
+            NOT = {
+                has_country_flag = BEL_germany_buyback_is_buying_back
             }
         }
 
@@ -4010,7 +4034,11 @@ BEL_german_buyback_category = {
             }
         }
 
-        days_re_enable = 28
+        days_remove = 28
+
+        complete_effect = {
+            set_country_flag = BEL_germany_buyback_is_buying_back
+        }
 
         remove_effect = {
             FROM = {
@@ -4021,6 +4049,105 @@ BEL_german_buyback_category = {
                     id = tomboy.107
                 }
             }
+            clr_country_flag = BEL_germany_buyback_is_buying_back
+        }
+
+    }
+
+}
+
+BEL_french_buyback_category = {
+
+    # 29 - Nord-Pas-de-Calais
+    # 785 - Picardy
+    # 18 - Champagne
+    # 28 - Alsace-Lorraine
+    # 17 - France-Comte
+    # 16 - Ile-de-France
+    # 15 - Normandy
+    # 27 - Bourgogne
+    # 24 - Centre
+    # 30 - Loire
+    # 14 - Brittany
+
+    BEL_french_buyback_agree_on_small_france = {
+
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            owns_state = 29
+            owns_state = 785
+            owns_state = 18
+            owns_state = 28
+            owns_state = 17
+            owns_state = 16
+            owns_state = 15
+        }
+
+
+    }
+
+    BEL_french_buyback_purchase_state = {
+        
+        allowed = {
+            always = yes
+        }
+
+        state_target = yes
+
+        target_root_trigger = {
+            has_country_flag = BEL_began_french_buyback
+        }
+
+        available = {
+            has_equipment = {
+                # 10000 or more
+                infantry_equipment > 9999
+            }
+            NOT = {
+                has_country_flag = BEL_france_buyback_is_buying_back
+            }
+        }
+
+        target_array = tomboy_france_states_array
+
+        cost = 50
+
+        target_trigger = {
+            FROM = {
+                var:owner = {
+                    NOT = {
+                        original_tag = BEL
+                    }
+                }
+                any_neighbor_state = {
+                    owner = {
+                        original_tag = ROOT
+                    }
+                }
+            }
+        }
+
+        days_remove = 28
+
+        complete_effect = {
+            set_country_flag = BEL_france_buyback_is_buying_back
+        }
+
+        is_good = yes
+
+        timeout_effect = {
+            FROM = {
+                save_event_target_as = tomboy_german_target_state
+            }
+            var:FROM.owner = {
+                country_event = {
+                    id = tomboy.107
+                }
+            }
+            clr_country_flag = BEL_france_buyback_is_buying_back
         }
 
     }

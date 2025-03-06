@@ -22918,6 +22918,10 @@
 		prerequisite = {
 			focus = BEL_demsoc_work_for_your_rights
 		}
+
+		mutually_exclusive = {
+			focus = BEL_demsoc_unite_the_communist_parties
+		}
 		
 		completion_reward = {
 			custom_effect_tooltip = BEL_demsoc_unite_the_democratic_parties_lead_to_democratic_focuses
@@ -22925,6 +22929,15 @@
 				ideology = democratic
 				popularity = 0.1
 			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				remove_power_balance = {
+					id = BEL_bop_demsoc
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -22944,6 +22957,10 @@
 		prerequisite = {
 			focus = BEL_demsoc_equitize_the_economy
 		}
+
+		mutually_exclusive = {
+			focus = BEL_demsoc_unite_the_democratic_parties
+		}
 		
 		completion_reward = {
 			custom_effect_tooltip = BEL_demsoc_unite_the_communist_parties_lead_to_communist_focuses
@@ -22951,6 +22968,15 @@
 				ideology = communism
 				popularity = 0.1
 			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				remove_power_balance = {
+					id = BEL_bop_demsoc
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -22971,8 +22997,6 @@
 
 		prerequisite = {
 			focus = BEL_demsoc_unite_the_communist_parties
-		}
-		prerequisite = {
 			focus = BEL_demsoc_unite_the_democratic_parties
 		}
 
@@ -23027,6 +23051,7 @@
 					id = BEL_bop_demsoc
 				}
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -24118,7 +24143,7 @@
 
 	# Approach Germany (Begin purchasing the Tomboy states)
 	focus = {
-		id = BEL_democratic_approach_Germany_for_states
+		id = BEL_democratic_approach_germany_for_states
 		icon = tbd
 
 		cost = 5
@@ -24129,7 +24154,7 @@
 		available = {
 			OR = {
 				NOT = {
-					#has_completed_focus = BEL_democratic_approach_France_for_states
+					has_completed_focus = BEL_democratic_approach_france_for_states
 				}
 				# If agreed on small France states
 				AND = {
@@ -24169,6 +24194,10 @@
 				}
 			}
 		}
+
+		prerequisite = {
+			focus = BEL_democratic_propose_to_the_netherlands
+		}
 		
 		completion_reward = {
 			add_to_array = { tomboy_german_states_array = 42 }
@@ -24177,6 +24206,51 @@
         	add_to_array = { tomboy_german_states_array = 57 }
         	add_to_array = { tomboy_german_states_array = 56 }
 			set_country_flag = BEL_began_german_buyback
+		}
+	}
+	
+	# Approach France (Begin purchasing the Tomboy states)
+	focus = {
+		id = BEL_democratic_approach_france_for_states
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 13
+
+		available = {
+			OR = {
+				NOT = {
+					has_completed_focus = BEL_democratic_approach_germany_for_states
+				}
+				AND = {
+					owns_state = 42
+					owns_state = 51
+					owns_state = 55
+					owns_state = 57
+					owns_state = 56
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = BEL_democratic_propose_to_the_netherlands
+		}
+		
+		completion_reward = {
+			add_to_array = { tomboy_france_states_array = 29 }
+        	add_to_array = { tomboy_france_states_array = 785 }
+        	add_to_array = { tomboy_france_states_array = 18 }
+        	add_to_array = { tomboy_france_states_array = 28 }
+        	add_to_array = { tomboy_france_states_array = 17 }
+        	add_to_array = { tomboy_france_states_array = 16 }
+        	add_to_array = { tomboy_france_states_array = 15 }
+        	add_to_array = { tomboy_france_states_array = 27 }
+        	add_to_array = { tomboy_france_states_array = 24 }
+        	add_to_array = { tomboy_france_states_array = 30 }
+        	add_to_array = { tomboy_france_states_array = 14 }
+			set_country_flag = BEL_began_french_buyback
 		}
 	}
 
