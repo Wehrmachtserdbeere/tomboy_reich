@@ -1,0 +1,22 @@
+#
+# PDX is annoying with loading screens. Follow this guide for them to show up properly.
+#
+# 1. Create your image at a 16:9 ratio (e.g. 1920x1080, 2560x1440, etc.)
+#   a. Mind the loading bars and loading screen tips coverings
+# 2. Downscale it to 1920x1080px
+# 3. Resize canvas (not image) to 1920x1440px
+# 4. Color the new areas pure black (also known as "letterboxing")
+# 5. Done, it will now show properly, without the letterboxing.
+#
+#
+#
+#For the glitch effects:
+#
+# 1. Clone image -> Convert to smart object
+# 2. Filter gallery -> Halftone Pattern (S 8, C 7, Type: Line)
+# 3. CTRL + ALT + Shift + E -> Convert to smart object
+# 4. Blending options -> Deselect red -> Filter>Stylize>Wind -> Stagger, From the Left
+# 5. CTRL + Shift + N -> Mode: Linear Light + Fill with Linear Light neutral color (50% gray) -> Convert to smart object
+# 6. Add noise -> Blur>Gaussian Blur (Rad. 1px)
+# 7. Change opacity
+#
