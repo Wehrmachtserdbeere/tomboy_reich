@@ -2979,6 +2979,7 @@
 				}
 				add_ideas = BEL_idea_celebrating_britannia
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -11285,7 +11286,7 @@
 	# Euronia
 	focus = {
 		id = BEL_monafash_isolationism_consolidate_euronia
-		icon = tbd # Make a BIIIIIIG poc to show its INSANE significance!
+		icon = tbd # Make a BIIIIIIG pic to show its INSANE significance!
 
 		cost = 10
 		
@@ -20560,7 +20561,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_finalize_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		
@@ -21102,7 +21103,7 @@
 		allow_branch = {
 			OR = {
 				has_completed_focus = BEL_fascism_war_finalize_kriegsamt
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		
@@ -21700,7 +21701,7 @@
 						has_completed_focus = BEL_fascism_isolationism
 					}
 				}
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 		

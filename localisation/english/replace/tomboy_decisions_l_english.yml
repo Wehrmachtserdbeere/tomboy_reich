@@ -149,6 +149,32 @@
   BEL_england_buyback_is_buying_back: "In the process of buying an [ENG.GetAdjective] state."
   BEL_english_buyback_integrate_states_any_owned_state_is_german: "Any owned state was German"
 
+  BEL_german_buyback_category: "State buyback from Germany"
+  BEL_german_buyback_forsake_peace: "Forsake Peace"
+  BEL_german_buyback_forsake_peace_desc: "It's obvious that they won't back down, and we can't let them keep oppressing our people. In times like these, we must bring democracy to our people by force.\n\n§RWill lead to war with every non-puppet, non-ally nation holding our rightful lands in Germania!§!"
+  BEL_german_buyback_finish: "Complete the Buyback"
+  BEL_german_buyback_finish_desc: "We have successfully bought our states from Germany. Now under our control, we can turn them properly into our cores. For democracy, of course."
+  BEL_german_buyback_purchase_state: "Purchase [FROM.GetName]"
+  BEL_german_buyback_purchase_state_desc: "We all know that [FROM.GetName] is rightfully [ROOT.GetAdjective] land, and is inhabited by a significant population of our people. We can possibly buy it back from [FROM.owner.GetName] to bring it back into our realm and free our people."
+  
+  BEL_french_buyback_category: "State buyback from France"
+  BEL_french_buyback_forsake_peace: "Forsake Peace"
+  BEL_french_buyback_forsake_peace_desc: "It's obvious that they won't back down, and we can't let them keep oppressing our people. In times like these, we must bring democracy to our people by force.\n\n§RWill lead to war with every non-puppet, non-ally nation holding our rightful lands in Francia!§!"
+  BEL_french_buyback_agree_on_small_france: "Agree on Small [ROOT.GetAdjective]-[FRA.GetName]"
+  BEL_french_buyback_agree_on_small_france_desc: "Although there are more territories that have a large [BEL.GetAdjective]"
+  BEL_french_buyback_agree_on_big_france: "Agree on Big [ROOT.GetAdjective]-[FRA.GetName]"
+  BEL_french_buyback_agree_on_big_france_desc: "With all our people's territories under our jurisdiction, we can properly agree with the remaining administrations on the borders that these are our lands. Democratically,"
+  BEL_french_buyback_purchase_state: "Purchase [FROM.GetName]"
+  BEL_french_buyback_purchase_state_desc: "We all know that [FROM.GetName] is rightfully [ROOT.GetAdjective] land, and is inhabited by a significant population of our people. We can possibly buy it back from [FROM.owner.GetName] to bring it back into our realm and free our people."
+  
+  BEL_english_buyback_category: "State buyback from England"
+  BEL_english_buyback_forsake_peace: "Forsake Peace"
+  BEL_english_buyback_forsake_peace_desc: "It's obvious that they won't back down, and we can't let them keep oppressing our people. In times like these, we must bring democracy to our people by force.\n\n§RWill lead to war with every non-puppet, non-ally nation holding our rightful lands in Britannia!§!"
+  BEL_english_buyback_integrate_states: "Integrate the new states"
+  BEL_english_buyback_integrate_states_desc: "Now that we have bought back our states on the British Isles, we can finally turn them properly into our cores."
+  BEL_english_buyback_purchase_state: "Propose purchase of [FROM.GetName]"
+  BEL_english_buyback_purchase_state_desc: "It's time to buy back our rightful lands from the [FROM.owner.GetAdjective]. We can propose to buy back [FROM.GetName] from [FROM.owner.GetNameDef] for a price to bring it back into our realm and free our people."
+
 
 
 

@@ -2503,6 +2503,42 @@ country_event = { # Split Germany
 			    }
 			    transfer_state = 848
 			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 972
+			        }
+			    }
+			    transfer_state = 972
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 975
+			        }
+			    }
+			    transfer_state = 975
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 976
+			        }
+			    }
+			    transfer_state = 976
+			}
+
+			if = {
+			    limit = {
+			        GER = {
+			            owns_state = 978
+			        }
+			    }
+			    transfer_state = 978
+			}
 		}
 		BEL = {
 			puppet = BAY
@@ -2515,7 +2551,14 @@ country_event = { # Split Germany
 				target = BEL
 				modifier = large_decrease
 			}
-			#set_cosmetic_tag = PRE
+			if = {
+				limit = {
+					NOT = {
+						has_cosmetic_tag = GER_HRE
+					}
+				}
+				set_cosmetic_tag = PRE
+			}
 		}
 		BEL = {
 			country_event = tomboy.27
@@ -9020,7 +9063,7 @@ country_event = {
 		log = "Event ran: tomboy.108"
 	}
 
-	option = { # Offer 10000 Infantry Equip
+	option = { # Offer 15000 Infantry Equip
 		name = tomboy.108.a
 
 		ai_chance = {
@@ -9030,7 +9073,7 @@ country_event = {
 		trigger = {
 			FROM = {
 				has_equipment = {
-					infantry_equipment > 9999
+					infantry_equipment > 14999
 				}
 			}
 		}
@@ -9052,7 +9095,7 @@ country_event = {
 			send_equipment = {
 				type = infantry_equipment
 				old_prioritised = yes
-				amount = 10000
+				amount = 15000
 				target = from.owner
 			}
 		}
@@ -9439,6 +9482,9 @@ country_event = {
 					is_in_array = {
 						array = tomboy_german_states_array
 						value = THIS.id
+					}
+					owner = {
+						original_tag = BEL
 					}
 				}
 				set_demilitarized_zone = yes

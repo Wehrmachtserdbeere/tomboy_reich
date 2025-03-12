@@ -241,3 +241,77 @@ defined_text = {
 		localization_key = tomboy-93-a_scripted_loc_neutral
 	}
 }
+
+defined_text = {
+	name = tomboy-109-d_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				var = tomboy_england_offer_sent
+				value = 0
+			}
+		}
+		localization_key = tomboy-109-d_infantry
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = tomboy_england_offer_sent
+				value = 1
+			}
+			has_dlc = "No Step Back"
+		}
+		localization_key = tomboy-109-d_tanks_nsb
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = tomboy_england_offer_sent
+				value = 1
+			}
+			has_tech = advanced_heavy_tank
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		localization_key = tomboy-109-d_tanks_no_nsb_3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = tomboy_england_offer_sent
+				value = 1
+			}
+			has_tech = improved_heavy_tank
+			NOT = {
+				has_dlc = "No Step Back"
+				has_tech = advanced_heavy_tank
+			}
+		}
+		localization_key = tomboy-109-d_tanks_no_nsb_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = tomboy_england_offer_sent
+				value = 1
+			}
+			has_tech = basic_heavy_tank
+			NOT = {
+				has_dlc = "No Step Back"
+				has_tech = advanced_heavy_tank
+				has_tech = improved_heavy_tank
+			}
+		}
+		localization_key = tomboy-109-d_tanks_no_nsb_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = tomboy_england_offer_sent
+				value = 2
+			}
+		}
+		localization_key = tomboy-109-d_degermanize
+	}
+}

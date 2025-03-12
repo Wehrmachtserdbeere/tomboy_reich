@@ -504,8 +504,8 @@ characters = {
 
 		corps_commander = {
             traits = { armor_officer war_hero winter_specialist desert_fox }
-            skill = 12
-            attack_skill = 23
+            skill = 5
+            attack_skill = 7
             defense_skill = 1
             planning_skill = 3
             logistics_skill = 2

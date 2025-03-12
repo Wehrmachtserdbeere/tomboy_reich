@@ -1784,6 +1784,27 @@ BEL_germany_hte_bavaria_decisions = {
             }
         }
 
+        highlight_states = {
+            highlight_state_targets = {
+                state = 50
+                state = 52
+                state = 53
+                state = 54
+                state = 848
+                state = 153
+                state = 152
+                state = 4
+                state = 69
+                state = 9
+                state = 75
+                state = 74
+                state = 972
+                state = 975
+                state = 976
+                state = 978
+            }
+        }
+
         cost = 1250
 
         complete_effect = {
@@ -1808,6 +1829,10 @@ BEL_germany_hte_bavaria_decisions = {
                             state = 9
                             state = 75
                             state = 74
+                            state = 972
+                            state = 975
+                            state = 976
+                            state = 978
                         }
                         owner = {
                             OR = {
@@ -1969,6 +1994,21 @@ BEL_germany_hte_bavaria_decisions = {
                 owns_state = 15
                 owns_state = 30
                 owns_state = 14
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 785
+                state = 18
+                state = 28
+                state = 17
+                state = 27
+                state = 16
+                state = 24
+                state = 15
+                state = 30
+                state = 14
             }
         }
 
@@ -3972,6 +4012,58 @@ BEL_german_buyback_category = {
     # 57 - Westfalen
     # 56 - Weser-Ems
 
+    BEL_german_buyback_forsake_peace = {
+
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            NOT = {
+                owns_state = 42
+                owns_state = 51
+                owns_state = 55
+                owns_state = 57
+                owns_state = 56
+                has_country_flag = BEL_germany_buyback_is_buying_back
+            }
+        }
+
+        days_remove = 28
+
+        complete_effect = {
+            set_country_flag = BEL_germany_buyback_is_buying_back
+        }
+
+        remove_effect = {
+            clr_country_flag = BEL_germany_buyback_is_buying_back
+            for_each_scope_loop = {
+                array = tomboy_german_states_array
+                if = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                original_tag = ROOT
+                                is_puppet_of = ROOT
+                                is_ally_with = ROOT
+                                is_in_faction_with = ROOT
+                                has_war_with = ROOT
+                            }
+                        }
+                    }
+                    ROOT = {
+                        declare_war_on = {
+                            target = PREV.owner
+                            type = take_state
+                            generator = PREV
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
     BEL_german_buyback_finish = {
 
         allowed = {
@@ -3999,6 +4091,17 @@ BEL_german_buyback_category = {
         cost = 15
 
         complete_effect = {
+            for_each_scope_loop = {
+                array = tomboy_german_states_array
+                if = {
+                    limit = {
+                        NOT = {
+                            is_core_of = ROOT
+                        }
+                    }
+                    add_core_of = ROOT
+                }
+            }
             clr_country_flag = BEL_began_german_buyback
         }
     }
@@ -4022,12 +4125,13 @@ BEL_german_buyback_category = {
             }
             NOT = {
                 has_country_flag = BEL_germany_buyback_is_buying_back
+                has_war_with = FROM.owner
             }
         }
 
         target_array = tomboy_german_states_array
 
-        cost = 50
+        cost = 250
 
         target_trigger = {
             FROM = {
@@ -4079,6 +4183,64 @@ BEL_french_buyback_category = {
     # 24 - Centre
     # 30 - Loire
     # 14 - Brittany
+
+    BEL_french_buyback_forsake_peace = {
+
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            NOT = {
+                owns_state = 29
+                owns_state = 785
+                owns_state = 18
+                owns_state = 28
+                owns_state = 17
+                owns_state = 16
+                owns_state = 15
+                owns_state = 27
+                owns_state = 24
+                owns_state = 30
+                owns_state = 14
+                has_country_flag = BEL_france_buyback_is_buying_back
+            }
+        }
+
+        days_remove = 28
+
+        complete_effect = {
+            set_country_flag = BEL_france_buyback_is_buying_back
+        }
+
+        remove_effect = {
+            clr_country_flag = BEL_france_buyback_is_buying_back
+            for_each_scope_loop = {
+                array = tomboy_france_states_array
+                if = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                original_tag = ROOT
+                                is_puppet_of = ROOT
+                                is_ally_with = ROOT
+                                is_in_faction_with = ROOT
+                                has_war_with = ROOT
+                            }
+                        }
+                    }
+                    ROOT = {
+                        declare_war_on = {
+                            target = PREV.owner
+                            type = take_state
+                            generator = PREV
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
     BEL_french_buyback_agree_on_small_france = {
 
@@ -4157,7 +4319,7 @@ BEL_french_buyback_category = {
                     }
                 }
             }
-            BEL = {
+            ROOT = {
                 set_country_flag = BEL_french_state_purchasing_small
                 clr_country_flag = BEL_began_french_buyback
             }
@@ -4211,22 +4373,22 @@ BEL_french_buyback_category = {
                 array = tomboy_france_states_array
                 if = {
                     limit = {
-                        owner = { original_tag = BEL }
+                        owner = { original_tag = ROOT }
                     }
                     if = {
                         limit = {
                             NOT = {
-                                is_core_of = BEL
+                                is_core_of = ROOT
                             }
                         }
-                        add_core_of = BEL
-                        BEL = {
+                        add_core_of = ROOT
+                        ROOT = {
                             add_stability = 0.025
                         }
                     }
                 }
             }
-            BEL = {
+            ROOT = {
                 set_country_flag = BEL_french_state_purchasing_large
                 clr_country_flag = BEL_began_french_buyback
             }
@@ -4253,12 +4415,13 @@ BEL_french_buyback_category = {
             }
             NOT = {
                 has_country_flag = BEL_france_buyback_is_buying_back
+                has_war_with = FROM.owner
             }
         }
 
         target_array = tomboy_france_states_array
 
-        cost = 50
+        cost = 250
 
         target_trigger = {
             FROM = {
@@ -4283,7 +4446,6 @@ BEL_french_buyback_category = {
 
         remove_effect = {
             FROM = {
-                log = "This = [THIS.GetName]"
                 save_event_target_as = tomboy_target_state
             }
             var:FROM.owner = {
@@ -4305,6 +4467,58 @@ BEL_english_buyback_category = {
     # 125 - East Anglia
     # 129 - East Midlands
     # 130 - Yorkshire
+
+    BEL_english_buyback_forsake_peace = {
+
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            NOT = {
+                owns_state = 127
+                owns_state = 126
+                owns_state = 125
+                owns_state = 129
+                owns_state = 130
+                has_country_flag = BEL_england_buyback_is_buying_back
+            }
+        }
+
+        days_remove = 28
+
+        complete_effect = {
+            set_country_flag = BEL_england_buyback_is_buying_back
+        }
+
+        remove_effect = {
+            clr_country_flag = BEL_england_buyback_is_buying_back
+            for_each_scope_loop = {
+                array = tomboy_english_states_array
+                if = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                original_tag = ROOT
+                                is_puppet_of = ROOT
+                                is_ally_with = ROOT
+                                is_in_faction_with = ROOT
+                                has_war_with = ROOT
+                            }
+                        }
+                    }
+                    ROOT = {
+                        declare_war_on = {
+                            target = PREV.owner
+                            type = take_state
+                            generator = PREV
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
     BEL_english_buyback_integrate_states = {
 
@@ -4392,11 +4606,17 @@ BEL_english_buyback_category = {
             }
         }
 
+        cost = 250
+
         target_root_trigger = {
             has_country_flag = BEL_began_english_buyback
         }
 
         available = {
+            NOT = {
+                has_country_flag = BEL_england_buyback_is_buying_back
+                has_war_with = FROM.owner
+            }
             OR = {
                 has_equipment = {
                     infantry_equipment > 9999
@@ -4448,7 +4668,7 @@ BEL_english_buyback_category = {
                 save_event_target_as = tomboy_target_state
             }
             ROOT = {
-                country_event = tomboy.109
+                country_event = tomboy.108
             }
             clr_country_flag = BEL_england_buyback_is_buying_back
         }

@@ -3,14 +3,14 @@
 #
 # 1. Create your image at a 16:9 ratio (e.g. 1920x1080, 2560x1440, etc.)
 #   a. Mind the loading bars and loading screen tips coverings
-# 2. Downscale it to 1920x1080px
-# 3. Resize canvas (not image) to 1920x1440px
-# 4. Color the new areas pure black (also known as "letterboxing")
-# 5. Done, it will now show properly, without the letterboxing.
+# 2. Resize canvas (not image) to the nearest 4:3 ratio by width (eg. for the above: 1920x1440, 2560x1920, etc.)
+# 3. Color the new areas pure black (also known as "letterboxing"), they won't show up
+# 4. Done, it will now show properly, without the letterboxing.
+#	a. I have tested it with both 1920x1080 and 2560x1440 images with the above method and it works perfectly.
 #
 #
 #
-#For the glitch effects:
+# For the glitch effects (Photoshop only, don't use one of the many, well-working pirated versions, make sure to only use the official one that is sold at exorbitant prices ^v°):
 #
 # 1. Clone image -> Convert to smart object
 # 2. Filter gallery -> Halftone Pattern (S 8, C 7, Type: Line)

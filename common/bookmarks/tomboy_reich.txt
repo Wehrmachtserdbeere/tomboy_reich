@@ -1,0 +1,30 @@
+bookmarks = {
+	bookmark = {
+		name = BEL_bookmark_name
+		desc = BEL_bookmark_desc
+		date = 32.1.4 # lol
+		picture = GFX_select_date_1936
+		default_country = "BEL"
+		default = yes
+		effect = {
+			randomize_weather = 12345
+		}
+		"BEL" = {
+			history = TBR_BEL_HISTORY_DESC
+			ideology = neutrality
+			ideas = {
+				BEL_disorganised_nation
+				BEL_idea_acceptance_none
+				BEL_idea_economy_none
+			}
+			focuses = {
+				BEL_acceptance_supremacy
+				BEL_fascism_forged_into_one_new_empire
+				BEL_monafash_isolationism_consolidate_euronia
+			}
+		}
+		"---" = {
+			history = TBR_OTHER_HISTORY_DESC
+		}
+	}
+}

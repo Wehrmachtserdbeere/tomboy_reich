@@ -20,13 +20,32 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					tag = BEL
+					original_tag = BEL
 					BEL = {
 						has_government = terror
+					}
+					NOT = {
+						BEL = {
+							has_cosmetic_tag = BEL_TERROR
+						}
 					}
 				}
 				BEL = {
 					set_cosmetic_tag = BEL_TERROR
+				}
+			}
+			else_if = {
+				limit = {
+					original_tag = BEL
+					BEL = {
+						NOT = {
+							has_government = terror
+						}
+						has_cosmetic_tag = BEL_TERROR
+					}
+				}
+				BEL = {
+					drop_cosmetic_tag = yes
 				}
 			}
 		}
