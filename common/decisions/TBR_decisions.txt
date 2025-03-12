@@ -3986,6 +3986,16 @@ BEL_german_buyback_category = {
             owns_state = 56
         }
 
+        highlight_states = {
+            highlight_state_targets = {
+                state = 42
+                state = 51
+                state = 55
+                state = 57
+                state = 56
+            }
+        }
+
         cost = 15
 
         complete_effect = {
@@ -4042,6 +4052,7 @@ BEL_german_buyback_category = {
 
         remove_effect = {
             FROM = {
+                log = "This = [THIS.GetName]"
                 save_event_target_as = tomboy_target_state
             }
             var:FROM.owner = {
@@ -4051,7 +4062,6 @@ BEL_german_buyback_category = {
             }
             clr_country_flag = BEL_germany_buyback_is_buying_back
         }
-
     }
 
 }
@@ -4087,6 +4097,18 @@ BEL_french_buyback_category = {
             owns_state = 17
             owns_state = 16
             owns_state = 15
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 29
+                state = 785
+                state = 18
+                state = 28
+                state = 17
+                state = 16
+                state = 15
+            }
         }
 
         cost = 75
@@ -4166,6 +4188,22 @@ BEL_french_buyback_category = {
             owns_state = 14
         }
 
+        highlight_states = {
+            highlight_state_targets = {
+                state = 29
+                state = 785
+                state = 18
+                state = 28
+                state = 17
+                state = 16
+                state = 15
+                state = 27
+                state = 24
+                state = 30
+                state = 14
+            }
+        }
+
         cost = 100
 
         complete_effect = {
@@ -4243,10 +4281,9 @@ BEL_french_buyback_category = {
             set_country_flag = BEL_france_buyback_is_buying_back
         }
 
-        is_good = yes
-
-        timeout_effect = {
+        remove_effect = {
             FROM = {
+                log = "This = [THIS.GetName]"
                 save_event_target_as = tomboy_target_state
             }
             var:FROM.owner = {
@@ -4285,6 +4322,46 @@ BEL_english_buyback_category = {
             owns_state = 129
             owns_state = 130
         }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 127
+                state = 126
+                state = 125
+                state = 129
+                state = 130
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            for_each_scope_loop = {
+                array = tomboy_english_states_array
+                if = {
+                    limit = {
+                        owner = { original_tag = BEL }
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                is_core_of = BEL
+                            }
+                        }
+                        add_core_of = BEL
+                        BEL = {
+                            add_stability = 0.025
+                        }
+                    }
+                }
+            }
+            BEL = {
+                set_country_flag = BEL_england_buyback_integrated
+                clr_country_flag = BEL_began_english_buyback
+            }
+        }
+
+
     }
 
     BEL_english_buyback_purchase_state = {
@@ -4294,6 +4371,26 @@ BEL_english_buyback_category = {
         }
 
         state_target = yes
+
+        target_array = tomboy_english_states_array
+
+        target_trigger = {
+            FROM = {
+                var:owner = {
+                    NOT = {
+                        original_tag = BEL
+                    }
+                }
+                OR = {
+                    any_neighbor_state = {
+                        owner = {
+                            original_tag = ROOT
+                        }
+                    }
+                    is_coastal = yes
+                }
+            }
+        }
 
         target_root_trigger = {
             has_country_flag = BEL_began_english_buyback
@@ -4346,7 +4443,7 @@ BEL_english_buyback_category = {
             set_country_flag = BEL_england_buyback_is_buying_back
         }
 
-        timeout_effect = {
+        remove_effect = {
             FROM = {
                 save_event_target_as = tomboy_target_state
             }

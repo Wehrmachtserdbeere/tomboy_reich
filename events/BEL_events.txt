@@ -8961,6 +8961,11 @@ country_event = {
 					}
 				}
 			}
+			# Debug :)
+			modifier = {
+				add = 100000
+				is_debug = yes
+			}
 		}
 
 		FROM = {
@@ -8970,6 +8975,16 @@ country_event = {
 				target = ROOT
 			}
 			transfer_state = event_target:tomboy_target_state
+			if = {
+				limit = {
+					event_target:tomboy_target_state = {
+						is_demilitarized_zone = yes
+					}
+				}
+				event_target:tomboy_target_state = {
+					set_demilitarized_zone = no
+				}
+			}
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = large_increase
@@ -9314,6 +9329,11 @@ country_event = {
 					}
 				}
 			}
+			# Debug :)
+			modifier = {
+				add = 100000
+				is_debug = yes
+			}
 		}
 
 		# Infantry Equip
@@ -9331,6 +9351,7 @@ country_event = {
 					old_prioritised = yes
 					target = ROOT
 				}
+				transfer_state = event_target:tomboy_target_state
 			}
 		}
 		# Heavy Tanks
@@ -9352,6 +9373,7 @@ country_event = {
 						old_prioritised = yes
 						target = ROOT
 					}
+					transfer_state = event_target:tomboy_target_state
 				}
 			}
 			else = {
@@ -9370,6 +9392,7 @@ country_event = {
 							old_prioritised = yes
 							target = ROOT
 						}
+						transfer_state = event_target:tomboy_target_state
 					}
 				}
 				else_if = {
@@ -9387,6 +9410,7 @@ country_event = {
 							old_prioritised = yes
 							target = ROOT
 						}
+						transfer_state = event_target:tomboy_target_state
 					}
 				}
 				else = {
@@ -9397,6 +9421,7 @@ country_event = {
 							old_prioritised = yes
 							target = ROOT
 						}
+						transfer_state = event_target:tomboy_target_state
 					}
 				}
 			}
@@ -9434,6 +9459,28 @@ country_event = {
 						}
 					}
 				}
+			}
+			FROM = {
+				transfer_state = event_target:tomboy_target_state
+			}
+		}
+	}
+
+	option = { # No.
+		name = tomboy.109.b
+
+		ai_chance = {
+			base = 70
+		}
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = small_decrease
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BEL_disappointed
 			}
 		}
 	}
