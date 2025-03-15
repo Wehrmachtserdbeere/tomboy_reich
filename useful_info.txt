@@ -304,11 +304,15 @@ Tomboy Stages {
     Base {
         6 - Vlaanderen
         34 - Wallonie
+        977 - Antwerp
+        980 - Ardennes
     }
     
     Post-BeNeLux {
         6 - Vlaanderen
         34 - Wallonie
+        977 - Antwerp
+        980 - Ardennes
         35 - Brabant
         7 - Holland
         36 - Friesland
@@ -351,6 +355,8 @@ Tomboy Stages {
             8 - Luxemburg
             6 - Vlaanderen  | Base state
             34 - Wallonie   | Base state
+            977 - Antwerp   | Base state
+            980 - Ardennes  | Base state
         }
     }
 
@@ -398,6 +404,8 @@ Tomboy Stages {
             8 - Luxemburg
             6 - Vlaanderen  | Base state
             34 - Wallonie   | Base state
+            977 - Antwerp   | Base state
+            980 - Ardennes  | Base state
         }
     }
 
@@ -456,6 +464,8 @@ Tomboy Stages {
                 8 - Luxemburg
                 6 - Vlaanderen  | Base state
                 34 - Wallonie   | Base state
+                977 - Antwerp   | Base state
+                980 - Ardennes  | Base state
             }
         }
 
@@ -512,6 +522,8 @@ Tomboy Stages {
                 8 - Luxemburg
                 6 - Vlaanderen  | Base state
                 34 - Wallonie   | Base state
+                977 - Antwerp   | Base state
+                980 - Ardennes  | Base state
             }
         }
     }

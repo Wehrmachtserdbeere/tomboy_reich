@@ -2458,6 +2458,29 @@ ideas = {
 			}
 		}
 
+		BEL_idea_nisd_1 = {
+			name = BEL_idea_nisd
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		BEL_idea_nisd_1 = {
+			name = BEL_idea_nisd
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_dockyard_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P
 		BEL_test_idea = {

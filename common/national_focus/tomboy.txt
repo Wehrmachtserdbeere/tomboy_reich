@@ -23840,6 +23840,7 @@
 					years = 5
 				}
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -24295,6 +24296,299 @@
 			add_to_array = { tomboy_english_states_array = 129 }
 			add_to_array = { tomboy_english_states_array = 130 }
 			set_country_flag = BEL_began_english_buyback
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	# Join the Anti-Comintern Pact
+	focus = {
+		id = BEL_democratic_join_the_anti_comintern_pact
+		icon = GFX_goal_anti_comintern_pact
+
+		cost = 5
+
+		x = 11
+		y = 15
+
+		prerequisite = {
+			focus = BEL_democratic_german_tomboy_refugee_treaty
+		}
+
+		prerequisite = {
+			focus = BEL_democratic_a_proposal_to_the_english
+		}
+
+		allow_branch = {
+			OR = {
+				AND = {
+					has_completed_focus = BEL_democratic_german_tomboy_refugee_treaty
+					has_completed_focus = BEL_democratic_a_proposal_to_the_english
+				}
+				is_debug = yes
+			}
+		}
+
+		bypass = {
+			OR = {
+				SOU = {
+					OR = {
+						NOT = {
+							has_government = communism
+						}
+						exists = no
+					}
+				}
+				has_country_flag = anti_comintern_member
+				GER = {
+					has_relation_modifier = {
+						target = ROOT
+						modifier = refused_anti_comintern_pact_opinion
+					}
+				}
+			}
+		}
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_government = communism
+				is_in_faction_with = SOU
+			}
+			GER = {
+				OR = {
+					has_completed_focus = GER_anti_comintern_pact
+					has_completed_focus = GER_anti_comintern_pact_unaligned
+				}
+				NOT = {
+					has_government = communism
+					is_in_faction_with = SOU
+				}
+			}
+		}
+
+		completion_reward = {
+			GER = {
+				BEL = {
+					country_event = germany.5
+				}
+			}
+		}
+	}
+
+	# New Industrial State Development (NISD)
+	focus = {
+		id = BEL_democratic_industry_nisd
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 15
+
+		prerequisite = {
+			focus = BEL_democratic_a_proposal_to_the_english
+		}
+
+		available = {
+			owns_state = 6
+			owns_state = 34
+			owns_state = 977
+			owns_state = 980
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = BEL_idea_nisd_1
+		}
+	}
+
+	# NISD - Develop home harbors
+	focus = {
+		id = BEL_democratic_industry_home_harbors
+		icon = tbd
+		
+		cost = 3
+
+		x = 12
+		y = 16
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd
+		}
+		
+		completion_reward = {
+			6 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = dockyards
+						value = free_building_slots
+					}
+					multiply_temp_variable = {
+						var = dockyards
+						value = 0.5
+					}
+					round_variable = dockyards
+					add_building_construction = {
+						type = dockyard
+						level = temp_var:dockyards
+						instant_build = yes
+					}
+					clear_variable = dockyards
+				}
+				else = {
+					navy_experience = 50 # No space for dockyards? We use this for experience then!
+				}
+			}
+		}
+	}
+
+	# NISD - Home - Focus on Civilian Industries
+	focus = {
+		id = BEL_democratic_industry_home_civilian
+		icon = tbd
+
+		cost = 3
+		
+		x = 14
+		y = 16
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_industry_home_arms
+		}
+		
+		completion_reward = {
+			add_to_array = { tomboy_belgium_states_array = 6 }
+			add_to_array = { tomboy_belgium_states_array = 34 }
+			add_to_array = { tomboy_belgium_states_array = 977 }
+			add_to_array = { tomboy_belgium_states_array = 980 }
+
+			for_each_scope_loop = {
+				array = tomboy_belgium_states_array
+				if = {
+					limit = {
+						owner = {
+							original_tag = ROOT
+						}
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = industrial_complexes
+						value = free_building_slots
+					}
+					multiply_temp_variable = {
+						var = industrial_complexes
+						value = 0.5
+					}
+					round_variable = industrial_complexes
+					add_building_construction = {
+						type = industrial_complex
+						level = temp_var:industrial_complexes
+						instant_build = yes
+					}
+					clear_variable = industrial_complexes
+				}
+				else = {
+					add_political_power = 50
+				}
+			}
+		}
+	}
+
+	# NISD - Home - Focus on Military Factories
+	focus = {
+		id = BEL_democratic_industry_home_arms
+		icon = tbd
+
+		cost = 3
+		
+		x = 16
+		y = 16
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_industry_home_civilian
+		}
+		
+		completion_reward = {
+			add_to_array = { tomboy_belgium_states_array = 6 }
+			add_to_array = { tomboy_belgium_states_array = 34 }
+			add_to_array = { tomboy_belgium_states_array = 977 }
+			add_to_array = { tomboy_belgium_states_array = 980 }
+
+			for_each_scope_loop = {
+				array = tomboy_belgium_states_array
+				if = {
+					limit = {
+						owner = {
+							original_tag = ROOT
+						}
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = arms_factories
+						value = free_building_slots
+					}
+					multiply_temp_variable = {
+						var = arms_factories
+						value = 0.5
+					}
+					round_variable = arms_factories
+					add_building_construction = {
+						type = arms_factory
+						level = temp_var:arms_factories
+						instant_build = yes
+					}
+					clear_variable = arms_factories
+				}
+				else = {
+					army_experience = 25
+				}
+			}
+		}
+	}
+
+	# NISD II.
+	focus = {
+		id = BEL_democratic_industry_nisd_ii
+		icon = tbd
+		
+		cost = 3
+		
+		x = 14
+		y = 17
+
+		prerequisite = {
+			focus = BEL_democratic_industry_home_harbors
+		}
+		prerequisite = {
+			focus = BEL_democratic_industry_home_civilian
+			focus = BEL_democratic_industry_home_arms
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_idea_nisd_1
+				add_idea = BEL_idea_nisd_2
+			}
 		}
 	}
 
