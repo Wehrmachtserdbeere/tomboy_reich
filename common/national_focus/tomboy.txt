@@ -24592,6 +24592,103 @@
 		}
 	}
 
+	# NISD - BeNeLux - Develop Naval Industries
+	focus = {
+		id = BEL_democratic_industry_benelux_navy
+		icon = tbd
+
+		cost = 3
+		
+		x = 12
+		y = 18
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd_ii
+		}
+
+		available = {
+			owns_state = 35
+			owns_state = 7
+			owns_state = 36
+			owns_state = 8
+		}
+
+		completion_reward = {
+			add_to_array = { tomboy_nelux_states_array = 35 }
+			add_to_array = { tomboy_nelux_states_array = 7 }
+			add_to_array = { tomboy_nelux_states_array = 36 }
+			add_to_array = { tomboy_nelux_states_array = 8 }
+
+			for_each_scope_loop = {
+				array = tomboy_nelux_states_array
+				if = {
+					limit = {
+						is_coastal = yes
+						owner = {
+							original_tag = BEL
+						}
+					}
+					if = {
+						limit = {
+							free_building_slots = {
+								building = dockyard
+								size > 0
+							}
+						}
+						set_temp_variable = {
+							var = dockyards
+							value = building_level@dockyard
+						}
+						multiply_temp_variable = {
+							var = dockyards
+							value = 0.5
+						}
+						round_temp_variable = dockyards
+						add_building_construction = {
+							type = dockyard
+							instant_build = yes
+							level = dockyards
+						}
+					}
+					else_if = {
+						limit = {
+							free_building_slots = {
+								building = naval_base
+								province = {
+									is_coastal = yes
+								}
+								size > 0
+							}
+						}
+						set_temp_variable = {
+							var = navalbases
+							value = 10
+						}
+						add_to_temp_variable = {
+							var = navalbases
+							value = -building_level@naval_base
+						}
+						round_temp_variable = navalbases
+						add_building_construction = {
+							type = naval_base
+							province = {
+								is_coastal = yes
+							}
+							instant_build = yes
+							level = temp_var:navalbases
+						}
+					}
+					else = {
+						navy_experience = 25
+					}
+				}
+				else = {
+					navy_experience = 25
+				}
+			}
+		}
+	}
+
 
 
 

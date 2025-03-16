@@ -662,6 +662,9 @@
     BEL_idea_hol_lux_integration: "[BEL.GetAdjective] Integration"
     BEL_idea_hol_lux_integration_desc: "[BEL.GetNameDefCap] is continuing its integration of [THIS.GetNameDef], and as a result, [THIS.GetAdjective] sovereignty is steadily decreating."
 
+    BEL_idea_nisd: "New Industrial State Development"
+    BEL_idea_nisd_desc: "In the effort to create a democratic state, our industrial and technological capacity has to be just as democratic. As such, we must invest in industries and technologies that will serve democracy first, and the people second. We need to build factories that will create the goods necessary for a democratic society, and we need to develop the technology necessary for a truly democratic society. Only by doing so, can we ensure that the voice of the people is heard!"
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"

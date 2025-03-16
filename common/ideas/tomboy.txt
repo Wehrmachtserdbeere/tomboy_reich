@@ -2468,7 +2468,7 @@ ideas = {
 			}
 		}
 		
-		BEL_idea_nisd_1 = {
+		BEL_idea_nisd_2 = {
 			name = BEL_idea_nisd
 
 			picture = tbd
