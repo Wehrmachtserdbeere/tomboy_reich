@@ -313,3 +313,49 @@ dyn_mod_bel_demsoc_general_strike = {
 	stability_weekly = 0.05
 	consumer_goods_factor = 0.15
 }
+
+dyn_mod_bel_dem_STATE_civilian_focus = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	local_building_slots = 3
+	local_supplies = -0.25
+	local_resources = 0.25
+	local_org_regain = -0.1
+	army_speed_factor_for_controller = -0.05
+	# Military
+	state_production_speed_air_base_factor = -0.2
+	state_production_speed_anti_air_building_factor = -0.2
+	state_production_speed_arms_factory_factor = -0.5
+	state_production_speed_rocket_site_factor = -0.75
+	state_production_speed_dockyard_factor = -0.2
+	# Civilian
+	state_production_speed_industrial_complex_factor = 2.0 # Massive bonus here
+	state_production_speed_synthetic_refinery_factor = 0.25
+}
+
+dyn_mod_bel_dem_STATE_military_focus = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	local_building_slots = 3
+	local_supplies = 0.25
+	local_resources = -0.25
+	local_org_regain = 0.1
+	army_speed_factor_for_controller = 0.1
+	# Military
+	state_production_speed_air_base_factor = 0.2
+	state_production_speed_anti_air_building_factor = 0.2
+	state_production_speed_arms_factory_factor = 0.25
+	state_production_speed_rocket_site_factor = 0.25
+	state_production_speed_dockyard_factor = 0.2
+	# Civilian
+	state_production_speed_industrial_complex_factor = -0.5 # Massive malus here
+	state_production_speed_synthetic_refinery_factor = 0.1
+}

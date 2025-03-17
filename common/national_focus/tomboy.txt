@@ -24397,6 +24397,10 @@
 		}
 		
 		completion_reward = {
+			add_to_array = { tomboy_belgium_states_array = 6 }
+			add_to_array = { tomboy_belgium_states_array = 34 }
+			add_to_array = { tomboy_belgium_states_array = 977 }
+			add_to_array = { tomboy_belgium_states_array = 980 }
 			add_political_power = -50
 			add_ideas = BEL_idea_nisd_1
 		}
@@ -24467,13 +24471,12 @@
 		}
 		
 		completion_reward = {
-			add_to_array = { tomboy_belgium_states_array = 6 }
-			add_to_array = { tomboy_belgium_states_array = 34 }
-			add_to_array = { tomboy_belgium_states_array = 977 }
-			add_to_array = { tomboy_belgium_states_array = 980 }
 
 			for_each_scope_loop = {
 				array = tomboy_belgium_states_array
+				add_dynamic_modifier = {
+					modifier = dyn_mod_bel_dem_STATE_civilian_focus
+				}
 				if = {
 					limit = {
 						owner = {
@@ -24526,13 +24529,12 @@
 		}
 		
 		completion_reward = {
-			add_to_array = { tomboy_belgium_states_array = 6 }
-			add_to_array = { tomboy_belgium_states_array = 34 }
-			add_to_array = { tomboy_belgium_states_array = 977 }
-			add_to_array = { tomboy_belgium_states_array = 980 }
 
 			for_each_scope_loop = {
 				array = tomboy_belgium_states_array
+				add_dynamic_modifier = {
+					modifier = dyn_mod_bel_dem_STATE_military_focus
+				}
 				if = {
 					limit = {
 						owner = {
@@ -24585,6 +24587,10 @@
 		}
 		
 		completion_reward = {
+			add_to_array = { tomboy_nelux_states_array = 35 }
+			add_to_array = { tomboy_nelux_states_array = 7 }
+			add_to_array = { tomboy_nelux_states_array = 36 }
+			add_to_array = { tomboy_nelux_states_array = 8 }
 			swap_ideas = {
 				remove_idea = BEL_idea_nisd_1
 				add_idea = BEL_idea_nisd_2
@@ -24614,10 +24620,6 @@
 		}
 
 		completion_reward = {
-			add_to_array = { tomboy_nelux_states_array = 35 }
-			add_to_array = { tomboy_nelux_states_array = 7 }
-			add_to_array = { tomboy_nelux_states_array = 36 }
-			add_to_array = { tomboy_nelux_states_array = 8 }
 
 			for_each_scope_loop = {
 				array = tomboy_nelux_states_array
@@ -24649,6 +24651,7 @@
 							instant_build = yes
 							level = dockyards
 						}
+						clear_variable = dockyards
 					}
 					else_if = {
 						limit = {
@@ -24664,10 +24667,19 @@
 							var = navalbases
 							value = 10
 						}
+						set_temp_variable = {
+							var = navalbasesInvertor
+							value = building_level@naval_base
+						}
+						multiply_temp_variable = {
+							var = navalbasesInvertor
+							value = -1 # To invert the value
+						}
 						add_to_temp_variable = {
 							var = navalbases
-							value = -building_level@naval_base
+							value = navalbasesInvertor
 						}
+						clear_variable = navalbasesInvertor
 						round_temp_variable = navalbases
 						add_building_construction = {
 							type = naval_base
@@ -24677,6 +24689,7 @@
 							instant_build = yes
 							level = temp_var:navalbases
 						}
+						clear_variable = navalbases
 					}
 					else = {
 						navy_experience = 25
@@ -24688,6 +24701,155 @@
 			}
 		}
 	}
+
+	# NISD - BeNeLux - Build up Civilian Factories
+	focus = {
+		id = BEL_democratic_industry_benelux_civilian
+		icon = tbd
+
+		cost = 3
+		
+		x = 14
+		y = 18
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd_ii
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_industry_benelux_arms
+		}
+
+		available = {
+			owns_state = 35
+			owns_state = 7
+			owns_state = 36
+			owns_state = 8
+		}
+		
+		completion_reward = {
+			for_each_scope_loop = {
+				array = tomboy_nelux_states_array
+				add_dynamic_modifier = {
+					modifier = dyn_mod_bel_dem_STATE_civilian_focus
+				}
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = industrial_complexes
+						value = 10
+					}
+					set_temp_variable = {
+						var = industrial_complexes_Invertor
+						value = building_level@industrial_complex
+					}
+					multiply_temp_variable = {
+						var = industrial_complexes_Invertor
+						value = -1
+					}
+					add_to_temp_variable = {
+						var = industrial_complexes
+						value = industrial_complexes_Invertor
+					}
+					clear_variable = industrial_complexes_Invertor
+					multiply_temp_variable = {
+						var = industrial_complexes
+						value = 0.5 # Half
+					}
+					round_variable = industrial_complexes
+					add_building_construction = {
+						type = industrial_complex
+						level = industrial_complexes
+					}
+					clear_variable = industrial_complexes
+				}
+				else = {
+					add_political_power = 50
+				}
+			}
+		}
+	}
+
+	# NISD - BeNeLux - Focus on Arms Production
+	focus = {
+		id = BEL_democratic_industry_benelux_arms
+		icon = GFX_surrender_tiny_flag
+		
+		cost = 3
+		
+		x = 16
+		y = 18
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd_ii
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_industry_benelux_civilian
+		}
+
+		available = {
+			owns_state = 35
+			owns_state = 7
+			owns_state = 36
+			owns_state = 8
+		}
+		
+		completion_reward = {
+			for_each_scope_loop = {
+				array = tomboy_nelux_states_array
+				add_dynamic_modifier = {
+					modifier = dyn_mod_bel_dem_STATE_civilian_focus
+				}
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = arms_factories
+						value = 10
+					}
+					set_temp_variable = {
+						var = arms_factories_Invertor
+						value = building_level@arms_factory
+					}
+					multiply_temp_variable = {
+						var = arms_factories_Invertor
+						value = -1
+					}
+					add_to_temp_variable = {
+						var = arms_factories
+						value = arms_factories_Invertor
+					}
+					clear_variable = arms_factories_Invertor
+					multiply_temp_variable = {
+						var = arms_factories
+						value = 0.5 # Half
+					}
+					round_variable = arms_factories
+					add_building_construction = {
+						type = arms_factory
+						level = arms_factories
+					}
+					clear_variable = arms_factories
+				}
+				else = {
+					add_political_power = 50
+				}
+			}
+		}
+	}
+
+
+
 
 
 
