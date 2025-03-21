@@ -4015,7 +4015,7 @@ BEL_german_buyback_category = {
     BEL_german_buyback_forsake_peace = {
 
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         available = {
@@ -4067,7 +4067,7 @@ BEL_german_buyback_category = {
     BEL_german_buyback_finish = {
 
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         available = {
@@ -4109,7 +4109,7 @@ BEL_german_buyback_category = {
     BEL_german_buyback_purchase_state = {
         
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         state_target = yes
@@ -4148,6 +4148,13 @@ BEL_german_buyback_category = {
             }
         }
 
+        # Thanks, PDX, for breaking this.
+        highlight_states = {
+            highlight_state_targets = {
+                state = FROM
+            }
+        }
+
         days_remove = 28
 
         complete_effect = {
@@ -4156,7 +4163,6 @@ BEL_german_buyback_category = {
 
         remove_effect = {
             FROM = {
-                log = "This = [THIS.GetName]"
                 save_event_target_as = tomboy_target_state
             }
             var:FROM.owner = {
@@ -4187,7 +4193,7 @@ BEL_french_buyback_category = {
     BEL_french_buyback_forsake_peace = {
 
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         available = {
@@ -4245,7 +4251,7 @@ BEL_french_buyback_category = {
     BEL_french_buyback_agree_on_small_france = {
 
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         available = {
@@ -4330,7 +4336,7 @@ BEL_french_buyback_category = {
     BEL_french_buyback_agree_on_big_france = {
         
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         available = {
@@ -4399,7 +4405,7 @@ BEL_french_buyback_category = {
     BEL_french_buyback_purchase_state = {
         
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         state_target = yes
@@ -4438,6 +4444,13 @@ BEL_french_buyback_category = {
             }
         }
 
+        # Thanks, PDX, for breaking this.
+        highlight_states = {
+            highlight_state_targets = {
+                state = FROM
+            }
+        }
+
         days_remove = 28
 
         complete_effect = {
@@ -4471,7 +4484,7 @@ BEL_english_buyback_category = {
     BEL_english_buyback_forsake_peace = {
 
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         available = {
@@ -4523,7 +4536,7 @@ BEL_english_buyback_category = {
     BEL_english_buyback_integrate_states = {
 
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         available = {
@@ -4581,7 +4594,7 @@ BEL_english_buyback_category = {
     BEL_english_buyback_purchase_state = {
 
         allowed = {
-            always = yes
+            original_tag = BEL
         }
 
         state_target = yes
@@ -4610,6 +4623,13 @@ BEL_english_buyback_category = {
 
         target_root_trigger = {
             has_country_flag = BEL_began_english_buyback
+        }
+
+        # Thanks, PDX, for breaking this.
+        highlight_states = {
+            highlight_state_targets = {
+                state = FROM
+            }
         }
 
         available = {
@@ -4672,5 +4692,63 @@ BEL_english_buyback_category = {
             }
             clr_country_flag = BEL_england_buyback_is_buying_back
         }
+    }
+}
+
+BEL_nisd_4_category = {
+
+    BEL_nisd_specialize_state = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            OR = {
+                has_idea = BEL_idea_nisd_4
+                is_debug = yes
+            }
+        }
+
+        cost = 75
+
+        state_target = any_controlled_state
+
+        target_trigger = {
+            FROM = {
+                AND = {
+                    owner = { original_tag = BEL }
+                    NOT = {
+                        AND = {
+                            has_dynamic_modifier = {
+                                modifier = dyn_mod_bel_dem_STATE_civilian_focus
+                            }
+                            has_dynamic_modifier = {
+                                modifier = dyn_mod_bel_dem_STATE_military_focus
+                            }
+                            has_dynamic_modifier = {
+                                modifier = dyn_mod_bel_dem_STATE_naval_focus
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = FROM
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                save_event_target_as = tomboy_nisd_target_state
+                owner = {
+                    country_event = tomboy_nisd.1
+                }
+            }
+        }
+        # TODO - Not finished yet! Continue working here!
     }
 }

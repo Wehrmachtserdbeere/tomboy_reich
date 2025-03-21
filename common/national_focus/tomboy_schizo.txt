@@ -93,7 +93,7 @@ focus_tree = {
 		}
 	}
 	
-	# Mongol-esque "Silver Khaganate" led by Roman von Ungern-Sternberg
+	# Mongol-esque "Silver Khaganate" led by Roman von Ungern-Sternberg (maybe)
 
 
 	# Accelerationist Hyperborea led by Moonman
@@ -401,6 +401,7 @@ focus_tree = {
 
 
 	# Reactionary Neudeutsches Reich led by Mr. Bond
+	# Specifically about the whole stuff with "He was too humane, that was [Hitler's] greatest weakness" in one of his songs.
 
 
 	############
@@ -421,5 +422,7 @@ focus_tree = {
 	###################
 
 	# Empire of Terror led by a Balanced Council
+
+	# Worship of the Nuclear God (Utsuho Reiuji)
 
 }

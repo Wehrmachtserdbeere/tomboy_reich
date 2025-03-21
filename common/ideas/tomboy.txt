@@ -2481,6 +2481,35 @@ ideas = {
 			}
 		}
 
+		BEL_idea_nisd_3 = {
+			name = BEL_idea_nisd
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				production_speed_dockyard_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+			}
+		}
+		
+		BEL_idea_nisd_4 = {
+			name = BEL_idea_nisd_final
+
+			picture = tbd
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_dockyard_factor = 0.3
+				production_speed_arms_factory_factor = 0.3
+				production_speed_industrial_complex_factor = 0.45
+			}
+		}
+
+
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P
 		BEL_test_idea = {

@@ -1,4 +1,52 @@
 on_actions = {
+	on_startup = {
+		effect = {
+
+			BEL = {
+				# # # Set up some state arrays for various focuses. Currently used most in the Democratic path.
+				# # # Will use them more in later revisions of the mod. (21/03/2025)
+				
+				# Tomboy Belgium states
+				add_to_array = { tomboy_belgium_states_array = 6 }
+				add_to_array = { tomboy_belgium_states_array = 34 }
+				add_to_array = { tomboy_belgium_states_array = 977 }
+				add_to_array = { tomboy_belgium_states_array = 980 }
+				
+				# Tomboy non-Belgium BeNeLux states
+				add_to_array = { tomboy_nelux_states_array = 35 }
+				add_to_array = { tomboy_nelux_states_array = 7 }
+				add_to_array = { tomboy_nelux_states_array = 36 }
+				add_to_array = { tomboy_nelux_states_array = 8 }
+				
+				# Tomboy German states
+				add_to_array = { tomboy_german_states_array = 42 }
+        		add_to_array = { tomboy_german_states_array = 51 }
+        		add_to_array = { tomboy_german_states_array = 55 }
+        		add_to_array = { tomboy_german_states_array = 57 }
+        		add_to_array = { tomboy_german_states_array = 56 }
+				
+				# Tomboy French states
+				add_to_array = { tomboy_france_states_array = 29 }
+        		add_to_array = { tomboy_france_states_array = 785 }
+        		add_to_array = { tomboy_france_states_array = 18 }
+        		add_to_array = { tomboy_france_states_array = 28 }
+        		add_to_array = { tomboy_france_states_array = 17 }
+        		add_to_array = { tomboy_france_states_array = 16 }
+        		add_to_array = { tomboy_france_states_array = 15 }
+        		add_to_array = { tomboy_france_states_array = 27 }
+        		add_to_array = { tomboy_france_states_array = 24 }
+        		add_to_array = { tomboy_france_states_array = 30 }
+        		add_to_array = { tomboy_france_states_array = 14 }
+				
+				# Tomboy English states
+				add_to_array = { tomboy_english_states_array = 127 }
+				add_to_array = { tomboy_english_states_array = 126 }
+				add_to_array = { tomboy_english_states_array = 125 }
+				add_to_array = { tomboy_english_states_array = 129 }
+				add_to_array = { tomboy_english_states_array = 130 }
+			}
+		}
+	}
 	on_state_control_changed = {
 		effect = { # This works fine, ignore this error
 			if = {

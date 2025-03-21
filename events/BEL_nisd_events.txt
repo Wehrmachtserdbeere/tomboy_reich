@@ -1,0 +1,150 @@
+#######################
+# Here be NISD events #
+#######################
+
+add_namespace = tomboy_nisd
+
+# State chosen, what specialty?
+country_event = {
+	id = tomboy_nisd.1
+	title = tomboy_nisd.1.t
+	desc = tomboy_nisd.1.d
+
+	immediate = {
+		log = "Event triggered: tomboy_nisd.1"
+	}
+
+	# Military
+	option = {
+		name = tomboy_nisd.1.a
+
+		ai_chance = {
+			base = 34
+			modifier = {
+				add = 10
+				set_temp_variable = {
+					var = industrial_complexes_times_two
+					value = num_of_factories
+				}
+				multiply_temp_variable = {
+					var = industrial_complexes_times_two
+					value = 2
+				}
+				num_of_military_factories < industrial_complexes_times_two # Focus military if industrial complexes are more prevalent
+			}
+			modifier = {
+				add = -10
+				set_temp_variable = {
+					var = industrial_complexes_times_two
+					value = num_of_factories
+				}
+				multiply_temp_variable = {
+					var = industrial_complexes_times_two
+					value = 2
+				}
+				num_of_military_factories > industrial_complexes_times_two # Less focus on military if industrial complexes are lacking
+			}
+		}
+
+		event_target:tomboy_nisd_target_state = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_dem_STATE_military_focus
+				days = 730 # 2 years
+			}
+			set_temp_variable = {
+				var = arms_factories
+				value = 10
+			}
+			set_temp_variable = {
+				var = arms_factories_Invertor
+				value = building_level@arms_factory
+			}
+			multiply_temp_variable = {
+				var = arms_factories_Invertor
+				value = -1
+			}
+			add_to_temp_variable = {
+				var = arms_factories
+				value = arms_factories_Invertor
+			}
+			clear_variable = arms_factories_Invertor
+			multiply_temp_variable = {
+				var = arms_factories
+				value = 0.5 # Half
+			}
+			round_variable = arms_factories
+			add_building_construction = {
+				type = arms_factory
+				level = arms_factories
+			}
+			clear_variable = arms_factories
+		}
+	}
+
+	# Civilian
+	option = {
+		name = tomboy_nisd.1.b
+
+		ai_chance = {
+			base = 34
+			modifier = {
+				add = 10
+				set_temp_variable = {
+					var = industrial_complexes_times_two
+					value = num_of_factories
+				}
+				multiply_temp_variable = {
+					var = industrial_complexes_times_two
+					value = 2
+				}
+				num_of_military_factories > industrial_complexes_times_two # Focus civilian if arms factories are more prevalent
+			}
+			modifier = {
+				add = -10
+				set_temp_variable = {
+					var = industrial_complexes_times_two
+					value = num_of_factories
+				}
+				multiply_temp_variable = {
+					var = industrial_complexes_times_two
+					value = 2
+				}
+				num_of_military_factories < industrial_complexes_times_two # Less focus on civilians if arms industries are lacking
+			}
+		}
+
+		event_target:tomboy_nisd_target_state = {
+			add_dynamic_modifier = {
+				modifier = dyn_mod_bel_dem_STATE_civilian_focus
+				days = 730 # 2 years
+			}
+			set_temp_variable = {
+				var = industrial_complexes
+				value = 10
+			}
+			set_temp_variable = {
+				var = industrial_complexes_Invertor
+				value = building_level@industrial_complex
+			}
+			multiply_temp_variable = {
+				var = industrial_complexes_Invertor
+				value = -1
+			}
+			add_to_temp_variable = {
+				var = industrial_complexes
+				value = industrial_complexes_Invertor
+			}
+			clear_variable = industrial_complexes_Invertor
+			multiply_temp_variable = {
+				var = industrial_complexes
+				value = 0.5 # Half
+			}
+			round_variable = industrial_complexes
+			add_building_construction = {
+				type = industrial_complex
+				level = industrial_complexes
+			}
+			clear_variable = industrial_complexes
+		}
+	}
+}

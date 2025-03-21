@@ -440,3 +440,24 @@ BEL_english_buyback_category = {
         }
     }
 }
+
+BEL_nisd_4_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = yes
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            BEL = {
+                has_idea = BEL_idea_nisd_4
+            }
+            is_debug = yes
+        }
+    }
+}

@@ -24202,11 +24202,6 @@
 		}
 		
 		completion_reward = {
-			add_to_array = { tomboy_german_states_array = 42 }
-        	add_to_array = { tomboy_german_states_array = 51 }
-        	add_to_array = { tomboy_german_states_array = 55 }
-        	add_to_array = { tomboy_german_states_array = 57 }
-        	add_to_array = { tomboy_german_states_array = 56 }
 			set_country_flag = BEL_began_german_buyback
 		}
 	}
@@ -24241,17 +24236,6 @@
 		}
 		
 		completion_reward = {
-			add_to_array = { tomboy_france_states_array = 29 }
-        	add_to_array = { tomboy_france_states_array = 785 }
-        	add_to_array = { tomboy_france_states_array = 18 }
-        	add_to_array = { tomboy_france_states_array = 28 }
-        	add_to_array = { tomboy_france_states_array = 17 }
-        	add_to_array = { tomboy_france_states_array = 16 }
-        	add_to_array = { tomboy_france_states_array = 15 }
-        	add_to_array = { tomboy_france_states_array = 27 }
-        	add_to_array = { tomboy_france_states_array = 24 }
-        	add_to_array = { tomboy_france_states_array = 30 }
-        	add_to_array = { tomboy_france_states_array = 14 }
 			set_country_flag = BEL_began_french_buyback
 		}
 	}
@@ -24290,11 +24274,6 @@
 		}
 		
 		completion_reward = {
-			add_to_array = { tomboy_english_states_array = 127 }
-			add_to_array = { tomboy_english_states_array = 126 }
-			add_to_array = { tomboy_english_states_array = 125 }
-			add_to_array = { tomboy_english_states_array = 129 }
-			add_to_array = { tomboy_english_states_array = 130 }
 			set_country_flag = BEL_began_english_buyback
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -24324,7 +24303,7 @@
 					has_completed_focus = BEL_democratic_german_tomboy_refugee_treaty
 					has_completed_focus = BEL_democratic_a_proposal_to_the_english
 				}
-				is_debug = yes
+				#is_debug = yes
 			}
 		}
 
@@ -24355,6 +24334,7 @@
 				is_in_faction_with = SOU
 			}
 			GER = {
+				exists = yes
 				OR = {
 					has_completed_focus = GER_anti_comintern_pact
 					has_completed_focus = GER_anti_comintern_pact_unaligned
@@ -24397,10 +24377,6 @@
 		}
 		
 		completion_reward = {
-			add_to_array = { tomboy_belgium_states_array = 6 }
-			add_to_array = { tomboy_belgium_states_array = 34 }
-			add_to_array = { tomboy_belgium_states_array = 977 }
-			add_to_array = { tomboy_belgium_states_array = 980 }
 			add_political_power = -50
 			add_ideas = BEL_idea_nisd_1
 		}
@@ -24424,6 +24400,7 @@
 			6 = {
 				if = {
 					limit = {
+						owner = { original_tag = BEL }
 						free_building_slots = {
 							building = dockyard
 							size > 0
@@ -24532,8 +24509,13 @@
 
 			for_each_scope_loop = {
 				array = tomboy_belgium_states_array
-				add_dynamic_modifier = {
-					modifier = dyn_mod_bel_dem_STATE_military_focus
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+					}
+					add_dynamic_modifier = {
+						modifier = dyn_mod_bel_dem_STATE_military_focus
+					}
 				}
 				if = {
 					limit = {
@@ -24587,10 +24569,6 @@
 		}
 		
 		completion_reward = {
-			add_to_array = { tomboy_nelux_states_array = 35 }
-			add_to_array = { tomboy_nelux_states_array = 7 }
-			add_to_array = { tomboy_nelux_states_array = 36 }
-			add_to_array = { tomboy_nelux_states_array = 8 }
 			swap_ideas = {
 				remove_idea = BEL_idea_nisd_1
 				add_idea = BEL_idea_nisd_2
@@ -24730,11 +24708,17 @@
 		completion_reward = {
 			for_each_scope_loop = {
 				array = tomboy_nelux_states_array
-				add_dynamic_modifier = {
-					modifier = dyn_mod_bel_dem_STATE_civilian_focus
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+					}
+					add_dynamic_modifier = {
+						modifier = dyn_mod_bel_dem_STATE_civilian_focus
+					}
 				}
 				if = {
 					limit = {
+						owner = { original_tag = BEL }
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -24769,7 +24753,12 @@
 					clear_variable = industrial_complexes
 				}
 				else = {
-					add_political_power = 50
+					if = {
+						limit = {
+							owner = { original_tag = BEL }
+						}
+						add_political_power = 50
+					}
 				}
 			}
 		}
@@ -24803,11 +24792,17 @@
 		completion_reward = {
 			for_each_scope_loop = {
 				array = tomboy_nelux_states_array
-				add_dynamic_modifier = {
-					modifier = dyn_mod_bel_dem_STATE_civilian_focus
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+					}
+					add_dynamic_modifier = {
+						modifier = dyn_mod_bel_dem_STATE_military_focus
+					}
 				}
 				if = {
 					limit = {
+						owner = { original_tag = BEL }
 						free_building_slots = {
 							building = arms_factory
 							size > 0
@@ -24842,8 +24837,560 @@
 					clear_variable = arms_factories
 				}
 				else = {
-					add_political_power = 50
+					if = {
+						limit = {
+							owner = { original_tag = BEL }
+						}
+						add_political_power = 50
+					}
 				}
+			}
+		}
+	}
+
+	# NISD III
+	focus = {
+		id = BEL_democratic_industry_nisd_iii
+		icon = tbd
+
+		cost = 2 # Shorter because "we have gotten better at this"
+		
+		x = 14
+		y = 19
+
+		prerequisite = {
+			focus = BEL_democratic_industry_benelux_navy
+		}
+		prerequisite = {
+			focus = BEL_democratic_industry_benelux_arms
+			focus = BEL_democratic_industry_benelux_civilian
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_idea_nisd_2
+				add_idea = BEL_idea_nisd_3
+			}
+		}
+	}
+
+	# NISD - Germany-Fance - Develop Naval Industries
+	focus = {
+		id = BEL_democratic_industry_germany_france_navy
+		icon = tbd
+
+		cost = 2
+
+		x = 12
+		y = 20
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd_iii
+		}
+
+		available = {
+			owns_state = 42
+			owns_state = 51
+			owns_state = 55
+			owns_state = 57
+			owns_state = 56
+
+			owns_state = 29
+			owns_state = 785
+			owns_state = 18
+			owns_state = 28
+			owns_state = 17
+			owns_state = 16
+			owns_state = 15
+		}
+
+		completion_reward = {
+
+			for_each_scope_loop = {
+				array = tomboy_german_states_array
+				if = {
+					limit = {
+						is_coastal = yes
+						owner = {
+							original_tag = BEL
+						}
+					}
+					if = {
+						limit = {
+							free_building_slots = {
+								building = dockyard
+								size > 0
+							}
+						}
+						set_temp_variable = {
+							var = dockyards
+							value = building_level@dockyard
+						}
+						multiply_temp_variable = {
+							var = dockyards
+							value = 0.5
+						}
+						round_temp_variable = dockyards
+						add_building_construction = {
+							type = dockyard
+							instant_build = yes
+							level = dockyards
+						}
+						clear_variable = dockyards
+					}
+					else_if = {
+						limit = {
+							free_building_slots = {
+								building = naval_base
+								province = {
+									is_coastal = yes
+								}
+								size > 0
+							}
+						}
+						set_temp_variable = {
+							var = navalbases
+							value = 10
+						}
+						set_temp_variable = {
+							var = navalbasesInvertor
+							value = building_level@naval_base
+						}
+						multiply_temp_variable = {
+							var = navalbasesInvertor
+							value = -1 # To invert the value
+						}
+						add_to_temp_variable = {
+							var = navalbases
+							value = navalbasesInvertor
+						}
+						clear_variable = navalbasesInvertor
+						round_temp_variable = navalbases
+						add_building_construction = {
+							type = naval_base
+							province = {
+								is_coastal = yes
+							}
+							instant_build = yes
+							level = temp_var:navalbases
+						}
+						clear_variable = navalbases
+					}
+					else = {
+						navy_experience = 25
+					}
+				}
+				else = {
+					navy_experience = 25
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_france_states_array
+				if = {
+					limit = {
+						is_coastal = yes
+						owner = {
+							original_tag = BEL
+						}
+					}
+					if = {
+						limit = {
+							owner = { original_tag = BEL }
+							free_building_slots = {
+								building = dockyard
+								size > 0
+							}
+						}
+						set_temp_variable = {
+							var = dockyards
+							value = building_level@dockyard
+						}
+						multiply_temp_variable = {
+							var = dockyards
+							value = 0.5
+						}
+						round_temp_variable = dockyards
+						add_building_construction = {
+							type = dockyard
+							instant_build = yes
+							level = dockyards
+						}
+						clear_variable = dockyards
+					}
+					else_if = {
+						limit = {
+							owner = { original_tag = BEL }
+							free_building_slots = {
+								building = naval_base
+								province = {
+									is_coastal = yes
+								}
+								size > 0
+							}
+						}
+						set_temp_variable = {
+							var = navalbases
+							value = 10
+						}
+						set_temp_variable = {
+							var = navalbasesInvertor
+							value = building_level@naval_base
+						}
+						multiply_temp_variable = {
+							var = navalbasesInvertor
+							value = -1 # To invert the value
+						}
+						add_to_temp_variable = {
+							var = navalbases
+							value = navalbasesInvertor
+						}
+						clear_variable = navalbasesInvertor
+						round_temp_variable = navalbases
+						add_building_construction = {
+							type = naval_base
+							province = {
+								is_coastal = yes
+							}
+							instant_build = yes
+							level = temp_var:navalbases
+						}
+						clear_variable = navalbases
+					}
+					else = {
+						if = {
+							limit = {
+								owner = { original_tag = BEL }
+							}
+							navy_experience = 10 # Less experience as balance since France has many coastal states
+						}
+					}
+				}
+				else = {
+					navy_experience = 10
+				}
+			}
+		}
+	}
+
+	# NISD - Germany-France - Disarmed France, Militarized Germany
+	focus = {
+		id = BEL_democratic_industry_germany_france_german_arms
+		icon = tbd
+
+		cost = 2
+		
+		x = 14
+		y = 20
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd_iii
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_industry_germany_france_french_arms
+		}
+
+		available = {
+			owns_state = 42
+			owns_state = 51
+			owns_state = 55
+			owns_state = 57
+			owns_state = 56
+
+			owns_state = 29
+			owns_state = 785
+			owns_state = 18
+			owns_state = 28
+			owns_state = 17
+			owns_state = 16
+			owns_state = 15
+		}
+		
+		completion_reward = {
+			for_each_scope_loop = {
+				array = tomboy_german_states_array
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+					}
+					add_dynamic_modifier = {
+						modifier = dyn_mod_bel_dem_STATE_military_focus
+					}
+				}
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = arms_factories
+						value = 10
+					}
+					set_temp_variable = {
+						var = arms_factories_Invertor
+						value = building_level@arms_factory
+					}
+					multiply_temp_variable = {
+						var = arms_factories_Invertor
+						value = -1
+					}
+					add_to_temp_variable = {
+						var = arms_factories
+						value = arms_factories_Invertor
+					}
+					clear_variable = arms_factories_Invertor
+					multiply_temp_variable = {
+						var = arms_factories
+						value = 0.5 # Half
+					}
+					round_variable = arms_factories
+					add_building_construction = {
+						type = arms_factory
+						level = arms_factories
+					}
+					clear_variable = arms_factories
+				}
+				else = {
+					if = {
+						limit = {
+							owner = { original_tag = BEL }
+						}
+						add_political_power = 50
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_france_states_array
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+					}
+					add_dynamic_modifier = {
+						modifier = dyn_mod_bel_dem_STATE_civilian_focus
+					}
+				}
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = industrial_complexes
+						value = 10
+					}
+					set_temp_variable = {
+						var = industrial_complexes_Invertor
+						value = building_level@industrial_complex
+					}
+					multiply_temp_variable = {
+						var = industrial_complexes_Invertor
+						value = -1
+					}
+					add_to_temp_variable = {
+						var = industrial_complexes
+						value = industrial_complexes_Invertor
+					}
+					clear_variable = industrial_complexes_Invertor
+					multiply_temp_variable = {
+						var = industrial_complexes
+						value = 0.5 # Half
+					}
+					round_variable = industrial_complexes
+					add_building_construction = {
+						type = industrial_complex
+						level = industrial_complexes
+					}
+					clear_variable = industrial_complexes
+				}
+				else = {
+					if = {
+						limit = {
+							owner = { original_tag = BEL }
+						}
+						add_political_power = 50
+					}
+				}
+			}
+		}
+	}
+
+	# NISD - Germany-France - Disarmed Germany, Militarized France
+	focus = {
+		id = BEL_democratic_industry_germany_france_french_arms
+		icon = tbd
+
+		cost = 2
+		
+		x = 16
+		y = 20
+
+		prerequisite = {
+			focus = BEL_democratic_industry_nisd_iii
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_industry_germany_france_german_arms
+		}
+
+		available = {
+			owns_state = 42
+			owns_state = 51
+			owns_state = 55
+			owns_state = 57
+			owns_state = 56
+
+			owns_state = 29
+			owns_state = 785
+			owns_state = 18
+			owns_state = 28
+			owns_state = 17
+			owns_state = 16
+			owns_state = 15
+		}
+		
+		completion_reward = {
+			for_each_scope_loop = {
+				array = tomboy_france_states_array
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+					}
+					add_dynamic_modifier = {
+						modifier = dyn_mod_bel_dem_STATE_military_focus
+					}
+				}
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = arms_factories
+						value = 10
+					}
+					set_temp_variable = {
+						var = arms_factories_Invertor
+						value = building_level@arms_factory
+					}
+					multiply_temp_variable = {
+						var = arms_factories_Invertor
+						value = -1
+					}
+					add_to_temp_variable = {
+						var = arms_factories
+						value = arms_factories_Invertor
+					}
+					clear_variable = arms_factories_Invertor
+					multiply_temp_variable = {
+						var = arms_factories
+						value = 0.5 # Half
+					}
+					round_variable = arms_factories
+					add_building_construction = {
+						type = arms_factory
+						level = arms_factories
+					}
+					clear_variable = arms_factories
+				}
+				else = {
+					if = {
+						limit = {
+							owner = { original_tag = BEL }
+						}
+						add_political_power = 50
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_german_states_array
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+					}
+					add_dynamic_modifier = {
+						modifier = dyn_mod_bel_dem_STATE_civilian_focus
+					}
+				}
+				if = {
+					limit = {
+						owner = { original_tag = BEL }
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+					}
+					set_temp_variable = {
+						var = industrial_complexes
+						value = 10
+					}
+					set_temp_variable = {
+						var = industrial_complexes_Invertor
+						value = building_level@industrial_complex
+					}
+					multiply_temp_variable = {
+						var = industrial_complexes_Invertor
+						value = -1
+					}
+					add_to_temp_variable = {
+						var = industrial_complexes
+						value = industrial_complexes_Invertor
+					}
+					clear_variable = industrial_complexes_Invertor
+					multiply_temp_variable = {
+						var = industrial_complexes
+						value = 0.5 # Half
+					}
+					round_variable = industrial_complexes
+					add_building_construction = {
+						type = industrial_complex
+						level = industrial_complexes
+					}
+					clear_variable = industrial_complexes
+				}
+				else = {
+					if = {
+						limit = {
+							owner = { original_tag = BEL }
+						}
+						add_political_power = 50
+					}
+				}
+			}
+		}
+	}
+
+	# NISD IV
+	focus = {
+		id = BEL_democratic_industry_nisd_iv
+		icon = tbd
+
+		cost = 1 # We've gotten incredibly good at this
+		
+		x = 14
+		y = 21
+
+		prerequisite = {
+			focus = BEL_democratic_industry_germany_france_navy
+		}
+
+		prerequisite = {
+			focus = BEL_democratic_industry_germany_france_german_arms
+			focus = BEL_democratic_industry_germany_france_french_arms
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_idea_nisd_3
+				add_idea = BEL_idea_nisd_4
 			}
 		}
 	}
@@ -24877,35 +25424,7 @@
 
 
 
-	###########
-	# Economy #
-	###########
-
-	focus = {
-		id = BEL_economy_monetary_system
-		icon = GFX_goal_bel_economy_money
-
-		x = 21
-		y = 0
-
-		cost = 4
-
-		available = {
-			NOT = {
-				has_government = communism
-			}
-		}
-
-		completion_reward = {
-			BEL = {
-				add_political_power = 100
-				add_popularity = {
-					ideology = var:current_party_ideology_group
-					popularity = 0.2
-				}
-			}
-		}
-	}
+	
 
 
 
@@ -25096,17 +25615,20 @@
 			add_stability = -0.25
 			add_war_support = 1
 			every_army_leader = {
-				add_defense = 5
-				add_attack = 3
+				add_defense = 3
+				add_attack = 1
 			}
 			every_country = {
 				limit = {
-					has_war_with = BEL
+					has_war_with = BEL # Scope every warring country
 				}
 				every_country = {
 					limit = {
 						NOT = {
-							has_war_with = BEL
+							has_war_with = BEL # Scope every non-warring country
+							original_tag = USA # Approve of war crimes
+							original_tag = SOV # Love war crimes
+							original_tag = CRO # Love war crimes
 						}
 					}
 					add_opinion_modifier = {
@@ -25138,10 +25660,14 @@
 				limit = {
 					has_opinion = {
 						target = BEL
-						value > 0
+						value > 9
 					}
 					NOT = {
 						tag = BEL
+						has_war_with = BEL
+						any_allied_country = {
+							has_war_with = BEL
+						}
 					}
 				}
 				country_event = tomboy.13
@@ -25178,7 +25704,8 @@
 						all_provinces = yes
 						limit_to_border = yes
 					}
-				}	
+				}
+				add_stability = -0.15 # Everything was turned into defense
 			}
 		}
 	}

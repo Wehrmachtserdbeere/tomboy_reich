@@ -359,3 +359,30 @@ dyn_mod_bel_dem_STATE_military_focus = {
 	state_production_speed_industrial_complex_factor = -0.5 # Massive malus here
 	state_production_speed_synthetic_refinery_factor = 0.1
 }
+
+# This one is NOT to be used in NISD I-III
+dyn_mod_bel_dem_STATE_naval_focus = {
+	enable = {
+		always = yes
+	}
+
+	# icon = tbd
+
+	local_building_slots = 3
+	local_supplies = 0.1
+	local_resources = -0.15
+	army_speed_factor_for_controller = 0.1
+	# Military
+	state_production_speed_air_base_factor = -0.2
+	state_production_speed_anti_air_building_factor = -0.2
+	state_production_speed_arms_factory_factor = -0.5 # Massive malus here too
+	state_production_speed_rocket_site_factor = -0.55
+	state_production_speed_dockyard_factor = 0.8 # Massive bonus
+	production_speed_coastal_bunker_factor = 0.75
+	coastal_bunker_effectiveness_factor = 0.4
+	repair_speed_coastal_bunker_factor = 0.5
+	repair_speed_dockyard_factor = 0.5
+	# Civilian
+	state_production_speed_industrial_complex_factor = -0.5 # Massive malus here
+	state_production_speed_synthetic_refinery_factor = 0.1
+}

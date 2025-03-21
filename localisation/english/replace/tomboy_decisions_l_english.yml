@@ -175,6 +175,9 @@
   BEL_english_buyback_purchase_state: "Propose purchase of [FROM.GetName]"
   BEL_english_buyback_purchase_state_desc: "It's time to buy back our rightful lands from the [FROM.owner.GetAdjective]. We can propose to buy back [FROM.GetName] from [FROM.owner.GetNameDef] for a price to bring it back into our realm and free our people."
 
+  BEL_nisd_4_category: "New Industrial State Development"
+  BEL_nisd_4_category_desc: "The NISD can turn any area into a two-year powerhouse of either civilian, military, or naval prowess. We simply have to decide what we specialize each state in."
+
 
 
 

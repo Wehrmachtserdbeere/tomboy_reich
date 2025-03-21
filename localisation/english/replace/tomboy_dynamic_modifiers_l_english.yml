@@ -31,3 +31,4 @@
 
   dyn_mod_bel_dem_STATE_civilian_focus: "Civilian-focused Local Economy"
   dyn_mod_bel_dem_STATE_military_focus: "Military-focused Local Economy"
+  dyn_mod_bel_dem_STATE_naval_focus: "Navy-focused Local Economy"
