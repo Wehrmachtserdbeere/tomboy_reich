@@ -177,6 +177,7 @@
 
   BEL_nisd_4_category: "New Industrial State Development"
   BEL_nisd_4_category_desc: "The NISD can turn any area into a two-year powerhouse of either civilian, military, or naval prowess. We simply have to decide what we specialize each state in."
+  BEL_nisd_specialize_state: "Specialize §O[FROM.GetName]§!"
 
 
 

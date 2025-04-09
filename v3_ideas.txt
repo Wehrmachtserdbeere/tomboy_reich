@@ -1,0 +1,15 @@
+- Tomboys, Cunnies, and Femboys exist from the start.
+- - Tomboys in Belgium
+- - Cunnies as Tomboy Puppet in Nord-Pas-De-Calais?
+- - Femboys as Bavaria as German puppet
+
+- Plan from the start, don't just make it as you go along.
+- Plan interaction between the nations, e.g. Tomboys attempting a coup in Cunnyland, but if played right, Cunnies can get independent.
+- Global decisions, that are available for all ideologies, so that decisions aren't held back by being implemented early, and newer ones benefit from new knowledge.
+- Perhaps even remake the entire map (not like map modding, but replacing the countries (using replace_path) and essentially making it a total conversion)?
+
+- Carry over loc files for victory points and state names from v2. Lots of research went into those!
+
+- Possibly get one or more devs? Unlikely because of my erratic schedule, but certainly something to consider.
+
+- Squash ANY bugs **IMMEDIATELY**, don't let it go on like v2 where we'll have a TON of errors to fix. Especially figure out why basegame stuff gives errors!

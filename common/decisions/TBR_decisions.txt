@@ -4704,6 +4704,13 @@ BEL_nisd_4_category = {
         }
 
         available = {
+            FROM = {
+                OR = {
+                    resistance < 25
+                    compliance > 25
+                    is_core_of = ROOT
+                }
+            }
             OR = {
                 has_idea = BEL_idea_nisd_4
                 is_debug = yes
@@ -4749,6 +4756,5 @@ BEL_nisd_4_category = {
                 }
             }
         }
-        # TODO - Not finished yet! Continue working here!
     }
 }

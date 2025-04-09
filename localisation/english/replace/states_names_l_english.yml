@@ -26,6 +26,20 @@
   BEL_STATE_15: "Normandie" # Normandy
   BEL_STATE_30: "Lorelei" # Loire
   BEL_STATE_14: "Kleinbritannien" # Brittany
+  # Non-Core Tomboy France
+  BEL_STATE_735: "Savoyen" # Savoy
+  BEL_STATE_851: "Var" # Var
+  BEL_STATE_21: "Rhonemünd" # Bouches-du-Rhône
+  BEL_STATE_32: "Drom" # Alpes
+  BEL_STATE_20: "Rhonland" # Rhone
+  BEL_STATE_26: "Allier" # Auvergne
+  BEL_STATE_22: "Pliererland" # Languedoc
+  BEL_STATE_33: "Raouler Indre" # Centre-Sud
+  BEL_STATE_25: "Lemosin" # Limousin
+  BEL_STATE_31: "Okzitanien" # Midi Pyrenees
+  BEL_STATE_23: "Piktavien" # Poitou
+  BEL_STATE_19: "Aquitanien" # Aquitaine
+  BEL_STATE_806: "Atlantische Pyrenäen" # Pyrénées-Atlantiques
 
   # Germany
   BEL_STATE_42: "Pfalz" # Moselland
@@ -57,3 +71,54 @@
   BEL_STATE_134: "Konnach" # Connaught
   BEL_STATE_113: "Leinsburg" # Leinester
   BEL_STATE_135: "Irisch Münster" # Munster
+
+
+
+
+  # Various other States
+
+  # USA
+  BEL_STATE_367: "Clan-Clan" # Alabama - Aisha Clanclan
+  BEL_STATE_463: "Balalaika" # Alaska - Balalaika
+  BEL_STATE_377: "Revy" # Arizona - Revy
+  BEL_STATE_372: "Matoi" # Arkansas - Ryuko Matoi (It's pronounced Are-Can-Sis)
+  BEL_STATE_378: "Kusanagi" # California - Motoko Kusanagi
+  BEL_STATE_382: "Tenoh" # Colorado - Haruka Tenoh
+  BEL_STATE_366: "Malandro" # Florida - Michiko Malandro
+  BEL_STATE_365: "Misato" # Georgia - Misato Katsuragi (Not a tomboy, but an easter egg :P)
+  BEL_STATE_629: "Nessa" # Hawaii - Nessa
+  BEL_STATE_387: "Sinon" # Idaho - Shino Asada (Sinon)
+  BEL_STATE_395: "Mado" # Illinois - Akira Mado
+  BEL_STATE_396: "Sakura" # Indiana - Kyoko Sakura
+  BEL_STATE_392: "May" # Iowa - May
+  BEL_STATE_383: "Android" # Kansas - Android 18 (It's pronounced Can-Saw)
+  BEL_STATE_369: "Leonhart" # Kentucky - Annie Leonhart
+  BEL_STATE_371: "Shihouin" # Louisiana - Yoruichi Shihouin
+  BEL_STATE_361: "Haruhara" # Maryland - Haruko Haruhara
+  BEL_STATE_393: "Kiryuuin" # Michigan - Satsuki Kiryuuin
+  BEL_STATE_391: "Yukino" # Minnessota - Yukino Yukinoshita
+  BEL_STATE_370: "Balsa" # Mississippi - Balsa
+  BEL_STATE_373: "Ayuzawa" # Missouri - Misaki Ayuzawa
+  BEL_STATE_388: "Jakuzure" # Montana - Nonon Jakuzure
+  BEL_STATE_384: "Rockbell" # Nebraska - Winry Rockbell
+  BEL_STATE_379: "Valentine" # Nevada - Faye Valentine
+  BEL_STATE_357: "Victoria" # New England - Seras Victoria
+  BEL_STATE_359: "Kagura" # New Jersey - Kagura
+  BEL_STATE_376: "Nadie" # New Mexico - Nadie
+  BEL_STATE_358: "Ackerman" # New York - Mikasa Ackerman
+  BEL_STATE_363: "Yoko" # North Carolina - Yoko Littner
+  BEL_STATE_389: "Erikasland" # North Dakota - Erica Hartmann
+  BEL_STATE_261: "Utena" # Ohio - Utena Tenjou
+  BEL_STATE_374: "Meryland" # Oklahoma - Meryl Stryfe
+  BEL_STATE_385: "Celty" # Oregon - Celty Sturluson
+  BEL_STATE_360: "Konno" # Pennsylvania - Yuuki Konno
+  BEL_STATE_364: "Kunihiro" # South Carolina - Ritsuko Kunihiro
+  BEL_STATE_390: "Wilckenland" # South Dakota - Minna-Dietlinde Wilcke
+  BEL_STATE_368: "Rin" # Tennessee - Rin Shibuya
+  BEL_STATE_375: "Mirko" # Texas - Rumi 'Mirko' Usagiyama
+  BEL_STATE_380: "Artoria" # Utah -  Artoria Pendragon
+  BEL_STATE_362: "Aikawa" # Virginia - Maki Aikawa
+  BEL_STATE_386: "Kino" # Washington - Kino
+  BEL_STATE_816: "Aliza" # West Virginia - Aliza
+  BEL_STATE_394: "Yukari" # Wisconsin - Yukari Takeba
+  BEL_STATE_381: "Kirishima" # Wyoming - Touka Kirishima

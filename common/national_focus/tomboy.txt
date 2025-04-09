@@ -24200,6 +24200,44 @@
 		prerequisite = {
 			focus = BEL_democratic_propose_to_the_netherlands
 		}
+
+		bypass = {
+			42 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			51 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			55 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			57 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			56 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+		}
 		
 		completion_reward = {
 			set_country_flag = BEL_began_german_buyback
@@ -24234,6 +24272,86 @@
 		prerequisite = {
 			focus = BEL_democratic_propose_to_luxembourg
 		}
+
+		bypass = {
+			29 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			785 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			18 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			28 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			17 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			16 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			15 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			27 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			24 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			30 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			14 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+		}
 		
 		completion_reward = {
 			set_country_flag = BEL_began_french_buyback
@@ -24266,11 +24384,41 @@
 		}
 
 		bypass = {
-			owns_state = 127
-			owns_state = 126
-			owns_state = 125
-			owns_state = 129
-			owns_state = 130
+			127 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			126 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			125 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			129 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
+			130 = {
+				owner = {
+					OR = {
+						original_tag = BEL
+					}
+				}
+			}
 		}
 		
 		completion_reward = {

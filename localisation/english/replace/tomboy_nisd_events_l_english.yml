@@ -1,2 +1,5 @@
 ﻿l_english:
-  
+  tomboy_nisd.1.t: "Select specialization"
+  tomboy_nisd.1.d: "We have to decide what specialization we want to focus on. We can either focus on the military, or on the economy. Each has its own advantages and disadvantages."
+  tomboy_nisd.1.a: "Military"
+  tomboy_nisd.1.b: "Civilian"

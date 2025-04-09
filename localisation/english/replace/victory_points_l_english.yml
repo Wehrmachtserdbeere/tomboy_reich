@@ -67,6 +67,21 @@
   BEL_VICTORY_POINTS_9495: "Kondatten" # Rennes
   BEL_VICTORY_POINTS_6536: "Der Orient" # Lorient
   BEL_VICTORY_POINTS_3552: "Breschd" # Brest
+  # Non-Core Tomboy French Cities
+  BEL_VICTORY_POINTS_9909: "Nizza" # Nice
+  BEL_VICTORY_POINTS_778: "Annetschi" # Annecy
+  BEL_VICTORY_POINTS_911: "Tolon" # Toulon
+  BEL_VICTORY_POINTS_11834: "Massilien" # Marseille
+  BEL_VICTORY_POINTS_3768: "Graswalde" # Grenoble
+  BEL_VICTORY_POINTS_6613: "Welsch-Leiden" # Lyon
+  BEL_VICTORY_POINTS_3594: "Widschi" # Vichy
+  BEL_VICTORY_POINTS_9898: "Plierberg" # Montpellier
+  BEL_VICTORY_POINTS_651: "Raoulschloss" # Châteauroux
+  BEL_VICTORY_POINTS_620: "Limoges" # Limoges
+  BEL_VICTORY_POINTS_6766: "Tholosen" # Toulouse
+  BEL_VICTORY_POINTS_6657: "Roschellen" # La Rochelle
+  BEL_VICTORY_POINTS_9737: "Bordau" # Bordeaux
+  BEL_VICTORY_POINTS_9710: "Guthafen" # Bayonne
 
   # English Cities
   BEL_VICTORY_POINTS_3501: "Dowershafen" # Dover

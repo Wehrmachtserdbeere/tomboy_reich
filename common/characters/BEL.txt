@@ -472,11 +472,14 @@ characters = {
 				original_tag = BEL
 			}
 			available = {
-				OR = {
-					USA_douglas_macarthur = {
-						is_country_leader = no
-					}
-					USA = {
+				USA = {
+					OR = {
+						# PDX throws 2 errors per second for this shit, seriously,
+						# they should fix their code before they release yet another
+						# massively hated DLC!
+						USA_douglas_macarthur = {
+							is_country_leader = no
+						}
 						has_opinion = {
 							target = BEL
 							value > 24
