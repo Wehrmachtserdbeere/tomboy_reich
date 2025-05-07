@@ -13,3 +13,13 @@
 - Possibly get one or more devs? Unlikely because of my erratic schedule, but certainly something to consider.
 
 - Squash ANY bugs **IMMEDIATELY**, don't let it go on like v2 where we'll have a TON of errors to fix. Especially figure out why basegame stuff gives errors!
+
+- Reimu Edit 2, the Hakurei Eagle. Get some inspiration, Hakurei path maybe?
+
+- Human experimentation path (think Karl Kroenen), with even the country leader's portrait changing? Perhaps as its own path independent of ideology.
+
+- Union of European States. Basically, invite countries, unified defense grids, and the whole shabang. Something like "Festung Europa."
+
+- Custom ideas (the ones you can change in the country screen)
+- - Racial alignment (like Nordid and such)
+- - Continental bonuses (like getting a bonus to cavalry in Asia, tanks in Europe, and bombing in America)

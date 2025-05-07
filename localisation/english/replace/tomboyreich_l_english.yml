@@ -668,6 +668,12 @@
     BEL_idea_nisd_final: "New Industrial State Development"
     BEL_idea_nisd_final_desc: "We have successfully created an office for the Industrialization of new states. This office will be responsible for the development and deployment of various managerial and industrial technologies, as well as the creation of focused industrial zones in states that are not yet specialized. This grants us a great ability to make spreading democracy more efficient."
 
+    BEL_idea_measured_democracy: "A Measured Democracy"
+    BEL_idea_measured_democracy_desc: "Our democracy has been established and it is a success, but there are still challenges that we must face. We must be mindful of the potential for abuse and corruption by those that do not have the best interests of the people at heart, and we must be careful to not allow the voice of the people to be drowned out by those that would seek to manipulate the system for their own gain. For this, we must limit who gets to vote, and who is prohibited. Specifically, only land-owning Tomboys should be given the right to vote, as the landless and non-tomboys are not yet fully educated on the matters at hand, and their votes would not be in the best interest of the nation."
+
+    BEL_idea_radical_democracy: "A Radical Democracy"
+    BEL_idea_radical_democracy_desc: "We have successfully created a democracy, and the people are rejoicing! We have shown the world that democracy can work, and that the people can have a say in the government. However, as the people rejoice, the wealthy, the powerful, and the elite are working behind the scenes to undermine our efforts. To prevent a power-hungry elite from destroying what we have built, we must adopt a radical stance, and give every person the right to vote. No matter the wealth, education, gender, creed, or even nationality, for we must be the shining example of European democracy, and give a guide on the future of European politics, unbound by borders, culture, or religion."
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"

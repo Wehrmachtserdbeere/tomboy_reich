@@ -25544,6 +25544,65 @@
 	}
 
 
+	# A measured Democracy (we need the original American system, basically.)
+	focus = {
+		id = BEL_democratic_a_measured_democracy
+		icon = tbd
+
+		cost = 3
+		
+		x = 19
+		y = 15
+
+		prerequisite = {
+			focus = BEL_democratic_a_proposal_to_the_english
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_a_radical_democracy
+		}
+
+		available = {
+			has_government = democratic
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_ideas = BEL_idea_measured_democracy
+		}
+	}
+
+	# A radical Democracy (basically, anyone can vote, regardless of age, sex, sexuality, nationality, etc.)
+	focus = {
+		id = BEL_democratic_a_radical_democracy
+		icon = tbd
+
+		cost = 3
+		
+		x = 21
+		y = 15
+
+		prerequisite = {
+			focus = BEL_democratic_a_proposal_to_the_english
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_a_measured_democracy
+		}
+
+		completion_reward = {
+			add_stability = -0.15
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.25
+			}
+			add_ideas = BEL_idea_radical_democracy
+		}
+	}
+
 
 
 

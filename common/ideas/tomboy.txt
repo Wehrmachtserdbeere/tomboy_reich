@@ -2509,6 +2509,31 @@ ideas = {
 			}
 		}
 
+		BEL_idea_measured_democracy = {
+			name = BEL_idea_measured_democracy
+
+			picture = tbd
+
+			modifier = {
+				drift_defence_factor = 0.15
+				democratic_acceptance = 5
+				monthly_population = 0.05
+			}
+		}
+
+		BEL_idea_radical_democracy = {
+			name = BEL_idea_radical_democracy
+
+			picture = tbd
+
+			modifier = {
+				drift_defence_factor = -0.2
+				neutrality_acceptance = 5
+				fascism_acceptance = 5
+				democratic_acceptance = 10
+			}
+		}
+
 
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P
