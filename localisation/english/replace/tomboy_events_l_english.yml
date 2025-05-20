@@ -42,10 +42,6 @@
 
   threat_imminent_war: "War imminent"
 
-  tomboy.9.t: "The Liége Massacre"
-  tomboy.9.d: "Today, enemy troops entered the city of Liége. However, instead of taking the city and continuing on, the enemy forces began indiscriminately killing citizens. According to witnesses' accounts, the soldiers seemed highly organized; they divided into different squads, with one squad going door-to-door to search for civilians. As soon as anyone was found, the soldiers killed them on site. Witnesses report seeing children among those being murdered by the soldiers."
-  tomboy.9.a: "Horrible... These monsters will do anything to bring their enemies down."
-
   tomboy.10.t: "[FROM.GetAdjective] sign trade treaty!"
   tomboy.10.d: "We have just received confirmation from the [FROM.GetAdjective] that they will sign the trade treaty with us. From now on, our economies are open to each other, and we can benefit from trading and exchanging ideas. The trade treaty does not include any military arrangements, and should the [FROM.GetAdjective] declare war on us, the treaty would end. We can still try and sign an alliance with them later. For now, the economic gains will help our country prosper."
   tomboy.10.a: "Let's celebrate!"

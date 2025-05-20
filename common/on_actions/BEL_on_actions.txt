@@ -59,7 +59,17 @@ on_actions = {
 						has_global_flag = BEL_liege_event_fired
 					}
 		  		}
-				news_event = tomboy.9
+				if = {
+					limit = {
+						USA = {
+							controls_province = 11519
+						}
+					}
+					# Send reports of the massacre to the Tomboys
+					BEL = {
+						country_event = tomboy_liege.1
+					}
+				}
 				set_global_flag = BEL_liege_event_fired
 	   		}
 		}

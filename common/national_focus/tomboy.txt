@@ -25770,8 +25770,17 @@
 	### Liege Massacre Aftermath ###
 	################################
 
-	# Initializing
+	# TODO - Make sure it all works correctly.
+	# i.E. The focus is unlocked when the event runs,
+	# there's localization for everything, that the
+	# opinion and reactions work correctly and aren't
+	# running multiple times, that kind of stuff.
+	# And also that it correctly removes the pop from
+	# the state, last I checked (20/05/25) it seemed
+	# a bit buggy with removing it, rerunning the event,
+	# and it then not removing them.
 
+	# Initializing
 	focus = {
 		id = BEL_liege_liege_massacre
 		icon = GFX_focus_CZE_german_puppet
@@ -25779,20 +25788,19 @@
 		cost = 0
 
 		available = {
-			any_country = {
-				AND = {
-					has_war_with = BEL
-					controls_province = 11519
-				}
-			}
+			always = no
 		}
 
-		bypass = {
+		available = {
 			has_global_flag = BEL_liege_massacre_happened
 		}
 
 		x = 30
 		y = 0
+
+		bypass = {
+			has_global_flag = BEL_liege_massacre_happened
+		}
 
 		completion_reward = {
 			BEL = { news_event = tomboy.16 }
@@ -25800,7 +25808,6 @@
 	}
 
 	# Publicize the event
-
 	focus = {
 		id = BEL_liege_publicize
 		icon = GFX_goal_generic_propaganda
@@ -25815,7 +25822,7 @@
 		}
 
 		available = {
-			has_war = yes
+			always = no
 		}
 
 		completion_reward = {
@@ -25848,7 +25855,6 @@
 	}
 
 	# Plead for help
-
 	focus = {
 		id = BEL_liege_plead_for_help
 		icon = GFX_focus_generic_concessions
@@ -25883,7 +25889,6 @@
 	}
 
 	# Last Defense
-
 	focus = {
 		id = BEL_liege_last_defense
 		icon = GFX_goal_generic_fortify_city
@@ -25918,16 +25923,16 @@
 	}
 
 
-		#      d8b         d8b                         
-		#      88P         ?88                         
-		#     d88           88b                        
-		# d888888   d8888b  888888b ?88   d8P d888b8b  
-		#d8P' ?88  d8b_,dP  88P `?8bd88   88 d8P' ?88  
-		#88b  ,88b 88b     d88,  d88?8(  d88 88b  ,88b 
-		#`?88P'`88b`?888P'd88'`?88P'`?88P'?8b`?88P'`88b
-		#                                           )88
-		#                                          ,88P
-		#                                      `?8888P 
+		#          d8b         d8b                         
+		#          88P         ?88                         
+		#         d88           88b                        
+		#     d888888   d8888b  888888b ?88   d8P d888b8b  
+		#    d8P' ?88  d8b_,dP  88P `?8bd88   88 d8P' ?88  
+		#    88b  ,88b 88b     d88,  d88?8(  d88 88b  ,88b 
+		#    `?88P'`88b`?888P'd88'`?88P'`?88P'?8b`?88P'`88b
+		#                                               )88
+		#                                              ,88P
+		#                                          `?8888P 
 
 	focus = {
 		id = BEL_debug_switch_tree

@@ -1,0 +1,444 @@
+
+add_namespace = tomboy_liege
+
+# Liegé Massacre | Tomboys get the news
+
+country_event = {
+	id = tomboy_liege.1
+	title = tomboy_liege.1.t
+	desc = tomboy_liege.1.d
+
+	picture = GFX_news_event_soldiers_marching
+
+	fire_only_once = yes
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy_liege.1"
+	}
+
+	# Publicise the event.
+	option = {
+		name = tomboy_liege.1.a
+
+		ai_chance = {
+			base = 80
+		}
+
+		add_stability = -0.2
+
+		set_global_flag = BEL_liege_massacre_happened
+		BEL = { add_ideas = BEL_liege_massacre }
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = BEL_liege_liege_massacre
+		if = {
+			limit = {
+				USA = {
+					controls_province = 11519
+				}
+			}
+			BEL = {
+				34 = {
+					add_manpower = -750000
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						original_tag = BEL
+					}
+				}
+				news_event = tomboy_liege.3
+			}
+		}
+		else = {
+			BEL = {
+				34 = {
+					add_manpower = -500000
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						original_tag = BEL
+					}
+				}
+				news_event = tomboy_liege.2
+			}
+		}
+	}
+
+	# Try to keep it internal for a while.
+	option = {
+		name = tomboy_liege.1.b
+
+		ai_chance = {
+			base = 20
+		}
+
+		set_global_flag = BEL_liege_massacre_happened
+		BEL = { add_ideas = BEL_liege_massacre }
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = BEL_liege_liege_massacre
+		random_list = {
+			33 = {
+				add_stability = -0.1
+			}
+			33 = {
+				add_stability = -0.2
+			}
+			33 = {
+				add_stability = -0.3
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					controls_province = 11519
+				}
+			}
+			BEL = {
+				34 = {
+					add_manpower = -750000
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						original_tag = BEL
+					}
+				}
+				news_event = {
+					id = tomboy_liege.3
+					days = 3
+					random_days = 1
+				}
+			}
+		}
+		else = {
+			BEL = {
+				34 = {
+					add_manpower = -500000
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						original_tag = BEL
+					}
+				}
+				news_event = {
+					id = tomboy_liege.2
+					days = 3
+					random_days = 1
+				}
+			}
+		}
+	}
+}
+
+# Liegé Massacre | Non-US
+news_event = { 
+	id = tomboy_liege.2
+	title = tomboy_liege.2.t
+	desc = tomboy_liege.2.d
+
+	picture = GFX_news_event_soldiers_marching
+
+	fire_only_once = yes
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy_liege.2"
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		
+	}
+
+	option = { # International reactions
+		name = tomboy_liege.2.a
+		
+		trigger = {
+			NOT = {
+				tag = BEL
+				has_war_with = BEL
+			}
+		}
+
+		every_country = {
+		    limit = { has_war_with = BEL }
+		    every_country = {
+        		limit = { NOT = { has_war_with = BEL } }
+        			add_opinion_modifier = {
+		            target = PREV
+        		    modifier = large_decrease
+		        }
+    		}
+		}
+	}
+
+	option = { # Offender Reaction Happy
+		name = tomboy_liege.2.b
+
+		trigger = {
+			NOT = {
+				tag = BEL
+			}
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		every_country = {
+			limit = {
+				controls_province = 11519 # Scope country that controls Liége
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = BEL
+						controls_province = 11519 # Scope every country that isn't BEL or the country controlling Liége
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV # Target the country that controls Liége
+					modifier = large_decrease
+				}
+			}
+			add_war_support = 0.1
+			add_stability = -0.1
+		}
+	}
+
+	option = { # Offender Reaction Distraught
+		name = tomboy_liege.2.c
+
+		trigger = {
+			NOT = {
+				tag = BEL
+			}
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		every_country = {
+			limit = {
+				controls_province = 11519 # Scope country that controls Liége
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = BEL
+						tag = PREV # Scope every country that isn't BEL or the country controlling Liége
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV # Target the country that controls Liége
+					modifier = small_decrease
+				}
+			}
+			add_war_support = -0.15
+			add_stability = -0.05
+		}
+	}
+
+	option = { # Offender ally reaction
+		name = tomboy_liege.2.d
+
+		trigger = {
+			NOT = {
+				tag = BEL
+				controls_province = 11519
+			}
+			has_war_with = BEL
+		}
+
+		add_war_support = -0.1
+	}
+
+	option = { # USA Offender reaction
+		name = tomboy_liege.2.e
+
+		trigger = {
+			tag = USA
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		USA = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			every_enemy_country = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = large_decrease
+				}
+			}
+		}
+		
+	}
+
+}
+
+# Liegé Massacre | US
+news_event = { 
+	id = tomboy_liege.3
+	title = tomboy_liege.3.t
+	desc = tomboy_liege.3.d
+
+	picture = GFX_news_event_soldiers_marching
+
+	fire_only_once = yes
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log	= "Event ran: tomboy_liege.3"
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = BEL_liege_massacre_happened
+		BEL = {
+			add_ideas = BEL_liege_massacre
+			34 = {
+				add_manpower = -750000
+			}
+		}
+	}
+
+	option = { # International reactions
+		name = tomboy_liege.3.a
+		
+		trigger = {
+			NOT = {
+				tag = BEL
+				has_war_with = BEL
+			}
+		}
+
+		every_country = {
+		    limit = { has_war_with = BEL }
+		    every_country = {
+        		limit = { NOT = { has_war_with = BEL } }
+        			add_opinion_modifier = {
+		            target = PREV
+        		    modifier = large_decrease
+		        }
+    		}
+		}
+	}
+
+	option = { # Offender Reaction Happy
+		name = tomboy_liege.3.b
+
+		trigger = {
+			NOT = {
+				tag = BEL
+			}
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		every_country = {
+			limit = {
+				controls_province = 11519 # Scope country that controls Liége
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = BEL
+						controls_province = 11519 # Scope every country that isn't BEL or the country controlling Liége
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV # Target the country that controls Liége
+					modifier = large_decrease
+				}
+			}
+			add_war_support = 0.1
+			add_stability = -0.1
+		}
+	}
+
+	option = { # Offender Reaction Distraught
+		name = tomboy_liege.3.c
+
+		trigger = {
+			NOT = {
+				tag = BEL
+			}
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		every_country = {
+			limit = {
+				controls_province = 11519 # Scope country that controls Liége
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = BEL
+						tag = PREV # Scope every country that isn't BEL or the country controlling Liége
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV # Target the country that controls Liége
+					modifier = small_decrease
+				}
+			}
+			add_war_support = -0.15
+			add_stability = -0.05
+		}
+	}
+
+	option = { # Offender ally reaction
+		name = tomboy_liege.3.d
+
+		trigger = {
+			NOT = {
+				tag = BEL
+				controls_province = 11519
+			}
+			has_war_with = BEL
+		}
+
+		add_war_support = -0.1
+	}
+
+	option = { # USA Offender reaction
+		name = tomboy_liege.3.e
+
+		trigger = {
+			tag = USA
+			has_war_with = BEL
+			controls_province = 11519
+		}
+
+		USA = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			every_enemy_country = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = large_decrease
+				}
+			}
+		}
+		
+	}
+
+}
