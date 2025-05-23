@@ -18503,7 +18503,7 @@
 						has_tech = advanced_light_tank
 					}
 					add_equipment_to_stockpile = {
-						type = advanced_light_tank
+						type = var:advanced_light_tank
 						amount = 250
 					}
 				}
@@ -18644,7 +18644,7 @@
 						has_tech = advanced_heavy_tank
 					}
 					add_equipment_to_stockpile = {
-						type = advanced_heavy_tank
+						type = var:advanced_heavy_tank
 						amount = 250
 					}
 				}
@@ -22856,7 +22856,8 @@
 
 		available = {
 			any_owned_state = {
-				var:building_level@arms_factory = {
+				check_variable = {
+					var = var:building_level@arms_factory
 					value > 1
 				}
 			}
@@ -22865,7 +22866,8 @@
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					var:building_level@arms_factory = {
+					check_variable = {
+						var = var:building_level@arms_factory
 						value > 1
 					}
 				}
@@ -23593,7 +23595,7 @@
 			NOT = {
 				has_war_with = GER
 				any_country = {
-					limit = {
+					trigger = {
 						is_in_faction_with = BEL
 					}
 					has_war_with = GER
@@ -23794,9 +23796,9 @@
 					has_war_with = BEL
 				}
 			}
-			NOT = {
-				has_completed_focus = BEL_democratic_anti-germany_treaty
-			}
+			# NOT = {
+			#     has_completed_focus = BEL_democratic_anti-germany_treaty # TODO: Implement this focus.
+			# }
 		}
 		
 		completion_reward = {
@@ -24571,7 +24573,7 @@
 					clear_variable = dockyards
 				}
 				else = {
-					navy_experience = 50 # No space for dockyards? We use this for experience then!
+					BEL = { navy_experience = 50 } # No space for dockyards? We use this for experience then!
 				}
 			}
 		}
@@ -24781,12 +24783,9 @@
 					}
 					else_if = {
 						limit = {
-							free_building_slots = {
+							any_province_building_level = {
 								building = naval_base
-								province = {
-									is_coastal = yes
-								}
-								size > 0
+								level > 0
 							}
 						}
 						set_temp_variable = {
@@ -24809,9 +24808,6 @@
 						round_temp_variable = navalbases
 						add_building_construction = {
 							type = naval_base
-							province = {
-								is_coastal = yes
-							}
 							instant_build = yes
 							level = temp_var:navalbases
 						}
@@ -25090,9 +25086,6 @@
 						limit = {
 							free_building_slots = {
 								building = naval_base
-								province = {
-									is_coastal = yes
-								}
 								size > 0
 							}
 						}
@@ -25117,7 +25110,7 @@
 						add_building_construction = {
 							type = naval_base
 							province = {
-								is_coastal = yes
+								limit_to_coastal = yes
 							}
 							instant_build = yes
 							level = temp_var:navalbases
@@ -25170,9 +25163,6 @@
 							owner = { original_tag = BEL }
 							free_building_slots = {
 								building = naval_base
-								province = {
-									is_coastal = yes
-								}
 								size > 0
 							}
 						}
@@ -25196,9 +25186,6 @@
 						round_temp_variable = navalbases
 						add_building_construction = {
 							type = naval_base
-							province = {
-								is_coastal = yes
-							}
 							instant_build = yes
 							level = temp_var:navalbases
 						}
@@ -25788,11 +25775,7 @@
 		cost = 0
 
 		available = {
-			always = no
-		}
-
-		available = {
-			has_global_flag = BEL_liege_massacre_happened
+			always = yes
 		}
 
 		x = 30

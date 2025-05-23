@@ -30,9 +30,14 @@ country_event = {
 		add_stability = -0.2
 
 		set_global_flag = BEL_liege_massacre_happened
-		BEL = { add_ideas = BEL_liege_massacre }
-		mark_focus_tree_layout_dirty = yes
-		complete_national_focus = BEL_liege_liege_massacre
+		BEL = {
+			add_timed_idea = {
+				idea = BEL_liege_massacre
+				days = 730 # 2 years
+			}
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = BEL_liege_liege_massacre
+		}
 		if = {
 			limit = {
 				USA = {
@@ -79,9 +84,14 @@ country_event = {
 		}
 
 		set_global_flag = BEL_liege_massacre_happened
-		BEL = { add_ideas = BEL_liege_massacre }
-		mark_focus_tree_layout_dirty = yes
-		complete_national_focus = BEL_liege_liege_massacre
+		BEL = {
+			add_timed_idea = {
+				idea = BEL_liege_massacre
+				days = 730 # 2 years
+			}
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = BEL_liege_liege_massacre
+		}
 		random_list = {
 			33 = {
 				add_stability = -0.1
