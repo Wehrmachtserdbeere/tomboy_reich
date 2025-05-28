@@ -25823,7 +25823,9 @@
 					limit = {
 						NOT = {
 							has_war_with = BEL # Scope every non-warring country
-							original_tag = USA # Approve of war crimes
+							is_in_faction_with = PREV # Not in faction with PREV
+							is_puppet_of = PREV # Not PREV's puppet
+							original_tag = USA # Love war crimes
 							original_tag = SOV # Love war crimes
 							original_tag = CRO # Love war crimes
 						}
@@ -25891,14 +25893,40 @@
 				limit = {
 					is_owned_by = ROOT
 				}
-				add_building_construction = {
-					type = bunker
-					level = 5
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
+				if = {
+					limit = {
+						# 0-5
+						bunker < 6
 					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						# 6-9
+						bunker > 5
+						bunker < 10
+					}
+					set_building_level = {
+						type = bunker
+						level = 10
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+				else = {
+					# Level 10
+					add_manpower = 2500 # 
 				}
 				add_stability = -0.15 # Everything was turned into defense
 			}

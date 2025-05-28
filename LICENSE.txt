@@ -1,1 +1,21 @@
-Tomboy Reich by Strawberry Software is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+Tomboy Reich  
+by Strawberry Software
+
+Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- NonCommercial — You may not use the material for commercial purposes.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+**Exception - Image Assets Clause**:  
+The use of images, textures, sprites, or any other visual assets provided by this mod is *not* covered under the general Creative Commons license. You must obtain *explicit written permission* from the creator (Strawberry Software) or the credited artist (italy2003) before using any images in your own projects, redistributions, or derivative works, regardless of purpose. Unauthorized use of visual content is strictly prohibited.
+
+To view a copy of the Creative Commons license, visit:  
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Copyright © 2025 Strawberry Software. All rights reserved.
