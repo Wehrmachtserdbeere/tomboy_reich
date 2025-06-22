@@ -2521,6 +2521,19 @@ ideas = {
 			}
 		}
 
+		BEL_idea_federal_strengthening_act = {
+			name = BEL_idea_federal_strengthening_act
+
+			picture = tbd
+
+			modifier = {
+				political_power_gain = -0.05
+
+				# Enables decisions to suppress strikes and protests, lowering resistence.
+				custom_modifier_tooltip = BEL_idea_federal_strengthening_act_custom_tt
+			}
+		}
+
 		BEL_idea_radical_democracy = {
 			name = BEL_idea_radical_democracy
 

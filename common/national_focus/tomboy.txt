@@ -25531,7 +25531,11 @@
 	}
 
 
-	# A measured Democracy (we need the original American system, basically.)
+	########################################
+	# A measured democracy (Right-Leaning) #
+	########################################
+
+	# A measured Democracy (we need the original American system, basically. Turns the country into a Federal Republic.)
 	focus = {
 		id = BEL_democratic_a_measured_democracy
 		icon = tbd
@@ -25552,6 +25556,12 @@
 		available = {
 			has_government = democratic
 		}
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BEL_democratic_a_radical_democracy
+			}
+		}
 		
 		completion_reward = {
 			add_popularity = {
@@ -25559,8 +25569,41 @@
 				popularity = 0.1
 			}
 			add_ideas = BEL_idea_measured_democracy
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
+
+	# Federal Strengthening Act | Reinforce state rights and limit federal overreach.
+	focus = {
+		id = BEL_democratic_measured_democracy_federal_strengthening_act
+		icon = tbd
+
+		cost = 3
+		
+		x = 18
+		y = 16
+
+		prerequisite = {
+			focus = BEL_democratic_a_measured_democracy
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_democratic_a_measured_democracy
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = BEL_idea_federal_strengthening_act
+		}
+	}
+
+	####################################
+	# Radical Democracy (Left-Leaning) #
+	####################################
 
 	# A radical Democracy (basically, anyone can vote, regardless of age, sex, sexuality, nationality, etc.)
 	focus = {
@@ -25580,6 +25623,12 @@
 			focus = BEL_democratic_a_measured_democracy
 		}
 
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BEL_democratic_a_measured_democracy
+			}
+		}
+
 		completion_reward = {
 			add_stability = -0.15
 			add_popularity = {
@@ -25589,6 +25638,8 @@
 			add_ideas = BEL_idea_radical_democracy
 		}
 	}
+
+
 
 
 
@@ -25889,6 +25940,28 @@
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					516 = {
+						owner = ROOT
+					}
+				}
+				6 = {
+					remove_building = {
+						type = TBR_landmark_brusself_defense_network_1
+						level = 1
+					}
+					add_building_construction = {
+						type = TBR_landmark_brussels_defense_network_2
+						level = 1
+						instant_build = yes
+						province = 516
+					}
+				}
+			}
+			else = {
+				set_country_flag = BEL_build_defense_network_flag
+			}
 			every_controlled_state = { # https://hoi4.paradoxwikis.com/Effect#add_building_construction
 				limit = {
 					is_owned_by = ROOT

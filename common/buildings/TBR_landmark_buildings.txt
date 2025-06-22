@@ -1,0 +1,67 @@
+@landmark_repair_speed_factor = 0.15
+
+buildings = {
+
+	TBR_landmark_brusself_defense_network_1 = {
+		show_on_map = 1
+		base_cost = 35000
+		damage_factor = 0 # This is 0 everywhere in the vanilla files, I will follow the examples.
+		icon_frame = 22
+		value = 5
+		is_buildable = no
+		disable_grow_animation = yes
+		only_display_if_exists = yes
+		special_icon = GFX_berlin_reichstag_icon_small # Replace, eventually...
+		spawn_point = landmark_spawn
+		repair_speed_factor = @landmark_repair_speed_factor
+		level_cap = {
+			province_max = 1
+		}
+		always_shown = yes
+		show_modifier = yes
+		country_modifiers = {
+			enable_for_controllers = { BEL } # Only our people know how to navigate this place properly.
+			modifiers = {
+				defence = 0.01
+				repair_speed_bunker_factor = 0.05
+			}
+		}
+	}
+	
+	TBR_landmark_brussels_defense_network_2 = {
+		show_on_map = 1
+		base_cost = 35000
+		damage_factor = 0 # This is 0 everywhere in the vanilla files, I will follow the examples.
+		icon_frame = 22
+		value = 5
+		is_buildable = no
+		disable_grow_animation = yes
+		only_display_if_exists = yes
+		special_icon = GFX_berlin_reichstag_icon_small # Replace, eventually...
+		spawn_point = landmark_spawn
+		repair_speed_factor = @landmark_repair_speed_factor
+		level_cap = {
+			province_max = 1
+		}
+		always_shown = yes
+		show_modifier = yes
+		country_modifiers = {
+			enable_for_controllers = { BEL } # Only our people know how to navigate this place properly.
+			modifiers = {
+				defence = 0.2
+				offence = -0.05
+				surrender_limit = 0.2
+				repair_speed_bunker_factor = 0.25
+			}
+		}
+	}
+
+}
+
+spawn_points = {
+	landmark_spawn = {
+		type = province
+		max = 1
+		disable_auto_nudging = yes
+	}
+}

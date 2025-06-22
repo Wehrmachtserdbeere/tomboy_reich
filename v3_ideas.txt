@@ -26,3 +26,7 @@
 - Custom ideas (the ones you can change in the country screen)
 - - Racial alignment (like Nordid and such)
 - - Continental bonuses (like getting a bonus to cavalry in Asia, tanks in Europe, and bombing in America)
+
+- Anime Ural-Altaic
+
+- Festung Europa. Whether it be nationalism only, or general right-wing on each ideology. Very long focus that adds maxxed out fortresses on coasts and the current (or European) borders, as well as on strategic borders (such as the Alps, the Carpathian Mountains, the Pyrenees, etc.

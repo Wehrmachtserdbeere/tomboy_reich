@@ -179,6 +179,9 @@
   BEL_nisd_4_category_desc: "The NISD can turn any area into a two-year powerhouse of either civilian, military, or naval prowess. We simply have to decide what we specialize each state in."
   BEL_nisd_specialize_state: "Specialize §O[FROM.GetName]§!"
 
+  BEL_fallback_category: "Other Decisions"
+  BEL_fallback_category_desc: "Some matters in our country simply do not fit into any other category, and here, we list those that don't."
+  BEL_build_defense_network_decision: "Build the [516.GetName] Defense Network"
 
 
 

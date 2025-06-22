@@ -461,3 +461,36 @@ BEL_nisd_4_category = {
         }
     }
 }
+
+BEL_suppress_strikes_and_protests_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = yes
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            BEL = {
+                has_idea = BEL_idea_federal_strengthening_act
+            }
+            is_debug = yes
+        }
+    }
+}
+
+BEL_fallback_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+}
