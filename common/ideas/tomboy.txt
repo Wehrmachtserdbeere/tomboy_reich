@@ -2534,6 +2534,54 @@ ideas = {
 			}
 		}
 
+		BEL_idea_electoral_college_reform = {
+			name = BEL_idea_electoral_college_reform
+
+			picture = tbd
+
+			available = {
+				has_government = democratic
+			}
+
+			modifier = {
+				stability_factor = 0.10
+				democratic_drift = -0.005
+				puppet_cost_factor = 0.1
+			}
+		}
+
+		BEL_idea_property_based_suffrage = {
+			name = BEL_idea_property_based_suffrage
+
+			available = {
+				has_government = democratic
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				recruitable_population_factor = -0.05
+				democratic_drift = 0.01
+				communism_drift = 0.005
+			}
+		}
+
+		BEL_idea_wealth_based_suffrage = {
+			name = BEL_idea_wealth_based_suffrage
+
+			available = {
+				has_government = democratic
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.2
+				recruitable_population_factor = -0.075
+				democratic_drift = 0.005
+				communism_drift = 0.01 # The people aren't very happy about this.
+			}
+		}
+
 		BEL_idea_radical_democracy = {
 			name = BEL_idea_radical_democracy
 

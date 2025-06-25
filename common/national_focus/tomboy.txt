@@ -25542,7 +25542,7 @@
 
 		cost = 3
 		
-		x = 19
+		x = 21
 		y = 15
 
 		prerequisite = {
@@ -25580,7 +25580,7 @@
 
 		cost = 3
 		
-		x = 18
+		x = 20
 		y = 16
 
 		prerequisite = {
@@ -25601,6 +25601,87 @@
 		}
 	}
 
+	# Electoral College Reform | Tighten the federal vote weighting for national elections.
+	focus = {
+		id = BEL_democratic_measured_democracy_electoral_college_reform
+		icon = tbd
+
+		cost = 3
+		
+		x = 22
+		y = 16
+
+		prerequisite = {
+			focus = BEL_democratic_a_measured_democracy
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_democratic_a_measured_democracy
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_electoral_college_reform
+		}
+	}
+
+	# Property-Based Suffrage
+	focus = {
+		id = BEL_democratic_measured_democracy_property_based_suffrage
+		icon = tbd
+
+		cost = 3
+		
+		x = 20
+		y = 17
+
+		prerequisite = {
+			focus = BEL_democratic_measured_democracy_federal_strengthening_act
+			focus = BEL_democratic_measured_democracy_electoral_college_reform
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_measured_democracy_wealth_based_suffrage
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_property_based_suffrage
+		}
+	}
+
+	# Wealth-Based Suffrage
+	focus = {
+		id = BEL_democratic_measured_democracy_wealth_based_suffrage
+		icon = tbd
+
+		cost = 3
+		
+		x = 22
+		y = 17
+
+		prerequisite = {
+			focus = BEL_democratic_measured_democracy_federal_strengthening_act
+			focus = BEL_democratic_measured_democracy_electoral_college_reform
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_measured_democracy_property_based_suffrage
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_wealth_based_suffrage
+		}
+	}
+
+
+
+
+
+
+
 	####################################
 	# Radical Democracy (Left-Leaning) #
 	####################################
@@ -25612,7 +25693,7 @@
 
 		cost = 3
 		
-		x = 21
+		x = 19
 		y = 15
 
 		prerequisite = {

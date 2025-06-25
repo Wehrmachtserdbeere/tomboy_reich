@@ -44,6 +44,13 @@ on_actions = {
 				add_to_array = { tomboy_english_states_array = 125 }
 				add_to_array = { tomboy_english_states_array = 129 }
 				add_to_array = { tomboy_english_states_array = 130 }
+
+
+
+
+
+				# Introduction Event
+				country_event = TBR_introduction.1
 			}
 		}
 	}

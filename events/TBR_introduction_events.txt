@@ -1,0 +1,27 @@
+#######################
+# Introductory Events #
+#######################
+
+add_namespace = TBR_introduction
+
+# BELGIUM - Welcome
+country_event = {
+	id = TBR_introduction.1
+	title = TBR_introduction.1.t
+	desc = TBR_introduction.1.d
+
+	picture = tbd
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "Event ran: TBR_introduction.1"
+	}
+
+	# Okay
+	option = {
+		name = TBR_introduction.1.a	
+	}
+}
