@@ -2582,6 +2582,46 @@ ideas = {
 			}
 		}
 
+		BEL_outlawed_far_left_parties = {
+			name = BEL_outlawed_far_left_parties
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				communism_drift = -0.05
+				communism_acceptance = -25
+			}
+		}
+		
+		BEL_outlawed_far_right_parties = {
+			name = BEL_outlawed_far_right_parties
+
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				fascism_drift = -0.05
+				fascism_acceptance = -25
+			}
+		}
+
+		BEL_political_freedom = {
+			name = BEL_political_freedom
+
+			modifier = {
+				drift_defence_factor = -0.1
+				fascism_acceptance = 10
+				communism_acceptance = 10
+			}
+		}
+
 		BEL_idea_radical_democracy = {
 			name = BEL_idea_radical_democracy
 

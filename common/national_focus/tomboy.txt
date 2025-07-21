@@ -25676,6 +25676,91 @@
 		}
 	}
 
+	# Outlaw far-left parties
+	focus = {
+		id = BEL_democratic_measured_democracy_outlaw_left_wing_parties
+		icon = tbd
+
+		cost = 3
+		
+		x = 19
+		y = 18
+
+		available = {
+			# Has not become a democratic socialist, or a socialist democrat (socdem)
+		}
+
+		prerequisite = {
+			focus = BEL_democratic_measured_democracy_property_based_suffrage
+			focus = BEL_democratic_measured_democracy_wealth_based_suffrage
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_measured_democracy_political_freedom
+		}
+
+		completion_reward = {
+			add_ideas = BEL_outlawed_far_left_parties
+		}
+	}
+	
+	
+	# Outlaw far-right parties
+	focus = {
+		id = BEL_democratic_measured_democracy_outlaw_right_wing_parties
+		icon = tbd
+
+		cost = 3
+		
+		x = 23
+		y = 18
+
+		available = {
+			# Has not become right-democratic
+		}
+
+		prerequisite = {
+			focus = BEL_democratic_measured_democracy_property_based_suffrage
+			focus = BEL_democratic_measured_democracy_wealth_based_suffrage
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_measured_democracy_political_freedom
+		}
+
+		completion_reward = {
+			add_ideas = BEL_outlawed_far_right_parties
+		}
+	}
+
+	# Political Freedom
+	focus = {
+		id = BEL_democratic_measured_democracy_political_freedom
+		icon = tbd
+
+		cost = 3
+		
+		x = 23
+		y = 18
+
+		prerequisite = {
+			focus = BEL_democratic_measured_democracy_property_based_suffrage
+			focus = BEL_democratic_measured_democracy_wealth_based_suffrage
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_measured_democracy_outlaw_left_wing_parties
+			focus = BEL_democratic_measured_democracy_outlaw_right_wing_parties
+		}
+
+		completion_reward = {
+			add_ideas = BEL_political_freedom
+		}
+	}
+
+	# Following focuses to this must have optional "banned" and "freedom", only one required, we might have
+	# someone who wants to be a nationalist or a "democratic socialist".
+
 
 
 
