@@ -2582,7 +2582,7 @@ ideas = {
 			}
 		}
 
-		BEL_outlawed_far_left_parties = {
+		BEL_idea_outlawed_far_left_parties = {
 			name = BEL_outlawed_far_left_parties
 
 			available = {
@@ -2597,7 +2597,7 @@ ideas = {
 			}
 		}
 		
-		BEL_outlawed_far_right_parties = {
+		BEL_idea_outlawed_far_right_parties = {
 			name = BEL_outlawed_far_right_parties
 
 			available = {
@@ -2612,13 +2612,33 @@ ideas = {
 			}
 		}
 
-		BEL_political_freedom = {
+		BEL_idea_political_freedom = {
 			name = BEL_political_freedom
 
 			modifier = {
 				drift_defence_factor = -0.1
 				fascism_acceptance = 10
 				communism_acceptance = 10
+			}
+		}
+
+		BEL_idea_expanded_suffrage = {
+			name = BEL_idea_expanded_suffrage
+
+			modifier = {
+				drift_defence_factor = -0.25
+				recruitable_population_factor = 0.15
+				monthly_population = -0.25
+			}
+		}
+
+		BEL_idea_limited_suffrage = {
+			name = BEL_idea_limited_suffrage
+
+			modifier = {
+				drift_defence_factor = -0.1
+				recruitable_population_factor = 0.05
+				monthly_population = -0.1
 			}
 		}
 

@@ -690,6 +690,12 @@
 
     BEL_political_freedom: "Political Freedom"
 
+    BEL_idea_expanded_suffrage: "Expanded Suffrage"
+    BEL_idea_expanded_suffrage_desc: "By giving certain minorities and marginalized people the ability to vote, we further cement ourselves as a democratic power."
+
+    BEL_idea_limited_suffrage: "Limited Suffrage"
+    BEL_idea_limited_suffrage_desc: "The people must vote, but not all should. Property owners, economic leaders, and the literate and working tomboys all have a shared interest in the good of the nation. But it would be absurd of us to restrict this privilege to only those few. Voting on issues that impact smaller communities that may not be able to vote normally should have its restrictions lightened, so those impacted have a say in these decisions. Apart from these circumstances, however, we need to keep our more strict restrictions for the good of the people."
+
     BEL_idea_radical_democracy: "A Radical Democracy"
     BEL_idea_radical_democracy_desc: "We have successfully created a democracy, and the people are rejoicing! We have shown the world that democracy can work, and that the people can have a say in the government. However, as the people rejoice, the wealthy, the powerful, and the elite are working behind the scenes to undermine our efforts. To prevent a power-hungry elite from destroying what we have built, we must adopt a radical stance, and give every person the right to vote. No matter the wealth, education, gender, creed, or even nationality, for we must be the shining example of European democracy, and give a guide on the future of European politics, unbound by borders, culture, or religion."
 
