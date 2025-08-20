@@ -23041,6 +23041,7 @@
 						elections_allowed = no
 						last_election = var:current_date
 					}
+					complete_national_focus = BEL_communism_victory
 				}
 				else = {
 					set_politics = {
@@ -23796,9 +23797,9 @@
 					has_war_with = BEL
 				}
 			}
-			# NOT = {
-			#     has_completed_focus = BEL_democratic_anti-germany_treaty # TODO: Implement this focus.
-			# }
+			 NOT = {
+			     has_completed_focus = BEL_democratic_anti_germany_treaty
+			 }
 		}
 		
 		completion_reward = {
@@ -25535,7 +25536,8 @@
 	# A measured democracy (Right-Leaning) #
 	########################################
 
-	# A measured Democracy (we need the original American system, basically. Turns the country into a Federal Republic.)
+	# A measured Democracy (we need the original American system, basically. Turns the country into a
+	# Federal Republic.)
 	focus = {
 		id = BEL_democratic_a_measured_democracy
 		icon = tbd
@@ -25549,18 +25551,8 @@
 			focus = BEL_democratic_a_proposal_to_the_english
 		}
 
-		mutually_exclusive = {
-			focus = BEL_democratic_a_radical_democracy
-		}
-
 		available = {
 			has_government = democratic
-		}
-
-		allow_branch = {
-			NOT = {
-				has_completed_focus = BEL_democratic_a_radical_democracy
-			}
 		}
 		
 		completion_reward = {
@@ -25569,7 +25561,6 @@
 				popularity = 0.1
 			}
 			add_ideas = BEL_idea_measured_democracy
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -25589,10 +25580,6 @@
 
 		available = {
 			has_government = democratic
-		}
-
-		allow_branch = {
-			has_completed_focus = BEL_democratic_a_measured_democracy
 		}
 		
 		completion_reward = {
@@ -25617,10 +25604,6 @@
 
 		available = {
 			has_government = democratic
-		}
-
-		allow_branch = {
-			has_completed_focus = BEL_democratic_a_measured_democracy
 		}
 		
 		completion_reward = {
@@ -25763,7 +25746,7 @@
 
 	# Expanded Suffrage (Left) | Basically, let "marginalized" people vote
 	focus = {
-		id = BEL_democratic_measured_democracy_expanded_suffrage
+		id = BEL_democratic_measured_democracy_expanded_minority_suffrage
 		icon = tbd
 		
 		cost = 3
@@ -25778,7 +25761,7 @@
 		}
 
 		mutually_exclusive = {
-			focus = BEL_democratic_measured_democracy_limited_suffrage
+			focus = BEL_democratic_measured_democracy_limited_minority_suffrage
 		}
 		
 		completion_reward = {
@@ -26153,7 +26136,7 @@
 	# Limited Suffrage (Right) | Let some minorities and "marginalized" people vote on things directly 
 	# affecting them.
 	focus = {
-		id = BEL_democratic_measured_democracy_limited_suffrage
+		id = BEL_democratic_measured_democracy_limited_minority_suffrage
 		icon = tbd
 
 		cost = 3
@@ -26168,7 +26151,7 @@
 		}
 
 		mutually_exclusive = {
-			focus = BEL_democratic_measured_democracy_expanded_suffrage
+			focus = BEL_democratic_measured_democracy_expanded_minority_suffrage
 		}
 		
 		completion_reward = {
@@ -26176,49 +26159,84 @@
 		}
 	}
 
-
-
-
-
-
-
-	####################################
-	# Radical Democracy (Left-Leaning) #
-	####################################
-
-	# A radical Democracy (basically, anyone can vote, regardless of age, sex, sexuality, nationality, etc.)
+	# Independent Trade Unions (Left) | Trade Unions will be fully legal and only slightly regulated
 	focus = {
-		id = BEL_democratic_a_radical_democracy
+		id = BEL_democratic_measured_democracy_independent_trade_unions
 		icon = tbd
 
 		cost = 3
 		
-		x = 19
-		y = 15
+		x = 20
+		y = 20
 
 		prerequisite = {
-			focus = BEL_democratic_a_proposal_to_the_english
+			focus = BEL_democratic_measured_democracy_limited_minority_suffrage
+			focus = BEL_democratic_measured_democracy_expanded_minority_suffrage
 		}
 
 		mutually_exclusive = {
-			focus = BEL_democratic_a_measured_democracy
+			focus = BEL_democratic_measured_democracy_state_controlled_trade_unions
 		}
-
-		allow_branch = {
-			NOT = {
-				has_completed_focus = BEL_democratic_a_measured_democracy
-			}
-		}
-
+		
 		completion_reward = {
-			add_stability = -0.15
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.25
-			}
-			add_ideas = BEL_idea_radical_democracy
+			add_stability = 0.05
+			add_ideas = BEL_idea_independent_trade_unions
 		}
 	}
+
+	# State-Controlled Trade Unions | Trade Unions, while de-jure legal, are all under strict state control.
+	focus = {
+		id = BEL_democratic_measured_democracy_state_controlled_trade_unions
+		icon = tbd
+
+		cost = 3
+		
+		x = 22
+		y = 20
+
+		prerequisite = {
+			focus = BEL_democratic_measured_democracy_limited_minority_suffrage
+			focus = BEL_democratic_measured_democracy_expanded_minority_suffrage
+		}
+
+		mutually_exclusive = {
+			focus = BEL_democratic_measured_democracy_independent_trade_unions
+		}
+		
+		completion_reward = {
+			add_stability = 0.02
+			add_ideas = BEL_idea_state_controlled_trade_unions
+		}
+	}
+
+	# A shining example of European Democracy | We solemny swear to focus on upholding democracy! Let our
+	# country be the the home of European Democracy!
+	focus = {
+		id = BEL_democratic_measured_democracy_a_shining_example_of_european_democracy
+		icon = tbd
+
+		cost = 3
+		
+		x = 21
+		y = 21
+
+		prerequisite = {
+			focus = BEL_democratic_measured_democracy_independent_trade_unions
+			focus = BEL_democratic_measured_democracy_state_controlled_trade_unions
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_a_shining_example_of_european_democracy
+		}
+	}
+
+
+
+
+
+
+
+	
 
 
 
@@ -26230,6 +26248,64 @@
 	#############
 	# Communism #
 	#############
+
+	# Victory for the Party!
+	# NOTE: Focuses following this MUST only be available after finishing the BEL_bop_communism Balance
+	# of Power with either Polpotists or Rightists winning.
+	focus = {
+		id = BEL_communism_victory
+		icon = tbd
+
+		cost = 0
+		
+		x = 14
+		y = 6
+
+		allow_branch = {
+			AND = {
+				has_completed_focus = BEL_demsoc_unite_the_communist_parties
+				has_completed_focus = BEL_demsoc_demand_an_election
+			}
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = BEL_idea_communist_infighting
+			set_power_balance = {
+				id = BEL_bop_communism
+			}
+		}
+	}
+
+	# Left Victory
+	focus = {
+		id = BEL_polpotism_victory
+		icon = tbd
+
+		cost = 0
+		
+		x = 13
+		y = 7
+
+		prerequisite = {
+			focus = BEL_communism_victory
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BEL_polpotism_victory_reward_tt
+			hidden_effect = {
+				set_party_name = {
+					ideology = communism
+					long_name = BEL_communism_polpot_party_long
+					name = BEL_communism_polpot_party
+				}
+			}
+		}
+	}
 
 
 

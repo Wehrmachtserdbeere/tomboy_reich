@@ -331,6 +331,10 @@
   BEL_monarchism_war_euronia: "£GFX_text_icon_euronia§!"
   BEL_monarchism_war_euronia_desc: "Euronia, the consolidation of Germania, Britannia, and Marianne, into one, large Tomboy Empire. She combines the personifications of old manes, the ideals of the glory of different nations, the strenghts of the cultures, and the technologies that advance at an astonishing pace, all led by [BEL.GetLeader.GetHerHisCap] Majesty, [BEL.GetLeader], and [BEL.GetLeader.GetHerHisCap] Majesty's ministers."
 
+
+  BEL_monafash_monarchist_fascist_alliance: "The Brown Compromise"
+  BEL_monafash_monarchist_fascist_alliance_desc: "Lady Lalatina's grasp weakens, House Dustiness Ford can no longer be trusted to carry on the Royalist cause alone. A compromise must be made with our Fascist brethren in order to ensure the survival of our nation. For this, we have to unite with them and we will have to combat the Revolutionaries. A strong figure must ascend to lead this new alliance — and with her a New Order shall rise!"
+
   BEL_monafash_destabilize_democrats: "Destabilize Democrats"
   BEL_monafash_destabilize_democrats_desc: "Democracy, if allowed to fester, could destabilize our foundations and the new society that we have built. Not allowing such a plague to grow and spreading the belief of equality amongst the populace should greatly impede a democracy from growing. Making changes to our public infrastructure should prove to be a sufficient start. Additional tasks that can be performed will be determined when necessary."
 
@@ -1250,6 +1254,25 @@
 
 
 
+  BEL_political_promote: "Promote Political Discourse"
+  BEL_political_promote_desc: "For the future of our country, to give all Tomboys the power to have a say, and to protect our country from the authoritarian forces of the failing monarchy and the rising Fascists, we must encourage political discourse, especially left-wing discourse."
+
+  BEL_demsoc_rally_the_people: "Rally the People"
+  BEL_demsoc_rally_the_people_desc: "We can speak of democracy all we want, but unless we rally the people, it is all for naught. Only by bringing the people to speak up, protest, and demonstrate can we bring a change to our political landscape!"
+
+  BEL_demsoc_badmouth_authoritarianism: "Badmouth Authoritarianism"
+  BEL_demsoc_badmouth_authoritarianism_desc: "To stop the rise of authoritarian parties, we must badmouth them by publicly pointing out their issues, dismantling their arguments, and, if push comes to shove, make up some things about them."
+
+  BEL_demsoc_promote_idealized_democracy: "Promote Idealized Democracy"
+  BEL_demsoc_promote_idealized_democracy_desc: "In order to convince the people to choose democracy over socialism, we must promote a... rather idealized idea of democracy."
+
+  BEL_demsoc_work_for_your_rights: "Work for your Rights"
+  BEL_demsoc_work_for_your_rights_desc: "To keep their rights in the face of us being surrounded by the forces of [ENG.GetNameDef], [FRA.GetNameDef], and [GER.GetNameDef], our people must be instructed to work, work, and work! Only that way can we ensure we ensure we can keep our independence!"
+
+  BEL_polpotism_victory_reward_tt: "The Democratic Party is put into power.\n§YMore focuses are unlocked.§!"
+
+
+
 
 
 
@@ -1268,8 +1291,7 @@
 
 
 
-  BEL_monafash_monarchist_fascist_alliance: "The Brown Compromise"
-  BEL_monafash_monarchist_fascist_alliance_desc: "Lady Lalatina's grasp weakens, House Dustiness Ford can no longer be trusted to carry on the Royalist cause alone. A compromise must be made with our Fascist brethren in order to ensure the survival of our nation. For this, we have to unite with them and we will have to combat the Revolutionaries. A strong figure must ascend to lead this new alliance — and with her a New Order shall rise!"
+  
 
   
 
