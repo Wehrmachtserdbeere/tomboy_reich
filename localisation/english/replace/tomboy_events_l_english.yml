@@ -741,7 +741,7 @@
   tomboy.104.a: "Horrifying."
   tomboy.104.b: "About time."
 
-  tomboy.105.t: "Tomboy Queen flees country!"
+  tomboy.105.t: "[BEL.GetAdjectiveCap] Queen flees country!"
   tomboy.105.d: "After plans to publicly execute her, Queen Lalatina of the [BEL.GetAdjective]s has reportedly fled [BEL.GetNameDef] during the chaos that ensued following the recent coups. While it has been confirmed by documents that she plans to not return and to live a quiet life with her close followers, various intelligence agencies, including our own, have yet to confirm her location, or find any hints on where she might've escaped to."
   tomboy.105.a: "Horrifying."
   tomboy.105.b: "About time."

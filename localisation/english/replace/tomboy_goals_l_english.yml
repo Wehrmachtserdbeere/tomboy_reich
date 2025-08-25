@@ -1232,26 +1232,6 @@
 
 
 
-  BEL_demsoc_unite_the_democratic_parties_lead_to_democratic_focuses: "Completing this Focus will lead to the Democratic path, and lock you out of the Communist path."
-
-
-  BEL_demsoc_unite_the_communist_parties_lead_to_communist_focuses: "Completing this Focus will lead to the Communist path, and lock you out of the Democratic path."
-
-
-  BEL_demsoc_demand_an_election_tt: "Depending on the path we took, either the Democratic Patiy or the Communist Party will win the election."
-
-
-  BEL_democratic_propose_to_the_netherlands_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
-  BEL_democratic_propose_to_luxembourg_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
-
-  BEL_french_state_purchasing_small_trigger_tt: "Agreed on buying small portions of France"
-  BEL_french_state_purchasing_large_trigger_tt: "Agreed on buying all Tomboy states of France"
-
-
-
-
-
-
 
 
   BEL_political_promote: "Promote Political Discourse"
@@ -1268,6 +1248,43 @@
 
   BEL_demsoc_work_for_your_rights: "Work for your Rights"
   BEL_demsoc_work_for_your_rights_desc: "To keep their rights in the face of us being surrounded by the forces of [ENG.GetNameDef], [FRA.GetNameDef], and [GER.GetNameDef], our people must be instructed to work, work, and work! Only that way can we ensure we ensure we can keep our independence!"
+
+  BEL_demsoc_equitize_the_economy: "Equitize the Economy"
+  BEL_demsoc_equitize_the_economy_desc: "In order to create an economy for the people, we must take steps to equitize each step of the chain, from starting with equal opportunity, and ending with equal outcome."
+
+  BEL_demsoc_unite_the_democratic_parties: "Unite the Democratic Parties"
+  BEL_demsoc_unite_the_democratic_parties_desc: "We're in a lock between the democratic and the communist parties. To take over the country and reach a truly democratic system, we need to rally and unite the democratic parties, and claim overwhelming victory over the communists."
+  BEL_demsoc_unite_the_democratic_parties_lead_to_democratic_focuses: "Completing this Focus will lead to the Democratic path, and lock you out of the Communist path."
+
+  BEL_demsoc_unite_the_democratic_parties: "Unite the Communist Parties"
+  BEL_demsoc_unite_the_democratic_parties_desc: "We're in a lock between the bourgeoise democratic party, and our own communist parties. To scrub our country from the chains of the bourgeoise and reach a truly equitable society, we need to rally and unite the various, quarreling communist parties, and claim overwhelming victory over the slavers!"
+  BEL_demsoc_unite_the_communist_parties_lead_to_communist_focuses: "Completing this Focus will lead to the Communist path, and lock you out of the Democratic path."
+
+  BEL_demsoc_demand_an_election: "Demand an Election"
+  BEL_demsoc_demand_an_election_desc: "We have the majority, the overwhelming majority, and now, we demand to hold an election that will, under any circumstances, lead to our victory!"
+  BEL_demsoc_demand_an_election_tt: "Depending on the path we took, either the Democratic Patiy or the Communist Party will win the election."
+
+  BEL_democratic_victory_for_the_democratic_ideal: "Victory for the Democratic Ideal"
+  BEL_democratic_victory_for_the_democratic_ideal_desc: "We did it, we won! Now, we can finally establish a democratic base in our country, and bring true democracy to the world!"
+
+  BEL_democratic_fate_of_lalatina: "Fate of Queen Lalatina"
+  BEL_democratic_fate_of_lalatina_desc: "We have to decide what we must do with the Queen. For now, she's been enjoying a grandiose life at the expense of the people, but that cannot go on any longer. We must decide exactly what to do with her."
+
+
+
+
+
+  BEL_democratic_propose_to_the_netherlands_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
+  BEL_democratic_propose_to_luxembourg_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
+
+  BEL_french_state_purchasing_small_trigger_tt: "Agreed on buying small portions of France"
+  BEL_french_state_purchasing_large_trigger_tt: "Agreed on buying all Tomboy states of France"
+
+
+
+
+
+
 
   BEL_polpotism_victory_reward_tt: "The Democratic Party is put into power.\n§YMore focuses are unlocked.§!"
 

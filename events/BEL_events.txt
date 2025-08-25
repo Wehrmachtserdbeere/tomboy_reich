@@ -8397,6 +8397,10 @@ country_event = {
 								has_government = communism
 								is_ally_with = SOV
 								is_in_faction_with = SOV
+								is_ally_with = FRA
+								is_in_faction_with = FRA
+								is_ally_with = BEL
+								is_in_faction_with = BEL
 								is_neighbor_of = BEL
 								original_tag = BEL
 							}
