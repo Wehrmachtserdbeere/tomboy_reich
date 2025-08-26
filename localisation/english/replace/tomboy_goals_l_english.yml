@@ -1270,6 +1270,12 @@
   BEL_democratic_fate_of_lalatina: "Fate of Queen Lalatina"
   BEL_democratic_fate_of_lalatina_desc: "We have to decide what we must do with the Queen. For now, she's been enjoying a grandiose life at the expense of the people, but that cannot go on any longer. We must decide exactly what to do with her."
 
+  BEL_democratic_ban_right_wing_parties: "Outlaw Right-Wing Parties"
+  BEL_democratic_ban_right_wing_parties_desc: "The authoritarian Right is a blight on our democracy. There is no reason to support the existence of these parties. Our people all support democracy, and the only people that even consider joining these authoritarian parties are foreign subversives."
+
+  BEL_democratic_permit_right_wing_opposition: "Permit Right-Wing Opposition"
+  BEL_democratic_permit_right_wing_opposition_desc: "Although there is support of the old regime, and even more extreme dictatorial regimes, we must not fall into the trap other once democratic nations fell into. To remain a true democracy, we must leave these parties legal... though it wouldn't hurt to suppress them just a little."
+
 
 
 
