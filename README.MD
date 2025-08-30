@@ -4,11 +4,11 @@
 
 This mod does not take itself too seriously. Expect silliness, illogical things, and a lot of anime.
 
-Please be warned that there will be offensive content in this mod. But you probably played
+Please be warned that there will be offensive content in this mod. But you probably played:
 
-## $${\color{white}Is \space that \space a \space motherfucking \space \color{cyan}Th \color{pink} e \space N \color{white} ew \space \color{pink}Or \color{cyan} der \space \color{white}reference?!}$$
+### $${\color{cyan}The \space New \space \color{pink} Order: \space \color{white} Last \space D \color{pink} ays \space of \color{cyan} \space Europe }$$
 
-already, so nothing in this should disturb you.
+So nothing in this should disturb you.
 
 ---
 
@@ -57,4 +57,12 @@ Yes, obviously, as this game has computer-controlled enemies, which are refered 
 
 #### Is AI-Generated imagery used in this mod?
 
-Yes. However, I ensured that I co-own **all** rights to the images used.
+Yes. I'm neither an artist, nor am I rich enough to hire one. Do be comforted though, I heavily edit each and every image myself.
+
+#### Can I make a sub-mod?
+
+Sure, just make sure you don't use images you don't have the rights to (refer to `LICENSE_AGREEMENT.txt` and `LICENSE.txt`). If you decide to make weird ideological promotions that are not meant in parody of them, I strongly suggest to state this, and make your separation from me easily apparent.
+
+#### Is there a way I make a sub-mod, *and* use the images in this mod?
+
+Contact me or the original creator of the images (refer to `LICENSE_AGREEMENT.txt`) with a detailed description of your mod, and we can negotiate or agree to terms about them.
