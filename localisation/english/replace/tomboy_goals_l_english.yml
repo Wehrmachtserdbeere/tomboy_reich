@@ -1276,6 +1276,36 @@
   BEL_democratic_permit_right_wing_opposition: "Permit Right-Wing Opposition"
   BEL_democratic_permit_right_wing_opposition_desc: "Although there is support of the old regime, and even more extreme dictatorial regimes, we must not fall into the trap other once democratic nations fell into. To remain a true democracy, we must leave these parties legal... though it wouldn't hurt to suppress them just a little."
 
+  BEL_democratic_study_french_democracy: "Study [FRA.GetAdjectiveCap] Democracy"
+  BEL_democratic_study_french_democracy_desc: "Dozens of parties, unstable coalition governments, and cabinets that often lasted less than a year. The [FRA.GetAdjectiveCap] system, while failing under the [FRA.GetAdjectiveCap] people, can be made to work wonderfully under our own people. We just need to emulate them, and fix their mistakes."
+
+  BEL_democratic_our_own_democracy: "Our Own Democracy"
+  BEL_democratic_our_own_democracy_desc: "Why look to [FRA.GetName] or [ENG.GetName], when our issues and circumstances are completely different from theirs? We are not an island nation, nor do we posess a massive legacy of aggression. We need our own flavor of democracy, lest we guide our people into the wrong direction."
+
+  BEL_democratic_study_british_democracy: "Study [ENG.GetAdjectiveCap] Democracy"
+  BEL_democratic_study_british_democracy_desc: "Two dominant parties, stable but slow-moving, and politics dominated by domestic rather than foreign issues. The [ENG.GetAdjectiveCap] have it right, we need a system just like theirs - unyielding, unforgiving, and unsubduable! Though how they stand with certain powers looking for trouble needs fixing..."
+
+  BEL_democratic_buy_french_equipment: "Purchase [FRA.GetAdjectiveCap] Equipment"
+  BEL_democratic_buy_french_equipment_desc: "The [FRA.GetAdjectiveCap] have a surplus of equipment in their aim to keep [GER.GetNameDef] at bay. We don't have any proper industrial base yet, so it would be wise to request and purchase equipment from them, as preparation for any possible future foreign invasion."
+
+  BEL_democratic_buy_british_equipment: "Purchase [ENG.GetAdjectiveCap] Equipment"
+  BEL_democratic_buy_british_equipment_desc: "The [ENG.GetAdjectiveCap] have started giving out equipment as if it were colonial administrations. Given our closeness to the democratic ideal, and out mission to give a voice to the people, we could cash in on these handouts and get our hands on prime, [ENG.GetAdjectiveCap] equipment!"
+
+  BEL_democratic_approach_the_french: "Approach the [FRA.GetAdjectiveCap]"
+  BEL_democratic_approach_the_french_desc: "The [FRA.GetAdjectiveCap] and their faction, [FRA.GetFactionName], is a promising union for safety and security. We can only profit if we joined their faction and ensured our continued survival."
+
+  BEL_democratic_approach_the_british: "Approach the [ENG.GetAdjectiveCap]"
+  BEL_democratic_approach_the_british_desc: "The [ENG.GetFactionName] is a safe bet if we wish to keep our independence in the face of the eminent forces seeking to take us over. We must request to join them as soon as possible!"
+
+  BEL_democratic_reject_the_false_dichotomy: "Reject the False Dichotomy"
+  BEL_democratic_reject_the_false_dichotomy_desc: "[FRA.GetName]? [ENG.GetName]? Choosing between either is a dichotomy they try to force upon us. In reality, there is nothing better than a faction of our own, independent of the great powers."
+
+  BEL_democratic_back_germany: "Back [GER.GetName]"
+  BEL_democratic_back_germany_desc: "[GER.GetNameDefCap] has been voicing their protests about the unjust genocide against Germans in [POL.GetNameDef], and our own people aren't an exception. Among the countless reports of murdered and deported [GER.GetAdjectiveCap]s, [BEL.GetAdjectiveCap]s are also being murdered and deported! The [GER.GetAdjectiveCap]s have our support!"
+
+  BEL_democratic_back_poland: "Back [POL.GetName]"
+  BEL_democratic_back_poland_desc: "Although we mourn for our discriminated [BEL.GetAdjectiveCap]s in [POL.GetAdjectiveCap]-occupied [GER.GetAdjectiveCap] areas, we cannot betray our commitments to anti-authoritarian ideals. We must back [POL.GetNameDef], regardless of how our people may feel about it."
+
 
 
 
@@ -1294,6 +1324,7 @@
 
   BEL_polpotism_victory_reward_tt: "The Democratic Party is put into power.\n§YMore focuses are unlocked.§!"
 
+  BEL_communism_victory_reward_tt: "The People's Party is put into power.\n§YMore focuses are unlocked.§!"
 
 
 

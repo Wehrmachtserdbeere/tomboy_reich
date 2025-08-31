@@ -23305,24 +23305,11 @@
 					has_equipment = {
 						infantry_equipment > 2499 # 2500 or more AT LEAST!
 					}
-					NOT = {
-						OR = {
-							AND = {
-								BEL = { has_government = fascism }
-								FRA = { has_government = communism }
-							}
-							AND = {
-								BEL = { has_government = communism }
-								FRA = { has_government = fascism }
-							}
-							AND = {
-								BEL = { has_government = democratic }
-								FRA = { has_government = neutrality }
-							}
-							AND = {
-								BEL = { has_government = neutrality }
-								FRA = { has_government = democratic }
-							}
+					OR = {
+						has_government = BEL # Allow if same ideology
+						AND = {
+							has_government = neutrality
+							BEL = { has_government = democratic } # Or if France is Imperial and Tomboys are Democratic
 						}
 					}
 				}
@@ -23388,24 +23375,11 @@
 					has_equipment = {
 						infantry_equipment > 2499 # 2500 or more AT LEAST!
 					}
-					NOT = {
-						OR = {
-							AND = {
-								BEL = { has_government = fascism }
-								ENG = { has_government = communism }
-							}
-							AND = {
-								BEL = { has_government = communism }
-								ENG = { has_government = fascism }
-							}
-							AND = {
-								BEL = { has_government = democratic }
-								ENG = { has_government = neutrality }
-							}
-							AND = {
-								BEL = { has_government = neutrality }
-								ENG = { has_government = democratic }
-							}
+					OR = {
+						has_government = BEL # Allow if same ideology
+						AND = {
+							has_government = neutrality
+							BEL = { has_government = democratic } # Or if France is Imperial and Tomboys are Democratic
 						}
 					}
 				}
@@ -23423,9 +23397,10 @@
 					id = BEL
 					value = 10
 				}
-				add_equipment_to_stockpile = {
+				send_equipment = {
+					amount = 2500
 					type = infantry_equipment
-					amount = -2500
+					target = BEL
 				}
 			}
 			BEL = {
@@ -23437,10 +23412,6 @@
 					type = befriend # They are a secure source of guns.
 					id = ENG
 					value = 25
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 2500
 				}
 			}
 		}
@@ -23657,7 +23628,7 @@
 					modifier = BEL_large_suspicion
 				}
 				add_ai_strategy = {
-					type = antagonize # Dayum duh Kuwaud lawahs! (US. English for "Damn the Kraut lovers!")
+					type = antagonize # Dayum duh Kuwaud lavahs! (US. English for "Damn the Kraut lovers!")
 					id = BEL
 					value = 25
 				}
@@ -26279,7 +26250,7 @@
 
 	# Left Victory
 	focus = {
-		id = BEL_polpotism_victory
+		id = BEL_communism_polpotism_victory
 		icon = tbd
 
 		cost = 0
@@ -26303,6 +26274,47 @@
 					long_name = BEL_communism_polpot_party_long
 					name = BEL_communism_polpot_party
 				}
+			}
+			remove_power_balance = {
+				id = BEL_bop_communism
+			}
+		}
+	}
+
+
+
+
+
+
+	# Right Victory
+	focus = {
+		id = BEL_communism_rightists_victory
+		icon = tbd
+
+		cost = 0
+		
+		x = 15
+		y = 7
+
+		prerequisite = {
+			focus = BEL_communism_victory
+		}
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BEL_polpotism_victory_reward_tt
+			hidden_effect = {
+				set_party_name = {
+					ideology = communism
+					long_name = BEL_communism_polpot_party_long
+					name = BEL_communism_polpot_party
+				}
+			}
+			remove_power_balance = {
+				id = BEL_bop_communism
 			}
 		}
 	}

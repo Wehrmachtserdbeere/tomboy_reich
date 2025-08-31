@@ -76,7 +76,98 @@ BEL_bop_communism = {
 			min = -1
 			max = -0.95
 			on_activate = {
-				complete_national_focus = BEL_polpotism_victory
+				complete_national_focus = BEL_communism_polpotism_victory
+			}
+		}
+	}
+
+	# Rightists
+	side = {
+		id = BEL_bop_communism_rightists
+		icon = tbd
+
+		# Low Rightist influence
+		range = {
+			id = BEL_bop_communism_rightists_low
+			min = -0.2
+			max = 0
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				# Make the people feel good, so they will be more happy under us.
+				consumer_goods_factor = 0.1
+				monthly_population = 0.025
+				communism_drift = 0.02
+			}
+		}
+		
+		# Medium Rightist influence
+		range = {
+			id = BEL_bop_communism_rightists_medium
+			min = 0
+			max = 0.25
+			modifier = {
+				# The Polpotists aren't happy.
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				# Make the people feel good, so they will be more happy under us.
+				consumer_goods_factor = 0.15
+				monthly_population = 0.05
+				communism_drift = 0.025
+			}
+		}
+		
+		# High Rightist influence
+		range = {
+			id = BEL_bop_communism_rightists_high
+			min = 0.25
+			max = 0.5
+			modifier = {
+				# The Polpotists aren't happy.
+				stability_factor = -0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_start_efficiency_factor = 0.35
+				production_factory_efficiency_gain_factor = 0.35
+				# Make the people feel good, so they will be more happy under us.
+				consumer_goods_factor = 0.35
+				monthly_population = 0.075
+				communism_drift = 0.035
+				# Communism functions by not questioning its policies... for now, at least.
+				research_speed_factor = -0.15
+			}
+		}
+		
+		# Critical Rightist influence
+		range = {
+			id = BEL_bop_communism_rightists_critical
+			min = 0.5
+			max = 0.95
+			modifier = {
+				# The Polpotists rally aren't happy.
+				stability_factor = -0.5
+				production_factory_max_efficiency_factor = 0.45
+				production_factory_start_efficiency_factor = 0.6
+				production_factory_efficiency_gain_factor = 0.6
+				# Make the people feel good, so they will be more happy under us.
+				consumer_goods_factor = 0.5
+				monthly_population = 0.1
+				communism_drift = 0.05
+				# Communism functions by not questioning its policies... for now, at least.
+				research_speed_factor = -0.35
+			}
+		}
+
+		# Rightist Victory
+		range = {
+			id = BEL_bop_communism_rightists_victory
+			min = 0.95
+			max = 1
+			on_activate = {
+				complete_national_focus = BEL_communism_rightists_victory
 			}
 		}
 	}
