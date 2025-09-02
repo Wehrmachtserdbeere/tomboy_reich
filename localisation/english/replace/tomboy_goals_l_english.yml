@@ -1306,6 +1306,27 @@
   BEL_democratic_back_poland: "Back [POL.GetName]"
   BEL_democratic_back_poland_desc: "Although we mourn for our discriminated [BEL.GetAdjectiveCap]s in [POL.GetAdjectiveCap]-occupied [GER.GetAdjectiveCap] areas, we cannot betray our commitments to anti-authoritarian ideals. We must back [POL.GetNameDef], regardless of how our people may feel about it."
 
+  BEL_democratic_german_tomboy_refugee_treaty: "[GER.GetAdjectiveCap]-[BEL.GetAdjectiveCap] Refugee Treaty"
+  BEL_democratic_german_tomboy_refugee_treaty_desc: "Although an aggressor nation, the [GER.GetAdjectiveCap] civilian population have nothing to do with the aggression of their host nation. Any war will also take a toll mainly on their civilian population. A mutual Refugee Treaty is vital to show our commitment to peace and freedom."
+
+  BEL_democratic_anti_germany_treaty: "Anti-[GER.GetName] Treaty"
+  BEL_democratic_anti_germany_treaty_desc: "[GER.GetNameDefCap] is undoubtedly an aggressor nation, and we must show our discontent and our disagreement with their policies and actions. For this, we must create an Anti-[GER.GetName] Treaty!"
+
+  BEL_democratic_open_diplomatic_channels_with_benelux: "Open Diplomatic Channels with the Benelux"
+  BEL_democratic_open_diplomatic_channels_with_benelux_desc: "Our people are strewn around everywhere, but the other Benelux states are the most immediate areas with the highest concentration of our people, and as such, engaging in diplomacy with them is of the highest priority."
+
+  BEL_democratic_propose_to_the_netherlands: "Propose to [HOL.GetNameDef]"
+  BEL_democratic_propose_to_the_netherlands_desc: "[HOL.GetNameDefCap] is a powerful nation, and we may be able to propose for them to become an official, associated state, so we can work more closely together, and perhaps unite one day."
+
+  BEL_democratic_propose_to_luxembourg: "Propose to [LUX.GetNameDef]"
+  BEL_democratic_propose_to_luxembourg_desc: "[LUX.GetNameDef] is in a vulnerable position, and we could aid them in their pursuit of safety from foreign forces by proposing them to become an associated state of ours."
+
+  BEL_democratic_integrate_the_netherlands: "Integrate [HOL.GetNameDef]"
+  BEL_democratic_integrate_the_netherlands_desc: "[HOL.GetNameDefCap] has been more and more integrated into our beautiful Republic, and it's about time they're properly being integrated, so we can soon unite our nations."
+
+  BEL_democratic_integrate_luxembourg: "Integrate [LUX.GetNameDef]"
+  BEL_democratic_integrate_luxembourg_desc: "[LUX.GetNameDef] is undoubtedly heavily dependent on us, and de-facto already part of our realm. All we need to do now is to convince the population to vote to unite, and we can truly protect them from outside agents."
+
 
 
 

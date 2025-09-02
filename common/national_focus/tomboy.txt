@@ -23768,9 +23768,9 @@
 					has_war_with = BEL
 				}
 			}
-			 NOT = {
-			     has_completed_focus = BEL_democratic_anti_germany_treaty
-			 }
+			NOT = {
+			    has_completed_focus = BEL_democratic_anti_germany_treaty
+			}
 		}
 		
 		completion_reward = {
@@ -23836,52 +23836,95 @@
 		available = {
 			NOT = {
 				has_completed_focus = BEL_democratic_german_tomboy_refugee_treaty
+				is_in_faction_with = GER
+				has_government = fascism
+				GER = { has_government = BEL }
 			}
 		}
 		
 		completion_reward = {
 			ENG = {
-				add_opinion_modifier = {
-					target = BEL
-					modifier = medium_increase
-				}
-				add_ai_strategy = {
-					type = befriend
-					id = BEL
-					value = 50
+				if = {
+					limit = {
+						NOT = {
+							has_government = GER
+							is_puppet_of = GER
+							is_in_faction_with = GER
+							GER = { is_puppet_of = PREV }
+						}
+					}
+					add_opinion_modifier = {
+						target = BEL
+						modifier = medium_increase
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = BEL
+						value = 50
+					}
 				}
 			}
 			FRA = {
-				add_opinion_modifier = {
-					target = BEL
-					modifier = medium_increase
-				}
-				add_ai_strategy = {
-					type = befriend
-					id = BEL
-					value = 50
+				if = {
+					limit = {
+						NOT = {
+							has_government = GER
+							is_puppet_of = GER
+							is_in_faction_with = GER
+							GER = { is_puppet_of = PREV }
+						}
+					}
+					add_opinion_modifier = {
+						target = BEL
+						modifier = medium_increase
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = BEL
+						value = 50
+					}
 				}
 			}
 			SOV = {
-				add_opinion_modifier = {
-					target = BEL
-					modifier = medium_increase
-				}
-				add_ai_strategy = {
-					type = befriend
-					id = BEL
-					value = 50
+				if = {
+					limit = {
+						NOT = {
+							has_government = GER
+							is_puppet_of = GER
+							is_in_faction_with = GER
+							GER = { is_puppet_of = PREV }
+						}
+					}
+					add_opinion_modifier = {
+						target = BEL
+						modifier = medium_increase
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = BEL
+						value = 50
+					}
 				}
 			}
 			USA = {
-				add_opinion_modifier = {
-					target = BEL
-					modifier = medium_increase
-				}
-				add_ai_strategy = {
-					type = befriend
-					id = BEL
-					value = 50
+				if = {
+					limit = {
+						NOT = {
+							has_government = GER
+							is_puppet_of = GER
+							is_in_faction_with = GER
+							GER = { is_puppet_of = PREV }
+						}
+					}
+					add_opinion_modifier = {
+						target = BEL
+						modifier = medium_increase
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = BEL
+						value = 50
+					}
 				}
 			}
 			add_timed_idea = {
