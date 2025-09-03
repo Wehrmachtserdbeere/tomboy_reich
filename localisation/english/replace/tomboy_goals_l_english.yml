@@ -1327,6 +1327,30 @@
   BEL_democratic_integrate_luxembourg: "Integrate [LUX.GetNameDef]"
   BEL_democratic_integrate_luxembourg_desc: "[LUX.GetNameDef] is undoubtedly heavily dependent on us, and de-facto already part of our realm. All we need to do now is to convince the population to vote to unite, and we can truly protect them from outside agents."
 
+  BEL_democratic_approach_germany_for_states: "Approach [GER.GetName] for States"
+  BEL_democratic_approach_germany_for_states_desc: "Many [GER.GetAdjectiveCap] states are majority [BEL.GetAdjectiveCap]. Given their aim of reuniting their people, it may be possible to request them to also reunite our own people by returning majority [BEL.GetAdjectiveCap] states, with a lot of benefits for them, of course."
+
+  BEL_democratic_approach_france_for_states: "Apprach [FRA.GetName] for States"
+  BEL_democratic_approach_france_for_states_desc: "[FRA.GetNameDefCap] has a large amount of [BEL.GetAdjectiveCap]s in their northern states. With their current instability and radicalizing movements, we may be able to purchase these states, in which a lot of the anti-French activity is coincidentally located in, in return for benefits and a guarantee of the fair treatment of ethnic [FRA.GetAdjectiveCap]."
+
+  BEL_democratic_a_proposal_to_the_english: "A Proposal to the [ENG.GetAdjectiveCap]"
+  BEL_democratic_a_proposal_to_the_english_desc: "The imperialistic [ENG.GetName] controls some of the most [BEL.GetAdjectiveCap]-heavy states outside of our own borders. We wish to purchase these states and bring our people home, but they will undoubtedly demand excessively large paybacks and demands for them. Still, it will be worth getting our people back."
+
+  BEL_democratic_join_the_anti_comintern_pact: "Join the Anti-Comintern Pact"
+  BEL_democratic_join_the_anti_comintern_pact_desc: "The [GER.GetAdjectiveCap] Anti-Comintern Pact against the Communist International aims not for aggression, but for defense against anti-national, and for us, anti-[BEL.GetAdjectiveCap] actions. We lose nothing by joining this pact and showing our support for the defense against Communism."
+
+  BEL_democratic_industry_nisd: "Establish the NISD"
+  BEL_democratic_industry_nisd_desc: "The New Industrial State Development (NISD) is a proposed development project that aims to build up a proper industrial base for our nation and all those who reside within."
+
+  BEL_democratic_industry_home_harbors: "Develop Home Harbors"
+  BEL_democratic_industry_home_harbors_desc: "One aim of NISD is our naval mobility and connection. Constructing harbors will ensure we no longer require foreign aid to receive mass amounts of shipped goods, and make it possible to become a more prominent naval power."
+
+  BEL_democratic_industry_home_civilian: "Focus on Civilian Industries"
+  BEL_democratic_industry_home_civilian_desc: "We have to decide on whether NISD is to focus on Civilian or Military Industries. While the latter would certainly prove advantageous in our defense of outside forces, we cannot forget about our own people and their well-being, and this civilian foundation can also jumpstart a later military industry."
+
+  BEL_democratic_industry_home_arms: "Focus on Military Industries"
+  BEL_democratic_industry_home_arms_desc: "We have to decide on whether NISD is to focus on Civilian or Military Industries. While the former would immediately improve the lives of our people, we cannot ignore our military vulnerabilities. Only with a strong defense can we think about our domestic issues."
+
 
 
 

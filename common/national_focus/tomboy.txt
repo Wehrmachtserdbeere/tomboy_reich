@@ -24512,6 +24512,10 @@
 		}
 
 		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 			GER = {
 				BEL = {
 					country_event = germany.5
