@@ -1351,6 +1351,18 @@
   BEL_democratic_industry_home_arms: "Focus on Military Industries"
   BEL_democratic_industry_home_arms_desc: "We have to decide on whether NISD is to focus on Civilian or Military Industries. While the former would immediately improve the lives of our people, we cannot ignore our military vulnerabilities. Only with a strong defense can we think about our domestic issues."
 
+  BEL_democratic_industry_nisd_ii: "NISD II."
+  BEL_democratic_industry_nisd_ii_desc: "Phase 2 of the NISD is a more centralized approach of improving the economy. By focusing on only some chosen, small sectors of our industry, we can test how our approaches work without necessarily risking total failure in a worse-case scenario."
+
+  BEL_democratic_industry_benelux_navy: "Expand Naval Industries"
+  BEL_democratic_industry_benelux_navy_desc: "With our territorial enlargening, we must see to improve the naval industries of our new Benelux territories."
+
+  BEL_democratic_industry_benelux_civilian: "Expand Civilian Industries"
+  BEL_democratic_industry_benelux_civilian_desc: "We need to expand our current civilian industrial base to cover the new territories, so that no region is left behind. Only a strong civilian sector can handle future conflicts."
+
+  BEL_democratic_industry_benelux_arms: "Expand Military Industries"
+  BEL_democratic_industry_benelux_arms_desc: "Our new territories are prime estate for countless military industrial projects. To ensure our continued survival, we must dedicate these lands to the military first, and the civilian sector second."
+
 
 
 
