@@ -1317,9 +1317,13 @@
 
   BEL_democratic_propose_to_the_netherlands: "Propose to [HOL.GetNameDef]"
   BEL_democratic_propose_to_the_netherlands_desc: "[HOL.GetNameDefCap] is a powerful nation, and we may be able to propose for them to become an official, associated state, so we can work more closely together, and perhaps unite one day."
+  BEL_democratic_propose_to_the_netherlands_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
 
   BEL_democratic_propose_to_luxembourg: "Propose to [LUX.GetNameDef]"
   BEL_democratic_propose_to_luxembourg_desc: "[LUX.GetNameDef] is in a vulnerable position, and we could aid them in their pursuit of safety from foreign forces by proposing them to become an associated state of ours."
+  BEL_democratic_propose_to_luxembourg_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
+
+  
 
   BEL_democratic_integrate_the_netherlands: "Integrate [HOL.GetNameDef]"
   BEL_democratic_integrate_the_netherlands_desc: "[HOL.GetNameDefCap] has been more and more integrated into our beautiful Republic, and it's about time they're properly being integrated, so we can soon unite our nations."
@@ -1351,7 +1355,7 @@
   BEL_democratic_industry_home_arms: "Focus on Military Industries"
   BEL_democratic_industry_home_arms_desc: "We have to decide on whether NISD is to focus on Civilian or Military Industries. While the former would immediately improve the lives of our people, we cannot ignore our military vulnerabilities. Only with a strong defense can we think about our domestic issues."
 
-  BEL_democratic_industry_nisd_ii: "NISD II."
+  BEL_democratic_industry_nisd_ii: "NISD II"
   BEL_democratic_industry_nisd_ii_desc: "Phase 2 of the NISD is a more centralized approach of improving the economy. By focusing on only some chosen, small sectors of our industry, we can test how our approaches work without necessarily risking total failure in a worse-case scenario."
 
   BEL_democratic_industry_benelux_navy: "Expand Naval Industries"
@@ -1363,15 +1367,39 @@
   BEL_democratic_industry_benelux_arms: "Expand Military Industries"
   BEL_democratic_industry_benelux_arms_desc: "Our new territories are prime estate for countless military industrial projects. To ensure our continued survival, we must dedicate these lands to the military first, and the civilian sector second."
 
+  BEL_democratic_industry_nisd_iii: "NISD III"
+  BEL_democratic_industry_nisd_iii_desc: "Our ever-growing territory must be accounted for. We need to further expand the scope of NISD to consider in the vast amounts of territory we've gained."
 
+  _NISD_III_COMMENT_: "We DON'T use the GER and FRA Adjectives here, because they refer to our own territories, which we specifically refer to as German and French already."
+  BEL_democratic_industry_germany_france_navy: "NISD-GFNIP"
+  BEL_democratic_industry_germany_france_navy_desc: "The Germano-French Naval Industrial Project (GFNIP) is the plan to develop and expand the German and French Naval capabilities to be on an equal level to ours."
 
+  BEL_democratic_industry_germany_france_german_arms: "Militarize Germany, Civilianize France"
+  BEL_democratic_industry_germany_france_german_arms_desc: "The new territories we gained are simply too vast to dedicate to only one major industrial sector. It's much more efficient to build military industries in the already militarized German states, while building up a massive civilian factor in the French states."
 
+  BEL_democratic_industry_germany_france_french_arms: "Civilianize Germany, Militarize France"
+  BEL_democratic_industry_germany_france_french_arms_desc: "The new territories we gained are simply too vast to dedicate to only one major industrial sector. It's much more efficient to build civilian industries in to already militarized German states, since they severely lack in this industry, and instead focus the military in France."
 
-  BEL_democratic_propose_to_the_netherlands_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
-  BEL_democratic_propose_to_luxembourg_custom_tt: "Request [HOL.GetNameDef] to become our puppet."
+  BEL_democratic_industry_nisd_iv: "NISD IV"
+  BEL_democratic_industry_nisd_iv_desc: "With our experience in implementing the NISD in states, we can make this an easy-to-implement policy on a state-level, and quickly decide which industry to focus on in which state.\n§YUnlocks state decisions to implement NISD for military of civilian use.§!"
 
   BEL_french_state_purchasing_small_trigger_tt: "Agreed on buying small portions of France"
   BEL_french_state_purchasing_large_trigger_tt: "Agreed on buying all Tomboy states of France"
+
+
+  BEL_democratic_a_measured_democracy: "A Measured Democracy"
+  BEL_democratic_a_measured_democracy_desc: "Total Democracy is simply impossible. We can only keep a democratic and stable nation by implementing a measured system, something akin to the original, American system."
+
+  BEL_democratic_measured_democracy_federal_strengthening_act: "Federal Strengthening Act"
+  BEL_democratic_measured_democracy_federal_strengthening_act_desc: "We have to ensure that our country remains stable and safe for our people, and to that end, we have to implement methods that reinforce state rights and limit federal overreach, this way states can decide to do things such as suppressing strikes."
+
+  BEL_democratic_measured_democracy_electoral_college_reform: "Electoral College Reform"
+  BEL_democratic_measured_democracy_electoral_college_reform_desc: "By tightening the federal vote weighing for our national elections, we can make sure that each state is properly represented in our elections, without bias on which is more or less populated."
+
+  BEL_democratic_measured_democracy_property_based_suffrage: "Property-Based Suffrage"
+  BEL_democratic_measured_democracy_property_based_suffrage_desc: "It's obvious that the only people that can be trusted are those with a stake in the nation. Those who own property in the nation, wish to see it flourish, for they will flourish with it."
+
+
 
 
 

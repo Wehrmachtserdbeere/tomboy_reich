@@ -4798,6 +4798,20 @@ BEL_suppress_strikes_and_protests_category = {
                         add_resistance = -15
                     }
                 }
+                random_list = {
+                    50 = {
+                        custom_effect_tooltip = BEL_generic_event_tt_nothing_happens
+                    }
+                    30 = {
+                        add_compliance = -5
+                    }
+                    15 = {
+                        add_compliance = -10
+                    }
+                    5 = {
+                        add_compliance = 5
+                    }
+                }
             }
         }
     }

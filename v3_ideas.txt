@@ -38,3 +38,18 @@
 
 - Natsukian Path:
 - - World Domination -> Prepare Nations for independence (national spirit of fanatic loyalty) -> Release as puppets OR independent nations
+- - "Exit Music" (Natsuki dies Path) -> Complete despair-schizo. Self-Annihilation. I'd say use an event to decide this, like TFR's events where you can have a character either live or die. Perhaps trigger this after some focus?
+- - - BOP, if hitting AWARE, a focus tree is set that leads to the whole nation collapsing and becoming completely lifeless (with an idea for it, basically deleting everything) -> The nation did not recover from the loss.
+- - - - If large enough, it causes a major crisis in other nations.
+- - - If not running out, uhh, think of something. The world cannot be good without her. Perhaps a "prepare for the grimdark future" aimed tree that turns the nation hyper-isolationist and schizophrenic?
+- - - Possible AI ruler post-Exit Music, with a BOP where you have to keep it "unaware" so it doesn't realize she's dead, but "aware" enough to rule effectively?
+- - - - AWARE -> Portrait change and end the BOP. Run an event in xyz days that notifies the world about it.
+- - - - - One idea: lineart, night, 2::dark, desaturation, depression::, 2::doki doki literature club (style)::. Black and pink color scheme.
+- - - - - Make it a gif, see The Fire Rises, Loji (Chinese AI, sadly not an anime girl) uses a GIF portrait.
+- - - - - Change the focus tree immediately. Any allied nation will get a "topple regime" wargoal following some BEL focuses that show the self-annihilationary intent, to try and free the Tomboys. Also give those nations the desire to "un-ally" them.
+- - - - UNAWARE -> Full right side of the BOP, a TON of debuffs, a few balancing buffs (especially for stability, after the post-Death mass-debuffs).
+- - - - - The buffs and debuffs get weaker the closer you get to AWARE, but the risk of AWARE rises exponentially.
+- - - - - Should be a game of treading the line, with maybe a decision to inform the AI, where if specific recovery and preparation focuses haven't been made, it immediately leads to the AWARE focus tree. Else, it gets a "Recovered" focus tree with perhaps a main focal point of preventing any future pain, and becoming a more fleshed out TFR's Loji Compassion Path.
+
+- Democratic Path:
+- - BOP: Federal vs Unitary
