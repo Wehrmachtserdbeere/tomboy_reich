@@ -1399,16 +1399,44 @@
   BEL_democratic_measured_democracy_property_based_suffrage: "Property-Based Suffrage"
   BEL_democratic_measured_democracy_property_based_suffrage_desc: "It's obvious that the only people that can be trusted are those with a stake in the nation. Those who own property in the nation, wish to see it flourish, for they will flourish with it."
 
+  BEL_democratic_measured_democracy_wealth_based_suffrage: "Wealth-Based Suffrage"
+  BEL_democratic_measured_democracy_wealth_based_suffrage_desc: "Those who have earned their money know how who leads a country to prosperity. It's a natural conclusion that we must recognize, and restricting and weighing votes by wealth, we can make sure only people who know what they're doing will be able to steer the country."
+
+  BEL_democratic_measured_democracy_outlaw_left_wing_parties: "Outlaw Left-Wing Parties"
+  BEL_democratic_measured_democracy_outlaw_left_wing_parties_desc: "Parties such as the [BEL.GetCommunistParty] are a danger to our public order, and are only used by foreign agents to destabilize and destroy our nation. Outlawing them is a requirement for a safe and democratic society."
+
+  BEL_democratic_measured_democracy_outlaw_right_wing_parties: "Outlaw Far-Right Parties"
+  BEL_democratic_measured_democracy_outlaw_right_wing_parties_desc: "Many minor far-right parties that still remain after we became democratic are still damaging and hindering us from establishing a true democratic base. These thugs and their enabling parties, who have been harassing and intimidating their political opposition, need to be outlawed."
+
+  BEL_democratic_measured_democracy_political_freedom: "Political Freedom"
+  BEL_democratic_measured_democracy_political_freedom_desc: "We cannot claim to be democratic if we outlaw our opposition or any party that we don't approve of. All have a voice, and if their voice is against us, then we must respect that."
+
+  BEL_democratic_measured_democracy_expanded_minority_suffrage: "Expanded Minority Suffrage"
+  BEL_democratic_measured_democracy_expanded_minority_suffrage_desc: "Marginalized people, such as unrecognized minorities and people with certain disabilities, should not be barred from voting in our elections. They live in our nation, and will vote to improve their own circumstances, and by effect, that of all others."
+
+  BEL_democratic_measured_democracy_limited_minority_suffrage: "Limited Minority Suffrage"
+  BEL_democratic_measured_democracy_limited_minority_suffrage_desc: "We can't deny that minorities and disabled people live in our nation, and should be allowed to vote on issues. However, they can't be trusted with the future of our nation, and so, we should only allow them to vote on issues pertaining to their own circumstances."
+
+  BEL_democratic_measured_democracy_independent_trade_unions: "Independent Trade Unions"
+  BEL_democratic_measured_democracy_independent_trade_unions_desc: "As long as trade unions are controlled by the state, we cannot claim to be a free nation. Of course, slight restrictions must remain, but otherwise, trade unions must be fully legal and without government control!"
+
+  BEL_democratic_measured_democracy_state_controlled_trade_unions: "State-Controlled Trade Unions"
+  BEL_democratic_measured_democracy_state_controlled_trade_unions_desc: "Unfortunately, the violent rabble that are trade unions are vital to the workers' happiness. In order to keep them non-violent and coherent, we can keep them de-jure legal, while keeping them under strict government control."
+
+  BEL_democratic_measured_democracy_a_shining_example_of_european_democracy: "A Shining Example of European Democracy"
+  BEL_democratic_measured_democracy_a_shining_example_of_european_democracy_desc: "Our home is the true definition of democracy. Not even Communists or Fascists can counter this claim, and we will internalize this ideal - we are a shining example of European democracy! And all without any deportations."
 
 
 
+  BEL_communism_victory: "Victory for the Proletariat!"
+  BEL_communism_victory_desc: "We did it, we have ensured the victory of Marx' ideas over those of Cleisthenes, Plato, and Mussolini! Now we must decide exactly which interpretation we wish to implement."
 
-
-
-
-
+  BEL_communism_polpotism_victory: "Radical Agrarian Primitivism"
+  BEL_communism_polpotism_victory_desc: "We cast off the rot of cities and machines! Power returns to the soil, where true equality is born. In the fields we are pure, united, and unbreakable, our nation reborn through the strength of the peasantry!"
   BEL_polpotism_victory_reward_tt: "The Democratic Party is put into power.\n§YMore focuses are unlocked.§!"
 
+  BEL_communism_rightists_victory: "Rightistm"
+  BEL_communism_rightists_victory_desc: "Communism can only be implemented well if we gradually introduce it. We won, but we still have a long way to go."
   BEL_communism_victory_reward_tt: "The People's Party is put into power.\n§YMore focuses are unlocked.§!"
 
 

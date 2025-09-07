@@ -25687,10 +25687,6 @@
 		x = 23
 		y = 18
 
-		available = {
-			# Has not become a democratic socialist, or a socialist democrat (socdem)
-		}
-
 		prerequisite = {
 			focus = BEL_democratic_measured_democracy_property_based_suffrage
 			focus = BEL_democratic_measured_democracy_wealth_based_suffrage
@@ -25715,10 +25711,6 @@
 		
 		x = 19
 		y = 18
-
-		available = {
-			# Has not become right-democratic
-		}
 
 		prerequisite = {
 			focus = BEL_democratic_measured_democracy_property_based_suffrage

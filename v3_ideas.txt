@@ -53,3 +53,5 @@
 
 - Democratic Path:
 - - BOP: Federal vs Unitary
+
+- Descriptions NEED a consistent case. E.g. Character descriptions always use third person (except Natsukian AI)
