@@ -386,3 +386,29 @@ dyn_mod_bel_dem_STATE_naval_focus = {
 	state_production_speed_industrial_complex_factor = -0.5 # Massive malus here
 	state_production_speed_synthetic_refinery_factor = 0.1
 }
+
+# Polpotism
+dyn_mod_bel_com_STATE_cities_cleared = {
+	enable = {
+		owner = {
+			AND = {
+				original_tag = BEL
+				has_government = communism
+			}
+		}
+	}
+
+	# icon = tbd
+
+	local_supplies = 0.1
+
+	state_production_speed_buildings_factor = -0.75
+	state_resources_factor = -0.75
+	enemy_attrition = 1.25
+	enemy_local_supplies = -0.75
+	enemy_army_speed_factor = -0.5
+	enemy_operative_intel_extraction_rate = -0.85
+	enemy_intel_network_gain_factor_over_occupied_tag = -0.85
+	intel_network_gain_factor = -0.85
+	local_intel_to_enemies = -0.75
+}

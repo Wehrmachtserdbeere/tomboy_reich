@@ -2690,6 +2690,21 @@ ideas = {
 			}
 		}
 
+		BEL_idea_cleared_cities = {
+			name = BEL_idea_cleared_cities
+
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.75
+				production_factory_max_efficiency_factor = -0.75
+				production_factory_start_efficiency_factor = -0.75
+				monthly_population = 1
+			}
+		}
+
 
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P

@@ -1,15 +1,16 @@
 - Tomboys, Cunnies, and Femboys exist from the start.
 - - Tomboys in Belgium
-- - Cunnies as Tomboy Puppet in Nord-Pas-De-Calais?
-- - Femboys as Bavaria as German puppet
-
-- Alternatively, United Tomboy Union at the beginning that breaks apart soon after game start?
+- - Cunnies in Nord-Pas-De-Calais?
+- United Tomboy Union at the beginning that breaks apart soon after game start?
 - - Maybe with puppet Cunnies and Femboys as single-state countries being disillusioned and slowly taking more and more land, eventually leading to the full breakup of the Union?
 
 - Plan from the start, don't just make it as you go along.
 - Plan interaction between the nations, e.g. Tomboys attempting a coup in Cunnyland, but if played right, Cunnies can get independent.
 - Global decisions, that are available for all ideologies, so that decisions aren't held back by being implemented early, and newer ones benefit from new knowledge.
-- Perhaps even remake the entire map (not like map modding, but replacing the countries (using replace_path) and essentially making it a total conversion)?
+- !!! Remake the entire map (not like map modding, but replacing the countries (using replace_path) and essentially making it a total conversion)?
+- Cosmetic Tags for a "Peaceful Unification" and a "Forceful Unification" ending.
+- - Confederation for the peaceful one, where the nations are "Free States" (Integrated, non-annexable puppets)
+- - Unitarian for the forceful one, where the nations are, well, annexed states. Perhaps with state modifiers for, e.g., "Femboy Population" that decreases military output but increases civilian output?
 
 - Carry over loc files for victory points and state names from v2. Lots of research went into those!
 
@@ -38,7 +39,7 @@
 
 - Natsukian Path:
 - - World Domination -> Prepare Nations for independence (national spirit of fanatic loyalty) -> Release as puppets OR independent nations
-- - "Exit Music" (Natsuki dies Path) -> Complete despair-schizo. Self-Annihilation. I'd say use an event to decide this, like TFR's events where you can have a character either live or die. Perhaps trigger this after some focus?
+- - "Exit Music" (Natsuki dies by Monika Path) -> Complete despair-schizo. Self-Annihilation. I'd say use an event to decide this, like TFR's events where you can have a character either live or die. Perhaps trigger this after some focus?
 - - - BOP, if hitting AWARE, a focus tree is set that leads to the whole nation collapsing and becoming completely lifeless (with an idea for it, basically deleting everything) -> The nation did not recover from the loss.
 - - - - If large enough, it causes a major crisis in other nations.
 - - - If not running out, uhh, think of something. The world cannot be good without her. Perhaps a "prepare for the grimdark future" aimed tree that turns the nation hyper-isolationist and schizophrenic?
@@ -47,6 +48,7 @@
 - - - - - One idea: lineart, night, 2::dark, desaturation, depression::, 2::doki doki literature club (style)::. Black and pink color scheme.
 - - - - - Make it a gif, see The Fire Rises, Loji (Chinese AI, sadly not an anime girl) uses a GIF portrait.
 - - - - - Change the focus tree immediately. Any allied nation will get a "topple regime" wargoal following some BEL focuses that show the self-annihilationary intent, to try and free the Tomboys. Also give those nations the desire to "un-ally" them.
+- - - - - Nuclear Annihilation ending? If so, ending event should have Monika, who caused Natsuki's death, staring in horror. Probably like the two thousand yard stare.
 - - - - UNAWARE -> Full right side of the BOP, a TON of debuffs, a few balancing buffs (especially for stability, after the post-Death mass-debuffs).
 - - - - - The buffs and debuffs get weaker the closer you get to AWARE, but the risk of AWARE rises exponentially.
 - - - - - Should be a game of treading the line, with maybe a decision to inform the AI, where if specific recovery and preparation focuses haven't been made, it immediately leads to the AWARE focus tree. Else, it gets a "Recovered" focus tree with perhaps a main focal point of preventing any future pain, and becoming a more fleshed out TFR's Loji Compassion Path.

@@ -706,6 +706,9 @@
     BEL_idea_communist_infighting: "Communist Infighting"
     BEL_idea_communist_infighting_desc: "The party only recently unified, and it's still utter chaos. Without resolving this conflict, the party will never be able to govern anything."
 
+    dyn_mod_bel_com_STATE_cities_cleared: "Cities cleared"
+    dyn_mod_bel_com_STATE_cities_cleared_desc: "The cities of this state have been intentionally cleared. As a result, supplies are dramatically reduced, buildings have a very hard time being constructed, and resources may as well not exist at all."
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"

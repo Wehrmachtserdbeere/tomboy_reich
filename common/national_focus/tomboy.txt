@@ -26304,6 +26304,12 @@
 		available = {
 			always = no
 		}
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BEL_communism_rightists_victory
+			}
+		}
 		
 		completion_reward = {
 			custom_effect_tooltip = BEL_polpotism_victory_reward_tt
@@ -26317,6 +26323,65 @@
 			remove_power_balance = {
 				id = BEL_bop_communism
 			}
+		}
+	}
+
+	# Clear the cities
+	focus = {
+		id = BEL_communism_polpotism_clear_the_cities
+		icon = tbd
+
+		cost = 5
+		
+		x = 12
+		y = 8
+
+		prerequisite = {
+			focus = BEL_communism_polpotism_victory
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_communism_polpotism_victory
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					owner = {
+						original_tag = BEL
+					}
+					is_core_of = BEL # Debating whether to keep this. Should foreign states also be cleared if they aren't cores?
+				}
+				add_dynamic_modifier = {
+					modifier = dyn_mod_bel_com_STATE_cities_cleared
+				}
+			}
+			add_ideas = BEL_idea_cleared_cities
+		}
+	}
+
+	# Rapidized school cirriculum | Basically, everything gone but communist theory, which is just preparing for war.
+	focus = {
+		id = BEL_communism_polpotism_rapidized_school_cirriculum
+		icon = tbd
+
+		cost = 3
+
+		x = 14
+		y = 8
+
+		prerequisite = {
+			focus = BEL_communism_polpotism_victory
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_communism_polpotism_victory
+		}
+
+		completion_reward = {
+			army_experience = 100
+			air_experience = 50
+			navy_experience = 25
 		}
 	}
 
@@ -26341,6 +26406,12 @@
 
 		available = {
 			always = no
+		}
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BEL_communism_polpotism_victory
+			}
 		}
 		
 		completion_reward = {
