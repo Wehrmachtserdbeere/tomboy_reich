@@ -2705,6 +2705,48 @@ ideas = {
 			}
 		}
 
+		BEL_idea_year_zero_reformism = {
+			name = BEL_idea_year_zero_reformism
+
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				communism_drift = 0.02
+				defensive_war_stability_factor = 0.1
+				army_defence_factor = 0.25
+				compliance_growth = 0.05
+			}
+		}
+
+		BEL_idea_tomboy_honor_code = {
+			name = BEL_idea_tomboy_honor_code
+
+			# No restrictions, it's embedded in the social order.
+
+			modifier = {
+				training_time_army_factor = -0.05
+				experience_gain_army_factor = 0.025
+				stability_weekly_factor = 0.015
+			}
+		}
+
+		BEL_idea_peoples_anthem = {
+			name = BEL_idea_peoples_anthem
+
+			available = {
+				has_government = communism
+				controls_province = 516 # Brussels
+			}
+
+			modifier = {
+				drift_defence_factor = 0.2
+				fascism_drift = -0.02
+				neutrality_drift = -0.02
+			}
+		}
+
 
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P

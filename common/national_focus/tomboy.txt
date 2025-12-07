@@ -26306,6 +26306,7 @@
 		}
 
 		allow_branch = {
+			has_completed_focus = BEL_communism_victory
 			NOT = {
 				has_completed_focus = BEL_communism_rightists_victory
 			}
@@ -26385,6 +26386,81 @@
 		}
 	}
 
+	# Year Zero Reformism | Clear the bourgeois identity. +Com Support, +Compliance, +Defense
+	focus = {
+		id = BEL_communism_polpot_year_zero_reformism
+		icon = tbd
+		
+		cost = 3
+		
+		x = 12
+		y = 9
+
+		prerequisite = {
+			focus = BEL_communism_polpotism_clear_the_cities
+			focus = BEL_communism_polpotism_rapidized_school_cirriculum
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = BEL_idea_year_zero_reformism
+		}
+	}
+
+	# Tomboy Honor Code | Ideological and Social expectation says that Toughness and Loyalty = Citizenship
+	focus = {
+		id = BEL_communism_polpot_tomboy_honor_code
+		icon = tbd
+
+		cost = 3
+		
+		x = 14
+		y = 9
+
+		prerequisite = {
+			focus = BEL_communism_polpotism_clear_the_cities
+			focus = BEL_communism_polpotism_rapidized_school_cirriculum
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = BEL_idea_tomboy_honor_code
+		}
+	}
+
+	# A People's Anthem
+	focus = {
+		id = BEL_communism_polpot_a_peoples_anthem
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 10
+
+		prerequisite = {
+			focus = BEL_communism_polpot_year_zero_reformism
+		}
+		prerequisite = {
+			focus = BEL_communism_polpot_tomboy_honor_code
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_peoples_anthem
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -26409,6 +26485,7 @@
 		}
 
 		allow_branch = {
+			has_completed_focus = BEL_communism_victory
 			NOT = {
 				has_completed_focus = BEL_communism_polpotism_victory
 			}

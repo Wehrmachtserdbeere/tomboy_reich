@@ -709,6 +709,18 @@
     dyn_mod_bel_com_STATE_cities_cleared: "Cities cleared"
     dyn_mod_bel_com_STATE_cities_cleared_desc: "The cities of this state have been intentionally cleared. As a result, supplies are dramatically reduced, buildings have a very hard time being constructed, and resources may as well not exist at all."
 
+    BEL_idea_cleared_cities: "Cleared Cities"
+    BEL_idea_cleared_cities_desc: "Our people are moving from the cities to the rural areas, just like we wanted. While our industrial output suffers greatly, this causes a full population boom, undoubtedly helping our military forces."
+
+    BEL_idea_year_zero_reformism: "Year-Zero Reformism"
+    BEL_idea_year_zero_reformism_desc: "Our people have thrown off the shackles of its past bourgeois slavers and have created their own time - moving from the elitist AD and BC to the grand Year Zero, the year the revolution won, a symbol for all free people of the world!"
+
+    BEL_idea_tomboy_honor_code: "Tomboy Honor Code"
+    BEL_idea_tomboy_honor_code_desc: "The Tomboy Honor Code consists of three core aspects: Loyalty - A Tomboy may never betray her country or family; Strength - A Tomboy must be at the peak of her strength at all times; and Love - A Tomboy must devote herself to her family, her people, and her nation."
+
+    BEL_idea_peoples_anthem: "A People's Anthem"
+    BEL_idea_peoples_anthem_desc: "Rot' Fahne Hoch!\nDie Reihen dicht geschlossen!\nDTP marschiert mit ruhig festem Schritt.\nKam'raden, die Braunfront und Reaktion erschossen,\nmarschier'n im Geist in uns'ern Reihen mit.\n\nDen Feldweg frei den roten Batallionen.\nDen Feldweg frei dem Rev'lutionenmann!\nEs schaun auf'n Hammer und die Sichel schon Millionen.\nDer Tag für Freiheit und für Brot bricht an!\n\nZum letzten Mal wird Sturmalarm geblasen!\nZum Kampfe steh'n wir alle schon bereit!\nSchon flattern Volkesfahnen über allen Straßen.\nDie Knechtschaft dauert nur noch kurze Zeit!"
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"
