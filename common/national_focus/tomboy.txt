@@ -23028,6 +23028,34 @@
 				}
 			}
 		}
+
+		bypass_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = BEL_demsoc_unite_the_communist_parties
+					}
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+						last_election = var:current_date
+					}
+					complete_national_focus = BEL_communism_victory
+				}
+				else = {
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = no
+						last_election = var:current_date
+					}
+					complete_national_focus = BEL_democratic_victory_for_the_democratic_ideal
+				}
+				remove_power_balance = {
+					id = BEL_bop_demsoc
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
 		
 		completion_reward = {
 			custom_effect_tooltip = BEL_demsoc_demand_an_election_tt
@@ -26277,6 +26305,10 @@
 				has_completed_focus = BEL_demsoc_demand_an_election
 			}
 		}
+
+		prerequisite = {
+			focus = BEL_demsoc_demand_an_election
+		}
 		
 		completion_reward = {
 			add_political_power = 50
@@ -26450,23 +26482,9 @@
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	#
 	# Right Victory
+	#
 	focus = {
 		id = BEL_communism_rightists_victory
 		icon = tbd
@@ -26506,7 +26524,125 @@
 		}
 	}
 
+	# Establish the People's Market | +Consumer Goods, +Other factory output
+	focus = {
+		id = BEL_communism_rightists_establish_the_peoples_market
+		icon = tbd
 
+		cost = 3
+		
+		x = 14
+		y = 8
+
+		prerequisite = {
+			focus = BEL_communism_rightists_victory
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_communism_rightists_victory
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_the_peoples_market
+		}
+	}
+
+	# Agricultural Consolidation | +Resources, +Population
+	focus = {
+		id = BEL_communism_rightists_establish_agricultural_consolidation
+		icon = tbd
+
+		cost = 3
+		
+		x = 16
+		y = 8
+
+		prerequisite = {
+			focus = BEL_communism_rightists_victory
+		}
+
+		allow_branch = {
+			has_completed_focus = BEL_communism_rightists_victory
+		}
+		
+		completion_reward = {
+			add_ideas = BEL_idea_the_peoples_market
+		}
+	}
+
+	# Promote Patriotic Communism | +Ideology drift, +Political Power Gain
+	focus = {
+		id = BEL_communism_rightist_promote_patriotic_communism
+		icon = tbd
+
+		cost = 3
+		
+		x = 14
+		y = 9
+
+		prerequisite = {
+			focus = BEL_communism_rightists_establish_the_peoples_market
+			focus = BEL_communism_rightists_establish_agricultural_consolidation
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = BEL_idea_patriotic_communism
+		}
+	}
+
+	# Ausschuss für ideologische Reinheit - Committee of Ideological Purity
+	focus = {
+		id = BEL_communism_rightist_ausschuss_fuer_ideologische_reinheit
+		icon = tbd
+
+		cost = 3
+		
+		x = 16
+		y = 9
+
+		prerequisite = {
+			focus = BEL_communism_rightists_establish_the_peoples_market
+			focus = BEL_communism_rightists_establish_agricultural_consolidation
+		}
+
+		available = {
+			has_political_power = 200
+		}
+
+		cancel_if_invalid = no
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -200
+			BEL = {
+				every_army_leader = {
+					limit = {
+						is_country_leader = no
+						OR = {
+							has_trait = anti_bolshevik_leftist
+							has_trait = anti_communist
+							has_trait = anti_communist_crusader
+							has_trait = JAP_anti_communist_pm
+							has_trait = JUNO_anti_communist_action
+							has_trait = GSM_staunch_anti_communist
+							has_trait = BALTIC_anti_bolshevik
+							has_trait = veteran_anti_bolshevik
+							has_trait = fascist_sympathies
+							has_trait = fascist_corporatist
+							has_trait = fascist_council_trait
+							has_trait = fascist_demagogue
+							has_trait = NOR_shipping_capitalist
+							has_trait = agricultural_capitalist
+							has_trait = SWI_democratic_capitalist
+						}
+					}
+					retire_character = this
+				}
+			}
+			add_ideas = BEL_idea_ausschuss_fuer_ideologische_reinheit
+		}
+	}
 
 
 

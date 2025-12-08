@@ -29,6 +29,7 @@
 - - Continental bonuses (like getting a bonus to cavalry in Asia, tanks in Europe, and bombing in America)
 
 - Anime Ural-Altaic
+- - Led, of course, by the Uma Musume cast.
 
 - Festung Europa. Whether it be nationalism only, or general right-wing on each ideology. Very long focus that adds maxxed out fortresses on coasts and the current (or European) borders, as well as on strategic borders (such as the Alps, the Carpathian Mountains, the Pyrenees, etc.
 
@@ -39,7 +40,7 @@
 
 - Natsukian Path:
 - - World Domination -> Prepare Nations for independence (national spirit of fanatic loyalty) -> Release as puppets OR independent nations
-- - "Exit Music" (Natsuki dies by Monika Path) -> Complete despair-schizo. Self-Annihilation. I'd say use an event to decide this, like TFR's events where you can have a character either live or die. Perhaps trigger this after some focus?
+- - "Exit Music" ("Natsuki dies by Monika" Path) -> Complete despair-schizo. Self-Annihilation. I'd say use an event to decide this, like TFR's events where you can have a character either live or die. Perhaps trigger this after some focus?
 - - - BOP, if hitting AWARE, a focus tree is set that leads to the whole nation collapsing and becoming completely lifeless (with an idea for it, basically deleting everything) -> The nation did not recover from the loss.
 - - - - If large enough, it causes a major crisis in other nations.
 - - - If not running out, uhh, think of something. The world cannot be good without her. Perhaps a "prepare for the grimdark future" aimed tree that turns the nation hyper-isolationist and schizophrenic?
@@ -57,3 +58,6 @@
 - - BOP: Federal vs Unitary
 
 - Descriptions NEED a consistent case. E.g. Character descriptions always use third person (except Natsukian AI)
+
+- Something about MGE
+- - "The train rarely arrives lubed."

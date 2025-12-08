@@ -721,6 +721,15 @@
     BEL_idea_peoples_anthem: "A People's Anthem"
     BEL_idea_peoples_anthem_desc: "Rot' Fahne Hoch!\nDie Reihen dicht geschlossen!\nDTP marschiert mit ruhig festem Schritt.\nKam'raden, die Braunfront und Reaktion erschossen,\nmarschier'n im Geist in uns'ern Reihen mit.\n\nDen Feldweg frei den roten Batallionen.\nDen Feldweg frei dem Rev'lutionenmann!\nEs schaun auf'n Hammer und die Sichel schon Millionen.\nDer Tag für Freiheit und für Brot bricht an!\n\nZum letzten Mal wird Sturmalarm geblasen!\nZum Kampfe steh'n wir alle schon bereit!\nSchon flattern Volkesfahnen über allen Straßen.\nDie Knechtschaft dauert nur noch kurze Zeit!"
 
+    BEL_idea_the_peoples_market: "The People's Market"
+    BEL_idea_the_peoples_market_desc: "A market economy based on strict control of major and heavy industry, while leaving consumer goods and small producers under limited regulations."
+
+    BEL_idea_patriotic_communism: "Patriotic Communism"
+    BEL_idea_patriotic_communism_desc: "§ROur§! nation is the stronghold of true communism. §ROur§! nation is the true liberator of the worker. The people within our nation embrace this idea, and while we're not particularly happy about the nationalism aspect, the effects are too good to get rid of."
+
+    BEL_idea_ausschuss_fuer_ideologische_reinheit: "Ausschuss für ideologische Reinheit"
+    BEL_idea_ausschuss_fuer_ideologische_reinheit_desc: "The Ausschuss für ideologische Reinheit (Committee of Ideological Purity) ensures that neither foreign nor domestic dissenters can gain power in our government, and routinely checks for any threats to the true communist ideal."
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"
