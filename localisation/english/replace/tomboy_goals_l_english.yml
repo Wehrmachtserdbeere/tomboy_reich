@@ -1446,6 +1446,17 @@
 
 
 
+  BEL_communism_irredentism_what_we_lost_reward_tt: "[BEL_communism_irredentism_what_we_lost_reward_tt_dyn_loc]"
+  BEL_communism_irredentism_what_we_lost_reward_tt_pre: "Gain claims on many §Y[GER.GetFlag][GER.GetAdjectiveCap]§!, §Y[FRA.GetFlag][FRA.GetAdjectiveCap]§!, §Y[ENG.GetFlag][ENG.GetAdjectiveCap]§!, and all §YBenelux§! states.\nThe owners of these states gain §R-30§! §Yopinion§!."
+  BEL_communism_irredentism_what_we_lost_reward_tt_post: "Gain claims on many §Y[BEL.GetFlag]Tomboy§! states."
+
+
+
+
+
+
+
+
   BEL_antarctic_small_expedition: "TODO - Antarctic Expedition"
   BEL_antarctic_small_expedition_desc: "TODO!!!"
 

@@ -603,3 +603,25 @@ define_text = {
 		localization_key = BEL_fascism_expansionism_germany_invade_desc_war
 	}
 }
+
+defined_text = {
+	name = BEL_communism_irredentism_what_we_lost_reward_tt_dyn_loc
+	text = {
+		trigger = {
+			BEL = {
+				NOT = {
+					has_completed_focus = BEL_communism_irredentism_what_we_lost
+				}
+			}
+		}
+		localization_key = BEL_communism_irredentism_what_we_lost_reward_tt_pre
+	}
+	text = {
+		trigger = {
+			BEL = {
+				has_completed_focus = BEL_communism_irredentism_what_we_lost
+			}
+		}
+		localization_key = BEL_communism_irredentism_what_we_lost_reward_tt_post
+	}
+}

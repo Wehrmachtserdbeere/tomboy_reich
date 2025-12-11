@@ -2789,6 +2789,55 @@ ideas = {
 			}
 		}
 
+		BEL_idea_unapologetic_communism = {
+			name = BEL_idea_unapologetic_communism
+
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				communism_drift = 0.03
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+		BEL_idea_communist_irredentism = {
+			name = BEL_idea_communist_irredentism
+
+			available = {
+				has_government = communism
+				has_capitulated = no
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = LUX
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.2
+			}
+		}
+
 
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P

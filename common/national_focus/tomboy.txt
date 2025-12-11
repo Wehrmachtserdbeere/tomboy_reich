@@ -26517,6 +26517,7 @@
 					long_name = BEL_communism_polpot_party_long
 					name = BEL_communism_polpot_party
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 			remove_power_balance = {
 				id = BEL_bop_communism
@@ -26572,7 +26573,7 @@
 
 	# Promote Patriotic Communism | +Ideology drift, +Political Power Gain
 	focus = {
-		id = BEL_communism_rightist_promote_patriotic_communism
+		id = BEL_communism_rightists_promote_patriotic_communism
 		icon = tbd
 
 		cost = 3
@@ -26593,7 +26594,7 @@
 
 	# Ausschuss für ideologische Reinheit - Committee of Ideological Purity
 	focus = {
-		id = BEL_communism_rightist_ausschuss_fuer_ideologische_reinheit
+		id = BEL_communism_rightists_ausschuss_fuer_ideologische_reinheit
 		icon = tbd
 
 		cost = 3
@@ -26641,6 +26642,172 @@
 				}
 			}
 			add_ideas = BEL_idea_ausschuss_fuer_ideologische_reinheit
+		}
+	}
+
+	# Unapologetic Communism
+	focus = {
+		id = BEL_communism_rightists_unapologetic_communism
+		icon = tbd
+
+		cost = 5
+		
+		x = 15
+		y = 10
+
+		prerequisite = {
+			focus = BEL_communism_rightist_ausschuss_fuer_ideologische_reinheit
+		}
+		prerequisite = {
+			focus = BEL_communism_rightists_promote_patriotic_communism
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_ideas = BEL_idea_unapologetic_communism
+		}
+	}
+
+	#######
+	# War #
+	#######
+
+	#
+	# Irredentism
+	#
+
+	# What we lost... | Get claims
+	focus = {
+		id = BEL_communism_irredentism_what_we_lost
+		icon = tbd
+
+		cost = 7
+		
+		x = 12
+		y = 11
+
+		prerequisite = {
+			focus = BEL_communism_polpot_a_peoples_anthem
+			focus = BEL_communism_rightists_unapologetic_communism
+		}
+
+		mutually_exclusive = {
+			# focus = BEL_communism_epatriationism
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BEL_communism_irredentism_what_we_lost_reward_tt
+			for_each_scope_loop = {
+				array = tomboy_german_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				add_claim_by = ROOT
+				if = {
+					limit = {
+						owner = {
+							NOT = {
+								has_opinion_modifier = BEL_communism_irredentism
+							}
+						}
+					}
+					owner = {
+						add_opinion_modifier = {
+							target = BEL
+							modifier = BEL_communism_irredentism
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_france_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				add_claim_by = ROOT
+				if = {
+					limit = {
+						owner = {
+							NOT = {
+								has_opinion_modifier = BEL_communism_irredentism
+							}
+						}
+					}
+					owner = {
+						add_opinion_modifier = {
+							target = BEL
+							modifier = BEL_communism_irredentism
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_nelux_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				add_claim_by = ROOT
+				if = {
+					limit = {
+						owner = {
+							NOT = {
+								has_opinion_modifier = BEL_communism_irredentism
+							}
+						}
+					}
+					owner = {
+						add_opinion_modifier = {
+							target = BEL
+							modifier = BEL_communism_irredentism
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_english_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				add_claim_by = ROOT
+				if = {
+					limit = {
+						owner = {
+							NOT = {
+								has_opinion_modifier = BEL_communism_irredentism
+							}
+						}
+					}
+					owner = {
+						add_opinion_modifier = {
+							target = BEL
+							modifier = BEL_communism_irredentism
+						}
+					}
+				}
+			}
+			add_timed_idea = {
+				idea = BEL_idea_communist_irredentism
+				years = 3
+			}
 		}
 	}
 
