@@ -61,3 +61,10 @@
 
 - Something about MGE
 - - "The train rarely arrives lubed."
+
+- "The Final Option"
+- - When not at war with a player, above 80% capitulation, and you still own your capital, either:
+- - - Volkssturm (Localized Name via scripted loc; either timed and repeatable (preferred), or end after no longer at war):
+- - - - 85% Recruitable Population, -95% Monthly Population, -85% Attack, +80% Defense, -85% Stability (on activation), +85% Factory Output
+- - - The Purge (Extreme resistance, basically make the occupied areas ungovernable for several years)
+- - - - No direct effects, but apply the above on all Tomboy Core states

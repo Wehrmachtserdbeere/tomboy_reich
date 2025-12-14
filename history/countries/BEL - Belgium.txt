@@ -18,7 +18,7 @@ add_ideas = {
 	closed_economy
 	BEL_disorganised_nation
 	BEL_idea_acceptance_none
-	BEL_idea_economy_none
+	# BEL_idea_economy_none # Relegated to v3, we already added economy focuses to the various ideologies (._.")
 }
 
 set_technology = {

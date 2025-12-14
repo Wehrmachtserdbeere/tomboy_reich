@@ -2838,6 +2838,31 @@ ideas = {
 			}
 		}
 
+		BEL_idea_irredentist_training = {
+			name = BEL_idea_irredentist_training
+
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				training_time_army_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
+			}
+		}
+
+		BEL_idea_voelkerwaffe_bonus = {
+			name = BEL_idea_voelkerwaffe_bonus
+
+			picture = tbd
+
+			modifier = {
+				advanced_infantry_weapons2_cost_factor = -0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+
 
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P

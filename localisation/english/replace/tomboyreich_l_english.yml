@@ -736,6 +736,12 @@
     BEL_idea_communist_irredentism: "Irredentism"
     BEL_idea_communist_irredentism_desc: "Our people are dispersed, our land is occupied, there is much to be done, and our people demand their sisters and brothers freed from the bourgeois shackles that oppress them. We'll take back every last quarter."
 
+    BEL_idea_irredentist_training: "Irredentist Training"
+    BEL_idea_irredentist_training_desc: "Our people are training to reclaim our true borders, their vigor is unsurmountable and their dedication is strong enough to move the mountains."
+
+    BEL_idea_voelkerwaffe_bonus: "The Ultimate Völkerwaffe"
+    BEL_idea_voelkerwaffe_bonus_desc: "We have created the best weapon for the common man - the Völkerwaffe. This weapon is cheap, easy to produce, and easy to use. It is the perfect weapon for our people, and will allow us to defend our nation against any threat, at least until something better is made."
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"

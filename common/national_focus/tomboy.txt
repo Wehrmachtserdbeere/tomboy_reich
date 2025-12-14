@@ -26656,7 +26656,7 @@
 		y = 10
 
 		prerequisite = {
-			focus = BEL_communism_rightist_ausschuss_fuer_ideologische_reinheit
+			focus = BEL_communism_rightists_ausschuss_fuer_ideologische_reinheit
 		}
 		prerequisite = {
 			focus = BEL_communism_rightists_promote_patriotic_communism
@@ -26679,7 +26679,7 @@
 	# Irredentism
 	#
 
-	# What we lost... | Get claims
+	# What we lost... | Get claims and a spirit
 	focus = {
 		id = BEL_communism_irredentism_what_we_lost
 		icon = tbd
@@ -26695,7 +26695,7 @@
 		}
 
 		mutually_exclusive = {
-			# focus = BEL_communism_epatriationism
+			# focus = BEL_communism_repatriationism
 		}
 		
 		completion_reward = {
@@ -26810,6 +26810,135 @@
 			}
 		}
 	}
+
+	# Education | Teach our people their sisters are oppressed.
+	focus = {
+		id = BEL_communism_irredentism_education
+		icon = tbd
+
+		cost = 5
+		
+		x = 11
+		y = 12
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_what_we_lost
+		}
+		
+		completion_reward = {
+			add_war_support = 0.25
+			every_neighbor_country = {
+				add_ai_strategy = {
+					type = antagonize
+					id = BEL
+					value = 15
+				}
+			}
+		}
+	}
+
+	# Training | Train our people to fight against the oppressors
+	focus = {
+		id = BEL_communism_irredentism_training
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 12
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_what_we_lost
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = BEL_idea_irredentist_training
+				years = 2
+			}
+		}
+	}
+
+	# Völkerwaffe | Create the latest equipment with some bonuses
+	focus = {
+		id = BEL_communism_irredentism_voelkerwaffe
+		icon = tbd
+
+		cost = 5
+		
+		x = 10
+		y = 13
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_education
+			focus = BEL_communism_irredentism_training
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = improved_infantry_weapons_2
+				}
+				add_timed_idea = {
+					idea = BEL_idea_voelkerwaffe_bonus
+					years = 3
+				}
+				create_equipment_variant = {
+					name = "Völkerwaffe"
+					type = improved_infantry_weapons_2
+					design_team = mio:BEL_Kuromorimine_MIO
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = improved_infantry_weapons_1
+				}
+				create_equipment_variant = {
+					name = "Völkerwaffe"
+					type = improved_infantry_weapons_2
+					mark_older_equipment_obsolete = yes
+					design_team = mio:BEL_Kuromorimine_MIO
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons2
+				}
+				create_equipment_variant = {
+					name = "Völkerwaffe"
+					type = improved_infantry_weapons_1
+					mark_older_equipment_obsolete = yes
+					design_team = mio:BEL_Kuromorimine_MIO
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons1
+				}
+				create_equipment_variant = {
+					name = "Völkerwaffe"
+					type = infantry_weapons2
+					mark_older_equipment_obsolete = yes
+					design_team = mio:BEL_Kuromorimine_MIO
+				}
+			}
+			else = { # How have you not even researched the first infantry weapons tech yet?
+				create_equipment_variant = {
+					name = "Völkerwaffe"
+					type = infantry_weapons1
+					mark_older_equipment_obsolete = yes
+					design_team = mio:BEL_Kuromorimine_MIO
+				}
+			}
+
+			add_equipment_to_stockpile = {
+				type = "Völkerwaffe"
+				amount = x
+			}
+			# TODO - See how adding equipment to stockpile works with variants.
+		}
+	}
+	
 
 
 
