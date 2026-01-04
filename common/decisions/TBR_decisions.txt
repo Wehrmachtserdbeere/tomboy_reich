@@ -3082,6 +3082,203 @@ BEL_bop_fascism_decisions_category = {
     }
 }
 
+BEL_bop_communism_decisions_category = {
+    # Left = Polpotism
+    # Right = Rightism
+
+    BEL_bop_communism_rightism_reduce_polpotist_influence = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_communism
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_communism
+                value < 0.9
+            }
+        }
+
+        complete_effect = {
+            add_stability = 0.025
+            add_war_support = -0.05
+            add_power_balance_value = {
+                id = BEL_bop_communism
+                value = 0.05
+            }
+        }
+    }
+
+    BEL_bop_communism_rightism_strike_a_blow_at_the_polpotists = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_communism
+            }
+        }
+
+        available = {
+            power_balance_value = {
+                id = BEL_bop_communism
+                value > 0.2
+            }
+        }
+
+        complete_effect = {
+            add_stability = -0.05
+            add_war_support = -0.1
+            add_power_balance_value = {
+                id = BEL_bop_communism
+                value = 0.15
+            }
+        }
+    }
+
+    # TODO: Test this.
+    BEL_bop_communism_polpotism_commence_an_attack = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_communism
+            }
+        }
+
+        available = {
+            has_power_balance = {
+                id = BEL_bop_communism
+            }
+        }
+
+        complete_effect = {
+            add_stability = -0.1
+            add_war_support = 0.15
+            add_power_balance_value = {
+                id = BEL_bop_communism
+                value = -0.05
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            has_idea = isolation
+                            has_idea = undisturbed_isolation
+                        }
+                    }
+                }
+                random_list = {
+                    50 = {
+                        custom_effect_tooltip = BEL_generic_event_tt_nothing_happens
+                    }
+                    35 = {
+                        random_country = {
+                            limit = {
+                                NOT = {
+                                    original_tag = BEL
+                                    has_idea = isolation
+                                    has_idea = undisturbed_isolation
+                                }
+                            }
+                            random_state = {
+                                limit = {
+                                    state_population > 0
+                                }
+                                custom_effect_tooltip = BEL_bop_communism_polpotism_commence_an_attack_35_tt
+                                hidden_effect = {
+                                    set_temp_variable = {
+                                        var = BEL_var_manpower_loss
+                                        value = 1
+                                    }
+                                    set_variable_to_random = {
+                                        var = BEL_var_manpower_loss
+                                        min = 1
+                                        max = 1000
+                                        integer = yes
+                                    }
+                                    multiply_temp_variable = {
+                                        var = BEL_var_manpower_loss
+                                        factor = -1
+                                    }
+                                    add_manpower = BEL_var_manpower_loss
+                                }
+                            }
+                        }
+                    }
+                    15 = {
+                        custom_effect_tooltip = BEL_bop_communism_polpotism_commence_an_attack_15_tt
+                        hidden_effect = {
+                            set_temp_variable = {
+                                var = BEL_var_num_of_nations
+                                value = 1
+                            }
+                            set_variable_to_random = {
+                                var = BEL_var_num_of_nations
+                                min = 1
+                                max = 10
+                                integer = yes
+                            }
+                            # for _ in range(x) basically.
+                            # For more info, check this out:
+                            # https://hoi4.paradoxwikis.com/Scopes#for_loop_effect
+                            for_loop_effect = {
+                                start = 0
+                                end = var:BEL_var_manpower_loss
+                                random_country = {
+                                    limit = {
+                                        NOT = {
+                                            original_tag = BEL
+                                            has_idea = isolation
+                                            has_idea = undisturbed_isolation
+                                        }
+                                    }
+                                    random_state = {
+                                        limit = {
+                                            state_population > 0
+                                        }
+                                        hidden_effect = {
+                                            set_temp_variable = {
+                                                var = BEL_var_manpower_loss
+                                                value = 1
+                                            }
+                                            set_variable_to_random = {
+                                                var = BEL_var_manpower_loss
+                                                min = 1
+                                                max = 1000
+                                                integer = yes
+                                            }
+                                            multiply_temp_variable = {
+                                                var = BEL_var_manpower_loss
+                                                factor = -1
+                                            }
+                                            add_manpower = BEL_var_manpower_loss
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    # TODO: More BOP decisions.
+    # Dear Lord that's a lot of curly brackets btw.
+}
+
 BEL_colonial_management_category = {
 
     BEL_establish_african_colonial_government = {

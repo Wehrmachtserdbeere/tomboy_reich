@@ -26933,7 +26933,7 @@
 
 			add_equipment_to_stockpile = {
 				type = "Völkerwaffe"
-				amount = x
+				amount = 1500
 			}
 			# TODO - See how adding equipment to stockpile works with variants.
 		}

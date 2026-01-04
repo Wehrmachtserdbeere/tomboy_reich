@@ -200,3 +200,15 @@
   BEL_spread_war_propaganda_in_slo: "Spread War-Related Propaganda"
   BEL_instill_fear_in_SLO: "Spread Destabilizing Propaganda"
   BEL_promote_ideology_in_SLO: "Promote [BEL.GetRulingIdeologyNoun] in [SLO.GetName]"
+
+
+
+  BEL_bop_communism_rightism_reduce_polpotist_influence: "Reduce Polpotist Influence"
+  BEL_bop_communism_rightism_reduce_polpotist_influence_desc: "Through careful political maneuvering, we can reduce the influence of the Polpotists in the government, thereby strengthening the Rightists and their hold on power, though we'll have to argue in a way that reduces our people's war readiness."
+  BEL_bop_communism_rightism_strike_a_blow_at_the_polpotists: "Strike a Blow at the Radical Agrarians"
+  BEL_bop_communism_rightism_strike_a_blow_at_the_polpotists_desc: "By arresting and charging some of the more radical members of the Radical Agrarians with various crimes, we can significantly weaken their influence in the government, thereby strengthening the Rightists and their hold on power, though we'll have to argue in a way that reduces our people's war readiness."
+
+  BEL_bop_communism_polpotism_commence_an_attack: "Commence an attack"
+  BEL_bop_communism_polpotism_commence_an_attack_desc: "There is no better way to reduce the influence of the Rightists than by launching an easily deniable but effective attack on one of their bourgeois strongholds, though we might hit other targets by accident, which may anger some people."
+  BEL_bop_communism_polpotism_commence_an_attack_35_tt: "Between 1 and 1000 people of this state die in the attack."
+  BEL_bop_communism_polpotism_commence_an_attack_15_tt: "Between 1 and 10 nations may lose between 1 and 1000 people in the attack."

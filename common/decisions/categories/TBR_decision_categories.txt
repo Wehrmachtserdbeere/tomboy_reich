@@ -294,6 +294,27 @@ BEL_bop_demsoc_decisions_category = {
     }
 }
 
+BEL_bop_communism_decisions_category = {
+    icon = tbd
+
+    picture = tbd
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            has_power_balance = {
+                id = BEL_bop_communism
+            }
+            is_debug = yes
+        }
+    }
+}
+
 BEL_colonial_management_category = {
     icon = tbd
 

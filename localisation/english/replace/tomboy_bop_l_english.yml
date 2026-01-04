@@ -50,3 +50,18 @@
   BEL_bop_demsoc_communists_medium: "Medium Communist Opposition"
   BEL_bop_demsoc_communists_high: "High Communist Pressure"
   BEL_bop_demsoc_communists_complete: "Complete Communist Rule"
+
+  BEL_bop_communism: "Worker's Powerstruggle"
+
+  BEL_bop_communism_rightists_low: "Rightist Edge"
+  BEL_bop_communism_rightists_medium: "Rightist Dominance"
+  BEL_bop_communism_rightists_high: "Rightist Stranglehold"
+  BEL_bop_communism_rightists_critical: "Rightist Supremacy"
+  BEL_bop_communism_rightists_victory: "§RWorker's Powerstruggle Breakdown (Rightists)§!"
+
+  BEL_bop_communism_neutral: "Equilibrium"
+
+  BEL_bop_communism_polpotists_medium: "Radical Agrarian Foothold"
+  BEL_bop_communism_polpotists_high: "Radical Agrarian Grip"
+  BEL_bop_communism_polpotists_critical: "Radical Agrarian Control"
+  BEL_bop_communism_polpotists_victory: "§RWorker's Powerstruggle Breakdown (Radical Agrarians)§!"
