@@ -3275,6 +3275,41 @@ BEL_bop_communism_decisions_category = {
         }
     }
 
+    BEL_bop_communism_polpotism_reeducation_campaign = {
+
+        allowed = {
+            original_tag = BEL
+        }
+
+        visible = {
+            has_power_balance = {
+                id = BEL_bop_communism
+            }
+        }
+
+        available = {
+            has_power_balance = {
+                id = BEL_bop_communism
+            }
+            NOT = {
+                has_dynamic_modifier = dyn_mod_bel_bop_communism_reeducation_campaign
+            }
+        }
+
+        complete_effect = {
+            add_stability = 0.1
+            add_dynamic_modifier = {
+                modifier = dyn_mod_bel_bop_communism_reeducation_campaign
+                days = 75
+            }
+            add_war_support = -0.1
+            add_power_balance_value = {
+                id = BEL_bop_communism
+                value = -0.1
+            }
+        }
+    }
+
     # TODO: More BOP decisions.
     # Dear Lord that's a lot of curly brackets btw.
 }

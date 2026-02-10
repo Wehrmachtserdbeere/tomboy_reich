@@ -412,3 +412,19 @@ dyn_mod_bel_com_STATE_cities_cleared = {
 	intel_network_gain_factor = -0.85
 	local_intel_to_enemies = -0.75
 }
+
+dyn_mod_bel_bop_communism_reeducation_campaign = {
+	enable = {
+		owner = {
+			AND = {
+				original_tag = BEL
+				has_government = communism
+			}
+		}
+	}
+
+	# icon = tbd
+
+	stability_weekly = -0.1
+	war_support_weekly = -0.1
+}
