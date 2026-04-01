@@ -1,0 +1,46 @@
+wargoal_types = {
+
+	great_liberation_wargoal = {
+		# PREV = original target country
+		# ROOT = goal owner country
+
+		war_name = GREAT_LIBERATION_WAR_NAME
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			
+		}
+
+		take_states = {
+			
+		}
+
+		threat = 5
+
+	}
+
+	liberation_war_tomboy = {
+		# PREV = original target country
+		# ROOT = goal owner country
+
+		war_name = LIBERATION_WAR_TOMBOY_NAME
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			
+		}
+
+		take_states = {
+			
+		}
+
+		threat = 5
+
+	}
+}

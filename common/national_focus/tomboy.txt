@@ -27042,7 +27042,7 @@
 					}
 					BEL = {
 						declare_war_on = {
-							type = take_claimed_state
+							type = great_liberation_wargoal
 							target = prev.owner
 						}
 					}
@@ -27067,7 +27067,7 @@
 					}
 					BEL = {
 						declare_war_on = {
-							type = take_claimed_state
+							type = great_liberation_wargoal
 							target = prev.owner
 						}
 					}
@@ -27092,7 +27092,7 @@
 					}
 					BEL = {
 						declare_war_on = {
-							type = take_claimed_state
+							type = great_liberation_wargoal
 							target = prev.owner
 						}
 					}
@@ -27117,7 +27117,7 @@
 					}
 					BEL = {
 						declare_war_on = {
-							type = take_claimed_state
+							type = great_liberation_wargoal
 							target = prev.owner
 						}
 					}
@@ -27125,6 +27125,54 @@
 			}
 			add_ideas = BEL_idea_irredentism_total_war
 			activate_decision = BEL_irredentism_total_war_start
+			effect_tooltip = {
+				declare_war_on = {
+					target = 51.owner
+					type = great_liberation_wargoal
+				}
+				declare_war_on = {
+					target = 29.owner
+					type = great_liberation_wargoal
+				}
+				declare_war_on = {
+					target = 126.owner
+					type = great_liberation_wargoal
+				}
+				if = {
+					limit = {
+						NOT = {
+							8 = {
+								owner = {
+									original_tag = BEL
+								}
+							}
+						}
+					}
+					declare_war_on = {
+						target = 8.owner
+						type = great_liberation_wargoal
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							7 = {
+								owner = {
+									original_tag = BEL
+								}
+							}
+						}
+					}
+					declare_war_on = {
+						target = 7.owner
+						type = great_liberation_wargoal
+					}
+				}
+			}
+			add_named_threat = {
+				threat = 25
+				name = BEL_threat_great_liberation_war
+			}
 		}
 	}
 
@@ -27168,8 +27216,8 @@
 						}
 					}
 					BEL = {
-						add_wargoal = {
-							type = take_claimed_state
+						create_wargoal = {
+							type = liberation_war_tomboy
 							target = prev.owner
 						}
 					}
@@ -27193,8 +27241,8 @@
 						}
 					}
 					BEL = {
-						add_wargoal = {
-							type = take_claimed_state
+						create_wargoal = {
+							type = liberation_war_tomboy
 							target = prev.owner
 						}
 					}
@@ -27218,8 +27266,8 @@
 						}
 					}
 					BEL = {
-						add_wargoal = {
-							type = take_claimed_state
+						create_wargoal = {
+							type = liberation_war_tomboy
 							target = prev.owner
 						}
 					}
@@ -27243,10 +27291,54 @@
 						}
 					}
 					BEL = {
-						add_wargoal = {
-							type = take_claimed_state
+						create_wargoal = {
+							type = liberation_war_tomboy
 							target = prev.owner
 						}
+					}
+				}
+			}
+			effect_tooltip = {
+				create_wargoal = {
+					target = 51.owner
+					type = liberation_war_tomboy
+				}
+				create_wargoal = {
+					target = 29.owner
+					type = liberation_war_tomboy
+				}
+				create_wargoal = {
+					target = 126.owner
+					type = liberation_war_tomboy
+				}
+				if = {
+					limit = {
+						NOT = {
+							8 = {
+								owner = {
+									original_tag = BEL
+								}
+							}
+						}
+					}
+					create_wargoal = {
+						target = 8.owner
+						type = liberation_war_tomboy
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							7 = {
+								owner = {
+									original_tag = BEL
+								}
+							}
+						}
+					}
+					create_wargoal = {
+						target = 7.owner
+						type = liberation_war_tomboy
 					}
 				}
 			}

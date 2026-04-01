@@ -772,6 +772,8 @@
 
     bel_bavaria_established_flag: "Germany has been split"
 
+    BEL_threat_great_liberation_war: "Great Liberation War"
+
     tomboy_acceptance_lvl: "Tomboy Acceptance"
     tomboy_acceptance_lvl_desc: "Current Tomboy Acceptance is [?tomboy_acceptance_lvl]"
     tomboy_acceptance_lvl_tt: "§GIncreases§! Acceptance of Tomboys"

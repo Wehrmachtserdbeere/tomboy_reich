@@ -865,6 +865,28 @@
   tomboy.109.a: "We'll trade."
   tomboy.109.b: "No deal."
 
+  tomboy.110.t: "[FROM.GetName] proposes peace!"
+  tomboy.110.d: "After a long and exhausting war, [FROM.GetNameDef] has proposed peace. They have offered us a deal that would end the war immediately, at the cost of five of our states. This is a very tempting offer, considering the state of our nation, but we also don't know if we can trust them to keep their word, and if they have more demands hidden up their sleeves."
+  tomboy.110.a: "Never! Britannia never dies!"
+  tomboy.110.b: "We have no other choice..."
 
+  tomboy.111.t: "[FROM.GetName] refuses."
+  tomboy.111.d: "Despite our efforts to negotiate peace, [FROM.GetNameDef] has refused to even consider it. They have stated that they will fight until the end, and that they will never surrender. These bourgeoise oppressors seem to prefer civilian casualties over a hurt ego."
+  tomboy.111.a: "What a shame."
 
-  
+  tomboy.112.t: "[FROM.GetName] surrenders!"
+  tomboy.112.d: "After a long and exhausting war, [FROM.GetNameDef] has surrendered to us. They have agreed to our terms, and we retaken our lost territory on the Isles!"
+  tomboy.112.a: "Glory to the Commune!"
+
+  tomboy.113.t: "[FROM.GetName] proposes peace!"
+  tomboy.113.d: "After a long and exhausting war, [FROM.GetNameDef] has proposed peace. They have offered us a deal that would end the war immediately, at the cost of several of our northern states. Although a very tempting offer, these states contain our most industrialized areas, and losing them would be a huge blow to our economy and war effort. We also don't know if we can trust them to keep their word, and if they have more demands hidden up their sleeves."
+  tomboy.113.a: "Never! Vive la France!"
+  tomboy.113.b: "L'État capitule..."
+
+  tomboy.114.t: "[FROM.GetName] refuses."
+  tomboy.114.d: "Despite our efforts to negotiate peace, [FROM.GetNameDef] has refused to even consider it. They have stated that they will fight until the end, and that they will never surrender. These bourgeois oppressors seem to prefer their exploitative wine and dine over peace."
+  tomboy.114.a: "La Terreur doit être détruite."
+
+  tomboy.115.t: "[FROM.GetName] surrenders!"
+  tomboy.115.d: "After a long and exhausting war, [FROM.GetNameDef] has surrendered to us. They have agreed to our terms, and we retaken our lost territory in the West!"
+  tomboy.115.a: "A great victory for the proletariat!"

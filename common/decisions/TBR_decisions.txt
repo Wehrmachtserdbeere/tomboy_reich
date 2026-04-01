@@ -5301,6 +5301,164 @@ BEL_irredentism_total_war_category = {
         }
     }
 
+    # Propose peace (after getting at least the minimal amount of states for each nation)
+    BEL_irredentism_total_war_propose_peace_with_england = {
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            ENG = {
+                exists = yes
+                has_war_with = BEL
+                if = {
+                    limit = {
+                        OR = {
+                            127 = {
+                                is_capital = yes
+                            }
+                            126 = {
+                                is_capital = yes
+                            }
+                            125 = {
+                                is_capital = yes
+                            }
+                            129 = {
+                                is_capital = yes
+                            }
+                            130 = {
+                                is_capital = yes
+                            }
+                        }
+                    }
+                    surrender_progress > 0.5 # Higher because capital at stake
+                }
+                else = {
+                    surrender_progress > 0.25 # Lower because no capital at stake
+                }
+                owns_state = 127
+                owns_state = 126
+                owns_state = 125
+                owns_state = 129
+                owns_state = 130
+            }
+            BEL = {
+                controls_state = 127
+                controls_state = 126
+                controls_state = 125
+                controls_state = 129
+                controls_state = 130
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 127
+                state = 126
+                state = 125
+                state = 129
+                state = 130
+            }
+        }
+
+        days_remove = 30
+
+        # When chosen
+        complete_effect = {
+            ENG = {
+                country_event = {
+                    id = tomboy.110
+                    days = 2
+                }
+            }
+        }
+    }
+
+    # Propose peace with France
+    BEL_irredentism_total_war_propose_peace_with_france = {
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            FRA = {
+                exists = yes
+                has_war_with = BEL
+                if = {
+                    limit = {
+                        OR = {
+                            29 = {
+                                is_capital = yes
+                            }
+                            785 = {
+                                is_capital = yes
+                            }
+                            18 = {
+                                is_capital = yes
+                            }
+                            28 = {
+                                is_capital = yes
+                            }
+                            17 = {
+                                is_capital = yes
+                            }
+                            16 = {
+                                is_capital = yes
+                            }
+                            15 = {
+                                is_capital = yes
+                            }
+                        }
+                    }
+                    surrender_progress > 0.5 # Higher because capital at stake
+                }
+                else = {
+                    surrender_progress > 0.25 # Lower because no capital at stake
+                }
+                owns_state = 29
+                owns_state = 785
+                owns_state = 18
+                owns_state = 28
+                owns_state = 17
+                owns_state = 16
+                owns_state = 15
+            }
+            BEL = {
+                controls_state = 29
+                controls_state = 785
+                controls_state = 18
+                controls_state = 28
+                controls_state = 17
+                controls_state = 16
+                controls_state = 15
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 29
+                state = 785
+                state = 18
+                state = 28
+                state = 17
+                state = 16
+                state = 15
+            }
+        }
+
+        days_remove = 30
+
+        # When chosen
+        complete_effect = {
+            FRA = {
+                country_event = {
+                    id = tomboy.113
+                    days = 2
+                }
+            }
+        }
+    }
+
 }
 
 BEL_fallback_category = {
