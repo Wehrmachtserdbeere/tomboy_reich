@@ -742,6 +742,24 @@
     BEL_idea_voelkerwaffe_bonus: "The Ultimate Völkerwaffe"
     BEL_idea_voelkerwaffe_bonus_desc: "We have created the best weapon for the common man - the Völkerwaffe. This weapon is cheap, easy to produce, and easy to use. It is the perfect weapon for our people, and will allow us to defend our nation against any threat, at least until something better is made."
 
+    BEL_idea_revolutionary_zeal: "Revolutionary Zeal"
+    BEL_idea_revolutionary_zeal_desc: "Our people are filled with revolutionary zeal. They are ready to fight for their freedom and the freedom of their sisters, and they will not stop until they have achieved it. This zeal is what drives our nation forward, and it is what will allow us to overcome any obstacle that stands in our way."
+
+    BEL_idea_communist_political_army_commissars: "Political Army Commissars"
+    BEL_idea_communist_political_army_commissars_desc: "Our political commissars are the backbone of our army. They are responsible for ensuring that our soldiers are loyal to the cause, and that they understand the importance of their mission. They are also responsible for maintaining morale and discipline within the ranks, and for ensuring that our soldiers are well-informed about the political situation and the goals of our revolution."
+
+    BEL_idea_irredentism_total_war: "Total War"
+    BEL_idea_irredentism_total_war_desc: "Our people are ready to fight a total war to reclaim our true borders. They are willing to sacrifice everything for the cause, and they will not stop until they have achieved it. This total war will be a test of our strength and our resolve, but we are confident that we will emerge victorious."
+
+    BEL_idea_irredentism_total_war_neg: "The Failing War"
+    BEL_idea_irredentism_total_war_neg_desc: "Our people have been fighting this war for so long, and it seems like we're not making any progress. The enemy is strong, and our resources are dwindling. The morale of our soldiers is low, and the people are starting to question the war effort. Having passed our promise of a 2-year war, we are now in a difficult position, and we need to find a way to turn things around before it's too late."
+
+    BEL_idea_irredentism_total_war_great_end: "The Great Victory"
+    BEL_idea_irredentism_total_war_great_end_desc: "Our people have fought bravely and tirelessly, and we have finally achieved victory. We have reclaimed our borders, and our nation is stronger than ever. The sacrifices we made were worth it, and we can now look forward to a bright future for our people."
+
+    BEL_idea_irredentism_total_war_glorious_end: "The Great War of Liberation"
+    BEL_idea_irredentism_total_war_glorious_end_desc: "Our people have fought bravely and tirelessly, and we have finally achieved victory. We have reclaimed our true borders, and our nation is stronger than ever. The sacrifices we made were worth it, and we can now look forward to a bright future for our people. This war will be remembered as the Great War of Liberation, a shining example of our people's strength and determination."
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"

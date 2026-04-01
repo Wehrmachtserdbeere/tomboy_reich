@@ -1247,7 +1247,7 @@
   BEL_demsoc_promote_idealized_democracy_desc: "In order to convince the people to choose democracy over socialism, we must promote a... rather idealized idea of democracy."
 
   BEL_demsoc_work_for_your_rights: "Work for your Rights"
-  BEL_demsoc_work_for_your_rights_desc: "To keep their rights in the face of us being surrounded by the forces of [ENG.GetNameDef], [FRA.GetNameDef], and [GER.GetNameDef], our people must be instructed to work, work, and work! Only that way can we ensure we ensure we can keep our independence!"
+  BEL_demsoc_work_for_your_rights_desc: "To keep their rights in the face of us being surrounded by the forces of [ENG.GetNameDef], [FRA.GetNameDef], and [GER.GetNameDef], our people must be instructed to work, work, and work! Only that way can we ensure to keep our independence!"
 
   BEL_demsoc_equitize_the_economy: "Equitize the Economy"
   BEL_demsoc_equitize_the_economy_desc: "In order to create an economy for the people, we must take steps to equitize each step of the chain, from starting with equal opportunity, and ending with equal outcome."
@@ -1435,10 +1435,39 @@
   BEL_communism_polpotism_victory_desc: "We cast off the rot of cities and machines! Power returns to the soil, where true equality is born. In the fields we are pure, united, and unbreakable, our nation reborn through the strength of the peasantry!"
   BEL_polpotism_victory_reward_tt: "The Democratic Party is put into power.\n§YMore focuses are unlocked.§!"
 
+  BEL_communism_polpotism_clear_the_cities: "Clear the Cities"
+  BEL_communism_polpotism_clear_the_cities_desc: "The cities are the source of all evil. They are the breeding grounds of capitalism, and the centers of oppression. We must clear them out, and return to the land, where true equality can be achieved."
+
+  BEL_communism_polpotism_rapidized_school_cirriculum: "Rapidized School Cirriculum"
+  BEL_communism_polpotism_rapidized_school_cirriculum_desc: "The youth are the future of our nation, and we must educate them in the ways of the proletariat as soon as possible. We need to rapidly accelerate their education, so they can join the workforce and contribute to our society as soon as possible."
+
+  BEL_communism_polpot_year_zero_reformism: "Year Zero Reformism"
+  BEL_communism_polpot_year_zero_reformism_desc: "The old ways are rotten, and we must start anew. We need to implement radical reforms that will completely change the way our society works, and bring us closer to the ideal of communism. This change will be so radical, that it will be like starting from year zero, and we must be prepared for the consequences of such a change."
+
+  BEL_communism_polpot_tomboy_honor_code: "The Tomboy Honor Code"
+  BEL_communism_polpot_tomboy_honor_code_desc: "A citizen must be tough, resilient, and most importantly, loyal to the cause. The Tomboy Honor Code is a set of rules and principles that all people must follow in order to be considered citizens. It emphasizes the importance of hard work, dedication, and sacrifice for the greater good of our nation."
+
+  BEL_communism_polpot_a_peoples_anthem: "A People's Anthem"
+  BEL_communism_polpot_a_peoples_anthem_desc: "Our current anthem is a song of the bourgeoisie, and it does not represent the spirit of our people. We need a new anthem that will inspire and unite us in our struggle for communism. This anthem should be a song of the proletariat, and it should reflect our values and our aspirations for a better future."
+
   BEL_communism_rightists_victory: "Rightistm"
   BEL_communism_rightists_victory_desc: "Communism can only be implemented well if we gradually introduce it. We won, but we still have a long way to go."
   BEL_communism_victory_reward_tt: "The People's Party is put into power.\n§YMore focuses are unlocked.§!"
 
+  BEL_communism_rightists_establish_the_peoples_market: "Establish the People's Market"
+  BEL_communism_rightists_establish_the_peoples_market_desc: "The People's Market is a system of distribution and exchange that is based on the principles of communism. It is a system that is designed to ensure that everyone has access to the goods and services they need, without the need for money or profit. The People's Market is a key component of our mission to create the one true communist society, and we must work hard to establish it as soon as possible."
+
+  BEL_communism_rightists_establish_agricultural_consolidation: "Establish Agricultural Consolidation"
+  BEL_communism_rightists_establish_agricultural_consolidation_desc: "In order to ensure that our agricultural sector is efficient and productive, we need to consolidate our farms and agricultural lands into larger, more efficient units. This will allow us to increase our agricultural output and ensure that everyone has access to the food they need, preventing the tragedies of famine and food shortages such as the ones the Soviets had in Ukraine."
+
+  BEL_communism_rightists_promote_patriotic_communism: "Promote Patriotic Communism"
+  BEL_communism_rightists_promote_patriotic_communism_desc: "Communism is often seen as an internationalist ideology, but we must also promote a sense of patriotism and national pride among our people. We need to show that communism can be compatible with a strong sense of national identity, and that our nation can be a shining example of communism in the world."
+
+  BEL_communism_rightists_ausschuss_fuer_ideologische_reinheit: "Ausschuss für Ideologische Reinheit"
+  BEL_communism_rightists_ausschuss_fuer_ideologische_reinheit_desc: "To ensure that our ideology remains pure and untainted, we need to establish a committee overseeing the direction of our country and its adherence to Communist principles. This committee will be responsible for monitoring the actions of our government and ensuring that they are in line with our ideology, and for rooting out any elements that may be trying to steer us away from our goals."
+
+  BEL_communism_rightists_unapologetic_communism: "Unapologetic Communism"
+  BEL_communism_rightists_unapologetic_communism_desc: "We have nothing to apologize for. We are proud of our ideology, and we will not back down in the face of criticism or opposition. We will continue to promote and implement communism, regardless of what others may say or do to try to stop us."
 
 
 
@@ -1446,9 +1475,33 @@
 
 
 
+  BEL_communism_irredentism_what_we_lost: "What We Lost"
+  BEL_communism_irredentism_what_we_lost_desc: "The foreign oppressors have stolen our sisters from us, and we must get them back. We have to reclaim the lands that were taken from us, and bring our people back home. We cannot let the foreign oppressors continue to oppress our sisters and our people. We must fight for their liberation, and for the reunification of our nation."
   BEL_communism_irredentism_what_we_lost_reward_tt: "[BEL_communism_irredentism_what_we_lost_reward_tt_dyn_loc]"
   BEL_communism_irredentism_what_we_lost_reward_tt_pre: "Gain claims on many §Y[GER.GetFlag][GER.GetAdjectiveCap]§!, §Y[FRA.GetFlag][FRA.GetAdjectiveCap]§!, §Y[ENG.GetFlag][ENG.GetAdjectiveCap]§!, and all §YBenelux§! states.\nThe owners of these states gain §R-30§! §Yopinion§!."
   BEL_communism_irredentism_what_we_lost_reward_tt_post: "Gain claims on many §Y[BEL.GetFlag]Tomboy§! states."
+
+  BEL_communism_irredentism_education: "Irredentist Education"
+  BEL_communism_irredentism_education_desc: "To ensure that our people know of the oppression our sisters face in the hands of the foreign oppressors, we need to implement an education system that teaches our people about their history, and the struggles they face in the hands of the foreign oppressors. This will help to build a sense of solidarity and unity among our people, and will also help to build support for our cause."
+
+  BEL_communism_irredentism_training: "Irredentist Training"
+  BEL_communism_irredentism_training_desc: "To prepare our people for the challenges they will face in their struggle for the liberation of our sisters, we need to prepare them with the necessary skills and knowledge. This will include training in guerrilla warfare, sabotage, and other forms of resistance that will be necessary to fight against the foreign oppressors and liberate our sisters."
+
+  BEL_communism_irredentism_voelkerwaffe: "The Völkerwaffe"
+  BEL_communism_irredentism_voelkerwaffe_desc: "Our economic output is not enough to support a large-scale war against the foreign oppressors. We must make use of our limited resources in the most efficient way possible, and that means developing a weapon that anyone can use and produce. A perfect weapon may be great, but a weapon that can be produced by anyone, anywhere, is even better."
+  BEL_communism_irredentism_voelkerwaffe_reward_tt: "§Y5.00K§! units of §YVölkerwaffe§! is added to the national stockpile."
+
+  BEL_communism_irredentism_revolutionary_zeal: "Revolutionary Zeal"
+  BEL_communism_irredentism_revolutionary_zeal_desc: "The struggle for the liberation of our sisters is a long and difficult one, and we need to maintain a high level of revolutionary zeal among our people. We need to keep them motivated and committed to the cause, and we need to remind them of the importance of their struggle and the sacrifices they will have to make in order to achieve victory."
+
+  BEL_communism_irredentism_political_army_commissars: "Political Army Commissars"
+  BEL_communism_irredentism_political_army_commissars_desc: "In order to ensure that our army remains loyal to our cause and our ideology, we need to establish a system of political commissars within our military. These commissars will be responsible for ensuring that our soldiers are committed to our cause and that they understand the importance of their struggle for the liberation of our sisters."
+
+  BEL_communism_irredentism_total_war: "§RTotal War§!"
+  BEL_communism_irredentism_total_war_desc: "Taking the time to destroy every oppressor individually will only give our enemies more time to prepare and strengthen their defenses. We need to go all out, and launch a surprise, total war against the foreign oppressors. This will require the full mobilization of our resources and our people, but it is necessary if we want to achieve victory and liberate our sisters."
+
+  BEL_communism_irredentism_step_by_step: "Step by Step"
+  BEL_communism_irredentism_step_by_step_desc: "A total war would be suicide. Picking each opponent one by one will allow us to focus our efforts and resources on each target individually. We may be slower, but any progress is better than none."
 
 
 

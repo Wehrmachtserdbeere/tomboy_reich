@@ -5049,6 +5049,260 @@ BEL_suppress_strikes_and_protests_category = {
     }
 }
 
+BEL_irredentism_total_war_category = {
+
+    BEL_irredentism_total_war_start = {
+        allowed = {
+            original_tag = BEL
+            OR = {
+                always = no
+                is_debug = yes
+            }
+        }
+
+        fire_only_once = yes
+
+        days_remove = 730 # 2 years
+
+        cancel_effect = {
+            add_stability = 0.25
+            add_war_support = 0.25
+            add_political_power = 500
+            remove_ideas = BEL_idea_irredentism_total_war
+        }
+
+        remove_trigger = {
+            has_capitulated = yes
+        }
+
+        remove_effect = {
+            swap_ideas = {
+                remove_idea = BEL_idea_irredentism_total_war
+                add_idea = BEL_idea_irredentism_total_war_neg
+                days = 1825 # 5 years
+            }
+        }
+    }
+
+    # End with the minimal amount of states
+    BEL_irredentism_total_war_great_end = {
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = BEL_irredentism_total_war_great_end_trigger_tt
+                owns_state = 42     # Moselland
+                owns_state = 51     # Rhineland
+                owns_state = 55     # Hessen
+                owns_state = 57     # Westfalen
+                owns_state = 56     # Weser-Ems
+                owns_state = 29     # Nord-Pas-de-Calais
+                owns_state = 785    # Picardy
+                owns_state = 18     # Champagne
+                owns_state = 28     # Alsace-Lorraine
+                owns_state = 17     # France-Comte
+                owns_state = 16     # Ile-de-France
+                owns_state = 15     # Normandy
+                owns_state = 127    # Sussex
+                owns_state = 126    # Greater London Area
+                owns_state = 125    # East Anglia
+                owns_state = 129    # East Midlands
+                owns_state = 130    # Yorkshire
+                owns_state = 35     # Brabant
+                owns_state = 7      # Holland
+                owns_state = 36     # Friesland
+                owns_state = 8      # Luxemburg
+                owns_state = 6      # Vlaanderen  | Base state
+                owns_state = 34     # Wallonie   | Base state
+                owns_state = 977    # Antwerp   | Base state
+                owns_state = 980    # Ardennes  | Base state
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 42
+                state = 51
+                state = 55
+                state = 57
+                state = 56
+                state = 29
+                state = 785
+                state = 18
+                state = 28
+                state = 17
+                state = 16
+                state = 15
+                state = 127
+                state = 126
+                state = 125
+                state = 129
+                state = 130
+                state = 35
+                state = 7
+                state = 36
+                state = 8
+                state = 6
+                state = 34
+                state = 977
+                state = 980
+            }
+        }
+
+        complete_effect = {
+            remove_decision = BEL_irredentism_total_war_start
+            add_ideas = BEL_idea_irredentism_total_war_great_end
+
+            hidden_effect = {
+                42  = { add_core_of = BEL }
+                51  = { add_core_of = BEL }
+                55  = { add_core_of = BEL }
+                57  = { add_core_of = BEL }
+                56  = { add_core_of = BEL }
+                29  = { add_core_of = BEL }
+                785 = { add_core_of = BEL }
+                18  = { add_core_of = BEL }
+                28  = { add_core_of = BEL }
+                17  = { add_core_of = BEL }
+                16  = { add_core_of = BEL }
+                15  = { add_core_of = BEL }
+                127 = { add_core_of = BEL }
+                126 = { add_core_of = BEL }
+                125 = { add_core_of = BEL }
+                129 = { add_core_of = BEL }
+                130 = { add_core_of = BEL }
+                35  = { add_core_of = BEL }
+                7   = { add_core_of = BEL }
+                36  = { add_core_of = BEL }
+                8   = { add_core_of = BEL }
+                6   = { add_core_of = BEL }
+                34  = { add_core_of = BEL }
+                977 = { add_core_of = BEL }
+                980 = { add_core_of = BEL }
+            }
+
+            custom_effect_tooltip = BEL_irredentism_total_war_great_end_reward_tt
+        }
+    }
+
+    # End with the BIG amount of states
+    BEL_irredentism_total_war_glorious_end = {
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = BEL_irredentism_total_war_glorious_end_trigger_tt
+                owns_state = 42     # Moselland
+                owns_state = 51     # Rhineland
+                owns_state = 55     # Hessen
+                owns_state = 57     # Westfalen
+                owns_state = 56     # Weser-Ems
+                owns_state = 29     # Nord-Pas-de-Calais
+                owns_state = 785    # Picardy
+                owns_state = 18     # Champagne
+                owns_state = 28     # Alsace-Lorraine
+                owns_state = 17     # France-Comte
+                owns_state = 16     # Ile-de-France
+                owns_state = 15     # Normandy
+                owns_state = 27     # Bourgogne
+                owns_state = 24     # Centre
+                owns_state = 30     # Loire
+                owns_state = 14     # Brittany
+                owns_state = 127    # Sussex
+                owns_state = 126    # Greater London Area
+                owns_state = 125    # East Anglia
+                owns_state = 129    # East Midlands
+                owns_state = 130    # Yorkshire
+                owns_state = 35     # Brabant
+                owns_state = 7      # Holland
+                owns_state = 36     # Friesland
+                owns_state = 8      # Luxemburg
+                owns_state = 6      # Vlaanderen  | Base state
+                owns_state = 34     # Wallonie   | Base state
+                owns_state = 977    # Antwerp   | Base state
+                owns_state = 980    # Ardennes  | Base state
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 42
+                state = 51
+                state = 55
+                state = 57
+                state = 56
+                state = 29
+                state = 785
+                state = 18
+                state = 28
+                state = 17
+                state = 16
+                state = 15
+                state = 27
+                state = 24
+                state = 30
+                state = 14
+                state = 127
+                state = 126
+                state = 125
+                state = 129
+                state = 130
+                state = 35
+                state = 7
+                state = 36
+                state = 8
+                state = 6
+                state = 34
+                state = 977
+                state = 980
+            }
+        }
+
+        complete_effect = {
+            remove_decision = BEL_irredentism_total_war_start
+            add_ideas = BEL_idea_irredentism_total_war_glorious_end
+
+            hidden_effect = {
+                42  = { add_core_of = BEL }
+                51  = { add_core_of = BEL }
+                55  = { add_core_of = BEL }
+                57  = { add_core_of = BEL }
+                56  = { add_core_of = BEL }
+                29  = { add_core_of = BEL }
+                785 = { add_core_of = BEL }
+                18  = { add_core_of = BEL }
+                28  = { add_core_of = BEL }
+                17  = { add_core_of = BEL }
+                16  = { add_core_of = BEL }
+                15  = { add_core_of = BEL }
+                27  = { add_core_of = BEL }
+                24  = { add_core_of = BEL }
+                30  = { add_core_of = BEL }
+                14  = { add_core_of = BEL }
+                127 = { add_core_of = BEL }
+                126 = { add_core_of = BEL }
+                125 = { add_core_of = BEL }
+                129 = { add_core_of = BEL }
+                130 = { add_core_of = BEL }
+                35  = { add_core_of = BEL }
+                7   = { add_core_of = BEL }
+                36  = { add_core_of = BEL }
+                8   = { add_core_of = BEL }
+                6   = { add_core_of = BEL }
+                34  = { add_core_of = BEL }
+                977 = { add_core_of = BEL }
+                980 = { add_core_of = BEL }   
+            }
+            custom_effect_tooltip = BEL_irredentism_total_war_glorious_end_reward_tt
+        }
+    }
+
+}
+
 BEL_fallback_category = {
 
     BEL_build_defense_network_decision = {

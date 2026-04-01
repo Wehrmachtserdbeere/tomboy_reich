@@ -504,6 +504,30 @@ BEL_suppress_strikes_and_protests_category = {
     }
 }
 
+BEL_irredentism_total_war_category = {
+    icon = tbd
+
+    picture = tbd
+
+    priority = 1000
+
+    visible_when_empty = no
+
+    allowed = {
+        original_tag = BEL
+    }
+
+    visible = {
+        OR = {
+            AND = {
+                has_idea = BEL_idea_irredentism_total_war
+                has_war = yes
+            }
+            is_debug = yes
+        }
+    }
+}
+
 BEL_fallback_category = {
     icon = tbd
 

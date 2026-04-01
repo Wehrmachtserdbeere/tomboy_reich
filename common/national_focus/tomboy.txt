@@ -26352,6 +26352,8 @@
 					long_name = BEL_communism_polpot_party_long
 					name = BEL_communism_polpot_party
 				}
+				remove_ideas = BEL_idea_communist_infighting
+				mark_focus_tree_layout_dirty = yes
 			}
 			remove_power_balance = {
 				id = BEL_bop_communism
@@ -26517,6 +26519,7 @@
 					long_name = BEL_communism_polpot_party_long
 					name = BEL_communism_polpot_party
 				}
+				remove_ideas = BEL_idea_communist_infighting
 				mark_focus_tree_layout_dirty = yes
 			}
 			remove_power_balance = {
@@ -26827,12 +26830,14 @@
 		
 		completion_reward = {
 			add_war_support = 0.25
-			every_neighbor_country = {
-				add_ai_strategy = {
-					type = antagonize
-					id = BEL
-					value = 15
-				}
+			hidden_effect = {
+				every_neighbor_country = {
+					add_ai_strategy = {
+						type = antagonize
+						id = BEL
+						value = 15
+					}
+				}	
 			}
 		}
 	}
@@ -26885,8 +26890,15 @@
 				}
 				create_equipment_variant = {
 					name = "Völkerwaffe"
-					type = improved_infantry_weapons_2
+					type = infantry_equipment_3
 					design_team = mio:BEL_Kuromorimine_MIO
+				}
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						variant_name = "Völkerwaffe"
+						amount = 5000
+					}
 				}
 			}
 			else_if = {
@@ -26895,9 +26907,16 @@
 				}
 				create_equipment_variant = {
 					name = "Völkerwaffe"
-					type = improved_infantry_weapons_2
+					type = infantry_equipment_2
 					mark_older_equipment_obsolete = yes
 					design_team = mio:BEL_Kuromorimine_MIO
+				}
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						variant_name = "Völkerwaffe"
+						amount = 5000
+					}
 				}
 			}
 			else_if = {
@@ -26906,36 +26925,331 @@
 				}
 				create_equipment_variant = {
 					name = "Völkerwaffe"
-					type = improved_infantry_weapons_1
+					type = infantry_equipment_1
 					mark_older_equipment_obsolete = yes
 					design_team = mio:BEL_Kuromorimine_MIO
 				}
-			}
-			else_if = {
-				limit = {
-					has_tech = infantry_weapons1
-				}
-				create_equipment_variant = {
-					name = "Völkerwaffe"
-					type = infantry_weapons2
-					mark_older_equipment_obsolete = yes
-					design_team = mio:BEL_Kuromorimine_MIO
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						variant_name = "Völkerwaffe"
+						amount = 5000
+					}
 				}
 			}
 			else = { # How have you not even researched the first infantry weapons tech yet?
 				create_equipment_variant = {
 					name = "Völkerwaffe"
-					type = infantry_weapons1
+					type = infantry_equipment_0
 					mark_older_equipment_obsolete = yes
 					design_team = mio:BEL_Kuromorimine_MIO
 				}
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						variant_name = "Völkerwaffe"
+						amount = 5000
+					}
+				}
 			}
+			custom_effect_tooltip = BEL_communism_irredentism_voelkerwaffe_reward_tt
+		}
+	}
 
-			add_equipment_to_stockpile = {
-				type = "Völkerwaffe"
-				amount = 1500
+	# Revolutionary Zeal
+	focus = {
+		id = BEL_communism_irredentism_revolutionary_zeal
+		icon = tbd
+		
+		cost = 3
+		
+		x = 12
+		y = 13
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_education
+			focus = BEL_communism_irredentism_training
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = BEL_idea_revolutionary_zeal
+				years = 1
 			}
-			# TODO - See how adding equipment to stockpile works with variants.
+		}
+	}
+
+	# Political Commissars
+	focus = {
+		id = BEL_communism_irredentism_political_army_commissars
+		icon = tbd
+
+		cost = 5
+		
+		x = 14
+		y = 13
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_education
+			focus = BEL_communism_irredentism_training
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = BEL_idea_communist_political_army_commissars
+				years = 2
+			}
+		}
+	}
+
+	# Total War!
+	focus = {
+		id = BEL_communism_irredentism_total_war
+		icon = tbd
+
+		cost = 5
+		
+		x = 11
+		y = 14
+
+		mutually_exclusive = {
+			focus = BEL_communism_irredentism_step_by_step
+		}
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_voelkerwaffe
+			focus = BEL_communism_irredentism_political_army_commissars
+		}
+		
+		completion_reward = {
+			add_war_support = 0.75
+			for_each_scope_loop = {
+				array = tomboy_german_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						declare_war_on = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_english_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						declare_war_on = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_france_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						declare_war_on = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_nelux_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						declare_war_on = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
+			add_ideas = BEL_idea_irredentism_total_war
+			activate_decision = BEL_irredentism_total_war_start
+		}
+	}
+
+	# Step by Step | Lower risk, lower final reward.
+	focus = {
+		id = BEL_communism_irredentism_step_by_step
+		icon = tbd
+
+		cost = 5
+		
+		x = 13
+		y = 14
+
+		mutually_exclusive = {
+			focus = BEL_communism_irredentism_total_war
+		}
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_voelkerwaffe
+			focus = BEL_communism_irredentism_political_army_commissars
+		}
+		
+		completion_reward = {
+			# Give wargoals instead of declaring war immediately.
+			add_war_support = 0.15
+			for_each_scope_loop = {
+				array = tomboy_german_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						add_wargoal = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_english_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						add_wargoal = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_france_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						add_wargoal = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = tomboy_nelux_states_array
+				limit = {
+					owner = {
+						NOT = {
+							original_tag = BEL
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								has_war_with = BEL
+							}
+						}
+					}
+					BEL = {
+						add_wargoal = {
+							type = take_claimed_state
+							target = prev.owner
+						}
+					}
+				}
+			}
 		}
 	}
 	
