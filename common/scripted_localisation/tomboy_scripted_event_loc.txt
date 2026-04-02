@@ -315,3 +315,21 @@ defined_text = {
 		localization_key = tomboy-109-d_degermanize
 	}
 }
+
+defined_text = {
+	name = tomboy-116-a_scripted_loc
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = tomboy-116-a_scripted_loc_fascism
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		localization_key = tomboy-116-a_scripted_loc_default
+	}
+}

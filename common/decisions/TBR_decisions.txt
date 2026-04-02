@@ -5459,6 +5459,79 @@ BEL_irredentism_total_war_category = {
         }
     }
 
+    # Propose peace with Germany
+    BEL_irredentism_total_war_propose_peace_with_germany = {
+        allowed = {
+            original_tag = BEL
+        }
+
+        available = {
+            GER = {
+                exists = yes
+                has_war_with = BEL
+                if = {
+                    limit = {
+                        OR = {
+                            42 = {
+                                is_capital = yes
+                            }
+                            51 = {
+                                is_capital = yes
+                            }
+                            55 = {
+                                is_capital = yes
+                            }
+                            57 = {
+                                is_capital = yes
+                            }
+                            56 = {
+                                is_capital = yes
+                            }
+                        }
+                    }
+                    surrender_progress > 0.5 # Higher because capital at stake
+                }
+                else = {
+                    surrender_progress > 0.25 # Lower because no capital at stake
+                }
+                owns_state = 42
+                owns_state = 51
+                owns_state = 55
+                owns_state = 57
+                owns_state = 56
+            }
+            BEL = {
+                controls_state = 42
+                controls_state = 51
+                controls_state = 55
+                controls_state = 57
+                controls_state = 56
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 42
+                state = 51
+                state = 55
+                state = 57
+                state = 56
+            }
+        }
+
+        days_remove = 30
+
+        # When chosen
+        complete_effect = {
+            GER = {
+                country_event = {
+                    id = tomboy.116
+                    days = 2
+                }
+            }
+        }
+    }
+
 }
 
 BEL_fallback_category = {

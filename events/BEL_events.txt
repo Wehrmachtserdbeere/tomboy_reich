@@ -9894,3 +9894,239 @@ country_event = {
 		}
 	}
 }
+
+# GER | Tomboys propose peace (same as the French one above)
+country_event = {
+	id = tomboy.116
+	title = tomboy.116.t
+	desc = tomboy.116.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.116"
+	}
+
+	# We refuse!
+	option = {
+		name = tomboy.116.a
+
+		ai_chance = {
+			base = 75
+		}
+
+		FROM = {
+			country_event = tomboy.117
+		}
+	}
+
+	# We accept...
+	option = {
+		name = tomboy.116.b
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = BEL
+					value > 24
+				}
+			}
+			modifier = {
+				add = 5
+				surrender_progress > 0.25
+			}
+			modifier = {
+				add = 10
+				surrender_progress > 0.5
+			}
+			modifier = {
+				add = 25
+				surrender_progress > 0.75
+			}
+			modifier = {
+				factor = 1000
+				surrender_progress > 0.9
+			}
+			modifier = {
+				add = -5
+				strength_ratio = {
+					tag = FROM
+					ratio > 1.25
+				}
+			}
+			modifier = {
+				add = -10
+				strength_ratio = {
+					tag = FROM
+					ratio > 1.5
+				}
+			}
+			modifier = {
+				add = -25
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+			modifier = {
+				add = -50
+				strength_ratio = {
+					tag = FROM
+					ratio > 3
+				}
+			}
+			modifier = {
+				add = 5
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.75
+				}
+			}
+			modifier = {
+				add = 25
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+			modifier = {
+				factor = 1000
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.25
+				}
+			}
+			modifier = {
+				add = -10
+				has_government = fascism
+			}
+			modifier = {
+				add = 5
+				has_government = communism
+			}
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = THIS
+				modifier = large_increase
+			}
+			if = {
+				limit = {
+					ROOT = {
+						owns_state = 42
+					}
+					controls_state = 42
+				}
+				FROM = {
+					transfer_state = 42
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						owns_state = 51
+					}
+					controls_state = 51
+				}
+				FROM = {
+					transfer_state = 51
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						owns_state = 55
+					}
+					controls_state = 55
+				}
+				FROM = {
+					transfer_state = 55
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						owns_state = 57
+					}
+					controls_state = 57
+				}
+				FROM = {
+					transfer_state = 57
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						owns_state = 56
+					}
+					controls_state = 56
+				}
+				FROM = {
+					transfer_state = 56
+				}
+			}
+			country_event = tomboy.118
+		}
+		white_peace = FROM
+	}
+}
+
+# BEL | Germany refuses.
+country_event = {
+	id = tomboy.117
+	title = tomboy.117.t
+	desc = tomboy.117.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.117"
+	}
+
+	option = { # What a shame.
+		name = tomboy.117.a
+
+		add_ai_strategy = {
+			type = antagonize
+			id = FROM
+			value = 50
+		}
+	}
+}
+
+# BEL | Germany accepts.
+country_event = {
+	id = tomboy.118
+	title = tomboy.118.t
+	desc = tomboy.118.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Event ran: tomboy.118"
+	}
+
+	option = { # Great news!
+		name = tomboy.118.a
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_increase
+		}
+		add_ai_strategy = {
+			type = befriend
+			id = FROM
+			value = 50
+		}
+	}
+}

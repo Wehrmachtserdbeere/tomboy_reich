@@ -890,3 +890,11 @@
   tomboy.115.t: "[FROM.GetName] surrenders!"
   tomboy.115.d: "After a long and exhausting war, [FROM.GetNameDef] has surrendered to us. They have agreed to our terms, and we retaken our lost territory in the West!"
   tomboy.115.a: "A great victory for the proletariat!"
+
+  tomboy.116.t: "[FROM.GetName] proposes peace!"
+  tomboy.116.d: "The [FROM.GetAdjective]s have proposed peace. In exchange for several of our industrious, western states, they will end the war immediately. A lot of our economy is based in those states, and losing them would be a huge blow to our war effort, and our economy overall, but this war has been draining us for a long time, and we might not be able to hold out much longer. We also don't know if we can trust them to keep their word, and if they have more demands hidden up their sleeves."
+  # Scripted locs for the options:  
+  tomboy.116.a: "[tomboy-116-a_scripted_loc]"
+  tomboy-116-a_scripted_loc_fascism: "Kapitulieren? Nie! Heil [ROOT.GetLeader.GetName]!"
+  tomboy-116-a_scripted_loc_default: "Niemals!"
+  tomboy.116.b: "Blood, swear, and now tears."
