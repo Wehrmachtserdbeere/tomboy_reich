@@ -5307,6 +5307,22 @@ BEL_irredentism_total_war_category = {
             original_tag = BEL
         }
 
+        visible = {
+            NOT = {
+                BEL = {
+                    OR = {
+                        AND = {
+                            owns_state = 127
+                            owns_state = 126
+                            owns_state = 125
+                            owns_state = 129
+                            owns_state = 130
+                        }
+                        has_war_with = ENG
+                    }
+                }
+        }
+
         available = {
             ENG = {
                 exists = yes
@@ -5378,6 +5394,25 @@ BEL_irredentism_total_war_category = {
     BEL_irredentism_total_war_propose_peace_with_france = {
         allowed = {
             original_tag = BEL
+        }
+
+        visible = {
+            NOT = {
+                BEL = {
+                    OR = {
+                        AND = {
+                            owns_state = 29
+                            owns_state = 785
+                            owns_state = 18
+                            owns_state = 28
+                            owns_state = 17
+                            owns_state = 16
+                            owns_state = 15
+                        }
+                        has_war_with = FRA
+                    }
+                }
+            }
         }
 
         available = {
@@ -5463,6 +5498,23 @@ BEL_irredentism_total_war_category = {
     BEL_irredentism_total_war_propose_peace_with_germany = {
         allowed = {
             original_tag = BEL
+        }
+
+        visible = {
+            NOT = {
+                BEL = {
+                    OR = {
+                        AND = {
+                            owns_state = 42
+                            owns_state = 51
+                            owns_state = 55
+                            owns_state = 57
+                            owns_state = 56
+                        }
+                        has_war_with = GER
+                    }
+                }
+            }
         }
 
         available = {

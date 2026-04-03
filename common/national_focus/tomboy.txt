@@ -26292,7 +26292,7 @@
 	# of Power with either Polpotists or Rightists winning.
 	focus = {
 		id = BEL_communism_victory
-		icon = tbd
+		icon = GFX_goal_bel_commie_flag_with_hammer_and_sickle
 
 		cost = 0
 		
@@ -27343,6 +27343,24 @@
 				}
 			}
 		}
+	}
+
+	# Commie Ending #1 - You got literally everything you wanted.
+	focus = {
+		id = BEL_communism_irredentism_victory_of_the_revolution
+		icon = tbd
+
+		cost = 0
+
+		x = 12
+		y = 15
+
+		prerequisite = {
+			focus = BEL_communism_irredentism_total_war
+			focus = BEL_communism_irredentism_step_by_step
+		}
+
+		# Continue. This is for the big "You got all lands including big france" one.
 	}
 	
 
