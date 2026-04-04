@@ -448,6 +448,44 @@ BEL_debug_category = {
             is_debug = yes
         }
 
+        visible = {
+            is_debug = yes
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 42
+                state = 51
+                state = 55
+                state = 57
+                state = 56
+                state = 29
+                state = 785
+                state = 18
+                state = 28
+                state = 17
+                state = 16
+                state = 15
+                state = 27
+                state = 24
+                state = 30
+                state = 14
+                state = 35
+                state = 7
+                state = 36
+                state = 8
+                state = 6
+                state = 34
+                state = 977
+                state = 980
+                state = 127
+                state = 126
+                state = 125
+                state = 129
+                state = 130
+            }
+        }
+
         complete_effect = {
             transfer_state = 42 # Moselland
             transfer_state = 51 # Rhineland
@@ -5360,6 +5398,7 @@ BEL_irredentism_total_war_category = {
                         has_war_with = ENG
                     }
                 }
+            }
         }
 
         available = {

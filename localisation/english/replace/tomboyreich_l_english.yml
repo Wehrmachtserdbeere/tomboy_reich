@@ -760,6 +760,9 @@
     BEL_idea_irredentism_total_war_glorious_end: "The Great War of Liberation"
     BEL_idea_irredentism_total_war_glorious_end_desc: "Our people have fought bravely and tirelessly, and we have finally achieved victory. We have reclaimed our true borders, and our nation is stronger than ever. The sacrifices we made were worth it, and we can now look forward to a bright future for our people. This war will be remembered as the Great War of Liberation, a shining example of our people's strength and determination."
 
+    BEL_idea_victory_of_the_revolution: "Victory of the Revolution"
+    BEL_idea_victory_of_the_revolution_desc: "Our people have achieved victory in the revolution. We have overthrown the old regime, and we have established a new order based on the principles of equality, justice, and freedom for all proletarians. Our people are re-united, and we are stronger than ever. The sacrifices we made were worth it, and we can now look forward to a bright future for our people!"
+
     BEL_idea_banned_right_wing_parties: "Right-Wing Parties Banned"
 
     BEL_idea_controlled_right_wing_opposition: "Controlled Right-Wing Opposition"
@@ -773,6 +776,7 @@
     bel_bavaria_established_flag: "Germany has been split"
 
     BEL_threat_great_liberation_war: "Great Liberation War"
+
 
     tomboy_acceptance_lvl: "Tomboy Acceptance"
     tomboy_acceptance_lvl_desc: "Current Tomboy Acceptance is [?tomboy_acceptance_lvl]"

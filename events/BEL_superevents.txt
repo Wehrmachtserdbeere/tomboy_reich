@@ -96,7 +96,7 @@ country_event = { # Communism Irredentism: Victory of the Revolution
 	is_triggered_only = yes
 
 	option = {
-		name = superevents.4.a
+		name = tomboysuperevents.4.a
 	}
 
 }

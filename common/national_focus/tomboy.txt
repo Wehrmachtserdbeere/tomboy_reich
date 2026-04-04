@@ -27371,7 +27371,6 @@
 				country_event = tomboysuperevents.4
 			}
 		}
-		# Continue. This is for the big "You got all lands including big france" one.
 	}
 	
 

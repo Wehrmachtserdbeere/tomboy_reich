@@ -2939,6 +2939,21 @@ ideas = {
 			}
 		}
 
+		BEL_idea_victory_of_the_revolution = {
+			name = BEL_idea_victory_of_the_revolution
+
+			picture = GFX_goal_bel_commie_katyusha_nonna_victory
+
+			modifier = {
+				army_org_factor = 0.25
+				navy_org_factor = 0.5
+				air_defence_factor = 0.25
+				stability_weekly_factor = 0.05
+				war_support_weekly_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+
 
 		# Currently mainly used to get
 		# modifiers for dynamic modifiers :P

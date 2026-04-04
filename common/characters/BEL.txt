@@ -448,10 +448,9 @@ characters = {
 								value > 24
 							}
 						}
-						NOT = {
-							has_government = democratic
-							has_government = neutrality
-						}
+						has_government = fascism
+						has_government = communism
+						has_government = terror
 					}
 				}
 			}
