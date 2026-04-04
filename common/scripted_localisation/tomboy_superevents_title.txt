@@ -28,4 +28,10 @@ defined_text = {
         }
         localization_key = BEL_monarchist_hte_europe_title
     }
+	text = {
+		trigger = {
+			has_global_flag = BEL_communism_irredentism_victory_of_the_revolution_flag
+		}
+		localization_key = BEL_communism_irredentism_victory_of_the_revolution_title
+	}
 }

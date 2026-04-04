@@ -441,6 +441,45 @@ BEL_debug_category = {
             }
         }
     }
+
+    BEL_greater_tomboy_borders = {
+        available = {
+            is_ai = no
+            is_debug = yes
+        }
+
+        complete_effect = {
+            transfer_state = 42 # Moselland
+            transfer_state = 51 # Rhineland
+            transfer_state = 55 # Hessen
+            transfer_state = 57 # Westfalen
+            transfer_state = 56 # Weser-Ems
+            transfer_state = 29 # Nord-Pas-de-Calais
+            transfer_state = 785 # Picardy
+            transfer_state = 18 # Champagne
+            transfer_state = 28 # Alsace-Lorraine
+            transfer_state = 17 # France-Comte
+            transfer_state = 16 # Ile-de-France
+            transfer_state = 15 # Normandy
+            transfer_state = 27 # Bourgogne
+            transfer_state = 24 # Centre
+            transfer_state = 30 # Loire
+            transfer_state = 14 # Brittany
+            transfer_state = 35 # Brabant
+            transfer_state = 7 # Holland
+            transfer_state = 36 # Friesland
+            transfer_state = 8 # Luxemburg
+            transfer_state = 6 # Vlaanderen  | Base state
+            transfer_state = 34 # Wallonie   | Base state
+            transfer_state = 977 # Antwerp   | Base state
+            transfer_state = 980 # Ardennes  | Base state
+            transfer_state = 127 # Sussex
+            transfer_state = 126 # Greater London Area
+            transfer_state = 125 # East Anglia
+            transfer_state = 129 # East Midlands
+            transfer_state = 130 # Yorkshire
+        }
+    }
 }
 
 BEL_puppet_management_category = {

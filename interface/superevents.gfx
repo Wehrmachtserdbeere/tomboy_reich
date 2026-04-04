@@ -40,5 +40,9 @@ spriteTypes = {
         name = "GFX_superevent_city"
         texturefile = "gfx/superevents_pictures/superevents_city.dds"
     }
+	spriteType = {
+        name = "GFX_superevent_gup_commie"
+        texturefile = "gfx/superevents_pictures/superevents_gup_commie.dds"
+    }
 
 }

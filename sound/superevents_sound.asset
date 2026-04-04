@@ -14,3 +14,7 @@ sound = {
 	name = "tomboy_superevents_giovinezza"
 	file = "superevents/giovinezza.wav"
 }
+sound = {
+	name = "tomboy_superevents_thesacredwar"
+	file = "superevents/thesacredwar.wav"
+}

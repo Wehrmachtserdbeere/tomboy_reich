@@ -74,3 +74,29 @@ country_event = { # Monarchists make Europe into Monarchies
 		name = superevents.3.a
 	}
 }
+
+country_event = { # Communism Irredentism: Victory of the Revolution
+	id = tomboysuperevents.4
+	title = tomboysuperevents.4.t
+	desc = tomboysuperevents.4.d
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = BEL_superevents_activate
+			set_global_flag = BEL_communism_irredentism_victory_of_the_revolution_flag
+
+			sound_effect = tomboy_superevents_thesacredwar
+		}
+	}
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = superevents.4.a
+	}
+
+}

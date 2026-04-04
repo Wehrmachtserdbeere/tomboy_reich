@@ -42,3 +42,14 @@ soundeffect = {
 	max_audible_behaviour = fail
 	volume = 1.0
 }
+soundeffect = {
+	name = tomboy_superevents_thesacredwar
+	loop = no
+	sounds = {
+		sound = tomboy_superevents_thesacredwar
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+}

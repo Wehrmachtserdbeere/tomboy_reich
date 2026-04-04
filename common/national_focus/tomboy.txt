@@ -27348,9 +27348,9 @@
 	# Commie Ending #1 - You got literally everything you wanted.
 	focus = {
 		id = BEL_communism_irredentism_victory_of_the_revolution
-		icon = tbd
+		icon = GFX_goal_bel_commie_katyusha_nonna_victory
 
-		cost = 0
+		cost = 2
 
 		x = 12
 		y = 15
@@ -27360,6 +27360,17 @@
 			focus = BEL_communism_irredentism_step_by_step
 		}
 
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 1
+			add_war_support = 0.5
+			add_ideas = BEL_idea_victory_of_the_revolution
+			# Superevent
+			set_global_flag = BEL_communism_irredentism_victory_of_the_revolution_flag
+			every_country = {
+				country_event = tomboysuperevents.4
+			}
+		}
 		# Continue. This is for the big "You got all lands including big france" one.
 	}
 	

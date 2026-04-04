@@ -23,6 +23,7 @@ scripted_gui = {
                 clr_global_flag = BEL_monarchist_unite_europe
                 clr_global_flag = BEL_monarchist_unite_world
                 clr_global_flag = BEL_monarchist_hte_europe
+                clr_global_flag = BEL_communism_irredentism_victory_of_the_revolution_flag
             }
         }
 

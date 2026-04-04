@@ -53,6 +53,7 @@
 
   BEL_bop_communism: "Worker's Powerstruggle"
 
+  BEL_bop_communism_rightists: "Rightists"
   BEL_bop_communism_rightists_low: "Rightist Edge"
   BEL_bop_communism_rightists_medium: "Rightist Dominance"
   BEL_bop_communism_rightists_high: "Rightist Stranglehold"
@@ -61,6 +62,7 @@
 
   BEL_bop_communism_neutral: "Equilibrium"
 
+  BEL_bop_communism_polpotists: "Radical Agrarians"
   BEL_bop_communism_polpotists_medium: "Radical Agrarian Foothold"
   BEL_bop_communism_polpotists_high: "Radical Agrarian Grip"
   BEL_bop_communism_polpotists_critical: "Radical Agrarian Control"
